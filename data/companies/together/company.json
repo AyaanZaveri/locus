@@ -37,117 +37,117 @@
       {
         "name": "Lux Capital",
         "website": "https://www.luxcapital.com",
-        "logo": "https://unavatar.io/www.luxcapital.com"
+        "logo": "/investors/lux-capital.png"
       },
       {
         "name": "General Catalyst",
         "website": "https://www.generalcatalyst.com",
-        "logo": "https://unavatar.io/www.generalcatalyst.com"
+        "logo": "/investors/general-catalyst.png"
       },
       {
         "name": "Kleiner Perkins",
         "website": "https://www.kleinerperkins.com",
-        "logo": "https://unavatar.io/www.kleinerperkins.com"
+        "logo": "/investors/kleiner-perkins.jpg"
       },
       {
         "name": "Emergence Capital",
         "website": "https://www.emergencecapital.com",
-        "logo": "https://unavatar.io/www.emergencecapital.com"
+        "logo": "/investors/emergence-capital.png"
       },
       {
         "name": "Coatue",
         "website": "https://www.coatue.com",
-        "logo": "https://unavatar.io/www.coatue.com"
+        "logo": "/investors/coatue.png"
       },
       {
         "name": "NVIDIA",
         "website": "https://www.nvidia.com",
-        "logo": "https://unavatar.io/www.nvidia.com"
+        "logo": "/investors/nvidia.png"
       },
       {
         "name": "Salesforce Ventures",
         "website": "https://salesforceventures.com",
-        "logo": "https://unavatar.io/salesforceventures.com"
+        "logo": "/investors/salesforce-ventures.jpeg"
       },
       {
         "name": "Aramco Ventures",
         "website": "https://aramcoventures.com",
-        "logo": "https://unavatar.io/aramcoventures.com"
+        "logo": "/investors/aramco-ventures.png"
       },
       {
         "name": "Vista Equity Partners",
         "website": "https://www.vistaequitypartners.com",
-        "logo": "https://unavatar.io/www.vistaequitypartners.com"
+        "logo": "/investors/vista-equity-partners.png"
       },
       {
         "name": "March Capital",
         "website": "https://www.marchcapital.com",
-        "logo": "https://unavatar.io/www.marchcapital.com"
+        "logo": "/investors/march-capital.png"
       },
       {
         "name": "Pegatron",
         "website": "https://www.pegatron.com.tw",
-        "logo": "https://unavatar.io/www.pegatron.com.tw"
+        "logo": "/investors/pegatron.png"
       },
       {
         "name": "DTCP",
         "website": "https://www.dtcp.com",
-        "logo": "https://unavatar.io/www.dtcp.com"
+        "logo": "/investors/dtcp.png"
       },
       {
         "name": "Geodesic Capital",
         "website": "https://www.geodesiccapital.com",
-        "logo": "https://unavatar.io/www.geodesiccapital.com"
+        "logo": "/investors/geodesic-capital.png"
       },
       {
         "name": "PSP Partners",
         "website": "https://www.psp-p.com",
-        "logo": "https://unavatar.io/www.psp-p.com"
+        "logo": "/investors/psp-partners.png"
       },
       {
         "name": "Prosperity7 Ventures",
         "website": "https://www.prosperity7ventures.com",
-        "logo": "https://unavatar.io/www.prosperity7ventures.com"
+        "logo": "/investors/prosperity7-ventures.png"
       },
       {
         "name": "Greycroft",
         "website": "https://www.greycroft.com",
-        "logo": "https://unavatar.io/www.greycroft.com"
+        "logo": "/investors/greycroft.png"
       },
       {
         "name": "NEA",
         "website": "https://www.nea.com",
-        "logo": "https://unavatar.io/www.nea.com"
+        "logo": "/investors/nea.png"
       },
       {
         "name": "137 Ventures",
         "website": "https://www.137ventures.com",
-        "logo": "https://unavatar.io/www.137ventures.com"
+        "logo": "/investors/137-ventures.png"
       },
       {
         "name": "Long Journey Ventures",
         "website": "https://www.longjourney.vc",
-        "logo": "https://unavatar.io/www.longjourney.vc"
+        "logo": "/investors/long-journey-ventures.png"
       },
       {
         "name": "SV Angel",
         "website": "https://svangel.com",
-        "logo": "https://unavatar.io/svangel.com"
+        "logo": "/investors/sv-angel.png"
       },
       {
         "name": "First Round Capital",
         "website": "https://firstround.com",
-        "logo": "https://unavatar.io/firstround.com"
+        "logo": "/investors/first-round-capital.jpeg"
       },
       {
         "name": "S Ventures (SentinelOne)",
         "website": "https://www.sentinelone.com",
-        "logo": "https://unavatar.io/www.sentinelone.com"
+        "logo": "/investors/s-ventures-sentinelone.png"
       },
       {
         "name": "Schneider Electric (SE Ventures)",
         "website": "https://www.se.com",
-        "logo": "https://unavatar.io/www.se.com"
+        "logo": "/investors/schneider-electric-se-ventures.png"
       }
     ],
     "rounds": [
@@ -169,74 +169,74 @@
           {
             "name": "Aramco Ventures",
             "website": "https://aramcoventures.com",
-            "logo": "https://unavatar.io/aramcoventures.com"
+            "logo": "/investors/aramco-ventures.png"
           }
         ],
         "investors": [
           {
             "name": "Vista Equity Partners",
             "website": "https://www.vistaequitypartners.com",
-            "logo": "https://unavatar.io/www.vistaequitypartners.com"
+            "logo": "/investors/vista-equity-partners.png"
           },
           {
             "name": "General Catalyst",
             "website": "https://www.generalcatalyst.com",
-            "logo": "https://unavatar.io/www.generalcatalyst.com"
+            "logo": "/investors/general-catalyst.png"
           },
           {
             "name": "Emergence Capital",
             "website": "https://www.emergencecapital.com",
-            "logo": "https://unavatar.io/www.emergencecapital.com"
+            "logo": "/investors/emergence-capital.png"
           },
           {
             "name": "NVIDIA",
             "website": "https://www.nvidia.com",
-            "logo": "https://unavatar.io/www.nvidia.com"
+            "logo": "/investors/nvidia.png"
           },
           {
             "name": "March Capital",
             "website": "https://www.marchcapital.com",
-            "logo": "https://unavatar.io/www.marchcapital.com"
+            "logo": "/investors/march-capital.png"
           },
           {
             "name": "Pegatron",
             "website": "https://www.pegatron.com.tw",
-            "logo": "https://unavatar.io/www.pegatron.com.tw"
+            "logo": "/investors/pegatron.png"
           },
           {
             "name": "S Ventures (SentinelOne)",
             "website": "https://www.sentinelone.com",
-            "logo": "https://unavatar.io/www.sentinelone.com"
+            "logo": "/investors/s-ventures-sentinelone.png"
           },
           {
             "name": "Schneider Electric (SE Ventures)",
             "website": "https://www.se.com",
-            "logo": "https://unavatar.io/www.se.com"
+            "logo": "/investors/schneider-electric-se-ventures.png"
           },
           {
             "name": "Salesforce Ventures",
             "website": "https://salesforceventures.com",
-            "logo": "https://unavatar.io/salesforceventures.com"
+            "logo": "/investors/salesforce-ventures.jpeg"
           },
           {
             "name": "DTCP",
             "website": "https://www.dtcp.com",
-            "logo": "https://unavatar.io/www.dtcp.com"
+            "logo": "/investors/dtcp.png"
           },
           {
             "name": "Lux Capital",
             "website": "https://www.luxcapital.com",
-            "logo": "https://unavatar.io/www.luxcapital.com"
+            "logo": "/investors/lux-capital.png"
           },
           {
             "name": "Geodesic Capital",
             "website": "https://www.geodesiccapital.com",
-            "logo": "https://unavatar.io/www.geodesiccapital.com"
+            "logo": "/investors/geodesic-capital.png"
           },
           {
             "name": "PSP Partners",
             "website": "https://www.psp-p.com",
-            "logo": "https://unavatar.io/www.psp-p.com"
+            "logo": "/investors/psp-partners.png"
           }
         ],
         "sourceUrl": "https://www.businesswire.com/news/home/20260701243402/en/Together-AI-Raises-%24800-Million-at-%248.3-Billion-Valuation-to-Make-Frontier-AI-Accessible-to-All"
@@ -259,59 +259,59 @@
           {
             "name": "General Catalyst",
             "website": "https://www.generalcatalyst.com",
-            "logo": "https://unavatar.io/www.generalcatalyst.com"
+            "logo": "/investors/general-catalyst.png"
           },
           {
             "name": "Prosperity7 Ventures",
             "website": "https://www.prosperity7ventures.com",
-            "logo": "https://unavatar.io/www.prosperity7ventures.com"
+            "logo": "/investors/prosperity7-ventures.png"
           }
         ],
         "investors": [
           {
             "name": "NVIDIA",
             "website": "https://www.nvidia.com",
-            "logo": "https://unavatar.io/www.nvidia.com"
+            "logo": "/investors/nvidia.png"
           },
           {
             "name": "Salesforce Ventures",
             "website": "https://salesforceventures.com",
-            "logo": "https://unavatar.io/salesforceventures.com"
+            "logo": "/investors/salesforce-ventures.jpeg"
           },
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/www.coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Kleiner Perkins",
             "website": "https://www.kleinerperkins.com",
-            "logo": "https://unavatar.io/www.kleinerperkins.com"
+            "logo": "/investors/kleiner-perkins.jpg"
           },
           {
             "name": "March Capital",
             "website": "https://www.marchcapital.com",
-            "logo": "https://unavatar.io/www.marchcapital.com"
+            "logo": "/investors/march-capital.png"
           },
           {
             "name": "Emergence Capital",
             "website": "https://www.emergencecapital.com",
-            "logo": "https://unavatar.io/www.emergencecapital.com"
+            "logo": "/investors/emergence-capital.png"
           },
           {
             "name": "Lux Capital",
             "website": "https://www.luxcapital.com",
-            "logo": "https://unavatar.io/www.luxcapital.com"
+            "logo": "/investors/lux-capital.png"
           },
           {
             "name": "SE Ventures",
             "website": "https://www.se.com",
-            "logo": "https://unavatar.io/www.se.com"
+            "logo": "/investors/se-ventures.png"
           },
           {
             "name": "Greycroft",
             "website": "https://www.greycroft.com",
-            "logo": "https://unavatar.io/www.greycroft.com"
+            "logo": "/investors/greycroft.png"
           }
         ],
         "sourceUrl": "https://www.prnewswire.com/news-releases/together-ai-raises-305m-series-b-to-scale-ai-acceleration-cloud-for-open-source-and-enterprise-ai-302380967.html"
@@ -334,24 +334,24 @@
           {
             "name": "Salesforce Ventures",
             "website": "https://salesforceventures.com",
-            "logo": "https://unavatar.io/salesforceventures.com"
+            "logo": "/investors/salesforce-ventures.jpeg"
           }
         ],
         "investors": [
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/www.coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Lux Capital",
             "website": "https://www.luxcapital.com",
-            "logo": "https://unavatar.io/www.luxcapital.com"
+            "logo": "/investors/lux-capital.png"
           },
           {
             "name": "Emergence Capital",
             "website": "https://www.emergencecapital.com",
-            "logo": "https://unavatar.io/www.emergencecapital.com"
+            "logo": "/investors/emergence-capital.png"
           }
         ],
         "sourceUrl": "https://siliconangle.com/2025/02/20/together-ai-raises-305m-ai-optimized-public-cloud"
@@ -374,49 +374,49 @@
           {
             "name": "Kleiner Perkins",
             "website": "https://www.kleinerperkins.com",
-            "logo": "https://unavatar.io/www.kleinerperkins.com"
+            "logo": "/investors/kleiner-perkins.jpg"
           }
         ],
         "investors": [
           {
             "name": "NVIDIA",
             "website": "https://www.nvidia.com",
-            "logo": "https://unavatar.io/www.nvidia.com"
+            "logo": "/investors/nvidia.png"
           },
           {
             "name": "Emergence Capital",
             "website": "https://www.emergencecapital.com",
-            "logo": "https://unavatar.io/www.emergencecapital.com"
+            "logo": "/investors/emergence-capital.png"
           },
           {
             "name": "NEA",
             "website": "https://www.nea.com",
-            "logo": "https://unavatar.io/www.nea.com"
+            "logo": "/investors/nea.png"
           },
           {
             "name": "Prosperity7 Ventures",
             "website": "https://www.prosperity7ventures.com",
-            "logo": "https://unavatar.io/www.prosperity7ventures.com"
+            "logo": "/investors/prosperity7-ventures.png"
           },
           {
             "name": "Greycroft",
             "website": "https://www.greycroft.com",
-            "logo": "https://unavatar.io/www.greycroft.com"
+            "logo": "/investors/greycroft.png"
           },
           {
             "name": "137 Ventures",
             "website": "https://www.137ventures.com",
-            "logo": "https://unavatar.io/www.137ventures.com"
+            "logo": "/investors/137-ventures.png"
           },
           {
             "name": "Lux Capital",
             "website": "https://www.luxcapital.com",
-            "logo": "https://unavatar.io/www.luxcapital.com"
+            "logo": "/investors/lux-capital.png"
           },
           {
             "name": "Long Journey Ventures",
             "website": "https://www.longjourney.vc",
-            "logo": "https://unavatar.io/www.longjourney.vc"
+            "logo": "/investors/long-journey-ventures.png"
           }
         ],
         "sourceUrl": "https://www.together.ai/blog/series-a"
@@ -435,24 +435,24 @@
           {
             "name": "Lux Capital",
             "website": "https://www.luxcapital.com",
-            "logo": "https://unavatar.io/www.luxcapital.com"
+            "logo": "/investors/lux-capital.png"
           }
         ],
         "investors": [
           {
             "name": "SV Angel",
             "website": "https://svangel.com",
-            "logo": "https://unavatar.io/svangel.com"
+            "logo": "/investors/sv-angel.png"
           },
           {
             "name": "First Round Capital",
             "website": "https://firstround.com",
-            "logo": "https://unavatar.io/firstround.com"
+            "logo": "/investors/first-round-capital.jpeg"
           },
           {
             "name": "Long Journey Ventures",
             "website": "https://www.longjourney.vc",
-            "logo": "https://unavatar.io/www.longjourney.vc"
+            "logo": "/investors/long-journey-ventures.png"
           },
           {
             "name": "Definition Capital",
@@ -462,22 +462,22 @@
           {
             "name": "Susa Ventures",
             "website": "https://www.susaventures.com",
-            "logo": "https://unavatar.io/www.susaventures.com"
+            "logo": "/investors/susa-ventures.png"
           },
           {
             "name": "Cadenza Ventures",
             "website": "https://www.cadenzaventures.com",
-            "logo": "https://unavatar.io/www.cadenzaventures.com"
+            "logo": "/investors/cadenza-ventures.png"
           },
           {
             "name": "SCB 10X",
             "website": "https://www.scb10x.com",
-            "logo": "https://unavatar.io/www.scb10x.com"
+            "logo": "/investors/scb-10x.png"
           },
           {
             "name": "FactoryHQ",
             "website": "https://www.factoryai.com",
-            "logo": "https://unavatar.io/www.factoryai.com"
+            "logo": "/investors/factoryhq.png"
           }
         ],
         "sourceUrl": "https://www.together.ai/blog/seed-funding"
@@ -886,77 +886,77 @@
     {
       "name": "Vipul Ved Prakash",
       "role": "Founder & CEO",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120fca_image.png",
+      "image": "/companies/together/people/vipul-ved-prakash/avatar.png",
       "linkedin": "https://www.linkedin.com/in/vipulved/",
       "x": "https://x.com/vipulved"
     },
     {
       "name": "Ce Zhang",
       "role": "Founder & CTO",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120aea_653de63cc0189b84bf469bb0_653de3ecefe0c8de127ac827_CeZhang2.jpeg",
+      "image": "/companies/together/people/ce-zhang/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/ce-zhang-6aa37419/",
       "x": "https://twitter.com/ce__zhang"
     },
     {
       "name": "Chris Ré",
       "role": "Founder",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120c13_653de63bdeea6f44f7aa2918_653de3ffbdd0b1ea6c1a8e0b_chris-re.jpeg",
+      "image": "/companies/together/people/chris-r/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/chrismre/",
       "x": null
     },
     {
       "name": "Tri Dao",
       "role": "Founder & Chief Scientist",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120b91_653de63befe0c8de127c45ae_653de531718cbd5c51d388e5_tri-dao.png",
+      "image": "/companies/together/people/tri-dao/avatar.png",
       "linkedin": "https://www.linkedin.com/in/tri-dao-71544155/",
       "x": "https://twitter.com/tri_dao"
     },
     {
       "name": "Percy Liang",
       "role": "Founder",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120bcc_653de63ce97d08f8ab4e5b46_653de4aee9279c3904152724_percy-liang.jpeg",
+      "image": "/companies/together/people/percy-liang/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/percy-liang-717b8a/",
       "x": "https://twitter.com/percyliang"
     },
     {
       "name": "Kai Mak",
       "role": "Chief Revenue Officer",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120fba_Kai-mak-image.jpeg",
+      "image": "/companies/together/people/kai-mak/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/kaimaksf/",
       "x": null
     },
     {
       "name": "Charles Zedlewski",
       "role": "Chief Product Officer",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f1212d7_Charles_Zedlewski.jpg",
+      "image": "/companies/together/people/charles-zedlewski/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/charleszedlewski",
       "x": null
     },
     {
       "name": "Meicheng Shi",
       "role": "SVP of Finance",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f121462_20250917_Mei_Shi.jpg",
+      "image": "/companies/together/people/meicheng-shi/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/meichengshi/",
       "x": null
     },
     {
       "name": "Mahadev Konar",
       "role": "SVP of Engineering Infrastructure",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f121446_mkonar.png",
+      "image": "/companies/together/people/mahadev-konar/avatar.png",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Dan Fu",
       "role": "VP of Kernels",
-      "image": "https://cdn.prod.website-files.com/650c3b59079d92475f37b68f/653de63ca494cdf305d87e50_653de418efe0c8de127ae89e_dan-fu.png",
+      "image": "/companies/together/people/dan-fu/avatar.png",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Max Ryabinin",
       "role": "VP of Model Shaping",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f121463_Max_Ryabinin.jpg",
+      "image": "/companies/together/people/max-ryabinin/avatar.jpg",
       "linkedin": null,
       "x": null
     },
@@ -977,7 +977,7 @@
     {
       "name": "Nicolette Lea",
       "role": "VP of People & Ops",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120a5f_653de63ae9279c390415f383_653de478c0189b84bf459aa2_nicolette-lea.jpeg",
+      "image": "/companies/together/people/nicolette-lea/avatar.jpg",
       "linkedin": null,
       "x": null
     },
@@ -1019,28 +1019,28 @@
     {
       "name": "Alon Gavrielov",
       "role": "VP of Infrastructure Strategy",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/699ce1781c4457bef663bcd8_alon-gavrielov.png",
+      "image": "/companies/together/people/alon-gavrielov/avatar.png",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Susan Lee",
       "role": "VP of Technical Program Management",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/699f043ffcf65ea9643b1206_susan-lee.jpg",
+      "image": "/companies/together/people/susan-lee/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Derek Chamorro",
       "role": "Head of Security",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6a4fce3055a24ce112c8a372_derek-chamorro-grayscale-white-bg.webp",
+      "image": "/companies/together/people/derek-chamorro/avatar.webp",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Vanessa Hsu",
       "role": "Chief of Staff to the CEO",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/699f03a1cc6f73ee61699fa5_vanessa.jpg",
+      "image": "/companies/together/people/vanessa-hsu/avatar.jpg",
       "linkedin": null,
       "x": null
     }

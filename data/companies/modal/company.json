@@ -1,0 +1,570 @@
+{
+  "slug": "modal",
+  "name": "Modal",
+  "tagline": "AI needs a new infrastructure layer. We're building it.",
+  "description": "Modal is the serverless compute platform for AI and data teams. Developers write Python functions and Modal runs them in the cloud in seconds, scaling from zero to thousands of CPUs or GPUs on demand and charging only for time running. Modal built its own file system, container runtime, scheduler, and container image builder to deliver fast cold starts, elastic low-latency inference, and large-scale sandboxes, serving customers including DoorDash, Ramp, Suno, Cognition, Decagon, Reducto, and Physical Intelligence.",
+  "website": "https://modal.com",
+  "foundedYear": 2021,
+  "banner": "/companies/modal/images/banner.jpg",
+  "logo": "/companies/modal/images/logo.png",
+  "industry": "AI Infrastructure / Serverless Compute / Cloud Platform / Developer Tools",
+  "location": {
+    "label": "New York, New York",
+    "countryCode": "us"
+  },
+  "stage": "Series C",
+  "employees": "120+ employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 466000000,
+      "currency": "USD",
+      "display": "$466M"
+    },
+    "valuation": {
+      "amount": 4650000000,
+      "currency": "USD",
+      "display": "$4.65B"
+    },
+    "annualRevenue": {
+      "amount": 300000000,
+      "currency": "USD",
+      "display": "$300M+ (annualized, May 2026)"
+    }
+  },
+  "funding": {
+    "latestRoundId": "series-c-2026",
+    "investors": [
+      {
+        "name": "Amplify Partners",
+        "website": "https://www.amplifypartners.com",
+        "logo": "/investors/amplify-partners.png"
+      },
+      {
+        "name": "Lux Capital",
+        "website": "https://www.luxcapital.com",
+        "logo": "/investors/lux-capital.png"
+      },
+      {
+        "name": "Definition Capital",
+        "website": "https://definitioncap.com",
+        "logo": "/investors/definition-capital.png"
+      },
+      {
+        "name": "Redpoint Ventures",
+        "website": "https://www.redpoint.com",
+        "logo": "/investors/redpoint-ventures.png"
+      },
+      {
+        "name": "General Catalyst",
+        "website": "https://www.generalcatalyst.com",
+        "logo": "/investors/general-catalyst.png"
+      },
+      {
+        "name": "Menlo Ventures",
+        "website": "https://menlovc.com",
+        "logo": "/investors/menlo-ventures.png"
+      },
+      {
+        "name": "Bain Capital Ventures",
+        "website": "https://baincapitalventures.com",
+        "logo": "/investors/bain-capital-ventures.jpeg"
+      },
+      {
+        "name": "Accel",
+        "website": "https://www.accel.com",
+        "logo": "/investors/accel.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-c-2026",
+        "stage": "Series C",
+        "announcedAt": "2026-05-21",
+        "amount": {
+          "amount": 355000000,
+          "currency": "USD",
+          "display": "$355M"
+        },
+        "valuation": {
+          "amount": 4650000000,
+          "currency": "USD",
+          "display": "$4.65B"
+        },
+        "leadInvestors": [
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "/investors/general-catalyst.png"
+          },
+          {
+            "name": "Redpoint Ventures",
+            "website": "https://www.redpoint.com",
+            "logo": "/investors/redpoint-ventures.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Menlo Ventures",
+            "website": "https://menlovc.com",
+            "logo": "/investors/menlo-ventures.png"
+          },
+          {
+            "name": "Bain Capital Ventures",
+            "website": "https://baincapitalventures.com",
+            "logo": "/investors/bain-capital-ventures.jpeg"
+          },
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          },
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "/investors/lux-capital.png"
+          },
+          {
+            "name": "Definition Capital",
+            "website": "https://definitioncap.com",
+            "logo": "/investors/definition-capital.png"
+          }
+        ],
+        "sourceUrl": "https://modal.com/blog/modal-series-c"
+      },
+      {
+        "id": "series-b-2025",
+        "stage": "Series B",
+        "announcedAt": "2025-09-29",
+        "amount": {
+          "amount": 87000000,
+          "currency": "USD",
+          "display": "$87M"
+        },
+        "valuation": {
+          "amount": 1100000000,
+          "currency": "USD",
+          "display": "$1.1B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "/investors/lux-capital.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Redpoint Ventures",
+            "website": "https://www.redpoint.com",
+            "logo": "/investors/redpoint-ventures.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          },
+          {
+            "name": "Definition Capital",
+            "website": "https://definitioncap.com",
+            "logo": "/investors/definition-capital.png"
+          }
+        ],
+        "sourceUrl": "https://modal.com/blog/announcing-our-series-b"
+      },
+      {
+        "id": "series-a-2023",
+        "stage": "Series A",
+        "announcedAt": "2023-10-10",
+        "amount": {
+          "amount": 16000000,
+          "currency": "USD",
+          "display": "$16M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Redpoint Ventures",
+            "website": "https://www.redpoint.com",
+            "logo": "/investors/redpoint-ventures.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          },
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "/investors/lux-capital.png"
+          },
+          {
+            "name": "Definition Capital",
+            "website": "https://definitioncap.com",
+            "logo": "/investors/definition-capital.png"
+          }
+        ],
+        "sourceUrl": "https://modal.com/blog/general-availability-and-series-a"
+      },
+      {
+        "id": "seed",
+        "stage": "Seed",
+        "announcedAt": null,
+        "amount": {
+          "amount": 8000000,
+          "currency": "USD",
+          "display": "$8M (derived)"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "/investors/lux-capital.png"
+          },
+          {
+            "name": "Definition Capital",
+            "website": "https://definitioncap.com",
+            "logo": "/investors/definition-capital.png"
+          }
+        ],
+        "sourceUrl": "https://modal.com/blog/general-availability-and-series-a"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Member of Technical Staff - Systems",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/9b33ebe7-e829-4f03-97ba-5c94dbd7daf6"
+    },
+    {
+      "title": "Forward Deployed Engineer - ML",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/9fadb51f-ce11-41b1-84d5-470e66cc8ee9"
+    },
+    {
+      "title": "Business Operations Manager",
+      "location": "New York",
+      "focus": "General & Administrative",
+      "url": "https://jobs.ashbyhq.com/modal/225b43d8-ef14-4082-b16e-005c74b42957"
+    },
+    {
+      "title": "Member of Technical Staff - ML Performance",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/af17da5e-23ca-4802-854d-5f0546e1ed32"
+    },
+    {
+      "title": "Member of Technical Staff - Python SDK",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/265d6127-dd34-433b-819a-1f935572c7d8"
+    },
+    {
+      "title": "Customer Engineer",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/44b57790-528e-4f97-8613-03564316be8a"
+    },
+    {
+      "title": "Forward Deployed Engineer - Systems",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/cbbbee50-3d3b-4873-8ae8-ff4b885b8e54"
+    },
+    {
+      "title": "Developer Relations Engineer, Sandboxes",
+      "location": "New York",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/5113f35e-988d-41bc-a899-3261a9454e40"
+    },
+    {
+      "title": "Developer Relations Engineer",
+      "location": "San Francisco",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/546c9eb1-aaf7-47ba-8e9d-0bcd443b3e94"
+    },
+    {
+      "title": "Account Executive - Enterprise",
+      "location": "New York",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/5778babc-3f59-4b5f-9c60-10bc2b9a32e3"
+    },
+    {
+      "title": "Talent Partner, GTM",
+      "location": "San Francisco",
+      "focus": "General & Administrative",
+      "url": "https://jobs.ashbyhq.com/modal/1dffcf2e-32e1-4caa-a1ca-21ad416d4598"
+    },
+    {
+      "title": "Member of Design Staff - Brand",
+      "location": "New York",
+      "focus": "Design",
+      "url": "https://jobs.ashbyhq.com/modal/23311dfd-2a80-40dc-a41c-1ff7202e15a2"
+    },
+    {
+      "title": "Member of Technical Staff - Product (Backend)",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/a4b8b2b6-5d0c-4ba6-9256-b84be84fb79e"
+    },
+    {
+      "title": "Member of Technical Staff - Systems",
+      "location": "Stockholm",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/3b3c6c42-326e-40c5-b78d-9f556739513b"
+    },
+    {
+      "title": "Forward Deployed Engineer - Systems",
+      "location": "Stockholm",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/c85a3e3d-f1a5-479d-91e3-9e0b34279a82"
+    },
+    {
+      "title": "Member of Technical Staff - Platform Engineering",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/84467a68-6876-4730-9d80-6c6f3d0c2d71"
+    },
+    {
+      "title": "Systems Engineering Manager",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/aa4c345a-66e1-45b7-8c75-b7b4a0662eaa"
+    },
+    {
+      "title": "Solutions Architect",
+      "location": "San Francisco",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/2f5d046a-bd5f-44bb-a606-98bf13577c69"
+    },
+    {
+      "title": "Forward Deployed Engineer - ML",
+      "location": "Stockholm",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/0d9c249b-f305-4b0e-b325-3242ac7274e7"
+    },
+    {
+      "title": "Compute Strategy & Operations Lead",
+      "location": "New York",
+      "focus": "General & Administrative",
+      "url": "https://jobs.ashbyhq.com/modal/f1465314-5f6c-4c28-89f1-55a4ae6e11c0"
+    },
+    {
+      "title": "Infrastructure Security Engineer",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/8de60620-09bf-4905-910f-a290814a29ee"
+    },
+    {
+      "title": "Member of Technical Staff - Product (Growth)",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/9fe70d84-1d3a-42ab-87c8-df0266628c16"
+    },
+    {
+      "title": "Systems Engineering Manager",
+      "location": "Stockholm",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/b16126e4-cf92-4db9-955e-0da6eec0574d"
+    },
+    {
+      "title": "Member of Technical Staff - Research, Inference",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/73c97bbc-8e27-4c5d-b38b-90b3afdb0d93"
+    },
+    {
+      "title": "Member of Technical Staff - Research, Post-Training",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/7db771eb-e379-47fe-974f-765a8780dc10"
+    },
+    {
+      "title": "Revenue Operations",
+      "location": "San Francisco",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/a5d0e0e2-8d15-491d-9169-64be23f62034"
+    },
+    {
+      "title": "People Operations Generalist",
+      "location": "New York",
+      "focus": "General & Administrative",
+      "url": "https://jobs.ashbyhq.com/modal/17eba4cc-3a50-4f6e-b55b-bf20180091f2"
+    },
+    {
+      "title": "Regional Director",
+      "location": "New York",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/0d4c15af-afa7-4430-b3db-dd8258950aec"
+    },
+    {
+      "title": "ML Research Intern",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a"
+    },
+    {
+      "title": "Detection and Response Engineer",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/e1915603-d9de-4760-b445-c266a1080499"
+    },
+    {
+      "title": "Talent Programs Manager",
+      "location": "New York",
+      "focus": "General & Administrative",
+      "url": "https://jobs.ashbyhq.com/modal/7c3aaece-ef84-4e28-95c0-bd1be33d567b"
+    },
+    {
+      "title": "People Lead, UK",
+      "location": "London",
+      "focus": "General & Administrative",
+      "url": "https://jobs.ashbyhq.com/modal/9181633f-d7f0-4343-84b4-0bbf3b4e93ed"
+    },
+    {
+      "title": "Inference Engineering and Product Lead",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/modal/ead55e1a-873d-4837-8450-95fe8f4c8931"
+    },
+    {
+      "title": "Account Manager",
+      "location": "San Francisco",
+      "focus": "Go-to-Market",
+      "url": "https://jobs.ashbyhq.com/modal/d33a46c8-44d8-4bf4-bdca-dd11c0a48588"
+    }
+  ],
+  "people": [
+    {
+      "name": "Erik Bernhardsson",
+      "role": "Co-Founder & CEO",
+      "image": "/companies/modal/people/erik-berhardsson/avatar.png",
+      "linkedin": "https://www.linkedin.com/in/erikbern/",
+      "x": "https://x.com/bernhardsson"
+    },
+    {
+      "name": "Akshat Bubna",
+      "role": "Co-Founder & CTO",
+      "image": "/companies/modal/people/akshat-bubna/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/akshat-bubna-188885103/",
+      "x": "https://x.com/akshat_b"
+    },
+    {
+      "name": "Sona Dolasia",
+      "role": "Head of Design",
+      "image": "/companies/modal/people/sona-dolasia/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/sonadolasia/",
+      "x": null
+    },
+    {
+      "name": "Justin Dignelli",
+      "role": "VP of Sales",
+      "image": "/companies/modal/people/justin-dignelli/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/justindignelli/",
+      "x": "https://x.com/Justin_Digs"
+    },
+    {
+      "name": "Judson Collier",
+      "role": "Director of Brand",
+      "image": "/companies/modal/people/judson-collier/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/judsoncollier/",
+      "x": null
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Sep 14, 2026",
+      "dateTime": "2026-09-14",
+      "title": "Product updates: Sandbox Sidecars, new models, refreshed dashboard",
+      "description": "Modal shipped Sandbox Sidecars alongside new model additions and a redesigned dashboard."
+    },
+    {
+      "type": "growth",
+      "time": "Sep 2, 2026",
+      "dateTime": "2026-09-02",
+      "title": "Opened a London office",
+      "description": "Modal expanded in Europe with a new London office, initially go-to-market focused, joining existing offices in New York, Stockholm, and San Francisco."
+    },
+    {
+      "type": "product",
+      "time": "Aug 4, 2026",
+      "dateTime": "2026-08-04",
+      "title": "Bringing serverless functions closer to the speed of wire",
+      "description": "Modal published engineering work on reducing serverless function dispatch overhead."
+    },
+    {
+      "type": "product",
+      "time": "Jul 21, 2026",
+      "dateTime": "2026-07-21",
+      "title": "Devin Outposts on Modal",
+      "description": "Cognition's Devin Outposts launched on Modal, letting teams run Devin inside their own cloud environment."
+    },
+    {
+      "type": "product",
+      "time": "Jul 16, 2026",
+      "dateTime": "2026-07-16",
+      "title": "Scaling to 1 million concurrent sandboxes in seconds",
+      "description": "Modal detailed the system behind launching up to fifty thousand sandboxes per second and running hundreds of thousands concurrently."
+    },
+    {
+      "type": "product",
+      "time": "Jul 15, 2026",
+      "dateTime": "2026-07-15",
+      "title": "Inkling by Thinking Machines available on Modal",
+      "description": "Thinking Machines Lab's multimodal model became available on Modal's inference platform."
+    },
+    {
+      "type": "product",
+      "time": "Jul 9, 2026",
+      "dateTime": "2026-07-09",
+      "title": "Modal is a computer",
+      "description": "Modal published a piece describing its platform as a general-purpose computer for AI workloads."
+    },
+    {
+      "type": "product",
+      "time": "Jun 30, 2026",
+      "dateTime": "2026-06-30",
+      "title": "Anthropic integration brings scalable compute to Claude Science",
+      "description": "An integration with Anthropic made Modal compute available to Claude Science workflows."
+    },
+    {
+      "type": "funding",
+      "time": "May 21, 2026",
+      "dateTime": "2026-05-21",
+      "title": "Raised $355M Series C at a $4.65B valuation",
+      "description": "Modal raised a $355M Series C led by General Catalyst and Redpoint, with Menlo Ventures, Bain Capital Ventures, and Accel joining as new investors. The company said it had surpassed $300M in annualized revenue and grown fivefold since September 2025."
+    },
+    {
+      "type": "funding",
+      "time": "Sep 29, 2025",
+      "dateTime": "2025-09-29",
+      "title": "Raised $87M Series B at a $1.1B valuation",
+      "description": "Modal raised a Series B led by Lux Capital with existing investors participating, bringing total funding to $111M."
+    },
+    {
+      "type": "product",
+      "time": "Oct 10, 2023",
+      "dateTime": "2023-10-10",
+      "title": "Modal became generally available",
+      "description": "Modal opened account registration to anyone, ending its waitlist, and announced its $16M Series A led by Redpoint Ventures."
+    }
+  ]
+}

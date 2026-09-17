@@ -1,0 +1,1188 @@
+{
+  "slug": "vercel",
+  "name": "Vercel",
+  "tagline": "Agentic Infrastructure for apps and agents",
+  "description": "Vercel is agentic infrastructure for every app and agent — the platform where humans and agents build software together. Founded in 2015 as ZEIT, Vercel created and maintains Next.js, the most widely used React framework, along with the AI SDK and v0. It provides developer tools, frameworks, and cloud infrastructure to build, preview, and ship web applications on a global edge network, with products spanning Fluid Compute, Vercel Sandbox, AI Gateway, and Vercel Connect.",
+  "website": "https://vercel.com",
+  "foundedYear": 2015,
+  "banner": "/companies/vercel/images/banner.png",
+  "logo": "/companies/vercel/images/logo.png",
+  "industry": "Developer Tools / Cloud Platform / Edge Computing / AI Infrastructure",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Series F",
+  "employees": "550+ employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 863000000,
+      "currency": "USD",
+      "display": "$863M"
+    },
+    "valuation": {
+      "amount": 9300000000,
+      "currency": "USD",
+      "display": "$9.3B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-f-2025",
+    "investors": [
+      {
+        "name": "Accel",
+        "website": "https://www.accel.com",
+        "logo": "/investors/accel.png"
+      },
+      {
+        "name": "GIC",
+        "website": "https://www.gic.com.sg",
+        "logo": "/investors/gic.png"
+      },
+      {
+        "name": "Bedrock Capital",
+        "website": "https://bedrockcap.com",
+        "logo": "/investors/bedrock-capital.png"
+      },
+      {
+        "name": "GGV Capital",
+        "website": "https://ggvcapital.com",
+        "logo": "/investors/ggv-capital.png"
+      },
+      {
+        "name": "GV",
+        "website": "https://www.gv.com",
+        "logo": "/investors/gv.png"
+      },
+      {
+        "name": "Greenoaks Capital",
+        "website": "https://greenoaks.com",
+        "logo": "/investors/greenoaks-capital.png"
+      },
+      {
+        "name": "Geodesic Capital",
+        "website": "https://geodesiccap.com",
+        "logo": "/investors/geodesic-capital.png"
+      },
+      {
+        "name": "CRV",
+        "website": "https://crv.com",
+        "logo": "/investors/crv.png"
+      },
+      {
+        "name": "8VC",
+        "website": "https://8vc.com",
+        "logo": "/investors/8vc.png"
+      },
+      {
+        "name": "Flex Capital",
+        "website": "https://flexcapital.com",
+        "logo": "/investors/flex-capital.png"
+      },
+      {
+        "name": "Latacora",
+        "website": "https://latacora.com",
+        "logo": "/investors/latacora.png"
+      },
+      {
+        "name": "Tiger Global",
+        "website": "https://tigerglobal.com",
+        "logo": "/investors/tiger-global.png"
+      },
+      {
+        "name": "SV Angel",
+        "website": "https://svangel.com",
+        "logo": "/investors/sv-angel.png"
+      },
+      {
+        "name": "Notable Capital",
+        "website": "https://notablecap.com",
+        "logo": "/investors/notable-capital.png"
+      },
+      {
+        "name": "BlackRock",
+        "website": "https://www.blackrock.com",
+        "logo": "/investors/blackrock.png"
+      },
+      {
+        "name": "StepStone Group",
+        "website": "https://www.stepstonegroup.com",
+        "logo": "/investors/stepstone-group.png"
+      },
+      {
+        "name": "Khosla Ventures",
+        "website": "https://www.khoslaventures.com",
+        "logo": "/investors/khosla-ventures.jpeg"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "website": "https://salesforceventures.com",
+        "logo": "/investors/salesforce-ventures.jpeg"
+      },
+      {
+        "name": "Schroders",
+        "website": "https://www.schroders.com",
+        "logo": "/investors/schroders.png"
+      },
+      {
+        "name": "Adams Street Partners",
+        "website": "https://www.adamsstreetpartners.com",
+        "logo": "/investors/adams-street-partners.png"
+      },
+      {
+        "name": "General Catalyst",
+        "website": "https://www.generalcatalyst.com",
+        "logo": "/investors/general-catalyst.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-f-2025",
+        "stage": "Series F",
+        "announcedAt": "2025-09-30",
+        "amount": {
+          "amount": 300000000,
+          "currency": "USD",
+          "display": "$300M"
+        },
+        "valuation": {
+          "amount": 9300000000,
+          "currency": "USD",
+          "display": "$9.3B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          },
+          {
+            "name": "GIC",
+            "website": "https://www.gic.com.sg",
+            "logo": "/investors/gic.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "BlackRock",
+            "website": "https://www.blackrock.com",
+            "logo": "/investors/blackrock.png"
+          },
+          {
+            "name": "StepStone Group",
+            "website": "https://www.stepstonegroup.com",
+            "logo": "/investors/stepstone-group.png"
+          },
+          {
+            "name": "Khosla Ventures",
+            "website": "https://www.khoslaventures.com",
+            "logo": "/investors/khosla-ventures.jpeg"
+          },
+          {
+            "name": "Schroders",
+            "website": "https://www.schroders.com",
+            "logo": "/investors/schroders.png"
+          },
+          {
+            "name": "Adams Street Partners",
+            "website": "https://www.adamsstreetpartners.com",
+            "logo": "/investors/adams-street-partners.png"
+          },
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "/investors/general-catalyst.png"
+          },
+          {
+            "name": "GV",
+            "website": "https://www.gv.com",
+            "logo": "/investors/gv.png"
+          },
+          {
+            "name": "Notable Capital",
+            "website": "https://notablecap.com",
+            "logo": "/investors/notable-capital.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          }
+        ],
+        "sourceUrl": "https://www.businesswire.com/news/home/20250930898216/en/"
+      },
+      {
+        "id": "series-e-2024",
+        "stage": "Series E",
+        "announcedAt": "2024-05-16",
+        "amount": {
+          "amount": 250000000,
+          "currency": "USD",
+          "display": "$250M"
+        },
+        "valuation": {
+          "amount": 3250000000,
+          "currency": "USD",
+          "display": "$3.25B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "CRV",
+            "website": "https://crv.com",
+            "logo": "/investors/crv.png"
+          },
+          {
+            "name": "GV",
+            "website": "https://www.gv.com",
+            "logo": "/investors/gv.png"
+          },
+          {
+            "name": "Notable Capital",
+            "website": "https://notablecap.com",
+            "logo": "/investors/notable-capital.png"
+          },
+          {
+            "name": "Bedrock Capital",
+            "website": "https://bedrockcap.com",
+            "logo": "/investors/bedrock-capital.png"
+          },
+          {
+            "name": "Geodesic Capital",
+            "website": "https://geodesiccap.com",
+            "logo": "/investors/geodesic-capital.png"
+          },
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          },
+          {
+            "name": "8VC",
+            "website": "https://8vc.com",
+            "logo": "/investors/8vc.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://svangel.com",
+            "logo": "/investors/sv-angel.png"
+          }
+        ],
+        "sourceUrl": "https://www.reuters.com/technology/vercel-completes-250-mln-series-e-round-325-bln-valuation-2024-05-16/"
+      },
+      {
+        "id": "series-d-2021",
+        "stage": "Series D",
+        "announcedAt": "2021-11-23",
+        "amount": {
+          "amount": 150000000,
+          "currency": "USD",
+          "display": "$150M"
+        },
+        "valuation": {
+          "amount": 2500000000,
+          "currency": "USD",
+          "display": "$2.5B"
+        },
+        "leadInvestors": [
+          {
+            "name": "GGV Capital",
+            "website": "https://ggvcapital.com",
+            "logo": "/investors/ggv-capital.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          },
+          {
+            "name": "Bedrock Capital",
+            "website": "https://bedrockcap.com",
+            "logo": "/investors/bedrock-capital.png"
+          },
+          {
+            "name": "CRV",
+            "website": "https://crv.com",
+            "logo": "/investors/crv.png"
+          },
+          {
+            "name": "Geodesic Capital",
+            "website": "https://geodesiccap.com",
+            "logo": "/investors/geodesic-capital.png"
+          },
+          {
+            "name": "Greenoaks Capital",
+            "website": "https://greenoaks.com",
+            "logo": "/investors/greenoaks-capital.png"
+          },
+          {
+            "name": "GV",
+            "website": "https://www.gv.com",
+            "logo": "/investors/gv.png"
+          },
+          {
+            "name": "8VC",
+            "website": "https://8vc.com",
+            "logo": "/investors/8vc.png"
+          },
+          {
+            "name": "Flex Capital",
+            "website": "https://flexcapital.com",
+            "logo": "/investors/flex-capital.png"
+          },
+          {
+            "name": "Latacora",
+            "website": "https://latacora.com",
+            "logo": "/investors/latacora.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://svangel.com",
+            "logo": "/investors/sv-angel.png"
+          }
+        ],
+        "sourceUrl": "https://vercel.com/blog/vercel-funding-series-d-and-valuation"
+      },
+      {
+        "id": "series-c-2021",
+        "stage": "Series C",
+        "announcedAt": "2021-06-23",
+        "amount": {
+          "amount": 102000000,
+          "currency": "USD",
+          "display": "$102M"
+        },
+        "valuation": {
+          "amount": 1100000000,
+          "currency": "USD",
+          "display": "$1.1B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Bedrock Capital",
+            "website": "https://bedrockcap.com",
+            "logo": "/investors/bedrock-capital.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          },
+          {
+            "name": "CRV",
+            "website": "https://crv.com",
+            "logo": "/investors/crv.png"
+          },
+          {
+            "name": "Geodesic Capital",
+            "website": "https://geodesiccap.com",
+            "logo": "/investors/geodesic-capital.png"
+          },
+          {
+            "name": "Greenoaks Capital",
+            "website": "https://greenoaks.com",
+            "logo": "/investors/greenoaks-capital.png"
+          },
+          {
+            "name": "GV",
+            "website": "https://www.gv.com",
+            "logo": "/investors/gv.png"
+          },
+          {
+            "name": "8VC",
+            "website": "https://8vc.com",
+            "logo": "/investors/8vc.png"
+          },
+          {
+            "name": "Flex Capital",
+            "website": "https://flexcapital.com",
+            "logo": "/investors/flex-capital.png"
+          },
+          {
+            "name": "GGV Capital",
+            "website": "https://ggvcapital.com",
+            "logo": "/investors/ggv-capital.png"
+          },
+          {
+            "name": "Latacora",
+            "website": "https://latacora.com",
+            "logo": "/investors/latacora.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2021/06/23/vercel-raises-102m-series-c-for-its-next-js-based-front-end-development-platform/"
+      },
+      {
+        "id": "series-b-2020",
+        "stage": "Series B",
+        "announcedAt": "2020-12-16",
+        "amount": {
+          "amount": 40000000,
+          "currency": "USD",
+          "display": "$40M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "GV",
+            "website": "https://www.gv.com",
+            "logo": "/investors/gv.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Greenoaks Capital",
+            "website": "https://greenoaks.com",
+            "logo": "/investors/greenoaks-capital.png"
+          },
+          {
+            "name": "Bedrock Capital",
+            "website": "https://bedrockcap.com",
+            "logo": "/investors/bedrock-capital.png"
+          },
+          {
+            "name": "Geodesic Capital",
+            "website": "https://geodesiccap.com",
+            "logo": "/investors/geodesic-capital.png"
+          },
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          },
+          {
+            "name": "CRV",
+            "website": "https://crv.com",
+            "logo": "/investors/crv.png"
+          }
+        ],
+        "sourceUrl": "https://vercel.com/blog/series-b-40m-to-build-the-next-web"
+      },
+      {
+        "id": "series-a-2020",
+        "stage": "Series A",
+        "announcedAt": "2020-04-21",
+        "amount": {
+          "amount": 21000000,
+          "currency": "USD",
+          "display": "$21M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com",
+            "logo": "/investors/accel.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://www.businessinsider.com/vercel-zeit-pitch-deck-21-million-accel-github-ceo-2020-4"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Account Executive, Commercial",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6136160004"
+    },
+    {
+      "title": "Account Executive, Majors",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5999792004"
+    },
+    {
+      "title": "Account Executive, Majors (APAC)",
+      "location": "Sydney",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5841911004"
+    },
+    {
+      "title": "Account Executive, Majors- Install Base (APAC)",
+      "location": "Sydney",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6100103004"
+    },
+    {
+      "title": "Account Executive-Startups, EMEA (French Speaker)",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5752956004"
+    },
+    {
+      "title": "Business Development Representative, Majors",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5039945004"
+    },
+    {
+      "title": "Commercial Account Executive, Greenfield",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5042166004"
+    },
+    {
+      "title": "Commercial Account Executive, Install Base",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6123443004"
+    },
+    {
+      "title": "Design Engineer",
+      "location": "Remote - United States",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6129441004"
+    },
+    {
+      "title": "DevRel Engineer, Agentic Infrastructure",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6122437004"
+    },
+    {
+      "title": "Director, Commercial Sales, EMEA",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5974107004"
+    },
+    {
+      "title": "Director of Forward Deployed Engineering",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6120051004"
+    },
+    {
+      "title": "Director, Solutions Architect",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004"
+    },
+    {
+      "title": "Director, Solutions Architects",
+      "location": "London, Berlin",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6111005004"
+    },
+    {
+      "title": "Engineering Manager, CDN",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5701765004"
+    },
+    {
+      "title": "Enterprise Account Executive",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5042174004"
+    },
+    {
+      "title": "Executive Marketing Program Lead",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6119765004"
+    },
+    {
+      "title": "Forward-Deployed Engineer",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5752684004"
+    },
+    {
+      "title": "FP&A Manager, Product",
+      "location": "San Francisco",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6183272004"
+    },
+    {
+      "title": "GRC Analyst",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Security & Compliance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6102654004"
+    },
+    {
+      "title": "Growth Marketing Manager, Agent Stack",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6016765004"
+    },
+    {
+      "title": "Head of Field Engineering Operations",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5979111004"
+    },
+    {
+      "title": "IT Ops Engineer",
+      "location": "New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6179794004"
+    },
+    {
+      "title": "Manager of the Technical Staff - Next.js",
+      "location": "San Francisco, New York City",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6140055004"
+    },
+    {
+      "title": "Marketing Operations Manager",
+      "location": "San Francisco, Austin",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6144467004"
+    },
+    {
+      "title": "Member of the Technical Staff - Data Platform",
+      "location": "Remote - United States",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6188400004"
+    },
+    {
+      "title": "Member of the Technical Staff, Financial Data Platform",
+      "location": "San Francisco, New York City",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5895013004"
+    },
+    {
+      "title": "Member of the Technical Staff, GTM",
+      "location": "San Francisco, New York City",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5914474004"
+    },
+    {
+      "title": "Member of the Technical Staff, Internal Agent",
+      "location": "San Francisco",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6134374004"
+    },
+    {
+      "title": "Member of the Technical Staff - Next.js",
+      "location": "San Francisco, New York City",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6137958004"
+    },
+    {
+      "title": "Partner Lead, EMEA",
+      "location": "London, Berlin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5844601004"
+    },
+    {
+      "title": "Partner Solutions Engineer, EMEA",
+      "location": "London, Berlin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004"
+    },
+    {
+      "title": "Performance Marketing Manager",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6011904004"
+    },
+    {
+      "title": "Presentation Designer",
+      "location": "San Francisco, New York City",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6128387004"
+    },
+    {
+      "title": "Product Communications Manager",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6121474004"
+    },
+    {
+      "title": "Product Designer, Marketplace",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6160974004"
+    },
+    {
+      "title": "Product Manager, Observability",
+      "location": "New York City",
+      "focus": "Product",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6147956004"
+    },
+    {
+      "title": "Product Security Engineer",
+      "location": "San Francisco, New York City, London, Berlin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6102343004"
+    },
+    {
+      "title": "Product Strategy & Operations",
+      "location": "San Francisco",
+      "focus": "Product",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6011651004"
+    },
+    {
+      "title": "Sales Development Representative, UK&I",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5557835004"
+    },
+    {
+      "title": "Scaled Commercial Account Executive, Install base",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6142097004"
+    },
+    {
+      "title": "Security Engineer, Cloud",
+      "location": "Remote - United States",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6102335004"
+    },
+    {
+      "title": "Security Engineer, Detection Response",
+      "location": "San Francisco, New York City, London, Berlin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6111332004"
+    },
+    {
+      "title": "Security Software Engineer, IAM",
+      "location": "Remote - United States",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6093255004"
+    },
+    {
+      "title": "Security Software Engineer, Open Source Frameworks",
+      "location": "San Francisco, New York City, London, Berlin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6117204004"
+    },
+    {
+      "title": "Senior Brand Designer",
+      "location": "San Francisco, New York City",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5579560004"
+    },
+    {
+      "title": "Senior Deal Desk Analyst",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6142959004"
+    },
+    {
+      "title": "Senior Financial Systems Administrator",
+      "location": "Remote - India",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6134464004"
+    },
+    {
+      "title": "Senior HRBP - G&A",
+      "location": "San Francisco",
+      "focus": "People Ops",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6090854004"
+    },
+    {
+      "title": "Senior Integrated Campaigns Manager",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6122619004"
+    },
+    {
+      "title": "Senior Legal Counsel, Product",
+      "location": "San Francisco",
+      "focus": "Legal",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5691965004"
+    },
+    {
+      "title": "Senior Manager, Solutions Architect",
+      "location": "Remote - Australia",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5995789004"
+    },
+    {
+      "title": "Senior Partner Programs Manager",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6188894004"
+    },
+    {
+      "title": "Senior Payroll Analyst",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6006148004"
+    },
+    {
+      "title": "Senior Product Designer, Growth",
+      "location": "San Francisco, New York City",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6131210004"
+    },
+    {
+      "title": "Senior Security Software Engineer, v0",
+      "location": "San Francisco, New York City, London, Berlin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6117209004"
+    },
+    {
+      "title": "Senior Technical Account Manager",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6112845004"
+    },
+    {
+      "title": "Site Engineer",
+      "location": "Remote - United States",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5732855004"
+    },
+    {
+      "title": "Software Engineer, Agent",
+      "location": "New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5704320004"
+    },
+    {
+      "title": "Software Engineer, Agentic Infrastructure",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6199608004"
+    },
+    {
+      "title": "Software Engineer, AI Gateway",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5798406004"
+    },
+    {
+      "title": "Software Engineer, AI SDK",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5474915004"
+    },
+    {
+      "title": "Software Engineer, Backend",
+      "location": "Remote - United States",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5430088004"
+    },
+    {
+      "title": "Software Engineer, CDN",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5179639004"
+    },
+    {
+      "title": "Software Engineer, CDN Content",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6105394004"
+    },
+    {
+      "title": "Software Engineer, Compute",
+      "location": "London",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6113157004"
+    },
+    {
+      "title": "Software Engineer, eve",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6098390004"
+    },
+    {
+      "title": "Software Engineering Intern - Summer '27",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6181759004"
+    },
+    {
+      "title": "Software Engineering Intern - Winter '27",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6181755004"
+    },
+    {
+      "title": "Software Engineer, Observability",
+      "location": "San Francisco, New York City, London",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5428982004"
+    },
+    {
+      "title": "Software Engineer, Platform",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6195280004"
+    },
+    {
+      "title": "Software Engineer, Trust & Safety",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5649459004"
+    },
+    {
+      "title": "Software Engineer, Workflows",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5798416004"
+    },
+    {
+      "title": "Solutions Architect",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5806749004"
+    },
+    {
+      "title": "SOX Manager",
+      "location": "Remote - India",
+      "focus": "Security & Compliance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6163585004"
+    },
+    {
+      "title": "Sr. Manager, Accounting (India)",
+      "location": "Remote - India",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6121468004"
+    },
+    {
+      "title": "Staff Applied Scientist, Financial Forecasting",
+      "location": "San Francisco, New York City",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5973206004"
+    },
+    {
+      "title": "Startups Program Lead",
+      "location": "San Francisco, New York City",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5971203004"
+    },
+    {
+      "title": "Strategic Cloud Partnerships Lead",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5825469004"
+    },
+    {
+      "title": "Strategic Finance Manager, Product",
+      "location": "San Francisco",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5855000004"
+    },
+    {
+      "title": "Strategic Partnerships Lead",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6188898004"
+    },
+    {
+      "title": "Strategic Sourcing Manager",
+      "location": "San Francisco",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6163582004"
+    },
+    {
+      "title": "Technical Account Manager",
+      "location": "London, Berlin",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6121381004"
+    },
+    {
+      "title": "Visual Designer, Web",
+      "location": "Remote - United States",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6115991004"
+    },
+    {
+      "title": "Workday Integrations Developer",
+      "location": "San Francisco, New York City, Austin",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6137983004"
+    }
+  ],
+  "people": [
+    {
+      "name": "Guillermo Rauch",
+      "role": "Founder & CEO",
+      "image": "/companies/vercel/people/guillermo-rauch/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/rauchg/",
+      "x": "https://x.com/rauchg"
+    },
+    {
+      "name": "Malte Ubl",
+      "role": "Chief Technology Officer",
+      "image": "/companies/vercel/people/malte-ubl/avatar.jpg",
+      "linkedin": null,
+      "x": "https://x.com/cramforce"
+    },
+    {
+      "name": "Tom Occhino",
+      "role": "Chief Product Officer",
+      "image": "/companies/vercel/people/tom-occhino/avatar.jpg",
+      "linkedin": null,
+      "x": "https://x.com/tomocchino"
+    },
+    {
+      "name": "Jeanne DeWitt Grosser",
+      "role": "Chief Operating Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Marten Abrahamsen",
+      "role": "Chief Financial Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Sep 17, 2026",
+      "dateTime": "2026-09-17",
+      "title": "Sub-second artifact deployments in the Vercel CLI",
+      "description": "Vercel CLI gained support for sub-second artifact deployments, speeding up how builds upload to the platform."
+    },
+    {
+      "type": "product",
+      "time": "Sep 16, 2026",
+      "dateTime": "2026-09-16",
+      "title": "Secure Compute and Static IP builds start 64% faster",
+      "description": "Vercel cut Secure Compute and Static IP build startup time by 64%."
+    },
+    {
+      "type": "growth",
+      "time": "Sep 15, 2026",
+      "dateTime": "2026-09-15",
+      "title": "Delphi ships 100 times a day on Vercel",
+      "description": "Vercel published a case study on how Delphi runs a Python backend and ships 100 deployments a day on its platform."
+    },
+    {
+      "type": "product",
+      "time": "Sep 11, 2026",
+      "dateTime": "2026-09-11",
+      "title": "Vercel Sandbox now provides 64 GB of storage",
+      "description": "Vercel Sandbox increased per-sandbox storage to 64 GB for longer-running agent and build workloads."
+    },
+    {
+      "type": "product",
+      "time": "Sep 10, 2026",
+      "dateTime": "2026-09-10",
+      "title": "Vercel Sandbox is now available in all regions",
+      "description": "Vercel Sandbox expanded to every Vercel region, reducing latency for agent code execution."
+    },
+    {
+      "type": "product",
+      "time": "Sep 8, 2026",
+      "dateTime": "2026-09-08",
+      "title": "Introducing Flat Rate CDN for Pro teams",
+      "description": "Vercel launched flat monthly pricing for its CDN on Pro teams, with premium global network performance and automatic protection for viral spikes."
+    },
+    {
+      "type": "product",
+      "time": "Aug 25, 2026",
+      "dateTime": "2026-08-25",
+      "title": "Vercel Connect is now generally available",
+      "description": "Vercel Connect became GA, giving apps and agents short-lived scoped access tokens to Slack, Linear, GitHub and 100+ services with RBAC and audit trails."
+    },
+    {
+      "type": "news",
+      "time": "Apr 19, 2026",
+      "dateTime": "2026-04-19",
+      "title": "Vercel disclosed an April 2026 security incident",
+      "description": "Vercel disclosed that unauthorized actors accessed certain internal systems after third-party AI tool Context.ai was compromised. Vercel said some non-sensitive environment variables were accessed."
+    },
+    {
+      "type": "people",
+      "time": "Mar 18, 2026",
+      "dateTime": "2026-03-18",
+      "title": "Mitchell Hashimoto appointed to the board of directors",
+      "description": "Vercel appointed Mitchell Hashimoto, co-founder of HashiCorp and creator of Terraform and Ghostty, to its board of directors."
+    },
+    {
+      "type": "funding",
+      "time": "Sep 30, 2025",
+      "dateTime": "2025-09-30",
+      "title": "Raised $300M Series F at $9.3B valuation",
+      "description": "Vercel raised an oversubscribed $300M Series F co-led by Accel and GIC, and launched a ~$300M tender offer for early investors, employees, and former employees."
+    },
+    {
+      "type": "news",
+      "time": "Jul 8, 2025",
+      "dateTime": "2025-07-08",
+      "title": "NuxtLabs joins Vercel",
+      "description": "Vercel acquired NuxtLabs, the company behind the Nuxt web framework."
+    },
+    {
+      "type": "news",
+      "time": "Jan 22, 2025",
+      "dateTime": "2025-01-22",
+      "title": "Vercel acquires Tremor",
+      "description": "Vercel acquired Tremor to invest further in open source React components for dashboards and charts."
+    },
+    {
+      "type": "funding",
+      "time": "May 16, 2024",
+      "dateTime": "2024-05-16",
+      "title": "Raised $250M Series E at $3.25B valuation",
+      "description": "Vercel raised a $250M Series E led by Accel with CRV, GV, Notable Capital, Bedrock, Geodesic Capital, Tiger Global, 8VC and SV Angel. Vercel said it had recently exceeded $100M in annual revenue."
+    },
+    {
+      "type": "funding",
+      "time": "Nov 23, 2021",
+      "dateTime": "2021-11-23",
+      "title": "Raised $150M Series D at $2.5B valuation",
+      "description": "Vercel announced a $150M Series D, reaching a $2.5B valuation."
+    },
+    {
+      "type": "funding",
+      "time": "Jun 23, 2021",
+      "dateTime": "2021-06-23",
+      "title": "Raised $102M Series C",
+      "description": "Vercel raised a $102M Series C led by Greenoaks at a $1.1B valuation."
+    },
+    {
+      "type": "funding",
+      "time": "Dec 16, 2020",
+      "dateTime": "2020-12-16",
+      "title": "Raised $40M Series B",
+      "description": "Vercel announced a $40M Series B to fund frontend development innovation."
+    },
+    {
+      "type": "funding",
+      "time": "Apr 21, 2020",
+      "dateTime": "2020-04-21",
+      "title": "Raised $21M Series A",
+      "description": "ZEIT, shortly before rebranding to Vercel, raised $21M led by Accel with participation from GitHub's CEO and others."
+    }
+  ]
+}

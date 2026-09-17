@@ -33,77 +33,77 @@
       {
         "name": "Accel",
         "website": "https://www.accel.com",
-        "logo": "https://unavatar.io/accel.com"
+        "logo": "/investors/accel.png"
       },
       {
         "name": "Coatue",
         "website": "https://www.coatue.com",
-        "logo": "https://unavatar.io/coatue.com"
+        "logo": "/investors/coatue.png"
       },
       {
         "name": "Craft Ventures",
         "website": "https://www.craftventures.com",
-        "logo": "https://unavatar.io/craftventures.com"
+        "logo": "/investors/craft-ventures.png"
       },
       {
         "name": "Felicis",
         "website": "https://www.felicis.com",
-        "logo": "https://unavatar.io/felicis.com"
+        "logo": "/investors/felicis.png"
       },
       {
         "name": "Peak XV Partners",
         "website": "https://www.peakxv.com",
-        "logo": "https://unavatar.io/peakxv.com"
+        "logo": "/investors/peak-xv-partners.png"
       },
       {
         "name": "Y Combinator",
         "website": "https://www.ycombinator.com",
-        "logo": "https://unavatar.io/ycombinator.com"
+        "logo": "/investors/y-combinator.png"
       },
       {
         "name": "GIC",
         "website": "https://www.gic.com.sg",
-        "logo": "https://unavatar.io/gic.com.sg"
+        "logo": "/investors/gic.png"
       },
       {
         "name": "Stripe",
         "website": "https://stripe.com",
-        "logo": "https://unavatar.io/stripe.com"
+        "logo": "/investors/stripe.png"
       },
       {
         "name": "Georgian",
         "website": "https://www.georgian.io",
-        "logo": "https://unavatar.io/georgian.io"
+        "logo": "/investors/georgian.png"
       },
       {
         "name": "Salesforce Ventures",
         "website": "https://salesforceventures.com",
-        "logo": "https://unavatar.io/salesforceventures.com"
+        "logo": "/investors/salesforce-ventures.jpeg"
       },
       {
         "name": "Figma Ventures",
         "website": "https://www.figma.com",
-        "logo": "https://unavatar.io/figma.com"
+        "logo": "/investors/figma-ventures.png"
       },
       {
         "name": "Avra Capital",
-        "website": null,
-        "logo": null
+        "website": "https://avracapital.com",
+        "logo": "/investors/avra-capital.png"
       },
       {
         "name": "Square Peg",
         "website": "https://www.squarepeg.vc",
-        "logo": "https://unavatar.io/squarepeg.vc"
+        "logo": "/investors/square-peg.png"
       },
       {
         "name": "Lightspeed",
         "website": "https://lsvp.com",
-        "logo": "https://unavatar.io/lsvp.com"
+        "logo": "/investors/lightspeed.png"
       },
       {
         "name": "Mozilla",
         "website": "https://www.mozilla.org",
-        "logo": "https://unavatar.io/mozilla.org"
+        "logo": "/investors/mozilla.png"
       }
     ],
     "rounds": [
@@ -125,54 +125,54 @@
           {
             "name": "GIC",
             "website": "https://www.gic.com.sg",
-            "logo": "https://unavatar.io/gic.com.sg"
+            "logo": "/investors/gic.png"
           }
         ],
         "investors": [
           {
             "name": "Accel",
             "website": "https://www.accel.com",
-            "logo": "https://unavatar.io/accel.com"
+            "logo": "/investors/accel.png"
           },
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Craft Ventures",
             "website": "https://www.craftventures.com",
-            "logo": "https://unavatar.io/craftventures.com"
+            "logo": "/investors/craft-ventures.png"
           },
           {
             "name": "Felicis",
             "website": "https://www.felicis.com",
-            "logo": "https://unavatar.io/felicis.com"
+            "logo": "/investors/felicis.png"
           },
           {
             "name": "Peak XV Partners",
             "website": "https://www.peakxv.com",
-            "logo": "https://unavatar.io/peakxv.com"
+            "logo": "/investors/peak-xv-partners.png"
           },
           {
             "name": "Y Combinator",
             "website": "https://www.ycombinator.com",
-            "logo": "https://unavatar.io/ycombinator.com"
+            "logo": "/investors/y-combinator.png"
           },
           {
             "name": "Stripe",
             "website": "https://stripe.com",
-            "logo": "https://unavatar.io/stripe.com"
+            "logo": "/investors/stripe.png"
           },
           {
             "name": "Georgian",
             "website": "https://www.georgian.io",
-            "logo": "https://unavatar.io/georgian.io"
+            "logo": "/investors/georgian.png"
           },
           {
             "name": "Salesforce Ventures",
             "website": "https://salesforceventures.com",
-            "logo": "https://unavatar.io/salesforceventures.com"
+            "logo": "/investors/salesforce-ventures.jpeg"
           }
         ],
         "sourceUrl": "https://supabase.com/blog/supabase-series-f"
@@ -195,44 +195,44 @@
           {
             "name": "Accel",
             "website": "https://www.accel.com",
-            "logo": "https://unavatar.io/accel.com"
+            "logo": "/investors/accel.png"
           },
           {
             "name": "Peak XV Partners",
             "website": "https://www.peakxv.com",
-            "logo": "https://unavatar.io/peakxv.com"
+            "logo": "/investors/peak-xv-partners.png"
           }
         ],
         "investors": [
           {
             "name": "Figma Ventures",
             "website": "https://www.figma.com",
-            "logo": "https://unavatar.io/figma.com"
+            "logo": "/investors/figma-ventures.png"
           },
           {
             "name": "Y Combinator",
             "website": "https://www.ycombinator.com",
-            "logo": "https://unavatar.io/ycombinator.com"
+            "logo": "/investors/y-combinator.png"
           },
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Felicis",
             "website": "https://www.felicis.com",
-            "logo": "https://unavatar.io/felicis.com"
+            "logo": "/investors/felicis.png"
           },
           {
             "name": "Craft Ventures",
             "website": "https://www.craftventures.com",
-            "logo": "https://unavatar.io/craftventures.com"
+            "logo": "/investors/craft-ventures.png"
           },
           {
             "name": "Square Peg",
             "website": "https://www.squarepeg.vc",
-            "logo": "https://unavatar.io/squarepeg.vc"
+            "logo": "/investors/square-peg.png"
           }
         ],
         "sourceUrl": "https://supabase.com/blog/supabase-series-e"
@@ -255,29 +255,29 @@
           {
             "name": "Accel",
             "website": "https://www.accel.com",
-            "logo": "https://unavatar.io/accel.com"
+            "logo": "/investors/accel.png"
           }
         ],
         "investors": [
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Y Combinator",
             "website": "https://www.ycombinator.com",
-            "logo": "https://unavatar.io/ycombinator.com"
+            "logo": "/investors/y-combinator.png"
           },
           {
             "name": "Craft Ventures",
             "website": "https://www.craftventures.com",
-            "logo": "https://unavatar.io/craftventures.com"
+            "logo": "/investors/craft-ventures.png"
           },
           {
             "name": "Felicis",
             "website": "https://www.felicis.com",
-            "logo": "https://unavatar.io/felicis.com"
+            "logo": "/investors/felicis.png"
           }
         ],
         "sourceUrl": "https://fortune.com/2025/04/22/exclusive-supabase-raises-200-million-series-d-at-2-billion-valuation/"
@@ -296,34 +296,34 @@
           {
             "name": "Peak XV Partners",
             "website": "https://www.peakxv.com",
-            "logo": "https://unavatar.io/peakxv.com"
+            "logo": "/investors/peak-xv-partners.png"
           },
           {
             "name": "Craft Ventures",
             "website": "https://www.craftventures.com",
-            "logo": "https://unavatar.io/craftventures.com"
+            "logo": "/investors/craft-ventures.png"
           }
         ],
         "investors": [
           {
             "name": "Avra Capital",
-            "website": null,
-            "logo": null
+            "website": "https://avracapital.com",
+            "logo": "/investors/avra-capital.png"
           },
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Felicis",
             "website": "https://www.felicis.com",
-            "logo": "https://unavatar.io/felicis.com"
+            "logo": "/investors/felicis.png"
           },
           {
             "name": "Y Combinator",
             "website": "https://www.ycombinator.com",
-            "logo": "https://unavatar.io/ycombinator.com"
+            "logo": "/investors/y-combinator.png"
           }
         ],
         "sourceUrl": "https://techcrunch.com/2024/09/25/supabase-a-postgres-centric-developer-platform-raises-80m-series-c/"
@@ -342,19 +342,19 @@
           {
             "name": "Felicis",
             "website": "https://www.felicis.com",
-            "logo": "https://unavatar.io/felicis.com"
+            "logo": "/investors/felicis.png"
           }
         ],
         "investors": [
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           },
           {
             "name": "Lightspeed",
             "website": "https://lsvp.com",
-            "logo": "https://unavatar.io/lsvp.com"
+            "logo": "/investors/lightspeed.png"
           }
         ],
         "sourceUrl": "https://www.prnewswire.com/news-releases/supabase-announces-80-million-series-b-led-by-felicis-301544453.html"
@@ -373,19 +373,19 @@
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           }
         ],
         "investors": [
           {
             "name": "Y Combinator",
             "website": "https://www.ycombinator.com",
-            "logo": "https://unavatar.io/ycombinator.com"
+            "logo": "/investors/y-combinator.png"
           },
           {
             "name": "Mozilla",
             "website": "https://www.mozilla.org",
-            "logo": "https://unavatar.io/mozilla.org"
+            "logo": "/investors/mozilla.png"
           }
         ],
         "sourceUrl": "https://supabase.com/blog/supabase-series-a"
@@ -404,19 +404,19 @@
           {
             "name": "Coatue",
             "website": "https://www.coatue.com",
-            "logo": "https://unavatar.io/coatue.com"
+            "logo": "/investors/coatue.png"
           }
         ],
         "investors": [
           {
             "name": "Y Combinator",
             "website": "https://www.ycombinator.com",
-            "logo": "https://unavatar.io/ycombinator.com"
+            "logo": "/investors/y-combinator.png"
           },
           {
             "name": "Mozilla",
             "website": "https://www.mozilla.org",
-            "logo": "https://unavatar.io/mozilla.org"
+            "logo": "/investors/mozilla.png"
           }
         ],
         "sourceUrl": "https://techcrunch.com/2020/12/15/supabase-raises-6m-for-its-open-source-firebase-alternative/"
