@@ -116,6 +116,28 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+    }
+  *::-webkit-scrollbar {
+    width: 0.375rem;
+    height: 0.375rem;
+    }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    }
+  *::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
+    }
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-foreground);
+    }
+  .no-scrollbar {
+    scrollbar-width: none;
+    }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
     }
   body {
     @apply bg-background text-foreground;

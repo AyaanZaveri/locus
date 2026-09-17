@@ -1,0 +1,1120 @@
+{
+  "slug": "together",
+  "name": "Together AI",
+  "tagline": "The AI Native Cloud",
+  "description": "Together AI is the AI Native Cloud, combining state-of-the-art open-source models, high-performance infrastructure, and frontier research in AI efficiency and scalability. The company makes it dramatically cheaper and easier to run open source AI models at scale, serving over a million developers and some of the world's most demanding AI workloads across inference, training, and reinforcement learning.",
+  "website": "https://www.together.ai",
+  "foundedYear": 2022,
+  "banner": "/companies/together/images/banner.png",
+  "logo": "/companies/together/images/logo.jpg",
+  "industry": "AI Infrastructure / GPU Cloud / Open Source AI / Developer Tools",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Series C",
+  "employees": "251-500 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 1333500000,
+      "currency": "USD",
+      "display": "$1.33B"
+    },
+    "valuation": {
+      "amount": 8300000000,
+      "currency": "USD",
+      "display": "$8.3B"
+    },
+    "annualRevenue": {
+      "amount": 1150000000,
+      "currency": "USD",
+      "display": "$1.15B (annualized bookings Q2 2026)"
+    }
+  },
+  "funding": {
+    "latestRoundId": "series-c-2026",
+    "investors": [
+      {
+        "name": "Lux Capital",
+        "website": "https://www.luxcapital.com",
+        "logo": "https://unavatar.io/www.luxcapital.com"
+      },
+      {
+        "name": "General Catalyst",
+        "website": "https://www.generalcatalyst.com",
+        "logo": "https://unavatar.io/www.generalcatalyst.com"
+      },
+      {
+        "name": "Kleiner Perkins",
+        "website": "https://www.kleinerperkins.com",
+        "logo": "https://unavatar.io/www.kleinerperkins.com"
+      },
+      {
+        "name": "Emergence Capital",
+        "website": "https://www.emergencecapital.com",
+        "logo": "https://unavatar.io/www.emergencecapital.com"
+      },
+      {
+        "name": "Coatue",
+        "website": "https://www.coatue.com",
+        "logo": "https://unavatar.io/www.coatue.com"
+      },
+      {
+        "name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "logo": "https://unavatar.io/www.nvidia.com"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "website": "https://salesforceventures.com",
+        "logo": "https://unavatar.io/salesforceventures.com"
+      },
+      {
+        "name": "Aramco Ventures",
+        "website": "https://aramcoventures.com",
+        "logo": "https://unavatar.io/aramcoventures.com"
+      },
+      {
+        "name": "Vista Equity Partners",
+        "website": "https://www.vistaequitypartners.com",
+        "logo": "https://unavatar.io/www.vistaequitypartners.com"
+      },
+      {
+        "name": "March Capital",
+        "website": "https://www.marchcapital.com",
+        "logo": "https://unavatar.io/www.marchcapital.com"
+      },
+      {
+        "name": "Pegatron",
+        "website": "https://www.pegatron.com.tw",
+        "logo": "https://unavatar.io/www.pegatron.com.tw"
+      },
+      {
+        "name": "DTCP",
+        "website": "https://www.dtcp.com",
+        "logo": "https://unavatar.io/www.dtcp.com"
+      },
+      {
+        "name": "Geodesic Capital",
+        "website": "https://www.geodesiccapital.com",
+        "logo": "https://unavatar.io/www.geodesiccapital.com"
+      },
+      {
+        "name": "PSP Partners",
+        "website": "https://www.psp-p.com",
+        "logo": "https://unavatar.io/www.psp-p.com"
+      },
+      {
+        "name": "Prosperity7 Ventures",
+        "website": "https://www.prosperity7ventures.com",
+        "logo": "https://unavatar.io/www.prosperity7ventures.com"
+      },
+      {
+        "name": "Greycroft",
+        "website": "https://www.greycroft.com",
+        "logo": "https://unavatar.io/www.greycroft.com"
+      },
+      {
+        "name": "NEA",
+        "website": "https://www.nea.com",
+        "logo": "https://unavatar.io/www.nea.com"
+      },
+      {
+        "name": "137 Ventures",
+        "website": "https://www.137ventures.com",
+        "logo": "https://unavatar.io/www.137ventures.com"
+      },
+      {
+        "name": "Long Journey Ventures",
+        "website": "https://www.longjourney.vc",
+        "logo": "https://unavatar.io/www.longjourney.vc"
+      },
+      {
+        "name": "SV Angel",
+        "website": "https://svangel.com",
+        "logo": "https://unavatar.io/svangel.com"
+      },
+      {
+        "name": "First Round Capital",
+        "website": "https://firstround.com",
+        "logo": "https://unavatar.io/firstround.com"
+      },
+      {
+        "name": "S Ventures (SentinelOne)",
+        "website": "https://www.sentinelone.com",
+        "logo": "https://unavatar.io/www.sentinelone.com"
+      },
+      {
+        "name": "Schneider Electric (SE Ventures)",
+        "website": "https://www.se.com",
+        "logo": "https://unavatar.io/www.se.com"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-c-2026",
+        "stage": "Series C",
+        "announcedAt": "2026-07-01",
+        "amount": {
+          "amount": 800000000,
+          "currency": "USD",
+          "display": "$800M"
+        },
+        "valuation": {
+          "amount": 8300000000,
+          "currency": "USD",
+          "display": "$8.3B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Aramco Ventures",
+            "website": "https://aramcoventures.com",
+            "logo": "https://unavatar.io/aramcoventures.com"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Vista Equity Partners",
+            "website": "https://www.vistaequitypartners.com",
+            "logo": "https://unavatar.io/www.vistaequitypartners.com"
+          },
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "https://unavatar.io/www.generalcatalyst.com"
+          },
+          {
+            "name": "Emergence Capital",
+            "website": "https://www.emergencecapital.com",
+            "logo": "https://unavatar.io/www.emergencecapital.com"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "https://unavatar.io/www.nvidia.com"
+          },
+          {
+            "name": "March Capital",
+            "website": "https://www.marchcapital.com",
+            "logo": "https://unavatar.io/www.marchcapital.com"
+          },
+          {
+            "name": "Pegatron",
+            "website": "https://www.pegatron.com.tw",
+            "logo": "https://unavatar.io/www.pegatron.com.tw"
+          },
+          {
+            "name": "S Ventures (SentinelOne)",
+            "website": "https://www.sentinelone.com",
+            "logo": "https://unavatar.io/www.sentinelone.com"
+          },
+          {
+            "name": "Schneider Electric (SE Ventures)",
+            "website": "https://www.se.com",
+            "logo": "https://unavatar.io/www.se.com"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://salesforceventures.com",
+            "logo": "https://unavatar.io/salesforceventures.com"
+          },
+          {
+            "name": "DTCP",
+            "website": "https://www.dtcp.com",
+            "logo": "https://unavatar.io/www.dtcp.com"
+          },
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "https://unavatar.io/www.luxcapital.com"
+          },
+          {
+            "name": "Geodesic Capital",
+            "website": "https://www.geodesiccapital.com",
+            "logo": "https://unavatar.io/www.geodesiccapital.com"
+          },
+          {
+            "name": "PSP Partners",
+            "website": "https://www.psp-p.com",
+            "logo": "https://unavatar.io/www.psp-p.com"
+          }
+        ],
+        "sourceUrl": "https://www.businesswire.com/news/home/20260701243402/en/Together-AI-Raises-%24800-Million-at-%248.3-Billion-Valuation-to-Make-Frontier-AI-Accessible-to-All"
+      },
+      {
+        "id": "series-b-2025",
+        "stage": "Series B",
+        "announcedAt": "2025-02-20",
+        "amount": {
+          "amount": 305000000,
+          "currency": "USD",
+          "display": "$305M"
+        },
+        "valuation": {
+          "amount": 3300000000,
+          "currency": "USD",
+          "display": "$3.3B"
+        },
+        "leadInvestors": [
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "https://unavatar.io/www.generalcatalyst.com"
+          },
+          {
+            "name": "Prosperity7 Ventures",
+            "website": "https://www.prosperity7ventures.com",
+            "logo": "https://unavatar.io/www.prosperity7ventures.com"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "https://unavatar.io/www.nvidia.com"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://salesforceventures.com",
+            "logo": "https://unavatar.io/salesforceventures.com"
+          },
+          {
+            "name": "Coatue",
+            "website": "https://www.coatue.com",
+            "logo": "https://unavatar.io/www.coatue.com"
+          },
+          {
+            "name": "Kleiner Perkins",
+            "website": "https://www.kleinerperkins.com",
+            "logo": "https://unavatar.io/www.kleinerperkins.com"
+          },
+          {
+            "name": "March Capital",
+            "website": "https://www.marchcapital.com",
+            "logo": "https://unavatar.io/www.marchcapital.com"
+          },
+          {
+            "name": "Emergence Capital",
+            "website": "https://www.emergencecapital.com",
+            "logo": "https://unavatar.io/www.emergencecapital.com"
+          },
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "https://unavatar.io/www.luxcapital.com"
+          },
+          {
+            "name": "SE Ventures",
+            "website": "https://www.se.com",
+            "logo": "https://unavatar.io/www.se.com"
+          },
+          {
+            "name": "Greycroft",
+            "website": "https://www.greycroft.com",
+            "logo": "https://unavatar.io/www.greycroft.com"
+          }
+        ],
+        "sourceUrl": "https://www.prnewswire.com/news-releases/together-ai-raises-305m-series-b-to-scale-ai-acceleration-cloud-for-open-source-and-enterprise-ai-302380967.html"
+      },
+      {
+        "id": "series-b-2024",
+        "stage": "Series B",
+        "announcedAt": "2024-03-14",
+        "amount": {
+          "amount": 106000000,
+          "currency": "USD",
+          "display": "$106M"
+        },
+        "valuation": {
+          "amount": 1250000000,
+          "currency": "USD",
+          "display": "$1.25B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://salesforceventures.com",
+            "logo": "https://unavatar.io/salesforceventures.com"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Coatue",
+            "website": "https://www.coatue.com",
+            "logo": "https://unavatar.io/www.coatue.com"
+          },
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "https://unavatar.io/www.luxcapital.com"
+          },
+          {
+            "name": "Emergence Capital",
+            "website": "https://www.emergencecapital.com",
+            "logo": "https://unavatar.io/www.emergencecapital.com"
+          }
+        ],
+        "sourceUrl": "https://siliconangle.com/2025/02/20/together-ai-raises-305m-ai-optimized-public-cloud"
+      },
+      {
+        "id": "series-a-2023",
+        "stage": "Series A",
+        "announcedAt": "2023-11-29",
+        "amount": {
+          "amount": 102500000,
+          "currency": "USD",
+          "display": "$102.5M"
+        },
+        "valuation": {
+          "amount": 1000000000,
+          "currency": "USD",
+          "display": "$1B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Kleiner Perkins",
+            "website": "https://www.kleinerperkins.com",
+            "logo": "https://unavatar.io/www.kleinerperkins.com"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "https://unavatar.io/www.nvidia.com"
+          },
+          {
+            "name": "Emergence Capital",
+            "website": "https://www.emergencecapital.com",
+            "logo": "https://unavatar.io/www.emergencecapital.com"
+          },
+          {
+            "name": "NEA",
+            "website": "https://www.nea.com",
+            "logo": "https://unavatar.io/www.nea.com"
+          },
+          {
+            "name": "Prosperity7 Ventures",
+            "website": "https://www.prosperity7ventures.com",
+            "logo": "https://unavatar.io/www.prosperity7ventures.com"
+          },
+          {
+            "name": "Greycroft",
+            "website": "https://www.greycroft.com",
+            "logo": "https://unavatar.io/www.greycroft.com"
+          },
+          {
+            "name": "137 Ventures",
+            "website": "https://www.137ventures.com",
+            "logo": "https://unavatar.io/www.137ventures.com"
+          },
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "https://unavatar.io/www.luxcapital.com"
+          },
+          {
+            "name": "Long Journey Ventures",
+            "website": "https://www.longjourney.vc",
+            "logo": "https://unavatar.io/www.longjourney.vc"
+          }
+        ],
+        "sourceUrl": "https://www.together.ai/blog/series-a"
+      },
+      {
+        "id": "seed-2023",
+        "stage": "Seed",
+        "announcedAt": "2023-05-15",
+        "amount": {
+          "amount": 20000000,
+          "currency": "USD",
+          "display": "$20M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Lux Capital",
+            "website": "https://www.luxcapital.com",
+            "logo": "https://unavatar.io/www.luxcapital.com"
+          }
+        ],
+        "investors": [
+          {
+            "name": "SV Angel",
+            "website": "https://svangel.com",
+            "logo": "https://unavatar.io/svangel.com"
+          },
+          {
+            "name": "First Round Capital",
+            "website": "https://firstround.com",
+            "logo": "https://unavatar.io/firstround.com"
+          },
+          {
+            "name": "Long Journey Ventures",
+            "website": "https://www.longjourney.vc",
+            "logo": "https://unavatar.io/www.longjourney.vc"
+          },
+          {
+            "name": "Definition Capital",
+            "website": null,
+            "logo": null
+          },
+          {
+            "name": "Susa Ventures",
+            "website": "https://www.susaventures.com",
+            "logo": "https://unavatar.io/www.susaventures.com"
+          },
+          {
+            "name": "Cadenza Ventures",
+            "website": "https://www.cadenzaventures.com",
+            "logo": "https://unavatar.io/www.cadenzaventures.com"
+          },
+          {
+            "name": "SCB 10X",
+            "website": "https://www.scb10x.com",
+            "logo": "https://unavatar.io/www.scb10x.com"
+          },
+          {
+            "name": "FactoryHQ",
+            "website": "https://www.factoryai.com",
+            "logo": "https://unavatar.io/www.factoryai.com"
+          }
+        ],
+        "sourceUrl": "https://www.together.ai/blog/seed-funding"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "AI Infrastructure System Engineer Bangalore",
+      "location": "Bangalore, India",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5180155007"
+    },
+    {
+      "title": "AI Infrastructure Systems Engineer",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5138540007"
+    },
+    {
+      "title": "AI Infrastructure Systems Engineer (Amsterdam & London)",
+      "location": "Amsterdam ",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4555544007"
+    },
+    {
+      "title": "Associate, Infrastructure Strategy & Operations",
+      "location": "San Francisco",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5152193007"
+    },
+    {
+      "title": "Commercial Counsel-Infrastructure and GTM",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5182998007"
+    },
+    {
+      "title": "Customer Success Engineer (CSE), GPU Cluster",
+      "location": "San Francisco",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5123203007"
+    },
+    {
+      "title": "Data Center Operations Coordinator",
+      "location": "San Francisco",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5160139007"
+    },
+    {
+      "title": "Director, Data Center Operations",
+      "location": "San Francisco",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5101202007"
+    },
+    {
+      "title": "Director of Brand",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238654007"
+    },
+    {
+      "title": "Director of Technical Accounting",
+      "location": "San Francisco",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5210729007"
+    },
+    {
+      "title": "Forward Deployed Engineer (Inference & Post-Training)",
+      "location": "San Francisco",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5131941007"
+    },
+    {
+      "title": "Forward Deployed Engineer (Inference & Post-Training) - Mandarin Speaking",
+      "location": "Singapore",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5199993007"
+    },
+    {
+      "title": "GTM Data Analytics Engineer",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5223190007"
+    },
+    {
+      "title": "GTM Engineer",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5178712007"
+    },
+    {
+      "title": "Head of Distribution Partnerships",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5171124007"
+    },
+    {
+      "title": "HR Coordinator- Amsterdam",
+      "location": "Amsterdam, Netherlands ",
+      "focus": "People Ops",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5214243007"
+    },
+    {
+      "title": "Junior/Senior or Staff Software Engineer, Inference / Compute Infrastructure Engineering",
+      "location": "India ",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5213325007"
+    },
+    {
+      "title": "Junior/Senior/Staff Software Engineer, Inference / Compute Infrastructure Engineering",
+      "location": "Amsterdam",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5213322007"
+    },
+    {
+      "title": "Lead/Manager AI Infra Systems Engineering Team (Amsterdam)",
+      "location": "Amsterdam ",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5090473007"
+    },
+    {
+      "title": "Lead/Manager Together Cloud Infrastructure",
+      "location": "Amsterdam",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5145183007"
+    },
+    {
+      "title": "Machine Learning Engineer - Inference",
+      "location": "San Francisco ",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4385540007"
+    },
+    {
+      "title": "Manager, International Cloud Sourcing",
+      "location": "San Francisco or NYC",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5211627007"
+    },
+    {
+      "title": "Platform Engineer, Model Shaping",
+      "location": "San Francisco ",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4790243007"
+    },
+    {
+      "title": "Product Manager, AI Infrastructure",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5172169007"
+    },
+    {
+      "title": "Research Engineer, Large-Scale Training",
+      "location": "San Francisco",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5199554007"
+    },
+    {
+      "title": "Research Engineer, Post-Training Inference",
+      "location": "San Francisco",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5179372007"
+    },
+    {
+      "title": "Sales Development Engineer",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4967737007"
+    },
+    {
+      "title": "Senior ABM & Campaign Manager",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5231263007"
+    },
+    {
+      "title": "Senior Backend Engineer, Inference Platform",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4835763007"
+    },
+    {
+      "title": "Senior Developer Productivity Engineer",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4774159007"
+    },
+    {
+      "title": "Senior Machine Learning Engineer, Voice AI",
+      "location": "San Francisco",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5088817007"
+    },
+    {
+      "title": "Senior Network Engineer",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5180977007"
+    },
+    {
+      "title": "Senior Network Engineer (Amsterdam)",
+      "location": "Amsterdam",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5026002007"
+    },
+    {
+      "title": "Senior Product Engineer",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4624894007"
+    },
+    {
+      "title": "Senior Product Engineer, Fullstack",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5192898007"
+    },
+    {
+      "title": "Senior Product Manager, Model APIs & Developer Experience",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5210951007"
+    },
+    {
+      "title": "Senior Program Manager, Data Center Delivery",
+      "location": "Remote",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5070981007"
+    },
+    {
+      "title": "Senior Software Engineer, Customer Insights",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5196805007"
+    },
+    {
+      "title": "Senior Software Engineer — Infra Agent Systems",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5233669007"
+    },
+    {
+      "title": "Senior Software Engineer — Infra Agent Systems",
+      "location": "Amsterdam",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5222294007"
+    },
+    {
+      "title": "Senior Software Engineer — Infra Agent Systems Remote India",
+      "location": "India",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5217063007"
+    },
+    {
+      "title": "Senior Software Engineer — Infra Agent Systems UK",
+      "location": "London",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5222270007"
+    },
+    {
+      "title": "Senior Software Engineer, Observability",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4971774007"
+    },
+    {
+      "title": "Senior Software Engineer - Together Cloud Infrastructure",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4749787007"
+    },
+    {
+      "title": "Senior Software Engineer Together Cloud Infrastructure",
+      "location": "Amsterdam",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5028862007"
+    },
+    {
+      "title": "Senior Software Engineer - Together Cloud Platform",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4753072007"
+    },
+    {
+      "title": "Senior Technical Recruiter, AI/ML Research",
+      "location": "San Francisco",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5135941007"
+    },
+    {
+      "title": "Senior University Recruiting Program Manager",
+      "location": "San Francisco",
+      "focus": "People Ops",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5209804007"
+    },
+    {
+      "title": "Solutions Architect",
+      "location": "San Francisco",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4627491007"
+    },
+    {
+      "title": "Solutions Architect (Inference)",
+      "location": "London",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4946442007"
+    },
+    {
+      "title": "Staff Engineer, Distributed Storage and HPC & AI Infrastructure",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5155722007"
+    },
+    {
+      "title": "Staff Engineer, Distributed Storage and HPC & AI Infrastructure",
+      "location": "Bangalore India",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5226095007"
+    },
+    {
+      "title": "Staff Machine Learning Engineer, Voice AI",
+      "location": "San Francisco",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5140763007"
+    },
+    {
+      "title": "Staff Platform Engineer, Service Infrastructure",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5180690007"
+    },
+    {
+      "title": "Staff Software Engineer, Inference / Compute Infrastructure Engineering",
+      "location": "London & Amsterdam",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5214645007"
+    },
+    {
+      "title": "Staff Software Engineer, Inference / Compute Infrastructure Engineering",
+      "location": "San Francisco",
+      "focus": "Engineering",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5186628007"
+    },
+    {
+      "title": "Strategic Account Executive",
+      "location": "San Francisco, New York City",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4543435007"
+    },
+    {
+      "title": "Strategic Account Executive Inference EMEA",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5230846007"
+    },
+    {
+      "title": "Strategic Finance Senior Associate - Compute",
+      "location": "San Francisco",
+      "focus": "Finance",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5212018007"
+    },
+    {
+      "title": "Strategic Finance Senior Associate - Revenue",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5210933007"
+    },
+    {
+      "title": "Systems Research Engineer, GPU Programming",
+      "location": "San Francisco",
+      "focus": "Research",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4188119007"
+    },
+    {
+      "title": "Technical Community Manager",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238633007"
+    },
+    {
+      "title": "Technical Compute Qualification Manager",
+      "location": "San Francisco or NYC",
+      "focus": "Operations",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5181912007"
+    },
+    {
+      "title": "Technical Support Engineer (GPU Cluster), India",
+      "location": "Pune or Bangalore, India",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4840844007"
+    },
+    {
+      "title": "Technical Support Engineer - India",
+      "location": "Pune or Bangalore, India",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5233125007"
+    },
+    {
+      "title": "Technical Support Engineer (Inference) - India Weekends",
+      "location": "Pune or Bangalore, India",
+      "focus": "Customer Success",
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5069532007"
+    }
+  ],
+  "people": [
+    {
+      "name": "Vipul Ved Prakash",
+      "role": "Founder & CEO",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120fca_image.png",
+      "linkedin": "https://www.linkedin.com/in/vipulved/",
+      "x": "https://x.com/vipulved"
+    },
+    {
+      "name": "Ce Zhang",
+      "role": "Founder & CTO",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120aea_653de63cc0189b84bf469bb0_653de3ecefe0c8de127ac827_CeZhang2.jpeg",
+      "linkedin": "https://www.linkedin.com/in/ce-zhang-6aa37419/",
+      "x": "https://twitter.com/ce__zhang"
+    },
+    {
+      "name": "Chris Ré",
+      "role": "Founder",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120c13_653de63bdeea6f44f7aa2918_653de3ffbdd0b1ea6c1a8e0b_chris-re.jpeg",
+      "linkedin": "https://www.linkedin.com/in/chrismre/",
+      "x": null
+    },
+    {
+      "name": "Tri Dao",
+      "role": "Founder & Chief Scientist",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120b91_653de63befe0c8de127c45ae_653de531718cbd5c51d388e5_tri-dao.png",
+      "linkedin": "https://www.linkedin.com/in/tri-dao-71544155/",
+      "x": "https://twitter.com/tri_dao"
+    },
+    {
+      "name": "Percy Liang",
+      "role": "Founder",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120bcc_653de63ce97d08f8ab4e5b46_653de4aee9279c3904152724_percy-liang.jpeg",
+      "linkedin": "https://www.linkedin.com/in/percy-liang-717b8a/",
+      "x": "https://twitter.com/percyliang"
+    },
+    {
+      "name": "Kai Mak",
+      "role": "Chief Revenue Officer",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120fba_Kai-mak-image.jpeg",
+      "linkedin": "https://www.linkedin.com/in/kaimaksf/",
+      "x": null
+    },
+    {
+      "name": "Charles Zedlewski",
+      "role": "Chief Product Officer",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f1212d7_Charles_Zedlewski.jpg",
+      "linkedin": "https://www.linkedin.com/in/charleszedlewski",
+      "x": null
+    },
+    {
+      "name": "Meicheng Shi",
+      "role": "SVP of Finance",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f121462_20250917_Mei_Shi.jpg",
+      "linkedin": "https://www.linkedin.com/in/meichengshi/",
+      "x": null
+    },
+    {
+      "name": "Mahadev Konar",
+      "role": "SVP of Engineering Infrastructure",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f121446_mkonar.png",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Dan Fu",
+      "role": "VP of Kernels",
+      "image": "https://cdn.prod.website-files.com/650c3b59079d92475f37b68f/653de63ca494cdf305d87e50_653de418efe0c8de127ae89e_dan-fu.png",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Max Ryabinin",
+      "role": "VP of Model Shaping",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f121463_Max_Ryabinin.jpg",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Leon Song",
+      "role": "VP of Research",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Charles Srisuwananukorn",
+      "role": "Founding VP of Engineering",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Nicolette Lea",
+      "role": "VP of People & Ops",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/69654e88dce9154b5f120a5f_653de63ae9279c390415f383_653de478c0189b84bf459aa2_nicolette-lea.jpeg",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Jon Fields",
+      "role": "VP of Sales",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Arielle Fidel",
+      "role": "VP of Strategic Partnerships",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Namrata Ram",
+      "role": "VP of Revenue Operations",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "James Barker",
+      "role": "VP of Sales, EMEA",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Sarung Tripathi",
+      "role": "VP of Customer Experience",
+      "image": null,
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Alon Gavrielov",
+      "role": "VP of Infrastructure Strategy",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/699ce1781c4457bef663bcd8_alon-gavrielov.png",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Susan Lee",
+      "role": "VP of Technical Program Management",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/699f043ffcf65ea9643b1206_susan-lee.jpg",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Derek Chamorro",
+      "role": "Head of Security",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6a4fce3055a24ce112c8a372_derek-chamorro-grayscale-white-bg.webp",
+      "linkedin": null,
+      "x": null
+    },
+    {
+      "name": "Vanessa Hsu",
+      "role": "Chief of Staff to the CEO",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/699f03a1cc6f73ee61699fa5_vanessa.jpg",
+      "linkedin": null,
+      "x": null
+    }
+  ],
+  "activity": [
+    {
+      "type": "funding",
+      "time": "Jul 1, 2026",
+      "dateTime": "2026-07-01",
+      "title": "Raised $800M Series C at $8.3B valuation",
+      "description": "Together AI raised an $800M Series C led by Aramco Ventures at an $8.3B post-money valuation. Annual bookings crossed $1.15B. Customers include Cursor, Cognition, Decagon, Eleven Labs, and Suno."
+    },
+    {
+      "type": "product",
+      "time": "Jul 20, 2026",
+      "dateTime": "2026-07-20",
+      "title": "Partnered with Y Combinator for dedicated GPU cluster",
+      "description": "Together AI and Y Combinator announced a partnership to deliver the first dedicated YC GPU cluster, giving YC portfolio companies easier access to compute for AI needs."
+    },
+    {
+      "type": "news",
+      "time": "Aug 11, 2026",
+      "dateTime": "2026-08-11",
+      "title": "Signed multi-year $240M agreement with IBM",
+      "description": "IBM and Together AI signed a multi-year $240M agreement to deploy a large cluster of NVIDIA HGX B300 systems on IBM Cloud for open-source model inference."
+    },
+    {
+      "type": "product",
+      "time": "Jul 15, 2026",
+      "dateTime": "2026-07-15",
+      "title": "Launched Thinking Machines Lab's Inkling model on day 0",
+      "description": "Together AI offered day zero access to Inkling, a multimodal mixture-of-experts model for text, image, and audio reasoning."
+    },
+    {
+      "type": "product",
+      "time": "May 15, 2025",
+      "dateTime": "2025-05-15",
+      "title": "Acquired Refuel.ai",
+      "description": "Together AI acquired Refuel.ai, a specialist in transforming unstructured data into structured, high-quality datasets for AI applications, bringing Refuel LLM-2 models into the platform."
+    },
+    {
+      "type": "product",
+      "time": "Dec 12, 2024",
+      "dateTime": "2024-12-12",
+      "title": "Acquired CodeSandbox",
+      "description": "Together AI acquired CodeSandbox to launch the first-of-its-kind code interpreter for generative AI, enabling agentic workflows and code execution at scale."
+    },
+    {
+      "type": "funding",
+      "time": "Feb 20, 2025",
+      "dateTime": "2025-02-20",
+      "title": "Raised $305M Series B at $3.3B valuation",
+      "description": "Together AI raised a $305M Series B led by General Catalyst and Prosperity7 Ventures at a $3.3B valuation. The company surpassed $100M in annualized revenue."
+    },
+    {
+      "type": "funding",
+      "time": "Mar 14, 2024",
+      "dateTime": "2024-03-14",
+      "title": "Raised $106M Series B at $1.25B valuation",
+      "description": "Together AI raised a $106M Series B led by Salesforce Ventures, reaching a $1.25B valuation."
+    },
+    {
+      "type": "funding",
+      "time": "Nov 29, 2023",
+      "dateTime": "2023-11-29",
+      "title": "Raised $102.5M Series A",
+      "description": "Together AI raised a $102.5M Series A led by Kleiner Perkins, with participation from NVIDIA and Emergence Capital."
+    },
+    {
+      "type": "funding",
+      "time": "May 15, 2023",
+      "dateTime": "2023-05-15",
+      "title": "Raised $20M Seed round",
+      "description": "Together AI raised a $20M seed round led by Lux Capital to build open-source AI and cloud platform."
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils";
+import { getCompanies } from "@/lib/company-profile";
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -14,11 +15,13 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const companies = await getCompanies()
+
   return (
     <html
       lang="en"
@@ -29,7 +32,7 @@ export default function RootLayout({
         <ThemeProvider>
           <TooltipProvider>
             <SidebarProvider className="h-svh min-h-0 overflow-hidden bg-sidebar">
-              <AppSidebar />
+              <AppSidebar companies={companies} />
               <SidebarInset className="min-h-0 overflow-hidden shadow-none! ring-border/25 ring-1">{children}</SidebarInset>
             </SidebarProvider>
           </TooltipProvider>

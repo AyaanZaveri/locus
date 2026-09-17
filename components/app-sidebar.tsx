@@ -1,3 +1,7 @@
+"use client"
+
+import { usePathname } from "next/navigation"
+
 import {
   BuildingIcon,
   SearchIcon,
@@ -25,7 +29,18 @@ const navigation = [
   { label: "Companies", icon: BuildingIcon },
 ]
 
-export function AppSidebar() {
+export function AppSidebar({
+  companies,
+}: {
+  companies: Array<{ name: string; slug: string; logo: string | null }>;
+}) {
+  const pathname = usePathname()
+  const companyNavigation = companies.map((company) => ({
+    name: company.name,
+    href: `/company/${company.slug}`,
+    logo: company.logo,
+  }))
+
   return (
     <Sidebar variant="inset">
       <SidebarHeader className="p-0">
@@ -65,6 +80,33 @@ export function AppSidebar() {
                   <SidebarMenuButton render={<a href={`#${item.label.toLowerCase()}`} />} tooltip={item.label} className="gap-3.5">
                     <item.icon className="size-3.5!" />
                     <span>{item.label}</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        <SidebarGroup>
+          <SidebarGroupLabel className="text-muted-foreground -ml-1 tracking-wide">
+            COMPANIES
+          </SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {companyNavigation.map((company) => (
+                <SidebarMenuItem key={company.name}>
+                  <SidebarMenuButton
+                    className="gap-3.5"
+                    isActive={pathname === company.href}
+                    render={<a href={company.href} />}
+                    tooltip={company.name}
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      className="size-4 rounded-sm object-cover"
+                      src={company.logo ?? "/autumn-base.svg"}
+                    />
+                    <span>{company.name}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

@@ -1,0 +1,200 @@
+{
+  "slug": "baseten",
+  "name": "Baseten",
+  "tagline": "Inference is everything",
+  "description": "Baseten is the AI inference company powering the world's most advanced AI applications. The company builds systems software that runs the entire workload for AI applications—from GPUs and autoscaling to observability, billing, and developer tools—so teams can focus on models and user experience instead of infrastructure. Baseten's customers include Cursor, Notion, Lovable, Abridge, Mercor, and others building specialized models for their domains.",
+  "website": "https://www.baseten.co",
+  "foundedYear": 2019,
+  "banner": "/companies/baseten/images/banner.png",
+  "logo": "/companies/baseten/images/logo.webp",
+  "industry": "AI Infrastructure",
+  "location": { "label": "San Francisco, California", "countryCode": "us" },
+  "stage": "Series F",
+  "employees": "251-500 employees",
+  "financials": { "totalFunding": { "amount": 2085000000, "currency": "USD", "display": "$2.09B" }, "valuation": { "amount": 13000000000, "currency": "USD", "display": "$13B" }, "annualRevenue": { "amount": 600000000, "currency": "USD", "display": "$600M (annualized Q1 2026)" } },
+  "funding": {
+    "latestRoundId": "series-f-2026",
+    "investors": [
+      { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" },
+      { "name": "IVP", "website": "https://www.ivp.com", "logoUrl": "https://unavatar.io/ivp.com" },
+      { "name": "Spark Capital", "website": "https://www.sparkcapital.com", "logoUrl": "https://unavatar.io/sparkcapital.com" },
+      { "name": "Altimeter Capital", "website": "https://www.altimetrbc.com", "logoUrl": "https://unavatar.io/altimetrbc.com" },
+      { "name": "Conviction", "website": "https://www.conviction.com", "logoUrl": "https://unavatar.io/conviction.com" },
+      { "name": "BOND Capital", "website": "https://www.bondcap.com", "logoUrl": "https://unavatar.io/bondcap.com" },
+      { "name": "CapitalG", "website": "https://www.capitalg.com", "logoUrl": "https://unavatar.io/capitalg.com" },
+      { "name": "NVIDIA", "website": "https://www.nvidia.com", "logoUrl": "https://unavatar.io/nvidia.com" },
+      { "name": "Sands Capital", "website": "https://www.sandscapital.com", "logoUrl": "https://unavatar.io/sandscapital.com" },
+      { "name": "Wellington Management", "website": "https://www.wellington.com", "logoUrl": "https://unavatar.io/wellington.com" },
+      { "name": "Battery Ventures", "website": "https://www.battery.com", "logoUrl": "https://unavatar.io/battery.com" },
+      { "name": "Blackbird Ventures", "website": "https://www.blackbird.vc", "logoUrl": "https://unavatar.io/blackbird.vc" },
+      { "name": "Durable Capital Partners", "website": "https://www.durablecap.com", "logoUrl": "https://unavatar.io/durablecap.com" },
+      { "name": "D. E. Shaw Ventures", "website": "https://www.deshaw.com", "logoUrl": "https://unavatar.io/deshaw.com" },
+      { "name": "01 Advisors", "website": "https://www.01a.com", "logoUrl": "https://unavatar.io/01a.com" },
+      { "name": "South Park Commons", "website": "https://www.southparkcommons.com", "logoUrl": "https://unavatar.io/southparkcommons.com" },
+      { "name": "BoxGroup", "website": "https://www.boxgroup.com", "logoUrl": "https://unavatar.io/boxgroup.com" },
+      { "name": "Premji Invest", "website": "https://www.premjiinvest.com", "logoUrl": "https://unavatar.io/premjiinvest.com" },
+      { "name": "Verified Capital", "website": null, "logoUrl": null },
+      { "name": "AI Fund", "website": "https://www.ai.fund", "logoUrl": "https://unavatar.io/ai.fund" },
+      { "name": "Lachy Groom", "website": null, "logoUrl": null },
+      { "name": "Base Case", "website": null, "logoUrl": null }
+    ],
+    "rounds": [
+      {
+        "id": "series-f-2026",
+        "stage": "Series F",
+        "announcedAt": "2026-06-22",
+        "amount": { "amount": 1500000000, "currency": "USD", "display": "$1.5B" },
+        "valuation": { "amount": 13000000000, "currency": "USD", "display": "$13B" },
+        "leadInvestors": [
+          { "name": "Altimeter Capital", "website": "https://www.altimetrbc.com", "logoUrl": "https://unavatar.io/altimetrbc.com" },
+          { "name": "Conviction", "website": "https://www.conviction.com", "logoUrl": "https://unavatar.io/conviction.com" },
+          { "name": "Spark Capital", "website": "https://www.sparkcapital.com", "logoUrl": "https://unavatar.io/sparkcapital.com" },
+          { "name": "Sands Capital", "website": "https://www.sandscapital.com", "logoUrl": "https://unavatar.io/sandscapital.com" },
+          { "name": "Wellington Management", "website": "https://www.wellington.com", "logoUrl": "https://unavatar.io/wellington.com" }
+        ],
+        "investors": [
+          { "name": "IVP", "website": "https://www.ivp.com", "logoUrl": "https://unavatar.io/ivp.com" },
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" },
+          { "name": "01 Advisors", "website": "https://www.01a.com", "logoUrl": "https://unavatar.io/01a.com" },
+          { "name": "Blackbird Ventures", "website": "https://www.blackbird.vc", "logoUrl": "https://unavatar.io/blackbird.vc" },
+          { "name": "Durable Capital Partners", "website": "https://www.durablecap.com", "logoUrl": "https://unavatar.io/durablecap.com" },
+          { "name": "Verified Capital", "website": null, "logoUrl": null },
+          { "name": "Battery Ventures", "website": "https://www.battery.com", "logoUrl": "https://unavatar.io/battery.com" },
+          { "name": "D. E. Shaw Ventures", "website": "https://www.deshaw.com", "logoUrl": "https://unavatar.io/deshaw.com" }
+        ],
+        "sourceUrl": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-%241.5-Billion-to-Power-the-Next-Era-of-AI-Inference"
+      },
+      {
+        "id": "series-e-2026",
+        "stage": "Series E",
+        "announcedAt": "2026-01-23",
+        "amount": { "amount": 300000000, "currency": "USD", "display": "$300M" },
+        "valuation": { "amount": 5000000000, "currency": "USD", "display": "$5B" },
+        "leadInvestors": [
+          { "name": "IVP", "website": "https://www.ivp.com", "logoUrl": "https://unavatar.io/ivp.com" },
+          { "name": "CapitalG", "website": "https://www.capitalg.com", "logoUrl": "https://unavatar.io/capitalg.com" }
+        ],
+        "investors": [
+          { "name": "NVIDIA", "website": "https://www.nvidia.com", "logoUrl": "https://unavatar.io/nvidia.com" },
+          { "name": "01 Advisors", "website": "https://www.01a.com", "logoUrl": "https://unavatar.io/01a.com" },
+          { "name": "Altimeter Capital", "website": "https://www.altimetrbc.com", "logoUrl": "https://unavatar.io/altimetrbc.com" },
+          { "name": "Battery Ventures", "website": "https://www.battery.com", "logoUrl": "https://unavatar.io/battery.com" },
+          { "name": "BOND Capital", "website": "https://www.bondcap.com", "logoUrl": "https://unavatar.io/bondcap.com" },
+          { "name": "BoxGroup", "website": "https://www.boxgroup.com", "logoUrl": "https://unavatar.io/boxgroup.com" },
+          { "name": "Blackbird Ventures", "website": "https://www.blackbird.vc", "logoUrl": "https://unavatar.io/blackbird.vc" },
+          { "name": "Conviction", "website": "https://www.conviction.com", "logoUrl": "https://unavatar.io/conviction.com" },
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" }
+        ],
+        "sourceUrl": "https://www.businesswire.com/news/home/20260123035833/en/Baseten-Raises-$300M-at-a-$5B-Valuation-to-Power-a-Multi-Model-Future"
+      },
+      {
+        "id": "series-d-2025",
+        "stage": "Series D",
+        "announcedAt": "2025-09-05",
+        "amount": { "amount": 150000000, "currency": "USD", "display": "$150M" },
+        "valuation": { "amount": 2150000000, "currency": "USD", "display": "$2.15B" },
+        "leadInvestors": [
+          { "name": "BOND Capital", "website": "https://www.bondcap.com", "logoUrl": "https://unavatar.io/bondcap.com" }
+        ],
+        "investors": [
+          { "name": "CapitalG", "website": "https://www.capitalg.com", "logoUrl": "https://unavatar.io/capitalg.com" },
+          { "name": "Premji Invest", "website": "https://www.premjiinvest.com", "logoUrl": "https://unavatar.io/premjiinvest.com" },
+          { "name": "Conviction", "website": "https://www.conviction.com", "logoUrl": "https://unavatar.io/conviction.com" },
+          { "name": "01 Advisors", "website": "https://www.01a.com", "logoUrl": "https://unavatar.io/01a.com" },
+          { "name": "IVP", "website": "https://www.ivp.com", "logoUrl": "https://unavatar.io/ivp.com" },
+          { "name": "Spark Capital", "website": "https://www.sparkcapital.com", "logoUrl": "https://unavatar.io/sparkcapital.com" },
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" },
+          { "name": "BoxGroup", "website": "https://www.boxgroup.com", "logoUrl": "https://unavatar.io/boxgroup.com" }
+        ],
+        "sourceUrl": "https://www.businesswire.com/news/home/20250905680113/en/Baseten-Secures-%24150M-Series-D-as-the-Premier-Inference-Platform-for-AIs-App-Layer"
+      },
+      {
+        "id": "series-c-2025",
+        "stage": "Series C",
+        "announcedAt": "2025-02-19",
+        "amount": { "amount": 75000000, "currency": "USD", "display": "$75M" },
+        "valuation": { "amount": 825000000, "currency": "USD", "display": "$825M" },
+        "leadInvestors": [
+          { "name": "IVP", "website": "https://www.ivp.com", "logoUrl": "https://unavatar.io/ivp.com" },
+          { "name": "Spark Capital", "website": "https://www.sparkcapital.com", "logoUrl": "https://unavatar.io/sparkcapital.com" }
+        ],
+        "investors": [
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" },
+          { "name": "Conviction", "website": "https://www.conviction.com", "logoUrl": "https://unavatar.io/conviction.com" },
+          { "name": "South Park Commons", "website": "https://www.southparkcommons.com", "logoUrl": "https://unavatar.io/southparkcommons.com" },
+          { "name": "01 Advisors", "website": "https://www.01a.com", "logoUrl": "https://unavatar.io/01a.com" },
+          { "name": "Lachy Groom", "website": null, "logoUrl": null }
+        ],
+        "sourceUrl": "https://www.businesswire.com/news/home/20250218263765/en/Baseten-Lands-%2475M-from-IVP-and-Spark-to-Solve-AIs-Biggest-Bottleneck-to-Ubiquitous-Adoption-Inference"
+      },
+      {
+        "id": "series-b-2024",
+        "stage": "Series B",
+        "announcedAt": "2024-03-04",
+        "amount": { "amount": 40000000, "currency": "USD", "display": "$40M" },
+        "valuation": { "amount": 200000000, "currency": "USD", "display": "$200M" },
+        "leadInvestors": [
+          { "name": "IVP", "website": "https://www.ivp.com", "logoUrl": "https://unavatar.io/ivp.com" },
+          { "name": "Spark Capital", "website": "https://www.sparkcapital.com", "logoUrl": "https://unavatar.io/sparkcapital.com" }
+        ],
+        "investors": [
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" },
+          { "name": "South Park Commons", "website": "https://www.southparkcommons.com", "logoUrl": "https://unavatar.io/southparkcommons.com" },
+          { "name": "Lachy Groom", "website": null, "logoUrl": null },
+          { "name": "Base Case", "website": null, "logoUrl": null }
+        ],
+        "sourceUrl": "https://www.baseten.co/blog/announcing-our-series-b/"
+      },
+      {
+        "id": "series-a-2022",
+        "stage": "Series A",
+        "announcedAt": "2022-04-26",
+        "amount": { "amount": 12000000, "currency": "USD", "display": "$12M" },
+        "valuation": null,
+        "leadInvestors": [
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" }
+        ],
+        "investors": [
+          { "name": "South Park Commons", "website": "https://www.southparkcommons.com", "logoUrl": "https://unavatar.io/southparkcommons.com" },
+          { "name": "Lachy Groom", "website": null, "logoUrl": null }
+        ],
+        "sourceUrl": "https://www.baseten.co/blog/announcing-our-series-a/"
+      },
+      {
+        "id": "seed-2021",
+        "stage": "Seed",
+        "announcedAt": "2021-12-02",
+        "amount": { "amount": 8000000, "currency": "USD", "display": "$8M" },
+        "valuation": null,
+        "leadInvestors": [
+          { "name": "AI Fund", "website": "https://www.ai.fund", "logoUrl": "https://unavatar.io/ai.fund" },
+          { "name": "Greylock Partners", "website": "https://greylock.com", "logoUrl": "https://unavatar.io/greylock.com" }
+        ],
+        "investors": [
+          { "name": "South Park Commons", "website": "https://www.southparkcommons.com", "logoUrl": "https://unavatar.io/southparkcommons.com" },
+          { "name": "Lachy Groom", "website": null, "logoUrl": null }
+        ],
+        "sourceUrl": "https://www.baseten.co/blog/announcing-our-series-a/"
+      }
+    ]
+  },
+  "jobs": [],
+  "people": [
+    { "name": "Tuhin Srivastava", "role": "Co-Founder & CEO", "image": null, "linkedin": "https://www.linkedin.com/in/tuhin-srivastava-60601114/", "x": "https://x.com/tuhinone" },
+    { "name": "Amir Haghighat", "role": "Co-Founder & CTO", "image": null, "linkedin": null, "x": null },
+    { "name": "Phil Howes", "role": "Co-Founder & Chief Scientist", "image": null, "linkedin": null, "x": null },
+    { "name": "Pankaj Gupta", "role": "Co-Founder", "image": null, "linkedin": null, "x": null },
+    { "name": "Jay Simons", "role": "Board Member", "image": null, "linkedin": null, "x": null },
+    { "name": "Sarah Guo-Grady", "role": "Board Member", "image": null, "linkedin": null, "x": null }
+  ],
+  "activity": [
+    { "type": "product", "time": "Sep 10, 2026", "dateTime": "2026-09-10", "title": "Acquired Blaxel to build infrastructure for AI agents", "description": "Baseten acquired Blaxel, a company building secure, persistent execution environments (sandboxes) for AI agents, to expand into agentic infrastructure with microVM-based sandboxes that suspend and resume in 25ms." },
+    { "type": "funding", "time": "Jun 22, 2026", "dateTime": "2026-06-22", "title": "Raised $1.5B Series F at $13B valuation", "description": "Baseten raised a $1.5B Series F led by Altimeter Capital, Conviction, and Spark Capital, with Sands Capital and Wellington Management as co-leads. Revenue grew 20x YoY, processing over 1 billion inference calls daily across 87 clusters and 18 clouds." },
+    { "type": "product", "time": "May 8, 2026", "dateTime": "2026-05-08", "title": "Launched Baseten Loops SDK for RL training", "description": "Introduced Loops, a training SDK supporting long sequence length (131K+), async RL, and one-click checkpoint deploys to the Baseten Inference Stack. Early partners include Harvey and OpenEvidence." },
+    { "type": "funding", "time": "Jan 23, 2026", "dateTime": "2026-01-23", "title": "Raised $300M Series E at $5B valuation", "description": "Baseten raised a $300M Series E led by IVP and CapitalG, with NVIDIA investing $150M. This was the company's third fundraise in twelve months." },
+    { "type": "news", "time": "Dec 10, 2025", "dateTime": "2025-12-10", "title": "Acquired Parsed, a reinforcement learning startup", "description": "Baseten acquired Parsed, a reinforcement learning startup specializing in post-training and continual learning for large models, to unify inference, data, evaluation, and post-training in a single platform." },
+    { "type": "news", "time": "Dec 3, 2025", "dateTime": "2025-12-03", "title": "Signed Strategic Collaboration Agreement with AWS", "description": "Baseten and AWS deepened their technical integration and joint go-to-market efforts, giving enterprises a secure, compliant way to use Baseten's inference on their own AWS infrastructure." },
+    { "type": "funding", "time": "Sep 5, 2025", "dateTime": "2025-09-05", "title": "Raised $150M Series D at $2.15B valuation", "description": "Baseten raised a $150M Series D led by BOND Capital, with Jay Simons joining the Board. Existing investors Conviction, 01A, IVP, Spark, and Greylock also participated." },
+    { "type": "funding", "time": "Feb 19, 2025", "dateTime": "2025-02-19", "title": "Raised $75M Series C", "description": "Baseten raised a $75M Series C co-led by IVP and Spark Capital, bringing total funding to $135M. Revenue grew 5x YoY with 99.999% uptime." }
+  ]
+}

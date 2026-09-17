@@ -1,0 +1,19 @@
+{
+  "slug": "mintlify",
+  "name": "Mintlify",
+  "tagline": "Knowledge infrastructure for AI",
+  "description": "Mintlify powers docs for 20,000+ companies, reaching 100M+ developers a year. When humans or agents need to understand your product, they start with your docs. We make sure they find the right answers. We're hiring in SF at mintlify.com/careers.",
+  "website": "https://mintlify.com",
+  "foundedYear": 2022,
+  "banner": "/companies/mintlify/images/banner.webp",
+  "logo": "/companies/mintlify/images/logo.webp",
+  "industry": "Software Development",
+  "location": { "label": "San Francisco, California", "countryCode": "us" },
+  "stage": "Series B",
+  "employees": "201-500 employees",
+  "financials": { "totalFunding": { "amount": 67000000, "currency": "USD", "display": "$67M" }, "valuation": { "amount": 500000000, "currency": "USD", "display": "$500M" }, "annualRevenue": null },
+  "funding": { "latestRoundId": "series-b-2026", "investors": [], "rounds": [{ "id": "series-b-2026", "stage": "Series B", "announcedAt": "2026-04-14", "amount": { "amount": 45000000, "currency": "USD", "display": "$45M" }, "valuation": { "amount": 500000000, "currency": "USD", "display": "$500M" }, "leadInvestors": [], "investors": [], "sourceUrl": "https://www.mintlify.com/blog/series-b" }] },
+  "jobs": [],
+  "people": [{ "name": "Han Wang", "role": "Co-Founder & CEO", "image": "/companies/mintlify/people/han-wang/avatar.jpg", "linkedin": "https://www.linkedin.com/in/handotdev/", "x": "https://x.com/handotdev" }, { "name": "Hahnbee Lee", "role": "Co-Founder", "image": "/companies/mintlify/people/hahnbee-lee/avatar.jpg", "linkedin": "https://www.linkedin.com/in/hahnbee-lee/", "x": "https://x.com/hahnbeelee" }, { "name": "Dean Sliney", "role": "Head of Support Engineering", "image": "/companies/mintlify/people/dean-sliney/avatar.jpg", "linkedin": "https://www.linkedin.com/in/dean-sliney/" }, { "name": "Justin Torre", "role": "Head of Enterprise Solutions", "image": "/companies/mintlify/people/justin-torre/avatar.jpg", "linkedin": "https://www.linkedin.com/in/justintorre/", "x": "https://x.com/justintorre" }, { "name": "Ruairi Wiepking", "role": "Head of Sales", "image": "/companies/mintlify/people/ruairi-wiepking/avatar.jpg", "linkedin": "https://www.linkedin.com/in/ruairiwiepking/" }],
+  "activity": [{ "type": "product", "time": "Sep 15, 2026", "dateTime": "2026-09-15", "title": "Released Automations, rebuilt", "description": "Mintlify redesigned Automations with pre-built workflows optimized for common documentation use cases." }, { "type": "product", "time": "Sep 8, 2026", "dateTime": "2026-09-08", "title": "Introduced outcome-based AI pricing", "description": "Mintlify changed AI actions to a credit-based model where users pay based on delivered results." }, { "type": "documentation", "time": "Sep 1, 2026", "dateTime": "2026-09-01", "title": "Improved llms.txt generation for large docs sites", "description": "Mintlify rebuilt llms.txt generation using hierarchical files so AI agents can access larger documentation sets without loading everything at once." }, { "type": "funding", "time": "Apr 14, 2026", "dateTime": "2026-04-14", "title": "Raised $45M Series B", "description": "Mintlify raised a Series B led by Andreessen Horowitz and Salesforce Ventures, bringing total funding to $67M." }, { "type": "documentation", "time": "Aug 6, 2026", "dateTime": "2026-08-06", "title": "Launched Mintlify Index", "description": "Mintlify introduced an index of thousands of Mintlify-powered documentation sites designed for natural-language retrieval by coding agents." }]
+}
