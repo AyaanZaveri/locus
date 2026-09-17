@@ -60,7 +60,7 @@ const activity = [
 
 export default function Page() {
   return (
-    <main id="top" className="p-6">
+    <main id="top" className="min-h-0 flex-1 overflow-y-auto p-6">
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_22rem]">
         <div>
       <div className="relative max-w-8xl">
@@ -156,7 +156,7 @@ export default function Page() {
         </div>
       </section>
         </div>
-        <aside className="h-fit pt-2 xl:sticky xl:top-6">
+        <aside className="h-fit pt-2">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold tracking-tight">Activity</h2>
             <Button className="-translate-y-px" variant="ghost">

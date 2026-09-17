@@ -25,12 +25,12 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
     >
-      <body>
+      <body className="bg-sidebar">
         <ThemeProvider>
           <TooltipProvider>
-            <SidebarProvider>
+            <SidebarProvider className="h-svh min-h-0 overflow-hidden bg-sidebar">
               <AppSidebar />
-              <SidebarInset className="shadow-none! ring-border/25 ring-1">{children}</SidebarInset>
+              <SidebarInset className="min-h-0 overflow-hidden shadow-none! ring-border/25 ring-1">{children}</SidebarInset>
             </SidebarProvider>
           </TooltipProvider>
         </ThemeProvider>
