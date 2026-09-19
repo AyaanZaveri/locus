@@ -7,7 +7,7 @@
   "foundedYear": 2015,
   "banner": "/companies/vercel/images/banner.png",
   "logo": "/companies/vercel/images/logo.png",
-  "industry": "Developer Tools / Cloud Platform / Edge Computing / AI Infrastructure",
+  "industry": "Developer Tools",
   "location": {
     "label": "San Francisco, California",
     "countryCode": "us"
@@ -1184,5 +1184,6 @@
       "title": "Raised $21M Series A",
       "description": "ZEIT, shortly before rebranding to Vercel, raised $21M led by Accel with participation from GitHub's CEO and others."
     }
-  ]
+  ],
+  "bannerPosition": "object-[center_70%]"
 }

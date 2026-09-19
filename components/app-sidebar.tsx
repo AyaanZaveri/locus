@@ -46,7 +46,7 @@ export function AppSidebar({
       <SidebarHeader className="p-0">
         <SidebarMenu>
           <SidebarMenuItem>
-            <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-2">
+            <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-2 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-[max(0.75rem,env(safe-area-inset-top))]">
               <SidebarMenuButton className="h-auto flex-1 gap-2.5 p-0 hover:bg-transparent" render={<a href="#top" />} size="lg">
                 <img alt="Autumn" className="size-5" src="/autumn-base.svg" />
                 <span className="font-sans text-[18px] leading-6.75 font-normal">Autumn</span>
