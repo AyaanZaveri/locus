@@ -94,10 +94,10 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             </div>
             <SidebarTrigger
               aria-label="Open sidebar"
-              className="absolute top-3 left-3 border-border/30 bg-background/90 text-foreground shadow-xs backdrop-blur-sm hover:bg-background/80 md:hidden"
+              className="absolute top-3 left-3 border-border bg-background/90 text-foreground shadow-xs backdrop-blur-sm hover:bg-background md:hidden"
               size="icon"
             />
-            <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border/50 bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
+            <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
               {profile.logo ? (
                 <img
                   alt={`${profile.name} logo`}
@@ -178,8 +178,8 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                           <div className="relative flex justify-center">
                             <span
                               className={cn(
-                                "mt-1.5 size-2 shrink-0 rounded-full bg-muted-foreground/50",
-                                isLatest && "bg-[#d86b23]",
+                                "mt-1.5 size-2 shrink-0 rounded-full bg-muted-foreground",
+                                isLatest && "bg-emerald-500",
                               )}
                             />
                             {!isLast ? (
@@ -225,7 +225,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                             />
                                           </TooltipTrigger>
                                           <TooltipContent
-                                            className="gap-1.5 bg-background/90 px-2 py-1.5 text-foreground ring-1 ring-border/50 shadow-xs backdrop-blur-sm"
+                                            className="gap-1.5 bg-background/90 px-2 py-1.5 text-foreground ring-1 ring-border shadow-xs backdrop-blur-sm"
                                             showArrow={false}
                                           >
                                             <img
@@ -295,7 +295,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {profile.people.map((person) => (
                   <div
-                    className="flex items-center gap-3 rounded-lg border border-border/50 bg-background p-3"
+                    className="flex items-center gap-3 rounded-lg border border-border bg-background p-3"
                     key={person.name}
                   >
                     <Avatar className="size-10">
@@ -385,7 +385,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                   {profile.jobs.map((job, index) => {
                     const jobKey = `${job.title}-${job.location}-${job.focus}-${job.url ?? ""}-${index}`;
                     const card = (
-                      <article className="group flex items-center gap-3 rounded-lg border border-border/50 bg-background p-3 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-muted/25 motion-reduce:transition-none">
+                      <article className="group flex items-center gap-3 rounded-lg border border-border bg-background p-3 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-muted motion-reduce:transition-none">
                         {profile.logo ? (
                           <img
                             alt={`${profile.name} logo`}
@@ -463,7 +463,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                   <div className="relative flex justify-center">
                     <Icon
                       aria-hidden="true"
-                      className="mt-0.5 size-3 shrink-0 text-[#d86b23]"
+                      className="mt-0.5 size-3 shrink-0 text-emerald-500"
                       strokeWidth={2.25}
                     />
                     {!isLast ? (

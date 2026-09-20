@@ -134,8 +134,8 @@ export function CompanySearch({
                 <div className="min-w-0 flex-1">
                   <p className="truncate font-medium">{company.name}</p>
                   <div className="mt-1 flex flex-wrap gap-1.5">
-                    <Badge className="h-5 border-border/50 bg-background/70 px-1.5 text-[11px]" variant="outline">{company.industry}</Badge>
-                    <Badge className="h-5 border-border/50 bg-background/70 px-1.5 text-[11px]" variant="outline">
+                    <Badge className="h-5 border-border bg-background px-1.5 text-[11px]" variant="outline">{company.industry}</Badge>
+                    <Badge className="h-5 border-border bg-background px-1.5 text-[11px]" variant="outline">
                       <img
                         alt=""
                         aria-hidden="true"

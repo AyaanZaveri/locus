@@ -40,7 +40,7 @@ function DrawerContent({
         <DrawerPrimitive.Popup
           data-slot="drawer-content"
           className={cn(
-            "flex h-[calc(100svh-1rem)] w-[min(var(--drawer-width),calc(100vw-2rem))] flex-col overflow-y-auto overscroll-contain rounded-xl ring-1 ring-border/50 bg-background text-foreground shadow-none! opacity-[0.9999] outline-none touch-auto [transform:translateX(var(--drawer-swipe-movement-x))] transition-[transform,opacity] duration-[450ms] ease-[cubic-bezier(0.32,0.72,0,1)] data-swiping:select-none data-ending-style:[transform:translateX(calc(-100%_-_0.75rem))] data-ending-style:opacity-[0.9998] data-ending-style:duration-[calc(var(--drawer-swipe-strength)*400ms)] data-starting-style:[transform:translateX(calc(-100%_-_0.75rem))] data-starting-style:opacity-[0.9998]",
+            "flex h-[calc(100svh-1rem)] w-[min(var(--drawer-width),calc(100vw-2rem))] flex-col overflow-y-auto overscroll-contain rounded-xl ring-1 ring-border bg-background text-foreground shadow-none! opacity-[0.9999] outline-none touch-auto [transform:translateX(var(--drawer-swipe-movement-x))] transition-[transform,opacity] duration-[450ms] ease-[cubic-bezier(0.32,0.72,0,1)] data-swiping:select-none data-ending-style:[transform:translateX(calc(-100%_-_0.75rem))] data-ending-style:opacity-[0.9998] data-ending-style:duration-[calc(var(--drawer-swipe-strength)*400ms)] data-starting-style:[transform:translateX(calc(-100%_-_0.75rem))] data-starting-style:opacity-[0.9998]",
             className,
           )}
           {...props}
