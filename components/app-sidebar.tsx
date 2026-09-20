@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { usePathname } from "next/navigation"
 
 import {
@@ -21,10 +22,11 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import { ModeToggle } from "@/components/mode-toggle"
+import { CompanySearch } from "@/components/company-search"
+import type { CompanyProfile } from "@/lib/company-profile"
 
 const navigation = [
   { label: "New chat", icon: SquarePenIcon },
-  { label: "Spotlight", icon: SearchIcon },
   { label: "People", icon: UserRoundIcon },
   { label: "Companies", icon: BuildingIcon },
 ]
@@ -32,9 +34,10 @@ const navigation = [
 export function AppSidebar({
   companies,
 }: {
-  companies: Array<{ name: string; slug: string; logo: string | null }>;
+  companies: CompanyProfile[];
 }) {
   const pathname = usePathname()
+  const [searchOpen, setSearchOpen] = useState(false)
   const companyNavigation = companies.map((company) => ({
     name: company.name,
     href: `/company/${company.slug}`,
@@ -46,7 +49,7 @@ export function AppSidebar({
       <SidebarHeader className="p-0">
         <SidebarMenu>
           <SidebarMenuItem>
-            <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-2 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-[max(0.75rem,env(safe-area-inset-top))]">
+            <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-3 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-4">
               <SidebarMenuButton className="h-auto flex-1 gap-2.5 p-0 hover:bg-transparent" render={<a href="#top" />} size="lg">
                 <img alt="Autumn" className="size-5" src="/autumn-base.svg" />
                 <span className="font-sans text-[18px] leading-6.75 font-normal">Autumn</span>
@@ -60,7 +63,7 @@ export function AppSidebar({
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {navigation.slice(0, 2).map((item) => (
+              {navigation.slice(0, 1).map((item) => (
                 <SidebarMenuItem key={item.label}>
                   <SidebarMenuButton render={<a href={`#${item.label.toLowerCase()}`} />} tooltip={item.label} className="gap-3.5">
                     <item.icon className="size-3.5!" />
@@ -68,6 +71,16 @@ export function AppSidebar({
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  className="gap-3.5"
+                  onClick={() => setSearchOpen(true)}
+                  tooltip="Search companies, people, and jobs"
+                >
+                  <SearchIcon className="size-3.5!" />
+                  <span>Spotlight</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
@@ -114,6 +127,11 @@ export function AppSidebar({
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
+      <CompanySearch
+        companies={companies}
+        onOpenChange={setSearchOpen}
+        open={searchOpen}
+      />
     </Sidebar>
   )
 }
