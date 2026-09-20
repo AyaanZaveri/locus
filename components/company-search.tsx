@@ -91,7 +91,7 @@ export function CompanySearch({
       description="Search companies, people, and open jobs."
       onOpenChange={onOpenChange}
       open={open}
-      title="Search Autumn"
+      title="Search Locus"
       className="sm:max-w-xl"
     >
       <Command

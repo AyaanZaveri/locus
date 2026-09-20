@@ -1,0 +1,710 @@
+{
+  "slug": "groq",
+  "name": "Groq",
+  "tagline": "The premier neocloud for fast inference",
+  "description": "Groq is an American AI infrastructure company that pioneered the Language Processing Unit (LPU), a purpose-built inference accelerator, and now operates a global AI inference cloud. Founded in 2016 by former Google engineers led by TPU designer Jonathan Ross, Groq launched the GroqCloud developer platform in 2024 and scaled to 13 data centers across North America, Europe, the Middle East, and Asia-Pacific, serving more than six million developers. In December 2025, Groq entered a non-exclusive licensing agreement with NVIDIA under which NVIDIA agreed to pay roughly $20 billion for rights to Groq's inference technology and hired Ross and several senior executives; Groq continued to operate as an independent company. Groq is now focused on building a neocloud for fast, low-cost inference on NVIDIA's accelerated computing alongside its own LPU-derived LPX technology.",
+  "website": "https://groq.com",
+  "foundedYear": 2016,
+  "banner": "/companies/groq/images/banner.png",
+  "logo": "/companies/groq/images/logo.png",
+  "industry": "AI Inference",
+  "location": {
+    "label": "Mountain View, California",
+    "countryCode": "us"
+  },
+  "stage": "Series A",
+  "employees": "251-500 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 2752300000,
+      "currency": "USD",
+      "display": "$2.75B"
+    },
+    "valuation": {
+      "amount": 3500000000,
+      "currency": "USD",
+      "display": "$3.5B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-a-2026",
+    "investors": [
+      {
+        "name": "Disruptive",
+        "website": "https://disruptive.tech",
+        "logo": "/investors/disruptive.png"
+      },
+      {
+        "name": "Infinitum Partners",
+        "website": "https://infinitumpartners.com",
+        "logo": "/investors/infinitum-partners.png"
+      },
+      {
+        "name": "BlackRock Private Equity Partners",
+        "website": "https://www.blackrock.com",
+        "logo": "/investors/blackrock.png"
+      },
+      {
+        "name": "Tiger Global Management",
+        "website": "https://www.tigerglobal.com",
+        "logo": "/investors/tiger-global.png"
+      },
+      {
+        "name": "D1 Capital Partners",
+        "website": null,
+        "logo": "/investors/d1-capital.png"
+      },
+      {
+        "name": "Social Capital",
+        "website": "https://www.socialcapital.com",
+        "logo": "/investors/social-capital.png"
+      },
+      {
+        "name": "Neuberger Berman",
+        "website": "https://www.nb.com",
+        "logo": "/investors/neuberger-berman.png"
+      },
+      {
+        "name": "Cisco Investments",
+        "website": "https://www.cisco.com",
+        "logo": "/investors/cisco-investments.png"
+      },
+      {
+        "name": "Samsung Catalyst Fund",
+        "website": "https://www.samsung.com",
+        "logo": "/investors/samsung-catalyst-fund.png"
+      },
+      {
+        "name": "Deutsche Telekom Capital Partners",
+        "website": "https://dtcp.com",
+        "logo": "/investors/dtcp.png"
+      },
+      {
+        "name": "Altimeter Capital",
+        "website": "https://www.altimeter.com",
+        "logo": "/investors/altimeter-capital.png"
+      },
+      {
+        "name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "Addition",
+        "website": "https://www.addition.com",
+        "logo": "/investors/addition-ventures.png"
+      },
+      {
+        "name": "GCM Grosvenor",
+        "website": "https://www.gcmgrosvenor.com",
+        "logo": "/investors/gcm-grosvenor.png"
+      },
+      {
+        "name": "TDK Ventures",
+        "website": "https://www.tdk-ventures.com",
+        "logo": "/investors/tdk-ventures.png"
+      },
+      {
+        "name": "KDDI Open Innovation Fund III",
+        "website": "https://www.globalbrains.com",
+        "logo": "/investors/global-brain.png"
+      },
+      {
+        "name": "Type One Ventures",
+        "website": "https://type1ventures.com",
+        "logo": "/investors/type-one-ventures.png"
+      },
+      {
+        "name": "1789 Capital",
+        "website": null,
+        "logo": "/investors/1789-capital.png"
+      },
+      {
+        "name": "The Spruce House Partnership",
+        "website": null,
+        "logo": null
+      },
+      {
+        "name": "Xⁿ",
+        "website": null,
+        "logo": "/investors/xn.png"
+      },
+      {
+        "name": "Firebolt Ventures",
+        "website": "https://www.fireboltventures.com",
+        "logo": "/investors/firebolt-ventures.png"
+      },
+      {
+        "name": "General Global Capital",
+        "website": "https://www.genglobalcapital.com",
+        "logo": "/investors/general-global-capital.png"
+      },
+      {
+        "name": "Tru Arrow Partners",
+        "website": "https://truarrow.com",
+        "logo": "/investors/tru-arrow-partners.png"
+      },
+      {
+        "name": "XTX Ventures",
+        "website": "https://www.xtxmarkets.com/ventures/",
+        "logo": "/investors/xtx-ventures.png"
+      },
+      {
+        "name": "Boardman Bay Capital Management",
+        "website": "https://www.boardmanbay.com",
+        "logo": "/investors/boardman-bay.png"
+      },
+      {
+        "name": "Conconi Growth Partners",
+        "website": null,
+        "logo": null
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-a-2026",
+        "stage": "Series A",
+        "announcedAt": "2026-08-17",
+        "amount": {
+          "amount": 350000000,
+          "currency": "USD",
+          "display": "$350M"
+        },
+        "valuation": {
+          "amount": 3500000000,
+          "currency": "USD",
+          "display": "$3.5B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Disruptive",
+            "website": "https://disruptive.tech",
+            "logo": "/investors/disruptive.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          }
+        ],
+        "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
+      },
+      {
+        "id": "growth-2026",
+        "stage": "Growth",
+        "announcedAt": "2026-06-22",
+        "amount": {
+          "amount": 650000000,
+          "currency": "USD",
+          "display": "$650M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Disruptive",
+            "website": "https://disruptive.tech",
+            "logo": "/investors/disruptive.png"
+          },
+          {
+            "name": "Infinitum Partners",
+            "website": "https://infinitumpartners.com",
+            "logo": "/investors/infinitum-partners.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+      },
+      {
+        "id": "growth-2025",
+        "stage": "Growth",
+        "announcedAt": "2025-09-17",
+        "amount": {
+          "amount": 750000000,
+          "currency": "USD",
+          "display": "$750M"
+        },
+        "valuation": {
+          "amount": 6900000000,
+          "currency": "USD",
+          "display": "$6.9B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Disruptive",
+            "website": "https://disruptive.tech",
+            "logo": "/investors/disruptive.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "BlackRock",
+            "website": "https://www.blackrock.com",
+            "logo": "/investors/blackrock.png"
+          },
+          {
+            "name": "Neuberger Berman",
+            "website": "https://www.nb.com",
+            "logo": "/investors/neuberger-berman.png"
+          },
+          {
+            "name": "Deutsche Telekom Capital Partners",
+            "website": "https://dtcp.com",
+            "logo": "/investors/dtcp.png"
+          },
+          {
+            "name": "Samsung",
+            "website": "https://www.samsung.com",
+            "logo": "/investors/samsung-catalyst-fund.png"
+          },
+          {
+            "name": "Cisco Investments",
+            "website": "https://www.cisco.com",
+            "logo": "/investors/cisco-investments.png"
+          },
+          {
+            "name": "D1 Capital Partners",
+            "website": null,
+            "logo": "/investors/d1-capital.png"
+          },
+          {
+            "name": "Altimeter Capital",
+            "website": "https://www.altimeter.com",
+            "logo": "/investors/altimeter-capital.png"
+          },
+          {
+            "name": "1789 Capital",
+            "website": null,
+            "logo": "/investors/1789-capital.png"
+          },
+          {
+            "name": "Infinitum Partners",
+            "website": "https://infinitumpartners.com",
+            "logo": "/investors/infinitum-partners.png"
+          }
+        ],
+        "sourceUrl": "https://www.prnewswire.com/news-releases/groq-raises-750-million-as-inference-demand-surges-302558961.html"
+      },
+      {
+        "id": "series-d-2024",
+        "stage": "Series D",
+        "announcedAt": "2024-08-05",
+        "amount": {
+          "amount": 640000000,
+          "currency": "USD",
+          "display": "$640M"
+        },
+        "valuation": {
+          "amount": 2800000000,
+          "currency": "USD",
+          "display": "$2.8B"
+        },
+        "leadInvestors": [
+          {
+            "name": "BlackRock Private Equity Partners",
+            "website": "https://www.blackrock.com",
+            "logo": "/investors/blackrock.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Neuberger Berman",
+            "website": "https://www.nb.com",
+            "logo": "/investors/neuberger-berman.png"
+          },
+          {
+            "name": "Type One Ventures",
+            "website": "https://type1ventures.com",
+            "logo": "/investors/type-one-ventures.png"
+          },
+          {
+            "name": "Cisco Investments",
+            "website": "https://www.cisco.com",
+            "logo": "/investors/cisco-investments.png"
+          },
+          {
+            "name": "KDDI Open Innovation Fund III",
+            "website": "https://www.globalbrains.com",
+            "logo": "/investors/global-brain.png"
+          },
+          {
+            "name": "Samsung Catalyst Fund",
+            "website": "https://www.samsung.com",
+            "logo": "/investors/samsung-catalyst-fund.png"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2024/08/05/ai-chip-startup-groq-lands-640m-to-challenge-nvidia/"
+      },
+      {
+        "id": "series-c-2021",
+        "stage": "Series C",
+        "announcedAt": "2021-04-14",
+        "amount": {
+          "amount": 300000000,
+          "currency": "USD",
+          "display": "$300M"
+        },
+        "valuation": {
+          "amount": 1000000000,
+          "currency": "USD",
+          "display": "$1B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Tiger Global Management",
+            "website": "https://www.tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          },
+          {
+            "name": "D1 Capital Partners",
+            "website": null,
+            "logo": "/investors/d1-capital.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "The Spruce House Partnership",
+            "website": null,
+            "logo": null
+          },
+          {
+            "name": "Addition",
+            "website": "https://www.addition.com",
+            "logo": "/investors/addition-ventures.png"
+          },
+          {
+            "name": "GCM Grosvenor",
+            "website": "https://www.gcmgrosvenor.com",
+            "logo": "/investors/gcm-grosvenor.png"
+          },
+          {
+            "name": "Xⁿ",
+            "website": null,
+            "logo": "/investors/xn.png"
+          },
+          {
+            "name": "Firebolt Ventures",
+            "website": "https://www.fireboltventures.com",
+            "logo": "/investors/firebolt-ventures.png"
+          },
+          {
+            "name": "General Global Capital",
+            "website": "https://www.genglobalcapital.com",
+            "logo": "/investors/general-global-capital.png"
+          },
+          {
+            "name": "Tru Arrow Partners",
+            "website": "https://truarrow.com",
+            "logo": "/investors/tru-arrow-partners.png"
+          },
+          {
+            "name": "TDK Ventures",
+            "website": "https://www.tdk-ventures.com",
+            "logo": "/investors/tdk-ventures.png"
+          },
+          {
+            "name": "XTX Ventures",
+            "website": "https://www.xtxmarkets.com/ventures/",
+            "logo": "/investors/xtx-ventures.png"
+          },
+          {
+            "name": "Boardman Bay Capital Management",
+            "website": "https://www.boardmanbay.com",
+            "logo": "/investors/boardman-bay.png"
+          },
+          {
+            "name": "Infinitum Partners",
+            "website": "https://infinitumpartners.com",
+            "logo": "/investors/infinitum-partners.png"
+          }
+        ],
+        "sourceUrl": "https://www.prnewswire.com/news-releases/groq-closes-300-million-fundraise-301268417.html"
+      },
+      {
+        "id": "series-a-2018",
+        "stage": "Series A",
+        "announcedAt": "2018-09-05",
+        "amount": {
+          "amount": 52300000,
+          "currency": "USD",
+          "display": "$52.3M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Social Capital",
+            "website": "https://www.socialcapital.com",
+            "logo": "/investors/social-capital.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Chamath Palihapitiya",
+            "website": null,
+            "logo": null
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2018/09/05/secretive-semiconductor-startup-groq-raises-52m-from-social-capital/"
+      },
+      {
+        "id": "seed-2017",
+        "stage": "Seed",
+        "announcedAt": "2017-04-21",
+        "amount": {
+          "amount": 10000000,
+          "currency": "USD",
+          "display": "$10M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Social Capital",
+            "website": "https://www.socialcapital.com",
+            "logo": "/investors/social-capital.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Conconi Growth Partners",
+            "website": null,
+            "logo": null
+          },
+          {
+            "name": "Daniel Gross",
+            "website": null,
+            "logo": null
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2018/09/05/secretive-semiconductor-startup-groq-raises-52m-from-social-capital/"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Senior Revenue Accountant",
+      "location": "United States",
+      "focus": "Finance",
+      "url": "https://www.linkedin.com/jobs/view/senior-revenue-accountant-at-groq-4460140815"
+    },
+    {
+      "title": "Indirect Procurement Lead",
+      "location": "United States",
+      "focus": "Operations",
+      "url": "https://www.linkedin.com/jobs/view/indirect-procurement-lead-at-groq-4466352750"
+    },
+    {
+      "title": "Lead (IC), Infrastructure & Networking Procurement",
+      "location": "United States",
+      "focus": "Operations",
+      "url": "https://www.linkedin.com/jobs/view/lead-ic-infrastructure-networking-procurement-at-groq-4457043555"
+    },
+    {
+      "title": "Sr. Financial Analyst, FinOps",
+      "location": "United States",
+      "focus": "Finance",
+      "url": "https://www.linkedin.com/jobs/view/sr-financial-analyst-finops-at-groq-4457048529"
+    },
+    {
+      "title": "Infrastructure Sourcing Manager - Data Center & Deployment Infrastructure",
+      "location": "San Francisco Bay Area",
+      "focus": "Operations",
+      "url": "https://www.linkedin.com/jobs/view/infrastructure-sourcing-manager-data-center-deployment-infrastructure-at-groq-4455529944"
+    },
+    {
+      "title": "Technical Product Marketing Manager",
+      "location": "United States",
+      "focus": "Marketing",
+      "url": "https://www.linkedin.com/jobs/view/technical-product-marketing-manager-at-groq-4462896442"
+    }
+  ],
+  "people": [
+    {
+      "name": "Adam Winter",
+      "role": "Chief Executive Officer",
+      "image": "/companies/groq/people/adam-winter/avatar.png",
+      "linkedin": "https://www.linkedin.com/in/adam-winter-3464a",
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Matt Eng",
+      "role": "Chief Financial Officer",
+      "image": "/companies/groq/people/matt-eng/avatar.png",
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Alan Rice",
+      "role": "Chief Operating Officer",
+      "image": "/companies/groq/people/alan-rice/avatar.png",
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Sinclair Schuller",
+      "role": "Chief Technology Officer",
+      "image": "/companies/groq/people/sinclair-schuller/avatar.png",
+      "linkedin": "https://www.linkedin.com/in/sinclairschuller",
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Rakesh Malhotra",
+      "role": "Chief Product Officer",
+      "image": "/companies/groq/people/rakesh-malhotra/avatar.png",
+      "linkedin": "https://www.linkedin.com/in/rakeshm1",
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Scott Albin",
+      "role": "Head of Commercial & Customer",
+      "image": "/companies/groq/people/scott-albin/avatar.png",
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Kelly Kozich",
+      "role": "Head of Legal",
+      "image": "/companies/groq/people/kelly-kozich/avatar.png",
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    },
+    {
+      "name": "Jacquie Hettinger",
+      "role": "Head of People & Workplace",
+      "image": "/companies/groq/people/jacquie-hettinger/avatar.png",
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://groq.com/company"
+    }
+  ],
+  "activity": [
+    {
+      "type": "news",
+      "time": "Sep 9, 2026",
+      "dateTime": "2026-09-09",
+      "title": "Justice Department opened investigation into the NVIDIA-Groq deal",
+      "description": "The New York Times reported that the U.S. Department of Justice opened an antitrust investigation into NVIDIA's $20 billion licensing deal with Groq shortly after it was announced and sent NVIDIA a formal demand for information.",
+      "sourceUrl": "https://www.nytimes.com/2026/09/09/business/nvidia-groq-antitrust.html"
+    },
+    {
+      "type": "product",
+      "time": "Aug 24, 2026",
+      "dateTime": "2026-08-24",
+      "title": "Among the first to bring NVIDIA Groq 3 LPX and Vera Rubin NVL72 to market",
+      "description": "Groq announced it will be among the first adopters of NVIDIA Groq 3 LPX alongside Vera Rubin NVL72 in its purpose-built AI inference cloud, working with Dell Technologies to deploy the platforms.",
+      "sourceUrl": "https://groq.com/blog/groq-among-the-first-to-bring-nvidia-groq-3-lpx-and-vera-rubin-nvl72-to-market"
+    },
+    {
+      "type": "funding",
+      "time": "Aug 17, 2026",
+      "dateTime": "2026-08-17",
+      "title": "Raised $350M Series A at a $3.5B valuation",
+      "description": "Groq closed a $350 million Series A led by Disruptive with planned participation from NVIDIA at a $3.5 billion valuation, bringing recent funding with its June round to $1 billion.",
+      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud"
+    },
+    {
+      "type": "news",
+      "time": "Aug 12, 2026",
+      "dateTime": "2026-08-12",
+      "title": "Became an NVIDIA Cloud Partner",
+      "description": "Groq joined the NVIDIA Cloud Partner program, certifying it to design, deploy, and operate NVIDIA accelerated computing to NVIDIA's reference architecture and operational standards.",
+      "sourceUrl": "https://groq.com/newsroom/groq-becomes-an-nvidia-cloud-partner"
+    },
+    {
+      "type": "funding",
+      "time": "Jun 22, 2026",
+      "dateTime": "2026-06-22",
+      "title": "Raised $650M to scale its AI inference cloud",
+      "description": "Groq raised $650 million in growth capital led by Disruptive and Infinitum, with participation from reinvesting existing investors, to expand 13 data centers toward 200 MW by the end of 2027.",
+      "sourceUrl": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business"
+    },
+    {
+      "type": "product",
+      "time": "Feb 16, 2026",
+      "dateTime": "2026-02-16",
+      "title": "Expanded GroqCloud to the UK with a new Equinix data center",
+      "description": "Groq opened a UK data center in partnership with Equinix to bring low-latency inference closer to European customers, as GroqCloud passed 3.5 million developers.",
+      "sourceUrl": "https://groq.com/blog/groqcloud-expanding-to-meet-demand"
+    },
+    {
+      "type": "news",
+      "time": "Dec 24, 2025",
+      "dateTime": "2025-12-24",
+      "title": "Signed a non-exclusive inference technology licensing agreement with NVIDIA",
+      "description": "Groq entered a non-exclusive licensing agreement with NVIDIA for its inference technology, reportedly worth about $20 billion, with founder Jonathan Ross, president Sunny Madra, and other team members joining NVIDIA while Groq continued as an independent company under new CEO Simon Edwards.",
+      "sourceUrl": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale"
+    },
+    {
+      "type": "news",
+      "time": "Dec 18, 2025",
+      "dateTime": "2025-12-18",
+      "title": "Partnered with the U.S. Department of Energy",
+      "description": "Groq announced a partnership with the U.S. Department of Energy to advance AI inference and next-generation computing infrastructure.",
+      "sourceUrl": "https://groq.com/newsroom/groq-partners-with-us-department-of-energy-to-advance-ai-inference-and-next-generation-computing-infrastructure"
+    },
+    {
+      "type": "growth",
+      "time": "Nov 17, 2025",
+      "dateTime": "2025-11-17",
+      "title": "Opened a Sydney data center to expand into Asia-Pacific",
+      "description": "Groq expanded to Asia-Pacific with a Sydney data center to power low-latency AI inference for the region.",
+      "sourceUrl": "https://groq.com/newsroom/groq-expands-to-asia-pacific-with-sydney-data-center-to-power-the-next-generation-of-ai-inference"
+    },
+    {
+      "type": "news",
+      "time": "Sep 26, 2025",
+      "dateTime": "2025-09-26",
+      "title": "McLaren Racing named Groq an official Formula 1 team partner",
+      "description": "McLaren Racing announced Groq as an official partner of the McLaren Formula 1 Team.",
+      "sourceUrl": "https://groq.com/newsroom/mclaren-racing-announces-groq-as-an-official-partner-of-the-mclaren-formula-1-team"
+    },
+    {
+      "type": "funding",
+      "time": "Sep 17, 2025",
+      "dateTime": "2025-09-17",
+      "title": "Raised $750M at a $6.9B valuation",
+      "description": "Groq announced $750 million in new financing led by Disruptive at a $6.9 billion post-money valuation, with investment from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and others.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/groq-raises-750-million-as-inference-demand-surges-302558961.html"
+    },
+    {
+      "type": "growth",
+      "time": "Jul 6, 2025",
+      "dateTime": "2025-07-06",
+      "title": "Launched a European data center footprint in Helsinki, Finland",
+      "description": "Groq opened a data center in Helsinki, Finland to expand its European inference footprint.",
+      "sourceUrl": "https://groq.com/newsroom/groq-launches-european-data-center-footprint-in-helsinki-finland"
+    },
+    {
+      "type": "growth",
+      "time": "Feb 10, 2025",
+      "dateTime": "2025-02-10",
+      "title": "Saudi Arabia announced a $1.5B commitment to expand Groq infrastructure",
+      "description": "Saudi Arabia announced a $1.5 billion commitment to expand delivery of Groq's LPU-based AI inference infrastructure, tied to a new GroqCloud data center in Dammam.",
+      "sourceUrl": "https://groq.com/newsroom/saudi-arabia-announces-1-5-billion-expansion-to-fuel-ai-powered-economy-with-ai-tech-leader-groq"
+    },
+    {
+      "type": "funding",
+      "time": "Aug 5, 2024",
+      "dateTime": "2024-08-05",
+      "title": "Raised $640M Series D at a $2.8B valuation",
+      "description": "Groq secured a $640 million Series D led by BlackRock Private Equity Partners at a $2.8 billion valuation, with Neuberger Berman, Type One Ventures, Cisco Investments, KDDI, and Samsung Catalyst Fund participating.",
+      "sourceUrl": "https://techcrunch.com/2024/08/05/ai-chip-startup-groq-lands-640m-to-challenge-nvidia/"
+    },
+    {
+      "type": "product",
+      "time": "Mar 1, 2024",
+      "dateTime": "2024-03-01",
+      "title": "Acquired Definitive Intelligence and expanded into GroqCloud",
+      "description": "Groq acquired Definitive Intelligence to build out GroqCloud, its developer inference platform that had soft-launched in February 2024.",
+      "sourceUrl": "https://techcrunch.com/2024/03/01/ai-chip-startup-groq-forms-new-business-unit-acquires-definitive-intelligence/"
+    }
+  ]
+}

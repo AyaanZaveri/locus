@@ -7,7 +7,7 @@
   "foundedYear": 2022,
   "banner": "/companies/together/images/banner.png",
   "logo": "/companies/together/images/logo.jpg",
-  "industry": "GPU Cloud",
+  "industry": "AI Compute",
   "location": {
     "label": "San Francisco, California",
     "countryCode": "us"
@@ -984,35 +984,35 @@
     {
       "name": "Jon Fields",
       "role": "VP of Sales",
-      "image": null,
+      "image": "/companies/together/people/jon-fields/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Arielle Fidel",
       "role": "VP of Strategic Partnerships",
-      "image": null,
+      "image": "/companies/together/people/arielle-fidel/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Namrata Ram",
       "role": "VP of Revenue Operations",
-      "image": null,
+      "image": "/companies/together/people/namrata-ram/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "James Barker",
       "role": "VP of Sales, EMEA",
-      "image": null,
+      "image": "/companies/together/people/james-barker/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Sarung Tripathi",
       "role": "VP of Customer Experience",
-      "image": null,
+      "image": "/companies/together/people/sarung-tripathi/avatar.jpg",
       "linkedin": null,
       "x": null
     },

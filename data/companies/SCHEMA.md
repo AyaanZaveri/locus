@@ -1,0 +1,153 @@
+# `company.json` authoring guide
+
+Every company profile lives at `data/companies/<slug>/company.json` and is
+validated at runtime by [`lib/company-profile.ts`](../../lib/company-profile.ts).
+That Zod schema is the executable source of truth; this guide is the compact
+contract for people and agents authoring data.
+
+`company-profile.schema.json` is the generated, machine-readable version of
+that contract. Regenerate it after changing the Zod schema:
+
+```sh
+npm run generate:company-schema
+```
+
+Validate every profile before relying on new data:
+
+```sh
+npm run validate:companies
+```
+
+## Conventions
+
+- Use `null` when a known nullable value is unavailable. Do not invent values
+  or links.
+- URLs must be absolute `https://` or `http://` URLs. Local images use paths
+  such as `/companies/mintlify/images/logo.webp`.
+- Dates use `YYYY-MM-DD`; use `null` if the announcement date is unknown.
+- Monetary values are always USD. `amount` is the unformatted number and
+  `display` is the UI-ready value (for example, `67000000` and `"$67M"`).
+- `sourceUrl` should point to the best evidence for a funding round, person,
+  or activity. It may be a company post, press release, or reputable coverage.
+- `activity.time` is display text; `activity.dateTime` is a machine-readable
+  date or timestamp.
+
+## Required top-level shape
+
+```ts
+{
+  slug: string,                 // lowercase letters, numbers, and hyphens only
+  name: string,
+  tagline: string,
+  description: string,
+  website: string | null,
+  foundedYear: number | null,
+  banner: string | null,
+  bannerPosition?: string,
+  bannerOffsetY?: number,
+  logo: string | null,
+  industry:
+    | "AI Compute"
+    | "AI Gateway"
+    | "AI Inference"
+    | "Database"
+    | "Developer Tools"
+    | "Web Search"
+    | "Workflow Orchestration",
+  location: { label: string, countryCode: string }, // ISO 3166-1 alpha-2, lowercase
+  stage: string,
+  employees: string,
+  financials: {
+    totalFunding: Money,
+    valuation: Money | null,
+    annualRevenue: Money | null,
+  },
+  funding: {
+    latestRoundId: string,
+    investors: Investor[],
+    rounds: FundingRound[],
+  },
+  jobs: Job[],
+  people: Person[],
+  activity: Activity[],
+}
+```
+
+## Reusable values
+
+`industry` is a single, broad primary category. Put product-specific nuance
+(for example, GPU cloud or serverless compute) in `tagline` and `description`.
+Only these values are valid:
+
+```ts
+type Industry =
+  | "AI Compute"
+  | "AI Gateway"
+  | "AI Inference"
+  | "Database"
+  | "Developer Tools"
+  | "Web Search"
+  | "Workflow Orchestration";
+```
+
+```ts
+type Money = {
+  amount: number; // non-negative, unformatted USD amount
+  currency: "USD";
+  display: string; // e.g. "$45M"
+};
+
+type Investor = {
+  name: string;
+  website: string | null;
+  logo?: string | null;
+};
+
+type FundingRound = {
+  id: string; // referenced by funding.latestRoundId
+  stage: string;
+  announcedAt: "YYYY-MM-DD" | null;
+  amount: Money;
+  valuation: Money | null;
+  leadInvestors: Investor[];
+  investors: Investor[];
+  sourceUrl: string | null;
+};
+
+type Job = {
+  title: string;
+  location: string;
+  focus: string;
+  url?: string | null;
+};
+
+type Person = {
+  name: string;
+  role: string;
+  image: string | null;
+  linkedin: string | null;
+  x?: string | null;
+  sourceUrl?: string | null;
+};
+
+type Activity = {
+  type:
+    | "documentation"
+    | "funding"
+    | "growth"
+    | "hiring"
+    | "news"
+    | "people"
+    | "product";
+  time: string;
+  dateTime: string;
+  title: string;
+  description: string;
+  sourceUrl?: string | null;
+};
+```
+
+## Compatibility note
+
+For older data, investor `logoUrl` is normalized to `logo` by the loader.
+New files should always use `logo`.

@@ -1,0 +1,438 @@
+{
+  "slug": "openrouter",
+  "name": "OpenRouter",
+  "tagline": "The unified interface for LLMs",
+  "description": "OpenRouter is the first and largest model marketplace and AI gateway. Founded in 2023, it gives developers and companies a single OpenAI-compatible API to access, route, and compare 400+ models from 80+ providers, with provider-level failover, cost and latency optimization, observability, spend controls, and compliance features. It serves 10M+ developers and processes hundreds of trillions of tokens per month. In August 2026, OpenRouter announced it was joining Stripe, which signed a deal to acquire the company; it continues to operate under the same name, product, and roadmap.",
+  "website": "https://openrouter.ai",
+  "foundedYear": 2023,
+  "banner": "/companies/openrouter/images/banner.jpg",
+  "bannerPosition": "object-[80%_58%]",
+  "logo": "/companies/openrouter/images/logo.png",
+  "industry": "AI Gateway",
+  "location": {
+    "label": "New York, New York",
+    "countryCode": "us"
+  },
+  "stage": "Series B",
+  "employees": "107 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 153000000,
+      "currency": "USD",
+      "display": "$153M"
+    },
+    "valuation": {
+      "amount": 1300000000,
+      "currency": "USD",
+      "display": "$1.3B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-b-2026",
+    "investors": [
+      {
+        "name": "Andreessen Horowitz",
+        "website": "https://a16z.com",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "Menlo Ventures",
+        "website": "https://menlovc.com",
+        "logo": "/investors/menlo-ventures.png"
+      },
+      {
+        "name": "Sequoia Capital",
+        "website": "https://sequoiacap.com",
+        "logo": "/investors/sequoia-capital.jpeg"
+      },
+      {
+        "name": "CapitalG",
+        "website": "https://www.capitalg.com",
+        "logo": "/investors/capitalg.png"
+      },
+      {
+        "name": "NVentures",
+        "website": "https://www.nvidia.com/en-us/nventures/",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "ServiceNow Ventures",
+        "website": "https://www.servicenow.com",
+        "logo": "/investors/servicenow-ventures.png"
+      },
+      {
+        "name": "MongoDB Ventures",
+        "website": "https://www.mongodb.com",
+        "logo": "/investors/mongodb-ventures.png"
+      },
+      {
+        "name": "Snowflake Ventures",
+        "website": "https://www.snowflake.com",
+        "logo": "/investors/snowflake-ventures.png"
+      },
+      {
+        "name": "Databricks Ventures",
+        "website": "https://www.databricks.com",
+        "logo": "/investors/databricks-ventures.png"
+      },
+      {
+        "name": "Pace Capital",
+        "website": "https://pacecapital.com",
+        "logo": "/investors/pace-capital.png"
+      },
+      {
+        "name": "AMP PBC",
+        "website": null,
+        "logo": null
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-b-2026",
+        "stage": "Series B",
+        "announcedAt": "2026-05-28",
+        "amount": {
+          "amount": 113000000,
+          "currency": "USD",
+          "display": "$113M"
+        },
+        "valuation": {
+          "amount": 1300000000,
+          "currency": "USD",
+          "display": "$1.3B"
+        },
+        "leadInvestors": [
+          {
+            "name": "CapitalG",
+            "website": "https://www.capitalg.com",
+            "logo": "/investors/capitalg.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVentures",
+            "website": "https://www.nvidia.com/en-us/nventures/",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "ServiceNow Ventures",
+            "website": "https://www.servicenow.com",
+            "logo": "/investors/servicenow-ventures.png"
+          },
+          {
+            "name": "MongoDB Ventures",
+            "website": "https://www.mongodb.com",
+            "logo": "/investors/mongodb-ventures.png"
+          },
+          {
+            "name": "Snowflake Ventures",
+            "website": "https://www.snowflake.com",
+            "logo": "/investors/snowflake-ventures.png"
+          },
+          {
+            "name": "Databricks Ventures",
+            "website": "https://www.databricks.com",
+            "logo": "/investors/databricks-ventures.png"
+          },
+          {
+            "name": "Pace Capital",
+            "website": "https://pacecapital.com",
+            "logo": "/investors/pace-capital.png"
+          },
+          {
+            "name": "AMP PBC",
+            "website": null,
+            "logo": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "Menlo Ventures",
+            "website": "https://menlovc.com",
+            "logo": "/investors/menlo-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://openrouter.ai/blog/announcements/series-b/"
+      },
+      {
+        "id": "series-a-2025",
+        "stage": "Series A",
+        "announcedAt": "2025-06-25",
+        "amount": {
+          "amount": 40000000,
+          "currency": "USD",
+          "display": "$40M"
+        },
+        "valuation": {
+          "amount": 547000000,
+          "currency": "USD",
+          "display": "$547M"
+        },
+        "leadInvestors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "Menlo Ventures",
+            "website": "https://menlovc.com",
+            "logo": "/investors/menlo-ventures.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Software Engineer, Platform",
+      "location": "Remote (US)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openrouter/47c2bcd2-f71c-47a6-831f-a4130d607a7b"
+    },
+    {
+      "title": "Software Engineer, Product",
+      "location": "Remote (US)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openrouter/0c6bbb7f-ea09-45b6-b185-8a17a8de214d"
+    },
+    {
+      "title": "Applied AI Engineer",
+      "location": "Remote (US)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openrouter/407f71b5-4b1f-4666-91bd-394f3c26f19d"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "location": "San Francisco Bay Area, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openrouter/1b26f0a2-4aab-4bef-8c21-0f8de9a059e3"
+    },
+    {
+      "title": "Customer Engineer",
+      "location": "Remote (US)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openrouter/9f38ecfe-ee22-4338-863b-a01e43a481bc"
+    },
+    {
+      "title": "AI Provider Operations & Support Engineer",
+      "location": "Remote (US)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openrouter/58dd70b9-f387-4ba1-8bee-1033f91e76ee"
+    },
+    {
+      "title": "Research Scientist",
+      "location": "Remote (US)",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/openrouter/8daf0f29-2e78-4ab1-8230-52e3988fe42c"
+    },
+    {
+      "title": "Data Scientist",
+      "location": "Remote (US)",
+      "focus": "Data",
+      "url": "https://jobs.ashbyhq.com/openrouter/c8ee3a10-ae18-4d8b-9390-369ebea7b03f"
+    },
+    {
+      "title": "Product Manager, Enterprise",
+      "location": "Remote (US)",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/openrouter/412cfd6b-81a5-4662-bae2-d86ea1ee324c"
+    },
+    {
+      "title": "Product Manager, Agent Platform",
+      "location": "Remote (US)",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/openrouter/11a8c381-1f78-47da-ab58-ae9ed9cae9f1"
+    },
+    {
+      "title": "Account Executive",
+      "location": "Remote (US)",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/openrouter/22d85a56-5500-40a5-9913-c98558d77f41"
+    },
+    {
+      "title": "Enterprise Account Executive",
+      "location": "Remote (US)",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/openrouter/34db850d-579f-4b4c-9827-76bc712b1a41"
+    },
+    {
+      "title": "Strategic Account Executive",
+      "location": "Remote (US)",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/openrouter/25a8105e-6e3f-4663-9c99-332d44f5933a"
+    },
+    {
+      "title": "Business Development Representative",
+      "location": "Remote (US)",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/openrouter/69c4fe23-137b-4995-8ad1-25123bee06fb"
+    },
+    {
+      "title": "Customer Success Manager",
+      "location": "Remote (US)",
+      "focus": "Customer Success",
+      "url": "https://jobs.ashbyhq.com/openrouter/7c5cb1ca-71ba-464d-bf98-33743e8b1474"
+    },
+    {
+      "title": "Scaled Support Specialist",
+      "location": "Remote (US)",
+      "focus": "Support",
+      "url": "https://jobs.ashbyhq.com/openrouter/89ff6b47-ba08-4418-b24b-c136dbf2ef82"
+    },
+    {
+      "title": "Enterprise Support Engineer (West Coast)",
+      "location": "Remote (US)",
+      "focus": "Support",
+      "url": "https://jobs.ashbyhq.com/openrouter/7088bf7a-6ed7-4c35-bd61-6303e712205c"
+    },
+    {
+      "title": "Director, Channel Partnerships",
+      "location": "Remote (US)",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/openrouter/a25c7850-4bb1-45ce-ab08-04a2a9c42f95"
+    },
+    {
+      "title": "Senior Manager, Product Partnerships",
+      "location": "Remote (US)",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/openrouter/c5bbcca4-5591-4152-982b-d43ccbabb863"
+    },
+    {
+      "title": "Partner Development Manager, AI Ecosystem",
+      "location": "Remote (US)",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516"
+    },
+    {
+      "title": "Program Manager, Provider Partnerships",
+      "location": "Remote (US)",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/openrouter/cbda7683-f4fc-41ac-b71b-81d7ccca5508"
+    },
+    {
+      "title": "Director, Growth Marketing",
+      "location": "Remote (US)",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/openrouter/9c1cb711-cd17-4d07-9be5-f122c0a865b9"
+    },
+    {
+      "title": "Community Lead, Developer Relations",
+      "location": "San Francisco Bay Area, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/openrouter/44ef374e-b234-4d77-b002-8b38b4fda18f"
+    },
+    {
+      "title": "Director, Revenue Operations",
+      "location": "Remote (US)",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/openrouter/8b56aa1f-1049-499d-912b-eb869747ebdf"
+    },
+    {
+      "title": "Third-Party Risk Analyst",
+      "location": "Remote (US)",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/openrouter/99aa680f-19e2-49f1-acd5-b56c4aaa679f"
+    },
+    {
+      "title": "Technical Recruiter (Fixed-Term Contract)",
+      "location": "Remote (US)",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/openrouter/973955a0-c0d1-4bb4-9252-9ab3943a29c0"
+    }
+  ],
+  "people": [
+    {
+      "name": "Alex Atallah",
+      "role": "Co-founder & CEO",
+      "image": "/companies/openrouter/people/alex-atallah/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/alexatallah",
+      "x": "https://x.com/alexatallah",
+      "sourceUrl": "https://alexatallah.com"
+    },
+    {
+      "name": "Chris Clark",
+      "role": "Co-founder & COO",
+      "image": null,
+      "linkedin": null
+    }
+  ],
+  "activity": [
+    {
+      "type": "news",
+      "time": "Aug 19, 2026",
+      "dateTime": "2026-08-19",
+      "title": "OpenRouter is joining Stripe",
+      "description": "OpenRouter announced it is joining Stripe, which signed a deal to acquire the model marketplace and gateway. OpenRouter said it will keep operating under the same name, product, and roadmap; the deal was reported at about $7.5 billion.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"
+    },
+    {
+      "type": "funding",
+      "time": "May 28, 2026",
+      "dateTime": "2026-05-28",
+      "title": "Raised $113M Series B led by CapitalG",
+      "description": "OpenRouter raised a $113M Series B at a reported $1.3B post-money valuation, led by CapitalG with NVentures, ServiceNow Ventures, MongoDB Ventures, Snowflake Ventures, Databricks Ventures, AMP PBC, and Pace Capital, alongside Andreessen Horowitz and Menlo Ventures.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/series-b/"
+    },
+    {
+      "type": "product",
+      "time": "Sep 9, 2026",
+      "dateTime": "2026-09-09",
+      "title": "In-region routing for US and EU data residency",
+      "description": "Added in-region routing so teams can keep request data within the US or EU while still routing across providers.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/us-in-region-routing/"
+    },
+    {
+      "type": "product",
+      "time": "Sep 8, 2026",
+      "dateTime": "2026-09-08",
+      "title": "Shell tool gives any model a terminal and files",
+      "description": "Launched a shell tool that lets any model execute terminal commands and work with files through OpenRouter.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/shell-tool/"
+    },
+    {
+      "type": "product",
+      "time": "Aug 17, 2026",
+      "dateTime": "2026-08-17",
+      "title": "Activity dashboard for every agent, model, and request",
+      "description": "Shipped an activity dashboard that breaks down usage and cost by agent, model, and request.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/activity-dashboard/"
+    },
+    {
+      "type": "product",
+      "time": "Aug 10, 2026",
+      "dateTime": "2026-08-10",
+      "title": "New Auto Router powered by market data",
+      "description": "Launched a redesigned Auto Router that uses market-wide usage signals to choose a model for each request.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/introducing-the-new-auto-router/"
+    },
+    {
+      "type": "product",
+      "time": "Aug 3, 2026",
+      "dateTime": "2026-08-03",
+      "title": "Ori Eval finds the best model for a task",
+      "description": "Launched Ori Eval to help developers compare models against their own workloads and pick the right one.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/ori-eval/"
+    },
+    {
+      "type": "product",
+      "time": "Jul 24, 2026",
+      "dateTime": "2026-07-24",
+      "title": "Classifiers track agent behavior and cost",
+      "description": "Introduced classifiers to track what agents do and what each action costs.",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/classifiers/"
+    }
+  ]
+}

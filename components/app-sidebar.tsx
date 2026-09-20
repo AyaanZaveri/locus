@@ -50,9 +50,10 @@ export function AppSidebar({
         <SidebarMenu>
           <SidebarMenuItem>
             <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-3 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-4">
-              <SidebarMenuButton className="h-auto flex-1 gap-2.5 p-0 hover:bg-transparent" render={<a href="#top" />} size="lg">
-                <img alt="Autumn" className="size-5" src="/autumn-base.svg" />
-                <span className="font-sans text-[18px] leading-6.75 font-normal">Autumn</span>
+              <SidebarMenuButton className="h-auto flex-1 p-0 hover:bg-transparent" render={<a href="#top" />} size="lg">
+                <span className="font-wordmark text-[19px] leading-6.75 font-semibold tracking-[-0.035em]">
+                  Locus
+                </span>
               </SidebarMenuButton>
               <ModeToggle />
             </div>
@@ -113,12 +114,19 @@ export function AppSidebar({
                     render={<a href={company.href} />}
                     tooltip={company.name}
                   >
-                    <img
-                      alt=""
-                      aria-hidden="true"
-                      className="size-4 rounded-sm object-cover"
-                      src={company.logo ?? "/autumn-base.svg"}
-                    />
+                    {company.logo ? (
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        className="size-4 rounded-sm object-cover"
+                        src={company.logo}
+                      />
+                    ) : (
+                      <BuildingIcon
+                        aria-hidden="true"
+                        className="size-4 text-muted-foreground"
+                      />
+                    )}
                     <span>{company.name}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

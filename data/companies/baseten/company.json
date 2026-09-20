@@ -6,8 +6,9 @@
   "website": "https://www.baseten.co",
   "foundedYear": 2019,
   "banner": "/companies/baseten/images/banner.png",
+  "bannerPosition": "object-[center_calc(50%_-_10px)]",
   "logo": "/companies/baseten/images/logo.webp",
-  "industry": "Inference",
+  "industry": "AI Inference",
   "location": {
     "label": "San Francisco, California",
     "countryCode": "us"
@@ -1136,28 +1137,28 @@
     {
       "name": "Tuhin Srivastava",
       "role": "Co-Founder & CEO",
-      "image": null,
+      "image": "/companies/baseten/people/tuhin-srivastava/avatar.jpg",
       "linkedin": "https://www.linkedin.com/in/tuhin-srivastava-60601114/",
       "x": "https://x.com/tuhinone"
     },
     {
       "name": "Amir Haghighat",
       "role": "Co-Founder & CTO",
-      "image": null,
+      "image": "/companies/baseten/people/amir-haghighat/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Phil Howes",
       "role": "Co-Founder & Chief Scientist",
-      "image": null,
+      "image": "/companies/baseten/people/phil-howes/avatar.jpg",
       "linkedin": null,
       "x": null
     },
     {
       "name": "Pankaj Gupta",
       "role": "Co-Founder",
-      "image": null,
+      "image": "/companies/baseten/people/pankaj-gupta/avatar.jpg",
       "linkedin": null,
       "x": null
     },

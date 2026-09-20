@@ -1,8 +1,8 @@
 {
   "slug": "parallel",
-  "name": "Parallel Web Systems",
+  "name": "Parallel",
   "tagline": "Infrastructure for intelligence on the web",
-  "description": "Parallel builds web infrastructure for AI agents, giving systems programmatic access to the open web through crawling, indexing, ranking, retrieval, and reasoning technologies. The company is building the infrastructure layer for AI systems that need accurate, real-time information from the web.",
+  "description": "Parallel Web Systems builds web infrastructure for AI agents, giving systems programmatic access to the open web through crawling, indexing, ranking, retrieval, and reasoning technologies. The company is building the infrastructure layer for AI systems that need accurate, real-time information from the web.",
   "website": "https://parallel.ai",
   "foundedYear": 2023,
   "banner": "/companies/parallel/images/banner.jpg",

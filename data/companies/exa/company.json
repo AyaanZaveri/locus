@@ -1,0 +1,567 @@
+{
+  "slug": "exa",
+  "name": "Exa",
+  "tagline": "An AI research lab building a search engine for the future",
+  "description": "Exa is an applied AI research lab building a search engine designed for AI rather than humans. Founded in 2021, it runs its own web-scale index and neural retrieval models to give AI applications high-quality, real-time web search through an API. Exa powers search for Cursor, Cognition, HubSpot, OpenRouter, and Monday.com, serves over 400,000 developers, and was valued at $2.2B after its 2026 Series C.",
+  "website": "https://exa.ai",
+  "foundedYear": 2021,
+  "banner": "/companies/exa/images/banner.png",
+  "logo": "/companies/exa/images/logo.png",
+  "industry": "Web Search",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Series C",
+  "employees": "51-200 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 357000000,
+      "currency": "USD",
+      "display": "$357M"
+    },
+    "valuation": {
+      "amount": 2200000000,
+      "currency": "USD",
+      "display": "$2.2B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-c-2026",
+    "investors": [
+      {
+        "name": "Andreessen Horowitz",
+        "website": "https://a16z.com",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "Benchmark",
+        "website": "https://www.benchmark.com",
+        "logo": "/investors/benchmark.jpeg"
+      },
+      {
+        "name": "Lightspeed Venture Partners",
+        "website": "https://lsvp.com",
+        "logo": "/investors/lightspeed.png"
+      },
+      {
+        "name": "NVentures",
+        "website": "https://www.nvidia.com/en-us/nventures/",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "Y Combinator",
+        "website": "https://www.ycombinator.com",
+        "logo": "/investors/y-combinator.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-c-2026",
+        "stage": "Series C",
+        "announcedAt": "2026-05-20",
+        "amount": {
+          "amount": 250000000,
+          "currency": "USD",
+          "display": "$250M"
+        },
+        "valuation": {
+          "amount": 2200000000,
+          "currency": "USD",
+          "display": "$2.2B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://exa.ai/blog/announcing-series-c"
+      },
+      {
+        "id": "series-b-2025",
+        "stage": "Series B",
+        "announcedAt": "2025-09-03",
+        "amount": {
+          "amount": 85000000,
+          "currency": "USD",
+          "display": "$85M"
+        },
+        "valuation": {
+          "amount": 700000000,
+          "currency": "USD",
+          "display": "$700M"
+        },
+        "leadInvestors": [
+          {
+            "name": "Benchmark",
+            "website": "https://www.benchmark.com",
+            "logo": "/investors/benchmark.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Y Combinator",
+            "website": "https://www.ycombinator.com",
+            "logo": "/investors/y-combinator.png"
+          },
+          {
+            "name": "NVentures",
+            "website": "https://www.nvidia.com/en-us/nventures/",
+            "logo": "/investors/nvidia.png"
+          }
+        ],
+        "sourceUrl": "https://exa.ai/blog/announcing-series-b"
+      },
+      {
+        "id": "series-a-2024",
+        "stage": "Series A",
+        "announcedAt": "2024-07-16",
+        "amount": {
+          "amount": 17000000,
+          "currency": "USD",
+          "display": "$17M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVentures",
+            "website": "https://www.nvidia.com/en-us/nventures/",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Y Combinator",
+            "website": "https://www.ycombinator.com",
+            "logo": "/investors/y-combinator.png"
+          }
+        ],
+        "sourceUrl": "https://exa.ai/blog/series-a"
+      },
+      {
+        "id": "seed-2021",
+        "stage": "Seed",
+        "announcedAt": null,
+        "amount": {
+          "amount": 5000000,
+          "currency": "USD",
+          "display": "$5M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [],
+        "sourceUrl": "https://techcrunch.com/2024/07/16/exa-raises-17m-lightspeed-nvidia-ycombinator-google-ai-models/"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Will Bryk",
+      "role": "Co-founder & CEO",
+      "image": "/companies/exa/people/will-bryk/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/william-bryk",
+      "sourceUrl": "https://exa.ai/about"
+    },
+    {
+      "name": "Jeff Wang",
+      "role": "Co-founder",
+      "image": "/companies/exa/people/jeff-wang/avatar.jpg",
+      "linkedin": null,
+      "sourceUrl": "https://exa.ai/about"
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Sep 17, 2026",
+      "dateTime": "2026-09-17",
+      "title": "Exa Snapshot introduced",
+      "description": "Exa launched a versioned view of the web, letting agents search the past rather than only the present.",
+      "sourceUrl": "https://exa.ai/blog/exa-snapshot"
+    },
+    {
+      "type": "product",
+      "time": "Aug 28, 2026",
+      "dateTime": "2026-08-28",
+      "title": "Dynamic Highlights",
+      "description": "Exa shipped dynamic highlights for more token-efficient search results.",
+      "sourceUrl": "https://exa.ai/blog/dynamic-highlights"
+    },
+    {
+      "type": "funding",
+      "time": "May 20, 2026",
+      "dateTime": "2026-05-20",
+      "title": "Raised $250M Series C at a $2.2B valuation",
+      "description": "Exa raised a $250M Series C led by a16z at a $2.2B valuation to power web search for AI agents.",
+      "sourceUrl": "https://exa.ai/blog/announcing-series-c"
+    },
+    {
+      "type": "news",
+      "time": "Apr 28, 2026",
+      "dateTime": "2026-04-28",
+      "title": "Exa and Google partnership",
+      "description": "Exa announced a partnership with Google.",
+      "sourceUrl": "https://exa.ai/blog/exa-google-cloud"
+    },
+    {
+      "type": "news",
+      "time": "Mar 30, 2026",
+      "dateTime": "2026-03-30",
+      "title": "Exa lands in Singapore",
+      "description": "Exa opened a Singapore presence and began hiring engineers and researchers there.",
+      "sourceUrl": "https://exa.ai/blog/exa-singapore"
+    },
+    {
+      "type": "product",
+      "time": "Mar 23, 2026",
+      "dateTime": "2026-03-23",
+      "title": "WebCode: search evals for coding agents",
+      "description": "Exa released WebCode, a benchmark for measuring web search quality for coding agents.",
+      "sourceUrl": "https://exa.ai/blog/webcode"
+    },
+    {
+      "type": "product",
+      "time": "Jan 13, 2026",
+      "dateTime": "2026-01-13",
+      "title": "exa-d data framework",
+      "description": "Exa published exa-d, a data framework for processing the web.",
+      "sourceUrl": "https://exa.ai/blog/exa-d"
+    },
+    {
+      "type": "product",
+      "time": "Dec 17, 2025",
+      "dateTime": "2025-12-17",
+      "title": "People Search benchmarks",
+      "description": "Exa introduced benchmarks for people search.",
+      "sourceUrl": "https://exa.ai/blog/people-search-benchmark"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Technical Recruiter",
+      "location": "San Francisco, California",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/exa/a3a77458-67b6-4654-8727-1c1fddebad51"
+    },
+    {
+      "title": "Account Executive",
+      "location": "San Francisco, California",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/93317180-34e0-45ff-84a3-d5bca4d7f7ae"
+    },
+    {
+      "title": "Brand Designer",
+      "location": "San Francisco, California",
+      "focus": "Design",
+      "url": "https://jobs.ashbyhq.com/exa/7e52b8c9-255a-4848-a54a-efdc1fb25a69"
+    },
+    {
+      "title": "Software Engineer, Backend",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/41eb773d-9909-422c-b6b8-5bbdc407d318"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "location": "San Francisco, California",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/8932d319-b456-4ee0-9efd-16d82be8de80"
+    },
+    {
+      "title": "Business Operations",
+      "location": "San Francisco, California",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/exa/0e3957bf-3dd1-4a5a-828c-5c06a8499c93"
+    },
+    {
+      "title": "Software Engineer, Web Crawling",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/0298c908-e2ff-4dbb-a8cc-4899a9f6737a"
+    },
+    {
+      "title": "Research, ML",
+      "location": "San Francisco, California",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/exa/fcebd301-b473-40dc-b733-362883ac1f37"
+    },
+    {
+      "title": "Research Engineer, Generalist",
+      "location": "San Francisco, California",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/exa/913d2b71-39d5-4d3a-ab8d-ffffa34cd069"
+    },
+    {
+      "title": "Software Engineer, Intern",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/a9e01521-66f1-481b-89da-ec01d4620f16"
+    },
+    {
+      "title": "Research, Evals",
+      "location": "San Francisco, California",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/exa/9c45a74e-d507-482a-bc0e-da2f464c9767"
+    },
+    {
+      "title": "Data Partnerships",
+      "location": "San Francisco, California",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/exa/faf3340f-a551-49cd-97ca-498023e59f6b"
+    },
+    {
+      "title": "GTM Recruiter",
+      "location": "San Francisco, California",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/exa/ef734269-ca0c-4944-86f5-9ae8666b3993"
+    },
+    {
+      "title": "Software Engineer, Backend",
+      "location": "Singapore",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/8ba94280-c4f0-4a15-b3eb-8acf4e2d6dba"
+    },
+    {
+      "title": "Software Engineer, Web Crawling",
+      "location": "Singapore",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/9679c963-9d4b-4cfe-8bd9-45ab5d5e7b90"
+    },
+    {
+      "title": "Software Engineer, Distributed Data Systems",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/5f10cc28-bcad-4ce4-8fa1-996a59c59e65"
+    },
+    {
+      "title": "Software Engineer, Security",
+      "location": "San Francisco, California",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/exa/c4081592-fa8c-4fed-9041-70c62feee157"
+    },
+    {
+      "title": "Account Executive",
+      "location": "New York City",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/e3e0cd05-d71a-491d-a553-2a991741915c"
+    },
+    {
+      "title": "Head of Talent",
+      "location": "San Francisco, California",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/exa/3804115b-24c5-4854-8bc6-6b6f0de85a1f"
+    },
+    {
+      "title": "Head of Cloud Partnerships",
+      "location": "San Francisco, California",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/exa/dbcd90ce-f311-4188-a388-89357ad80e4c"
+    },
+    {
+      "title": "Research Engineer, Generalist",
+      "location": "Singapore",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/exa/7a852555-9ae4-4f27-890f-849cd066693e"
+    },
+    {
+      "title": "Field Event Manager",
+      "location": "New York City",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/1b8cc57c-dd49-4ae3-891d-6cff2702dd7c"
+    },
+    {
+      "title": "Sales Development Representative, SF",
+      "location": "San Francisco, California",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/dc8a6537-12b4-40af-b8da-55639a01dca3"
+    },
+    {
+      "title": "Software Engineer, Full Stack",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/98a8bab6-4cbf-4d39-a5a7-0867addc4086"
+    },
+    {
+      "title": "Executive Assistant to Founders",
+      "location": "San Francisco, California",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/exa/b5665525-c2a3-4c6a-a3dd-d0d1f1df01f8"
+    },
+    {
+      "title": "Design Engineer",
+      "location": "San Francisco, California",
+      "focus": "Design",
+      "url": "https://jobs.ashbyhq.com/exa/237cc096-2234-48ee-9c98-8c7221845484"
+    },
+    {
+      "title": "Creative Video Producer",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/94dd327d-5105-4b6f-8a72-e8d4d330a4e1"
+    },
+    {
+      "title": "Digital Marketing Manager",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/54f689ac-ab9a-4e41-8e84-556526582b54"
+    },
+    {
+      "title": "Software Engineer, Knowledge Systems",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/1f90ebb9-0f74-4a52-822a-d0ea6acdef4f"
+    },
+    {
+      "title": "People Operations Generalist",
+      "location": "Singapore",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/exa/11cd06ca-db50-4821-a920-07071f8ce0b4"
+    },
+    {
+      "title": "VP, Finance",
+      "location": "San Francisco, California",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/exa/e4a7e653-7b59-49b2-a4ce-e173860549ca"
+    },
+    {
+      "title": "Developer Advocate",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/fd015edb-c29b-40ff-aa6f-b477c730b4c1"
+    },
+    {
+      "title": "Head of Developer Relations",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/35bd4464-745b-4e33-a407-c1870e86abb0"
+    },
+    {
+      "title": "Head of Marketing Operations",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/62864919-a97a-457c-baf1-8facb31f98f8"
+    },
+    {
+      "title": "Product Marketing Manager",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/d26419da-d1a3-4ece-8b10-22e8d5526744"
+    },
+    {
+      "title": "Customer and Partner Marketing",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/c935b18d-a35a-46cd-b0fc-a64d65486518"
+    },
+    {
+      "title": "Growth Marketing Manger",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/8e4a696c-c37e-4102-b7fd-000d3ff45d7d"
+    },
+    {
+      "title": "Field Event Manager, EMEA",
+      "location": "London",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/exa/5ec7c92d-f02a-4a0c-afcc-4081f22f3d9f"
+    },
+    {
+      "title": "Head of People",
+      "location": "San Francisco, California",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/exa/d24ba483-3d39-4552-a9cf-61a4f57c494c"
+    },
+    {
+      "title": "Research, ML",
+      "location": "Singapore",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/exa/f6bd612e-a4ee-4c75-a205-5cd70901661f"
+    },
+    {
+      "title": "Technical Sourcer",
+      "location": "San Francisco, California",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/exa/533447e7-4cd4-44e9-92ec-22629d568316"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "location": "New York City",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/c542d672-691c-46c1-9741-856d66f2c2ea"
+    },
+    {
+      "title": "VP, Customer Experience",
+      "location": "San Francisco, California",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/c14f297b-b2b2-4e20-90fd-bdfe49880f08"
+    },
+    {
+      "title": "Forward Deployed Engineer, EMEA",
+      "location": "London",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/234bf118-672a-45d1-a4a2-02065d1c02f0"
+    },
+    {
+      "title": "Deal Desk Manager",
+      "location": "San Francisco, California",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/exa/01184dbd-652f-45bc-bd3f-bb709da69402"
+    },
+    {
+      "title": "Sales Development Representative",
+      "location": "New York City",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/7975f948-6c90-4c49-9cf4-54645a3f343f"
+    },
+    {
+      "title": "Revenue Insights Manager",
+      "location": "San Francisco, California",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/exa/e6932b63-4df5-4cd9-85f1-db5079219d34"
+    },
+    {
+      "title": "Technical Enablement Manager",
+      "location": "San Francisco, California",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/b193ad1c-7700-4e32-98cb-efc791993963"
+    },
+    {
+      "title": "Head of Security",
+      "location": "San Francisco, California",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/exa/37599c13-47f8-40d7-b37f-9fc9e5329134"
+    },
+    {
+      "title": "Forward Deployed Engineer, APJ",
+      "location": "Singapore",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/8dc40d41-c1f3-4796-aed7-b614bcef1d72"
+    },
+    {
+      "title": "Manager, Sales Development - NYC",
+      "location": "New York City",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/exa/6f9d11a6-e1e8-448d-9051-32cf6caeccba"
+    },
+    {
+      "title": "IT Engineer",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/exa/80a73a37-da30-4630-9a47-9dfbd3e26b69"
+    }
+  ]
+}

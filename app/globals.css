@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+    font-family: "Sunghyun Sans";
+    src: url("/fonts/sunghyun-sans-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme inline {
     --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
@@ -144,5 +152,8 @@
     }
   html {
     @apply font-sans;
+    }
+  .font-wordmark {
+    font-family: "Sunghyun Sans", var(--font-sans), sans-serif;
     }
 }

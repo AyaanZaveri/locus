@@ -13,6 +13,17 @@ const activityTypeSchema = z.enum([
   "product",
 ]);
 
+const industrySchema = z.enum([
+  "AI Compute",
+  "AI Gateway",
+  "AI Inference",
+  "Database",
+  "Developer Tools",
+  "Fintech",
+  "Web Search",
+  "Workflow Orchestration",
+]);
+
 const moneySchema = z.object({
   amount: z.number().nonnegative(),
   currency: z.literal("USD"),
@@ -46,7 +57,7 @@ export const companyProfileSchema = z.object({
   banner: z.string().min(1).nullable(),
   bannerPosition: z.string().min(1).optional(),
   logo: z.string().min(1).nullable(),
-  industry: z.string().min(1),
+  industry: industrySchema,
   location: z.object({
     label: z.string().min(1),
     countryCode: z.string().length(2),
@@ -95,6 +106,7 @@ export const companyProfileSchema = z.object({
 
 export type CompanyProfile = z.infer<typeof companyProfileSchema>;
 export type ActivityType = z.infer<typeof activityTypeSchema>;
+export type Industry = z.infer<typeof industrySchema>;
 
 const companiesDirectory = join(process.cwd(), "data", "companies");
 
@@ -140,6 +152,10 @@ function normalizeCompany(source: Record<string, unknown>) {
   };
 }
 
+export function parseCompanyProfile(source: Record<string, unknown>) {
+  return companyProfileSchema.parse(normalizeCompany(source));
+}
+
 export const getCompanies = cache(async () => {
   const entries = await readdir(companiesDirectory, { withFileTypes: true });
   const profiles = await Promise.all(
@@ -152,8 +168,8 @@ export const getCompanies = cache(async () => {
             join(companiesDirectory, entry.name, "company.json"),
             "utf8",
           );
-          return companyProfileSchema.parse(
-            normalizeCompany(JSON.parse(source) as Record<string, unknown>),
+          return parseCompanyProfile(
+            JSON.parse(source) as Record<string, unknown>,
           );
         } catch (error) {
           console.warn(
@@ -165,7 +181,9 @@ export const getCompanies = cache(async () => {
       }),
   );
 
-  return profiles.filter((profile): profile is CompanyProfile => profile !== null);
+  return profiles.filter(
+    (profile): profile is CompanyProfile => profile !== null,
+  );
 });
 
 export async function getCompanyProfile(slug: string) {

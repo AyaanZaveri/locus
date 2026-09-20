@@ -36,10 +36,10 @@ export default async function RootLayout({
         geist.variable,
       )}
     >
-      <body className="bg-background">
+      <body className="bg-sidebar">
         <ThemeProvider>
           <TooltipProvider>
-            <SidebarProvider className="h-svh min-h-0 overflow-hidden bg-background">
+            <SidebarProvider className="h-svh min-h-0 overflow-hidden bg-sidebar">
               <AppSidebar companies={companies} />
               <SidebarInset className="min-h-0 min-w-0 overflow-hidden shadow-none! ring-border/25 ring-1">
                 {children}

@@ -1,0 +1,886 @@
+{
+  "slug": "fireworks",
+  "name": "Fireworks AI",
+  "tagline": "Own your specialized intelligence",
+  "description": "Fireworks AI is the frontier platform for training and serving specialized intelligence on open-weight models. Founded in 2022 by former PyTorch and Meta infrastructure leaders, it provides a globally distributed inference and training cloud that lets enterprises fine-tune, customize, and deploy open models on their own data, spanning serverless inference, on-demand deployments, and fine-tuning. Fireworks powers production workloads at companies such as Uber, DoorDash, Notion, and Cursor, and surpassed a $1B annualized revenue run rate in 2026.",
+  "website": "https://fireworks.ai",
+  "foundedYear": 2022,
+  "banner": "/companies/fireworks/images/banner.png",
+  "logo": "/companies/fireworks/images/logo.png",
+  "industry": "AI Inference",
+  "location": {
+    "label": "San Mateo, California",
+    "countryCode": "us"
+  },
+  "stage": "Series D",
+  "employees": "375 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 1832000000,
+      "currency": "USD",
+      "display": "$1.83B"
+    },
+    "valuation": {
+      "amount": 17500000000,
+      "currency": "USD",
+      "display": "$17.5B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-d-2026",
+    "investors": [
+      {
+        "name": "Atreides Management",
+        "website": "https://atreidesmgmt.com",
+        "logo": "/investors/atreides.png"
+      },
+      {
+        "name": "Index Ventures",
+        "website": "https://www.indexventures.com",
+        "logo": "/investors/index-ventures.jpeg"
+      },
+      {
+        "name": "TCV",
+        "website": "https://tcv.com",
+        "logo": "/investors/tcv.png"
+      },
+      {
+        "name": "Lightspeed Venture Partners",
+        "website": "https://lsvp.com",
+        "logo": "/investors/lightspeed.png"
+      },
+      {
+        "name": "Evantic Capital",
+        "website": "https://evantic.com",
+        "logo": "/investors/evantic.png"
+      },
+      {
+        "name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "20VC",
+        "website": "https://20vc.com",
+        "logo": "/investors/20vc.png"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "website": "https://www.bvp.com",
+        "logo": "/investors/bessemer-venture-partners.png"
+      },
+      {
+        "name": "Menlo Ventures",
+        "website": "https://menlovc.com",
+        "logo": "/investors/menlo-ventures.png"
+      },
+      {
+        "name": "Sequoia Capital",
+        "website": "https://sequoiacap.com",
+        "logo": "/investors/sequoia-capital.jpeg"
+      },
+      {
+        "name": "Benchmark",
+        "website": "https://www.benchmark.com",
+        "logo": "/investors/benchmark.jpeg"
+      },
+      {
+        "name": "AMD",
+        "website": "https://www.amd.com",
+        "logo": "/investors/amd.png"
+      },
+      {
+        "name": "MongoDB",
+        "website": "https://www.mongodb.com",
+        "logo": "/investors/mongodb-ventures.png"
+      },
+      {
+        "name": "Databricks Ventures",
+        "website": "https://www.databricks.com",
+        "logo": "/investors/databricks-ventures.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-d-2026",
+        "stage": "Series D",
+        "announcedAt": "2026-07-15",
+        "amount": {
+          "amount": 1505000000,
+          "currency": "USD",
+          "display": "$1.505B"
+        },
+        "valuation": {
+          "amount": 17500000000,
+          "currency": "USD",
+          "display": "$17.5B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Atreides Management",
+            "website": "https://atreidesmgmt.com",
+            "logo": "/investors/atreides.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "TCV",
+            "website": "https://tcv.com",
+            "logo": "/investors/tcv.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Evantic Capital",
+            "website": "https://evantic.com",
+            "logo": "/investors/evantic.png"
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "20VC",
+            "website": "https://20vc.com",
+            "logo": "/investors/20vc.png"
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "website": "https://www.bvp.com",
+            "logo": "/investors/bessemer-venture-partners.png"
+          },
+          {
+            "name": "Menlo Ventures",
+            "website": "https://menlovc.com",
+            "logo": "/investors/menlo-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://fireworks.ai/blog/series-d-announcement"
+      },
+      {
+        "id": "series-c-2025",
+        "stage": "Series C",
+        "announcedAt": "2025-10-28",
+        "amount": {
+          "amount": 250000000,
+          "currency": "USD",
+          "display": "$250M"
+        },
+        "valuation": {
+          "amount": 4000000000,
+          "currency": "USD",
+          "display": "$4B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Evantic Capital",
+            "website": "https://evantic.com",
+            "logo": "/investors/evantic.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          }
+        ],
+        "sourceUrl": "https://fireworks.ai/blog/series-c"
+      },
+      {
+        "id": "series-b-2024",
+        "stage": "Series B",
+        "announcedAt": "2024-07-11",
+        "amount": {
+          "amount": 52000000,
+          "currency": "USD",
+          "display": "$52M"
+        },
+        "valuation": {
+          "amount": 522000000,
+          "currency": "USD",
+          "display": "$522M"
+        },
+        "leadInvestors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "AMD",
+            "website": "https://www.amd.com",
+            "logo": "/investors/amd.png"
+          },
+          {
+            "name": "MongoDB",
+            "website": "https://www.mongodb.com",
+            "logo": "/investors/mongodb-ventures.png"
+          },
+          {
+            "name": "Benchmark",
+            "website": "https://www.benchmark.com",
+            "logo": "/investors/benchmark.jpeg"
+          },
+          {
+            "name": "Databricks Ventures",
+            "website": "https://www.databricks.com",
+            "logo": "/investors/databricks-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://siliconangle.com/2024/07/11/fireworks-ai-raises-52m-led-sequoia-522m-valuation/"
+      },
+      {
+        "id": "series-a-2024",
+        "stage": "Series A",
+        "announcedAt": "2024-03-27",
+        "amount": {
+          "amount": 25000000,
+          "currency": "USD",
+          "display": "$25M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Benchmark",
+            "website": "https://www.benchmark.com",
+            "logo": "/investors/benchmark.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Databricks Ventures",
+            "website": "https://www.databricks.com",
+            "logo": "/investors/databricks-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://www.thesaasnews.com/news/fireworks-ai-secures-25-million-in-series-a"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Lin Qiao",
+      "role": "Co-Founder & CEO",
+      "image": "/companies/fireworks/people/lin-qiao/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/lin-qiao-22248b4",
+      "sourceUrl": "https://fireworks.ai/team"
+    },
+    {
+      "name": "Benny Chen",
+      "role": "Co-Founder",
+      "image": "/companies/fireworks/people/benny-chen/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/benny-yufei-chen-2238575a/",
+      "sourceUrl": "https://fireworks.ai/team"
+    },
+    {
+      "name": "Chenyu Zhao",
+      "role": "Co-Founder",
+      "image": "/companies/fireworks/people/chenyu-zhao/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/chenyuzhao",
+      "sourceUrl": "https://fireworks.ai/team"
+    },
+    {
+      "name": "Dmytro Dzhulgakov",
+      "role": "Co-Founder",
+      "image": "/companies/fireworks/people/dmytro-dzhulgakov/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/dzhulgakov",
+      "sourceUrl": "https://fireworks.ai/team"
+    },
+    {
+      "name": "Dmytro Ivchenko",
+      "role": "Co-Founder",
+      "image": "/companies/fireworks/people/dmytro-ivchenko/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/dmytroivchenko/",
+      "sourceUrl": "https://fireworks.ai/team"
+    },
+    {
+      "name": "James Reed",
+      "role": "Co-Founder",
+      "image": "/companies/fireworks/people/james-reed/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/jamesr66a/",
+      "sourceUrl": "https://fireworks.ai/team"
+    },
+    {
+      "name": "Pawel Garbacki",
+      "role": "Co-Founder",
+      "image": "/companies/fireworks/people/pawel-garbacki/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/pawel-garbacki-490422/",
+      "sourceUrl": "https://fireworks.ai/team"
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Sep 17, 2026",
+      "dateTime": "2026-09-17",
+      "title": "Phylo brings frontier AI to scientists on Fireworks",
+      "description": "Phylo runs open-weight models on Fireworks to give more scientists access to frontier AI.",
+      "sourceUrl": "https://fireworks.ai/blog/phylo-brings-frontier-ai-to-more-scientists-with-open-models-on-fireworks"
+    },
+    {
+      "type": "product",
+      "time": "Sep 14, 2026",
+      "dateTime": "2026-09-14",
+      "title": "DeepSeek V4.1 Flash now on Fireworks",
+      "description": "DeepSeek V4.1 Flash launched on Fireworks, offering Astra-level DeepSWE performance at a fraction of the cost.",
+      "sourceUrl": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra"
+    },
+    {
+      "type": "news",
+      "time": "Sep 10, 2026",
+      "dateTime": "2026-09-10",
+      "title": "Making the leap to specialized intelligence",
+      "description": "Fireworks published its case for enterprises moving from rented general models to specialized intelligence they own.",
+      "sourceUrl": "https://fireworks.ai/blog/making-the-leap-to-specialized-intelligence"
+    },
+    {
+      "type": "product",
+      "time": "Aug 31, 2026",
+      "dateTime": "2026-08-31",
+      "title": "Training API now generally available",
+      "description": "Fireworks made its Training API generally available, letting teams train past the frontier on their own data.",
+      "sourceUrl": "https://fireworks.ai/blog/train-past-the-frontier-training-api-now-generally-available"
+    },
+    {
+      "type": "product",
+      "time": "Jul 26, 2026",
+      "dateTime": "2026-07-26",
+      "title": "Fireworks Nexus introduced",
+      "description": "Fireworks introduced Nexus, a new product surface for building with specialized models.",
+      "sourceUrl": "https://fireworks.ai/blog/fireworks-nexus"
+    },
+    {
+      "type": "growth",
+      "time": "Jul 20, 2026",
+      "dateTime": "2026-07-20",
+      "title": "Heidi Health runs on Fireworks",
+      "description": "Healthcare AI company Heidi adopted Fireworks to close the gap in frontier model performance.",
+      "sourceUrl": "https://fireworks.ai/blog/Heidi-Health"
+    },
+    {
+      "type": "funding",
+      "time": "Jul 15, 2026",
+      "dateTime": "2026-07-15",
+      "title": "Raised $1.505B Series D at a $17.5B valuation",
+      "description": "Fireworks raised a $1.505B Series D led by Atreides Management, Index Ventures, and TCV, at a $17.5B valuation, as it surpassed a $1B annualized revenue run rate.",
+      "sourceUrl": "https://fireworks.ai/blog/series-d-announcement"
+    },
+    {
+      "type": "growth",
+      "time": "Jul 9, 2026",
+      "dateTime": "2026-07-09",
+      "title": "Gumloop scaled open-weight usage 7x in 3 weeks",
+      "description": "Gumloop scaled its open-weight model usage 7x in three weeks on Fireworks.",
+      "sourceUrl": "https://fireworks.ai/blog/gumloop"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "AI Product Engineer - Nexus",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/2d0a20e1-8b0a-40b0-9b5e-514bca715fba"
+    },
+    {
+      "title": "Technical Recruiter",
+      "location": "San Mateo",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/fireworks/e1a1373c-7b45-4b49-b3ef-c6126ec1c8bb"
+    },
+    {
+      "title": "Partnerships Lead",
+      "location": "New York",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/fireworks/3af80f2c-ee2f-442a-b921-6529aaef49d9"
+    },
+    {
+      "title": "Executive Assistant",
+      "location": "San Mateo",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/fireworks/2393546c-ef71-4054-8c75-4f16caeffc5b"
+    },
+    {
+      "title": "Enterprise Account Executive",
+      "location": "United States, Remote",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/85e542b8-6349-48a7-b1b4-3818baf945aa"
+    },
+    {
+      "title": "Member of Technical Staff, Cloud Infrastructure, Singapore",
+      "location": "Singapore",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/93faf385-9322-4172-8ef2-42a9a6c889e6"
+    },
+    {
+      "title": "Enterprise Account Executive, EMEA",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/2facf9c7-9d73-4828-bbab-8adc37708f4c"
+    },
+    {
+      "title": "Applied Machine Learning Engineer, Singapore",
+      "location": "Singapore",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/044b1823-7d0d-4da2-b265-676f2a5a50c3"
+    },
+    {
+      "title": "Member of Technical Staff, AI Training Infrastructure",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/a2850702-dea3-4e2c-a3ec-7ae257d36eb7"
+    },
+    {
+      "title": "AI Deployment Strategist",
+      "location": "San Mateo",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/782b8fec-ec75-486d-a6fa-69f737f45e58"
+    },
+    {
+      "title": "Member of Technical Staff, Performance Optimization",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/7ad6d17e-950e-4413-be33-9c1489f069d8"
+    },
+    {
+      "title": "Applied Machine Learning Engineer",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/fc3845e6-e8ba-4756-a03e-654f14ce605b"
+    },
+    {
+      "title": "Member of Technical Staff, Cloud Infrastructure",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/a8abf746-17f5-45e3-a72e-085ccb8f2d74"
+    },
+    {
+      "title": "Member of Technical Staff, Evals & Post-Training Product",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/cca38fd5-9cbd-4cee-8fdb-d6e6d230b036"
+    },
+    {
+      "title": "Member of Technical Staff, LLM Infrastructure",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/82013447-2713-46ca-aab1-b0a34f7b565a"
+    },
+    {
+      "title": "MTS, Security",
+      "location": "San Mateo",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/fireworks/976cf215-3710-4136-aac8-f0c0f08ef45e"
+    },
+    {
+      "title": "Member of Technical Staff, Software Engineer",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/492db6a8-c757-4c4e-a2b3-f2ed183f8e6f"
+    },
+    {
+      "title": "Account Executive, AI Native Team",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/1e8064d8-27ed-41b9-9d7a-1f9129e24ce0"
+    },
+    {
+      "title": "Field Marketing Manager, Startups",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/e47bf56b-2696-48b2-93fc-11fd1263906c"
+    },
+    {
+      "title": "Sr Field Marketing Manager",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/2b9193ea-dbff-40b1-a766-0f872665c7fe"
+    },
+    {
+      "title": "Head of Marketing Operations",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/0e175af6-e53a-4e48-91ba-db3aaef8dac7"
+    },
+    {
+      "title": "Sales Compensation Lead",
+      "location": "San Mateo",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/fireworks/08bafd48-fd91-404b-b7c0-b19c30f8a058"
+    },
+    {
+      "title": "Member of Technical Staff- Full Stack",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/38aa9926-2865-45c4-ac38-585b78ee68ac"
+    },
+    {
+      "title": "Strategic Pursuits Account Executive, AI Native",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/a2a1cdd0-c79c-4023-b8ba-3c1349aedbdb"
+    },
+    {
+      "title": "AI Field Engineer, Singapore",
+      "location": "Singapore",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/1fc5eb25-08ad-4c82-aaee-5b903b9ab0ea"
+    },
+    {
+      "title": "AI Field Engineer, EMEA",
+      "location": "London",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/504591e5-fccd-4a7f-a9ca-81b51d2a5a12"
+    },
+    {
+      "title": "Applied Machine Learning Engineer, EMEA",
+      "location": "London",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/e5a9746e-49ac-407f-b953-5cf3c08a7802"
+    },
+    {
+      "title": "Enterprise Account Executive, Singapore",
+      "location": "Singapore",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/0e0c2c47-6aa2-4b8c-98f9-19fc51bc2ea2"
+    },
+    {
+      "title": "Senior Paid Growth Marketer",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/58083381-6c71-4d58-9014-bd2bcb3e1e85"
+    },
+    {
+      "title": "AI Field Engineer - Strategic Partnerships",
+      "location": "San Mateo",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/fireworks/4a5dbfe4-b0d5-4394-a94b-42345fb425b4"
+    },
+    {
+      "title": "Member of Technical Staff",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/6746dfde-8f8d-4a13-9961-7ae1e222a4c0"
+    },
+    {
+      "title": "AI Field Engineer - AI Natives",
+      "location": "San Mateo",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/7730b5a4-0b58-46c7-bcff-61a929a3d1bd"
+    },
+    {
+      "title": "AI Field Engineer - Enterprise",
+      "location": "San Mateo",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/69739e4f-1ca5-45db-8a70-4309d961c0b7"
+    },
+    {
+      "title": "Sales Enablement Lead",
+      "location": "United States, Remote",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/b0509951-7280-4e88-ab1e-a20631d3f5f2"
+    },
+    {
+      "title": "Social and Community Manager",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/da8f0b05-ac82-40a4-8cb8-64767c956018"
+    },
+    {
+      "title": "Business Development Representative (BDR)",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/cd8233f0-e958-40b5-a9a6-e35ecb9a76a4"
+    },
+    {
+      "title": "Head of Deal Desk",
+      "location": "San Mateo",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/c3c61f23-477a-446c-89cb-c22cc10a347e"
+    },
+    {
+      "title": "Head of GTM Engineering & Systems",
+      "location": "San Mateo",
+      "focus": "GTM",
+      "url": "https://jobs.ashbyhq.com/fireworks/0628f651-a8f6-4ef9-beec-6f31c3268c85"
+    },
+    {
+      "title": "Associate Product Manager",
+      "location": "San Mateo",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/fireworks/69375f41-258a-4c25-ad78-5985606c438a"
+    },
+    {
+      "title": "Product Manager, Platform",
+      "location": "San Mateo",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/fireworks/51aa1cdc-945e-4077-b5c7-c9ab37b420be"
+    },
+    {
+      "title": "Strategic Projects Lead",
+      "location": "San Mateo",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/fireworks/ccc2b11a-0996-4ed1-b5d6-7da20bbe73bc"
+    },
+    {
+      "title": "Head of Order to Cash",
+      "location": "San Mateo",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/fireworks/6c283170-bf6c-4259-a6cb-9f1e2315e7c9"
+    },
+    {
+      "title": "Senior Lifecycle Marketing Manager",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/a6c58388-14b7-4c16-bd1f-5c2d3753d297"
+    },
+    {
+      "title": "Facilities Manager",
+      "location": "San Mateo",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/fireworks/d5b05158-ad16-49a8-964f-b5e5d8e6191d"
+    },
+    {
+      "title": "Head of Product Marketing",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/d5063bc9-d2ac-4ee4-9e0c-23ea74ad83b2"
+    },
+    {
+      "title": "Product Marketing Lead, Partnerships",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/2b47b54e-ef8c-45da-acfa-25074396a4e1"
+    },
+    {
+      "title": "GTM Engineer",
+      "location": "San Francisco",
+      "focus": "GTM",
+      "url": "https://jobs.ashbyhq.com/fireworks/01166f87-1b1f-4e2e-8b7d-be6708566434"
+    },
+    {
+      "title": "Member of Technical Staff, Enterprise Foundations",
+      "location": "New York",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/89d811de-2505-4173-bf37-b173ce53ecf1"
+    },
+    {
+      "title": "GTM Engineer, Marketing & SDR",
+      "location": "San Mateo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/04e5e023-d9cc-4785-b410-7364d4f4fe15"
+    },
+    {
+      "title": "Member of Technical Staff, Research",
+      "location": "San Mateo",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/fireworks/ee35bd97-43f9-4574-8ab7-81debd5d3d1a"
+    },
+    {
+      "title": "Security Operations Lead",
+      "location": "San Mateo",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/fireworks/35fc89d0-b297-4721-8fe8-09f5c6967db4"
+    },
+    {
+      "title": "Product Designer",
+      "location": "San Mateo",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/fireworks/17a81efc-93db-457d-b92b-996722a0f64d"
+    },
+    {
+      "title": "Member of Technical Staff - Reliability Engineering",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/ff11ca2c-d95f-4802-8370-09c2cf394842"
+    },
+    {
+      "title": "Partnerships Lead",
+      "location": "London",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/fireworks/08c095a0-2f02-4078-938f-374394040b0e"
+    },
+    {
+      "title": "Senior Sales Manager, AI Native",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/1c4bd96f-108a-4217-a30d-f110ce54bb46"
+    },
+    {
+      "title": "Recruiting Coordinator [Contract]",
+      "location": "San Mateo",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/fireworks/d2475828-01b1-4c21-bee9-9aebd009156b"
+    },
+    {
+      "title": "Product Manager, Training",
+      "location": "San Mateo",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/fireworks/17394579-2c5f-4b43-91cb-e531700b8a26"
+    },
+    {
+      "title": "GRC Analyst",
+      "location": "San Mateo",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/fireworks/e172e100-1ba5-4fc8-b3e0-d80dd66aac70"
+    },
+    {
+      "title": "HR Business Partner, GTM",
+      "location": "San Mateo",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/fireworks/cf2eec9f-be27-4694-861d-87e72ae535a1"
+    },
+    {
+      "title": "Developer Advocate",
+      "location": "San Francisco",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/7a9c5827-cbeb-4397-b364-b7a5177b9f62"
+    },
+    {
+      "title": "AI Deployment Strategist (EMEA)",
+      "location": "London",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/ee05e8a5-a7b8-41bf-9e7b-fdb1dc6e6bcb"
+    },
+    {
+      "title": "Member of Technical Staff (EMEA)",
+      "location": "London",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/55f8e95c-f1ec-41b1-b387-1b98ff560f57"
+    },
+    {
+      "title": "Field Marketing Manager, EMEA",
+      "location": "London",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/fireworks/a09d7658-2986-46f9-a4e1-a8ce9a98a07c"
+    },
+    {
+      "title": "Senior Revenue Accountant",
+      "location": "San Mateo",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/fireworks/53ae49ee-b149-493c-bcab-b9c8840fa3d1"
+    },
+    {
+      "title": "Senior Manager, Indirect Tax",
+      "location": "San Mateo",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/fireworks/28dd73da-d8ff-4baa-a5df-e01231dede48"
+    },
+    {
+      "title": "Compensation Partner",
+      "location": "San Mateo",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/fireworks/5907602a-16c5-47e7-a9ec-42fc036ec6fd"
+    },
+    {
+      "title": "Member of Technical Staff, Systems Infrastructure (2026 PhD New Grad)",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/ad58a098-ef75-4a4b-8475-55c2653213ef"
+    },
+    {
+      "title": "Member of Technical Staff, Research (2026 PhD New Grad)",
+      "location": "San Mateo",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/fireworks/82b41f4a-a945-4aee-a1fd-1ef9ab513e58"
+    },
+    {
+      "title": "Member of Technical Staff, New Grad (BS/MS)",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/0c78aede-7c21-4d1e-88f1-f309deb9819e"
+    },
+    {
+      "title": "Sales Enablement Manager",
+      "location": "United States, Remote",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/28b3ecfd-6ebf-4f5b-9f85-b0a9eff68290"
+    },
+    {
+      "title": "Senior Account Executive, AI Native Team",
+      "location": "San Francisco",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/b6366240-4106-4898-ac07-af0c266b78f2"
+    },
+    {
+      "title": "Strategic Finance Manager, Infrastructure and R&D",
+      "location": "San Mateo",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/fireworks/b5d24188-bbd2-4f85-86bd-465edba8c0de"
+    },
+    {
+      "title": "Billing Operations Analyst - Usage Billing",
+      "location": "San Mateo",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/fireworks/5f5e3669-e6c5-4772-9cc9-0e8b760733be"
+    },
+    {
+      "title": "Head of AI Enabled Business Systems",
+      "location": "San Mateo",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/fireworks/b8d8d5ab-f5d2-452a-8276-c16c2f7c3a05"
+    },
+    {
+      "title": "Business Development Representative (BDR), EMEA",
+      "location": "London",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/5494d188-bc33-4f92-8c92-9d57bcd66c2a"
+    },
+    {
+      "title": "IT DevOps Engineer",
+      "location": "San Mateo",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/fireworks/a83a980e-9e31-489b-964c-abd6cd11dff2"
+    },
+    {
+      "title": "Business Development Representative (BDR)",
+      "location": "New York",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/fe0e6fc9-45de-4f65-ba4a-2516f914c2ba"
+    },
+    {
+      "title": "Account Executive, AI Native Team",
+      "location": "New York",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/fireworks/fab3e536-5f1d-4ecc-8446-899e8c056672"
+    },
+    {
+      "title": "Analytics Engineer",
+      "location": "San Mateo",
+      "focus": "Data",
+      "url": "https://jobs.ashbyhq.com/fireworks/85486dc8-023f-4a82-9cdb-8394bbfcf1ab"
+    }
+  ]
+}

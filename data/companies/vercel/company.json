@@ -5,7 +5,7 @@
   "description": "Vercel is agentic infrastructure for every app and agent — the platform where humans and agents build software together. Founded in 2015 as ZEIT, Vercel created and maintains Next.js, the most widely used React framework, along with the AI SDK and v0. It provides developer tools, frameworks, and cloud infrastructure to build, preview, and ship web applications on a global edge network, with products spanning Fluid Compute, Vercel Sandbox, AI Gateway, and Vercel Connect.",
   "website": "https://vercel.com",
   "foundedYear": 2015,
-  "banner": "/companies/vercel/images/banner.png",
+  "banner": "/companies/vercel/images/banner.jpg",
   "logo": "/companies/vercel/images/logo.png",
   "industry": "Developer Tools",
   "location": {
@@ -1052,7 +1052,7 @@
     {
       "name": "Jeanne DeWitt Grosser",
       "role": "Chief Operating Officer",
-      "image": null,
+      "image": "/companies/vercel/people/jeanne-dewitt-grosser/avatar.jpg",
       "linkedin": null,
       "x": null
     },
@@ -1184,6 +1184,5 @@
       "title": "Raised $21M Series A",
       "description": "ZEIT, shortly before rebranding to Vercel, raised $21M led by Accel with participation from GitHub's CEO and others."
     }
-  ],
-  "bannerPosition": "object-[center_70%]"
+  ]
 }

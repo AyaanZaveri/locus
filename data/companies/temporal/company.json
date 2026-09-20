@@ -1,0 +1,965 @@
+{
+  "slug": "temporal",
+  "name": "Temporal",
+  "tagline": "Build invincible apps",
+  "description": "Temporal is the open-source durable execution platform that lets developers write ordinary code and get fault-tolerant, long-running workflows without managing state, retries, or recovery themselves. Founded in 2019 by the creators of Uber's Cadence and AWS's Simple Workflow Service, it runs mission-critical systems at companies including OpenAI, Netflix, Snap, NVIDIA, and Stripe. Temporal Cloud processes billions of actions a month, and the company surpassed a $250M annualized revenue run rate in 2026 as durable execution became core infrastructure for long-running AI agents.",
+  "website": "https://temporal.io",
+  "foundedYear": 2019,
+  "banner": "/companies/temporal/images/banner.jpg",
+  "logo": "/companies/temporal/images/logo.png",
+  "industry": "Workflow Orchestration",
+  "location": {
+    "label": "Bellevue, Washington",
+    "countryCode": "us"
+  },
+  "stage": "Series E",
+  "employees": "609 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 1196500000,
+      "currency": "USD",
+      "display": "$1.2B"
+    },
+    "valuation": {
+      "amount": 12550000000,
+      "currency": "USD",
+      "display": "$12.55B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-e-2026",
+    "investors": [
+      {
+        "name": "Lightspeed Venture Partners",
+        "website": "https://lsvp.com",
+        "logo": "/investors/lightspeed.png"
+      },
+      {
+        "name": "Wellington Management",
+        "website": "https://www.wellington.com",
+        "logo": "/investors/wellington-management.png"
+      },
+      {
+        "name": "Goldman Sachs Growth Equity",
+        "website": "https://www.goldmansachs.com",
+        "logo": "/investors/goldman-sachs.png"
+      },
+      {
+        "name": "Tiger Global",
+        "website": "https://tigerglobal.com",
+        "logo": "/investors/tiger-global.png"
+      },
+      {
+        "name": "T. Rowe Price",
+        "website": "https://www.troweprice.com",
+        "logo": "/investors/t-rowe-price.png"
+      },
+      {
+        "name": "SV Angel",
+        "website": "https://svangel.com",
+        "logo": "/investors/sv-angel.png"
+      },
+      {
+        "name": "Andreessen Horowitz",
+        "website": "https://a16z.com",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "Sequoia Capital",
+        "website": "https://sequoiacap.com",
+        "logo": "/investors/sequoia-capital.jpeg"
+      },
+      {
+        "name": "Index Ventures",
+        "website": "https://www.indexventures.com",
+        "logo": "/investors/index-ventures.jpeg"
+      },
+      {
+        "name": "GIC",
+        "website": "https://www.gic.com.sg",
+        "logo": "/investors/gic.png"
+      },
+      {
+        "name": "Sapphire Ventures",
+        "website": "https://sapphireventures.com",
+        "logo": "/investors/sapphire-ventures.png"
+      },
+      {
+        "name": "Amplify Partners",
+        "website": "https://www.amplifypartners.com",
+        "logo": "/investors/amplify-partners.png"
+      },
+      {
+        "name": "Madrona Venture Group",
+        "website": "https://madrona.com",
+        "logo": "/investors/madrona-venture-group.png"
+      },
+      {
+        "name": "Addition Ventures",
+        "website": "https://addition.com",
+        "logo": "/investors/addition-ventures.png"
+      },
+      {
+        "name": "Greenoaks",
+        "website": "https://greenoaks.com",
+        "logo": "/investors/greenoaks-capital.png"
+      },
+      {
+        "name": "StepStone Group",
+        "website": "https://www.stepstonegroup.com",
+        "logo": "/investors/stepstone-group.png"
+      },
+      {
+        "name": "MongoDB Ventures",
+        "website": "https://www.mongodb.com",
+        "logo": "/investors/mongodb-ventures.png"
+      },
+      {
+        "name": "Conversion Capital",
+        "website": "https://conversioncapital.com",
+        "logo": "/investors/conversion-capital.png"
+      },
+      {
+        "name": "Hanwha Next Generation Opportunity Fund",
+        "website": "https://www.hanwha.com",
+        "logo": "/investors/hanwha.png"
+      },
+      {
+        "name": "137 Ventures",
+        "website": "https://137ventures.com",
+        "logo": "/investors/137-ventures.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-e-2026",
+        "stage": "Series E",
+        "announcedAt": "2026-09-14",
+        "amount": {
+          "amount": 550000000,
+          "currency": "USD",
+          "display": "$550M"
+        },
+        "valuation": {
+          "amount": 12550000000,
+          "currency": "USD",
+          "display": "$12.55B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Wellington Management",
+            "website": "https://www.wellington.com",
+            "logo": "/investors/wellington-management.png"
+          },
+          {
+            "name": "Goldman Sachs Growth Equity",
+            "website": "https://www.goldmansachs.com",
+            "logo": "/investors/goldman-sachs.png"
+          },
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "T. Rowe Price",
+            "website": "https://www.troweprice.com",
+            "logo": "/investors/t-rowe-price.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://svangel.com",
+            "logo": "/investors/sv-angel.png"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "GIC",
+            "website": "https://www.gic.com.sg",
+            "logo": "/investors/gic.png"
+          },
+          {
+            "name": "Sapphire Ventures",
+            "website": "https://sapphireventures.com",
+            "logo": "/investors/sapphire-ventures.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-raises-550m-at-a-12-55b-valuation"
+      },
+      {
+        "id": "series-d-2026",
+        "stage": "Series D",
+        "announcedAt": "2026-02-17",
+        "amount": {
+          "amount": 300000000,
+          "currency": "USD",
+          "display": "$300M"
+        },
+        "valuation": {
+          "amount": 5000000000,
+          "currency": "USD",
+          "display": "$5B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Sapphire Ventures",
+            "website": "https://sapphireventures.com",
+            "logo": "/investors/sapphire-ventures.png"
+          },
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          },
+          {
+            "name": "GIC",
+            "website": "https://www.gic.com.sg",
+            "logo": "/investors/gic.png"
+          },
+          {
+            "name": "Madrona Venture Group",
+            "website": "https://madrona.com",
+            "logo": "/investors/madrona-venture-group.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
+      },
+      {
+        "id": "series-c-2025",
+        "stage": "Series C",
+        "announcedAt": "2025-03-31",
+        "amount": {
+          "amount": 146000000,
+          "currency": "USD",
+          "display": "$146M"
+        },
+        "valuation": {
+          "amount": 1720000000,
+          "currency": "USD",
+          "display": "$1.72B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Tiger Global",
+            "website": "https://tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "StepStone Group",
+            "website": "https://www.stepstonegroup.com",
+            "logo": "/investors/stepstone-group.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "MongoDB Ventures",
+            "website": "https://www.mongodb.com",
+            "logo": "/investors/mongodb-ventures.png"
+          },
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Conversion Capital",
+            "website": "https://conversioncapital.com",
+            "logo": "/investors/conversion-capital.png"
+          },
+          {
+            "name": "Hanwha Next Generation Opportunity Fund",
+            "website": "https://www.hanwha.com",
+            "logo": "/investors/hanwha.png"
+          },
+          {
+            "name": "137 Ventures",
+            "website": "https://137ventures.com",
+            "logo": "/investors/137-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution"
+      },
+      {
+        "id": "series-b-prime-2023",
+        "stage": "Series B-Prime",
+        "announcedAt": "2023-02-28",
+        "amount": {
+          "amount": 75000000,
+          "currency": "USD",
+          "display": "$75M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [
+          {
+            "name": "Greenoaks",
+            "website": "https://greenoaks.com",
+            "logo": "/investors/greenoaks-capital.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Madrona Venture Group",
+            "website": "https://madrona.com",
+            "logo": "/investors/madrona-venture-group.png"
+          },
+          {
+            "name": "Addition Ventures",
+            "website": "https://addition.com",
+            "logo": "/investors/addition-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-investors-expand-funding-with-usd75m-round"
+      },
+      {
+        "id": "series-b-2022",
+        "stage": "Series B",
+        "announcedAt": "2022-02-16",
+        "amount": {
+          "amount": 100000000,
+          "currency": "USD",
+          "display": "$100M"
+        },
+        "valuation": {
+          "amount": 1500000000,
+          "currency": "USD",
+          "display": "$1.5B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          },
+          {
+            "name": "Madrona Venture Group",
+            "website": "https://madrona.com",
+            "logo": "/investors/madrona-venture-group.png"
+          },
+          {
+            "name": "Addition Ventures",
+            "website": "https://addition.com",
+            "logo": "/investors/addition-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-io-raises-usd100-million-series-b-company-valuation-passes-usd1-5"
+      },
+      {
+        "id": "series-a-2020",
+        "stage": "Series A",
+        "announcedAt": "2020-10-15",
+        "amount": {
+          "amount": 18750000,
+          "currency": "USD",
+          "display": "$18.75M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Madrona Venture Group",
+            "website": "https://madrona.com",
+            "logo": "/investors/madrona-venture-group.png"
+          },
+          {
+            "name": "Addition Ventures",
+            "website": "https://addition.com",
+            "logo": "/investors/addition-ventures.png"
+          },
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-raises-usd18-75m-series-a-increases-total-raised-to-usd25-5m"
+      },
+      {
+        "id": "seed-2020",
+        "stage": "Seed",
+        "announcedAt": null,
+        "amount": {
+          "amount": 6750000,
+          "currency": "USD",
+          "display": "$6.75M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Amplify Partners",
+            "website": "https://www.amplifypartners.com",
+            "logo": "/investors/amplify-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Addition Ventures",
+            "website": "https://addition.com",
+            "logo": "/investors/addition-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://temporal.io/news/temporal-raises-usd18-75m-series-a-increases-total-raised-to-usd25-5m"
+      }
+    ]
+  },
+  "people": [
+    {
+      "name": "Samar Abbas",
+      "role": "Co-Founder & CEO",
+      "image": "/companies/temporal/people/samar-abbas/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/samar-abbas-381997",
+      "sourceUrl": "https://temporal.io/about"
+    },
+    {
+      "name": "Maxim Fateev",
+      "role": "Co-Founder & CTO",
+      "image": "/companies/temporal/people/maxim-fateev/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/fateev",
+      "sourceUrl": "https://temporal.io/about"
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Sep 15, 2026",
+      "dateTime": "2026-09-15",
+      "title": "Authentication is a long-running Workflow",
+      "description": "Temporal published a pattern for running authentication and session lifecycles as durable, long-running workflows.",
+      "sourceUrl": "https://temporal.io/blog/authentication-is-a-long-running-workflow"
+    },
+    {
+      "type": "funding",
+      "time": "Sep 14, 2026",
+      "dateTime": "2026-09-14",
+      "title": "Raised $550M Series E at a $12.55B valuation",
+      "description": "Temporal raised a $550M Series E led by Lightspeed, with Wellington Management, Goldman Sachs Growth Equity, and Tiger Global, as annualized revenue surpassed $250M.",
+      "sourceUrl": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai"
+    },
+    {
+      "type": "product",
+      "time": "Sep 9, 2026",
+      "dateTime": "2026-09-09",
+      "title": "Migrating Temporal Workflows to AWS Lambda",
+      "description": "Temporal showed how to move from dedicated Workers to Serverless Workers on AWS Lambda.",
+      "sourceUrl": "https://temporal.io/blog/migrating-temporal-workflows-to-aws-lambda"
+    },
+    {
+      "type": "news",
+      "time": "Sep 4, 2026",
+      "dateTime": "2026-09-04",
+      "title": "Crystal Palace Women partnership",
+      "description": "Temporal announced a partnership with Crystal Palace Women, aimed at closing the gap in women's football and tech.",
+      "sourceUrl": "https://temporal.io/blog/temporal-partnership-with-crystal-palace-palace-women"
+    },
+    {
+      "type": "product",
+      "time": "Sep 3, 2026",
+      "dateTime": "2026-09-03",
+      "title": "Durable AI agents without changing agent code",
+      "description": "Temporal described making an agent's thread the workflow, adding durability without rewriting agent code.",
+      "sourceUrl": "https://temporal.io/blog/manetu-the-thread-is-the-workflow"
+    },
+    {
+      "type": "documentation",
+      "time": "Sep 2, 2026",
+      "dateTime": "2026-09-02",
+      "title": "Using coding agents on a migration",
+      "description": "Temporal shared three practices that mattered when using coding agents for a large migration.",
+      "sourceUrl": "https://temporal.io/blog/using-coding-agents-on-a-migration-three-practices-that-mattered"
+    },
+    {
+      "type": "growth",
+      "time": "Sep 1, 2026",
+      "dateTime": "2026-09-01",
+      "title": "LlamaIndex uses Temporal for document orchestration",
+      "description": "LlamaIndex adopted Temporal to scale reliable document orchestration for its agents.",
+      "sourceUrl": "https://temporal.io/blog/llamaindex-uses-temporal-to-scale-reliable-document-orchestration"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Technical Executive Communications, Senior Manager",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/temporal/30600762-62fe-4ffb-9b6e-98f145329ea3"
+    },
+    {
+      "title": "Senior Product Manager, Self-Hosting and Hybrid",
+      "location": "United States (Remote)",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/temporal/01e59346-2cf2-4123-8df1-c8a486eced72"
+    },
+    {
+      "title": "Manager, India Partnerships",
+      "location": "Bengaluru, Karnataka",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/temporal/956e8190-8493-485d-93a8-0b84a9daec9b"
+    },
+    {
+      "title": "Senior Developer Success Engineer - West",
+      "location": "United States",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/915faccb-5bf1-4a1c-9a2d-ccad28fd48f7"
+    },
+    {
+      "title": "Staff Solutions Architect, Banking (India)",
+      "location": "Bengaluru, Karnataka",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/db6c81bf-1af3-4792-9473-1a8ee4518a06"
+    },
+    {
+      "title": "Account Executive, EMEA",
+      "location": "Paris, France",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/8d36eacb-61cf-466d-ba9a-d5849d3312eb"
+    },
+    {
+      "title": "Staff Software Engineer, Open Source Server",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/f40a7b70-71c0-49f6-ba9f-1df2de9b46d9"
+    },
+    {
+      "title": "Senior Software Engineer, Cloud Data Storage",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/2a2a29fa-3701-4f0d-a262-aeb8bc68e0c3"
+    },
+    {
+      "title": "Senior Developer Success Engineer - East",
+      "location": "United States (Remote)",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/a58b6b5f-204f-454d-9cd5-e8b2acc44b65"
+    },
+    {
+      "title": "Senior Account Executive, New Logo",
+      "location": "Berlin, Germany",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/2ebca428-89c2-4cd9-9b30-92bb6d20ad45"
+    },
+    {
+      "title": "Senior Staff Software Engineer, Infrastructure",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/4782f8ba-7b56-4fba-934b-4d691174130e"
+    },
+    {
+      "title": "Finance Director, GTM",
+      "location": "San Francisco, California",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/temporal/5fb4393c-d16e-47ac-b4ae-52bb0e63cd8b"
+    },
+    {
+      "title": "Senior Software Engineer, Observability",
+      "location": "United States (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/109d72d0-e739-406c-87ae-b0f1f5ae7ade"
+    },
+    {
+      "title": "Staff Software Engineer, Observability",
+      "location": "United States (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/ab6f8a80-5800-4f29-9c7a-ac2df3e1fe66"
+    },
+    {
+      "title": "Senior Finance Analyst, Corporate",
+      "location": "San Francisco, California",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/temporal/cc464a18-0431-42ff-acc3-25ddc644d798"
+    },
+    {
+      "title": "Staff Developer Advocate, Enterprise - EMEA",
+      "location": "Berlin, Germany",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/temporal/84e898c9-621a-445f-80a2-43819d4d3a0e"
+    },
+    {
+      "title": "Staff Cloud Security Engineer",
+      "location": "United States (Remote)",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/temporal/f8b1d059-32d7-4d78-aea6-2e64dd3e9f6a"
+    },
+    {
+      "title": "Business Development Representative",
+      "location": "Atlanta, Georgia",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/1aa528e5-5076-4d98-8b07-92444c692ade"
+    },
+    {
+      "title": "Senior Staff Engineer, Open Source Server",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/b3ba030c-dcbb-4131-9edb-90a8e03849e8"
+    },
+    {
+      "title": "Head of Engineering, Compute",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/8a65908d-4f38-4b19-a0ed-453904180469"
+    },
+    {
+      "title": "Staff Solutions Architect, New Logo - Central",
+      "location": "Chicago, Illinois",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/de4ea341-0921-4ab0-878e-bf936021118d"
+    },
+    {
+      "title": "Senior Account Executive, New Logo - Chicago",
+      "location": "Chicago, Illinois",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/7a8a7ed9-b569-450a-a649-a80db834a8f3"
+    },
+    {
+      "title": "Staff Product Manager, Core Primitives",
+      "location": "United States",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/temporal/7592248c-719a-485c-a1a9-9285f99ed56b"
+    },
+    {
+      "title": "Director of Sales, New Logo",
+      "location": "New York, New York",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/1647a4bf-f7fd-4c7f-9135-953d022c03ad"
+    },
+    {
+      "title": "Senior Software Engineer, Compute (Temporal Cloud)",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/ba01bd3a-2b66-4fbb-b33c-8e0ac684df9a"
+    },
+    {
+      "title": "Senior Software Engineer, Open Source Server",
+      "location": "United States (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/a6db83c0-46c3-415c-8161-621a77781d38"
+    },
+    {
+      "title": "Staff Software Engineer, Cloud Data Storage",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/ceb3ae3d-3a72-4067-b13d-44350a143195"
+    },
+    {
+      "title": "Staff Software Engineer, Compute (Temporal Cloud)",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/cfc85072-6669-4671-afd4-e860f7072668"
+    },
+    {
+      "title": "Senior Developer Advocate, Developer Education",
+      "location": "United States",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/temporal/87dd32bc-a4e1-49db-9d44-f4f9702519ee"
+    },
+    {
+      "title": "Staff Product Manager, AI Ecosystem",
+      "location": "San Francisco, California",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/temporal/ea7a9e97-de00-4603-bf85-4da5b3749270"
+    },
+    {
+      "title": "Senior Manager, Solutions Architecture - New Logo",
+      "location": "United States",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/b4817f72-9afc-431b-919d-aea70f6cbf4c"
+    },
+    {
+      "title": "Account Executive, Growth - Scale (West)",
+      "location": "San Francisco, California",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/ce519860-6e31-49c2-a4b4-f6e9a92c3f4b"
+    },
+    {
+      "title": "Senior Platform Architect - West",
+      "location": "United States",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/053cfe55-570a-425f-b44e-e64b2c9b28f9"
+    },
+    {
+      "title": "Director, Global Developer Success",
+      "location": "United States",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/25568018-4545-448c-acef-1ac481e67d5d"
+    },
+    {
+      "title": "Senior Professional Services Engineer - East",
+      "location": "United States",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/7a1e439c-c349-4cd4-8490-6e22a62005bf"
+    },
+    {
+      "title": "Senior Professional Services Engineer - West",
+      "location": "United States",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/29fbbb7e-f8d3-4424-a301-cb32b704ae16"
+    },
+    {
+      "title": "Senior Software Engineer, Infrastructure Foundations",
+      "location": "San Francisco, California",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/1929137d-1aef-4eae-9490-b934a90bc2ab"
+    },
+    {
+      "title": "Senior Platform Architect",
+      "location": "London, England",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/e75ff82a-19e2-470e-ac4b-49f0a87acd76"
+    },
+    {
+      "title": "Staff Software Engineer, Traffic",
+      "location": "Seattle, Washington",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/05507d71-51c9-455c-80b4-2da9699a0e77"
+    },
+    {
+      "title": "Vice President, Global Corporate Controller",
+      "location": "San Francisco, California",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/temporal/e015924f-bbf4-4401-97c3-56a179cf498e"
+    },
+    {
+      "title": "Senior Software Engineer, Cloud Growth",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/a04c4545-b34e-40d4-b1ac-17f17976e93e"
+    },
+    {
+      "title": "Senior Solutions Architect - Singapore",
+      "location": "Singapore, Singapore",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/d9b9d44f-0a87-4237-b101-360052373643"
+    },
+    {
+      "title": "Field Marketing Manager, Sponsorship & Experiential",
+      "location": "London, England",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/temporal/9a2e32f5-2f85-49ea-b1af-855178bb0af8"
+    },
+    {
+      "title": "Business Development Representative, EMEA",
+      "location": "London, England",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/99b2768c-0ce0-425b-84a4-de0fa400c18b"
+    },
+    {
+      "title": "Sales Manager (India)",
+      "location": "Bengaluru, Karnataka",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/59a58e6a-d082-4b85-98f6-8dd069e26ae4"
+    },
+    {
+      "title": "Senior Engineering Manager - Test Systems & Tooling",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/b656400a-bc30-4fc3-a117-b803ef42634f"
+    },
+    {
+      "title": "Staff Software Engineer - Test Systems & Tooling",
+      "location": "United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/7365a59d-554e-41f4-9163-2fdd528a42ca"
+    },
+    {
+      "title": "Staff Product Manager,  Cloud Namespace & Capacity",
+      "location": "United States",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/temporal/5d4ee2f8-8ff0-4271-9292-c78df24735aa"
+    },
+    {
+      "title": "Account Executive, Growth -Scale (East)",
+      "location": "New York, New York",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/3314f805-4651-47af-a8c8-e67aac2c23c7"
+    },
+    {
+      "title": "Senior Account Executive, Majors - West",
+      "location": "San Francisco, California",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/5858d6cf-1445-4a03-b057-a9c8526f6d48"
+    },
+    {
+      "title": "Senior Account Executive, Majors (East)",
+      "location": "New York, New York",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/756726af-0461-4c08-98cc-6f83909e0fe1"
+    },
+    {
+      "title": "Senior Account Executive, Majors (Central)",
+      "location": "Chicago, Illinois",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/fea5e385-1ad8-47f1-8042-3c0760bb060e"
+    },
+    {
+      "title": "Manager, GSI Partnerships",
+      "location": "San Francisco, California",
+      "focus": "Partnerships",
+      "url": "https://jobs.ashbyhq.com/temporal/9f55b2c9-9066-44b2-bb1d-4dc66d5e2c01"
+    },
+    {
+      "title": "Senior Software Engineer, Cloud Platform Foundations",
+      "location": "Seattle, Washington",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/ddbc1916-39a0-47ff-b868-c9e8b90569f1"
+    },
+    {
+      "title": "Staff Solutions Architect, Majors - East",
+      "location": "Boston, Massachusetts",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/cdabd368-1989-4ea8-801d-2be138c16523"
+    },
+    {
+      "title": "Staff Solutions Architect, Majors (West)",
+      "location": "San Francisco, California",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/0b03268c-92ba-4092-9eec-05eb16e41b95"
+    },
+    {
+      "title": "Staff Solutions Architect, Majors (Central)",
+      "location": "Dallas, Texas",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/e8dc6efc-67da-4a5d-859c-85865d6ed21d"
+    },
+    {
+      "title": "Staff Solutions Architect, Banking (Central)",
+      "location": "Dallas, Texas",
+      "focus": "Field Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/c07bba44-5506-4b5b-a0e0-5367a18afe29"
+    },
+    {
+      "title": "Staff Product Manager, Nexus",
+      "location": "Seattle, Washington",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/temporal/73279908-77f8-4488-8151-4c40f49a230d"
+    },
+    {
+      "title": "Head of Corporate Development",
+      "location": "San Francisco, California",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/temporal/d9a78583-cca6-4d76-96f9-846693a37815"
+    },
+    {
+      "title": "Business Development Intern (Fall 2026)",
+      "location": "Atlanta, Georgia",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/temporal/70cee4cb-ce31-43b7-89a1-c7067822317a"
+    },
+    {
+      "title": "Senior Application Security Engineer",
+      "location": "United States (Remote)",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/temporal/c22959f0-eadf-4860-808b-a7c2c4e25712"
+    },
+    {
+      "title": "Staff Software Engineer, AI Foundations (AI Agent Optimization)",
+      "location": "United States (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/4ee99986-77ad-4113-8058-891d5cc7284a"
+    },
+    {
+      "title": "Software Engineer, Cloud Enablement",
+      "location": "United States (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/temporal/7b63cf37-2bdb-462c-858c-473167563623"
+    },
+    {
+      "title": "Senior Staff Product Marketing Engineer, Core and SDKs",
+      "location": "San Francisco, California",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/temporal/66b66d5b-0aaa-4e4a-979f-96e43d846d4a"
+    }
+  ]
+}

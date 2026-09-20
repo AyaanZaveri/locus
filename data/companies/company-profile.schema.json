@@ -1,0 +1,618 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tagline": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "website": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "foundedYear": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1800,
+          "maximum": 2100
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "banner": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "bannerPosition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "logo": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "AI Compute",
+        "AI Gateway",
+        "AI Inference",
+        "Database",
+        "Developer Tools",
+        "Fintech",
+        "Web Search",
+        "Workflow Orchestration"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "countryCode": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2
+        }
+      },
+      "required": [
+        "label",
+        "countryCode"
+      ],
+      "additionalProperties": false
+    },
+    "stage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "employees": {
+      "type": "string",
+      "minLength": 1
+    },
+    "financials": {
+      "type": "object",
+      "properties": {
+        "totalFunding": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "const": "USD"
+            },
+            "display": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "amount",
+            "currency",
+            "display"
+          ],
+          "additionalProperties": false
+        },
+        "valuation": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "currency": {
+                  "type": "string",
+                  "const": "USD"
+                },
+                "display": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "amount",
+                "currency",
+                "display"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "annualRevenue": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "currency": {
+                  "type": "string",
+                  "const": "USD"
+                },
+                "display": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "amount",
+                "currency",
+                "display"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "totalFunding",
+        "valuation",
+        "annualRevenue"
+      ],
+      "additionalProperties": false
+    },
+    "funding": {
+      "type": "object",
+      "properties": {
+        "latestRoundId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "investors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "website": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "logo": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "website"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "rounds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "stage": {
+                "type": "string",
+                "minLength": 1
+              },
+              "announcedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "amount": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "currency": {
+                    "type": "string",
+                    "const": "USD"
+                  },
+                  "display": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "amount",
+                  "currency",
+                  "display"
+                ],
+                "additionalProperties": false
+              },
+              "valuation": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "amount": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "currency": {
+                        "type": "string",
+                        "const": "USD"
+                      },
+                      "display": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "amount",
+                      "currency",
+                      "display"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "leadInvestors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "website": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "format": "uri"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "logo": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "website"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "investors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "website": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "format": "uri"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "logo": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "website"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "sourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "stage",
+              "announcedAt",
+              "amount",
+              "valuation",
+              "leadInvestors",
+              "investors",
+              "sourceUrl"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "latestRoundId",
+        "investors",
+        "rounds"
+      ],
+      "additionalProperties": false
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+          "focus": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "title",
+          "location",
+          "focus"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "image": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "linkedin": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "x": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceUrl": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "role",
+          "image",
+          "linkedin"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "activity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "documentation",
+              "funding",
+              "growth",
+              "hiring",
+              "news",
+              "people",
+              "product"
+            ]
+          },
+          "time": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dateTime": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceUrl": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "type",
+          "time",
+          "dateTime",
+          "title",
+          "description"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "slug",
+    "name",
+    "tagline",
+    "description",
+    "website",
+    "foundedYear",
+    "banner",
+    "logo",
+    "industry",
+    "location",
+    "stage",
+    "employees",
+    "financials",
+    "funding",
+    "jobs",
+    "people",
+    "activity"
+  ],
+  "additionalProperties": false
+}

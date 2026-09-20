@@ -68,12 +68,12 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
   return (
     <main
       id="top"
-      className="min-h-0 min-w-0 flex-1 overflow-y-auto ps-3 pe-1.5 py-3 sm:p-6"
+      className="min-h-0 min-w-0 flex-1 overflow-y-auto ps-3 pe-1.5 py-3 md:p-6"
     >
-      <div className="mx-auto grid w-full max-w-7xl gap-6 xl:grid-cols-[minmax(0,1fr)_22rem]">
-        <div>
-          <div className="relative w-full max-w-8xl">
-            <div className="relative isolate h-72 overflow-hidden rounded-lg shadow-xs">
+      <div className="mx-auto grid w-full min-w-0 max-w-7xl gap-6 xl:grid-cols-[minmax(0,1fr)_22rem]">
+        <div className="min-w-0">
+          <div className="relative w-full max-w-full">
+            <div className="relative isolate aspect-[1200/630] overflow-hidden rounded-lg ring-1 ring-black/10 shadow-xs md:aspect-[16/7] dark:ring-white/10">
               {profile.banner ? (
                 <img
                   alt={`${profile.name} banner`}
@@ -224,16 +224,21 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                               strokeWidth={2}
                                             />
                                           </TooltipTrigger>
-                                          <TooltipContent>
+                                          <TooltipContent
+                                            className="gap-1.5 bg-background/90 px-2 py-1.5 text-foreground ring-1 ring-border/50 shadow-xs backdrop-blur-sm"
+                                            showArrow={false}
+                                          >
                                             <img
                                               alt=""
                                               aria-hidden="true"
-                                              className="size-3.5 shrink-0 rounded-sm object-contain"
+                                              className="-ml-px size-3.5 shrink-0 rounded-[3px] object-contain"
                                               src={`https://www.google.com/s2/favicons?domain=${getSourceHost(
                                                 round.sourceUrl,
                                               )}&sz=64`}
                                             />
-                                            {getSourceHost(round.sourceUrl)}
+                                            <span className="font-mono font-medium tracking-tight">
+                                              {getSourceHost(round.sourceUrl)}
+                                            </span>
                                           </TooltipContent>
                                         </Tooltip>
                                       ) : null}
@@ -248,7 +253,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                     <Button
                                       className="rounded-full border-border/50"
                                       key={investor.name}
-                                      nativeButton={false}
+                                      nativeButton={!investor.website}
                                       render={
                                         investor.website ? (
                                           <a
@@ -283,11 +288,11 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               </section>
             ) : null}
 
-            <section className="mt-6 max-w-none">
+            <section id="key-people" className="mt-6 max-w-none scroll-mt-6">
               <h2 className="text-lg font-semibold tracking-tight">
                 Key people
               </h2>
-              <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {profile.people.map((person) => (
                   <div
                     className="flex items-center gap-3 rounded-lg border border-border/50 bg-background p-3"
@@ -374,7 +379,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             </section>
 
             {profile.jobs.length ? (
-              <section className="mt-6 max-w-none">
+              <section id="jobs" className="mt-6 max-w-none scroll-mt-6">
                 <h2 className="text-lg font-semibold tracking-tight">Jobs</h2>
                 <div className="mt-3 flex flex-col gap-3">
                   {profile.jobs.map((job, index) => {
