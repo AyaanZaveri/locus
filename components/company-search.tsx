@@ -251,7 +251,9 @@ export function CompanySearch({
                       <div className="min-w-0 flex-1">
                         <p className="truncate font-medium">{person.name}</p>
                         <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
-                          <span className="truncate">{person.role} @</span>
+                          <span className="truncate font-medium">
+                            {person.role} @
+                          </span>
                           {person.companyLogo ? (
                             <img
                               alt=""
