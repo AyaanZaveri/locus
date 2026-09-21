@@ -83,14 +83,42 @@ Treat this as structured data collection, not a narrative task. Work in passes:
 2. Search primary sources first: company site, newsroom/blog, official investor announcements, canonical careers board, and official social profiles.
 3. Use WebSearch for discovery and exact dates, WebFetch for static pages and APIs, and agent-browser for JavaScript-rendered pages. If WebSearch is unavailable, blocked, or fails to surface a needed primary source, use [Brave Search](https://search.brave.com/search?q=) with a URL-encoded query as the fallback. Prefer structured first-party job-board APIs such as Greenhouse or Ashby.
 4. Normalize funding rounds independently. Never merge rounds that share a letter, and never replace a disclosed valuation with an estimate.
-5. Enumerate all currently open jobs from the canonical board. Every job needs its exact application URL, not the generic careers URL. **Retrieve the full individual posting before writing `jobs[].description`; an ATS listing card, search result, or API excerpt is never sufficient.** The description must contain the complete substantive job-page copy in sanitized CommonMark — including the company context published on the role page, role overview, responsibilities, requirements, qualifications, benefits/perks, compensation context, and hiring/interview process. Preserve headings, paragraphs, and lists, and do not summarize, truncate, or remove useful prose merely because a fact is also represented in a structured field. Keep those structured role facts in parallel. Remove only non-content: raw HTML, scripts/tracking, site navigation, application form controls, cookie text, repeated application instructions, and generic legal/privacy/EEO boilerplate. If a board API exposes only a short description, follow the individual job URL or its detail endpoint for the full body. Close emphasis before a following link and leave whitespace between them (for example, `***Announcement.*** [***Read more***](https://example.com)`); never concatenate Markdown marker runs. **Do not assume the ATS from the company name** — a slug that resolves for one company returns empty for another, and a name-based guess can silently yield zero jobs. Derive the real board from the careers page, then prefer its public JSON API over scraping:
+5. Enumerate all currently open jobs from the canonical board. Every job needs its exact application URL, not the generic careers URL. **Retrieve the full individual posting before writing `jobs[].description`; an ATS listing card, search result, or API excerpt is never sufficient.** The description must contain the complete substantive job-page copy in sanitized CommonMark. It is a transcription field, not a summary: preserve the source wording, order, and level of detail while converting its presentation to Markdown. Keep structured role facts in parallel. If a board API exposes only a short description, follow the individual job URL or its detail endpoint for the full body. Close emphasis before a following link and leave whitespace between them (for example, `***Announcement.*** [***Read more***](https://example.com)`); never concatenate Markdown marker runs. **Do not assume the ATS from the company name** — a slug that resolves for one company returns empty for another, and a name-based guess can silently yield zero jobs. Derive the real board from the careers page, then prefer its public JSON API over scraping:
    - Ashby: `https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true`
    - Greenhouse: `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs`
    - Lever: `https://api.lever.co/v0/postings/{slug}?mode=json`
    An empty `jobs` array from a guessed slug is indistinguishable from a company with no openings, so confirm the slug against the careers page before trusting a zero result. Note also that a company may link its own branded paths (e.g. `/careers/{title}-{id}`) that are not the real application URL; resolve each posting to the underlying ATS URL.
+
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page, and verify LinkedIn/X URLs. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
 8. Write the repository-shaped JSON, download requested assets, then run syntax and path checks.
+
+### Job-description fidelity gate
+
+`jobs[].description` must be an almost lossless Markdown transcription of the
+individual job page's substantive content. Do not rewrite it into a compact
+"Role" or "Work and benefits" summary. Preserve every meaningful section,
+paragraph, list item, and concrete detail — including company context, job and
+candidate sections, values, responsibilities, requirements, qualifications,
+compensation, benefits, workplace expectations, visa information, and the
+hiring process. If the source says "About us", "Job", "You", "Life at
+{Company}", or "Compensation & benefits", those should remain distinct
+headings with their full text beneath them.
+
+- Convert source headings and labels to Markdown headings, source lists to
+  Markdown lists, and prose to paragraphs. Preserve links, emphasis, numbers,
+  company names, and named tools when present.
+- Do **not** summarize, paraphrase, deduplicate, or omit a section because the
+  same fact also appears in `skills`, `compensation`, `visa`, or another
+  structured field. Those fields are for filtering; the description is the
+  complete reading experience.
+- Retain all hiring and application information expressed as job-page prose.
+  Remove only non-content: raw HTML, scripts/tracking, page navigation, cookie
+  notices, form inputs/buttons, and generic legal/privacy/EEO boilerplate.
+- Before saving, compare the rendered source body to the Markdown output. Every
+  substantive source block must have a corresponding Markdown block. If the
+  full body cannot be retrieved, leave `description` as `null` and report that
+  limitation; never substitute a short listing preview or a generated summary.
 
 ## Parallel research
 

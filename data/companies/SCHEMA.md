@@ -125,10 +125,10 @@ type Job = {
   location: string;
   focus: string;
   url?: string | null;
-  // Full substantive posting in sanitized CommonMark. Preserve useful headings,
-  // lists, company context, responsibilities, requirements, benefits, and hiring
-  // process; remove only application UI, navigation, scripts/tracking, and
-  // generic legal/privacy boilerplate.
+  // Almost-lossless, sanitized CommonMark transcription of the full posting.
+  // Preserve every substantive heading, paragraph, list, and detail; do not
+  // summarize facts that are also in structured fields. Remove only application
+  // UI, navigation, scripts/tracking, and generic legal/privacy boilerplate.
   description?: string | null;
   status?: "open" | "closed" | "unknown" | null;
   workplaceType?: "remote" | "hybrid" | "onsite" | "flexible" | null;
