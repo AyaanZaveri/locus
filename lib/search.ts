@@ -1,6 +1,6 @@
 import "server-only";
 
-import { and, desc, eq, ilike, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, or, sql } from "drizzle-orm";
 
 import { db } from "./db";
 import { companies, jobs, people } from "./db/schema";
@@ -52,6 +52,16 @@ function companyLogo(profile: unknown) {
   return null;
 }
 
+/**
+ * Search terms should start a word, rather than match arbitrary letters inside
+ * a field. For example, "exa" can match "Exa", but not the middle of
+ * "Texas". The query is escaped before being used as a Postgres regex.
+ */
+function wordStartPattern(query: string) {
+  const escapedQuery = query.replace(/[\\^$.*+?()[\]{}|]/g, "\\$&");
+  return `(^|[^[:alnum:]])${escapedQuery}`;
+}
+
 export async function search(
   query: string,
   {
@@ -87,6 +97,22 @@ export async function search(
   }
 
   const pattern = `%${normalizedQuery}%`;
+  const wordStart = wordStartPattern(normalizedQuery);
+  const exactName = sql`lower(${companies.name}) = lower(${normalizedQuery})`;
+  const nameWordStart = sql`${companies.name} ~* ${wordStart}`;
+  const exactIndustry = sql`lower(${companies.industry}) = lower(${normalizedQuery})`;
+  const exactLocation = sql`lower(${companies.location}) = lower(${normalizedQuery})`;
+  const industryWordStart = sql`${companies.industry} ~* ${wordStart}`;
+  const locationWordStart = sql`${companies.location} ~* ${wordStart}`;
+  const companyMatchRank = sql<number>`
+    case
+      when ${exactName} then 0
+      when ${nameWordStart} then 1
+      when ${exactIndustry} or ${exactLocation} then 2
+      when ${industryWordStart} or ${locationWordStart} then 3
+      else 4
+    end
+  `;
   const [companyResults, peopleResults, jobResults] = await Promise.all([
     db
       .select({
@@ -98,14 +124,11 @@ export async function search(
         profile: companies.profile,
       })
       .from(companies)
-      .where(
-        or(
-          ilike(companies.name, pattern),
-          ilike(companies.industry, pattern),
-          ilike(companies.location, pattern),
-        ),
+      .where(or(nameWordStart, industryWordStart, locationWordStart))
+      .orderBy(
+        asc(companyMatchRank),
+        desc(sql`similarity(${companies.name}, ${normalizedQuery})`),
       )
-      .orderBy(desc(sql`similarity(${companies.name}, ${normalizedQuery})`))
       .limit(companyLimit),
     db
       .select({

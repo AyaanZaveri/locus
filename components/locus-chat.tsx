@@ -675,7 +675,7 @@ export function LocusChat() {
                   <div className="pointer-events-none absolute inset-x-0 bottom-full flex justify-center pb-2">
                     <button
                       aria-label="Jump to latest"
-                      className={`rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
+                      className={`cursor-pointer rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
                         isScrolledAwayFromBottom
                           ? "pointer-events-auto translate-y-0 opacity-100"
                           : "pointer-events-none translate-y-0.5 opacity-0"

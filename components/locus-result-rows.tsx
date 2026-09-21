@@ -169,8 +169,7 @@ export function LocusResultRows({
               />
             </p>
             <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
-              <span className="truncate">{person.role} @</span>
-              <LocationFlag countryCode={person.countryCode} />
+              <span className="truncate font-medium">{person.role} @</span>
               {person.companyLogo ? (
                 <img
                   alt=""
