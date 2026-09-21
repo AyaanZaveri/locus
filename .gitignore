@@ -35,3 +35,4 @@ coverage/
 # local tooling
 .turbo/
 .cache/
+.vercel
