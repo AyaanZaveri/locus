@@ -1,11 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { CompanyProfilePage } from "@/components/company-profile-page";
-import { getCompanies, getCompanyProfile } from "@/lib/company-profile";
-
-export async function generateStaticParams() {
-  return (await getCompanies()).map(({ slug }) => ({ slug }));
-}
+import { getCompanyProfile } from "@/lib/company-profile";
 
 export default async function CompanyPage({
   params,

@@ -1,6 +1,6 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { cache } from "react";
+import { connection } from "next/server";
 import { z } from "zod";
 
 const activityTypeSchema = z.enum([
@@ -275,7 +275,11 @@ export async function getCompaniesFromFiles() {
   );
 }
 
-export const getCompanies = cache(async () => {
+export async function getCompanies() {
+  // Company data is managed in Neon, so never let this query become part of
+  // a deployment's prerendered output.
+  await connection();
+
   try {
     const [{ db }, { companies }] = await Promise.all([
       import("./db"),
@@ -294,45 +298,67 @@ export const getCompanies = cache(async () => {
       cause: error,
     });
   }
-});
+}
 
-export const getCompanyNavigation = cache(
-  async (): Promise<CompanyNavigationItem[]> => {
-    try {
-      const [{ db }, { companies }] = await Promise.all([
-        import("./db"),
-        import("./db/schema"),
-      ]);
-      return db
-        .select({
-          slug: companies.slug,
-          name: companies.name,
-          industry: companies.industry,
-          location: companies.location,
-          countryCode: companies.countryCode,
-          logo: companies.profile,
-        })
-        .from(companies)
-        .orderBy(companies.name)
-        .then((records) =>
-          records.map(({ logo, ...company }) => ({
-            ...company,
-            logo:
-              logo && typeof logo === "object" && "logo" in logo
-                ? typeof logo.logo === "string"
-                  ? logo.logo
-                  : null
-                : null,
-          })),
-        );
-    } catch (error) {
-      throw new Error("Unable to load company navigation from Neon.", {
-        cause: error,
-      });
-    }
-  },
-);
+export async function getCompanyNavigation(): Promise<
+  CompanyNavigationItem[]
+> {
+  await connection();
+
+  try {
+    const [{ db }, { companies }] = await Promise.all([
+      import("./db"),
+      import("./db/schema"),
+    ]);
+    return db
+      .select({
+        slug: companies.slug,
+        name: companies.name,
+        industry: companies.industry,
+        location: companies.location,
+        countryCode: companies.countryCode,
+        logo: companies.profile,
+      })
+      .from(companies)
+      .orderBy(companies.name)
+      .then((records) =>
+        records.map(({ logo, ...company }) => ({
+          ...company,
+          logo:
+            logo && typeof logo === "object" && "logo" in logo
+              ? typeof logo.logo === "string"
+                ? logo.logo
+                : null
+              : null,
+        })),
+      );
+  } catch (error) {
+    throw new Error("Unable to load company navigation from Neon.", {
+      cause: error,
+    });
+  }
+}
 
 export async function getCompanyProfile(slug: string) {
-  return (await getCompanies()).find((company) => company.slug === slug);
+  await connection();
+
+  try {
+    const [{ db }, { companies }, { eq }] = await Promise.all([
+      import("./db"),
+      import("./db/schema"),
+      import("drizzle-orm"),
+    ]);
+    const record = await db.query.companies.findFirst({
+      where: eq(companies.slug, slug),
+      columns: { profile: true },
+    });
+
+    return record
+      ? parseCompanyProfile(record.profile as Record<string, unknown>)
+      : undefined;
+  } catch (error) {
+    throw new Error(`Unable to load company profile "${slug}" from Neon.`, {
+      cause: error,
+    });
+  }
 }
