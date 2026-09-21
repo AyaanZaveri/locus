@@ -125,7 +125,10 @@ type Job = {
   location: string;
   focus: string;
   url?: string | null;
-  // Sanitized CommonMark overview; strip job-board HTML and boilerplate.
+  // Full substantive posting in sanitized CommonMark. Preserve useful headings,
+  // lists, company context, responsibilities, requirements, benefits, and hiring
+  // process; remove only application UI, navigation, scripts/tracking, and
+  // generic legal/privacy boilerplate.
   description?: string | null;
   status?: "open" | "closed" | "unknown" | null;
   workplaceType?: "remote" | "hybrid" | "onsite" | "flexible" | null;
