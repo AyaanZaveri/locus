@@ -1,0 +1,28 @@
+import "server-only";
+
+import { createOpenAI } from "@ai-sdk/openai";
+
+const baseURL = "https://opencode.ai/zen/go/v1";
+const userAgent = "locus/1.0";
+
+/**
+ * OpenCode uses this opaque ID for routing and prompt-cache affinity. It is a
+ * stable per-conversation identifier, never a credential.
+ */
+export function getLocusModel(sessionId: string) {
+  const apiKey = process.env.OPENCODE_GO_API_KEY;
+
+  if (!apiKey) {
+    throw new Error("OPENCODE_GO_API_KEY is not configured.");
+  }
+
+  return createOpenAI({
+    name: "opencode-responses",
+    baseURL,
+    apiKey,
+    headers: {
+      "x-opencode-session": sessionId,
+      "user-agent": userAgent,
+    },
+  }).responses("gpt-5.6-luna");
+}
