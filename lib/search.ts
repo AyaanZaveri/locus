@@ -25,6 +25,7 @@ export type SearchResponse = {
     companySlug: string;
     companyName: string;
     companyLogo: string | null;
+    countryCode: string;
   }>;
   jobs: Array<{
     title: string;
@@ -33,6 +34,7 @@ export type SearchResponse = {
     companySlug: string;
     companyName: string;
     companyLogo: string | null;
+    countryCode: string;
   }>;
 };
 
@@ -99,6 +101,7 @@ export async function search(query: string): Promise<SearchResponse> {
         image: people.image,
         companySlug: companies.slug,
         companyName: companies.name,
+        countryCode: companies.countryCode,
         profile: companies.profile,
       })
       .from(people)
@@ -113,6 +116,7 @@ export async function search(query: string): Promise<SearchResponse> {
         url: jobs.url,
         companySlug: companies.slug,
         companyName: companies.name,
+        countryCode: companies.countryCode,
         profile: companies.profile,
       })
       .from(jobs)

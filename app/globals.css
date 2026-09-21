@@ -7,6 +7,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Motion primitive from Beautiful UI's loading-state component. */
+@keyframes pixel-on {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  18%,
+  42% {
+    opacity: 1;
+  }
+  62% {
+    opacity: 0.15;
+  }
+}
+
 @keyframes shimmer-text {
   0% {
     background-position: 150% center;

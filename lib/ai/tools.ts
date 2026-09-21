@@ -14,7 +14,16 @@ const companySlugSchema = z
   .regex(/^[a-z0-9-]+$/)
   .max(100);
 
-const resultLimitSchema = z.number().int().min(1).max(20).default(10);
+const resultLimitSchema = z.number().int().min(1).max(3).default(3);
+const searchResultTypeSchema = z.enum(["companies", "people", "jobs"]);
+
+function companyLogo(profile: unknown) {
+  if (profile && typeof profile === "object" && "logo" in profile) {
+    const logo = (profile as { logo?: unknown }).logo;
+    return typeof logo === "string" ? logo : null;
+  }
+  return null;
+}
 
 const searchStopWords = new Set([
   "about",
@@ -56,9 +65,15 @@ function hasSearchResults(result: SearchResponse) {
  * agent sends a whole conversational sentence, retry its useful keywords so
  * "which companies are based in Toronto" still finds "Toronto" records.
  */
-async function searchLocus(query: string) {
+async function searchLocus(
+  query: string,
+  types: Array<z.infer<typeof searchResultTypeSchema>>,
+  limit: number,
+) {
   const directResult = await search(query);
-  if (hasSearchResults(directResult)) return directResult;
+  if (hasSearchResults(directResult)) {
+    return filterSearchResults(directResult, types, limit);
+  }
 
   const keywords = [
     ...new Set(
@@ -71,10 +86,26 @@ async function searchLocus(query: string) {
 
   for (const keyword of keywords) {
     const result = await search(keyword);
-    if (hasSearchResults(result)) return result;
+    if (hasSearchResults(result)) {
+      return filterSearchResults(result, types, limit);
+    }
   }
 
-  return directResult;
+  return filterSearchResults(directResult, types, limit);
+}
+
+function filterSearchResults(
+  result: SearchResponse,
+  types: Array<z.infer<typeof searchResultTypeSchema>>,
+  limit: number,
+): SearchResponse {
+  return {
+    companies: types.includes("companies")
+      ? result.companies.slice(0, limit)
+      : [],
+    people: types.includes("people") ? result.people.slice(0, limit) : [],
+    jobs: types.includes("jobs") ? result.jobs.slice(0, limit) : [],
+  };
 }
 
 /**
@@ -83,13 +114,28 @@ async function searchLocus(query: string) {
  * SQL or mutate a record.
  */
 export const locusTools = {
+  navigateLocus: tool({
+    description:
+      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page, person for that company's people section, or job for that company's jobs section. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
+    inputSchema: z.object({
+      companySlug: companySlugSchema,
+      destination: z.enum(["company", "person", "job"]),
+    }),
+  }),
   searchLocus: tool({
     description:
-      "Search Locus for companies, people, and currently open jobs. Use this before answering a broad or ambiguous lookup question.",
+      "Search Locus for companies, people, and currently open jobs. Set types to exactly the entity categories the user requested. Return at most three of each category, ordered by relevance. Use this before answering a broad or ambiguous lookup question.",
     inputSchema: z.object({
       query: z.string().trim().min(1).max(80),
+      types: z
+        .array(searchResultTypeSchema)
+        .min(1)
+        .max(3)
+        .default(["companies", "people", "jobs"]),
+      limit: resultLimitSchema,
     }),
-      execute: async ({ query }) => searchLocus(query),
+    execute: async ({ query, types, limit }) =>
+      searchLocus(query, types, limit),
   }),
   getCompany: tool({
     description:
@@ -103,14 +149,17 @@ export const locusTools = {
           industry: companies.industry,
           stage: companies.stage,
           location: companies.location,
+          countryCode: companies.countryCode,
           employeeCount: companies.employeeCount,
-          profile: companies.profile,
+          logo: companies.profile,
         })
         .from(companies)
         .where(eq(companies.slug, slug))
         .limit(1);
 
-      return company ?? { error: `No company found for slug "${slug}".` };
+      return company
+        ? { ...company, logo: companyLogo(company.logo) }
+        : { error: `No company found for slug "${slug}".` };
     },
   }),
   listCompanyJobs: tool({
@@ -120,8 +169,8 @@ export const locusTools = {
       slug: companySlugSchema,
       limit: resultLimitSchema,
     }),
-    execute: async ({ slug, limit }) =>
-      db
+    execute: async ({ slug, limit }) => {
+      const results = await db
         .select({
           title: jobs.title,
           location: jobs.location,
@@ -133,6 +182,10 @@ export const locusTools = {
           department: jobs.department,
           skills: jobs.skills,
           experienceLevel: jobs.experienceLevel,
+          companySlug: companies.slug,
+          companyName: companies.name,
+          countryCode: companies.countryCode,
+          companyProfile: companies.profile,
         })
         .from(jobs)
         .innerJoin(companies, eq(jobs.companyId, companies.id))
@@ -143,7 +196,12 @@ export const locusTools = {
           ),
         )
         .orderBy(asc(jobs.title))
-        .limit(limit),
+        .limit(limit);
+      return results.map(({ companyProfile, ...job }) => ({
+        ...job,
+        companyLogo: companyLogo(companyProfile),
+      }));
+    },
   }),
   listCompanyPeople: tool({
     description:
@@ -152,19 +210,29 @@ export const locusTools = {
       slug: companySlugSchema,
       limit: resultLimitSchema,
     }),
-    execute: async ({ slug, limit }) =>
-      db
+    execute: async ({ slug, limit }) => {
+      const results = await db
         .select({
           name: people.name,
           role: people.role,
+          image: people.image,
           linkedin: people.linkedin,
           x: people.x,
           isFounder: people.isFounder,
+          companySlug: companies.slug,
+          companyName: companies.name,
+          countryCode: companies.countryCode,
+          companyProfile: companies.profile,
         })
         .from(people)
         .innerJoin(companies, eq(people.companyId, companies.id))
         .where(eq(companies.slug, slug))
         .orderBy(asc(people.name))
-        .limit(limit),
+        .limit(limit);
+      return results.map(({ companyProfile, ...person }) => ({
+        ...person,
+        companyLogo: companyLogo(companyProfile),
+      }));
+    },
   }),
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import {
@@ -134,7 +135,7 @@ export function AppSidebar({
                   <SidebarMenuItem key={company.name}>
                     <SidebarMenuButton
                       isActive={pathname === company.href}
-                      render={<a href={company.href} />}
+                      render={<Link href={company.href} />}
                       tooltip={company.name}
                     >
                       {company.logo ? (
