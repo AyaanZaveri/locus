@@ -1,7 +1,7 @@
 import "server-only";
 
 import { tool } from "ai";
-import { and, asc, eq, or } from "drizzle-orm";
+import { and, asc, eq, ilike, or, sql } from "drizzle-orm";
 import { z } from "zod";
 
 import { db } from "@/lib/db";
@@ -23,6 +23,43 @@ function companyLogo(profile: unknown) {
     return typeof logo === "string" ? logo : null;
   }
   return null;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
+function factQueryTerms(query: string) {
+  return [
+    ...new Set(
+      query
+        .toLowerCase()
+        .match(/[a-z0-9][a-z0-9-]{2,}/g)
+        ?.filter((word) => !searchStopWords.has(word)) ?? [],
+    ),
+  ].slice(0, 4);
+}
+
+function profileFacts(profile: unknown, terms: string[]) {
+  if (!isRecord(profile)) return [];
+
+  const activity = Array.isArray(profile.activity) ? profile.activity : [];
+  return activity
+    .filter(isRecord)
+    .filter((item) =>
+      terms.some((term) => JSON.stringify(item).toLowerCase().includes(term)),
+    )
+    .slice(0, 2)
+    .map((item) => ({
+      type: typeof item.type === "string" ? item.type : "activity",
+      title: typeof item.title === "string" ? item.title : "Untitled activity",
+      date: typeof item.dateTime === "string" ? item.dateTime : null,
+      description:
+        typeof item.description === "string"
+          ? item.description.slice(0, 500)
+          : null,
+      sourceUrl: typeof item.sourceUrl === "string" ? item.sourceUrl : null,
+    }));
 }
 
 const searchStopWords = new Set([
@@ -139,7 +176,7 @@ export const locusTools = {
   }),
   getCompany: tool({
     description:
-      "Get the full Locus profile for one company when you know its slug. Use searchLocus first when the slug is unknown.",
+      "Get the core Locus profile fields for one company when you know its slug. Use searchLocus first when the slug is unknown. For acquisitions, funding events, or other historical facts, use searchCompanyFacts instead.",
     inputSchema: z.object({ slug: companySlugSchema }),
     execute: async ({ slug }) => {
       const [company] = await db
@@ -160,6 +197,41 @@ export const locusTools = {
       return company
         ? { ...company, logo: companyLogo(company.logo) }
         : { error: `No company found for slug "${slug}".` };
+    },
+  }),
+  searchCompanyFacts: tool({
+    description:
+      "Find evidence for historical company facts such as acquisitions, funding, launches, partnerships, or executive changes. Search for distinctive names or a short fact phrase. Returns only matching activity snippets and source URLs, never complete company profiles.",
+    inputSchema: z.object({
+      query: z.string().trim().min(3).max(80),
+      limit: resultLimitSchema,
+    }),
+    execute: async ({ query, limit }) => {
+      const terms = factQueryTerms(query);
+      if (terms.length === 0) return [];
+
+      const results = await db
+        .select({
+          slug: companies.slug,
+          name: companies.name,
+          industry: companies.industry,
+          location: companies.location,
+          profile: companies.profile,
+        })
+        .from(companies)
+        .where(
+          and(
+            ...terms.map((term) =>
+              ilike(sql`${companies.profile}::text`, `%${term}%`),
+            ),
+          ),
+        )
+        .limit(limit);
+
+      return results.map(({ profile, ...company }) => ({
+        ...company,
+        facts: profileFacts(profile, terms),
+      }));
     },
   }),
   listCompanyJobs: tool({

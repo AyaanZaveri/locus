@@ -132,9 +132,9 @@ export async function search(query: string): Promise<SearchResponse> {
   ]);
 
   return {
-    companies: companyResults.map((company) => ({
+    companies: companyResults.map(({ profile, ...company }) => ({
       ...company,
-      logo: companyLogo(company.profile),
+      logo: companyLogo(profile),
     })),
     people: peopleResults.map(({ profile, ...person }) => ({
       ...person,

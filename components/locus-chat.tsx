@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useChat } from "@ai-sdk/react";
 import {
   DefaultChatTransport,
@@ -234,13 +234,25 @@ function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
           return "Skimming people";
         case "tool-getCompany":
           return "Skimming company";
+        case "tool-searchCompanyFacts":
+          return "Checking company facts";
         case "tool-navigateLocus":
-          return "Opening Locus";
+          return "Navigating";
       }
     }
   }
 
   return "Thinking";
+}
+
+function lastAssistantMessageContainsNavigation(messages: UIMessage[]) {
+  const lastAssistantMessage = [...messages]
+    .reverse()
+    .find((message) => message.role === "assistant");
+
+  return lastAssistantMessage?.parts.some(
+    (part) => isRecord(part) && part.type === "tool-navigateLocus",
+  );
 }
 
 /**
@@ -249,6 +261,7 @@ function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
  */
 export function LocusChat() {
   const router = useRouter();
+  const [isNavigating, startNavigation] = useTransition();
   const [focusState, setFocusState] = useState<
     "closed" | "launcher-exiting" | "open" | "panel-exiting"
   >("closed");
@@ -275,7 +288,9 @@ export function LocusChat() {
     addToolOutput,
   } = useChat({
     transport,
-    sendAutomaticallyWhen: lastAssistantMessageIsCompleteWithToolCalls,
+    sendAutomaticallyWhen: ({ messages }) =>
+      lastAssistantMessageIsCompleteWithToolCalls({ messages }) &&
+      !lastAssistantMessageContainsNavigation(messages),
     onToolCall({ toolCall }) {
       if (toolCall.dynamic || toolCall.toolName !== "navigateLocus") return;
 
@@ -298,7 +313,9 @@ export function LocusChat() {
             ? `/company/${companySlug}#jobs`
             : `/company/${companySlug}`;
 
-      router.push(href);
+      startNavigation(() => {
+        router.push(href);
+      });
       addToolOutput({
         tool: "navigateLocus",
         toolCallId: toolCall.toolCallId,
@@ -307,9 +324,12 @@ export function LocusChat() {
     },
   });
   const isBusy = status === "submitted" || status === "streaming";
+  const isActivityActive = isBusy || isNavigating;
   const reduceMotion = useReducedMotion();
   const isOpen = focusState === "open" || focusState === "panel-exiting";
-  const activityLabel = getActivityLabel(messages);
+  const activityLabel = isNavigating
+    ? "Navigating"
+    : getActivityLabel(messages);
   const pillInitial = reduceMotion
     ? { opacity: 0 }
     : { opacity: 0, transform: "translateY(4px) scale(0.96)" };
@@ -334,12 +354,12 @@ export function LocusChat() {
       };
 
   useEffect(() => {
-    if (isBusy) {
+    if (isActivityActive) {
       setActivityStartedAt((startedAt) => startedAt ?? Date.now());
     } else {
       setActivityStartedAt(null);
     }
-  }, [isBusy]);
+  }, [isActivityActive]);
 
   useEffect(
     () => () => {
@@ -430,10 +450,10 @@ export function LocusChat() {
             }}
             transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
           >
-            {(isBusy || messages.length > 0 || isClearingChat) && (
+            {(isActivityActive || messages.length > 0 || isClearingChat) && (
               <div className="mb-2 flex h-7 items-center">
                 <AnimatePresence initial={false} mode="wait">
-                  {isBusy ? (
+                  {isActivityActive ? (
                     activityStartedAt ? (
                       <motion.div
                         animate={{

@@ -193,6 +193,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
       </button>
 
       <DrawerContent
+        side="bottom"
         className="overflow-hidden bg-sidebar/95 text-sidebar-foreground ring-0 shadow-[0_18px_56px_oklch(0_0_0_/_0.14)] backdrop-blur-2xl dark:bg-sidebar/85 sm:ml-auto sm:data-ending-style:[transform:translateX(calc(100%_+_0.75rem))] sm:data-starting-style:[transform:translateX(calc(100%_+_0.75rem))]"
         style={{ "--drawer-width": "34rem" } as CSSProperties}
       >

@@ -1,4 +1,5 @@
 import { ArrowRight, BriefcaseBusinessIcon, BuildingIcon } from "lucide-react";
+import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -62,31 +63,40 @@ function Row({
   children,
   external = false,
   href,
+  index,
 }: {
   children: React.ReactNode;
   external?: boolean;
   href: string;
+  index: number;
 }) {
+  const reduceMotion = useReducedMotion();
   const className =
     "group flex w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 transition-transform duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-muted active:scale-[0.995] motion-reduce:transition-none motion-reduce:active:scale-100";
 
-  if (!external) {
-    return (
-      <Link className={className} href={href}>
-        {children}
-      </Link>
-    );
-  }
-
   return (
-    <a
-      className={className}
-      href={href}
-      rel="noreferrer"
-      target="_blank"
+    <motion.div
+      animate={{ opacity: 1, transform: "translateY(0)" }}
+      initial={{
+        opacity: 0,
+        transform: reduceMotion ? "none" : "translateY(10px)",
+      }}
+      transition={{
+        delay: reduceMotion ? 0 : index * 0.05,
+        duration: 0.18,
+        ease: [0.23, 1, 0.32, 1],
+      }}
     >
-      {children}
-    </a>
+      {external ? (
+        <a className={className} href={href} rel="noreferrer" target="_blank">
+          {children}
+        </a>
+      ) : (
+        <Link className={className} href={href}>
+          {children}
+        </Link>
+      )}
+    </motion.div>
   );
 }
 
@@ -99,8 +109,8 @@ export function LocusResultRows({
 
   return (
     <div className="w-full space-y-1">
-      {companies.map((company) => (
-        <Row href={`/company/${company.slug}`} key={company.slug}>
+      {companies.map((company, index) => (
+        <Row href={`/company/${company.slug}`} index={index} key={company.slug}>
           {company.logo ? (
             <img
               alt=""
@@ -143,6 +153,7 @@ export function LocusResultRows({
       {people.map((person, index) => (
         <Row
           href={`/company/${person.companySlug}#key-people`}
+          index={companies.length + index}
           key={`${person.companySlug}-${person.name}-${index}`}
         >
           <Avatar className="size-8">
@@ -178,6 +189,7 @@ export function LocusResultRows({
         <Row
           external={Boolean(job.url)}
           href={job.url ?? `/company/${job.companySlug}#jobs`}
+          index={companies.length + people.length + index}
           key={`${job.companySlug}-${job.title}-${index}`}
         >
           {job.companyLogo ? (
