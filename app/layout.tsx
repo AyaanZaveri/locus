@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
 import { AppSidebar } from "@/components/app-sidebar";
+import { LocusChat } from "@/components/locus-chat";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -41,6 +42,7 @@ export default async function RootLayout({
               <SidebarInset className="min-h-0 min-w-0 overflow-hidden shadow-none! ring-border/25 ring-1">
                 {children}
               </SidebarInset>
+              <LocusChat />
             </SidebarProvider>
           </TooltipProvider>
         </ThemeProvider>

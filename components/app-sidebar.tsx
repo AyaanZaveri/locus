@@ -67,13 +67,13 @@ export function AppSidebar({
                   render={<a href="#top" />}
                   size="lg"
                 >
-                  <span className="flex size-6.5 items-center justify-center rounded-md bg-emerald-500 text-white">
+                  <span className="flex size-6.5 items-center justify-center rounded-md bg-linear-150 from-emerald-500 to-emerald-600 text-white">
                     <DraftingCompassIcon
                       aria-hidden="true"
-                      className="size-4 stroke-[2]"
+                      className="size-4 stroke-2"
                     />
                   </span>
-                  <span className="text-xl leading-6.75 font-semibold tracking-[-0.035em]">
+                  <span className="text-xl leading-6.75 font-semibold tracking-tight">
                     Locus
                   </span>
                 </SidebarMenuButton>
