@@ -98,13 +98,13 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               className="absolute top-3 left-3 border-border bg-background/90 text-foreground shadow-xs backdrop-blur-sm hover:bg-background md:hidden"
               size="icon"
             />
-            <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border/45 bg-background/30 p-1 shadow-xs backdrop-blur-sm dark:ring-border sm:-bottom-6 sm:left-5">
+            <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border/75 bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
               <div className="rounded-lg bg-background/60">
                 {profile.logo ? (
                   <img
                     alt={`${profile.name} logo`}
                     draggable={false}
-                    className="size-16 rounded-lg ring-1 ring-border/15 dark:ring-border/25 sm:size-20"
+                    className="size-16 rounded-lg ring-1 ring-border/25 sm:size-20"
                     src={profile.logo}
                   />
                 ) : (
@@ -197,7 +197,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                     {round.stage}
                                   </p>
                                   {formatFundingDate(round.announcedAt) ||
-                                  round.sourceUrl ? (
+                                    round.sourceUrl ? (
                                     <div className="mt-0.5 flex flex-wrap items-center gap-x-1 text-xs font-medium text-muted-foreground">
                                       {formatFundingDate(round.announcedAt) ? (
                                         <time>
@@ -205,7 +205,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                         </time>
                                       ) : null}
                                       {formatFundingDate(round.announcedAt) &&
-                                      round.sourceUrl ? (
+                                        round.sourceUrl ? (
                                         <span aria-hidden="true">·</span>
                                       ) : null}
                                       {round.sourceUrl ? (

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, ArrowUpRight, X } from "lucide-react";
-import { type CSSProperties, useState } from "react";
+import { type CSSProperties, useEffect, useState } from "react";
 import { Streamdown } from "streamdown";
 
 import { Badge } from "@/components/ui/badge";
@@ -130,9 +130,24 @@ function JobDetails({ job }: { job: Job }) {
 
 export function JobCard({ company, countryCode, job }: JobCardProps) {
   const [open, setOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 640px)");
+    const updateIsDesktop = () => setIsDesktop(mediaQuery.matches);
+
+    updateIsDesktop();
+    mediaQuery.addEventListener("change", updateIsDesktop);
+
+    return () => mediaQuery.removeEventListener("change", updateIsDesktop);
+  }, []);
 
   return (
-    <Drawer onOpenChange={setOpen} open={open} swipeDirection="right">
+    <Drawer
+      onOpenChange={setOpen}
+      open={open}
+      swipeDirection={isDesktop ? "right" : "down"}
+    >
       <button
         aria-haspopup="dialog"
         className="group block w-full cursor-pointer rounded-lg text-left transition-transform duration-150 ease-[cubic-bezier(0.2,0,0,1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.995] motion-reduce:transition-none"
@@ -178,9 +193,13 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
       </button>
 
       <DrawerContent
-        className="ml-auto overflow-hidden bg-sidebar/95 text-sidebar-foreground ring-0 shadow-[0_18px_56px_oklch(0_0_0_/_0.14)] backdrop-blur-2xl dark:bg-sidebar/85 data-ending-style:[transform:translateX(calc(100%_+_0.75rem))] data-starting-style:[transform:translateX(calc(100%_+_0.75rem))]"
+        className="overflow-hidden bg-sidebar/95 text-sidebar-foreground ring-0 shadow-[0_18px_56px_oklch(0_0_0_/_0.14)] backdrop-blur-2xl dark:bg-sidebar/85 sm:ml-auto sm:data-ending-style:[transform:translateX(calc(100%_+_0.75rem))] sm:data-starting-style:[transform:translateX(calc(100%_+_0.75rem))]"
         style={{ "--drawer-width": "34rem" } as CSSProperties}
       >
+        <div
+          aria-hidden="true"
+          className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-muted-foreground/25 sm:hidden"
+        />
         <header className="flex shrink-0 items-start gap-4 px-5 pt-6 pb-4 sm:px-6">
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
