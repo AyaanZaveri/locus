@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/command";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { jobDetailsHref } from "@/lib/job-navigation";
 
 type SearchResults = {
   companies: {
@@ -38,6 +39,7 @@ type SearchResults = {
   jobs: {
     title: string;
     focus: string;
+    location: string;
     url: string | null;
     companySlug: string;
     companyName: string;
@@ -117,10 +119,9 @@ export function CompanySearch({
     onOpenChange(false);
     router.push(`/company/${slug}#key-people`);
   };
-  const visitJob = (url: string | null, slug: string) => {
+  const visitJob = (title: string, location: string, slug: string) => {
     onOpenChange(false);
-    if (url) window.open(url, "_blank", "noopener,noreferrer");
-    else router.push(`/company/${slug}#jobs`);
+    router.push(jobDetailsHref({ companySlug: slug, title, location }));
   };
   const initials = (name: string) =>
     name
@@ -274,7 +275,9 @@ export function CompanySearch({
                   {results.jobs.map((job, index) => (
                     <CommandItem
                       key={`${job.companySlug}-${job.title}-${index}`}
-                      onSelect={() => visitJob(job.url, job.companySlug)}
+                      onSelect={() =>
+                        visitJob(job.title, job.location, job.companySlug)
+                      }
                       value={`job-${job.companySlug}-${index}`}
                       className="items-center gap-3 py-2"
                     >
@@ -293,7 +296,8 @@ export function CompanySearch({
                       <div className="min-w-0 flex-1">
                         <p className="truncate font-medium">{job.title}</p>
                         <p className="truncate text-xs text-muted-foreground">
-                          {job.companyName} · {job.focus}
+                          <span className="font-medium">{job.companyName}</span>{" "}
+                          · {job.focus}
                         </p>
                       </div>
                     </CommandItem>

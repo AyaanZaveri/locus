@@ -683,6 +683,9 @@ export function LocusChat() {
                                 <LocusResultRows
                                   {...segment.results}
                                   key={segment.key}
+                                  onNavigate={() =>
+                                    setFocusState("panel-exiting")
+                                  }
                                 />
                               );
                             }

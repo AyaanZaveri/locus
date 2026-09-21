@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { jobDetailsHref } from "@/lib/job-navigation";
 
 export type LocusCompanyResult = {
   slug: string;
@@ -61,14 +62,14 @@ function LocationFlag({ countryCode }: { countryCode?: string }) {
 
 function Row({
   children,
-  external = false,
   href,
   index,
+  onNavigate,
 }: {
   children: React.ReactNode;
-  external?: boolean;
   href: string;
   index: number;
+  onNavigate?: () => void;
 }) {
   const reduceMotion = useReducedMotion();
   const className =
@@ -87,15 +88,9 @@ function Row({
         ease: [0.23, 1, 0.32, 1],
       }}
     >
-      {external ? (
-        <a className={className} href={href} rel="noreferrer" target="_blank">
-          {children}
-        </a>
-      ) : (
-        <Link className={className} href={href}>
-          {children}
-        </Link>
-      )}
+      <Link className={className} href={href} onClick={onNavigate}>
+        {children}
+      </Link>
     </motion.div>
   );
 }
@@ -104,13 +99,19 @@ export function LocusResultRows({
   companies,
   people,
   jobs,
-}: LocusSearchResults) {
+  onNavigate,
+}: LocusSearchResults & { onNavigate?: () => void }) {
   if (!companies.length && !people.length && !jobs.length) return null;
 
   return (
     <div className="w-full space-y-1">
       {companies.map((company, index) => (
-        <Row href={`/company/${company.slug}`} index={index} key={company.slug}>
+        <Row
+          href={`/company/${company.slug}`}
+          index={index}
+          key={company.slug}
+          onNavigate={onNavigate}
+        >
           {company.logo ? (
             <img
               alt=""
@@ -155,6 +156,7 @@ export function LocusResultRows({
           href={`/company/${person.companySlug}#key-people`}
           index={companies.length + index}
           key={`${person.companySlug}-${person.name}-${index}`}
+          onNavigate={onNavigate}
         >
           <Avatar className="size-8">
             {person.image ? <AvatarImage alt="" src={person.image} /> : null}
@@ -186,10 +188,14 @@ export function LocusResultRows({
 
       {jobs.map((job, index) => (
         <Row
-          external={Boolean(job.url)}
-          href={job.url ?? `/company/${job.companySlug}#jobs`}
+          href={jobDetailsHref({
+            companySlug: job.companySlug,
+            title: job.title,
+            location: job.location,
+          })}
           index={companies.length + people.length + index}
           key={`${job.companySlug}-${job.title}-${index}`}
+          onNavigate={onNavigate}
         >
           {job.companyLogo ? (
             <img
@@ -214,7 +220,7 @@ export function LocusResultRows({
             <p className="truncate text-xs text-muted-foreground">
               <span className="inline-flex items-center gap-1">
                 <LocationFlag countryCode={job.countryCode} />
-                {job.companyName}
+                <span className="font-medium">{job.companyName}</span>
               </span>{" "}
               · {job.focus}
             </p>

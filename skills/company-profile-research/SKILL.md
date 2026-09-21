@@ -72,7 +72,7 @@ current `data/companies/*/company.json` before writing.
 - When changing the profile contract, update `lib/company-profile.ts` first,
   regenerate the JSON schema, update `lib/db/schema.ts`, generate and apply a
   Drizzle migration, then seed: `npm run generate:company-schema`, `npm run
-  db:generate`, `npm run db:migrate`, and `npm run db:seed`.
+db:generate`, `npm run db:migrate`, and `npm run db:seed`.
 - Verify URLs, exact ISO dates, monetary values, country codes, and local asset paths individually. An existing value from another company is not evidence for the target company.
 
 ## Reusable research workflow
@@ -87,7 +87,7 @@ Treat this as structured data collection, not a narrative task. Work in passes:
    - Ashby: `https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true`
    - Greenhouse: `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs`
    - Lever: `https://api.lever.co/v0/postings/{slug}?mode=json`
-   An empty `jobs` array from a guessed slug is indistinguishable from a company with no openings, so confirm the slug against the careers page before trusting a zero result. Note also that a company may link its own branded paths (e.g. `/careers/{title}-{id}`) that are not the real application URL; resolve each posting to the underlying ATS URL.
+     An empty `jobs` array from a guessed slug is indistinguishable from a company with no openings, so confirm the slug against the careers page before trusting a zero result. Note also that a company may link its own branded paths (e.g. `/careers/{title}-{id}`) that are not the real application URL; resolve each posting to the underlying ATS URL.
 
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page, and verify LinkedIn/X URLs. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
@@ -119,6 +119,20 @@ headings with their full text beneath them.
   substantive source block must have a corresponding Markdown block. If the
   full body cannot be retrieved, leave `description` as `null` and report that
   limitation; never substitute a short listing preview or a generated summary.
+
+### CommonMark validity gate
+
+Every `jobs[].description` must be valid, sanitized CommonMark. In particular,
+never leave whitespace immediately before a closing emphasis delimiter:
+write `**Innovate with courage.** Lead with bold ideas`, not
+`**Innovate with courage. **Lead with bold ideas`. Use paired delimiters only
+around non-empty text and keep delimiter runs out of ordinary prose.
+
+Before importing any profile data, run `npm run validate:job-markdown`. This
+typed repository check parses every job description with `remark-parse` and
+rejects strong-emphasis runs that CommonMark would leave as literal asterisks.
+If it fails, repair the source Markdown, rerun the check, then run
+`npm run validate:companies`; do not import until both pass.
 
 ## Parallel research
 
@@ -177,6 +191,7 @@ Use a layered approach to gather information efficiently:
    - Any page where WebFetch returns incomplete or empty content
 
    Example workflow:
+
    ```
    agent-browser open https://company.com/careers
    agent-browser snapshot -i
@@ -188,27 +203,34 @@ Use a layered approach to gather information efficiently:
 Search hard for every URL. `null` is a last resort, not a default. For each field that expects a URL:
 
 **Investor websites** — Do not guess domains. Search for each investor individually:
+
 ```
 WebSearch: "{Investor Name} venture capital website"
 WebSearch: "{Investor Name} official site"
 ```
+
 Verify the domain by checking the search result URL, not just the title. Common patterns:
+
 - Venture firms often use abbreviations (e.g., `theoryvc.com` not `theoryventures.com`)
 - Some use `.vc` TLD (e.g., `garage.vc`)
 - Some use compound names (e.g., `49palmsvc.com`, `gtmfund.com`)
 
 **People LinkedIn URLs** — Search for each person by full name + company:
+
 ```
 WebSearch: "{Full Name} {Company} LinkedIn"
 ```
+
 LinkedIn profile URLs follow the pattern `https://www.linkedin.com/in/{handle}`. Extract the handle from search results.
 
 **People verification** — Verify each person's current role by checking their LinkedIn profile. Look for:
+
 - "Current" position at the company
 - Employment dates (start date to present)
 - Job title and department
 
 Search for current employees using:
+
 ```
 WebSearch: site:linkedin.com/company/{handle} "current"
 WebSearch: "{Company} team members 2026"
@@ -223,9 +245,11 @@ banners” below. Do not select a social header until it passes ownership,
 recency, non-blank, and crop-safety checks.
 
 **Company tagline** — Prefer the LinkedIn company tagline over the website tagline. Search:
+
 ```
 WebSearch: "{Company Name} LinkedIn"
 ```
+
 LinkedIn shows the tagline directly in search snippets (e.g., "Company | 123 followers on LinkedIn. {tagline}"). Use that as the `tagline` field.
 
 **People portraits** — Find and verify the person before choosing an image. Use
@@ -250,14 +274,18 @@ for the profile UI.
 
 **LinkedIn profile pictures** — LinkedIn is a strong fallback, not the default.
 When the profile and current role are verified, extract the raw image URL:
+
 ```
 agent-browser open https://linkedin.com/in/{handle}
 agent-browser eval "document.querySelector('img.pv-top-card-profile-picture__image--show').src"
 ```
+
 LinkedIn profile picture URLs follow this pattern:
+
 ```
 https://media.licdn.com/dms/image/v2/{path}/profile-displayphoto-scale_200_200/{hash}?e={timestamp}&v=beta&t={hash}
 ```
+
 If LinkedIn does not provide a usable image, continue through the ranked
 sources above. Do not use unavatar.io or email/avatar proxies as final profile
 portraits: they are difficult to attribute, may be stale, and do not provide
@@ -268,24 +296,31 @@ can be verified.
 Logo.dev over LinkedIn. LinkedIn is a useful fallback; unavatar is last resort.
 Extract raw LinkedIn logo URLs only when the stronger sources do not provide a
 usable, attributable asset:
+
 ```
 agent-browser open https://linkedin.com/company/{handle}
 agent-browser eval "document.querySelector('img.pv-top-card-profile-picture__image--show').src"
 ```
+
 LinkedIn company logo URLs follow this pattern:
+
 ```
 https://media.licdn.com/dms/image/v2/{path}/company-logo_200_200/{hash}?e={timestamp}&v=beta&t={hash}
 ```
+
 Fallback: Use unavatar.io with the verified domain:
+
 ```
 https://unavatar.io/{verified-domain.com}
 ```
 
 **Career page URLs** — Use agent-browser to scrape the actual career page and extract the **exact deep-link URL for each job posting**. Do not use the generic careers page URL for individual jobs. Use JavaScript evaluation to extract hrefs:
+
 ```bash
 agent-browser open https://company.com/careers
 agent-browser eval "Array.from(document.querySelectorAll('a')).filter(a => a.href.includes('/jobs/')).map(a => ({title: a.textContent.trim(), url: a.href}))"
 ```
+
 Each `jobs[].url` must take the user directly to that specific role's application page. Open that exact page (or its detail API) and capture its whole substantive posting for `jobs[].description`; do not stop at the careers-listing preview.
 
 ## Research standard
@@ -325,12 +360,14 @@ useful verified-profile fallback; proxies are not final assets.
 ### LinkedIn Profile Pictures
 
 For people, extract the raw LinkedIn profile picture URL:
+
 ```
 agent-browser open https://linkedin.com/in/{handle}
 agent-browser eval "document.querySelector('img.pv-top-card-profile-picture__image--show').src"
 ```
 
 LinkedIn profile picture URL pattern:
+
 ```
 https://media.licdn.com/dms/image/v2/{path}/profile-displayphoto-scale_200_200/{hash}?e={timestamp}&v=beta&t={hash}
 ```
@@ -384,12 +421,14 @@ account, current enough to represent the brand, non-blank, and crop-safe.
 
 For companies, extract the raw LinkedIn logo URL only after higher-priority
 sources do not provide a usable candidate:
+
 ```
 agent-browser open https://linkedin.com/company/{handle}
 agent-browser eval "document.querySelector('img.pv-top-card-profile-picture__image--show').src"
 ```
 
 LinkedIn company logo URL pattern:
+
 ```
 https://media.licdn.com/dms/image/v2/{path}/company-logo_200_200/{hash}?e={timestamp}&v=beta&t={hash}
 ```
@@ -399,12 +438,14 @@ https://media.licdn.com/dms/image/v2/{path}/company-logo_200_200/{hash}?e={times
 LinkedIn and X are useful fallbacks because their header art is often
 purpose-built for wide layouts, but a flat-colour, stale, or low-resolution
 header must be rejected. For a LinkedIn company-cover candidate:
+
 ```
 agent-browser open https://linkedin.com/company/{handle}
 agent-browser eval "document.querySelector('img.pv-top-card-profile-picture__image--show').src"
 ```
 
 LinkedIn banner URL pattern:
+
 ```
 https://media.licdn.com/dms/image/v2/{path}/image-scale_191_1128/image-scale_191_1128/{hash}?e={timestamp}&v=beta&t={hash}
 ```
@@ -447,13 +488,13 @@ python <skill-dir>/scripts/image_assets.py check public/investors/*.png public/c
 
 It reports a verdict per file and exits non-zero on failure:
 
-| Verdict | Meaning | Action |
-| --- | --- | --- |
-| `OK` | Visible on light and dark backgrounds | Keep |
-| `OK_LIGHT_BG_ONLY` | Dark mark on transparency | Keep, but render on a light background; do not flatten alpha onto black |
-| `OK_DARK_BG_ONLY` | Light mark on transparency | Keep, but render on a dark background; do not flatten alpha onto white |
-| `BLANK` | Near-uniform; no visible content | Reject and re-source |
-| `INVALID` | Undecodable, an HTML error page, zero-byte, or too small | Reject and re-source |
+| Verdict            | Meaning                                                  | Action                                                                  |
+| ------------------ | -------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `OK`               | Visible on light and dark backgrounds                    | Keep                                                                    |
+| `OK_LIGHT_BG_ONLY` | Dark mark on transparency                                | Keep, but render on a light background; do not flatten alpha onto black |
+| `OK_DARK_BG_ONLY`  | Light mark on transparency                               | Keep, but render on a dark background; do not flatten alpha onto white  |
+| `BLANK`            | Near-uniform; no visible content                         | Reject and re-source                                                    |
+| `INVALID`          | Undecodable, an HTML error page, zero-byte, or too small | Reject and re-source                                                    |
 
 What the checks catch, mapped to failures that actually occur:
 
@@ -504,6 +545,7 @@ for it in re.findall(r'<item>(.*?)</item>',x,re.S)[:30]:
     print((t.group(1).strip() if t else '?'),'|',(d.group(1) if d else '?'))
 "
 ```
+
 For Atom feeds, match `<entry>` and `<updated>`/`<published>`. Prefer the feed's own dates over any date you infer from a search snippet.
 
 ## Output and completion

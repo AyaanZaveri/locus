@@ -36,6 +36,7 @@ export type SearchResponse = {
   jobs: Array<{
     title: string;
     focus: string;
+    location: string;
     url: string | null;
     companySlug: string;
     companyName: string;
@@ -149,6 +150,7 @@ export async function search(
       .select({
         title: jobs.title,
         focus: jobs.focus,
+        location: jobs.location,
         url: jobs.url,
         companySlug: companies.slug,
         companyName: companies.name,

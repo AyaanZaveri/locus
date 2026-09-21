@@ -2,6 +2,7 @@
 
 import { ArrowRight, ArrowUpRight, X } from "lucide-react";
 import { type CSSProperties, useEffect, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Streamdown } from "streamdown";
 
 import { Badge } from "@/components/ui/badge";
@@ -131,6 +132,12 @@ function JobDetails({ job }: { job: Job }) {
 export function JobCard({ company, countryCode, job }: JobCardProps) {
   const [open, setOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const isRequestedJob =
+    searchParams.get("job") === job.title &&
+    searchParams.get("jobLocation") === job.location;
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 640px)");
@@ -142,9 +149,26 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
     return () => mediaQuery.removeEventListener("change", updateIsDesktop);
   }, []);
 
+  useEffect(() => {
+    if (isRequestedJob) setOpen(true);
+  }, [isRequestedJob]);
+
+  function handleOpenChange(nextOpen: boolean) {
+    setOpen(nextOpen);
+    if (nextOpen || !isRequestedJob) return;
+
+    const nextParams = new URLSearchParams(searchParams.toString());
+    nextParams.delete("job");
+    nextParams.delete("jobLocation");
+    const query = nextParams.toString();
+    router.replace(`${pathname}${query ? `?${query}` : ""}#jobs`, {
+      scroll: false,
+    });
+  }
+
   return (
     <Drawer
-      onOpenChange={setOpen}
+      onOpenChange={handleOpenChange}
       open={open}
       swipeDirection={isDesktop ? "right" : "down"}
     >
@@ -232,7 +256,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
           </div>
           <Button
             aria-label="Close job details"
-            onClick={() => setOpen(false)}
+            onClick={() => handleOpenChange(false)}
             size="icon"
             variant="ghost"
           >
