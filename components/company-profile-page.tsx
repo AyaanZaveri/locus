@@ -95,7 +95,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             </div>
             <SidebarTrigger
               aria-label="Open sidebar"
-              className="absolute top-3 left-3 size-11 rounded-xl bg-white/72 text-black ring-1 ring-white/45 shadow-[0_2px_12px_oklch(0_0_0_/_0.14)] backdrop-blur-xl transition-[background-color,box-shadow,scale] duration-150 hover:bg-white/88 hover:shadow-[0_3px_16px_oklch(0_0_0_/_0.18)] active:scale-96 dark:bg-black/58 dark:text-white dark:ring-white/15 dark:hover:bg-black/72 [&_svg]:size-5 md:hidden"
+              className="absolute top-3 left-3 border-border/50 bg-background/90 dark:bg-background/75 p-4! text-foreground shadow-xs backdrop-blur-sm hover:bg-background md:hidden"
               size="icon"
             />
             <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border/75 bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
