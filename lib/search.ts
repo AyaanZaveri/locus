@@ -5,9 +5,15 @@ import { and, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { db } from "./db";
 import { companies, jobs, people } from "./db/schema";
 
-const companyLimit = 6;
-const personLimit = 8;
-const jobLimit = 10;
+const defaultCompanyLimit = 6;
+const defaultPersonLimit = 8;
+const defaultJobLimit = 10;
+
+type SearchLimits = {
+  companyLimit?: number;
+  personLimit?: number;
+  jobLimit?: number;
+};
 
 export type SearchResponse = {
   companies: Array<{
@@ -46,7 +52,14 @@ function companyLogo(profile: unknown) {
   return null;
 }
 
-export async function search(query: string): Promise<SearchResponse> {
+export async function search(
+  query: string,
+  {
+    companyLimit = defaultCompanyLimit,
+    personLimit = defaultPersonLimit,
+    jobLimit = defaultJobLimit,
+  }: SearchLimits = {},
+): Promise<SearchResponse> {
   const normalizedQuery = query.trim().slice(0, 80);
 
   if (!normalizedQuery) {

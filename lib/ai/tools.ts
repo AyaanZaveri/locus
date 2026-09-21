@@ -15,6 +15,7 @@ const companySlugSchema = z
   .max(100);
 
 const resultLimitSchema = z.number().int().min(1).max(3).default(3);
+const searchResultLimitSchema = z.number().int().min(1).max(12).default(3);
 const searchResultTypeSchema = z.enum(["companies", "people", "jobs"]);
 
 function companyLogo(profile: unknown) {
@@ -107,7 +108,11 @@ async function searchLocus(
   types: Array<z.infer<typeof searchResultTypeSchema>>,
   limit: number,
 ) {
-  const directResult = await search(query);
+  const directResult = await search(query, {
+    companyLimit: limit,
+    personLimit: limit,
+    jobLimit: limit,
+  });
   if (hasSearchResults(directResult)) {
     return filterSearchResults(directResult, types, limit);
   }
@@ -122,7 +127,11 @@ async function searchLocus(
   ].slice(0, 4);
 
   for (const keyword of keywords) {
-    const result = await search(keyword);
+    const result = await search(keyword, {
+      companyLimit: limit,
+      personLimit: limit,
+      jobLimit: limit,
+    });
     if (hasSearchResults(result)) {
       return filterSearchResults(result, types, limit);
     }
@@ -161,7 +170,7 @@ export const locusTools = {
   }),
   searchLocus: tool({
     description:
-      "Search Locus for companies, people, and currently open jobs. Set types to exactly the entity categories the user requested. Return at most three of each category, ordered by relevance. Use this before answering a broad or ambiguous lookup question.",
+      "Search Locus for companies, people, and currently open jobs. Set types to exactly the entity categories the user requested. Use limit 3 for a focused lookup or recommendation. Use a larger limit (up to 12) when the user asks for all results in an industry, category, or location, or asks a follow-up such as 'what else' or 'anything else'. Results are ordered by relevance. Use this before answering a broad or ambiguous lookup question.",
     inputSchema: z.object({
       query: z.string().trim().min(1).max(80),
       types: z
@@ -169,7 +178,7 @@ export const locusTools = {
         .min(1)
         .max(3)
         .default(["companies", "people", "jobs"]),
-      limit: resultLimitSchema,
+      limit: searchResultLimitSchema,
     }),
     execute: async ({ query, types, limit }) =>
       searchLocus(query, types, limit),
