@@ -290,6 +290,7 @@ export function LocusChat() {
   const hasOpenedFocus = useRef(false);
   const resetTimer = useRef<number | null>(null);
   const sessionId = useRef<string | null>(null);
+  const focusPanelRef = useRef<HTMLDivElement | null>(null);
   const messageListRef = useRef<HTMLDivElement | null>(null);
   const isPinnedToBottom = useRef(true);
   const [isScrolledAwayFromBottom, setIsScrolledAwayFromBottom] =
@@ -418,6 +419,28 @@ export function LocusChat() {
     return () => window.cancelAnimationFrame(frame);
   }, [error, isBusy, isOpen, messages, scrollToLatest]);
 
+  // The status/New pill lives above the panel, so keep both inside one ref.
+  // A press anywhere else should dismiss Focus, without stealing presses from
+  // the composer, result cards, or either pill.
+  useEffect(() => {
+    if (focusState !== "open") return;
+
+    function handlePointerDown(event: PointerEvent) {
+      if (
+        event.button !== 0 ||
+        !(event.target instanceof Node) ||
+        focusPanelRef.current?.contains(event.target)
+      ) {
+        return;
+      }
+
+      setFocusState("panel-exiting");
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [focusState]);
+
   useEffect(
     () => () => {
       if (resetTimer.current !== null) {
@@ -509,6 +532,7 @@ export function LocusChat() {
                 setFocusState("closed");
               }
             }}
+            ref={focusPanelRef}
             transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
           >
             {(isActivityActive || messages.length > 0 || isClearingChat) && (
