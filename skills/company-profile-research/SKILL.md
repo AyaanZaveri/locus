@@ -35,11 +35,13 @@ placeholder strings, guessed URLs, dates, or zero values.
 ## Repository output conventions
 
 When saving to Autumn, inspect an existing record first and match its current
-top-level profile schema. `company.json` is the authoring source of truth;
-Neon is a derived serving/search projection. Do not write directly to the
-normalized database tables during ordinary research refreshes.
+top-level profile schema. Neon is the canonical source of company, job, and
+people data; `company.json` is a validated import payload, not a tracked
+repository record. Do not hand-edit normalized database tables.
 
-- Save to `data/companies/{slug}/company.json`.
+- Write the validated result to a temporary JSON file, then import it with
+  `npm run db:import -- /absolute/path/to/company.json`. Do not commit the
+  payload under `data/companies/`.
 - Store company assets under `public/companies/{slug}/images/` and reference them as `/companies/{slug}/images/{filename}`.
 - Use semantic names such as `banner.{ext}` and `logo.{ext}`; preserve the source format unless conversion is necessary.
 - Store downloaded person portraits under `public/companies/{slug}/people/{person-slug}/avatar.{ext}`.
@@ -60,12 +62,13 @@ current `data/companies/*/company.json` before writing.
 
 - Preserve every required key and its expected primitive type, including nested funding-round and person fields.
 - Unknown optional facts must remain `null` (or `[]` for collections). In particular, `funding.rounds[].announcedAt` may be `null` when no reliable date exists; never invent a date just to satisfy validation.
-- Use the same `slug` for `data/companies/{slug}/company.json` and `public/companies/{slug}/` assets.
-- Before completion, run `npm run validate:companies` from the repository root.
-  Resolve every reported issue and re-run it. A record that cannot validate
-  must not be presented as complete.
-- After changing profile data, run `npm run db:seed`. It upserts `companies`
-  and replaces the company’s normalized `jobs` and `people` rows.
+- Use the same `slug` for the import payload and `public/companies/{slug}/` assets.
+- Before importing, validate the payload with `parseCompanyProfile` or the
+  import command. A record that cannot validate must not be presented as
+  complete.
+- After changing profile data, run `npm run db:import -- /absolute/path/to/company.json`.
+  It upserts `companies` and replaces the company’s normalized `jobs` and
+  `people` rows.
 - When changing the profile contract, update `lib/company-profile.ts` first,
   regenerate the JSON schema, update `lib/db/schema.ts`, generate and apply a
   Drizzle migration, then seed: `npm run generate:company-schema`, `npm run

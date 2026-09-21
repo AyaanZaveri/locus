@@ -52,6 +52,7 @@ npm run validate:companies
     | "AI Inference"
     | "Database"
     | "Developer Tools"
+    | "Energy"
     | "Fintech"
     | "Foundation Models"
     | "Web Search"
@@ -88,6 +89,7 @@ type Industry =
   | "AI Inference"
   | "Database"
   | "Developer Tools"
+  | "Energy"
   | "Fintech"
   | "Foundation Models"
   | "Web Search"
@@ -194,3 +196,33 @@ type Activity = {
 
 For older data, investor `logoUrl` is normalized to `logo` by the loader.
 New files should always use `logo`.
+
+## Database synchronization
+
+Neon is the canonical source for company profiles. `company.json` is a
+validated import payload, not a versioned repository record. Keep temporary or
+bulk-import JSON outside Git.
+
+After changing profile data:
+
+```sh
+npm run db:import -- /absolute/path/to/company.json
+```
+
+The importer upserts the company profile and replaces its normalized `jobs` and
+`people` rows. Jobs carry the structured filtering fields documented above;
+their title, focus, location, department, workplace, employment type, level,
+description, and skills form the searchable text. Do not edit those database
+rows directly for ordinary research refreshes. `db:seed` imports a local bulk
+cache when one is intentionally available.
+
+When changing the contract itself, update `lib/company-profile.ts` first, then
+regenerate `company-profile.schema.json`, update `lib/db/schema.ts`, generate a
+new Drizzle migration, apply it, and seed:
+
+```sh
+npm run generate:company-schema
+npm run db:generate
+npm run db:migrate
+npm run db:seed
+```

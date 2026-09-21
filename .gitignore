@@ -36,3 +36,6 @@ coverage/
 .turbo/
 .cache/
 .vercel
+
+# Operational research data is canonical in Neon. Keep local import caches out of Git.
+data/companies/*/company.json

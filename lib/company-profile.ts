@@ -19,6 +19,7 @@ const industrySchema = z.enum([
   "AI Inference",
   "Database",
   "Developer Tools",
+  "Energy",
   "Fintech",
   "Foundation Models",
   "Web Search",
@@ -275,10 +276,6 @@ export async function getCompaniesFromFiles() {
 }
 
 export const getCompanies = cache(async () => {
-  if (!process.env.DATABASE_URL && !process.env.DATABASE_URL_POOLED) {
-    return getCompaniesFromFiles();
-  }
-
   try {
     const [{ db }, { companies }] = await Promise.all([
       import("./db"),
@@ -293,27 +290,14 @@ export const getCompanies = cache(async () => {
       parseCompanyProfile(record.profile as Record<string, unknown>),
     );
   } catch (error) {
-    console.warn(
-      "Unable to load company profiles from the database; using local profiles.",
-      error,
-    );
-    return getCompaniesFromFiles();
+    throw new Error("Unable to load company profiles from Neon.", {
+      cause: error,
+    });
   }
 });
 
 export const getCompanyNavigation = cache(
   async (): Promise<CompanyNavigationItem[]> => {
-    if (!process.env.DATABASE_URL && !process.env.DATABASE_URL_POOLED) {
-      return (await getCompaniesFromFiles()).map((company) => ({
-        slug: company.slug,
-        name: company.name,
-        logo: company.logo,
-        industry: company.industry,
-        location: company.location.label,
-        countryCode: company.location.countryCode,
-      }));
-    }
-
     try {
       const [{ db }, { companies }] = await Promise.all([
         import("./db"),
@@ -342,18 +326,9 @@ export const getCompanyNavigation = cache(
           })),
         );
     } catch (error) {
-      console.warn(
-        "Unable to load company navigation from the database; using local profiles.",
-        error,
-      );
-      return (await getCompaniesFromFiles()).map((company) => ({
-        slug: company.slug,
-        name: company.name,
-        logo: company.logo,
-        industry: company.industry,
-        location: company.location.label,
-        countryCode: company.location.countryCode,
-      }));
+      throw new Error("Unable to load company navigation from Neon.", {
+        cause: error,
+      });
     }
   },
 );

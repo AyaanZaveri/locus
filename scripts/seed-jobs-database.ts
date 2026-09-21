@@ -1,6 +1,10 @@
 import { eq } from "drizzle-orm";
 
-import { getCompaniesFromFiles } from "../lib/company-profile";
+import {
+  getCompaniesFromFiles,
+  parseCompanyProfile,
+} from "../lib/company-profile";
+import { readFile } from "node:fs/promises";
 import { db } from "../lib/db/client";
 import { companies, jobs, people } from "../lib/db/schema";
 
@@ -16,6 +20,9 @@ function searchText(
     job.location,
     job.focus,
     job.department,
+    job.workplaceType,
+    job.employmentType,
+    job.experience?.level,
     job.description,
     ...(job.skills ?? []),
   ]
@@ -24,8 +31,19 @@ function searchText(
 }
 
 async function main() {
-  const profiles = await getCompaniesFromFiles();
+  const importPath = process.argv[2];
+  const profiles = importPath
+    ? [
+        parseCompanyProfile(
+          JSON.parse(await readFile(importPath, "utf8")) as Record<
+            string,
+            unknown
+          >,
+        ),
+      ]
+    : await getCompaniesFromFiles();
   let jobCount = 0;
+  let peopleCount = 0;
 
   for (const profile of profiles) {
     const [company] = await db
@@ -117,10 +135,13 @@ async function main() {
           searchText: `${person.name} ${person.role} ${profile.name}`,
         })),
       );
+      peopleCount += profile.people.length;
     }
   }
 
-  console.log(`Seeded ${profiles.length} companies and ${jobCount} jobs.`);
+  console.log(
+    `Imported ${profiles.length} companies, ${jobCount} jobs, and ${peopleCount} people.`,
+  );
 }
 
 main().catch((error: unknown) => {

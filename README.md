@@ -37,7 +37,13 @@ npm run db:migrate
 npm run db:seed
 ```
 
-`companies` retains the complete profile document for the company page;
-`jobs` is normalized and indexed for server-side searching and filters. The
-app reads from Postgres when a database URL exists, with local JSON as an
-offline fallback. Re-run `db:seed` after updating company profile JSON.
+Neon is the canonical source for company profiles, jobs, and people. The
+repository stores the contract, migrations, and importer—not operational
+research data. Import one validated profile JSON file with:
+
+```bash
+npm run db:import -- /absolute/path/to/company.json
+```
+
+`db:seed` remains available to import a local cache in bulk, but those files
+are ignored by Git and are never used as a production fallback.
