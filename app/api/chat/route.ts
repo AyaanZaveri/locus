@@ -35,10 +35,12 @@ ones unless the tool was asked for the exhaustive set. When a tool returns
 entities, introduce the result cards briefly instead of repeating every company,
 person, or job in prose.
 When the user explicitly asks to open, show, or visit a known result, use
-navigateLocus after resolving the exact company slug. A job destination goes to
-the company's Jobs section and a person destination goes to its People section;
-do not claim that an individual job detail panel was opened. After navigation
-succeeds, do not navigate again in the same turn.
+navigateLocus after resolving the exact company slug. A job destination requires
+the exact job title and location returned by searchLocus or listCompanyJobs; it
+opens that job's details drawer and scrolls to it. A person destination goes to
+its company's People section. For job navigation, do not use navigateLocus until
+you have resolved the specific job. After navigation succeeds, do not navigate
+again in the same turn.
 When searchLocus returns the exact company needed for a navigation request,
 navigate immediately. Do not call getCompany before navigation unless the user
 also asks for company details.

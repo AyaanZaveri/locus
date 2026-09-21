@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, ArrowUpRight, X } from "lucide-react";
-import { type CSSProperties, useEffect, useState } from "react";
+import { type CSSProperties, useEffect, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Streamdown } from "streamdown";
 
@@ -132,6 +132,7 @@ function JobDetails({ job }: { job: Job }) {
 export function JobCard({ company, countryCode, job }: JobCardProps) {
   const [open, setOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -150,7 +151,17 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
   }, []);
 
   useEffect(() => {
-    if (isRequestedJob) setOpen(true);
+    if (!isRequestedJob) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      triggerRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      setOpen(true);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, [isRequestedJob]);
 
   function handleOpenChange(nextOpen: boolean) {
@@ -176,6 +187,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
         aria-haspopup="dialog"
         className="group block w-full cursor-pointer rounded-lg text-left transition-transform duration-150 ease-[cubic-bezier(0.2,0,0,1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.995] motion-reduce:transition-none"
         onClick={() => setOpen(true)}
+        ref={triggerRef}
         type="button"
       >
         <article className="flex items-center gap-3 rounded-lg border border-border bg-background p-3 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:bg-muted motion-reduce:transition-none">

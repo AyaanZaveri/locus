@@ -40,6 +40,7 @@ import {
   InputGroupButton,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import { jobDetailsHref } from "@/lib/job-navigation";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
@@ -53,7 +54,19 @@ function asNullableString(value: unknown) {
   return value === null || typeof value === "string" ? value : null;
 }
 
-function asLocusNavigation(value: unknown) {
+type LocusNavigation =
+  | {
+      companySlug: string;
+      destination: "company" | "person";
+    }
+  | {
+      companySlug: string;
+      destination: "job";
+      jobTitle: string;
+      jobLocation: string;
+    };
+
+function asLocusNavigation(value: unknown): LocusNavigation | null {
   if (!isRecord(value)) return null;
 
   const companySlug = asString(value.companySlug);
@@ -62,18 +75,19 @@ function asLocusNavigation(value: unknown) {
     return null;
   }
 
-  if (
-    destination !== "company" &&
-    destination !== "person" &&
-    destination !== "job"
-  ) {
-    return null;
+  if (destination === "job") {
+    const jobTitle = asString(value.jobTitle);
+    const jobLocation = asString(value.jobLocation);
+    if (!jobTitle || !jobLocation) return null;
+
+    return { companySlug, destination, jobTitle, jobLocation };
   }
 
-  return {
-    companySlug,
-    destination,
-  };
+  if (destination === "company" || destination === "person") {
+    return { companySlug, destination };
+  }
+
+  return null;
 }
 
 function asCompanyResult(value: unknown): LocusCompanyResult | null {
@@ -332,7 +346,11 @@ export function LocusChat() {
         destination === "person"
           ? `/company/${companySlug}#key-people`
           : destination === "job"
-            ? `/company/${companySlug}#jobs`
+            ? jobDetailsHref({
+                companySlug,
+                title: navigation.jobTitle,
+                location: navigation.jobLocation,
+              })
             : `/company/${companySlug}`;
 
       startNavigation(() => {

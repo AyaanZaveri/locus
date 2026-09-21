@@ -162,11 +162,23 @@ function filterSearchResults(
 export const locusTools = {
   navigateLocus: tool({
     description:
-      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page, person for that company's people section, or job for that company's jobs section. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
-    inputSchema: z.object({
-      companySlug: companySlugSchema,
-      destination: z.enum(["company", "person", "job"]),
-    }),
+      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page or person for that company's people section. For a job, include the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs; this opens that job's details drawer rather than only its company's Jobs section. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
+    inputSchema: z.discriminatedUnion("destination", [
+      z.object({
+        companySlug: companySlugSchema,
+        destination: z.literal("company"),
+      }),
+      z.object({
+        companySlug: companySlugSchema,
+        destination: z.literal("person"),
+      }),
+      z.object({
+        companySlug: companySlugSchema,
+        destination: z.literal("job"),
+        jobTitle: z.string().trim().min(1).max(200),
+        jobLocation: z.string().trim().min(1).max(200),
+      }),
+    ]),
   }),
   searchLocus: tool({
     description:
