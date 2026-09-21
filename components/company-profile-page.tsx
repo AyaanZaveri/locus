@@ -98,13 +98,13 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               className="absolute top-3 left-3 border-border bg-background/90 text-foreground shadow-xs backdrop-blur-sm hover:bg-background md:hidden"
               size="icon"
             />
-            <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
+            <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border/45 bg-background/30 p-1 shadow-xs backdrop-blur-sm dark:ring-border sm:-bottom-6 sm:left-5">
               <div className="rounded-lg bg-background/60">
                 {profile.logo ? (
                   <img
                     alt={`${profile.name} logo`}
                     draggable={false}
-                    className="size-16 rounded-lg ring-1 ring-border/25 sm:size-20"
+                    className="size-16 rounded-lg ring-1 ring-border/15 dark:ring-border/25 sm:size-20"
                     src={profile.logo}
                   />
                 ) : (
