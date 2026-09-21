@@ -337,6 +337,7 @@ export function LocusChat() {
 
       startNavigation(() => {
         router.push(href);
+        setFocusState("panel-exiting");
       });
       addToolOutput({
         tool: "navigateLocus",
@@ -426,10 +427,11 @@ export function LocusChat() {
     if (focusState !== "open") return;
 
     function handlePointerDown(event: PointerEvent) {
+      const focusPanel = focusPanelRef.current;
       if (
         event.button !== 0 ||
-        !(event.target instanceof Node) ||
-        focusPanelRef.current?.contains(event.target)
+        !focusPanel ||
+        event.composedPath().includes(focusPanel)
       ) {
         return;
       }
@@ -513,240 +515,244 @@ export function LocusChat() {
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex justify-center px-4">
       <div className="pointer-events-auto flex w-full max-w-xl flex-col items-center">
         {isOpen ? (
-          <motion.div
-            animate={
-              focusState === "panel-exiting"
-                ? {
-                    opacity: 0,
-                    transform: reduceMotion ? "none" : "translateY(6px)",
-                  }
-                : { opacity: 1, transform: "translateY(0)" }
-            }
-            className="mb-2 w-full"
-            initial={{
-              opacity: 0,
-              transform: reduceMotion ? "none" : "translateY(6px)",
-            }}
-            onAnimationComplete={() => {
-              if (focusState === "panel-exiting") {
-                setFocusState("closed");
+          <div className="w-full" ref={focusPanelRef}>
+            <motion.div
+              animate={
+                focusState === "panel-exiting"
+                  ? {
+                      opacity: 0,
+                      transform: reduceMotion ? "none" : "translateY(6px)",
+                    }
+                  : { opacity: 1, transform: "translateY(0)" }
               }
-            }}
-            ref={focusPanelRef}
-            transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
-          >
-            {(isActivityActive || messages.length > 0 || isClearingChat) && (
-              <div className="mb-2 flex h-7 items-center">
-                <AnimatePresence initial={false} mode="wait">
-                  {isActivityActive ? (
-                    activityStartedAt ? (
+              className="mb-2 w-full"
+              initial={{
+                opacity: 0,
+                transform: reduceMotion ? "none" : "translateY(6px)",
+              }}
+              onAnimationComplete={() => {
+                if (focusState === "panel-exiting") {
+                  setFocusState("closed");
+                }
+              }}
+              transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
+            >
+              {(isActivityActive || messages.length > 0 || isClearingChat) && (
+                <div
+                  className="mb-2 flex h-7 items-center"
+                  onPointerDown={(event) => event.stopPropagation()}
+                >
+                  <AnimatePresence initial={false} mode="wait">
+                    {isActivityActive ? (
+                      activityStartedAt ? (
+                        <motion.div
+                          animate={{
+                            opacity: 1,
+                            transform: "translateY(0) scale(1)",
+                          }}
+                          className="mr-auto"
+                          exit={pillExit}
+                          initial={pillInitial}
+                          key="activity"
+                          transition={{
+                            duration: 0.18,
+                            ease: [0.23, 1, 0.32, 1],
+                          }}
+                        >
+                          <div className="flex h-8 items-center rounded-xl border border-border bg-popover/85 px-3 backdrop-blur-sm dark:bg-popover/75">
+                            <LocusActivityStatus
+                              label={activityLabel}
+                              startedAt={activityStartedAt}
+                            />
+                          </div>
+                        </motion.div>
+                      ) : null
+                    ) : messages.length > 0 || isClearingChat ? (
                       <motion.div
-                        animate={{
-                          opacity: 1,
-                          transform: "translateY(0) scale(1)",
-                        }}
-                        className="mr-auto"
+                        animate={
+                          isClearingChat
+                            ? pillExit
+                            : {
+                                opacity: 1,
+                                transform: "translateY(0) scale(1)",
+                              }
+                        }
+                        className="ml-auto"
                         exit={pillExit}
                         initial={pillInitial}
-                        key="activity"
+                        key="new-chat"
                         transition={{
                           duration: 0.18,
                           ease: [0.23, 1, 0.32, 1],
                         }}
                       >
-                        <div className="flex h-8 items-center rounded-xl border border-border bg-popover/85 px-3 backdrop-blur-sm dark:bg-popover/75">
-                          <LocusActivityStatus
-                            label={activityLabel}
-                            startedAt={activityStartedAt}
-                          />
-                        </div>
-                      </motion.div>
-                    ) : null
-                  ) : messages.length > 0 || isClearingChat ? (
-                    <motion.div
-                      animate={
-                        isClearingChat
-                          ? pillExit
-                          : {
-                              opacity: 1,
-                              transform: "translateY(0) scale(1)",
-                            }
-                      }
-                      className="ml-auto"
-                      exit={pillExit}
-                      initial={pillInitial}
-                      key="new-chat"
-                      transition={{
-                        duration: 0.18,
-                        ease: [0.23, 1, 0.32, 1],
-                      }}
-                    >
-                      <Button
-                        className="h-8 gap-1.5 rounded-xl border border-border bg-popover/85 px-3 text-sm text-muted-foreground backdrop-blur-sm hover:bg-muted hover:text-foreground dark:bg-popover/75"
-                        disabled={isClearingChat}
-                        onClick={startNewChat}
-                        size="sm"
-                        type="button"
-                        variant="ghost"
-                      >
-                        <PlusIcon
-                          aria-hidden="true"
-                          className="size-3.5 stroke-2"
-                        />
-                        New
-                      </Button>
-                    </motion.div>
-                  ) : null}
-                </AnimatePresence>
-              </div>
-            )}
-            <motion.section
-              aria-label="Ask Locus"
-              className="w-full rounded-xl! bg-popover/85 p-2 text-popover-foreground shadow-2xl shadow-emerald-500/10 ring-1 ring-border backdrop-blur-sm dark:bg-popover/75 dark:shadow-emerald-500/15"
-              style={{ transformOrigin: "bottom center" }}
-            >
-              {(messages.length > 0 || error) && (
-                <motion.div
-                  animate={
-                    isClearingChat
-                      ? clearedMessages
-                      : { opacity: 1, transform: "translateY(0)" }
-                  }
-                  className="mb-3 h-fit max-h-72 space-y-3 overflow-y-auto px-1 py-2"
-                  initial={false}
-                  onScroll={handleMessageScroll}
-                  onAnimationComplete={finishNewChat}
-                  ref={messageListRef}
-                  transition={{
-                    duration: 0.18,
-                    ease: [0.23, 1, 0.32, 1],
-                  }}
-                >
-                  {messages.map((message) => {
-                    const text = message.parts
-                      .filter((part) => part.type === "text")
-                      .map((part) => part.text)
-                      .join("");
-                    const isShortUserMessage =
-                      message.role === "user" &&
-                      text.length <= 48 &&
-                      !text.includes("\n");
-                    const segments =
-                      message.role === "assistant"
-                        ? toLocusSegments(message.parts)
-                        : [];
-
-                    if (message.role === "user") {
-                      if (!text) return null;
-                      return (
-                        <motion.div
-                          animate={{ opacity: 1, y: 0 }}
-                          className={`ml-auto w-fit max-w-[80%] bg-emerald-500/10 px-4 py-2 text-emerald-950 backdrop-blur-sm dark:bg-emerald-400/10 dark:text-emerald-100 ${isShortUserMessage ? "rounded-full" : "rounded-2xl"}`}
-                          initial={{ opacity: 0, y: 10 }}
-                          key={message.id}
+                        <Button
+                          className="h-8 gap-1.5 rounded-xl border border-border bg-popover/85 px-3 text-sm text-muted-foreground backdrop-blur-sm hover:bg-muted hover:text-foreground dark:bg-popover/75"
+                          disabled={isClearingChat}
+                          onClick={startNewChat}
+                          size="sm"
+                          type="button"
+                          variant="ghost"
                         >
-                          <p className="break-words whitespace-pre-wrap text-[15px] leading-6">
-                            {text}
-                          </p>
-                        </motion.div>
-                      );
-                    }
-
-                    if (!segments.length) return null;
-
-                    return (
-                      <div className="w-full space-y-1" key={message.id}>
-                        {segments.map((segment) => {
-                          if (segment.kind === "text") {
-                            return (
-                              <div className="w-full px-2" key={segment.key}>
-                                <Streamdown
-                                  animated={false}
-                                  className="break-words text-[15px] leading-6 [&>*]:first:mt-0 [&>*]:last:mb-0 [&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:my-0.5 [&_p]:my-2 [&_pre]:text-sm [&_table]:text-sm"
-                                  mode={
-                                    segment.streaming ? "streaming" : "static"
-                                  }
-                                >
-                                  {segment.text}
-                                </Streamdown>
-                              </div>
-                            );
-                          }
-
-                          if (segment.kind === "results") {
-                            return (
-                              <LocusResultRows
-                                {...segment.results}
-                                key={segment.key}
-                              />
-                            );
-                          }
-
-                          return null;
-                        })}
-                      </div>
-                    );
-                  })}
-                  {error ? (
-                    <p className="px-2 text-sm text-destructive" role="alert">
-                      {error.message}
-                    </p>
-                  ) : null}
-                </motion.div>
+                          <PlusIcon
+                            aria-hidden="true"
+                            className="size-3.5 stroke-2"
+                          />
+                          New
+                        </Button>
+                      </motion.div>
+                    ) : null}
+                  </AnimatePresence>
+                </div>
               )}
-              <motion.form className="relative" onSubmit={submit}>
-                {messages.length > 0 ? (
-                  <div className="pointer-events-none absolute inset-x-0 bottom-full flex justify-center pb-2">
-                    <button
-                      aria-label="Jump to latest"
-                      className={`cursor-pointer rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
-                        isScrolledAwayFromBottom
-                          ? "pointer-events-auto translate-y-0 opacity-100"
-                          : "pointer-events-none translate-y-0.5 opacity-0"
-                      }`}
-                      onClick={() => scrollToLatest()}
-                      title="Jump to latest"
-                      type="button"
-                    >
-                      <span className="flex h-9 w-12 items-center justify-center text-foreground">
-                        <ArrowDown aria-hidden="true" className="size-5" />
-                      </span>
-                    </button>
-                  </div>
-                ) : null}
-                <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
-                  <LensConcaveIcon
-                    aria-hidden="true"
-                    className="ml-2 size-5 shrink-0 stroke-[1.5] text-muted-foreground"
-                  />
-                  <InputGroupInput
-                    aria-label="Message Locus"
-                    autoComplete="off"
-                    autoFocus
-                    className="text-base!"
-                    disabled={isBusy}
-                    onChange={(event) => setInput(event.target.value)}
-                    placeholder="Ask about a company, person, or role…"
-                    value={input}
-                  />
-                  <InputGroupButton
-                    aria-label={isBusy ? "Stop response" : "Send message"}
-                    className="mr-1 text-muted-foreground"
-                    disabled={!isBusy && !input.trim()}
-                    size="icon-sm"
-                    type={isBusy ? "button" : "submit"}
-                    onClick={isBusy ? stop : undefined}
+              <motion.section
+                aria-label="Ask Locus"
+                className="w-full rounded-xl! bg-popover/85 p-2 text-popover-foreground shadow-2xl shadow-emerald-500/10 ring-1 ring-border backdrop-blur-sm dark:bg-popover/75 dark:shadow-emerald-500/15"
+                style={{ transformOrigin: "bottom center" }}
+              >
+                {(messages.length > 0 || error) && (
+                  <motion.div
+                    animate={
+                      isClearingChat
+                        ? clearedMessages
+                        : { opacity: 1, transform: "translateY(0)" }
+                    }
+                    className="mb-3 h-fit max-h-72 space-y-3 overflow-y-auto px-1 py-2"
+                    initial={false}
+                    onScroll={handleMessageScroll}
+                    onAnimationComplete={finishNewChat}
+                    ref={messageListRef}
+                    transition={{
+                      duration: 0.18,
+                      ease: [0.23, 1, 0.32, 1],
+                    }}
                   >
-                    {isBusy ? (
-                      <SquareIcon className="size-4 stroke-2 opacity-70" />
-                    ) : (
-                      <ArrowUpIcon className="size-5" />
-                    )}
-                  </InputGroupButton>
-                </InputGroup>
-              </motion.form>
-            </motion.section>
-          </motion.div>
+                    {messages.map((message) => {
+                      const text = message.parts
+                        .filter((part) => part.type === "text")
+                        .map((part) => part.text)
+                        .join("");
+                      const isShortUserMessage =
+                        message.role === "user" &&
+                        text.length <= 48 &&
+                        !text.includes("\n");
+                      const segments =
+                        message.role === "assistant"
+                          ? toLocusSegments(message.parts)
+                          : [];
+
+                      if (message.role === "user") {
+                        if (!text) return null;
+                        return (
+                          <motion.div
+                            animate={{ opacity: 1, y: 0 }}
+                            className={`ml-auto w-fit max-w-[80%] bg-emerald-500/10 px-4 py-2 text-emerald-950 backdrop-blur-sm dark:bg-emerald-400/10 dark:text-emerald-100 ${isShortUserMessage ? "rounded-full" : "rounded-2xl"}`}
+                            initial={{ opacity: 0, y: 10 }}
+                            key={message.id}
+                          >
+                            <p className="break-words whitespace-pre-wrap text-[15px] leading-6">
+                              {text}
+                            </p>
+                          </motion.div>
+                        );
+                      }
+
+                      if (!segments.length) return null;
+
+                      return (
+                        <div className="w-full space-y-1" key={message.id}>
+                          {segments.map((segment) => {
+                            if (segment.kind === "text") {
+                              return (
+                                <div className="w-full px-2" key={segment.key}>
+                                  <Streamdown
+                                    animated={false}
+                                    className="break-words text-[15px] leading-6 [&>*]:first:mt-0 [&>*]:last:mb-0 [&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:my-0.5 [&_p]:my-2 [&_pre]:text-sm [&_table]:text-sm"
+                                    mode={
+                                      segment.streaming ? "streaming" : "static"
+                                    }
+                                  >
+                                    {segment.text}
+                                  </Streamdown>
+                                </div>
+                              );
+                            }
+
+                            if (segment.kind === "results") {
+                              return (
+                                <LocusResultRows
+                                  {...segment.results}
+                                  key={segment.key}
+                                />
+                              );
+                            }
+
+                            return null;
+                          })}
+                        </div>
+                      );
+                    })}
+                    {error ? (
+                      <p className="px-2 text-sm text-destructive" role="alert">
+                        {error.message}
+                      </p>
+                    ) : null}
+                  </motion.div>
+                )}
+                <motion.form className="relative" onSubmit={submit}>
+                  {messages.length > 0 ? (
+                    <div className="pointer-events-none absolute inset-x-0 bottom-full flex justify-center pb-2">
+                      <button
+                        aria-label="Jump to latest"
+                        className={`cursor-pointer rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
+                          isScrolledAwayFromBottom
+                            ? "pointer-events-auto translate-y-0 opacity-100"
+                            : "pointer-events-none translate-y-0.5 opacity-0"
+                        }`}
+                        onClick={() => scrollToLatest()}
+                        title="Jump to latest"
+                        type="button"
+                      >
+                        <span className="flex h-9 w-12 items-center justify-center text-foreground">
+                          <ArrowDown aria-hidden="true" className="size-5" />
+                        </span>
+                      </button>
+                    </div>
+                  ) : null}
+                  <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
+                    <LensConcaveIcon
+                      aria-hidden="true"
+                      className="ml-2 size-5 shrink-0 stroke-[1.5] text-muted-foreground"
+                    />
+                    <InputGroupInput
+                      aria-label="Message Locus"
+                      autoComplete="off"
+                      autoFocus
+                      className="text-base!"
+                      disabled={isBusy}
+                      onChange={(event) => setInput(event.target.value)}
+                      placeholder="Ask about a company, person, or role…"
+                      value={input}
+                    />
+                    <InputGroupButton
+                      aria-label={isBusy ? "Stop response" : "Send message"}
+                      className="mr-1 text-muted-foreground"
+                      disabled={!isBusy && !input.trim()}
+                      size="icon-sm"
+                      type={isBusy ? "button" : "submit"}
+                      onClick={isBusy ? stop : undefined}
+                    >
+                      {isBusy ? (
+                        <SquareIcon className="size-4 stroke-2 opacity-70" />
+                      ) : (
+                        <ArrowUpIcon className="size-5" />
+                      )}
+                    </InputGroupButton>
+                  </InputGroup>
+                </motion.form>
+              </motion.section>
+            </motion.div>
+          </div>
         ) : (
           <motion.div
             className="mb-1"

@@ -25,5 +25,5 @@ export function getLocusModel(sessionId: string) {
       "user-agent": userAgent,
     },
     includeUsage: true,
-  }).chatModel("deepseek-v4.1-flash");
+  }).chatModel("mimo-v2.6-flash");
 }
