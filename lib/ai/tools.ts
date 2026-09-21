@@ -1,7 +1,7 @@
 import "server-only";
 
 import { tool } from "ai";
-import { and, asc, eq, ilike, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { z } from "zod";
 
 import { db } from "@/lib/db";
@@ -232,6 +232,102 @@ export const locusTools = {
         ...company,
         facts: profileFacts(profile, terms),
       }));
+    },
+  }),
+  recommendOutreachTargets: tool({
+    description:
+      "Recommend companies to contact based on a user's current company and location. It ranks companies with active hiring signals in that location, prioritizing the same industry as the user's current company. Use this for questions like 'I work at X, who should I reach out to near Y?'.",
+    inputSchema: z.object({
+      fromCompanySlug: companySlugSchema,
+      location: z.string().trim().min(2).max(80),
+      limit: resultLimitSchema,
+    }),
+    execute: async ({ fromCompanySlug, location, limit }) => {
+      const [sourceCompany] = await db
+        .select({ industry: companies.industry })
+        .from(companies)
+        .where(eq(companies.slug, fromCompanySlug))
+        .limit(1);
+
+      if (!sourceCompany) {
+        return { error: `No company found for slug \"${fromCompanySlug}\".` };
+      }
+
+      const matchedJobs = await db
+        .select({
+          title: jobs.title,
+          location: jobs.location,
+          companySlug: companies.slug,
+          companyName: companies.name,
+          industry: companies.industry,
+          companyLocation: companies.location,
+          countryCode: companies.countryCode,
+          companyLogo: sql<string | null>`${companies.profile}->>'logo'`,
+        })
+        .from(jobs)
+        .innerJoin(companies, eq(jobs.companyId, companies.id))
+        .where(
+          and(
+            or(eq(jobs.status, "open"), eq(jobs.status, "unknown")),
+            ilike(jobs.searchText, `%${location}%`),
+          ),
+        )
+        .orderBy(
+          desc(
+            sql`case when ${companies.industry} = ${sourceCompany.industry} then 1 else 0 end`,
+          ),
+          asc(companies.name),
+        )
+        .limit(100);
+
+      const candidates = new Map<
+        string,
+        {
+          slug: string;
+          name: string;
+          industry: string;
+          location: string;
+          logo: string | null;
+          countryCode: string;
+          jobs: Array<{ title: string; location: string; evidence: string }>;
+        }
+      >();
+
+      for (const job of matchedJobs) {
+        const candidate = candidates.get(job.companySlug) ?? {
+          slug: job.companySlug,
+          name: job.companyName,
+          industry: job.industry,
+          location: job.companyLocation,
+          logo: job.companyLogo,
+          countryCode: job.countryCode,
+          jobs: [],
+        };
+        if (candidate.jobs.length < 2) {
+          candidate.jobs.push({
+            title: job.title,
+            location: job.location,
+            evidence: job.location,
+          });
+        }
+        candidates.set(job.companySlug, candidate);
+      }
+
+      return [...candidates.values()]
+        .sort(
+          (a, b) =>
+            Number(b.industry === sourceCompany.industry) -
+              Number(a.industry === sourceCompany.industry) ||
+            a.name.localeCompare(b.name),
+        )
+        .slice(0, limit)
+        .map((candidate) => ({
+          ...candidate,
+          reason:
+            candidate.industry === sourceCompany.industry
+              ? `Same industry as ${fromCompanySlug}: ${sourceCompany.industry}.`
+              : `Active hiring signal in ${location}.`,
+        }));
     },
   }),
   listCompanyJobs: tool({

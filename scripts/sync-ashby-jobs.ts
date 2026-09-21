@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 import { sanitizeJobMarkdown } from "./lib/job-markdown";
+import { sanitizeLocation } from "./lib/job-location";
 
 const slug = process.argv[2] ?? "parallel";
 // Board slug and profile slug can differ.
@@ -161,10 +162,11 @@ async function main() {
   const jobs = ashbyJobs.map((job) => {
     const key = job.jobUrl;
     const old = previous.get(key) ?? previous.get(job.title) ?? {};
-    const locations = [job.location, ...(job.secondaryLocations ?? []).map((item) => item.location ?? "")]
-      .filter(Boolean)
-      .filter((location, index, all) => all.indexOf(location) === index)
-      .join("; ");
+    const locations = sanitizeLocation(
+      [job.location, ...(job.secondaryLocations ?? []).map((item) => item.location ?? "")]
+        .filter(Boolean)
+        .join(" | "),
+    );
     return {
       ...old,
       title: job.title,

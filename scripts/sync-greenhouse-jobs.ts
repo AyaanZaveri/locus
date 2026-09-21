@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 import { sanitizeJobMarkdown } from "./lib/job-markdown";
+import { sanitizeLocation } from "./lib/job-location";
 
 const slug = process.argv[2] ?? "tavily";
 // Board slug and profile slug can differ (board "togetherai" -> profile "together").
@@ -245,11 +246,7 @@ async function main() {
       ranges[0] ??
       payFromText(description);
     const old = previous.get(job.absolute_url) ?? previous.get(job.title) ?? {};
-    const location = (job.location?.name ?? "")
-      .split(";")
-      .map((part) => part.trim())
-      .filter(Boolean)
-      .join(" | ");
+    const location = sanitizeLocation(job.location?.name ?? "");
 
     return {
       ...old,

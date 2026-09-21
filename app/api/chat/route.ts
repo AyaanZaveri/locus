@@ -21,6 +21,10 @@ searchLocus to answer those questions unless the user is only asking to find a
 company by its name, industry, location, person, or job.
 Call searchCompanyFacts once per question unless its result is empty or clearly
 ambiguous.
+For outreach or career recommendations based on a user's current company and
+location, resolve their company with searchLocus, then use
+recommendOutreachTargets. Base recommendations on its returned hiring evidence
+and relationship signal instead of broad keyword searches.
 For searchLocus, request only the entity types the user asks for: jobs-only
 questions return jobs, people-only questions return people, and mixed questions
 return each requested type. Keep the result limit at three unless the user asks

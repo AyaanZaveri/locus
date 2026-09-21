@@ -152,6 +152,13 @@ function toolResultRows(
 ): LocusSearchResults | null {
   if (type === "tool-searchLocus") return asSearchResults(output);
 
+  if (type === "tool-recommendOutreachTargets" && Array.isArray(output)) {
+    const companies = output
+      .map(asCompanyResult)
+      .filter(Boolean) as LocusCompanyResult[];
+    return companies.length ? { companies, people: [], jobs: [] } : null;
+  }
+
   if (type === "tool-listCompanyJobs" && Array.isArray(output)) {
     const jobs = output.map(asJobResult).filter(Boolean) as LocusJobResult[];
     return jobs.length ? { companies: [], people: [], jobs } : null;
@@ -236,6 +243,8 @@ function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
           return "Skimming company";
         case "tool-searchCompanyFacts":
           return "Checking company facts";
+        case "tool-recommendOutreachTargets":
+          return "Finding outreach targets";
         case "tool-navigateLocus":
           return "Navigating";
       }

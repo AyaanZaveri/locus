@@ -2,6 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 import { sanitizeJobMarkdown } from "./lib/job-markdown";
+import { sanitizeLocation } from "./lib/job-location";
 
 const companiesDir = new URL("../data/companies/", import.meta.url);
 const dryRun = process.argv.includes("--dry-run");
@@ -24,13 +25,27 @@ async function main() {
 
     let touched = 0;
     for (const job of profile.jobs) {
-      const current = job.description;
-      if (typeof current !== "string" || !current) continue;
-      const next = sanitizeJobMarkdown(current);
-      if (next !== current) {
-        job.description = next;
-        touched += 1;
+      let changed = false;
+
+      const currentDescription = job.description;
+      if (typeof currentDescription === "string" && currentDescription) {
+        const nextDescription = sanitizeJobMarkdown(currentDescription);
+        if (nextDescription !== currentDescription) {
+          job.description = nextDescription;
+          changed = true;
+        }
       }
+
+      const currentLocation = job.location;
+      if (typeof currentLocation === "string" && currentLocation) {
+        const nextLocation = sanitizeLocation(currentLocation);
+        if (nextLocation !== currentLocation) {
+          job.location = nextLocation;
+          changed = true;
+        }
+      }
+
+      if (changed) touched += 1;
     }
 
     if (touched) {
@@ -44,7 +59,7 @@ async function main() {
   }
 
   console.log(
-    `${dryRun ? "Would normalize" : "Normalized"} ${jobsChanged} job description(s) across ${companiesChanged} company profile(s).`,
+    `${dryRun ? "Would normalize" : "Normalized"} ${jobsChanged} job record(s) across ${companiesChanged} company profile(s).`,
   );
 }
 
