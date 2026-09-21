@@ -1,0 +1,768 @@
+{
+  "slug": "cohere",
+  "name": "Cohere",
+  "tagline": "Your AI. Your rules.",
+  "description": "Cohere is a Canadian enterprise AI company headquartered in Toronto that builds foundation models and security-first, end-to-end AI products for private, VPC, on-premises, and sovereign deployment. Founded in 2019 by Aidan Gomez, Ivan Zhang, and Nick Frosst, it ships the Command, Embed, Rerank, Transcribe, Parse, and North Small Translate models alongside North, its enterprise AI workspace, and Model Vault for dedicated inference. Cohere raised $500 million at a $6.8 billion valuation in August 2025, and in 2026 agreed to combine with Germany's Aleph Alpha to form a transatlantic sovereign AI provider.",
+  "website": "https://cohere.com",
+  "foundedYear": 2019,
+  "banner": "/companies/cohere/images/banner.jpg",
+  "logo": "/companies/cohere/images/logo.png",
+  "industry": "Foundation Models",
+  "location": {
+    "label": "Toronto, Ontario",
+    "countryCode": "ca"
+  },
+  "stage": "Series D",
+  "employees": "450+ employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 1535000000,
+      "currency": "USD",
+      "display": "$1.54B"
+    },
+    "valuation": {
+      "amount": 6800000000,
+      "currency": "USD",
+      "display": "$6.8B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "growth-2025-second",
+    "investors": [
+      {
+        "name": "BDC Capital",
+        "website": "https://www.bdc.ca",
+        "logo": "/investors/bdc-capital.png"
+      },
+      {
+        "name": "Nexxus Capital Management",
+        "website": "https://nexxuscapital.net",
+        "logo": "/investors/nexxus-capital-management.png"
+      },
+      {
+        "name": "Radical Ventures",
+        "website": "https://www.radical.vc",
+        "logo": "/investors/radical-ventures.png"
+      },
+      {
+        "name": "Inovia Capital",
+        "website": "https://www.inovia.vc",
+        "logo": "/investors/inovia.png"
+      },
+      {
+        "name": "AMD Ventures",
+        "website": "https://www.amd.com",
+        "logo": "/investors/amd.png"
+      },
+      {
+        "name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "website": "https://www.salesforceventures.com",
+        "logo": "/investors/salesforce-ventures.jpeg"
+      },
+      {
+        "name": "PSP Investments",
+        "website": "https://www.investpsp.com",
+        "logo": "/investors/psp-partners.png"
+      },
+      {
+        "name": "Healthcare of Ontario Pension Plan",
+        "website": "https://www.hoopp.com",
+        "logo": "/investors/healthcare-of-ontario-pension-plan.png"
+      },
+      {
+        "name": "Cisco Investments",
+        "website": "https://www.cisco.com",
+        "logo": "/investors/cisco-investments.png"
+      },
+      {
+        "name": "Fujitsu",
+        "website": "https://www.fujitsu.com",
+        "logo": "/investors/fujitsu.png"
+      },
+      {
+        "name": "Export Development Canada",
+        "website": "https://www.edc.ca",
+        "logo": "/investors/export-development-canada.png"
+      },
+      {
+        "name": "Oracle",
+        "website": "https://www.oracle.com",
+        "logo": "/investors/oracle.png"
+      },
+      {
+        "name": "DTCP",
+        "website": "https://dtcp.com",
+        "logo": "/investors/dtcp.png"
+      },
+      {
+        "name": "Mirae Asset",
+        "website": "https://www.miraeasset.com",
+        "logo": "/investors/mirae-asset.png"
+      },
+      {
+        "name": "Schroders Capital",
+        "website": "https://www.schroders.com",
+        "logo": "/investors/schroders.png"
+      },
+      {
+        "name": "SentinelOne",
+        "website": "https://www.sentinelone.com",
+        "logo": "/investors/s-ventures-sentinelone.png"
+      },
+      {
+        "name": "Thomvest Ventures",
+        "website": "https://www.thomvest.com",
+        "logo": "/investors/thomvest-ventures.png"
+      },
+      {
+        "name": "Index Ventures",
+        "website": "https://www.indexventures.com",
+        "logo": "/investors/index-ventures.jpeg"
+      },
+      {
+        "name": "Tiger Global Management",
+        "website": "https://www.tigerglobal.com",
+        "logo": "/investors/tiger-global.png"
+      },
+      {
+        "name": "Section 32",
+        "website": "https://www.section32.com",
+        "logo": "/investors/section-32.png"
+      },
+      {
+        "name": "Geoffrey Hinton",
+        "website": null
+      },
+      {
+        "name": "Fei-Fei Li",
+        "website": null
+      },
+      {
+        "name": "Pieter Abbeel",
+        "website": null
+      },
+      {
+        "name": "Raquel Urtasun",
+        "website": null
+      }
+    ],
+    "rounds": [
+      {
+        "id": "growth-2025-second",
+        "stage": "Growth",
+        "announcedAt": "2025-09-24",
+        "amount": {
+          "amount": 100000000,
+          "currency": "USD",
+          "display": "$100M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [
+          {
+            "name": "BDC Capital",
+            "website": "https://www.bdc.ca",
+            "logo": "/investors/bdc-capital.png"
+          },
+          {
+            "name": "Nexxus Capital Management",
+            "website": "https://nexxuscapital.net",
+            "logo": "/investors/nexxus-capital-management.png"
+          }
+        ],
+        "sourceUrl": "https://cohere.com/blog/september-2025-funding-round"
+      },
+      {
+        "id": "growth-2025",
+        "stage": "Growth",
+        "announcedAt": "2025-08-14",
+        "amount": {
+          "amount": 500000000,
+          "currency": "USD",
+          "display": "$500M"
+        },
+        "valuation": {
+          "amount": 6800000000,
+          "currency": "USD",
+          "display": "$6.8B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Radical Ventures",
+            "website": "https://www.radical.vc",
+            "logo": "/investors/radical-ventures.png"
+          },
+          {
+            "name": "Inovia Capital",
+            "website": "https://www.inovia.vc",
+            "logo": "/investors/inovia.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "AMD Ventures",
+            "website": "https://www.amd.com",
+            "logo": "/investors/amd.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "PSP Investments",
+            "website": "https://www.investpsp.com",
+            "logo": "/investors/psp-partners.png"
+          },
+          {
+            "name": "Healthcare of Ontario Pension Plan",
+            "website": "https://www.hoopp.com",
+            "logo": "/investors/healthcare-of-ontario-pension-plan.png"
+          }
+        ],
+        "sourceUrl": "https://cohere.com/blog/august-2025-funding-round"
+      },
+      {
+        "id": "series-d-2024",
+        "stage": "Series D",
+        "announcedAt": "2024-07-22",
+        "amount": {
+          "amount": 500000000,
+          "currency": "USD",
+          "display": "$500M"
+        },
+        "valuation": {
+          "amount": 5500000000,
+          "currency": "USD",
+          "display": "$5.5B"
+        },
+        "leadInvestors": [
+          {
+            "name": "PSP Investments",
+            "website": "https://www.investpsp.com",
+            "logo": "/investors/psp-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Cisco Investments",
+            "website": "https://www.cisco.com",
+            "logo": "/investors/cisco-investments.png"
+          },
+          {
+            "name": "AMD Ventures",
+            "website": "https://www.amd.com",
+            "logo": "/investors/amd.png"
+          },
+          {
+            "name": "Fujitsu",
+            "website": "https://www.fujitsu.com",
+            "logo": "/investors/fujitsu.png"
+          },
+          {
+            "name": "Export Development Canada",
+            "website": "https://www.edc.ca",
+            "logo": "/investors/export-development-canada.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2024/07/22/cohere-raises-500m-to-beat-back-generative-ai-rivals/"
+      },
+      {
+        "id": "series-c-2023",
+        "stage": "Series C",
+        "announcedAt": "2023-06-08",
+        "amount": {
+          "amount": 270000000,
+          "currency": "USD",
+          "display": "$270M"
+        },
+        "valuation": {
+          "amount": 2200000000,
+          "currency": "USD",
+          "display": "$2.2B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Inovia Capital",
+            "website": "https://www.inovia.vc",
+            "logo": "/investors/inovia.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Oracle",
+            "website": "https://www.oracle.com",
+            "logo": "/investors/oracle.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "DTCP",
+            "website": "https://dtcp.com",
+            "logo": "/investors/dtcp.png"
+          },
+          {
+            "name": "Mirae Asset",
+            "website": "https://www.miraeasset.com",
+            "logo": "/investors/mirae-asset.png"
+          },
+          {
+            "name": "Schroders Capital",
+            "website": "https://www.schroders.com",
+            "logo": "/investors/schroders.png"
+          },
+          {
+            "name": "SentinelOne",
+            "website": "https://www.sentinelone.com",
+            "logo": "/investors/s-ventures-sentinelone.png"
+          },
+          {
+            "name": "Thomvest Ventures",
+            "website": "https://www.thomvest.com",
+            "logo": "/investors/thomvest-ventures.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          }
+        ],
+        "sourceUrl": "https://www.globenewswire.com/en/news-release/2023/06/08/2684788/0/en/Cohere-Announces-270M-Series-C-to-Bring-Generative-AI-to-Enterprises.html"
+      },
+      {
+        "id": "series-b-2022",
+        "stage": "Series B",
+        "announcedAt": null,
+        "amount": {
+          "amount": 125000000,
+          "currency": "USD",
+          "display": "$125M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Tiger Global Management",
+            "website": "https://www.tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Radical Ventures",
+            "website": "https://www.radical.vc",
+            "logo": "/investors/radical-ventures.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Section 32",
+            "website": "https://www.section32.com",
+            "logo": "/investors/section-32.png"
+          }
+        ],
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cohere"
+      },
+      {
+        "id": "series-a-2021",
+        "stage": "Series A",
+        "announcedAt": "2021-09-07",
+        "amount": {
+          "amount": 40000000,
+          "currency": "USD",
+          "display": "$40M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Radical Ventures",
+            "website": "https://www.radical.vc",
+            "logo": "/investors/radical-ventures.png"
+          },
+          {
+            "name": "Section 32",
+            "website": "https://www.section32.com",
+            "logo": "/investors/section-32.png"
+          },
+          {
+            "name": "Geoffrey Hinton",
+            "website": null
+          },
+          {
+            "name": "Fei-Fei Li",
+            "website": null
+          },
+          {
+            "name": "Pieter Abbeel",
+            "website": null
+          },
+          {
+            "name": "Raquel Urtasun",
+            "website": null
+          }
+        ],
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cohere"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Senior Full-Stack Engineer, Internal Applications",
+      "location": "Toronto, Canada | Remote (Canada)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/7133d205-5421-4336-a8e2-6037b5f55073"
+    },
+    {
+      "title": "Member of Technical Staff, Modeling",
+      "location": "London, UK | San Francisco, CA | New York, NY | Paris | Toronto | Montreal",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/3136a5a5-06fd-4c82-8b72-a43467e6b128"
+    },
+    {
+      "title": "Senior Member of Technical Staff, Multimodal AI",
+      "location": "San Francisco, CA | New York, NY | Paris | Toronto | Montreal",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/443368a3-6276-4b90-9671-27fed40fd6d2"
+    },
+    {
+      "title": "Member of Technical Staff, Post-Training",
+      "location": "London, UK | San Francisco, CA | New York, NY | Paris | Toronto | Montreal",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/554a9380-ab50-4338-88a9-c6b8ab19d92e"
+    },
+    {
+      "title": "Member of Technical Staff, Pre-Training Data",
+      "location": "Toronto, Canada | San Francisco, CA | London, UK | New York, NY | Paris | Montreal",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/859e2e47-02fb-4afe-bb8a-e83bf4d8c265"
+    },
+    {
+      "title": "Senior Member of Technical Staff, Synthetic Data",
+      "location": "Toronto, Canada | London, UK | New York, NY | Paris | Montreal",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/2df2da3c-fb69-4d4d-b3c9-077b3df2ba3d"
+    },
+    {
+      "title": "Senior Research Scientist, Model Evaluation",
+      "location": "Toronto, Canada | San Francisco, CA | Seattle, WA | London, UK | New York, NY",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/830c613b-d4bf-4673-ab33-46ccc12cc415"
+    },
+    {
+      "title": "Senior Member of Technical Staff, Safety and Security for Agents",
+      "location": "London, UK | New York, NY | Edinburgh | Paris | Toronto | Montreal",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/1f7cc5e6-5f31-40d8-ad49-fe22c98a3ea4"
+    },
+    {
+      "title": "Member of Technical Staff - Sovereign AI",
+      "location": "Toronto, Canada",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/cohere/b9306620-a110-46b5-b4c4-7363e1d03a8d"
+    },
+    {
+      "title": "Senior Software Engineer, GPU Infrastructure (HPC)",
+      "location": "Canada | United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/ef9b939d-da66-464c-a878-ef45616c0473"
+    },
+    {
+      "title": "Staff Software Engineer, Inference Infrastructure",
+      "location": "San Francisco, CA | New York, NY | Toronto | Montreal",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/41f23dad-9da2-451a-bd1e-a1800437cb64"
+    },
+    {
+      "title": "Site Reliability Engineer, Inference Infrastructure",
+      "location": "Toronto, Canada | San Francisco, CA | New York, NY | Montreal",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/8b6696e1-f1c4-4010-bde9-3cec1340a2a6"
+    },
+    {
+      "title": "Forward Deployed Engineer, Agentic Platform (UK/Europe)",
+      "location": "Europe (London | Brussels | Munich)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/2d256112-b336-4539-8133-a0bf7f6698f0"
+    },
+    {
+      "title": "Forward Deployed Engineer, Infrastructure Specialist (North America)",
+      "location": "Toronto, Canada | Vancouver | Ottawa | Montreal",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/be48aafc-9610-4ebd-8414-a0722a3cd59a"
+    },
+    {
+      "title": "Forward Deployed Engineer, Sovereign AI",
+      "location": "Ottawa, Canada | Toronto | Vancouver",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/556467eb-3dc8-46e2-b015-277872210997"
+    },
+    {
+      "title": "Forward Deployed Engineer, Infrastructure Specialist (Middle East)",
+      "location": "Middle East (Dubai | Riyadh)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/cohere/291e5dee-dcda-49e6-a1b6-dae0d48f80af"
+    },
+    {
+      "title": "Product Manager, Agent Harness & Modelling",
+      "location": "Toronto, Canada | London, UK | New York, NY | Montreal",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/cohere/1d1b300d-254b-48c4-958f-99c6b907f295"
+    },
+    {
+      "title": "Solutions Architect - Public Sector",
+      "location": "Washington, DC",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/cohere/6d0f0753-ff22-46fd-90e9-08998914a8e7"
+    },
+    {
+      "title": "Senior Account Executive - US Public Sector",
+      "location": "Washington, DC",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/cohere/98f69f63-2f54-4813-86ea-13d67336326e"
+    },
+    {
+      "title": "VP Sales, EMEA",
+      "location": "Berlin | Munich | Frankfurt",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/cohere/277827a9-02b7-49ca-8590-458e93cab0e6"
+    },
+    {
+      "title": "Lead - US Government Affairs & Public Policy",
+      "location": "Washington, DC",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/cohere/bde93d36-4a41-4c8c-bd98-b4e44f9061e4"
+    },
+    {
+      "title": "Head of Strategic Finance",
+      "location": "San Francisco, CA | New York, NY",
+      "focus": "Finance",
+      "url": "https://jobs.ashbyhq.com/cohere/39ae8da6-9c3d-4f36-80a3-310159ee1f8d"
+    }
+  ],
+  "people": [
+    {
+      "name": "Aidan Gomez",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": "/companies/cohere/people/aidan-gomez/avatar.jpg",
+      "linkedin": null,
+      "x": "https://x.com/aidangomez",
+      "sourceUrl": "https://cohere.com/about"
+    },
+    {
+      "name": "Ivan Zhang",
+      "role": "Co-Founder and Chief Technology Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://cohere.com/about"
+    },
+    {
+      "name": "Nick Frosst",
+      "role": "Co-Founder",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://cohere.com/about"
+    },
+    {
+      "name": "Phil Blunsom",
+      "role": "Chief Technology Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://cohere.com/about"
+    },
+    {
+      "name": "Joelle Pineau",
+      "role": "Chief AI Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://cohere.com/about"
+    },
+    {
+      "name": "François Chadwick",
+      "role": "Chief Financial Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://cohere.com/about"
+    },
+    {
+      "name": "Frank O'Dowd",
+      "role": "Chief Revenue and Commercial Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://cohere.com/about"
+    }
+  ],
+  "activity": [
+    {
+      "type": "news",
+      "time": "Sep 16, 2026",
+      "dateTime": "2026-09-16",
+      "title": "Signed an agreement to combine with Aleph Alpha",
+      "description": "Cohere and Germany's Aleph Alpha signed an agreement to operate as a transatlantic sovereign AI provider with headquarters and R&D across Canada and Germany, backed by a €500 million investment from Schwarz Group.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "product",
+      "time": "Sep 10, 2026",
+      "dateTime": "2026-09-10",
+      "title": "Released North Small Translate",
+      "description": "A sovereign, open-weight machine translation model optimized for speed and cost.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "product",
+      "time": "Aug 27, 2026",
+      "dateTime": "2026-08-27",
+      "title": "Launched Parse for enterprise document intelligence",
+      "description": "Cohere released Parse, a document parsing model for enterprise-scale document intelligence.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "news",
+      "time": "Aug 6, 2026",
+      "dateTime": "2026-08-06",
+      "title": "Partnered with the University of Waterloo on AI talent",
+      "description": "Cohere announced a partnership with the University of Waterloo to strengthen Canada's AI talent pipeline.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "news",
+      "time": "Jul 31, 2026",
+      "dateTime": "2026-07-31",
+      "title": "Signed the EU Code of Practice on AI transparency",
+      "description": "Cohere signed the EU Code of Practice on transparent AI-generated content.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "product",
+      "time": "Jul 27, 2026",
+      "dateTime": "2026-07-27",
+      "title": "Launched North Automations",
+      "description": "North Automations brought workflow orchestration to Cohere's enterprise AI workspace.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "product",
+      "time": "Jun 9, 2026",
+      "dateTime": "2026-06-09",
+      "title": "Released North Mini Code",
+      "description": "Cohere's first developer and coding model, released under the North product line.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "product",
+      "time": "May 20, 2026",
+      "dateTime": "2026-05-20",
+      "title": "Released Command A+ under Apache 2.0",
+      "description": "A 218B-parameter mixture-of-experts model with 24B active parameters that runs on two H100s or a single B200, supports 48 languages, and deploys in VPC, on-premises, or air-gapped environments.",
+      "sourceUrl": "https://cohere.com/blog/cohere-releases-command-a-plus"
+    },
+    {
+      "type": "growth",
+      "time": "Apr 30, 2026",
+      "dateTime": "2026-04-30",
+      "title": "Ottawa's EY Centre renamed the Cohere Centre",
+      "description": "The naming-rights deal put the Toronto-based AI company's name on the Ottawa venue.",
+      "sourceUrl": "https://www.ctvnews.ca/ottawa/article/ottawas-ey-centre-to-be-renamed-after-toronto-based-ai-company/"
+    },
+    {
+      "type": "product",
+      "time": "Mar 26, 2026",
+      "dateTime": "2026-03-26",
+      "title": "Launched Cohere Transcribe",
+      "description": "Cohere released an open-source state-of-the-art speech recognition model.",
+      "sourceUrl": "https://cohere.com/blog"
+    },
+    {
+      "type": "news",
+      "time": "Feb 10, 2026",
+      "dateTime": "2026-02-10",
+      "title": "Expanded its SAP partnership globally, starting in Canada",
+      "description": "SAP and Cohere expanded their partnership to launch sovereign AI solutions worldwide, beginning in Canada.",
+      "sourceUrl": "https://news.sap.com/canada/2026/02/sap-and-cohere-expand-partnership-to-launch-sovereign-ai-solutions-globally-beginning-in-canada/"
+    },
+    {
+      "type": "news",
+      "time": "Nov 27, 2025",
+      "dateTime": "2025-11-27",
+      "title": "Brought North to SAP Sovereign Cloud in Europe",
+      "description": "Cohere expanded its SAP partnership to deliver North on SAP Sovereign Cloud for EU enterprises and governments.",
+      "sourceUrl": "https://cohere.com/blog/cohere-expands-partnership-with-sap"
+    },
+    {
+      "type": "product",
+      "time": "Nov 13, 2025",
+      "dateTime": "2025-11-13",
+      "title": "Committed to model signing for AI supply chains",
+      "description": "Cohere pledged to sign its models to provide provenance and security guarantees across the AI supply chain.",
+      "sourceUrl": "https://cohere.com/blog/securing-ai-supply-chains-coheres-commitment-to-model-signing"
+    },
+    {
+      "type": "funding",
+      "time": "Sep 24, 2025",
+      "dateTime": "2025-09-24",
+      "title": "Added $100M in a second close",
+      "description": "Cohere added $100 million in a second close of its 2025 financing to scale security-first enterprise AI.",
+      "sourceUrl": "https://cohere.com/blog/september-2025-funding-round"
+    },
+    {
+      "type": "news",
+      "time": "Aug 19, 2025",
+      "dateTime": "2025-08-19",
+      "title": "Signed an MoU with the Government of Canada",
+      "description": "Cohere agreed to work with the Government of Canada to advance sovereign AI in the public sector.",
+      "sourceUrl": "https://cohere.com/blog/cohere-partnership-canada-government"
+    },
+    {
+      "type": "funding",
+      "time": "Aug 14, 2025",
+      "dateTime": "2025-08-14",
+      "title": "Raised $500M at a $6.8B valuation",
+      "description": "Cohere raised $500 million co-led by Radical Ventures and Inovia Capital at a $6.8 billion valuation, with participation from AMD Ventures, NVIDIA, Salesforce Ventures, PSP Investments, and HOOPP.",
+      "sourceUrl": "https://cohere.com/blog/august-2025-funding-round"
+    }
+  ]
+}

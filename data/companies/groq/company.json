@@ -122,8 +122,8 @@
       },
       {
         "name": "The Spruce House Partnership",
-        "website": null,
-        "logo": null
+        "website": "https://www.sprucehousecapital.com",
+        "logo": "/investors/the-spruce-house-partnership.png"
       },
       {
         "name": "Xⁿ",
@@ -157,8 +157,8 @@
       },
       {
         "name": "Conconi Growth Partners",
-        "website": null,
-        "logo": null
+        "website": "https://www.conconi.ca",
+        "logo": "/investors/conconi-growth-partners.png"
       }
     ],
     "rounds": [
@@ -366,8 +366,8 @@
         "investors": [
           {
             "name": "The Spruce House Partnership",
-            "website": null,
-            "logo": null
+            "website": "https://www.sprucehousecapital.com",
+            "logo": "/investors/the-spruce-house-partnership.png"
           },
           {
             "name": "Addition",
@@ -468,8 +468,8 @@
         "investors": [
           {
             "name": "Conconi Growth Partners",
-            "website": null,
-            "logo": null
+            "website": "https://www.conconi.ca",
+            "logo": "/investors/conconi-growth-partners.png"
           },
           {
             "name": "Daniel Gross",

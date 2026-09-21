@@ -1,0 +1,838 @@
+{
+  "slug": "openai",
+  "name": "OpenAI",
+  "tagline": "Creating safe AGI that benefits all of humanity",
+  "description": "OpenAI is an American AI research and deployment company and the developer of ChatGPT, the GPT model family, and the Codex coding agent. Founded in December 2015 and headquartered in San Francisco, it is organized as OpenAI Group PBC under the control of the nonprofit OpenAI Foundation following its October 2025 recapitalization. OpenAI closed a $122 billion round at an $852 billion post-money valuation in March 2026 and reports more than 900 million weekly active ChatGPT users, over 50 million subscribers, and more than $2 billion in revenue per month.",
+  "website": "https://openai.com",
+  "foundedYear": 2015,
+  "banner": "/companies/openai/images/banner.jpg",
+  "logo": "/companies/openai/images/logo.webp",
+  "industry": "Foundation Models",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Growth",
+  "employees": "4,500+ employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 179600000000,
+      "currency": "USD",
+      "display": "$179.6B"
+    },
+    "valuation": {
+      "amount": 852000000000,
+      "currency": "USD",
+      "display": "$852B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "growth-2026",
+    "investors": [
+      {
+        "name": "SoftBank",
+        "website": "https://group.softbank",
+        "logo": "/investors/softbank.png"
+      },
+      {
+        "name": "Andreessen Horowitz",
+        "website": "https://a16z.com",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "D.E. Shaw Ventures",
+        "website": "https://www.deshaw.com",
+        "logo": "/investors/d-e-shaw-ventures.png"
+      },
+      {
+        "name": "MGX",
+        "website": "https://www.mgx.ae",
+        "logo": "/investors/mgx.png"
+      },
+      {
+        "name": "TPG",
+        "website": "https://www.tpg.com",
+        "logo": "/investors/tpg.png"
+      },
+      {
+        "name": "T. Rowe Price Associates",
+        "website": "https://www.troweprice.com",
+        "logo": "/investors/t-rowe-price.png"
+      },
+      {
+        "name": "Amazon",
+        "website": "https://www.amazon.com",
+        "logo": "/investors/amazon.png"
+      },
+      {
+        "name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "Microsoft",
+        "website": "https://www.microsoft.com",
+        "logo": "/investors/microsoft.png"
+      },
+      {
+        "name": "Altimeter",
+        "website": "https://www.altimeter.com",
+        "logo": "/investors/altimeter-capital.png"
+      },
+      {
+        "name": "Appaloosa LP",
+        "website": null
+      },
+      {
+        "name": "ARK Invest",
+        "website": "https://www.ark-invest.com",
+        "logo": "/investors/ark-invest.png"
+      },
+      {
+        "name": "BlackRock",
+        "website": "https://www.blackrock.com",
+        "logo": "/investors/blackrock.png"
+      },
+      {
+        "name": "Blackstone",
+        "website": "https://www.blackstone.com",
+        "logo": "/investors/blackstone.png"
+      },
+      {
+        "name": "Coatue",
+        "website": "https://www.coatue.com",
+        "logo": "/investors/coatue.png"
+      },
+      {
+        "name": "D1 Capital Partners",
+        "website": "https://www.d1capital.com",
+        "logo": "/investors/d1-capital.png"
+      },
+      {
+        "name": "Dragoneer",
+        "website": "https://www.dragoneer.com",
+        "logo": "/investors/dragoneer.png"
+      },
+      {
+        "name": "Fidelity Management & Research Company",
+        "website": "https://www.fidelity.com",
+        "logo": "/investors/fidelity-management-and-research-company.png"
+      },
+      {
+        "name": "Goanna Capital",
+        "website": "https://goannacapital.com",
+        "logo": "/investors/goanna-capital.png"
+      },
+      {
+        "name": "Insight Partners",
+        "website": "https://www.insightpartners.com",
+        "logo": "/investors/insight-partners.png"
+      },
+      {
+        "name": "The Paragon Group",
+        "website": null
+      },
+      {
+        "name": "Sands Capital",
+        "website": "https://www.sandscapital.com",
+        "logo": "/investors/sands-capital.png"
+      },
+      {
+        "name": "Sequoia Capital",
+        "website": "https://www.sequoiacap.com",
+        "logo": "/investors/sequoia-capital.jpeg"
+      },
+      {
+        "name": "Sound Ventures",
+        "website": "https://www.soundventures.com",
+        "logo": "/investors/sound-ventures.png"
+      },
+      {
+        "name": "Temasek",
+        "website": "https://www.temasek.com.sg",
+        "logo": "/investors/temasek.png"
+      },
+      {
+        "name": "Thrive Capital",
+        "website": "https://www.thrivecap.com",
+        "logo": "/investors/thrive.png"
+      },
+      {
+        "name": "UC Investments",
+        "website": "https://www.ucop.edu/investment-office/",
+        "logo": "/investors/uc-investments.png"
+      },
+      {
+        "name": "Winslow Capital",
+        "website": "https://www.winslowcapital.com",
+        "logo": "/investors/winslow-capital.png"
+      },
+      {
+        "name": "Khosla Ventures",
+        "website": "https://www.khoslaventures.com",
+        "logo": "/investors/khosla-ventures.jpeg"
+      },
+      {
+        "name": "Tiger Global Management",
+        "website": "https://www.tigerglobal.com",
+        "logo": "/investors/tiger-global.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "growth-2026",
+        "stage": "Growth",
+        "announcedAt": "2026-03-31",
+        "amount": {
+          "amount": 122000000000,
+          "currency": "USD",
+          "display": "$122B"
+        },
+        "valuation": {
+          "amount": 852000000000,
+          "currency": "USD",
+          "display": "$852B"
+        },
+        "leadInvestors": [
+          {
+            "name": "SoftBank",
+            "website": "https://group.softbank",
+            "logo": "/investors/softbank.png"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "D.E. Shaw Ventures",
+            "website": "https://www.deshaw.com",
+            "logo": "/investors/d-e-shaw-ventures.png"
+          },
+          {
+            "name": "MGX",
+            "website": "https://www.mgx.ae",
+            "logo": "/investors/mgx.png"
+          },
+          {
+            "name": "TPG",
+            "website": "https://www.tpg.com",
+            "logo": "/investors/tpg.png"
+          },
+          {
+            "name": "T. Rowe Price Associates",
+            "website": "https://www.troweprice.com",
+            "logo": "/investors/t-rowe-price.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Amazon",
+            "website": "https://www.amazon.com",
+            "logo": "/investors/amazon.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Microsoft",
+            "website": "https://www.microsoft.com",
+            "logo": "/investors/microsoft.png"
+          },
+          {
+            "name": "Altimeter",
+            "website": "https://www.altimeter.com",
+            "logo": "/investors/altimeter-capital.png"
+          },
+          {
+            "name": "Appaloosa LP",
+            "website": null
+          },
+          {
+            "name": "ARK Invest",
+            "website": "https://www.ark-invest.com",
+            "logo": "/investors/ark-invest.png"
+          },
+          {
+            "name": "BlackRock",
+            "website": "https://www.blackrock.com",
+            "logo": "/investors/blackrock.png"
+          },
+          {
+            "name": "Blackstone",
+            "website": "https://www.blackstone.com",
+            "logo": "/investors/blackstone.png"
+          },
+          {
+            "name": "Coatue",
+            "website": "https://www.coatue.com",
+            "logo": "/investors/coatue.png"
+          },
+          {
+            "name": "D1 Capital Partners",
+            "website": "https://www.d1capital.com",
+            "logo": "/investors/d1-capital.png"
+          },
+          {
+            "name": "Dragoneer",
+            "website": "https://www.dragoneer.com",
+            "logo": "/investors/dragoneer.png"
+          },
+          {
+            "name": "Fidelity Management & Research Company",
+            "website": "https://www.fidelity.com",
+            "logo": "/investors/fidelity-management-and-research-company.png"
+          },
+          {
+            "name": "Goanna Capital",
+            "website": "https://goannacapital.com",
+            "logo": "/investors/goanna-capital.png"
+          },
+          {
+            "name": "Insight Partners",
+            "website": "https://www.insightpartners.com",
+            "logo": "/investors/insight-partners.png"
+          },
+          {
+            "name": "The Paragon Group",
+            "website": null
+          },
+          {
+            "name": "Sands Capital",
+            "website": "https://www.sandscapital.com",
+            "logo": "/investors/sands-capital.png"
+          },
+          {
+            "name": "Sequoia Capital",
+            "website": "https://www.sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Sound Ventures",
+            "website": "https://www.soundventures.com",
+            "logo": "/investors/sound-ventures.png"
+          },
+          {
+            "name": "Temasek",
+            "website": "https://www.temasek.com.sg",
+            "logo": "/investors/temasek.png"
+          },
+          {
+            "name": "Thrive Capital",
+            "website": "https://www.thrivecap.com",
+            "logo": "/investors/thrive.png"
+          },
+          {
+            "name": "UC Investments",
+            "website": "https://www.ucop.edu/investment-office/",
+            "logo": "/investors/uc-investments.png"
+          },
+          {
+            "name": "Winslow Capital",
+            "website": "https://www.winslowcapital.com",
+            "logo": "/investors/winslow-capital.png"
+          }
+        ],
+        "sourceUrl": "https://openai.com/index/accelerating-the-next-phase-ai/"
+      },
+      {
+        "id": "growth-2025",
+        "stage": "Growth",
+        "announcedAt": "2025-03-31",
+        "amount": {
+          "amount": 40000000000,
+          "currency": "USD",
+          "display": "$40B"
+        },
+        "valuation": {
+          "amount": 300000000000,
+          "currency": "USD",
+          "display": "$300B"
+        },
+        "leadInvestors": [
+          {
+            "name": "SoftBank",
+            "website": "https://group.softbank",
+            "logo": "/investors/softbank.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://openai.com/index/march-funding-updates/"
+      },
+      {
+        "id": "series-e-2024",
+        "stage": "Series E",
+        "announcedAt": "2024-10-02",
+        "amount": {
+          "amount": 6600000000,
+          "currency": "USD",
+          "display": "$6.6B"
+        },
+        "valuation": {
+          "amount": 157000000000,
+          "currency": "USD",
+          "display": "$157B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Thrive Capital",
+            "website": "https://www.thrivecap.com",
+            "logo": "/investors/thrive.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Microsoft",
+            "website": "https://www.microsoft.com",
+            "logo": "/investors/microsoft.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "SoftBank",
+            "website": "https://group.softbank",
+            "logo": "/investors/softbank.png"
+          },
+          {
+            "name": "Khosla Ventures",
+            "website": "https://www.khoslaventures.com",
+            "logo": "/investors/khosla-ventures.jpeg"
+          },
+          {
+            "name": "Altimeter",
+            "website": "https://www.altimeter.com",
+            "logo": "/investors/altimeter-capital.png"
+          },
+          {
+            "name": "Fidelity Management & Research Company",
+            "website": "https://www.fidelity.com",
+            "logo": "/investors/fidelity-management-and-research-company.png"
+          },
+          {
+            "name": "MGX",
+            "website": "https://www.mgx.ae",
+            "logo": "/investors/mgx.png"
+          },
+          {
+            "name": "Tiger Global Management",
+            "website": "https://www.tigerglobal.com",
+            "logo": "/investors/tiger-global.png"
+          }
+        ],
+        "sourceUrl": "https://openai.com/index/scale-the-benefits-of-ai/"
+      },
+      {
+        "id": "microsoft-2023",
+        "stage": "Strategic",
+        "announcedAt": "2023-01-23",
+        "amount": {
+          "amount": 10000000000,
+          "currency": "USD",
+          "display": "$10B"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Microsoft",
+            "website": "https://www.microsoft.com",
+            "logo": "/investors/microsoft.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://www.cnbc.com/2023/01/23/microsoft-announces-multibillion-dollar-investment-in-chatgpt-maker-openai.html"
+      },
+      {
+        "id": "microsoft-2019",
+        "stage": "Strategic",
+        "announcedAt": "2019-07-22",
+        "amount": {
+          "amount": 1000000000,
+          "currency": "USD",
+          "display": "$1B"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Microsoft",
+            "website": "https://www.microsoft.com",
+            "logo": "/investors/microsoft.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://openai.com/index/microsoft-invests-in-and-partners-with-openai/"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Research Scientist",
+      "location": "San Francisco, CA",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/openai/5f0c6579-0bfb-4a06-8a43-1dd371499e10"
+    },
+    {
+      "title": "Research Engineer",
+      "location": "San Francisco, CA",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/openai/240d459b-696d-43eb-8497-fab3e56ecd9b"
+    },
+    {
+      "title": "Research Engineer/Research Scientist, RL/Reasoning",
+      "location": "San Francisco, CA",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/openai/7e198d81-34e0-48b6-b64e-a501a75f9d53"
+    },
+    {
+      "title": "Research Engineer / Research Scientist, Personal AGI (Post Training)",
+      "location": "San Francisco, CA",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/openai/1c516e9f-c97d-4a40-8529-9871dac615a5"
+    },
+    {
+      "title": "Research Engineer, Codex",
+      "location": "San Francisco, CA",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/openai/793964ae-d40b-45e3-9798-84f4b6da48c5"
+    },
+    {
+      "title": "Software Engineer, Model Inference",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/83b6755d-7785-4186-9050-5ef3ad127941"
+    },
+    {
+      "title": "Software Engineer, Inference - Performance Optimization",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/85fceac9-fb8a-4d71-a524-a8e5f1e9b01b"
+    },
+    {
+      "title": "Software Engineer, Inference - Multi Modal",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/4d14449e-5e7f-45d4-b103-8776a6c87086"
+    },
+    {
+      "title": "Inference Engineer, Robotics",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/3c2d1178-777f-4613-a084-75a3d37cd1af"
+    },
+    {
+      "title": "Software Engineer, Cloud Infrastructure",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/12342ebb-dcd4-45e2-b875-fc5447fdb7d8"
+    },
+    {
+      "title": "Software Engineer, ChatGPT Infrastructure",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/e6981259-c1d0-46de-8376-56bde28cfb10"
+    },
+    {
+      "title": "Research Engineer, Retrieval & Search, Applied Engineering",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/7322d344-9325-4a92-8445-0a2c4e9272f8"
+    },
+    {
+      "title": "Technical Program Manager, Compute Infrastructure",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/8fb1615c-34bf-47c4-a1d1-b7b2f836bbd3"
+    },
+    {
+      "title": "Full Stack Software Engineer, Codex",
+      "location": "San Francisco, CA | Seattle, WA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/5ebd5f66-75db-4a96-8d39-babc14f1c582"
+    },
+    {
+      "title": "Software Engineer, Codex Core Agents",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA | London, UK",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/7ade7a12-845c-4e3a-af23-c028420bd181"
+    },
+    {
+      "title": "Forward Deployed Software Engineer - SF",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/openai/00207abc-49b7-465c-a219-f7c1140f8047"
+    },
+    {
+      "title": "Product Manager, API Agents",
+      "location": "San Francisco, CA",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/openai/fc38c6bf-5330-435c-99b6-1bcf1f5829a8"
+    },
+    {
+      "title": "Product Manager, Core Models",
+      "location": "San Francisco, CA",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/openai/33b8effb-b048-4934-a279-87fff192a330"
+    },
+    {
+      "title": "Product Manager, API Infrastructure",
+      "location": "San Francisco, CA",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/openai/7ffa2a14-fa9c-46cb-a30a-1f7a35ae904a"
+    },
+    {
+      "title": "Product Designer, Payments",
+      "location": "San Francisco, CA",
+      "focus": "Design",
+      "url": "https://jobs.ashbyhq.com/openai/3813977e-5940-456d-bf5a-16efcdc3a6dc"
+    },
+    {
+      "title": "Security Engineer, Application Security",
+      "location": "San Francisco, CA | US - Remote",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/openai/0322d6d8-6588-4209-a304-83e768063a25"
+    },
+    {
+      "title": "Security Engineer, Agent Security",
+      "location": "San Francisco, CA | US - Remote",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/openai/e9bea775-7eb6-438a-ab96-27d5f941e69d"
+    },
+    {
+      "title": "Security Engineer, Infrastructure Security",
+      "location": "US - Remote | New York City, NY | Seattle, WA | San Francisco, CA",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/openai/f51f750f-a737-4441-8f96-30133a2a8049"
+    },
+    {
+      "title": "Research Engineer, Privacy",
+      "location": "San Francisco, CA",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/openai/cc434f5b-dc0b-42fd-97ec-e0171545c6e9"
+    }
+  ],
+  "people": [
+    {
+      "name": "Sam Altman",
+      "role": "Chief Executive Officer",
+      "image": "/companies/openai/people/sam-altman/avatar.jpg",
+      "linkedin": null,
+      "x": "https://x.com/sama",
+      "sourceUrl": "https://openai.com/our-structure/"
+    },
+    {
+      "name": "Greg Brockman",
+      "role": "President and Co-Founder",
+      "image": "/companies/openai/people/greg-brockman/avatar.jpg",
+      "linkedin": null,
+      "x": "https://x.com/gdb",
+      "sourceUrl": "https://openai.com/our-structure/"
+    },
+    {
+      "name": "Jakub Pachocki",
+      "role": "Chief Scientist",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/jakub-pachocki",
+      "x": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Mark Chen",
+      "role": "Chief Research Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://openai.com/index/leadership-updates-march-2025/"
+    },
+    {
+      "name": "Sarah Friar",
+      "role": "Chief Financial Officer",
+      "image": "/companies/openai/people/sarah-friar/avatar.jpg",
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://openai.com/index/openai-welcomes-cfo-cpo/"
+    },
+    {
+      "name": "Fidji Simo",
+      "role": "CEO of AGI Deployment",
+      "image": "/companies/openai/people/fidji-simo/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/fidjisimo",
+      "x": "https://x.com/fidjissimo",
+      "sourceUrl": "https://openai.com/index/leadership-expansion-with-fidji-simo/"
+    },
+    {
+      "name": "Vijaye Raji",
+      "role": "Chief Technology Officer, Applications",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/vijaye",
+      "x": null,
+      "sourceUrl": "https://openai.com/index/vijaye-raji-to-become-cto-of-applications-with-acquisition-of-statsig/"
+    },
+    {
+      "name": "Chris Lehane",
+      "role": "Chief Global Affairs Officer",
+      "image": "/companies/openai/people/chris-lehane/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/chris-lehane-2562535",
+      "x": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Jason Kwon",
+      "role": "Chief Strategy Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Che Chang",
+      "role": "General Counsel",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Arvind KC",
+      "role": "Chief People Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://openai.com/index/arvind-kc-chief-people-officer/"
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Sep 17, 2026",
+      "dateTime": "2026-09-17",
+      "title": "Introduced Astra for Law",
+      "description": "OpenAI introduced Astra for Law, a legal-focused offering built on GPT-6 Astra for legal research and document workflows.",
+      "sourceUrl": "https://openai.com/index/astra-for-law/"
+    },
+    {
+      "type": "product",
+      "time": "Sep 10, 2026",
+      "dateTime": "2026-09-10",
+      "title": "Launched ChatGPT for Financial Services",
+      "description": "A new ChatGPT Work experience combines built-in financial data with GPT-6 Astra for research, modeling, and client-ready materials.",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-financial-services/"
+    },
+    {
+      "type": "product",
+      "time": "Sep 3, 2026",
+      "dateTime": "2026-09-03",
+      "title": "Released GPT-6 Astra",
+      "description": "OpenAI's most capable broadly deployed model and its first to reach the Critical level of cybersecurity capability under its Preparedness Framework, with a phased rollout to Pro, Enterprise, and the API.",
+      "sourceUrl": "https://openai.com/index/safety-overview-gpt-6-astra/"
+    },
+    {
+      "type": "growth",
+      "time": "Aug 31, 2026",
+      "dateTime": "2026-08-31",
+      "title": "ChatGPT Ads reached a $1B annualized run-rate",
+      "description": "OpenAI said its ChatGPT advertising business reached a $1 billion annualized revenue run-rate in under 200 days and expanded self-serve buying.",
+      "sourceUrl": "https://www.forbes.com/sites/gabrielalinzainescu/2026/08/31/openais-chatgpt-ads-hit-1-billion-run-rate-in-just-200-days/"
+    },
+    {
+      "type": "product",
+      "time": "Jun 24, 2026",
+      "dateTime": "2026-06-24",
+      "title": "Unveiled the Jalapeño inference chip with Broadcom",
+      "description": "OpenAI and Broadcom introduced Jalapeño, OpenAI's first custom Intelligence Processor, an LLM-optimized accelerator developed from design to production in nine months and slated for gigawatt-scale deployment.",
+      "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+    },
+    {
+      "type": "product",
+      "time": "May 5, 2026",
+      "dateTime": "2026-05-05",
+      "title": "Updated ChatGPT's default model to GPT-5.5 Instant",
+      "description": "GPT-5.5 Instant brought smarter, more accurate and concise answers to ChatGPT's default model, with reduced hallucinations and improved personalization controls.",
+      "sourceUrl": "https://openai.com/index/gpt-5-5-instant/"
+    },
+    {
+      "type": "funding",
+      "time": "Mar 31, 2026",
+      "dateTime": "2026-03-31",
+      "title": "Closed a $122B round at an $852B post-money valuation",
+      "description": "OpenAI closed its latest funding round with $122 billion in committed capital at an $852 billion post-money valuation, anchored by Amazon, NVIDIA, and SoftBank and co-led by SoftBank, a16z, D.E. Shaw Ventures, MGX, TPG, and T. Rowe Price.",
+      "sourceUrl": "https://openai.com/index/accelerating-the-next-phase-ai/"
+    },
+    {
+      "type": "product",
+      "time": "Mar 5, 2026",
+      "dateTime": "2026-03-05",
+      "title": "Introduced GPT-5.4",
+      "description": "OpenAI released GPT-5.4 and GPT-5.4 Pro, its most capable frontier model for professional work, with state-of-the-art coding, computer use, tool search, and a 1M-token context window.",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/"
+    },
+    {
+      "type": "news",
+      "time": "Nov 3, 2025",
+      "dateTime": "2025-11-03",
+      "title": "Announced a $38B AWS partnership",
+      "description": "AWS and OpenAI announced a seven-year, $38 billion strategic partnership for AWS infrastructure including EC2 UltraServers and NVIDIA GB200/GB300 GPUs to run and scale OpenAI workloads.",
+      "sourceUrl": "https://openai.com/index/aws-and-openai-partnership/"
+    },
+    {
+      "type": "news",
+      "time": "Oct 28, 2025",
+      "dateTime": "2025-10-28",
+      "title": "Completed its recapitalization as OpenAI Group PBC",
+      "description": "OpenAI completed its recapitalization: the for-profit became OpenAI Group PBC while the nonprofit, renamed the OpenAI Foundation, retained control and an equity stake valued at roughly $130 billion.",
+      "sourceUrl": "https://openai.com/index/built-to-benefit-everyone/"
+    },
+    {
+      "type": "product",
+      "time": "Oct 6, 2025",
+      "dateTime": "2025-10-06",
+      "title": "Introduced apps in ChatGPT and the Apps SDK at DevDay",
+      "description": "DevDay 2025 brought conversational apps into ChatGPT and previewed an MCP-based Apps SDK, as OpenAI cited 800 million weekly active users and 4 million developers.",
+      "sourceUrl": "https://openai.com/index/introducing-apps-in-chatgpt/"
+    },
+    {
+      "type": "product",
+      "time": "Sep 30, 2025",
+      "dateTime": "2025-09-30",
+      "title": "Released Sora 2 and the Sora app",
+      "description": "OpenAI released the Sora 2 video-and-audio generation model with synchronized dialogue and sound, alongside an iOS social app built around characters and a remix feed.",
+      "sourceUrl": "https://openai.com/index/sora-2/"
+    },
+    {
+      "type": "news",
+      "time": "Sep 22, 2025",
+      "dateTime": "2025-09-22",
+      "title": "Announced an up-to-$100B NVIDIA compute partnership",
+      "description": "OpenAI and NVIDIA signed a letter of intent to deploy at least 10 gigawatts of NVIDIA systems, with NVIDIA intending to invest up to $100 billion progressively as capacity is deployed, starting with the first gigawatt on Vera Rubin in the second half of 2026.",
+      "sourceUrl": "https://openai.com/index/openai-nvidia-systems-partnership/"
+    },
+    {
+      "type": "news",
+      "time": "Sep 2, 2025",
+      "dateTime": "2025-09-02",
+      "title": "Acquired Statsig and named Vijaye Raji CTO of Applications",
+      "description": "OpenAI acquired the experimentation platform Statsig in an all-stock deal reported at about $1.1 billion and named founder Vijaye Raji as CTO of Applications reporting to Fidji Simo.",
+      "sourceUrl": "https://openai.com/index/vijaye-raji-to-become-cto-of-applications-with-acquisition-of-statsig/"
+    },
+    {
+      "type": "product",
+      "time": "Aug 7, 2025",
+      "dateTime": "2025-08-07",
+      "title": "Introduced GPT-5",
+      "description": "OpenAI launched GPT-5 as a unified system with a router and a thinking mode, state of the art in coding, math, health, and multimodal understanding, available to all ChatGPT users.",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5/"
+    },
+    {
+      "type": "news",
+      "time": "May 21, 2025",
+      "dateTime": "2025-05-21",
+      "title": "Acquired Jony Ive's io in a $6.5B deal",
+      "description": "OpenAI announced the acquisition of io Products, Inc. and a deep design partnership with Jony Ive and LoveFrom, its largest acquisition to date and its entry into AI hardware.",
+      "sourceUrl": "https://openai.com/sam-and-jony/"
+    }
+  ]
+}

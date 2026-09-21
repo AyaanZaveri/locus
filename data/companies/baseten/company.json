@@ -140,7 +140,8 @@
       },
       {
         "name": "Base Case",
-        "website": null
+        "website": "https://basecase.vc",
+        "logo": "/investors/base-case.png"
       }
     ],
     "rounds": [
@@ -465,7 +466,8 @@
           },
           {
             "name": "Base Case",
-            "website": null
+            "website": "https://basecase.vc",
+            "logo": "/investors/base-case.png"
           }
         ],
         "sourceUrl": "https://www.baseten.co/blog/announcing-our-series-b/"

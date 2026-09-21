@@ -1,0 +1,180 @@
+{
+  "slug": "typesafe-ai",
+  "name": "TypeSafe AI",
+  "tagline": "Intelligence beyond chat",
+  "description": "TypeSafe AI is a San Francisco AI lab building machine-native intelligence infrastructure for automation, designed to make decisions inside software rather than converse with people. Founded in 2024 by former OpenAI researcher Diogo Almeida, a co-inventor of RLHF and InstructGPT, with Erik Gafni and Sasha Sheng, it emerged from two years in stealth in September 2026 with a $40 million seed round led by DCVC. Its first System One Model, Jev, returns typed probabilistic decisions with calibrated confidence in parallel at under 100 milliseconds, and the company claims order-of-magnitude speed and cost advantages over frontier LLMs for high-volume in-software decisions.",
+  "website": "https://typesafe.ai",
+  "foundedYear": 2024,
+  "banner": "/companies/typesafe-ai/images/banner.jpg",
+  "logo": "/companies/typesafe-ai/images/logo.jpg",
+  "industry": "Foundation Models",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Seed",
+  "employees": "11-50 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 40000000,
+      "currency": "USD",
+      "display": "$40M"
+    },
+    "valuation": {
+      "amount": 200000000,
+      "currency": "USD",
+      "display": "$200M"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "seed-2026",
+    "investors": [
+      {
+        "name": "DCVC",
+        "website": "https://www.dcvc.com",
+        "logo": "/investors/dcvc.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "seed-2026",
+        "stage": "Seed",
+        "announcedAt": "2026-09-15",
+        "amount": {
+          "amount": 40000000,
+          "currency": "USD",
+          "display": "$40M"
+        },
+        "valuation": {
+          "amount": 200000000,
+          "currency": "USD",
+          "display": "$200M"
+        },
+        "leadInvestors": [
+          {
+            "name": "DCVC",
+            "website": "https://www.dcvc.com",
+            "logo": "/investors/dcvc.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://www.morningstar.com/news/business-wire/20260915525333/typesafe-ai-emerges-from-stealth-with-40m-in-funding-with-new-model-for-composable-ai"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Member of Technical Staff, Model Capabilities",
+      "location": "San Francisco, CA (On-site)",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/df3dbf1b-9a47-4d8a-88a8-d28c8b8a2ef0"
+    },
+    {
+      "title": "Member of Technical Staff, Backend/Platform",
+      "location": "San Francisco, CA (On-site)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/d15fb33c-0679-4822-be50-2afb75320e4b"
+    },
+    {
+      "title": "Member of Technical Staff, Infrastructure (Kubernetes Specialist)",
+      "location": "San Francisco, CA (On-site)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/4da613b6-6d56-4e8d-8cc4-fad8ca57e4ce"
+    },
+    {
+      "title": "Developer Advocate",
+      "location": "San Francisco, CA (On-site)",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/4537eb37-94a3-43d6-9760-6f41c125aba4"
+    },
+    {
+      "title": "Member of Staff (Create your own role)",
+      "location": "San Francisco, CA (On-site)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/cbc0b60a-1613-4b0d-b38a-04fc5558152c"
+    },
+    {
+      "title": "Founding Marketer",
+      "location": "San Francisco, CA (On-site)",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/941ab475-393c-4943-a115-903b9d4dec68"
+    }
+  ],
+  "people": [
+    {
+      "name": "Diogo Almeida",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": "/companies/typesafe-ai/people/diogo-almeida/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/diogomda",
+      "x": "https://x.com/CompleteSkeptic",
+      "sourceUrl": "https://typesafe.ai/team"
+    },
+    {
+      "name": "Erik Gafni",
+      "role": "Co-Founder and Chief Technology Officer",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/erik-spock-gafni-906b0125",
+      "x": null,
+      "sourceUrl": "https://typesafe.ai/team"
+    },
+    {
+      "name": "Sasha Sheng",
+      "role": "Co-Founder and Chief Operating Officer",
+      "image": "/companies/typesafe-ai/people/sasha-sheng/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/sashasheng",
+      "x": "https://x.com/hackgoofer",
+      "sourceUrl": "https://typesafe.ai/team"
+    }
+  ],
+  "activity": [
+    {
+      "type": "news",
+      "time": "Sep 20, 2026",
+      "dateTime": "2026-09-20",
+      "title": "Forbes framed Jev as a 'judgment model'",
+      "description": "A Forbes analysis argued that Jev shows the value of bounded judgment models that output probabilities rather than prose, citing its RLCD training and the Jevons-paradox naming.",
+      "sourceUrl": "https://www.forbes.com/sites/johnwerner/2026/09/20/it-doesnt-have-to-speak-jev-shows-value-of-judgment-models/"
+    },
+    {
+      "type": "growth",
+      "time": "Sep 19, 2026",
+      "dateTime": "2026-09-19",
+      "title": "Vercel and Cloudflare integrations landed within days",
+      "description": "Forbes reported Jev pricing at $0.042 per million input tokens with free output tokens and sub-0.5-second latency, and that Vercel, Cloudflare, LangChain, and Langfuse integrations shipped within three days of launch.",
+      "sourceUrl": "https://www.forbes.com/sites/josipamajic/2026/09/19/jev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it/"
+    },
+    {
+      "type": "news",
+      "time": "Sep 18, 2026",
+      "dateTime": "2026-09-18",
+      "title": "TechCrunch covered the launch and developer reaction",
+      "description": "TechCrunch reported that Jev is transformer-based but not an LLM, returning calibrated decisions rather than text, and noted a spike in API demand plus developer benchmarks from Vercel.",
+      "sourceUrl": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/"
+    },
+    {
+      "type": "news",
+      "time": "Sep 17, 2026",
+      "dateTime": "2026-09-17",
+      "title": "InfoWorld examined the enterprise use case",
+      "description": "InfoWorld focused on using Jev for automated workflows such as tool choice, guardrails, and handoffs at 70 to 500 milliseconds, while noting caveats around upfront specification, calibration validation, and auditability.",
+      "sourceUrl": "https://www.infoworld.com/article/4223468/typesafe-ais-new-models-work-with-machines-not-humans.html"
+    },
+    {
+      "type": "news",
+      "time": "Sep 16, 2026",
+      "dateTime": "2026-09-16",
+      "title": "Jev went live on Vercel's AI Gateway",
+      "description": "A day after launch, Vercel listed Jev on its AI Gateway, and TechStartups recapped the stealth emergence, the $40 million DCVC-led round, and the 100x faster and cheaper claims.",
+      "sourceUrl": "https://techstartups.com/2026/09/16/typesafe-ai-an-ai-startup-founded-by-chatgpt-co-inventor-emerges-from-stealth-with-40m-to-build-ai-thats-100x-faster-and-cheaper/"
+    },
+    {
+      "type": "funding",
+      "time": "Sep 15, 2026",
+      "dateTime": "2026-09-15",
+      "title": "Emerged from stealth with $40M and launched Jev",
+      "description": "TypeSafe AI left two years of stealth with a $40 million seed round led by DCVC and early access to Jev, its first System One Model, alongside a technical post describing RLCD training and workflow evaluations showing 193.6x faster and 444.6x cheaper results.",
+      "sourceUrl": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+    }
+  ]
+}

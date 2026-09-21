@@ -52,6 +52,8 @@ npm run validate:companies
     | "AI Inference"
     | "Database"
     | "Developer Tools"
+    | "Fintech"
+    | "Foundation Models"
     | "Web Search"
     | "Workflow Orchestration",
   location: { label: string, countryCode: string }, // ISO 3166-1 alpha-2, lowercase
@@ -86,6 +88,8 @@ type Industry =
   | "AI Inference"
   | "Database"
   | "Developer Tools"
+  | "Fintech"
+  | "Foundation Models"
   | "Web Search"
   | "Workflow Orchestration";
 ```
@@ -119,6 +123,44 @@ type Job = {
   location: string;
   focus: string;
   url?: string | null;
+  // Sanitized CommonMark overview; strip job-board HTML and boilerplate.
+  description?: string | null;
+  status?: "open" | "closed" | "unknown" | null;
+  workplaceType?: "remote" | "hybrid" | "onsite" | "flexible" | null;
+  employmentType?: "full-time" | "part-time" | "contract" | "internship" | "temporary" | null;
+  department?: string | null;
+  skills?: string[];
+  experience?: {
+    minimumYears?: number | null;
+    maximumYears?: number | null;
+    level?: "intern" | "entry" | "mid" | "senior" | "staff" | "principal" | "manager" | "director" | "executive" | null;
+    acceptsNewGrads?: boolean | null;
+  } | null;
+  compensation?: {
+    salary?: {
+      minimum: number | null;
+      maximum: number | null;
+      currency: string; // ISO 4217, e.g. USD or GBP
+      period: "hour" | "month" | "year";
+    } | null;
+    equity?: {
+      minimumPercent: number | null;
+      maximumPercent: number | null;
+    } | null;
+  } | null;
+  visa?: {
+    // False powers “US visa not required”; this is distinct from sponsorship.
+    requiresUSWorkAuthorization?: boolean | null;
+    sponsorship?: "available" | "unavailable" | "unknown";
+    citizenshipRequired?: boolean | null;
+  } | null;
+  interviewProcess?: {
+    available: boolean;
+    summary?: string | null;
+    url?: string | null;
+  } | null;
+  postedAt?: "YYYY-MM-DD" | null;
+  lastSeenAt?: "YYYY-MM-DD" | null;
 };
 
 type Person = {
@@ -128,6 +170,7 @@ type Person = {
   linkedin: string | null;
   x?: string | null;
   sourceUrl?: string | null;
+  isFounder?: boolean;
 };
 
 type Activity = {

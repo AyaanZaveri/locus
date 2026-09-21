@@ -1,0 +1,1084 @@
+{
+  "slug": "mistral-ai",
+  "name": "Mistral AI",
+  "tagline": "Frontier AI. In your hands.",
+  "description": "Mistral AI is a French artificial intelligence company headquartered in Paris that builds frontier open-weight and commercial large language models, AI agents, and developer platforms. Founded in April 2023 by former Meta and Google DeepMind researchers Arthur Mensch, Guillaume Lample, and Timothée Lacroix, it pairs open models such as Mistral 3, Devstral, and Voxtral with enterprise products including Le Chat, Studio, Forge, and Vibe. Mistral raised a €3 billion Series D led by Samsung Electronics in September 2026 at a post-money valuation above €21 billion, the largest equity round ever by a European technology company, and operates across 20 countries serving 125+ global enterprises.",
+  "website": "https://mistral.ai",
+  "foundedYear": 2023,
+  "banner": "/companies/mistral-ai/images/banner.jpg",
+  "logo": "/companies/mistral-ai/images/logo.png",
+  "industry": "Foundation Models",
+  "location": {
+    "label": "Paris, France",
+    "countryCode": "fr"
+  },
+  "stage": "Series D",
+  "employees": "1,000+ employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 6684300000,
+      "currency": "USD",
+      "display": "$6.68B"
+    },
+    "valuation": {
+      "amount": 24000000000,
+      "currency": "USD",
+      "display": "$24B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-d-2026",
+    "investors": [
+      {
+        "name": "Samsung Electronics",
+        "website": "https://www.samsung.com",
+        "logo": "/investors/samsung-electronics.png"
+      },
+      {
+        "name": "Scaleup Europe Fund (EQT)",
+        "website": "https://www.eqtgroup.com",
+        "logo": "/investors/scaleup-europe-fund-eqt.png"
+      },
+      {
+        "name": "PSG Equity",
+        "website": "https://www.psgequity.com",
+        "logo": "/investors/psg-equity.png"
+      },
+      {
+        "name": "Advent",
+        "website": "https://www.adventinternational.com",
+        "logo": "/investors/advent.png"
+      },
+      {
+        "name": "BlackRock",
+        "website": "https://www.blackrock.com",
+        "logo": "/investors/blackrock.png"
+      },
+      {
+        "name": "Grand Duchy of Luxembourg",
+        "website": null
+      },
+      {
+        "name": "Andreessen Horowitz",
+        "website": "https://a16z.com",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "ASML",
+        "website": "https://www.asml.com",
+        "logo": "/investors/asml.png"
+      },
+      {
+        "name": "Belfius",
+        "website": "https://www.belfius.be",
+        "logo": "/investors/belfius.png"
+      },
+      {
+        "name": "BNP Paribas CIB",
+        "website": "https://cib.bnpparibas",
+        "logo": "/investors/bnp-paribas-cib.png"
+      },
+      {
+        "name": "Bpifrance",
+        "website": "https://www.bpifrance.fr",
+        "logo": "/investors/bpifrance.png"
+      },
+      {
+        "name": "Carmignac",
+        "website": "https://www.carmignac.com",
+        "logo": "/investors/carmignac.png"
+      },
+      {
+        "name": "DST Global",
+        "website": "https://www.dstglobal.com",
+        "logo": "/investors/dst-global.png"
+      },
+      {
+        "name": "Eurazeo",
+        "website": "https://www.eurazeo.com",
+        "logo": "/investors/eurazeo.png"
+      },
+      {
+        "name": "General Catalyst",
+        "website": "https://www.generalcatalyst.com",
+        "logo": "/investors/general-catalyst.png"
+      },
+      {
+        "name": "Headline",
+        "website": "https://www.headline.com",
+        "logo": "/investors/headline.png"
+      },
+      {
+        "name": "Hillspire",
+        "website": null
+      },
+      {
+        "name": "Index Ventures",
+        "website": "https://www.indexventures.com",
+        "logo": "/investors/index-ventures.jpeg"
+      },
+      {
+        "name": "Korelya Capital",
+        "website": "https://www.korelyacapital.com",
+        "logo": "/investors/korelya-capital.png"
+      },
+      {
+        "name": "Lightspeed Venture Partners",
+        "website": "https://lsvp.com",
+        "logo": "/investors/lightspeed.png"
+      },
+      {
+        "name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "logo": "/investors/nvidia.png"
+      },
+      {
+        "name": "Phoenix Court (LocalGlobe, Latitude, Solar)",
+        "website": "https://www.phoenixcourt.vc",
+        "logo": "/investors/phoenix-court-localglobe-latitude-solar.png"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "website": "https://www.salesforceventures.com",
+        "logo": "/investors/salesforce-ventures.jpeg"
+      },
+      {
+        "name": "Samsung Venture Investment Corporation",
+        "website": "https://www.samsungventure.co.kr",
+        "logo": "/investors/samsung-venture-investment-corporation.png"
+      },
+      {
+        "name": "Bertelsmann Investments",
+        "website": "https://www.bertelsmann-investments.com",
+        "logo": "/investors/bertelsmann-investments.png"
+      },
+      {
+        "name": "Cisco Investments",
+        "website": "https://www.cisco.com",
+        "logo": "/investors/cisco-investments.png"
+      },
+      {
+        "name": "Hanwha Asset Management",
+        "website": "https://www.hanwha.com",
+        "logo": "/investors/hanwha-asset-management.png"
+      },
+      {
+        "name": "IBM",
+        "website": "https://www.ibm.com",
+        "logo": "/investors/ibm.png"
+      },
+      {
+        "name": "Latitude",
+        "website": "https://www.latitudecapital.com",
+        "logo": "/investors/latitude.png"
+      },
+      {
+        "name": "Millennium New Horizons",
+        "website": "https://www.mnh.vc",
+        "logo": "/investors/millennium-new-horizons.png"
+      },
+      {
+        "name": "Sanabil Investments",
+        "website": "https://www.sanabil.com",
+        "logo": "/investors/sanabil-investments.png"
+      },
+      {
+        "name": "ServiceNow",
+        "website": "https://www.servicenow.com",
+        "logo": "/investors/servicenow-ventures.png"
+      },
+      {
+        "name": "SV Angel",
+        "website": "https://www.svangel.com",
+        "logo": "/investors/sv-angel.png"
+      },
+      {
+        "name": "Microsoft",
+        "website": "https://www.microsoft.com",
+        "logo": "/investors/microsoft.png"
+      },
+      {
+        "name": "CMA CGM",
+        "website": "https://www.cmacgm-group.com",
+        "logo": "/investors/cma-cgm.png"
+      },
+      {
+        "name": "Elad Gil",
+        "website": null
+      },
+      {
+        "name": "Conviction",
+        "website": "https://www.conviction.com",
+        "logo": "/investors/conviction.png"
+      },
+      {
+        "name": "Motier Ventures",
+        "website": "https://www.motier.vc",
+        "logo": "/investors/motier-ventures.png"
+      },
+      {
+        "name": "Redpoint",
+        "website": "https://www.redpoint.com",
+        "logo": "/investors/redpoint-ventures.png"
+      },
+      {
+        "name": "Xavier Niel",
+        "website": null
+      },
+      {
+        "name": "JCDecaux Holding",
+        "website": null
+      },
+      {
+        "name": "La Famiglia",
+        "website": "https://www.lafamiglia.vc",
+        "logo": "/investors/la-famiglia.png"
+      },
+      {
+        "name": "Exor Ventures",
+        "website": "https://www.exor.com",
+        "logo": "/investors/exor-ventures.png"
+      },
+      {
+        "name": "Sofina",
+        "website": "https://www.sofina.be",
+        "logo": "/investors/sofina.png"
+      },
+      {
+        "name": "First Minute Capital",
+        "website": "https://www.firstminute.capital",
+        "logo": "/investors/first-minute-capital.png"
+      },
+      {
+        "name": "Eric Schmidt",
+        "website": null
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-d-2026",
+        "stage": "Series D",
+        "announcedAt": "2026-09-08",
+        "amount": {
+          "amount": 3500000000,
+          "currency": "USD",
+          "display": "$3.5B"
+        },
+        "valuation": {
+          "amount": 24000000000,
+          "currency": "USD",
+          "display": "$24B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Samsung Electronics",
+            "website": "https://www.samsung.com",
+            "logo": "/investors/samsung-electronics.png"
+          },
+          {
+            "name": "Scaleup Europe Fund (EQT)",
+            "website": "https://www.eqtgroup.com",
+            "logo": "/investors/scaleup-europe-fund-eqt.png"
+          },
+          {
+            "name": "PSG Equity",
+            "website": "https://www.psgequity.com",
+            "logo": "/investors/psg-equity.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Advent",
+            "website": "https://www.adventinternational.com",
+            "logo": "/investors/advent.png"
+          },
+          {
+            "name": "BlackRock",
+            "website": "https://www.blackrock.com",
+            "logo": "/investors/blackrock.png"
+          },
+          {
+            "name": "Grand Duchy of Luxembourg",
+            "website": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "ASML",
+            "website": "https://www.asml.com",
+            "logo": "/investors/asml.png"
+          },
+          {
+            "name": "Belfius",
+            "website": "https://www.belfius.be",
+            "logo": "/investors/belfius.png"
+          },
+          {
+            "name": "BNP Paribas CIB",
+            "website": "https://cib.bnpparibas",
+            "logo": "/investors/bnp-paribas-cib.png"
+          },
+          {
+            "name": "Bpifrance",
+            "website": "https://www.bpifrance.fr",
+            "logo": "/investors/bpifrance.png"
+          },
+          {
+            "name": "Carmignac",
+            "website": "https://www.carmignac.com",
+            "logo": "/investors/carmignac.png"
+          },
+          {
+            "name": "DST Global",
+            "website": "https://www.dstglobal.com",
+            "logo": "/investors/dst-global.png"
+          },
+          {
+            "name": "Eurazeo",
+            "website": "https://www.eurazeo.com",
+            "logo": "/investors/eurazeo.png"
+          },
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "/investors/general-catalyst.png"
+          },
+          {
+            "name": "Headline",
+            "website": "https://www.headline.com",
+            "logo": "/investors/headline.png"
+          },
+          {
+            "name": "Hillspire",
+            "website": null
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Korelya Capital",
+            "website": "https://www.korelyacapital.com",
+            "logo": "/investors/korelya-capital.png"
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Phoenix Court (LocalGlobe, Latitude, Solar)",
+            "website": "https://www.phoenixcourt.vc",
+            "logo": "/investors/phoenix-court-localglobe-latitude-solar.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          }
+        ],
+        "sourceUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      },
+      {
+        "id": "series-c-2025",
+        "stage": "Series C",
+        "announcedAt": "2025-09-09",
+        "amount": {
+          "amount": 2000000000,
+          "currency": "USD",
+          "display": "$2B"
+        },
+        "valuation": {
+          "amount": 13800000000,
+          "currency": "USD",
+          "display": "$13.8B"
+        },
+        "leadInvestors": [
+          {
+            "name": "ASML",
+            "website": "https://www.asml.com",
+            "logo": "/investors/asml.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "DST Global",
+            "website": "https://www.dstglobal.com",
+            "logo": "/investors/dst-global.png"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "Bpifrance",
+            "website": "https://www.bpifrance.fr",
+            "logo": "/investors/bpifrance.png"
+          },
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "/investors/general-catalyst.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          }
+        ],
+        "sourceUrl": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/"
+      },
+      {
+        "id": "series-b-2024",
+        "stage": "Series B",
+        "announcedAt": "2024-06-11",
+        "amount": {
+          "amount": 640000000,
+          "currency": "USD",
+          "display": "$640M"
+        },
+        "valuation": {
+          "amount": 6000000000,
+          "currency": "USD",
+          "display": "$6B"
+        },
+        "leadInvestors": [
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "/investors/general-catalyst.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "NVIDIA",
+            "website": "https://www.nvidia.com",
+            "logo": "/investors/nvidia.png"
+          },
+          {
+            "name": "Samsung Venture Investment Corporation",
+            "website": "https://www.samsungventure.co.kr",
+            "logo": "/investors/samsung-venture-investment-corporation.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "Belfius",
+            "website": "https://www.belfius.be",
+            "logo": "/investors/belfius.png"
+          },
+          {
+            "name": "Bertelsmann Investments",
+            "website": "https://www.bertelsmann-investments.com",
+            "logo": "/investors/bertelsmann-investments.png"
+          },
+          {
+            "name": "BNP Paribas CIB",
+            "website": "https://cib.bnpparibas",
+            "logo": "/investors/bnp-paribas-cib.png"
+          },
+          {
+            "name": "Bpifrance",
+            "website": "https://www.bpifrance.fr",
+            "logo": "/investors/bpifrance.png"
+          },
+          {
+            "name": "Cisco Investments",
+            "website": "https://www.cisco.com",
+            "logo": "/investors/cisco-investments.png"
+          },
+          {
+            "name": "Eurazeo",
+            "website": "https://www.eurazeo.com",
+            "logo": "/investors/eurazeo.png"
+          },
+          {
+            "name": "Headline",
+            "website": "https://www.headline.com",
+            "logo": "/investors/headline.png"
+          },
+          {
+            "name": "Hanwha Asset Management",
+            "website": "https://www.hanwha.com",
+            "logo": "/investors/hanwha-asset-management.png"
+          },
+          {
+            "name": "IBM",
+            "website": "https://www.ibm.com",
+            "logo": "/investors/ibm.png"
+          },
+          {
+            "name": "Korelya Capital",
+            "website": "https://www.korelyacapital.com",
+            "logo": "/investors/korelya-capital.png"
+          },
+          {
+            "name": "Latitude",
+            "website": "https://www.latitudecapital.com",
+            "logo": "/investors/latitude.png"
+          },
+          {
+            "name": "Millennium New Horizons",
+            "website": "https://www.mnh.vc",
+            "logo": "/investors/millennium-new-horizons.png"
+          },
+          {
+            "name": "Sanabil Investments",
+            "website": "https://www.sanabil.com",
+            "logo": "/investors/sanabil-investments.png"
+          },
+          {
+            "name": "ServiceNow",
+            "website": "https://www.servicenow.com",
+            "logo": "/investors/servicenow-ventures.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://www.svangel.com",
+            "logo": "/investors/sv-angel.png"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2024/06/11/paris-based-ai-startup-mistral-ai-raises-640-million/"
+      },
+      {
+        "id": "microsoft-strategic-2024",
+        "stage": "Strategic",
+        "announcedAt": "2024-02-26",
+        "amount": {
+          "amount": 16300000,
+          "currency": "USD",
+          "display": "$16.3M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Microsoft",
+            "website": "https://www.microsoft.com",
+            "logo": "/investors/microsoft.png"
+          }
+        ],
+        "investors": [],
+        "sourceUrl": "https://techcrunch.com/2024/02/27/microsoft-made-a-16-million-investment-in-mistral-ai/"
+      },
+      {
+        "id": "series-a-2023",
+        "stage": "Series A",
+        "announcedAt": "2023-12-11",
+        "amount": {
+          "amount": 415000000,
+          "currency": "USD",
+          "display": "$415M"
+        },
+        "valuation": {
+          "amount": 2000000000,
+          "currency": "USD",
+          "display": "$2B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "BNP Paribas CIB",
+            "website": "https://cib.bnpparibas",
+            "logo": "/investors/bnp-paribas-cib.png"
+          },
+          {
+            "name": "CMA CGM",
+            "website": "https://www.cmacgm-group.com",
+            "logo": "/investors/cma-cgm.png"
+          },
+          {
+            "name": "General Catalyst",
+            "website": "https://www.generalcatalyst.com",
+            "logo": "/investors/general-catalyst.png"
+          },
+          {
+            "name": "Elad Gil",
+            "website": null
+          },
+          {
+            "name": "Conviction",
+            "website": "https://www.conviction.com",
+            "logo": "/investors/conviction.png"
+          },
+          {
+            "name": "Motier Ventures",
+            "website": "https://www.motier.vc",
+            "logo": "/investors/motier-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2023/12/11/mistral-ai-a-paris-based-openai-rival-closed-its-415-million-funding-round/"
+      },
+      {
+        "id": "seed-2023",
+        "stage": "Seed",
+        "announcedAt": "2023-06-13",
+        "amount": {
+          "amount": 113000000,
+          "currency": "USD",
+          "display": "$113M"
+        },
+        "valuation": {
+          "amount": 260000000,
+          "currency": "USD",
+          "display": "$260M"
+        },
+        "leadInvestors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Redpoint",
+            "website": "https://www.redpoint.com",
+            "logo": "/investors/redpoint-ventures.png"
+          },
+          {
+            "name": "Index Ventures",
+            "website": "https://www.indexventures.com",
+            "logo": "/investors/index-ventures.jpeg"
+          },
+          {
+            "name": "Xavier Niel",
+            "website": null
+          },
+          {
+            "name": "JCDecaux Holding",
+            "website": null
+          },
+          {
+            "name": "Motier Ventures",
+            "website": "https://www.motier.vc",
+            "logo": "/investors/motier-ventures.png"
+          },
+          {
+            "name": "La Famiglia",
+            "website": "https://www.lafamiglia.vc",
+            "logo": "/investors/la-famiglia.png"
+          },
+          {
+            "name": "Headline",
+            "website": "https://www.headline.com",
+            "logo": "/investors/headline.png"
+          },
+          {
+            "name": "Exor Ventures",
+            "website": "https://www.exor.com",
+            "logo": "/investors/exor-ventures.png"
+          },
+          {
+            "name": "Sofina",
+            "website": "https://www.sofina.be",
+            "logo": "/investors/sofina.png"
+          },
+          {
+            "name": "First Minute Capital",
+            "website": "https://www.firstminute.capital",
+            "logo": "/investors/first-minute-capital.png"
+          },
+          {
+            "name": "Latitude",
+            "website": "https://www.latitudecapital.com",
+            "logo": "/investors/latitude.png"
+          },
+          {
+            "name": "Bpifrance",
+            "website": "https://www.bpifrance.fr",
+            "logo": "/investors/bpifrance.png"
+          },
+          {
+            "name": "Eric Schmidt",
+            "website": null
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2023/06/13/frances-mistral-ai-blows-in-with-a-113m-seed-round-at-a-260m-valuation-to-take-on-openai/"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "AI Scientist",
+      "location": "Paris, France | London, UK",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/efef411a-91fb-44b1-b01b-bd1275e9231c"
+    },
+    {
+      "title": "AI Scientist - Agentic Engineering",
+      "location": "Paris, France | Amsterdam | Linz | Munich | London | Berlin",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/f090ef1d-372e-40dc-bf46-ce0bf2850204"
+    },
+    {
+      "title": "AI Scientist - Physics Models",
+      "location": "Paris, France | Amsterdam | Linz | Munich | London | Berlin",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/3fb3a425-b151-4ad6-be40-7049249f919a"
+    },
+    {
+      "title": "Research Engineer, Machine Learning",
+      "location": "Paris, France | Zurich | Warsaw | London",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/0e578cff-741d-4870-9c2c-aac85f9de266"
+    },
+    {
+      "title": "Research Engineer, Data Infrastructure",
+      "location": "Paris, France | Zurich | Warsaw | London",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/8c71b069-0eda-40d1-8cb1-4094fd9c81de"
+    },
+    {
+      "title": "Research Platform Engineer",
+      "location": "Paris, France | Warsaw | London",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/5d444fcb-4101-44a7-9996-45819443d640"
+    },
+    {
+      "title": "Research Engineer, Code Agents Infra",
+      "location": "Palo Alto, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/af7c3cf8-f4f4-4a16-80e9-fdfb0c14104d"
+    },
+    {
+      "title": "Research Engineer, ML Platform",
+      "location": "Palo Alto, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/51c1df24-53f1-4ec9-9523-cd40c88e00cf"
+    },
+    {
+      "title": "Engineering Manager, Inference",
+      "location": "New York, NY",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/6dfcbf55-d854-4723-85e4-f44f3032fc63"
+    },
+    {
+      "title": "AI Engineer, Product",
+      "location": "Paris, France",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/50c74749-9fbc-471f-a647-f6cd22423ccf"
+    },
+    {
+      "title": "Software Engineer, Backend",
+      "location": "Paris, France",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/2a9cce3a-3e9f-4e09-8acf-6f211c54bba7"
+    },
+    {
+      "title": "Software Engineer, Frontend",
+      "location": "Paris, France",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/c0d319b2-eeef-471f-b4b1-db1f6c56289c"
+    },
+    {
+      "title": "Software Engineer, Enterprise Agents",
+      "location": "Paris, France",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/09b94877-8b34-4371-b1d8-6a0b71845ed9"
+    },
+    {
+      "title": "Software Engineer (Golang), Mistral Cloud",
+      "location": "Paris, France (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/d3363667-04ff-4dea-b211-47b94f5ee999"
+    },
+    {
+      "title": "Site Reliability Engineer, Mistral Cloud",
+      "location": "Paris, France | Amsterdam | Warsaw | Munich | London | Berlin",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/4b25c97e-ab58-4148-9126-9d4e2c41aaf7"
+    },
+    {
+      "title": "Engineering Team Lead, Mistral Cloud",
+      "location": "Paris, France | Amsterdam | Munich | London | Berlin (Remote)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/ae703973-630a-4c85-8739-92901e74ecb5"
+    },
+    {
+      "title": "Data Engineer, Senior",
+      "location": "Paris, France",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/16a5a705-f08d-4e1a-9c2a-b6778d17afa7"
+    },
+    {
+      "title": "Product Director, Studio",
+      "location": "Paris, France | London, UK",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/2de8b334-0420-4647-bbf3-2a65ce3381a6"
+    },
+    {
+      "title": "Product Manager, Studio",
+      "location": "Paris, France | London, UK",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/a25b36ac-5283-49b7-b58d-482810ac0258"
+    },
+    {
+      "title": "Product Manager, Vibe",
+      "location": "Paris, France | London, UK",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/036efa0f-73c4-4737-b4ad-c4e834e5b31c"
+    },
+    {
+      "title": "Product Manager, Enterprise Controls",
+      "location": "Paris, France",
+      "focus": "Product",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/f10d218f-3d4b-4a64-b852-b26adcd3e773"
+    },
+    {
+      "title": "CyberSecurity, Platform Security Engineer",
+      "location": "Paris, France",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/94097082-dd90-439e-8685-0dd07df0bb1d"
+    },
+    {
+      "title": "CyberSecurity, Product Security Engineer",
+      "location": "Paris, France",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/5749843e-8469-4703-901b-c98b6fe0fc20"
+    },
+    {
+      "title": "CyberSecurity, Offensive Security Engineer",
+      "location": "Paris, France",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/dcf889f0-2f46-45e6-9394-51f9b62f3fe9"
+    }
+  ],
+  "people": [
+    {
+      "name": "Arthur Mensch",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": "/companies/mistral-ai/people/arthur-mensch/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/arthur-mensch",
+      "x": "https://x.com/arthurmensch",
+      "sourceUrl": "https://mistral.ai/about/"
+    },
+    {
+      "name": "Guillaume Lample",
+      "role": "Co-Founder and Chief Science Officer",
+      "image": "/companies/mistral-ai/people/guillaume-lample/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/guillaume-lample-7821095b",
+      "x": "https://x.com/GuillaumeLample",
+      "sourceUrl": "https://mistral.ai/about/"
+    },
+    {
+      "name": "Timothée Lacroix",
+      "role": "Co-Founder and Chief Technology Officer",
+      "image": "/companies/mistral-ai/people/timothee-lacroix/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/timothee-lacroix-59517977",
+      "x": "https://x.com/tlacroix6",
+      "sourceUrl": "https://mistral.ai/about/"
+    },
+    {
+      "name": "Johan Bergqvist",
+      "role": "Chief Financial Officer",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/johan-bergqvist",
+      "x": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Marjorie Janiewicz",
+      "role": "Chief Revenue Officer",
+      "image": "/companies/mistral-ai/people/marjorie-janiewicz/avatar.webp",
+      "linkedin": "https://www.linkedin.com/in/marjorietoucas",
+      "x": null,
+      "sourceUrl": "https://ainowsummit.com/speakers/marjorie-janiewicz/"
+    },
+    {
+      "name": "Brian Hall",
+      "role": "Chief Marketing Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://www.geekwire.com/2026/tech-moves-seattle-tech-exec-brian-hall-joins-mistral-amazon-departures-new-dropzone-ai-leader/"
+    }
+  ],
+  "activity": [
+    {
+      "type": "news",
+      "time": "Sep 16, 2026",
+      "dateTime": "2026-09-16",
+      "title": "Partnered with Mozilla for private, multilingual AI browsing",
+      "description": "Mistral and Mozilla teamed up to power Firefox's Smart Window beta with Mistral models for users in France and North America, with zero data retention and UK and Germany to follow.",
+      "sourceUrl": "https://mistral.ai/news/mistral-x-mozilla/"
+    },
+    {
+      "type": "funding",
+      "time": "Sep 8, 2026",
+      "dateTime": "2026-09-08",
+      "title": "Raised €3B Series D at a €21B+ valuation",
+      "description": "Mistral raised €3 billion led by Samsung Electronics with co-leads Scaleup Europe Fund (EQT) and PSG Equity at a post-money valuation above €21 billion, the largest equity round ever by a European technology company.",
+      "sourceUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+    },
+    {
+      "type": "news",
+      "time": "Aug 24, 2026",
+      "dateTime": "2026-08-24",
+      "title": "Announced a collaboration with HUMAIN in Saudi Arabia",
+      "description": "Mistral and HUMAIN announced a collaboration spanning AI infrastructure, localized frontier models for cybersecurity, voice and Arabic, and joint go-to-market for regulated industries.",
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain/"
+    },
+    {
+      "type": "product",
+      "time": "Aug 20, 2026",
+      "dateTime": "2026-08-20",
+      "title": "Launched Agentic Search",
+      "description": "A retrieval layer with a multi-step search, open, navigate, read and grep loop for complex documents, reporting large gains on FinanceBench and OfficeQA Pro with up to 39.6% lower p90 latency.",
+      "sourceUrl": "https://mistral.ai/news/agentic-search/"
+    },
+    {
+      "type": "news",
+      "time": "Jul 21, 2026",
+      "dateTime": "2026-07-21",
+      "title": "Expanded its strategic partnership with Microsoft",
+      "description": "Microsoft committed multibillion-dollar Azure capacity drawing on Mistral's Europe-based GPU infrastructure, brought Mistral Medium 3.5 and OCR 4 into Microsoft Foundry and Copilot Studio, and added fully disconnected deployments for sovereignty.",
+      "sourceUrl": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+    },
+    {
+      "type": "product",
+      "time": "Jul 8, 2026",
+      "dateTime": "2026-07-08",
+      "title": "Released Robostral Navigate",
+      "description": "Mistral's first embodied-navigation model, an 8B model that uses a single RGB camera and reached 76.6% success on R2R-CE validation-unseen, trained entirely in simulation.",
+      "sourceUrl": "https://mistral.ai/news/robostral-navigate/"
+    },
+    {
+      "type": "product",
+      "time": "Jun 23, 2026",
+      "dateTime": "2026-06-23",
+      "title": "Released Mistral OCR 4",
+      "description": "Document intelligence with bounding boxes, block classification, inline confidence, support for 170 languages and single-container self-hosting, priced at $4 per 1,000 pages.",
+      "sourceUrl": "https://mistral.ai/news/ocr-4/"
+    },
+    {
+      "type": "product",
+      "time": "May 22, 2026",
+      "dateTime": "2026-05-22",
+      "title": "Released Mistral Medium 3.5 with Vibe Remote Agents",
+      "description": "A 128B dense open-weight flagship unifying instruct, reasoning and coding with a 256k context, alongside cloud async coding agents and a Le Chat Work mode for multi-step research.",
+      "sourceUrl": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/"
+    },
+    {
+      "type": "funding",
+      "time": "Mar 30, 2026",
+      "dateTime": "2026-03-30",
+      "title": "Raised $830M in debt for a Paris-area data centre",
+      "description": "Mistral raised $830 million in debt from a bank consortium to buy 13,800 NVIDIA chips for a 44 MW facility at Bruyères-le-Châtel near Paris.",
+      "sourceUrl": "https://www.reuters.com/business/finance/frances-mistral-raises-830-million-debt-ai-data-centre-build-up-2026-03-30/"
+    },
+    {
+      "type": "product",
+      "time": "Mar 23, 2026",
+      "dateTime": "2026-03-23",
+      "title": "Released Voxtral TTS",
+      "description": "Mistral's first open-weights text-to-speech model: a 4B model with emotionally expressive speech in nine languages, three-second voice adaptation, and 70 ms latency.",
+      "sourceUrl": "https://mistral.ai/news/voxtral-tts/"
+    },
+    {
+      "type": "product",
+      "time": "Mar 17, 2026",
+      "dateTime": "2026-03-17",
+      "title": "Launched Forge for enterprise custom models",
+      "description": "A system to train frontier-grade models on proprietary knowledge through pre-training, post-training and RL, with launch partners including ASML, DSO Singapore, Ericsson, ESA, HTX Singapore and Reply.",
+      "sourceUrl": "https://mistral.ai/news/forge/"
+    },
+    {
+      "type": "product",
+      "time": "Mar 16, 2026",
+      "dateTime": "2026-03-16",
+      "title": "Released Mistral Small 4",
+      "description": "A 119B mixture-of-experts model with 6B active parameters under Apache 2.0, unifying chat, reasoning, coding and vision with configurable reasoning effort and a 256k context.",
+      "sourceUrl": "https://mistral.ai/news/mistral-small-4/"
+    },
+    {
+      "type": "product",
+      "time": "Feb 4, 2026",
+      "dateTime": "2026-02-04",
+      "title": "Released Voxtral Transcribe 2",
+      "description": "Next-generation speech-to-text with a Mini Transcribe V2 batch model and a Realtime streaming open-weights model with sub-200 ms configurable delay across 13 languages.",
+      "sourceUrl": "https://mistral.ai/news/voxtral-transcribe-2/"
+    },
+    {
+      "type": "product",
+      "time": "Dec 9, 2025",
+      "dateTime": "2025-12-09",
+      "title": "Released Devstral 2 and the Mistral Vibe CLI",
+      "description": "A 123B dense coding model plus a 24B Apache 2.0 small model, alongside an open-source Vibe CLI terminal agent with multi-file orchestration.",
+      "sourceUrl": "https://mistral.ai/news/devstral-2-vibe-cli/"
+    },
+    {
+      "type": "product",
+      "time": "Dec 2, 2025",
+      "dateTime": "2025-12-02",
+      "title": "Introduced the Mistral 3 family",
+      "description": "Ten Apache 2.0 multimodal models led by Mistral Large 3, a 675B-parameter mixture-of-experts model with 41B active parameters, plus Ministral 3 in 3B, 8B and 14B sizes.",
+      "sourceUrl": "https://mistral.ai/news/mistral-3/"
+    },
+    {
+      "type": "news",
+      "time": "Nov 19, 2025",
+      "dateTime": "2025-11-19",
+      "title": "Announced SAP and Helsing partnerships and a German office",
+      "description": "Mistral announced a multiyear SAP partnership for a sovereign AI stack in SAP AI Foundation, vision-language-action models with Helsing for defence, and a major hiring expansion with a new German office.",
+      "sourceUrl": "https://mistral.ai/news/ki-fur-deutschland/"
+    },
+    {
+      "type": "funding",
+      "time": "Sep 9, 2025",
+      "dateTime": "2025-09-09",
+      "title": "Raised €1.7B Series C led by ASML",
+      "description": "Mistral closed a €1.7 billion Series C at an €11.7 billion post-money valuation led by ASML, which took an 11% fully-diluted stake, with participation from DST Global, a16z, Bpifrance, General Catalyst, Index, Lightspeed and NVIDIA.",
+      "sourceUrl": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/"
+    }
+  ]
+}

@@ -1,0 +1,840 @@
+{
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "tagline": "Bringing technology to life",
+  "description": "ElevenLabs is an AI research and product company building human-like voice and audio models, with hubs in London, New York, San Francisco, and Warsaw. Founded in 2022 by Mati Staniszewski and Piotr Dabkowski, it ships ElevenAgents for conversational voice and chat agents, ElevenCreative for speech, music, image, and video creation across 70+ languages, and ElevenAPI for developers. The company closed 2025 with more than $330 million in ARR, raised a $500 million Series D at an $11 billion valuation in February 2026, and has raised $781 million in total.",
+  "website": "https://elevenlabs.io",
+  "foundedYear": 2022,
+  "banner": "/companies/elevenlabs/images/banner.jpg",
+  "logo": "/companies/elevenlabs/images/logo.png",
+  "industry": "AI Inference",
+  "location": {
+    "label": "London, United Kingdom",
+    "countryCode": "gb"
+  },
+  "stage": "Series D",
+  "employees": "800 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 781000000,
+      "currency": "USD",
+      "display": "$781M"
+    },
+    "valuation": {
+      "amount": 11000000000,
+      "currency": "USD",
+      "display": "$11B"
+    },
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "series-d-2026",
+    "investors": [
+      {
+        "name": "Sequoia Capital",
+        "website": "https://www.sequoiacap.com",
+        "logo": "/investors/sequoia-capital.jpeg"
+      },
+      {
+        "name": "Andreessen Horowitz",
+        "website": "https://a16z.com",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "ICONIQ",
+        "website": "https://www.iconiqcapital.com",
+        "logo": "/investors/iconiq.png"
+      },
+      {
+        "name": "Lightspeed Venture Partners",
+        "website": "https://lsvp.com",
+        "logo": "/investors/lightspeed.png"
+      },
+      {
+        "name": "Evantic Capital",
+        "website": null,
+        "logo": "/investors/evantic.png"
+      },
+      {
+        "name": "BOND",
+        "website": "https://www.bondcap.com",
+        "logo": "/investors/bond-capital.png"
+      },
+      {
+        "name": "BroadLight Capital",
+        "website": "https://broadlightcapital.com",
+        "logo": "/investors/broadlight-capital.png"
+      },
+      {
+        "name": "NFDG",
+        "website": "https://www.nfdg.com",
+        "logo": "/investors/nfdg.png"
+      },
+      {
+        "name": "Valor Capital",
+        "website": "https://www.valorcapitalgroup.com",
+        "logo": "/investors/valor-capital.png"
+      },
+      {
+        "name": "AMP Coalition",
+        "website": "https://ampcoalition.com",
+        "logo": "/investors/amp-coalition.png"
+      },
+      {
+        "name": "Smash Capital",
+        "website": "https://www.smashcapital.com",
+        "logo": "/investors/smash-capital.png"
+      },
+      {
+        "name": "NEA",
+        "website": "https://www.nea.com",
+        "logo": "/investors/nea.png"
+      },
+      {
+        "name": "World Innovation Lab",
+        "website": "https://www.wilab.com",
+        "logo": "/investors/world-innovation-lab.png"
+      },
+      {
+        "name": "Endeavor Catalyst Fund",
+        "website": "https://www.endeavor.org",
+        "logo": "/investors/endeavor-catalyst-fund.png"
+      },
+      {
+        "name": "Lunate",
+        "website": "https://www.lunate.com",
+        "logo": "/investors/lunate.png"
+      },
+      {
+        "name": "Salesforce Ventures",
+        "website": "https://www.salesforceventures.com",
+        "logo": "/investors/salesforce-ventures.jpeg"
+      },
+      {
+        "name": "SV Angel",
+        "website": "https://www.svangel.com",
+        "logo": "/investors/sv-angel.png"
+      },
+      {
+        "name": "Deutsche Telekom",
+        "website": "https://www.telekom.com",
+        "logo": "/investors/deutsche-telekom.png"
+      },
+      {
+        "name": "LG Technology Ventures",
+        "website": "https://www.lgtechnologyventures.com",
+        "logo": "/investors/lg-technology-ventures.png"
+      },
+      {
+        "name": "HubSpot Ventures",
+        "website": "https://www.hubspot.com",
+        "logo": "/investors/hubspot-ventures.png"
+      },
+      {
+        "name": "NTT DOCOMO Ventures",
+        "website": "https://www.nttdocomo-v.com",
+        "logo": "/investors/ntt-docomo-ventures.png"
+      },
+      {
+        "name": "RingCentral Ventures",
+        "website": "https://www.ringcentral.com",
+        "logo": "/investors/ringcentral-ventures.png"
+      },
+      {
+        "name": "Nat Friedman",
+        "website": null
+      },
+      {
+        "name": "Daniel Gross",
+        "website": null
+      },
+      {
+        "name": "Credo Ventures",
+        "website": "https://www.credoventures.com",
+        "logo": "/investors/credo-ventures.png"
+      },
+      {
+        "name": "Creator Ventures",
+        "website": "https://www.creator.ventures",
+        "logo": "/investors/creator-ventures.png"
+      },
+      {
+        "name": "Mike Krieger",
+        "website": null
+      },
+      {
+        "name": "Brendan Iribe",
+        "website": null
+      },
+      {
+        "name": "Mustafa Suleyman",
+        "website": null
+      },
+      {
+        "name": "Tim O'Reilly",
+        "website": null
+      },
+      {
+        "name": "Storytel",
+        "website": "https://www.storytel.com",
+        "logo": "/investors/storytel.png"
+      },
+      {
+        "name": "TheSoul Publishing",
+        "website": "https://the-soul-publishing.com",
+        "logo": "/investors/thesoul-publishing.png"
+      },
+      {
+        "name": "Concept Ventures",
+        "website": "https://concept.vc",
+        "logo": "/investors/concept-ventures.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "series-d-2026",
+        "stage": "Series D",
+        "announcedAt": "2026-02-04",
+        "amount": {
+          "amount": 500000000,
+          "currency": "USD",
+          "display": "$500M"
+        },
+        "valuation": {
+          "amount": 11000000000,
+          "currency": "USD",
+          "display": "$11B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://www.sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "ICONIQ",
+            "website": "https://www.iconiqcapital.com",
+            "logo": "/investors/iconiq.png"
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "website": "https://lsvp.com",
+            "logo": "/investors/lightspeed.png"
+          },
+          {
+            "name": "Evantic Capital",
+            "website": null,
+            "logo": "/investors/evantic.png"
+          },
+          {
+            "name": "BOND",
+            "website": "https://www.bondcap.com",
+            "logo": "/investors/bond-capital.png"
+          },
+          {
+            "name": "BroadLight Capital",
+            "website": "https://broadlightcapital.com",
+            "logo": "/investors/broadlight-capital.png"
+          },
+          {
+            "name": "NFDG",
+            "website": "https://www.nfdg.com",
+            "logo": "/investors/nfdg.png"
+          },
+          {
+            "name": "Valor Capital",
+            "website": "https://www.valorcapitalgroup.com",
+            "logo": "/investors/valor-capital.png"
+          },
+          {
+            "name": "AMP Coalition",
+            "website": "https://ampcoalition.com",
+            "logo": "/investors/amp-coalition.png"
+          },
+          {
+            "name": "Smash Capital",
+            "website": "https://www.smashcapital.com",
+            "logo": "/investors/smash-capital.png"
+          }
+        ],
+        "sourceUrl": "https://elevenlabs.io/blog/series-d"
+      },
+      {
+        "id": "series-c-2025",
+        "stage": "Series C",
+        "announcedAt": "2025-01-30",
+        "amount": {
+          "amount": 180000000,
+          "currency": "USD",
+          "display": "$180M"
+        },
+        "valuation": {
+          "amount": 3300000000,
+          "currency": "USD",
+          "display": "$3.3B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "ICONIQ",
+            "website": "https://www.iconiqcapital.com",
+            "logo": "/investors/iconiq.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "NEA",
+            "website": "https://www.nea.com",
+            "logo": "/investors/nea.png"
+          },
+          {
+            "name": "World Innovation Lab",
+            "website": "https://www.wilab.com",
+            "logo": "/investors/world-innovation-lab.png"
+          },
+          {
+            "name": "Valor Capital",
+            "website": "https://www.valorcapitalgroup.com",
+            "logo": "/investors/valor-capital.png"
+          },
+          {
+            "name": "Endeavor Catalyst Fund",
+            "website": "https://www.endeavor.org",
+            "logo": "/investors/endeavor-catalyst-fund.png"
+          },
+          {
+            "name": "Lunate",
+            "website": "https://www.lunate.com",
+            "logo": "/investors/lunate.png"
+          },
+          {
+            "name": "Sequoia Capital",
+            "website": "https://www.sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "website": "https://www.salesforceventures.com",
+            "logo": "/investors/salesforce-ventures.jpeg"
+          },
+          {
+            "name": "Smash Capital",
+            "website": "https://www.smashcapital.com",
+            "logo": "/investors/smash-capital.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://www.svangel.com",
+            "logo": "/investors/sv-angel.png"
+          },
+          {
+            "name": "NFDG",
+            "website": "https://www.nfdg.com",
+            "logo": "/investors/nfdg.png"
+          },
+          {
+            "name": "BroadLight Capital",
+            "website": "https://broadlightcapital.com",
+            "logo": "/investors/broadlight-capital.png"
+          },
+          {
+            "name": "Deutsche Telekom",
+            "website": "https://www.telekom.com",
+            "logo": "/investors/deutsche-telekom.png"
+          },
+          {
+            "name": "LG Technology Ventures",
+            "website": "https://www.lgtechnologyventures.com",
+            "logo": "/investors/lg-technology-ventures.png"
+          },
+          {
+            "name": "HubSpot Ventures",
+            "website": "https://www.hubspot.com",
+            "logo": "/investors/hubspot-ventures.png"
+          },
+          {
+            "name": "NTT DOCOMO Ventures",
+            "website": "https://www.nttdocomo-v.com",
+            "logo": "/investors/ntt-docomo-ventures.png"
+          },
+          {
+            "name": "RingCentral Ventures",
+            "website": "https://www.ringcentral.com",
+            "logo": "/investors/ringcentral-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2025/01/30/elevenlabs-raises-180-million-in-series-c-funding-at-3-3-billion-valuation/"
+      },
+      {
+        "id": "series-b-2024",
+        "stage": "Series B",
+        "announcedAt": "2024-01-22",
+        "amount": {
+          "amount": 80000000,
+          "currency": "USD",
+          "display": "$80M"
+        },
+        "valuation": {
+          "amount": 1100000000,
+          "currency": "USD",
+          "display": "$1.1B"
+        },
+        "leadInvestors": [
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "Nat Friedman",
+            "website": null
+          },
+          {
+            "name": "Daniel Gross",
+            "website": null
+          }
+        ],
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "website": "https://www.sequoiacap.com",
+            "logo": "/investors/sequoia-capital.jpeg"
+          },
+          {
+            "name": "Smash Capital",
+            "website": "https://www.smashcapital.com",
+            "logo": "/investors/smash-capital.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://www.svangel.com",
+            "logo": "/investors/sv-angel.png"
+          },
+          {
+            "name": "BroadLight Capital",
+            "website": "https://broadlightcapital.com",
+            "logo": "/investors/broadlight-capital.png"
+          },
+          {
+            "name": "Credo Ventures",
+            "website": "https://www.credoventures.com",
+            "logo": "/investors/credo-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://www.maginative.com/article/elevenlabs-becomes-first-voice-ai-unicorn-with-80-million-series-b/"
+      },
+      {
+        "id": "series-a-2023",
+        "stage": "Series A",
+        "announcedAt": "2023-06-20",
+        "amount": {
+          "amount": 19000000,
+          "currency": "USD",
+          "display": "$19M"
+        },
+        "valuation": {
+          "amount": 99000000,
+          "currency": "USD",
+          "display": "$99M"
+        },
+        "leadInvestors": [
+          {
+            "name": "Nat Friedman",
+            "website": null
+          },
+          {
+            "name": "Daniel Gross",
+            "website": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "website": "https://a16z.com",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Creator Ventures",
+            "website": "https://www.creator.ventures",
+            "logo": "/investors/creator-ventures.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://www.svangel.com",
+            "logo": "/investors/sv-angel.png"
+          },
+          {
+            "name": "Mike Krieger",
+            "website": null
+          },
+          {
+            "name": "Brendan Iribe",
+            "website": null
+          },
+          {
+            "name": "Mustafa Suleyman",
+            "website": null
+          },
+          {
+            "name": "Tim O'Reilly",
+            "website": null
+          },
+          {
+            "name": "Storytel",
+            "website": "https://www.storytel.com",
+            "logo": "/investors/storytel.png"
+          },
+          {
+            "name": "TheSoul Publishing",
+            "website": "https://the-soul-publishing.com",
+            "logo": "/investors/thesoul-publishing.png"
+          }
+        ],
+        "sourceUrl": "https://techcrunch.com/2023/06/20/voice-generating-platform-elevenlabs-raises-19m-launches-detection-tool/"
+      },
+      {
+        "id": "pre-seed-2023",
+        "stage": "Pre-Seed",
+        "announcedAt": null,
+        "amount": {
+          "amount": 2000000,
+          "currency": "USD",
+          "display": "$2M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Credo Ventures",
+            "website": "https://www.credoventures.com",
+            "logo": "/investors/credo-ventures.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Concept Ventures",
+            "website": "https://concept.vc",
+            "logo": "/investors/concept-ventures.png"
+          }
+        ],
+        "sourceUrl": "https://en.wikipedia.org/wiki/ElevenLabs"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Research Engineer",
+      "location": "Poland | United States | Germany",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/3d650946-5ac2-4729-9ae4-129c43fcd0b5"
+    },
+    {
+      "title": "Research Engineer - Inference",
+      "location": "United Kingdom | United States | Poland",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/2d7f9a7c-a9e6-4877-bb38-34e4d989054c"
+    },
+    {
+      "title": "Research Engineer - Web Crawlers",
+      "location": "United Kingdom | United States | Poland",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/a89a7892-3d9d-40ab-a3f1-1c6ed1f7b84f"
+    },
+    {
+      "title": "Research Engineer - Data Infrastructure",
+      "location": "United Kingdom | United States | Poland",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/9fbd9227-57e0-4221-9255-1a1d967be8ed"
+    },
+    {
+      "title": "Full-Stack Engineer (Back-End Leaning)",
+      "location": "United Kingdom | Dublin | United States",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/c7d59014-b918-4c15-ae33-79f5c9f2cf9f"
+    },
+    {
+      "title": "Full-Stack Engineer (Front-End Leaning)",
+      "location": "United Kingdom | Dublin, Ireland",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/ada7cd2c-8b9f-4f19-a88b-7c2ca1be1fde"
+    },
+    {
+      "title": "Full-Stack Engineer",
+      "location": "United Kingdom | Dublin | Spain",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/6a530871-b6c6-4783-ac6b-69cc3b084192"
+    },
+    {
+      "title": "Forward Deployed Engineer - North America",
+      "location": "San Francisco, CA | United States | New York, NY",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/6c4c57c1-ec72-42ba-af3a-eb7aebbde2e6"
+    },
+    {
+      "title": "Enterprise Solutions Engineer - North America",
+      "location": "United States (New York | San Francisco)",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/275f43d0-b62d-401d-830c-7c1ac0e688aa"
+    },
+    {
+      "title": "Deployment Strategist - North America",
+      "location": "United States",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/8c068ebf-c79f-4f12-97ef-b4c9a4f7ae5f"
+    },
+    {
+      "title": "Safety Engineer - Free Tier Abuse",
+      "location": "United Kingdom | Dublin | Tokyo",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/3b57cc5c-f019-4a0b-a5ff-e1046e4f1fa1"
+    },
+    {
+      "title": "Engineering - Internal AI Transformation",
+      "location": "United States | Dublin | Sofia",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/a3097257-a07a-4a7e-b9fe-b8555c1a0fa7"
+    },
+    {
+      "title": "Product Designer",
+      "location": "London, UK | New York, NY",
+      "focus": "Design",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/89da00ec-11b0-4359-913b-c3a89c1013bc"
+    },
+    {
+      "title": "Compliance Engineer",
+      "location": "New York, NY | Boston | Washington, DC",
+      "focus": "Security",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/f80d0420-b6e6-4110-940c-293f64b9761e"
+    },
+    {
+      "title": "Account Executive - Japan",
+      "location": "Japan (Tokyo)",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/ac7cc39a-a58b-4ef2-961a-ca16e060a361"
+    },
+    {
+      "title": "Account Executive - Korea",
+      "location": "Korea",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/592954c4-0c40-4198-9fa3-2ed82a84518f"
+    },
+    {
+      "title": "Account Executive - LATAM",
+      "location": "Mexico | Argentina",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/3953e70b-86e8-47a0-9300-3113f64f5d44"
+    },
+    {
+      "title": "Account Manager - India",
+      "location": "India",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/a571b8e4-8176-4e31-aab6-2287ee810236"
+    },
+    {
+      "title": "Account Executive, Mid Market - India",
+      "location": "India",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/90873fda-95c3-4d21-bae8-c5a30f5b7ac8"
+    },
+    {
+      "title": "Account Executive - Government",
+      "location": "Washington, DC | United States",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/68a1ad0b-d74e-4ebe-b6d0-877c53c9df7f"
+    },
+    {
+      "title": "Sales Development - United States",
+      "location": "San Francisco, CA | United States | New York, NY",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/158034c9-eb7c-4348-a0b8-fa9e817b29f1"
+    },
+    {
+      "title": "Product Marketing - Agents",
+      "location": "United Kingdom | Dublin | Tokyo",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/f2ae7fe0-67da-48ae-b126-b942899ec7e9"
+    }
+  ],
+  "people": [
+    {
+      "name": "Mati Staniszewski",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://elevenlabs.io/blog/series-d"
+    },
+    {
+      "name": "Piotr Dabkowski",
+      "role": "Co-Founder and Chief Technology Officer",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/piotr-dabkowski-50222bba",
+      "x": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Ethan Tandowsky",
+      "role": "Chief Financial Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://elevenlabs.io/blog/cfo"
+    },
+    {
+      "name": "Ashley Kramer",
+      "role": "Chief Revenue Officer",
+      "image": null,
+      "linkedin": null,
+      "x": null,
+      "sourceUrl": "https://elevenlabs.io/blog/cro"
+    }
+  ],
+  "activity": [
+    {
+      "type": "news",
+      "time": "Sep 10, 2026",
+      "dateTime": "2026-09-10",
+      "title": "Signed a multi-year agreement with Universal Music Group",
+      "description": "ElevenLabs announced a multi-year strategic agreement with UMG covering voice and music AI.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "people",
+      "time": "Sep 8, 2026",
+      "dateTime": "2026-09-08",
+      "title": "Appointed Ethan Tandowsky as Chief Financial Officer",
+      "description": "Former Adyen CFO Ethan Tandowsky joined ElevenLabs as CFO as the company scaled past 800 people.",
+      "sourceUrl": "https://elevenlabs.io/blog/cfo"
+    },
+    {
+      "type": "people",
+      "time": "Sep 2, 2026",
+      "dateTime": "2026-09-02",
+      "title": "Appointed Ashley Kramer as Chief Revenue Officer",
+      "description": "Former OpenAI enterprise sales leader and GitLab executive Ashley Kramer joined ElevenLabs as CRO, with enterprise at 55% of revenue.",
+      "sourceUrl": "https://elevenlabs.io/blog/cro"
+    },
+    {
+      "type": "product",
+      "time": "May 28, 2026",
+      "dateTime": "2026-05-28",
+      "title": "Released Dubbing v2",
+      "description": "Dubbing v2 preserves emotion and performance across languages, released in the same week as Music v2.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "growth",
+      "time": "May 5, 2026",
+      "dateTime": "2026-05-05",
+      "title": "Crossed $500M ARR",
+      "description": "ElevenLabs announced it had crossed $500 million in annual recurring revenue, with new investors including BlackRock and NVIDIA.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "product",
+      "time": "Apr 29, 2026",
+      "dateTime": "2026-04-29",
+      "title": "Launched ElevenMusic",
+      "description": "A studio-grade music generation model cleared for commercial use with label and publisher agreements.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "funding",
+      "time": "Feb 4, 2026",
+      "dateTime": "2026-02-04",
+      "title": "Raised $500M Series D at an $11B valuation",
+      "description": "ElevenLabs closed a $500 million Series D at an $11 billion valuation led by Sequoia Capital, more than tripling its valuation in a year, to double down on ElevenAgents and conversational voice models.",
+      "sourceUrl": "https://elevenlabs.io/blog/series-d"
+    },
+    {
+      "type": "product",
+      "time": "Feb 2, 2026",
+      "dateTime": "2026-02-02",
+      "title": "Made Eleven v3 generally available",
+      "description": "ElevenLabs' most expressive text-to-speech flagship reached general availability with emotive control via audio tags.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "growth",
+      "time": "Jan 28, 2026",
+      "dateTime": "2026-01-28",
+      "title": "Revolut selected ElevenAgents",
+      "description": "Revolut adopted ElevenAgents to bolster customer support, a notable enterprise validation.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "news",
+      "time": "Jan 14, 2026",
+      "dateTime": "2026-01-14",
+      "title": "Partnered with Deutsche Telekom",
+      "description": "Deutsche Telekom and ElevenLabs announced a partnership to deploy voice agents in customer service for Europe's largest telco.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "product",
+      "time": "Jan 9, 2026",
+      "dateTime": "2026-01-09",
+      "title": "Released Scribe v2",
+      "description": "A flagship batch speech-to-text model with the lowest word error rate, keyterm prompting, 56-category entity detection, and diarization.",
+      "sourceUrl": "https://elevenlabs.io/blog/introducing-scribe-v2"
+    },
+    {
+      "type": "news",
+      "time": "Dec 4, 2025",
+      "dateTime": "2025-12-04",
+      "title": "Built a Toyota fan experience with Brock Purdy",
+      "description": "ElevenLabs powered an NFL fan-engagement voice experience for Toyota with quarterback Brock Purdy.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "news",
+      "time": "Nov 21, 2025",
+      "dateTime": "2025-11-21",
+      "title": "Partnered with Liberty Global",
+      "description": "The partnership accelerated voice AI expansion across Europe over Liberty's networks.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "news",
+      "time": "Nov 12, 2025",
+      "dateTime": "2025-11-12",
+      "title": "Partnered with Harvey for legal voice AI",
+      "description": "Harvey and ElevenLabs partnered to bring multilingual legal transcription and voice to the Harvey platform.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "product",
+      "time": "Nov 11, 2025",
+      "dateTime": "2025-11-11",
+      "title": "Released Scribe v2 Realtime",
+      "description": "Live transcription with under 150 ms latency across 90+ languages, built for agents and meetings.",
+      "sourceUrl": "https://elevenlabs.io/blog/introducing-scribe-v2-realtime"
+    },
+    {
+      "type": "news",
+      "time": "Nov 6, 2025",
+      "dateTime": "2025-11-06",
+      "title": "Built the first agentic government with Ukraine",
+      "description": "ElevenLabs partnered to voice-enable Ukrainian public services and government workflows.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    },
+    {
+      "type": "product",
+      "time": "Oct 6, 2025",
+      "dateTime": "2025-10-06",
+      "title": "Launched Agent Workflows",
+      "description": "A no-code workflow builder for conversational AI agents with conditional logic, API calls, and transfers.",
+      "sourceUrl": "https://elevenlabs.io/blog"
+    }
+  ]
+}

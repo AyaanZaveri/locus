@@ -158,7 +158,7 @@
   html {
     @apply font-sans;
     }
-  .font-wordmark {
+  .font-rounded {
     font-family: "Sunghyun Sans", var(--font-sans), sans-serif;
     }
 }

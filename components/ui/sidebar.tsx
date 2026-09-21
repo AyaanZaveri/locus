@@ -190,7 +190,7 @@ function Sidebar({
           data-sidebar="sidebar"
           data-slot="sidebar"
           data-mobile="true"
-          className="p-0 text-sidebar-foreground"
+          className="bg-sidebar/95 p-0 text-sidebar-foreground backdrop-blur-2xl dark:bg-sidebar/85"
           style={
             {
               "--drawer-width": SIDEBAR_WIDTH_MOBILE,

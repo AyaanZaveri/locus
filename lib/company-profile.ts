@@ -20,6 +20,7 @@ const industrySchema = z.enum([
   "Database",
   "Developer Tools",
   "Fintech",
+  "Foundation Models",
   "Web Search",
   "Workflow Orchestration",
 ]);
@@ -45,6 +46,72 @@ const fundingRoundSchema = z.object({
   leadInvestors: z.array(investorSchema),
   investors: z.array(investorSchema),
   sourceUrl: z.string().url().nullable(),
+});
+
+const jobWorkplaceTypeSchema = z.enum([
+  "remote",
+  "hybrid",
+  "onsite",
+  "flexible",
+]);
+
+const jobEmploymentTypeSchema = z.enum([
+  "full-time",
+  "part-time",
+  "contract",
+  "internship",
+  "temporary",
+]);
+
+const jobExperienceSchema = z.object({
+  minimumYears: z.number().nonnegative().nullable().optional(),
+  maximumYears: z.number().nonnegative().nullable().optional(),
+  level: z
+    .enum([
+      "intern",
+      "entry",
+      "mid",
+      "senior",
+      "staff",
+      "principal",
+      "manager",
+      "director",
+      "executive",
+    ])
+    .nullable()
+    .optional(),
+  acceptsNewGrads: z.boolean().nullable().optional(),
+});
+
+const jobCompensationSchema = z.object({
+  salary: z
+    .object({
+      minimum: z.number().nonnegative().nullable(),
+      maximum: z.number().nonnegative().nullable(),
+      currency: z.string().length(3),
+      period: z.enum(["hour", "month", "year"]),
+    })
+    .nullable()
+    .optional(),
+  equity: z
+    .object({
+      minimumPercent: z.number().nonnegative().nullable(),
+      maximumPercent: z.number().nonnegative().nullable(),
+    })
+    .nullable()
+    .optional(),
+});
+
+const jobVisaSchema = z.object({
+  requiresUSWorkAuthorization: z.boolean().nullable().optional(),
+  sponsorship: z.enum(["available", "unavailable", "unknown"]).optional(),
+  citizenshipRequired: z.boolean().nullable().optional(),
+});
+
+const jobInterviewProcessSchema = z.object({
+  available: z.boolean(),
+  summary: z.string().min(1).nullable().optional(),
+  url: z.string().url().nullable().optional(),
 });
 
 export const companyProfileSchema = z.object({
@@ -80,6 +147,18 @@ export const companyProfileSchema = z.object({
       location: z.string().min(1),
       focus: z.string().min(1),
       url: z.string().url().nullable().optional(),
+      description: z.string().min(1).nullable().optional(),
+      status: z.enum(["open", "closed", "unknown"]).nullable().optional(),
+      workplaceType: jobWorkplaceTypeSchema.nullable().optional(),
+      employmentType: jobEmploymentTypeSchema.nullable().optional(),
+      department: z.string().min(1).nullable().optional(),
+      skills: z.array(z.string().min(1)).optional(),
+      experience: jobExperienceSchema.nullable().optional(),
+      compensation: jobCompensationSchema.nullable().optional(),
+      visa: jobVisaSchema.nullable().optional(),
+      interviewProcess: jobInterviewProcessSchema.nullable().optional(),
+      postedAt: z.string().date().nullable().optional(),
+      lastSeenAt: z.string().date().nullable().optional(),
     }),
   ),
   people: z.array(
@@ -90,6 +169,7 @@ export const companyProfileSchema = z.object({
       linkedin: z.string().url().nullable(),
       x: z.string().url().nullable().optional(),
       sourceUrl: z.string().url().nullable().optional(),
+      isFounder: z.boolean().optional(),
     }),
   ),
   activity: z.array(
@@ -156,7 +236,7 @@ export function parseCompanyProfile(source: Record<string, unknown>) {
   return companyProfileSchema.parse(normalizeCompany(source));
 }
 
-export const getCompanies = cache(async () => {
+export async function getCompaniesFromFiles() {
   const entries = await readdir(companiesDirectory, { withFileTypes: true });
   const profiles = await Promise.all(
     entries
@@ -184,6 +264,33 @@ export const getCompanies = cache(async () => {
   return profiles.filter(
     (profile): profile is CompanyProfile => profile !== null,
   );
+}
+
+export const getCompanies = cache(async () => {
+  if (!process.env.DATABASE_URL && !process.env.DATABASE_URL_POOLED) {
+    return getCompaniesFromFiles();
+  }
+
+  try {
+    const [{ db }, { companies }] = await Promise.all([
+      import("./db"),
+      import("./db/schema"),
+    ]);
+    const records = await db.query.companies.findMany({
+      orderBy: (company, { asc }) => asc(company.slug),
+      columns: { profile: true },
+    });
+
+    return records.map((record) =>
+      parseCompanyProfile(record.profile as Record<string, unknown>),
+    );
+  } catch (error) {
+    console.warn(
+      "Unable to load company profiles from the database; using local profiles.",
+      error,
+    );
+    return getCompaniesFromFiles();
+  }
 });
 
 export async function getCompanyProfile(slug: string) {

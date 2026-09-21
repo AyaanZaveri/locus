@@ -2,6 +2,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { JobCard } from "@/components/job-card";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import {
   Tooltip,
@@ -98,18 +99,20 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               size="icon"
             />
             <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
-              {profile.logo ? (
-                <img
-                  alt={`${profile.name} logo`}
-                  draggable={false}
-                  className="size-16 rounded-lg ring-1 ring-border/25 sm:size-20"
-                  src={profile.logo}
-                />
-              ) : (
-                <div className="flex size-16 items-center justify-center rounded-lg bg-muted text-xl font-semibold text-muted-foreground sm:size-20">
-                  {profile.name.slice(0, 1)}
-                </div>
-              )}
+              <div className="rounded-lg bg-background/60">
+                {profile.logo ? (
+                  <img
+                    alt={`${profile.name} logo`}
+                    draggable={false}
+                    className="size-16 rounded-lg ring-1 ring-border/25 sm:size-20"
+                    src={profile.logo}
+                  />
+                ) : (
+                  <div className="flex size-16 items-center justify-center rounded-lg bg-muted text-xl font-semibold text-muted-foreground sm:size-20">
+                    {profile.name.slice(0, 1)}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
@@ -251,7 +254,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                 <div className="flex flex-wrap items-center gap-1.5">
                                   {round.leadInvestors.map((investor) => (
                                     <Button
-                                      className="rounded-full border-border/50"
+                                      className="rounded-full border-border dark:border-border bg-background dark:bg-background"
                                       key={investor.name}
                                       nativeButton={!investor.website}
                                       render={
@@ -269,7 +272,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                       {investor.logo ? (
                                         <img
                                           alt=""
-                                          className="size-3 rounded-full object-contain"
+                                          className="size-3 rounded-full object-contain mr-0.5"
                                           src={investor.logo}
                                         />
                                       ) : null}
@@ -314,7 +317,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                       </AvatarFallback>
                     </Avatar>
                     <div className="min-w-0">
-                      <p className="truncate text-sm font-semibold">
+                      <p className="truncate text-sm font-medium">
                         {person.name}
                       </p>
                       <p className="truncate text-xs font-medium text-muted-foreground">
@@ -382,64 +385,14 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               <section id="jobs" className="mt-6 max-w-none scroll-mt-6">
                 <h2 className="text-lg font-semibold tracking-tight">Jobs</h2>
                 <div className="mt-3 flex flex-col gap-3">
-                  {profile.jobs.map((job, index) => {
-                    const jobKey = `${job.title}-${job.location}-${job.focus}-${job.url ?? ""}-${index}`;
-                    const card = (
-                      <article className="group flex items-center gap-3 rounded-lg border border-border bg-background p-3 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-muted motion-reduce:transition-none">
-                        {profile.logo ? (
-                          <img
-                            alt={`${profile.name} logo`}
-                            className="size-10 shrink-0 rounded-lg object-contain ring-1 ring-border/50 shadow-xs"
-                            draggable={false}
-                            src={profile.logo}
-                          />
-                        ) : (
-                          <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-muted text-sm font-semibold text-muted-foreground">
-                            {profile.name.slice(0, 1)}
-                          </div>
-                        )}
-                        <div className="min-w-0">
-                          <h3 className="flex items-center gap-1 truncate text-sm font-semibold">
-                            <span className="truncate">{job.title}</span>
-                            {job.url ? (
-                              <ArrowUpRight
-                                aria-hidden="true"
-                                className="size-4 shrink-0 scale-[0.25] text-muted-foreground opacity-0 [filter:blur(4px)] transition-[opacity,scale,filter] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-100 group-hover:opacity-100 group-hover:[filter:blur(0px)] motion-reduce:transition-none"
-                              />
-                            ) : null}
-                          </h3>
-                          <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs font-medium text-muted-foreground">
-                            <img
-                              alt=""
-                              aria-hidden="true"
-                              className="size-2.5 rounded-full"
-                              src={`https://hatscripts.github.io/circle-flags/flags/${profile.location.countryCode}.svg`}
-                            />
-                            <span>{job.location}</span>
-                            <span aria-hidden="true">·</span>
-                            <span className="text-xs font-medium text-muted-foreground">
-                              {job.focus}
-                            </span>
-                          </div>
-                        </div>
-                      </article>
-                    );
-
-                    return job.url ? (
-                      <a
-                        className="group block rounded-lg transition-transform duration-150 ease-[cubic-bezier(0.2,0,0,1)] active:scale-[0.995] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none"
-                        draggable={false}
-                        href={job.url}
-                        key={jobKey}
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        {card}
-                      </a>
-                    ) : (
-                      <div key={jobKey}>{card}</div>
-                    );
-                  })}
+                  {profile.jobs.map((job, index) => (
+                    <JobCard
+                      company={{ name: profile.name, logo: profile.logo }}
+                      countryCode={profile.location.countryCode}
+                      job={job}
+                      key={`${job.title}-${job.location}-${job.focus}-${job.url ?? ""}-${index}`}
+                    />
+                  ))}
                 </div>
               </section>
             ) : null}
@@ -451,7 +404,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             Recent activity
           </h2>
           <ol className="mt-3">
-            {profile.activity.slice(0, 5).map((item, index, activity) => {
+            {profile.activity.slice(0, 8).map((item, index, activity) => {
               const Icon = activityIcon[item.type];
               const isLast = index === activity.length - 1;
 

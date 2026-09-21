@@ -83,8 +83,8 @@
       },
       {
         "name": "AMP PBC",
-        "website": null,
-        "logo": null
+        "website": "https://www.amppublic.com",
+        "logo": "/investors/amp-pbc.png"
       }
     ],
     "rounds": [
@@ -142,8 +142,8 @@
           },
           {
             "name": "AMP PBC",
-            "website": null,
-            "logo": null
+            "website": "https://www.amppublic.com",
+            "logo": "/investors/amp-pbc.png"
           },
           {
             "name": "Andreessen Horowitz",

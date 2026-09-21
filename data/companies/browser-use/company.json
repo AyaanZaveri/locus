@@ -1,0 +1,259 @@
+{
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "tagline": "Agents that use the browser",
+  "description": "Browser Use is the open-source framework that turns website interfaces into structured text so AI agents can navigate the web without fragile vision-only approaches. Founded in 2024 by ETH Zurich graduates Magnus Müller and Gregor Zunic, it came out of Y Combinator's Winter 2025 batch and its MIT-licensed repository is one of the most-starred agent projects on GitHub, at more than 115,000 stars. The company monetises through Browser Use Cloud, a managed service offering stealth browsers, proxies, CAPTCHA solving, and a hosted agent API, and raised a $17 million seed round led by Felicis in March 2025.",
+  "website": "https://browser-use.com",
+  "foundedYear": 2024,
+  "banner": "/companies/browser-use/images/banner.jpg",
+  "logo": "/companies/browser-use/images/logo.jpg",
+  "industry": "Developer Tools",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Seed",
+  "employees": "1-10 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 17000000,
+      "currency": "USD",
+      "display": "$17M"
+    },
+    "valuation": null,
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "seed-2025",
+    "investors": [
+      {
+        "name": "Felicis",
+        "website": "https://www.felicis.com",
+        "logo": "/investors/felicis.png"
+      },
+      {
+        "name": "A Capital",
+        "website": "https://www.acapital.vc",
+        "logo": "/investors/a-capital.png"
+      },
+      {
+        "name": "Nexus Venture Partners",
+        "website": "https://www.nexusvp.com",
+        "logo": "/investors/nexus-venture-partners.png"
+      },
+      {
+        "name": "Y Combinator",
+        "website": "https://www.ycombinator.com",
+        "logo": "/investors/y-combinator.png"
+      },
+      {
+        "name": "Paul Graham",
+        "website": null
+      },
+      {
+        "name": "Liquid2 Ventures",
+        "website": "https://www.liquid2.vc",
+        "logo": "/investors/liquid2-ventures.png"
+      },
+      {
+        "name": "SV Angel",
+        "website": "https://www.svangel.com",
+        "logo": "/investors/sv-angel.png"
+      },
+      {
+        "name": "Pioneer Fund",
+        "website": "https://www.pioneerfund.vc",
+        "logo": "/investors/pioneer-fund.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "seed-2025",
+        "stage": "Seed",
+        "announcedAt": "2025-03-22",
+        "amount": {
+          "amount": 17000000,
+          "currency": "USD",
+          "display": "$17M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Felicis",
+            "website": "https://www.felicis.com",
+            "logo": "/investors/felicis.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "A Capital",
+            "website": "https://www.acapital.vc",
+            "logo": "/investors/a-capital.png"
+          },
+          {
+            "name": "Nexus Venture Partners",
+            "website": "https://www.nexusvp.com",
+            "logo": "/investors/nexus-venture-partners.png"
+          },
+          {
+            "name": "Y Combinator",
+            "website": "https://www.ycombinator.com",
+            "logo": "/investors/y-combinator.png"
+          },
+          {
+            "name": "Paul Graham",
+            "website": null
+          },
+          {
+            "name": "Liquid2 Ventures",
+            "website": "https://www.liquid2.vc",
+            "logo": "/investors/liquid2-ventures.png"
+          },
+          {
+            "name": "SV Angel",
+            "website": "https://www.svangel.com",
+            "logo": "/investors/sv-angel.png"
+          },
+          {
+            "name": "Pioneer Fund",
+            "website": "https://www.pioneerfund.vc",
+            "logo": "/investors/pioneer-fund.png"
+          }
+        ],
+        "sourceUrl": "https://browser-use.com/posts/seed-round"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Infra god",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/8BYM83A-infra-god"
+    },
+    {
+      "title": "Software Engineer",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/jDXD9an-software-engineer"
+    },
+    {
+      "title": "Founding Forward-Deployed Engineer",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/ji4Im8S-founding-forward-deployed-engineer"
+    },
+    {
+      "title": "Summer Software Engineering Intern (now and Summer 2026)",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/JwGWpEP-summer-software-engineering-intern-now-and-summer-2026"
+    },
+    {
+      "title": "Founding Engineer (ex-YC founders only)",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/rxVZd5T-founding-engineer-ex-yc-founders-only"
+    }
+  ],
+  "people": [
+    {
+      "name": "Magnus Müller",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": "/companies/browser-use/people/magnus-muller/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/magnus-mueller",
+      "x": "https://x.com/mamagnus00",
+      "sourceUrl": "https://www.ycombinator.com/companies/browser-use"
+    },
+    {
+      "name": "Gregor Zunic",
+      "role": "Co-Founder and Chief Technology Officer",
+      "image": "/companies/browser-use/people/gregor-zunic/avatar.jpg",
+      "linkedin": null,
+      "x": "https://x.com/gregpr07",
+      "sourceUrl": "https://browser-use.com/posts/bitter-lesson-browser-agents"
+    }
+  ],
+  "activity": [
+    {
+      "type": "growth",
+      "time": "Sep 20, 2026",
+      "dateTime": "2026-09-20",
+      "title": "Repository passed 115,000 GitHub stars",
+      "description": "The MIT-licensed browser-use repository reached 115,534 stars and 12,713 forks, with five roles open in San Francisco.",
+      "sourceUrl": "https://github.com/browser-use/browser-use"
+    },
+    {
+      "type": "documentation",
+      "time": "Sep 15, 2026",
+      "dateTime": "2026-09-15",
+      "title": "Published 'The Bitter Lesson of Browser Agents'",
+      "description": "CTO Gregor Zunic traced the harness evolution from fixed actions to code actions to raw CDP, and from the Agent SDK in January 2026 to the Browser Harness in April 2026.",
+      "sourceUrl": "https://browser-use.com/posts/bitter-lesson-browser-agents"
+    },
+    {
+      "type": "product",
+      "time": "Sep 4, 2026",
+      "dateTime": "2026-09-04",
+      "title": "Released versions 0.13.9 and 0.13.10",
+      "description": "The releases made BU-2.0 the default, shipped Browser Harness 0.1.12 and 0.1.13, pinned dependencies, and updated the MCP SDK to 2.1.1.",
+      "sourceUrl": "https://github.com/browser-use/browser-use/releases"
+    },
+    {
+      "type": "product",
+      "time": "Aug 24, 2026",
+      "dateTime": "2026-08-24",
+      "title": "Sped up sessions and fixed BYOK billing",
+      "description": "Single-request v4 session loads, a fix for a BYOK cache-read overcharge, and reliability improvements.",
+      "sourceUrl": "https://browser-use.com/changelog"
+    },
+    {
+      "type": "product",
+      "time": "Aug 17, 2026",
+      "dateTime": "2026-08-17",
+      "title": "Added session sharing and X402 pricing",
+      "description": "Public session links, a redesigned usage page, and X402 top-ups from $0.01 to $100.",
+      "sourceUrl": "https://browser-use.com/changelog"
+    },
+    {
+      "type": "people",
+      "time": "Jul 31, 2026",
+      "dateTime": "2026-07-31",
+      "title": "Magnus Müller featured in a long-form interview",
+      "description": "A video interview covered how the founder paused his master's degree and built an 80,000-star repository.",
+      "sourceUrl": "https://www.youtube.com/watch?v=-L3CQClT4MY"
+    },
+    {
+      "type": "product",
+      "time": "Apr 3, 2026",
+      "dateTime": "2026-04-03",
+      "title": "Made Browser Use Cloud free to start",
+      "description": "The cloud product moved to a free tier with simplified pricing.",
+      "sourceUrl": "https://browser-use.com/changelog/3-4-2026"
+    },
+    {
+      "type": "news",
+      "time": "Apr 23, 2025",
+      "dateTime": "2025-04-23",
+      "title": "Remote code execution found in public web-ui instances",
+      "description": "Kudelski Security documented RCE on exposed browser-use/web-ui agent instances, then at roughly 12,000 stars.",
+      "sourceUrl": "https://kudelskisecurity.com/research/getting-rce-on-browser-use-web-ui-ai-agent-instances"
+    },
+    {
+      "type": "funding",
+      "time": "Mar 22, 2025",
+      "dateTime": "2025-03-22",
+      "title": "Raised a $17M seed led by Felicis",
+      "description": "Browser Use announced a $17 million seed led by Felicis with A Capital, Nexus Ventures, Y Combinator, Paul Graham, Liquid2, SV Angel, and Pioneer Fund, citing 50,000 GitHub stars and 15,000 developers.",
+      "sourceUrl": "https://browser-use.com/posts/seed-round"
+    },
+    {
+      "type": "news",
+      "time": "Mar 12, 2025",
+      "dateTime": "2025-03-12",
+      "title": "Manus virality drove a 5x jump in downloads",
+      "description": "The viral launch of Manus quintupled Browser Use daily downloads from 5,000 to 28,000 between March 3 and 10, making it GitHub's biggest trending repository.",
+      "sourceUrl": "https://techcrunch.com/2025/03/12/browser-use-one-of-the-tools-powering-manus-is-also-going-viral/"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "slug": "shopify",
+  "name": "Shopify",
+  "tagline": "Make commerce better for everyone",
+  "description": "Shopify is a Canadian public commerce company that provides cloud-based, multi-channel commerce infrastructure for merchants of all sizes online, in-store, and through social and AI surfaces. Founded in 2006 in Ottawa by Tobias Lütke, Daniel Weinand, and Scott Lake, it powers millions of businesses in more than 175 countries and reported $378.4 billion in GMV and $11.6 billion in revenue for 2025. Shopify is listed on the NYSE and TSX and has been extending commerce into AI assistants through its Catalog, Agentic Storefronts, and Shop Pay products, alongside a fintech business spanning payments, capital, and balance.",
+  "website": "https://www.shopify.com",
+  "foundedYear": 2006,
+  "banner": "/companies/shopify/images/banner.jpg",
+  "logo": "/companies/shopify/images/logo.png",
+  "industry": "Fintech",
+  "location": {
+    "label": "Ottawa, Ontario",
+    "countryCode": "ca"
+  },
+  "stage": "Public",
+  "employees": "7,600 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 966272500,
+      "currency": "USD",
+      "display": "$966.3M"
+    },
+    "valuation": {
+      "amount": 165330000000,
+      "currency": "USD",
+      "display": "$165.3B"
+    },
+    "annualRevenue": {
+      "amount": 11556000000,
+      "currency": "USD",
+      "display": "$11.56B"
+    }
+  },
+  "funding": {
+    "latestRoundId": "follow-on-2019",
+    "investors": [
+      {
+        "name": "Morgan Stanley",
+        "website": "https://www.morganstanley.com",
+        "logo": "/investors/morgan-stanley.png"
+      },
+      {
+        "name": "Credit Suisse",
+        "website": "https://www.credit-suisse.com",
+        "logo": "/investors/credit-suisse.png"
+      },
+      {
+        "name": "RBC Capital Markets",
+        "website": "https://www.rbccm.com",
+        "logo": "/investors/rbc-capital-markets.png"
+      },
+      {
+        "name": "OMERS Ventures",
+        "website": "https://www.omersventures.com",
+        "logo": "/investors/omers-ventures.png"
+      },
+      {
+        "name": "Insight Venture Partners",
+        "website": "https://www.insightpartners.com",
+        "logo": "/investors/insight-venture-partners.png"
+      },
+      {
+        "name": "Bessemer Venture Partners",
+        "website": "https://www.bvp.com",
+        "logo": "/investors/bessemer-venture-partners.png"
+      },
+      {
+        "name": "FirstMark Capital",
+        "website": "https://www.firstmarkcap.com",
+        "logo": "/investors/firstmark-capital.png"
+      },
+      {
+        "name": "Georgian Partners",
+        "website": "https://www.georgian.io",
+        "logo": "/investors/georgian.png"
+      },
+      {
+        "name": "Felicis",
+        "website": "https://www.felicis.com",
+        "logo": "/investors/felicis.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "follow-on-2019",
+        "stage": "Follow-on Offering",
+        "announcedAt": "2019-09-16",
+        "amount": {
+          "amount": 693737500,
+          "currency": "USD",
+          "display": "$693.7M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [],
+        "sourceUrl": "https://www.shopify.com/news/shopify-prices-offering-of-class-a-subordinate-voting-shares-2"
+      },
+      {
+        "id": "ipo-2015",
+        "stage": "IPO",
+        "announcedAt": "2015-05-20",
+        "amount": {
+          "amount": 150535000,
+          "currency": "USD",
+          "display": "$150.5M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [
+          {
+            "name": "Morgan Stanley",
+            "website": "https://www.morganstanley.com",
+            "logo": "/investors/morgan-stanley.png"
+          },
+          {
+            "name": "Credit Suisse",
+            "website": "https://www.credit-suisse.com",
+            "logo": "/investors/credit-suisse.png"
+          },
+          {
+            "name": "RBC Capital Markets",
+            "website": "https://www.rbccm.com",
+            "logo": "/investors/rbc-capital-markets.png"
+          }
+        ],
+        "sourceUrl": "https://www.shopify.com/news/shopify-announces-closing-of-initial-public-offering-and-exercise-of-underwriters-over-allotment-option"
+      },
+      {
+        "id": "series-c-2013",
+        "stage": "Series C",
+        "announcedAt": "2013-12-12",
+        "amount": {
+          "amount": 100000000,
+          "currency": "USD",
+          "display": "$100M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "OMERS Ventures",
+            "website": "https://www.omersventures.com",
+            "logo": "/investors/omers-ventures.png"
+          },
+          {
+            "name": "Insight Venture Partners",
+            "website": "https://www.insightpartners.com",
+            "logo": "/investors/insight-venture-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Bessemer Venture Partners",
+            "website": "https://www.bvp.com",
+            "logo": "/investors/bessemer-venture-partners.png"
+          },
+          {
+            "name": "FirstMark Capital",
+            "website": "https://www.firstmarkcap.com",
+            "logo": "/investors/firstmark-capital.png"
+          },
+          {
+            "name": "Georgian Partners",
+            "website": "https://www.georgian.io",
+            "logo": "/investors/georgian.png"
+          },
+          {
+            "name": "Felicis",
+            "website": "https://www.felicis.com",
+            "logo": "/investors/felicis.png"
+          }
+        ],
+        "sourceUrl": "https://www.shopify.com/news/shopify-announces-100-million-funding"
+      },
+      {
+        "id": "series-b-2011",
+        "stage": "Series B",
+        "announcedAt": "2011-10-17",
+        "amount": {
+          "amount": 15000000,
+          "currency": "USD",
+          "display": "$15M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [
+          {
+            "name": "Bessemer Venture Partners",
+            "website": "https://www.bvp.com",
+            "logo": "/investors/bessemer-venture-partners.png"
+          },
+          {
+            "name": "FirstMark Capital",
+            "website": "https://www.firstmarkcap.com",
+            "logo": "/investors/firstmark-capital.png"
+          },
+          {
+            "name": "Felicis",
+            "website": "https://www.felicis.com",
+            "logo": "/investors/felicis.png"
+          },
+          {
+            "name": "Georgian Partners",
+            "website": "https://www.georgian.io",
+            "logo": "/investors/georgian.png"
+          }
+        ],
+        "sourceUrl": "https://www.shopify.com/news/shopify-announces-15-million-series-b-funding"
+      },
+      {
+        "id": "series-a-2010",
+        "stage": "Series A",
+        "announcedAt": "2010-12-13",
+        "amount": {
+          "amount": 7000000,
+          "currency": "USD",
+          "display": "$7M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Bessemer Venture Partners",
+            "website": "https://www.bvp.com",
+            "logo": "/investors/bessemer-venture-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "FirstMark Capital",
+            "website": "https://www.firstmarkcap.com",
+            "logo": "/investors/firstmark-capital.png"
+          },
+          {
+            "name": "Felicis",
+            "website": "https://www.felicis.com",
+            "logo": "/investors/felicis.png"
+          }
+        ],
+        "sourceUrl": "https://www.shopify.com/news/shopify-announces-7-million-series-a-funding"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Senior Account Executive - Mid-Market, New Business",
+      "location": "Remote - Americas",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-account-executive-mid-market-new-business_e58d6028-39ee-42b4-974d-5a2c8752e477"
+    },
+    {
+      "title": "Account Executive, SMB, German-speaking",
+      "location": "Remote - Ireland, UK",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/account-executive-smb-german-speaking_69bdefc2-b2f5-4277-996b-7b677bcf1c0a"
+    },
+    {
+      "title": "Enterprise Account Executive",
+      "location": "Remote",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/enterprise-account-executive_b9cc007a-750f-4093-8191-e61f85c7c787"
+    },
+    {
+      "title": "Large Account Executive",
+      "location": "Remote",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/large-account-executive_52ff1d80-69e7-4d93-a0ba-db84b20ce27a"
+    },
+    {
+      "title": "Lead Account Executive, Large Accounts - German-speaking",
+      "location": "Remote - Germany, UK, Ireland",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/lead-account-executive-large-accounts-german-speaking_5f95adcc-b190-4729-8e41-e3486fcbfa1f"
+    },
+    {
+      "title": "Senior Account Executive, B2B Wholesale - German-speaking",
+      "location": "Remote - Spain, UK, Ireland, Poland",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-account-executive-b2b-wholesale-german-speaking_e097982e-842a-46c0-8593-db41c80f2224"
+    },
+    {
+      "title": "Senior Account Executive, Large Accounts - Italian-speaking",
+      "location": "Remote - Italy",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-account-executive-large-accounts-italian-speaking_fa99c40e-f923-48ad-93b7-039dec125c34"
+    },
+    {
+      "title": "Senior Enterprise Account Executive",
+      "location": "Remote",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-enterprise-account-executive_9e809ae0-7377-409f-8632-b0e3ab250ca2"
+    },
+    {
+      "title": "Senior Enterprise Account Executive - Spanish Speaking",
+      "location": "Remote - Spain",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-enterprise-account-executive-spanish-speaking_cbefc12f-bbf0-4824-9438-fa69af41b36b"
+    },
+    {
+      "title": "Senior Account Executive, Mid Market, GCR",
+      "location": "Remote - Singapore",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-account-executive-mid-market-gcr_6707c6b7-53c7-4f76-bc21-bc6e4ba32da0"
+    },
+    {
+      "title": "Senior Account Executive, Mid Market, GCR",
+      "location": "Remote",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/senior-account-executive-mid-market-gcr_2ea61328-1e73-4143-8f4f-b0176daa0958"
+    },
+    {
+      "title": "Sales Development Representative",
+      "location": "Remote - Japan",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/sales-development-representative_c124c903-ba6e-4045-9d54-e048a2a9e8b5"
+    },
+    {
+      "title": "Sales Manager, New Business",
+      "location": "Remote - UK",
+      "focus": "Sales",
+      "url": "https://www.shopify.com/careers/sales-manager-new-business_5ee5ea46-4897-45b9-9da1-e5a3f1b171fd"
+    },
+    {
+      "title": "Senior Solution Engineer, Mid Market",
+      "location": "Remote",
+      "focus": "Engineering",
+      "url": "https://www.shopify.com/careers/senior-solution-engineer-mid-market_66782489-583f-4df1-bda6-b20aa34351d2"
+    },
+    {
+      "title": "Senior Solutions Engineer",
+      "location": "Remote - ANZ",
+      "focus": "Engineering",
+      "url": "https://www.shopify.com/careers/senior-solutions-engineer_8500a774-8905-4fc6-98bd-b7f812660496"
+    },
+    {
+      "title": "Manager, Enterprise Solution Engineering",
+      "location": "Remote",
+      "focus": "Engineering",
+      "url": "https://www.shopify.com/careers/manager-enterprise-solution-engineering_40884709-19b6-49dc-a42f-cee70306b07b"
+    },
+    {
+      "title": "Partner Solutions Engineer, Commercial",
+      "location": "Remote",
+      "focus": "Engineering",
+      "url": "https://www.shopify.com/careers/partner-solutions-engineer-commercial_33c0656f-c0af-413b-a54c-45034be3350a"
+    },
+    {
+      "title": "Partner Solution Architect, Global Payments",
+      "location": "Remote",
+      "focus": "Engineering",
+      "url": "https://www.shopify.com/careers/partner-solution-architect-global-payments_9fa931fa-5591-4bde-a55b-a2683520ce5c"
+    },
+    {
+      "title": "Partner Solutions Architect, Cross-Border & Tax",
+      "location": "Remote",
+      "focus": "Engineering",
+      "url": "https://www.shopify.com/careers/partner-solutions-architect-cross-border-tax_fb2e2e18-ca4b-4323-8974-a479fd5618b7"
+    },
+    {
+      "title": "Senior Learning & Development Specialist, Support",
+      "location": "Remote - Canada",
+      "focus": "Operations",
+      "url": "https://www.shopify.com/careers/senior-learning-development-specialist-support_eab1ca64-ebfb-4f8a-94c3-5eb760eeac6f"
+    },
+    {
+      "title": "Senior Lead, Enterprise Demand & ABM",
+      "location": "Remote",
+      "focus": "Marketing",
+      "url": "https://www.shopify.com/careers/senior-lead-enterprise-demand-abm_13402618-643e-41b0-b866-d8748a1c130e"
+    },
+    {
+      "title": "Associate General Counsel, Product (Fintech)",
+      "location": "Remote",
+      "focus": "Legal",
+      "url": "https://www.shopify.com/careers/associate-general-counsel-product-fintech_8441801f-1a0e-42c6-8838-cc15af655923"
+    }
+  ],
+  "people": [
+    {
+      "name": "Tobias Lütke",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": "/companies/shopify/people/tobi-lutke/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/tobiaslutke",
+      "x": "https://x.com/tobi",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm"
+    },
+    {
+      "name": "Harley Finkelstein",
+      "role": "President",
+      "image": "/companies/shopify/people/harley-finkelstein/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/harleyf",
+      "x": "https://x.com/harleyf",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm"
+    },
+    {
+      "name": "Mikhail Parakhin",
+      "role": "Chief Technology Officer",
+      "image": "/companies/shopify/people/mikhail-parakhin/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/mikhail-parakhin",
+      "x": "https://x.com/MParakhin",
+      "sourceUrl": "https://www.shopify.com/news/mikhail-parakhin-cto"
+    },
+    {
+      "name": "Jeff Hoffmeister",
+      "role": "Chief Financial Officer",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/jeff-hoffmeister-2b028310",
+      "x": null,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm"
+    },
+    {
+      "name": "Jessica Hertz",
+      "role": "Chief Operating Officer",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/jessicarhertz",
+      "x": null,
+      "sourceUrl": "https://betakit.com/shopify-promotes-jess-hertz-to-coo-as-chief-revenue-officer-departs/"
+    },
+    {
+      "name": "Vanessa Lee",
+      "role": "VP of Product, Core Product",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/vlaurenlee",
+      "x": null,
+      "sourceUrl": "https://www.shopify.com/news/winter-26-edition-agentic-storefronts"
+    },
+    {
+      "name": "Farhan Thawar",
+      "role": "Head of Engineering",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/fnthawar",
+      "x": null,
+      "sourceUrl": null
+    }
+  ],
+  "activity": [
+    {
+      "type": "growth",
+      "time": "Aug 5, 2026",
+      "dateTime": "2026-08-05",
+      "title": "Reported Q2 2026 revenue growth of 34%",
+      "description": "Shopify reported $3.58 billion in Q2 revenue, up 34% year over year, with an 18% free cash flow margin and guidance for low-thirties percent revenue growth in Q3.",
+      "sourceUrl": "https://www.shopify.com/news/shopify-q2-2026-financial-results"
+    },
+    {
+      "type": "product",
+      "time": "Jul 31, 2026",
+      "dateTime": "2026-07-31",
+      "title": "Shipped the July 2026 Retail Roundup for POS",
+      "description": "POS versions 11.10 and 11.11 added cart sharing, nearby-device authentication, cash rounding by market, a Printing API, and unified receipts.",
+      "sourceUrl": "https://www.shopify.com/blog/shopify-retail-roundup-july-2026"
+    },
+    {
+      "type": "product",
+      "time": "Jun 17, 2026",
+      "dateTime": "2026-06-17",
+      "title": "Released the Spring '26 Edition with 150+ updates",
+      "description": "The Spring '26 Edition made Catalog and UCP default-on, added an Agentic Storefronts command centre and Sidekick extensions with Pulse, and expanded Shop Pay and POS capabilities.",
+      "sourceUrl": "https://www.shopify.com/news/spring-26-edition-merchant"
+    },
+    {
+      "type": "people",
+      "time": "Jun 16, 2026",
+      "dateTime": "2026-06-16",
+      "title": "Held its 2026 annual general meeting",
+      "description": "Shareholders elected directors, appointed the auditor, and approved say-on-pay at Shopify's 2026 AGM.",
+      "sourceUrl": "https://www.shopify.com/news/2026-agm-results"
+    },
+    {
+      "type": "funding",
+      "time": "Jun 2, 2026",
+      "dateTime": "2026-06-02",
+      "title": "Expanded its share buyback by $3B",
+      "description": "Shopify's board authorized an additional $3 billion Class A share repurchase, bringing the total program to $5 billion.",
+      "sourceUrl": "https://www.reuters.com/business/shopify-expands-share-buyback-program-by-3-billion-2026-06-02/"
+    },
+    {
+      "type": "growth",
+      "time": "May 5, 2026",
+      "dateTime": "2026-05-05",
+      "title": "Reported Q1 2026 growth and $100B+ GMV",
+      "description": "Shopify posted 34% year-over-year revenue growth, a 15% free cash flow margin, and more than $100 billion in quarterly GMV.",
+      "sourceUrl": "https://www.shopify.com/news/shopify-q1-2026-financial-results"
+    },
+    {
+      "type": "product",
+      "time": "Mar 24, 2026",
+      "dateTime": "2026-03-24",
+      "title": "Opened selling in AI chats through Agentic Storefronts",
+      "description": "Shopify made merchant products discoverable and purchasable by default in ChatGPT, Microsoft Copilot, and Google AI Mode and Gemini, and made its Agentic plan generally available for non-Shopify brands.",
+      "sourceUrl": "https://www.shopify.com/news/agentic-commerce-momentum"
+    },
+    {
+      "type": "growth",
+      "time": "Feb 11, 2026",
+      "dateTime": "2026-02-11",
+      "title": "Reported Q4 and full-year 2025 results",
+      "description": "Shopify reported $11.6 billion in 2025 revenue, up 30%, a 17% free cash flow margin, and launched a $2 billion share repurchase program.",
+      "sourceUrl": "https://www.shopify.com/news/shopify-q4-2025-financial-results"
+    },
+    {
+      "type": "product",
+      "time": "Jan 9, 2026",
+      "dateTime": "2026-01-09",
+      "title": "Detailed the Sidekick re-architecture",
+      "description": "VP of Product Vanessa Lee described Sidekick's shift from guidance to execution, part of the Winter '26 release with Pulse and Flow context.",
+      "sourceUrl": "https://stackoverflow.blog/2026/01/09/every-ecommerce-hero-needs-a-sidekick/"
+    },
+    {
+      "type": "people",
+      "time": "Dec 17, 2025",
+      "dateTime": "2025-12-17",
+      "title": "Head of Core Product Glen Coates left for OpenAI",
+      "description": "Shopify's VP and Head of Core Product departed to lead OpenAI's app platform, with Vanessa Lee leading product.",
+      "sourceUrl": "https://betakit.com/shopifys-head-of-core-product-leaves-for-openai/"
+    },
+    {
+      "type": "product",
+      "time": "Dec 10, 2025",
+      "dateTime": "2025-12-10",
+      "title": "Launched Agentic Storefronts in the Winter '26 Edition",
+      "description": "The Winter '26 'RenAIssance' release introduced one-setup syndication of merchant catalogs to ChatGPT, Perplexity, and Copilot with merchant-of-record checkout, plus a Sidekick upgrade.",
+      "sourceUrl": "https://www.shopify.com/news/winter-26-edition-agentic-storefronts"
+    },
+    {
+      "type": "growth",
+      "time": "Nov 4, 2025",
+      "dateTime": "2025-11-04",
+      "title": "Reported Q3 2025 results with 32% growth",
+      "description": "Shopify beat expectations with 32% year-over-year revenue and GMV growth, B2B up 84%, and strong international performance.",
+      "sourceUrl": "https://last10k.com/sec-filings/shop/0001594805-25-000088.htm"
+    },
+    {
+      "type": "people",
+      "time": "Oct 9, 2025",
+      "dateTime": "2025-10-09",
+      "title": "Promoted Jess Hertz to COO as the CRO departed",
+      "description": "General Counsel Jess Hertz became Chief Operating Officer and the commercial organisation was restructured as Chief Revenue Officer Bobby Morrison left.",
+      "sourceUrl": "https://betakit.com/shopify-promotes-jess-hertz-to-coo-as-chief-revenue-officer-departs/"
+    },
+    {
+      "type": "product",
+      "time": "Sep 29, 2025",
+      "dateTime": "2025-09-29",
+      "title": "Enabled OpenAI Instant Checkout with Shopify",
+      "description": "OpenAI launched in-chat single-item checkout with Shopify and Etsy and open-sourced an agnostic commerce protocol with Stripe, with more than one million Shopify merchants to follow.",
+      "sourceUrl": "https://www.reuters.com/world/americas/openai-partners-with-etsy-shopify-chatgpt-checkout-2025-09-29/"
+    },
+    {
+      "type": "people",
+      "time": "Sep 10, 2025",
+      "dateTime": "2025-09-10",
+      "title": "COO Kaz Nejatian departed to become Opendoor's CEO",
+      "description": "After six years at Shopify and three as COO, Kaz Nejatian left to lead Opendoor, with the executive team absorbing his duties.",
+      "sourceUrl": "https://www.thestar.com/business/shopify-coo-kaz-nejatian-departing-company-at-end-of-week-to-join-opendoor-as-ceo/article_485b2cc2-dc78-5bf9-870b-7f2b483922c7.html"
+    }
+  ]
+}

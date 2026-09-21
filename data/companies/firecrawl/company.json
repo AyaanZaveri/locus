@@ -1,0 +1,437 @@
+{
+  "slug": "firecrawl",
+  "name": "Firecrawl",
+  "tagline": "The web data API to search, scrape, and interact at scale",
+  "description": "Firecrawl provides a single API that searches, scrapes, crawls, and interacts with the live web, turning any source into clean Markdown or structured data that AI agents can use. Founded in 2022 as part of Y Combinator's Summer 2022 batch by Caleb Peffer, Eric Ciarla, and Nicolas Silberstein Camara, it maintains one of the most-starred open-source crawling projects on GitHub and reports more than 1.25 million developers and 150,000 companies using it. Firecrawl raised a $14.5M Series A led by Nexus Venture Partners in August 2025 and, per an SEC Form D filed in September 2026, sold a further $82 million in preferred stock to seven investors.",
+  "website": "https://www.firecrawl.dev",
+  "foundedYear": 2022,
+  "banner": "/companies/firecrawl/images/banner.png",
+  "logo": "/companies/firecrawl/images/logo.png",
+  "industry": "Web Search",
+  "location": {
+    "label": "San Francisco, California",
+    "countryCode": "us"
+  },
+  "stage": "Series A",
+  "employees": "11-50 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 96563463,
+      "currency": "USD",
+      "display": "$96.6M"
+    },
+    "valuation": null,
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "preferred-2026",
+    "investors": [
+      {
+        "name": "Nexus Venture Partners",
+        "website": "https://www.nexusvp.com",
+        "logo": "/investors/nexus-venture-partners.png"
+      },
+      {
+        "name": "Y Combinator",
+        "website": "https://www.ycombinator.com",
+        "logo": "/investors/y-combinator.png"
+      },
+      {
+        "name": "Zapier",
+        "website": "https://zapier.com",
+        "logo": "/investors/zapier.png"
+      },
+      {
+        "name": "Tobias Lütke",
+        "website": null
+      },
+      {
+        "name": "Abhinav Asthana",
+        "website": null
+      },
+      {
+        "name": "Matt McClure",
+        "website": null
+      }
+    ],
+    "rounds": [
+      {
+        "id": "preferred-2026",
+        "stage": "Undisclosed",
+        "announcedAt": "2026-09-14",
+        "amount": {
+          "amount": 82063463,
+          "currency": "USD",
+          "display": "$82.1M"
+        },
+        "valuation": null,
+        "leadInvestors": [],
+        "investors": [],
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2072161/000207216126000001/primary_doc.xml"
+      },
+      {
+        "id": "series-a-2025",
+        "stage": "Series A",
+        "announcedAt": "2025-08-19",
+        "amount": {
+          "amount": 14500000,
+          "currency": "USD",
+          "display": "$14.5M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Nexus Venture Partners",
+            "website": "https://www.nexusvp.com",
+            "logo": "/investors/nexus-venture-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Y Combinator",
+            "website": "https://www.ycombinator.com",
+            "logo": "/investors/y-combinator.png"
+          },
+          {
+            "name": "Zapier",
+            "website": "https://zapier.com",
+            "logo": "/investors/zapier.png"
+          },
+          {
+            "name": "Tobias Lütke",
+            "website": null
+          },
+          {
+            "name": "Abhinav Asthana",
+            "website": null
+          },
+          {
+            "name": "Matt McClure",
+            "website": null
+          }
+        ],
+        "sourceUrl": "https://www.firecrawl.dev/blog/firecrawl-v2-series-a-announcement"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "Forward Deployed Engineer - Revenue",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/bda40f47-a69b-44d4-ac1a-3f86f20d802d"
+    },
+    {
+      "title": "Technical BDR",
+      "location": "San Francisco, CA",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/firecrawl/4d095906-803f-4987-a5a4-941e3f1a1600"
+    },
+    {
+      "title": "Head of Brand",
+      "location": "San Francisco, CA",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/firecrawl/8e835654-7765-48c0-925e-4a088635514f"
+    },
+    {
+      "title": "Head of Growth Marketing",
+      "location": "San Francisco, CA",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/firecrawl/252206c1-56a2-4598-abef-d2ed9e2295de"
+    },
+    {
+      "title": "Senior Growth Engineer",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/fe6ab2c9-0528-4751-a6dd-67467e90fc0e"
+    },
+    {
+      "title": "Research Engineer - Evals",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Research",
+      "url": "https://jobs.ashbyhq.com/firecrawl/25092c0e-9a32-4191-af79-050738213704"
+    },
+    {
+      "title": "Content Marketer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/firecrawl/27a38804-9e98-49bb-8a43-b8dddea1ae15"
+    },
+    {
+      "title": "Senior Commercial & Product Counsel",
+      "location": "San Francisco, CA",
+      "focus": "Legal",
+      "url": "https://jobs.ashbyhq.com/firecrawl/0995d222-ec66-4542-b9cc-3914c5d080c6"
+    },
+    {
+      "title": "Product Engineer - Scrape",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/83249105-3b1e-41fc-a991-4fd41670ffca"
+    },
+    {
+      "title": "Backend Infrastructure Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/6840bbee-aae5-4846-97a2-ec2e764ee75b"
+    },
+    {
+      "title": "Growth Engineer - Product Growth",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/61f134a9-d91f-4b7b-a35d-14c60916454e"
+    },
+    {
+      "title": "Search Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/762b4426-b4aa-4377-96d3-51f40c59cbf7"
+    },
+    {
+      "title": "In-House Technical Recruiter",
+      "location": "San Francisco, CA",
+      "focus": "People",
+      "url": "https://jobs.ashbyhq.com/firecrawl/8bf4500f-7064-42c2-858f-89f6f67cb7d6"
+    },
+    {
+      "title": "Sales Engineer",
+      "location": "San Francisco, CA",
+      "focus": "Sales",
+      "url": "https://jobs.ashbyhq.com/firecrawl/d35c74ec-bd98-485f-81e7-663cfe2d5dc3"
+    },
+    {
+      "title": "Implementation Specialist",
+      "location": "San Francisco, CA",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/firecrawl/f590ffb6-f88e-4a37-af0d-67145b9dda2c"
+    },
+    {
+      "title": "Success Engineer",
+      "location": "San Francisco, CA",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/f2e1fa1b-8186-49be-848a-20b1216820ab"
+    },
+    {
+      "title": "Social Video Producer",
+      "location": "San Francisco, CA",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/firecrawl/42dfd256-b986-44e6-984b-e1fff1548563"
+    },
+    {
+      "title": "Product Engineer - Marketplace",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/5dd71524-6f88-453a-94a0-9521351981ab"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/72f9dc1d-65db-48c9-b3d9-c6ccdb997006"
+    },
+    {
+      "title": "Cloud DevOps Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/fe538f2b-7dd5-4d8d-941e-f8014a911652"
+    },
+    {
+      "title": "Product Engineer - Parse",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/4fed8a26-d8e1-47b1-9283-59e547e6e02a"
+    },
+    {
+      "title": "Enterprise Solutions Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/30856716-e88c-48ba-8d55-efaec9c0713a"
+    },
+    {
+      "title": "Product Engineer - Agent",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/84c209e5-d65c-4b27-b42f-c53507461acd"
+    },
+    {
+      "title": "Technical Compliance Program Manager",
+      "location": "San Francisco, CA",
+      "focus": "Operations",
+      "url": "https://jobs.ashbyhq.com/firecrawl/d96c0160-113d-441a-8e90-92d1bd28591a"
+    },
+    {
+      "title": "Commercial Counsel",
+      "location": "San Francisco, CA | Toronto, Canada (Preferred) | Remote (Americas)",
+      "focus": "Legal",
+      "url": "https://jobs.ashbyhq.com/firecrawl/2bd672ee-34b1-4702-9432-36ae00bad762"
+    },
+    {
+      "title": "Agent Experience Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/a81209e5-5e75-4ac8-905a-0df49891d61b"
+    },
+    {
+      "title": "Open Source Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/095c7ce7-5b17-432a-9ec6-83a7ca0060d1"
+    },
+    {
+      "title": "Legal Operations Manager",
+      "location": "San Francisco, CA | Toronto, Canada (Preferred) | Remote (Americas)",
+      "focus": "Legal",
+      "url": "https://jobs.ashbyhq.com/firecrawl/b1db13d1-402c-40e9-95fa-4ac67bacb078"
+    },
+    {
+      "title": "General Counsel",
+      "location": "San Francisco, CA",
+      "focus": "Legal",
+      "url": "https://jobs.ashbyhq.com/firecrawl/0c635f7b-559b-4bca-930a-fcac4a9c4a7d"
+    },
+    {
+      "title": "Web Automation Engineer",
+      "location": "San Francisco, CA | Toronto, Canada",
+      "focus": "Engineering",
+      "url": "https://jobs.ashbyhq.com/firecrawl/5a7ce67e-0b71-428a-b774-e7c05e7841b6"
+    },
+    {
+      "title": "Events Producer",
+      "location": "San Francisco, CA",
+      "focus": "Marketing",
+      "url": "https://jobs.ashbyhq.com/firecrawl/5b4bfd81-b3ef-417b-888d-c350270d81d2"
+    }
+  ],
+  "people": [
+    {
+      "name": "Caleb Peffer",
+      "role": "Co-Founder and Chief Executive Officer",
+      "image": "/companies/firecrawl/people/caleb-peffer/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/caleb-peffer",
+      "x": "https://x.com/CalebPeffer",
+      "sourceUrl": "https://www.firecrawl.dev/about"
+    },
+    {
+      "name": "Eric Ciarla",
+      "role": "Co-Founder and Chief Growth Officer",
+      "image": "/companies/firecrawl/people/eric-ciarla/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/eric-ciarla",
+      "x": "https://x.com/ericciarla",
+      "sourceUrl": "https://www.firecrawl.dev/about"
+    },
+    {
+      "name": "Nicolas Silberstein Camara",
+      "role": "Co-Founder and Chief Technology Officer",
+      "image": "/companies/firecrawl/people/nicolas-camara/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/nicolas-silberstein-camara",
+      "x": "https://x.com/nickscamara_",
+      "sourceUrl": "https://www.firecrawl.dev/about"
+    }
+  ],
+  "activity": [
+    {
+      "type": "product",
+      "time": "Aug 20, 2026",
+      "dateTime": "2026-08-20",
+      "title": "Launched the Developer Index",
+      "description": "A keyless developer index of more than 70 million artifacts exposed through a dedicated /search/developer endpoint.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "Jul 22, 2026",
+      "dateTime": "2026-07-22",
+      "title": "Shipped a new search relevance model",
+      "description": "Firecrawl's rebuilt search model scored 94.7% on SimpleQA while using 10x fewer tokens.",
+      "sourceUrl": "https://www.firecrawl.dev/blog/introducing-our-most-accurate-search-yet"
+    },
+    {
+      "type": "product",
+      "time": "Jul 1, 2026",
+      "dateTime": "2026-07-01",
+      "title": "Extended /monitor to web-scale watching",
+      "description": "A query-and-goal web watcher that tracks changes across the web rather than a single URL.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "Jun 16, 2026",
+      "dateTime": "2026-06-16",
+      "title": "Added the Research Index",
+      "description": "A research corpus of more than 3 million arXiv papers reaching 53.3% recall on arXivQA.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "May 26, 2026",
+      "dateTime": "2026-05-26",
+      "title": "Released /monitor for URL change tracking",
+      "description": "Webhook-based tracking of changes to any monitored URL.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "May 15, 2026",
+      "dateTime": "2026-05-15",
+      "title": "Shipped v2.10 with Lockdown Mode",
+      "description": "Added the /parse endpoint alongside Lockdown Mode and Go, Ruby, PHP, and .NET SDKs.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "Apr 28, 2026",
+      "dateTime": "2026-04-28",
+      "title": "Launched the /parse endpoint",
+      "description": "A Rust-based engine that converts PDF, DOCX, and XLSX files to Markdown about five times faster.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "Apr 10, 2026",
+      "dateTime": "2026-04-10",
+      "title": "Shipped v2.9 with /interact",
+      "description": "Browser interaction, Question and Audio formats, and Java and Elixir SDKs.",
+      "sourceUrl": "https://www.firecrawl.dev/changelog"
+    },
+    {
+      "type": "product",
+      "time": "Feb 18, 2026",
+      "dateTime": "2026-02-18",
+      "title": "Introduced Browser Sandbox",
+      "description": "Managed isolated browsers with Playwright and an Agent Browser for agentic web tasks.",
+      "sourceUrl": "https://www.firecrawl.dev/blog/introducing-browser-sandbox"
+    },
+    {
+      "type": "funding",
+      "time": "Aug 19, 2025",
+      "dateTime": "2025-08-19",
+      "title": "Raised a $14.5M Series A led by Nexus",
+      "description": "Firecrawl announced a $14.5 million Series A led by Nexus Venture Partners with participation from Y Combinator, Zapier, Tobias Lütke, Abhinav Asthana, and Matt McClure, bringing total funding at the time to $16.2 million.",
+      "sourceUrl": "https://www.firecrawl.dev/blog/firecrawl-v2-series-a-announcement"
+    },
+    {
+      "type": "product",
+      "time": "Apr 19, 2025",
+      "dateTime": "2025-04-19",
+      "title": "Upgraded the Firecrawl MCP server",
+      "description": "Launch Week III Day 6 brought a substantially upgraded Model Context Protocol server for agent integrations.",
+      "sourceUrl": "https://www.firecrawl.dev/blog/launch-week-iii-day-6-firecrawl-mcp"
+    },
+    {
+      "type": "product",
+      "time": "Apr 15, 2025",
+      "dateTime": "2025-04-15",
+      "title": "Announced FIRE-1, a web-action agent",
+      "description": "Launch Week III Day 2 introduced FIRE-1, an agent that plans and executes actions on web pages.",
+      "sourceUrl": "https://www.firecrawl.dev/blog/launch-week-iii-day-2-announcing-fire-1"
+    },
+    {
+      "type": "product",
+      "time": "Mar 27, 2025",
+      "dateTime": "2025-03-27",
+      "title": "Launched the Deep Research API",
+      "description": "An alpha deep-research endpoint that was later deprecated after June 30, 2025.",
+      "sourceUrl": "https://www.firecrawl.dev/blog/deep-research-api"
+    }
+  ]
+}
