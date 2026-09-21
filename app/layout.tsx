@@ -3,13 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppSidebar } from "@/components/app-sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
-import {
-  SidebarInset,
-  SidebarProvider,
-} from "@/components/ui/sidebar";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { getCompanies } from "@/lib/company-profile";
+import { getCompanyNavigation } from "@/lib/company-profile";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -23,7 +20,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const companies = await getCompanies();
+  const companies = await getCompanyNavigation();
 
   return (
     <html

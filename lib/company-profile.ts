@@ -187,6 +187,10 @@ export const companyProfileSchema = z.object({
 export type CompanyProfile = z.infer<typeof companyProfileSchema>;
 export type ActivityType = z.infer<typeof activityTypeSchema>;
 export type Industry = z.infer<typeof industrySchema>;
+export type CompanyNavigationItem = Pick<
+  CompanyProfile,
+  "slug" | "name" | "logo"
+>;
 
 const companiesDirectory = join(process.cwd(), "data", "companies");
 
@@ -292,6 +296,54 @@ export const getCompanies = cache(async () => {
     return getCompaniesFromFiles();
   }
 });
+
+export const getCompanyNavigation = cache(
+  async (): Promise<CompanyNavigationItem[]> => {
+    if (!process.env.DATABASE_URL && !process.env.DATABASE_URL_POOLED) {
+      return (await getCompaniesFromFiles()).map(({ slug, name, logo }) => ({
+        slug,
+        name,
+        logo,
+      }));
+    }
+
+    try {
+      const [{ db }, { companies }] = await Promise.all([
+        import("./db"),
+        import("./db/schema"),
+      ]);
+      return db
+        .select({
+          slug: companies.slug,
+          name: companies.name,
+          logo: companies.profile,
+        })
+        .from(companies)
+        .orderBy(companies.name)
+        .then((records) =>
+          records.map(({ logo, ...company }) => ({
+            ...company,
+            logo:
+              logo && typeof logo === "object" && "logo" in logo
+                ? typeof logo.logo === "string"
+                  ? logo.logo
+                  : null
+                : null,
+          })),
+        );
+    } catch (error) {
+      console.warn(
+        "Unable to load company navigation from the database; using local profiles.",
+        error,
+      );
+      return (await getCompaniesFromFiles()).map(({ slug, name, logo }) => ({
+        slug,
+        name,
+        logo,
+      }));
+    }
+  },
+);
 
 export async function getCompanyProfile(slug: string) {
   return (await getCompanies()).find((company) => company.slug === slug);

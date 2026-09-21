@@ -2,7 +2,7 @@ import { eq } from "drizzle-orm";
 
 import { getCompaniesFromFiles } from "../lib/company-profile";
 import { db } from "../lib/db/client";
-import { companies, jobs } from "../lib/db/schema";
+import { companies, jobs, people } from "../lib/db/schema";
 
 function searchText(
   companyName: string,
@@ -57,6 +57,7 @@ async function main() {
       .returning({ id: companies.id });
 
     await db.delete(jobs).where(eq(jobs.companyId, company.id));
+    await db.delete(people).where(eq(people.companyId, company.id));
 
     if (profile.jobs.length) {
       await db.insert(jobs).values(
@@ -100,6 +101,22 @@ async function main() {
         })),
       );
       jobCount += profile.jobs.length;
+    }
+
+    if (profile.people.length) {
+      await db.insert(people).values(
+        profile.people.map((person) => ({
+          companyId: company.id,
+          name: person.name,
+          role: person.role,
+          image: person.image,
+          linkedin: person.linkedin,
+          x: person.x ?? null,
+          sourceUrl: person.sourceUrl ?? null,
+          isFounder: person.isFounder ?? false,
+          searchText: `${person.name} ${person.role} ${profile.name}`,
+        })),
+      );
     }
   }
 

@@ -1,9 +1,12 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { BuildingIcon, BriefcaseBusinessIcon } from "lucide-react";
-
+import {
+  BriefcaseBusinessIcon,
+  BuildingIcon,
+  LoaderCircleIcon,
+} from "lucide-react";
 import {
   Command,
   CommandDialog,
@@ -11,109 +14,81 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-  commandScore,
 } from "@/components/ui/command";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import type { CompanyProfile } from "@/lib/company-profile";
 
-type CompanySearchProps = {
-  companies: CompanyProfile[];
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
+type SearchResults = {
+  companies: {
+    slug: string;
+    name: string;
+    logo: string | null;
+    industry: string;
+    location: string;
+    countryCode: string;
+  }[];
+  people: {
+    name: string;
+    role: string;
+    image: string | null;
+    companySlug: string;
+    companyName: string;
+    companyLogo: string | null;
+  }[];
+  jobs: {
+    title: string;
+    focus: string;
+    url: string | null;
+    companySlug: string;
+    companyName: string;
+    companyLogo: string | null;
+  }[];
 };
 
 const noSelectionValue = "__locus_no_command_selection__";
-const suggestedCompanyLimit = 6;
-const companyResultLimit = 6;
-const personResultLimit = 8;
-const jobResultLimit = 10;
-
-type PersonResult = {
-  company: CompanyProfile;
-  person: CompanyProfile["people"][number];
-  index: number;
-};
-
-type JobResult = {
-  company: CompanyProfile;
-  job: CompanyProfile["jobs"][number];
-  index: number;
-};
-
-function rankResults<T>(
-  records: T[],
-  query: string,
-  getSearchValue: (record: T) => string,
-  limit: number,
-) {
-  return records
-    .map((record, index) => ({
-      record,
-      index,
-      score: commandScore(getSearchValue(record), query),
-    }))
-    .filter((result) => result.score > 0)
-    .sort((left, right) => right.score - left.score || left.index - right.index)
-    .slice(0, limit)
-    .map(({ record }) => record);
-}
 
 export function CompanySearch({
-  companies,
   open,
   onOpenChange,
-}: CompanySearchProps) {
+}: {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}) {
   const router = useRouter();
   const [search, setSearch] = useState("");
   const [selectedValue, setSelectedValue] = useState(noSelectionValue);
+  const [results, setResults] = useState<SearchResults | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
-  const results = useMemo(() => {
+
+  useEffect(() => {
+    if (!open) return;
+    const controller = new AbortController();
     const query = search.trim();
-
-    if (!query) {
-      return {
-        companies: companies.slice(0, suggestedCompanyLimit),
-        people: [] as PersonResult[],
-        jobs: [] as JobResult[],
-      };
-    }
-
-    const people = companies.flatMap((company) =>
-      company.people.map((person, index) => ({ company, person, index })),
+    const timeout = window.setTimeout(
+      async () => {
+        setIsLoading(true);
+        try {
+          const response = await fetch(
+            `/api/search?q=${encodeURIComponent(query)}`,
+            { signal: controller.signal },
+          );
+          if (!response.ok) throw new Error("Search request failed.");
+          setResults((await response.json()) as SearchResults);
+        } catch (error) {
+          if ((error as DOMException).name !== "AbortError")
+            setResults({ companies: [], people: [], jobs: [] });
+        } finally {
+          if (!controller.signal.aborted) setIsLoading(false);
+        }
+      },
+      query ? 120 : 0,
     );
-    const jobs = companies.flatMap((company) =>
-      company.jobs.map((job, index) => ({ company, job, index })),
-    );
-
-    return {
-      companies: rankResults(
-        companies,
-        query,
-        (company) =>
-          `${company.name} ${company.industry} ${company.location.label} ${company.slug}`,
-        companyResultLimit,
-      ),
-      people: rankResults(
-        people,
-        query,
-        ({ company, person }) =>
-          `${person.name} ${person.role} ${company.name} ${company.slug}`,
-        personResultLimit,
-      ),
-      jobs: rankResults(
-        jobs,
-        query,
-        ({ company, job }) =>
-          `${job.title} ${job.focus} ${job.department ?? ""} ${job.location} ${job.description ?? ""} ${job.skills?.join(" ") ?? ""} ${company.name} ${company.slug}`,
-        jobResultLimit,
-      ),
+    return () => {
+      controller.abort();
+      window.clearTimeout(timeout);
     };
-  }, [companies, search]);
-  const hasResults =
-    results.companies.length > 0 ||
-    results.people.length > 0 ||
-    results.jobs.length > 0;
+  }, [open, search]);
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -122,7 +97,6 @@ export function CompanySearch({
         onOpenChange(!open);
       }
     }
-
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [onOpenChange, open]);
@@ -132,38 +106,28 @@ export function CompanySearch({
     listRef.current?.scrollTo({ top: 0 });
   }, [open, search]);
 
-  function handleSearchChange(nextSearch: string) {
-    setSearch(nextSearch);
-    setSelectedValue(noSelectionValue);
-  }
-
-  function visitCompany(slug: string) {
+  const visitCompany = (slug: string) => {
     onOpenChange(false);
     router.push(`/company/${slug}`);
-  }
-
-  function visitPerson(slug: string) {
+  };
+  const visitPerson = (slug: string) => {
     onOpenChange(false);
     router.push(`/company/${slug}#key-people`);
-  }
-
-  function visitJob(job: CompanyProfile["jobs"][number], slug: string) {
+  };
+  const visitJob = (url: string | null, slug: string) => {
     onOpenChange(false);
-
-    if (job.url) {
-      window.open(job.url, "_blank", "noopener,noreferrer");
-      return;
-    }
-
-    router.push(`/company/${slug}#jobs`);
-  }
-
-  function initials(name: string) {
-    return name
+    if (url) window.open(url, "_blank", "noopener,noreferrer");
+    else router.push(`/company/${slug}#jobs`);
+  };
+  const initials = (name: string) =>
+    name
       .split(" ")
       .map((part) => part[0])
       .join("");
-  }
+  const hasResults = Boolean(
+    results &&
+    (results.companies.length || results.people.length || results.jobs.length),
+  );
 
   return (
     <CommandDialog
@@ -178,23 +142,38 @@ export function CompanySearch({
         shouldFilter={false}
         value={selectedValue}
       >
-        <CommandInput
-          autoFocus
-          onValueChange={handleSearchChange}
-          placeholder="Search companies, people, and jobs..."
-          value={search}
-        />
+        <div className="relative">
+          <CommandInput
+            autoFocus
+            onValueChange={(value) => {
+              setSearch(value);
+              setSelectedValue(noSelectionValue);
+            }}
+            placeholder="Search companies, people, and jobs..."
+            value={search}
+          />
+          {isLoading ? (
+            <LoaderCircleIcon
+              aria-label="Searching"
+              className="pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 animate-spin text-muted-foreground"
+            />
+          ) : null}
+        </div>
         <CommandList
           ref={listRef}
           className="max-h-[min(24rem,calc(100dvh-12rem))] sm:max-h-[min(30rem,calc(100dvh-4rem))]"
         >
-          {!hasResults ? (
+          {!results ? (
+            <p className="py-6 text-center text-sm text-muted-foreground">
+              Loading…
+            </p>
+          ) : !hasResults ? (
             <p className="py-6 text-center text-sm text-muted-foreground">
               No matching companies, people, or jobs.
             </p>
           ) : (
             <>
-              {results.companies.length > 0 ? (
+              {results.companies.length ? (
                 <CommandGroup
                   heading={search.trim() ? "Companies" : "Suggested companies"}
                 >
@@ -234,9 +213,9 @@ export function CompanySearch({
                               alt=""
                               aria-hidden="true"
                               className="size-2.5 rounded-full"
-                              src={`https://hatscripts.github.io/circle-flags/flags/${company.location.countryCode}.svg`}
+                              src={`https://hatscripts.github.io/circle-flags/flags/${company.countryCode}.svg`}
                             />
-                            {company.location.label}
+                            {company.location}
                           </Badge>
                         </div>
                       </div>
@@ -244,14 +223,13 @@ export function CompanySearch({
                   ))}
                 </CommandGroup>
               ) : null}
-
-              {results.people.length > 0 ? (
+              {results.people.length ? (
                 <CommandGroup heading="People">
-                  {results.people.map(({ company, person, index }) => (
+                  {results.people.map((person, index) => (
                     <CommandItem
-                      key={`${company.slug}-${person.name}-${person.role}-${index}`}
-                      onSelect={() => visitPerson(company.slug)}
-                      value={`person-${company.slug}-${index}`}
+                      key={`${person.companySlug}-${person.name}-${index}`}
+                      onSelect={() => visitPerson(person.companySlug)}
+                      value={`person-${person.companySlug}-${index}`}
                       className="items-center gap-3 py-2"
                     >
                       <Avatar className="size-8">
@@ -268,37 +246,36 @@ export function CompanySearch({
                         <p className="truncate font-medium">{person.name}</p>
                         <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
                           <span className="truncate">{person.role} @</span>
-                          {company.logo ? (
+                          {person.companyLogo ? (
                             <img
                               alt=""
                               aria-hidden="true"
                               className="size-3 shrink-0 rounded-[3px] object-contain ring-1 ring-border/50"
-                              src={company.logo}
+                              src={person.companyLogo}
                             />
                           ) : null}
-                          <span className="truncate">{company.name}</span>
+                          <span className="truncate">{person.companyName}</span>
                         </p>
                       </div>
                     </CommandItem>
                   ))}
                 </CommandGroup>
               ) : null}
-
-              {results.jobs.length > 0 ? (
+              {results.jobs.length ? (
                 <CommandGroup heading="Jobs">
-                  {results.jobs.map(({ company, job, index }) => (
+                  {results.jobs.map((job, index) => (
                     <CommandItem
-                      key={`${company.slug}-${job.title}-${job.location}-${index}`}
-                      onSelect={() => visitJob(job, company.slug)}
-                      value={`job-${company.slug}-${index}`}
+                      key={`${job.companySlug}-${job.title}-${index}`}
+                      onSelect={() => visitJob(job.url, job.companySlug)}
+                      value={`job-${job.companySlug}-${index}`}
                       className="items-center gap-3 py-2"
                     >
-                      {company.logo ? (
+                      {job.companyLogo ? (
                         <img
                           alt=""
                           aria-hidden="true"
                           className="size-8 rounded-sm object-contain ring-1 ring-border/50 shadow-xs"
-                          src={company.logo}
+                          src={job.companyLogo}
                         />
                       ) : (
                         <div className="flex size-8 items-center justify-center rounded-lg bg-muted text-muted-foreground">
@@ -308,7 +285,7 @@ export function CompanySearch({
                       <div className="min-w-0 flex-1">
                         <p className="truncate font-medium">{job.title}</p>
                         <p className="truncate text-xs text-muted-foreground">
-                          {company.name} · {job.focus}
+                          {job.companyName} · {job.focus}
                         </p>
                       </div>
                     </CommandItem>

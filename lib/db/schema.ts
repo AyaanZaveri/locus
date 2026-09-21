@@ -88,3 +88,25 @@ export const jobs = pgTable(
     index("jobs_department_idx").on(table.department),
   ],
 );
+
+export const people = pgTable(
+  "people",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    companyId: uuid("company_id")
+      .notNull()
+      .references(() => companies.id, { onDelete: "cascade" }),
+    name: text("name").notNull(),
+    role: text("role").notNull(),
+    image: text("image"),
+    linkedin: text("linkedin"),
+    x: text("x"),
+    sourceUrl: text("source_url"),
+    isFounder: boolean("is_founder").notNull().default(false),
+    searchText: text("search_text").notNull(),
+  },
+  (table) => [
+    index("people_company_idx").on(table.companyId),
+    index("people_name_idx").on(table.name),
+  ],
+);

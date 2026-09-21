@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { usePathname } from "next/navigation"
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 import {
   BuildingIcon,
@@ -9,7 +9,7 @@ import {
   SearchIcon,
   SquarePenIcon,
   UserRoundIcon,
-} from "lucide-react"
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -22,37 +22,37 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/ui/sidebar"
-import { ModeToggle } from "@/components/mode-toggle"
-import { CompanySearch } from "@/components/company-search"
-import type { CompanyProfile } from "@/lib/company-profile"
+} from "@/components/ui/sidebar";
+import { ModeToggle } from "@/components/mode-toggle";
+import { CompanySearch } from "@/components/company-search";
+import type { CompanyNavigationItem } from "@/lib/company-profile";
 
 const navigation = [
   // { label: "New chat", icon: SquarePenIcon },
   // { label: "People", icon: UserRoundIcon },
   { label: "Companies", icon: BuildingIcon },
-]
+];
 
 export function AppSidebar({
   companies,
 }: {
-  companies: CompanyProfile[];
+  companies: CompanyNavigationItem[];
 }) {
-  const pathname = usePathname()
-  const { isMobile, setOpenMobile } = useSidebar()
-  const [searchOpen, setSearchOpen] = useState(false)
+  const pathname = usePathname();
+  const { isMobile, setOpenMobile } = useSidebar();
+  const [searchOpen, setSearchOpen] = useState(false);
   const companyNavigation = companies.map((company) => ({
     name: company.name,
     href: `/company/${company.slug}`,
     logo: company.logo,
-  }))
+  }));
 
   function openSearch() {
     if (isMobile) {
-      setOpenMobile(false)
+      setOpenMobile(false);
     }
 
-    setSearchOpen(true)
+    setSearchOpen(true);
   }
 
   return (
@@ -62,9 +62,16 @@ export function AppSidebar({
           <SidebarMenu>
             <SidebarMenuItem>
               <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-3 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-4">
-                <SidebarMenuButton className="h-auto flex-1 gap-2.5 -m-2" render={<a href="#top" />} size="lg">
+                <SidebarMenuButton
+                  className="h-auto flex-1 gap-2.5 -m-2"
+                  render={<a href="#top" />}
+                  size="lg"
+                >
                   <span className="flex size-6.5 items-center justify-center rounded-md bg-emerald-500 text-white">
-                    <DraftingCompassIcon aria-hidden="true" className="size-4 stroke-[2]" />
+                    <DraftingCompassIcon
+                      aria-hidden="true"
+                      className="size-4 stroke-[2]"
+                    />
                   </span>
                   <span className="text-xl leading-6.75 font-semibold tracking-[-0.035em]">
                     Locus
@@ -90,7 +97,10 @@ export function AppSidebar({
                 </SidebarMenuItem>
                 {navigation.slice(0, 1).map((item) => (
                   <SidebarMenuItem key={item.label}>
-                    <SidebarMenuButton render={<a href={`#${item.label.toLowerCase()}`} />} tooltip={item.label}>
+                    <SidebarMenuButton
+                      render={<a href={`#${item.label.toLowerCase()}`} />}
+                      tooltip={item.label}
+                    >
                       <item.icon className="size-3.5!" />
                       <span>{item.label}</span>
                     </SidebarMenuButton>
@@ -149,11 +159,7 @@ export function AppSidebar({
           </SidebarGroup>
         </SidebarContent>
       </Sidebar>
-      <CompanySearch
-        companies={companies}
-        onOpenChange={setSearchOpen}
-        open={searchOpen}
-      />
+      <CompanySearch onOpenChange={setSearchOpen} open={searchOpen} />
     </>
-  )
+  );
 }
