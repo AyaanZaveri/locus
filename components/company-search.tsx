@@ -50,40 +50,43 @@ const noSelectionValue = "__locus_no_command_selection__";
 export function CompanySearch({
   open,
   onOpenChange,
+  suggestedCompanies,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  suggestedCompanies: SearchResults["companies"];
 }) {
   const router = useRouter();
   const [search, setSearch] = useState("");
   const [selectedValue, setSelectedValue] = useState(noSelectionValue);
-  const [results, setResults] = useState<SearchResults | null>(null);
+  const [results, setResults] = useState<SearchResults>({
+    companies: suggestedCompanies.slice(0, 6),
+    people: [],
+    jobs: [],
+  });
   const [isLoading, setIsLoading] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!open) return;
-    const controller = new AbortController();
     const query = search.trim();
-    const timeout = window.setTimeout(
-      async () => {
-        setIsLoading(true);
-        try {
-          const response = await fetch(
-            `/api/search?q=${encodeURIComponent(query)}`,
-            { signal: controller.signal },
-          );
-          if (!response.ok) throw new Error("Search request failed.");
-          setResults((await response.json()) as SearchResults);
-        } catch (error) {
-          if ((error as DOMException).name !== "AbortError")
-            setResults({ companies: [], people: [], jobs: [] });
-        } finally {
-          if (!controller.signal.aborted) setIsLoading(false);
-        }
-      },
-      query ? 120 : 0,
-    );
+    if (!open || !query) return;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(async () => {
+      setIsLoading(true);
+      try {
+        const response = await fetch(
+          `/api/search?q=${encodeURIComponent(query)}`,
+          { signal: controller.signal },
+        );
+        if (!response.ok) throw new Error("Search request failed.");
+        setResults((await response.json()) as SearchResults);
+      } catch (error) {
+        if ((error as DOMException).name !== "AbortError")
+          setResults({ companies: [], people: [], jobs: [] });
+      } finally {
+        if (!controller.signal.aborted) setIsLoading(false);
+      }
+    }, 120);
     return () => {
       controller.abort();
       window.clearTimeout(timeout);
@@ -148,6 +151,13 @@ export function CompanySearch({
             onValueChange={(value) => {
               setSearch(value);
               setSelectedValue(noSelectionValue);
+              if (!value.trim()) {
+                setResults({
+                  companies: suggestedCompanies.slice(0, 6),
+                  people: [],
+                  jobs: [],
+                });
+              }
             }}
             placeholder="Search companies, people, and jobs..."
             value={search}
@@ -163,11 +173,7 @@ export function CompanySearch({
           ref={listRef}
           className="max-h-[min(24rem,calc(100dvh-12rem))] sm:max-h-[min(30rem,calc(100dvh-4rem))]"
         >
-          {!results ? (
-            <p className="py-6 text-center text-sm text-muted-foreground">
-              Loading…
-            </p>
-          ) : !hasResults ? (
+          {!hasResults ? (
             <p className="py-6 text-center text-sm text-muted-foreground">
               No matching companies, people, or jobs.
             </p>

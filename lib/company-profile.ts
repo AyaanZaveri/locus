@@ -187,10 +187,14 @@ export const companyProfileSchema = z.object({
 export type CompanyProfile = z.infer<typeof companyProfileSchema>;
 export type ActivityType = z.infer<typeof activityTypeSchema>;
 export type Industry = z.infer<typeof industrySchema>;
-export type CompanyNavigationItem = Pick<
-  CompanyProfile,
-  "slug" | "name" | "logo"
->;
+export type CompanyNavigationItem = {
+  slug: string;
+  name: string;
+  logo: string | null;
+  industry: string;
+  location: string;
+  countryCode: string;
+};
 
 const companiesDirectory = join(process.cwd(), "data", "companies");
 
@@ -300,10 +304,13 @@ export const getCompanies = cache(async () => {
 export const getCompanyNavigation = cache(
   async (): Promise<CompanyNavigationItem[]> => {
     if (!process.env.DATABASE_URL && !process.env.DATABASE_URL_POOLED) {
-      return (await getCompaniesFromFiles()).map(({ slug, name, logo }) => ({
-        slug,
-        name,
-        logo,
+      return (await getCompaniesFromFiles()).map((company) => ({
+        slug: company.slug,
+        name: company.name,
+        logo: company.logo,
+        industry: company.industry,
+        location: company.location.label,
+        countryCode: company.location.countryCode,
       }));
     }
 
@@ -316,6 +323,9 @@ export const getCompanyNavigation = cache(
         .select({
           slug: companies.slug,
           name: companies.name,
+          industry: companies.industry,
+          location: companies.location,
+          countryCode: companies.countryCode,
           logo: companies.profile,
         })
         .from(companies)
@@ -336,10 +346,13 @@ export const getCompanyNavigation = cache(
         "Unable to load company navigation from the database; using local profiles.",
         error,
       );
-      return (await getCompaniesFromFiles()).map(({ slug, name, logo }) => ({
-        slug,
-        name,
-        logo,
+      return (await getCompaniesFromFiles()).map((company) => ({
+        slug: company.slug,
+        name: company.name,
+        logo: company.logo,
+        industry: company.industry,
+        location: company.location.label,
+        countryCode: company.location.countryCode,
       }));
     }
   },

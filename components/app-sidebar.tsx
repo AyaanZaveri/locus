@@ -159,7 +159,11 @@ export function AppSidebar({
           </SidebarGroup>
         </SidebarContent>
       </Sidebar>
-      <CompanySearch onOpenChange={setSearchOpen} open={searchOpen} />
+      <CompanySearch
+        onOpenChange={setSearchOpen}
+        open={searchOpen}
+        suggestedCompanies={companies}
+      />
     </>
   );
 }
