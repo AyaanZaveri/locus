@@ -184,7 +184,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
                 className="size-2.5 rounded-full"
                 src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
               />
-              <span>{job.location}</span>
+              <span>{job.location.replace(/\s*\|\s*/g, " · ")}</span>
               <span aria-hidden="true">·</span>
               <span>{job.focus}</span>
             </div>
