@@ -1,6 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, useTransition } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  useTransition,
+} from "react";
 import { useChat } from "@ai-sdk/react";
 import {
   DefaultChatTransport,
@@ -9,6 +16,7 @@ import {
 } from "ai";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import {
+  ArrowDown,
   ArrowUpIcon,
   LensConcaveIcon,
   PlusIcon,
@@ -282,6 +290,10 @@ export function LocusChat() {
   const hasOpenedFocus = useRef(false);
   const resetTimer = useRef<number | null>(null);
   const sessionId = useRef<string | null>(null);
+  const messageListRef = useRef<HTMLDivElement | null>(null);
+  const isPinnedToBottom = useRef(true);
+  const [isScrolledAwayFromBottom, setIsScrolledAwayFromBottom] =
+    useState(false);
   const transport = useMemo(
     () => new DefaultChatTransport({ api: "/api/chat" }),
     [],
@@ -362,6 +374,32 @@ export function LocusChat() {
         transform: "translateY(6px)",
       };
 
+  const scrollToLatest = useCallback((behavior: ScrollBehavior = "smooth") => {
+    const messageList = messageListRef.current;
+    if (!messageList) return;
+
+    isPinnedToBottom.current = true;
+    setIsScrolledAwayFromBottom(false);
+    messageList.scrollTo({ top: messageList.scrollHeight, behavior });
+  }, []);
+
+  const handleMessageScroll = useCallback(
+    (event: React.UIEvent<HTMLDivElement>) => {
+      const messageList = event.currentTarget;
+      const isAtBottom =
+        messageList.scrollHeight -
+          messageList.scrollTop -
+          messageList.clientHeight <=
+        24;
+
+      isPinnedToBottom.current = isAtBottom;
+      setIsScrolledAwayFromBottom((wasScrolledAway) =>
+        wasScrolledAway === !isAtBottom ? wasScrolledAway : !isAtBottom,
+      );
+    },
+    [],
+  );
+
   useEffect(() => {
     if (isActivityActive) {
       setActivityStartedAt((startedAt) => startedAt ?? Date.now());
@@ -369,6 +407,16 @@ export function LocusChat() {
       setActivityStartedAt(null);
     }
   }, [isActivityActive]);
+
+  // Streaming changes the transcript many times per response. Keep it pinned
+  // only while the reader is already at the latest message; scrolling up is an
+  // explicit opt-out until they reach the bottom or press the jump control.
+  useEffect(() => {
+    if (!isOpen || !isPinnedToBottom.current) return;
+
+    const frame = window.requestAnimationFrame(() => scrollToLatest("auto"));
+    return () => window.cancelAnimationFrame(frame);
+  }, [error, isBusy, isOpen, messages, scrollToLatest]);
 
   useEffect(
     () => () => {
@@ -411,6 +459,8 @@ export function LocusChat() {
     const text = input.trim();
     if (!text || isBusy) return;
 
+    isPinnedToBottom.current = true;
+    setIsScrolledAwayFromBottom(false);
     sendMessage({ text }, { body: { sessionId: getSessionId() } });
     setInput("");
   }
@@ -427,6 +477,8 @@ export function LocusChat() {
     setMessages([]);
     clearError();
     setInput("");
+    isPinnedToBottom.current = true;
+    setIsScrolledAwayFromBottom(false);
     sessionId.current = null;
     resetTimer.current = window.setTimeout(() => {
       setIsClearingChat(false);
@@ -538,7 +590,9 @@ export function LocusChat() {
                   }
                   className="mb-3 h-fit max-h-72 space-y-3 overflow-y-auto px-1 py-2"
                   initial={false}
+                  onScroll={handleMessageScroll}
                   onAnimationComplete={finishNewChat}
+                  ref={messageListRef}
                   transition={{
                     duration: 0.18,
                     ease: [0.23, 1, 0.32, 1],
@@ -616,7 +670,26 @@ export function LocusChat() {
                   ) : null}
                 </motion.div>
               )}
-              <motion.form onSubmit={submit}>
+              <motion.form className="relative" onSubmit={submit}>
+                {messages.length > 0 ? (
+                  <div className="pointer-events-none absolute inset-x-0 bottom-full flex justify-center pb-2">
+                    <button
+                      aria-label="Jump to latest"
+                      className={`rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
+                        isScrolledAwayFromBottom
+                          ? "pointer-events-auto translate-y-0 opacity-100"
+                          : "pointer-events-none translate-y-0.5 opacity-0"
+                      }`}
+                      onClick={() => scrollToLatest()}
+                      title="Jump to latest"
+                      type="button"
+                    >
+                      <span className="flex h-9 w-12 items-center justify-center text-foreground">
+                        <ArrowDown aria-hidden="true" className="size-5" />
+                      </span>
+                    </button>
+                  </div>
+                ) : null}
                 <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
                   <LensConcaveIcon
                     aria-hidden="true"
