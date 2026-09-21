@@ -18,6 +18,90 @@ const resultLimitSchema = z.number().int().min(1).max(3).default(3);
 const searchResultLimitSchema = z.number().int().min(1).max(12).default(3);
 const searchResultTypeSchema = z.enum(["companies", "people", "jobs"]);
 
+const jobRelevanceStopWords = new Set([
+  "a",
+  "an",
+  "and",
+  "at",
+  "best",
+  "do",
+  "for",
+  "good",
+  "i",
+  "if",
+  "in",
+  "job",
+  "jobs",
+  "me",
+  "my",
+  "role",
+  "should",
+  "that",
+  "the",
+  "what",
+  "with",
+]);
+
+function jobSearchStem(word: string) {
+  if (word === "eng" || word === "engineering" || word === "engineers") {
+    return "engineer";
+  }
+  return word;
+}
+
+function jobSearchTerms(criteria?: string) {
+  if (!criteria) return [];
+
+  return [
+    ...new Set(
+      criteria
+        .toLowerCase()
+        .match(/[a-z0-9][a-z0-9-]{1,}/g)
+        ?.map(jobSearchStem)
+        .filter((word) => !jobRelevanceStopWords.has(word)) ?? [],
+    ),
+  ];
+}
+
+function jobSearchWords(value: string | null | undefined) {
+  return new Set(
+    value
+      ?.toLowerCase()
+      .match(/[a-z0-9][a-z0-9-]{1,}/g)
+      ?.map(jobSearchStem) ?? [],
+  );
+}
+
+function jobRelevanceScore(
+  job: {
+    title: string;
+    focus: string | null;
+    department: string | null;
+    skills: string[] | null;
+    searchText: string;
+  },
+  terms: string[],
+) {
+  if (!terms.length) return 0;
+
+  const title = jobSearchWords(job.title);
+  const focus = jobSearchWords(job.focus);
+  const department = jobSearchWords(job.department);
+  const skills = jobSearchWords(job.skills?.join(" "));
+  const description = jobSearchWords(job.searchText);
+
+  return terms.reduce((score, term) => {
+    return (
+      score +
+      Number(title.has(term)) * 12 +
+      Number(focus.has(term)) * 7 +
+      Number(department.has(term)) * 5 +
+      Number(skills.has(term)) * 3 +
+      Number(description.has(term))
+    );
+  }, 0);
+}
+
 function companyLogo(profile: unknown) {
   if (profile && typeof profile === "object" && "logo" in profile) {
     const logo = (profile as { logo?: unknown }).logo;
@@ -28,6 +112,10 @@ function companyLogo(profile: unknown) {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
+}
+
+function isPresent<T>(value: T): value is NonNullable<T> {
+  return value !== null && value !== undefined;
 }
 
 function factQueryTerms(query: string) {
@@ -179,6 +267,121 @@ export const locusTools = {
         jobLocation: z.string().trim().min(1).max(200),
       }),
     ]),
+  }),
+  presentLocusResults: tool({
+    description:
+      "Render the final, curated result cards in the user's answer. Call this at most once, only after research is complete and only for the exact companies, people, or jobs you are actually recommending or listing in your answer. Do not include exploratory matches. The returned cards are verified against Locus before display.",
+    inputSchema: z.object({
+      companySlugs: z.array(companySlugSchema).max(4).default([]),
+      people: z
+        .array(
+          z.object({
+            companySlug: companySlugSchema,
+            name: z.string().trim().min(1).max(120),
+          }),
+        )
+        .max(4)
+        .default([]),
+      jobs: z
+        .array(
+          z.object({
+            companySlug: companySlugSchema,
+            title: z.string().trim().min(1).max(200),
+            location: z.string().trim().min(1).max(200),
+          }),
+        )
+        .max(5)
+        .default([]),
+    }),
+    execute: async ({
+      companySlugs,
+      people: selectedPeople,
+      jobs: selectedJobs,
+    }) => {
+      const [selectedCompanies, verifiedPeople, verifiedJobs] =
+        await Promise.all([
+          Promise.all(
+            companySlugs.map(async (slug) => {
+              const [company] = await db
+                .select({
+                  slug: companies.slug,
+                  name: companies.name,
+                  logo: companies.profile,
+                  industry: companies.industry,
+                  location: companies.location,
+                  countryCode: companies.countryCode,
+                })
+                .from(companies)
+                .where(eq(companies.slug, slug))
+                .limit(1);
+              return company
+                ? { ...company, logo: companyLogo(company.logo) }
+                : null;
+            }),
+          ),
+          Promise.all(
+            selectedPeople.map(async ({ companySlug, name }) => {
+              const [person] = await db
+                .select({
+                  name: people.name,
+                  role: people.role,
+                  image: people.image,
+                  companySlug: companies.slug,
+                  companyName: companies.name,
+                  countryCode: companies.countryCode,
+                  companyProfile: companies.profile,
+                })
+                .from(people)
+                .innerJoin(companies, eq(people.companyId, companies.id))
+                .where(
+                  and(eq(companies.slug, companySlug), eq(people.name, name)),
+                )
+                .limit(1);
+              return person
+                ? { ...person, companyLogo: companyLogo(person.companyProfile) }
+                : null;
+            }),
+          ),
+          Promise.all(
+            selectedJobs.map(async ({ companySlug, title, location }) => {
+              const [job] = await db
+                .select({
+                  title: jobs.title,
+                  location: jobs.location,
+                  focus: jobs.focus,
+                  url: jobs.url,
+                  companySlug: companies.slug,
+                  companyName: companies.name,
+                  countryCode: companies.countryCode,
+                  companyProfile: companies.profile,
+                })
+                .from(jobs)
+                .innerJoin(companies, eq(jobs.companyId, companies.id))
+                .where(
+                  and(
+                    eq(companies.slug, companySlug),
+                    eq(jobs.title, title),
+                    eq(jobs.location, location),
+                  ),
+                )
+                .limit(1);
+              return job
+                ? { ...job, companyLogo: companyLogo(job.companyProfile) }
+                : null;
+            }),
+          ),
+        ]);
+
+      return {
+        companies: selectedCompanies.filter(isPresent),
+        people: verifiedPeople
+          .filter(isPresent)
+          .map(({ companyProfile: _companyProfile, ...person }) => person),
+        jobs: verifiedJobs
+          .filter(isPresent)
+          .map(({ companyProfile: _companyProfile, ...job }) => job),
+      };
+    },
   }),
   searchLocus: tool({
     description:
@@ -353,12 +556,14 @@ export const locusTools = {
   }),
   listCompanyJobs: tool({
     description:
-      "List open or unknown-status jobs at a company. Use the company slug returned by searchLocus.",
+      "List open or unknown-status jobs at a company. Use the company slug returned by searchLocus. When recommending a role based on a user's background, include their concise skills or role criteria in criteria. Matching jobs are ranked by title, focus, department, skills, and description relevance instead of alphabetically.",
     inputSchema: z.object({
       slug: companySlugSchema,
       limit: resultLimitSchema,
+      criteria: z.string().trim().min(1).max(120).optional(),
     }),
-    execute: async ({ slug, limit }) => {
+    execute: async ({ slug, limit, criteria }) => {
+      const terms = jobSearchTerms(criteria);
       const results = await db
         .select({
           title: jobs.title,
@@ -371,6 +576,7 @@ export const locusTools = {
           department: jobs.department,
           skills: jobs.skills,
           experienceLevel: jobs.experienceLevel,
+          searchText: jobs.searchText,
           companySlug: companies.slug,
           companyName: companies.name,
           countryCode: companies.countryCode,
@@ -385,11 +591,21 @@ export const locusTools = {
           ),
         )
         .orderBy(asc(jobs.title))
-        .limit(limit);
-      return results.map(({ companyProfile, ...job }) => ({
-        ...job,
-        companyLogo: companyLogo(companyProfile),
-      }));
+        .limit(200);
+
+      return results
+        .map(({ companyProfile, searchText, ...job }) => ({
+          ...job,
+          companyLogo: companyLogo(companyProfile),
+          relevance: jobRelevanceScore({ ...job, searchText }, terms),
+        }))
+        .sort(
+          (a, b) => b.relevance - a.relevance || a.title.localeCompare(b.title),
+        )
+        .slice(0, limit)
+        .map(({ relevance: _relevance, ...job }) => ({
+          ...job,
+        }));
     },
   }),
   listCompanyPeople: tool({

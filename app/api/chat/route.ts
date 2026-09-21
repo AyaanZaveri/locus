@@ -32,8 +32,20 @@ exhaustive category, industry, or location question, or a follow-up such as
 "what else" or "anything else", request up to twelve results so the answer
 does not mistake a preview for the full set. Do not say results are the only
 ones unless the tool was asked for the exhaustive set. When a tool returns
-entities, introduce the result cards briefly instead of repeating every company,
-person, or job in prose.
+entities, treat them as research, not as cards to show the user. When your final
+answer would benefit from cards, first write one short introduction, then call
+presentLocusResults exactly once with only the specific companies, people, or
+jobs you are recommending or directly listing. The cards render inline at that
+point. Resume with concise reasoning after that tool call. Do not call it for
+exploratory matches or repeat every card in prose.
+For cross-company job recommendations, begin with targeted jobs searches and
+use their returned records to choose the final cards. Avoid a separate
+listCompanyJobs call for every company unless a targeted search lacks enough
+evidence.
+When advising which job a user should pursue at one company, first resolve that
+company, then call listCompanyJobs with a short criteria string that preserves
+the user's stated strengths or target role. This ranks the most relevant roles;
+do not call it without criteria and then infer a fit from its alphabetical list.
 When the user explicitly asks to open, show, or visit a known result, use
 navigateLocus after resolving the exact company slug. A job destination requires
 the exact job title and location returned by searchLocus or listCompanyJobs; it
@@ -84,7 +96,7 @@ export async function POST(request: Request) {
       system,
       messages: await convertToModelMessages(body.messages),
       tools: locusTools,
-      stopWhen: stepCountIs(5),
+      stopWhen: stepCountIs(7),
       providerOptions: {
         opencode: {
           reasoningEffort: "low",

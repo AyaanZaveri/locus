@@ -131,9 +131,12 @@ function asJobResult(value: unknown): LocusJobResult | null {
   if (!isRecord(value)) return null;
   const title = asString(value.title);
   const focus = asString(value.focus);
+  const location = asString(value.location);
   const companySlug = asString(value.companySlug);
   const companyName = asString(value.companyName);
-  if (!title || !focus || !companySlug || !companyName) return null;
+  if (!title || !focus || !location || !companySlug || !companyName) {
+    return null;
+  }
 
   return {
     title,
@@ -141,7 +144,7 @@ function asJobResult(value: unknown): LocusJobResult | null {
     companySlug,
     companyName,
     url: asNullableString(value.url),
-    location: asString(value.location) ?? undefined,
+    location,
     companyLogo: asNullableString(value.companyLogo),
     countryCode: asString(value.countryCode) ?? undefined,
   };
@@ -172,33 +175,7 @@ function toolResultRows(
   type: string,
   output: unknown,
 ): LocusSearchResults | null {
-  if (type === "tool-searchLocus") return asSearchResults(output);
-
-  if (type === "tool-recommendOutreachTargets" && Array.isArray(output)) {
-    const companies = output
-      .map(asCompanyResult)
-      .filter(Boolean) as LocusCompanyResult[];
-    return companies.length ? { companies, people: [], jobs: [] } : null;
-  }
-
-  if (type === "tool-listCompanyJobs" && Array.isArray(output)) {
-    const jobs = output.map(asJobResult).filter(Boolean) as LocusJobResult[];
-    return jobs.length ? { companies: [], people: [], jobs } : null;
-  }
-
-  if (type === "tool-listCompanyPeople" && Array.isArray(output)) {
-    const people = output
-      .map(asPersonResult)
-      .filter(Boolean) as LocusPersonResult[];
-    return people.length ? { companies: [], people, jobs: [] } : null;
-  }
-
-  if (type === "tool-getCompany") {
-    const company = asCompanyResult(output);
-    return company ? { companies: [company], people: [], jobs: [] } : null;
-  }
-
-  return null;
+  return type === "tool-presentLocusResults" ? asSearchResults(output) : null;
 }
 
 type LocusMessageSegment =
@@ -267,6 +244,8 @@ function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
           return "Checking company facts";
         case "tool-recommendOutreachTargets":
           return "Finding outreach targets";
+        case "tool-presentLocusResults":
+          return "Preparing recommendations";
         case "tool-navigateLocus":
           return "Navigating";
       }

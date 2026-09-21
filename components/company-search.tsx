@@ -2,50 +2,21 @@
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  BriefcaseBusinessIcon,
-  BuildingIcon,
-  LoaderCircleIcon,
-} from "lucide-react";
+import { LoaderCircleIcon } from "lucide-react";
 import {
   Command,
   CommandDialog,
   CommandGroup,
   CommandInput,
-  CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { jobDetailsHref } from "@/lib/job-navigation";
+import {
+  LocusResultRow,
+  locusResultHref,
+  type LocusSearchResults,
+} from "@/components/locus-result-row";
 
-type SearchResults = {
-  companies: {
-    slug: string;
-    name: string;
-    logo: string | null;
-    industry: string;
-    location: string;
-    countryCode: string;
-  }[];
-  people: {
-    name: string;
-    role: string;
-    image: string | null;
-    companySlug: string;
-    companyName: string;
-    companyLogo: string | null;
-  }[];
-  jobs: {
-    title: string;
-    focus: string;
-    location: string;
-    url: string | null;
-    companySlug: string;
-    companyName: string;
-    companyLogo: string | null;
-  }[];
-};
+type SearchResults = LocusSearchResults;
 
 const noSelectionValue = "__locus_no_command_selection__";
 
@@ -119,15 +90,6 @@ export function CompanySearch({
     onOpenChange(false);
     router.push(`/company/${slug}#key-people`);
   };
-  const visitJob = (title: string, location: string, slug: string) => {
-    onOpenChange(false);
-    router.push(jobDetailsHref({ companySlug: slug, title, location }));
-  };
-  const initials = (name: string) =>
-    name
-      .split(" ")
-      .map((part) => part[0])
-      .join("");
   const hasResults = Boolean(
     results &&
     (results.companies.length || results.people.length || results.jobs.length),
@@ -185,122 +147,47 @@ export function CompanySearch({
                   heading={search.trim() ? "Companies" : "Suggested companies"}
                 >
                   {results.companies.map((company) => (
-                    <CommandItem
+                    <LocusResultRow
+                      kind="company"
                       key={company.slug}
                       onSelect={() => visitCompany(company.slug)}
+                      result={company}
                       value={`company-${company.slug}`}
-                      className="items-center gap-3 py-2"
-                    >
-                      {company.logo ? (
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          className="size-8 rounded-sm object-contain ring-1 ring-border/50 shadow-xs"
-                          src={company.logo}
-                        />
-                      ) : (
-                        <div className="flex size-8 items-center justify-center rounded-sm bg-muted text-muted-foreground">
-                          <BuildingIcon />
-                        </div>
-                      )}
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate font-medium">{company.name}</p>
-                        <div className="mt-1 flex flex-wrap gap-1.5">
-                          <Badge
-                            className="h-5 border-border bg-background px-1.5 text-[11px]"
-                            variant="outline"
-                          >
-                            {company.industry}
-                          </Badge>
-                          <Badge
-                            className="h-5 border-border bg-background px-1.5 text-[11px]"
-                            variant="outline"
-                          >
-                            <img
-                              alt=""
-                              aria-hidden="true"
-                              className="size-2.5 rounded-full"
-                              src={`https://hatscripts.github.io/circle-flags/flags/${company.countryCode}.svg`}
-                            />
-                            {company.location}
-                          </Badge>
-                        </div>
-                      </div>
-                    </CommandItem>
+                      variant="command"
+                    />
                   ))}
                 </CommandGroup>
               ) : null}
               {results.people.length ? (
                 <CommandGroup heading="People">
                   {results.people.map((person, index) => (
-                    <CommandItem
+                    <LocusResultRow
+                      kind="person"
                       key={`${person.companySlug}-${person.name}-${index}`}
                       onSelect={() => visitPerson(person.companySlug)}
+                      result={person}
                       value={`person-${person.companySlug}-${index}`}
-                      className="items-center gap-3 py-2"
-                    >
-                      <Avatar className="size-8">
-                        {person.image ? (
-                          <AvatarImage
-                            alt=""
-                            src={person.image}
-                            className="ring-1 ring-border/50 shadow-xs"
-                          />
-                        ) : null}
-                        <AvatarFallback>{initials(person.name)}</AvatarFallback>
-                      </Avatar>
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate font-medium">{person.name}</p>
-                        <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
-                          <span className="truncate font-medium">
-                            {person.role} @
-                          </span>
-                          {person.companyLogo ? (
-                            <img
-                              alt=""
-                              aria-hidden="true"
-                              className="size-3 shrink-0 rounded-[3px] object-contain ring-1 ring-border/50"
-                              src={person.companyLogo}
-                            />
-                          ) : null}
-                          <span className="truncate">{person.companyName}</span>
-                        </p>
-                      </div>
-                    </CommandItem>
+                      variant="command"
+                    />
                   ))}
                 </CommandGroup>
               ) : null}
               {results.jobs.length ? (
                 <CommandGroup heading="Jobs">
                   {results.jobs.map((job, index) => (
-                    <CommandItem
+                    <LocusResultRow
+                      kind="job"
                       key={`${job.companySlug}-${job.title}-${index}`}
-                      onSelect={() =>
-                        visitJob(job.title, job.location, job.companySlug)
-                      }
+                      onSelect={() => {
+                        onOpenChange(false);
+                        router.push(
+                          locusResultHref({ kind: "job", result: job }),
+                        );
+                      }}
+                      result={job}
                       value={`job-${job.companySlug}-${index}`}
-                      className="items-center gap-3 py-2"
-                    >
-                      {job.companyLogo ? (
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          className="size-8 rounded-sm object-contain ring-1 ring-border/50 shadow-xs"
-                          src={job.companyLogo}
-                        />
-                      ) : (
-                        <div className="flex size-8 items-center justify-center rounded-lg bg-muted text-muted-foreground">
-                          <BriefcaseBusinessIcon />
-                        </div>
-                      )}
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate font-medium">{job.title}</p>
-                        <p className="truncate text-xs text-muted-foreground">
-                          <span className="font-medium">{job.companyName}</span>{" "}
-                          · {job.focus}
-                        </p>
-                      </div>
-                    </CommandItem>
+                      variant="command"
+                    />
                   ))}
                 </CommandGroup>
               ) : null}

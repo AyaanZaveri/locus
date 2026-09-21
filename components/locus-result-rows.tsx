@@ -1,79 +1,28 @@
-import { ArrowRight, BriefcaseBusinessIcon, BuildingIcon } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
-import Link from "next/link";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { jobDetailsHref } from "@/lib/job-navigation";
+import {
+  LocusResultRow,
+  type LocusCompanyResult,
+  type LocusJobResult,
+  type LocusPersonResult,
+  type LocusSearchResults,
+} from "@/components/locus-result-row";
 
-export type LocusCompanyResult = {
-  slug: string;
-  name: string;
-  logo: string | null;
-  industry: string;
-  location: string;
-  countryCode?: string;
+export type {
+  LocusCompanyResult,
+  LocusJobResult,
+  LocusPersonResult,
+  LocusSearchResults,
 };
 
-export type LocusPersonResult = {
-  name: string;
-  role: string;
-  image: string | null;
-  companySlug: string;
-  companyName: string;
-  companyLogo: string | null;
-  countryCode?: string;
-};
-
-export type LocusJobResult = {
-  title: string;
-  focus: string;
-  location?: string;
-  url: string | null;
-  companySlug: string;
-  companyName: string;
-  companyLogo: string | null;
-  countryCode?: string;
-};
-
-export type LocusSearchResults = {
-  companies: LocusCompanyResult[];
-  people: LocusPersonResult[];
-  jobs: LocusJobResult[];
-};
-
-function initials(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .join("");
-}
-
-function LocationFlag({ countryCode }: { countryCode?: string }) {
-  return countryCode ? (
-    <img
-      alt=""
-      aria-hidden="true"
-      className="size-2.5 shrink-0 rounded-full"
-      src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
-    />
-  ) : null;
-}
-
-function Row({
+function AnimatedRow({
   children,
-  href,
   index,
-  onNavigate,
 }: {
   children: React.ReactNode;
-  href: string;
   index: number;
-  onNavigate?: () => void;
 }) {
   const reduceMotion = useReducedMotion();
-  const className =
-    "group flex w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 transition-transform duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-muted active:scale-[0.995] motion-reduce:transition-none motion-reduce:active:scale-100";
 
   return (
     <motion.div
@@ -88,9 +37,7 @@ function Row({
         ease: [0.23, 1, 0.32, 1],
       }}
     >
-      <Link className={className} href={href} onClick={onNavigate}>
-        {children}
-      </Link>
+      {children}
     </motion.div>
   );
 }
@@ -106,126 +53,40 @@ export function LocusResultRows({
   return (
     <div className="w-full space-y-1">
       {companies.map((company, index) => (
-        <Row
-          href={`/company/${company.slug}`}
-          index={index}
-          key={company.slug}
-          onNavigate={onNavigate}
-        >
-          {company.logo ? (
-            <img
-              alt=""
-              aria-hidden="true"
-              className="size-8 rounded-sm object-contain ring-1 ring-border/50 shadow-xs"
-              src={company.logo}
-            />
-          ) : (
-            <div className="flex size-8 shrink-0 items-center justify-center rounded-sm bg-muted text-muted-foreground">
-              <BuildingIcon className="size-4" />
-            </div>
-          )}
-          <div className="min-w-0 flex-1">
-            <p className="flex items-center gap-1 truncate text-sm font-medium">
-              <span className="truncate">{company.name}</span>
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 shrink-0 scale-[0.25] text-muted-foreground opacity-0 [filter:blur(4px)] transition-[opacity,scale,filter] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-100 group-hover:opacity-100 group-hover:[filter:blur(0px)] motion-reduce:transition-none"
-              />
-            </p>
-            <div className="mt-1 flex flex-wrap gap-1.5">
-              <Badge
-                className="h-5 border-border bg-background px-1.5 text-[11px]"
-                variant="outline"
-              >
-                {company.industry}
-              </Badge>
-              <Badge
-                className="h-5 max-w-full border-border bg-background px-1.5 text-[11px]"
-                variant="outline"
-              >
-                <LocationFlag countryCode={company.countryCode} />
-                <span className="truncate">{company.location}</span>
-              </Badge>
-            </div>
-          </div>
-        </Row>
+        <AnimatedRow index={index} key={company.slug}>
+          <LocusResultRow
+            kind="company"
+            onNavigate={onNavigate}
+            result={company}
+            variant="link"
+          />
+        </AnimatedRow>
       ))}
-
       {people.map((person, index) => (
-        <Row
-          href={`/company/${person.companySlug}#key-people`}
+        <AnimatedRow
           index={companies.length + index}
           key={`${person.companySlug}-${person.name}-${index}`}
-          onNavigate={onNavigate}
         >
-          <Avatar className="size-8">
-            {person.image ? <AvatarImage alt="" src={person.image} /> : null}
-            <AvatarFallback>{initials(person.name)}</AvatarFallback>
-          </Avatar>
-          <div className="min-w-0 flex-1">
-            <p className="flex items-center gap-1 truncate text-sm font-medium">
-              <span className="truncate">{person.name}</span>
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 shrink-0 scale-[0.25] text-muted-foreground opacity-0 [filter:blur(4px)] transition-[opacity,scale,filter] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-100 group-hover:opacity-100 group-hover:[filter:blur(0px)] motion-reduce:transition-none"
-              />
-            </p>
-            <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
-              <span className="truncate font-medium">{person.role} @</span>
-              {person.companyLogo ? (
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  className="size-3 shrink-0 rounded-[3px] object-contain ring-1 ring-border/50"
-                  src={person.companyLogo}
-                />
-              ) : null}
-              <span className="truncate">{person.companyName}</span>
-            </p>
-          </div>
-        </Row>
+          <LocusResultRow
+            kind="person"
+            onNavigate={onNavigate}
+            result={person}
+            variant="link"
+          />
+        </AnimatedRow>
       ))}
-
       {jobs.map((job, index) => (
-        <Row
-          href={jobDetailsHref({
-            companySlug: job.companySlug,
-            title: job.title,
-            location: job.location,
-          })}
+        <AnimatedRow
           index={companies.length + people.length + index}
-          key={`${job.companySlug}-${job.title}-${index}`}
-          onNavigate={onNavigate}
+          key={`${job.companySlug}-${job.title}-${job.location}-${index}`}
         >
-          {job.companyLogo ? (
-            <img
-              alt=""
-              aria-hidden="true"
-              className="size-8 rounded-sm object-contain ring-1 ring-border/50 shadow-xs"
-              src={job.companyLogo}
-            />
-          ) : (
-            <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground">
-              <BriefcaseBusinessIcon className="size-4" />
-            </div>
-          )}
-          <div className="min-w-0 flex-1">
-            <p className="flex items-center gap-1 truncate text-sm font-medium">
-              <span className="truncate">{job.title}</span>
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 shrink-0 scale-[0.25] text-muted-foreground opacity-0 [filter:blur(4px)] transition-[opacity,scale,filter] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-100 group-hover:opacity-100 group-hover:[filter:blur(0px)] motion-reduce:transition-none"
-              />
-            </p>
-            <p className="truncate text-xs text-muted-foreground">
-              <span className="inline-flex items-center gap-1">
-                <LocationFlag countryCode={job.countryCode} />
-                <span className="font-medium">{job.companyName}</span>
-              </span>{" "}
-              · {job.focus}
-            </p>
-          </div>
-        </Row>
+          <LocusResultRow
+            kind="job"
+            onNavigate={onNavigate}
+            result={job}
+            variant="link"
+          />
+        </AnimatedRow>
       ))}
     </div>
   );

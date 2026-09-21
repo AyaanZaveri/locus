@@ -136,9 +136,12 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const requestedJobUrl = searchParams.get("jobUrl");
   const isRequestedJob =
-    searchParams.get("job") === job.title &&
-    searchParams.get("jobLocation") === job.location;
+    requestedJobUrl && job.url
+      ? requestedJobUrl === job.url
+      : searchParams.get("job") === job.title &&
+        searchParams.get("jobLocation") === job.location;
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 640px)");
@@ -171,6 +174,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
     const nextParams = new URLSearchParams(searchParams.toString());
     nextParams.delete("job");
     nextParams.delete("jobLocation");
+    nextParams.delete("jobUrl");
     const query = nextParams.toString();
     router.replace(`${pathname}${query ? `?${query}` : ""}#jobs`, {
       scroll: false,

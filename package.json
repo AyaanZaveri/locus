@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "generate:company-schema": "node --experimental-strip-types scripts/generate-company-profile-schema.ts",
-    "validate:companies": "node --experimental-strip-types scripts/validate-company-profiles.ts",
+    "validate:companies": "tsx scripts/validate-company-profiles.ts",
     "validate:job-markdown": "tsx scripts/validate-job-markdown.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
