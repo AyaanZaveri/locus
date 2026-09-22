@@ -98,7 +98,7 @@ export async function POST(request: Request) {
       tools: locusTools,
       stopWhen: stepCountIs(7),
       providerOptions: {
-        opencode: {
+        openai: {
           reasoningEffort: "low",
         },
       },

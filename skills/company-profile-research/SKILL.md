@@ -83,6 +83,15 @@ Treat this as structured data collection, not a narrative task. Work in passes:
 2. Search primary sources first: company site, newsroom/blog, official investor announcements, canonical careers board, and official social profiles.
 3. Use WebSearch for discovery and exact dates, WebFetch for static pages and APIs, and agent-browser for JavaScript-rendered pages. If WebSearch is unavailable, blocked, or fails to surface a needed primary source, use [Brave Search](https://search.brave.com/search?q=) with a URL-encoded query as the fallback. Prefer structured first-party job-board APIs such as Greenhouse or Ashby.
 4. Normalize funding rounds independently. Never merge rounds that share a letter, and never replace a disclosed valuation with an estimate.
+   Record a verified accelerator investment, including a YC investment, as its
+   own funding round rather than only an accelerator badge. Use the disclosed
+   stage (normally `Pre-seed` for the initial YC cheque), amount, investors,
+   and best primary `sourceUrl`; add the accelerator to the round's investor
+   list and the profile-level `funding.investors` list. Do not infer the amount
+   or date from an accelerator's current standard deal: terms, dates, and
+   investment structures change, and historical company records must be backed
+   by evidence. If the company confirms participation but not its investment
+   amount, keep the round out rather than fabricating a zero-value raise.
 5. Enumerate all currently open jobs from the canonical board. Every job needs its exact application URL, not the generic careers URL. **Retrieve the full individual posting before writing `jobs[].description`; an ATS listing card, search result, or API excerpt is never sufficient.** The description must contain the complete substantive job-page copy in sanitized CommonMark. It is a transcription field, not a summary: preserve the source wording, order, and level of detail while converting its presentation to Markdown. Keep structured role facts in parallel. If a board API exposes only a short description, follow the individual job URL or its detail endpoint for the full body. Close emphasis before a following link and leave whitespace between them (for example, `***Announcement.*** [***Read more***](https://example.com)`); never concatenate Markdown marker runs. **Do not assume the ATS from the company name** — a slug that resolves for one company returns empty for another, and a name-based guess can silently yield zero jobs. Derive the real board from the careers page, then prefer its public JSON API over scraping:
    - Ashby: `https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true`
    - Greenhouse: `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs`
@@ -335,6 +344,12 @@ Each `jobs[].url` must take the user directly to that specific role's applicatio
   ```
   Verify each person's current role by checking their LinkedIn profile for "Current" positions at the company.
 - Keep funding rounds distinct. Each round must carry its own date, amount, valuation, lead investors, other participating investors, and source URL where known.
+- Treat verified accelerator funding as funding, not merely company metadata.
+  A YC-backed company with a documented YC investment should receive a distinct
+  `Pre-seed` (or source-disclosed stage) round with Y Combinator represented as
+  an investor. Keep it separate from a later seed round even if reporting
+  groups both events under "seed funding". A cohort label alone is insufficient
+  evidence of a specific cash amount, announced date, or lead-investor role.
 - **Enumerate every named participant per round, and take that list from the company's own announcement.** A round's full investor list is usually published only in the company's press release (Business Wire / PR Newswire) or its own blog. Aggregator and blog summaries routinely truncate it: a round recorded here as 3 investors had 10 in the company release. Treat "including" in a news story as an explicit signal that the list is partial, and prefer the release that enumerates. Some companies have no blog post for a round at all; others publish at non-obvious slugs (e.g. `/blog/series-b-40m-to-build-the-next-web`), so probe the blog before concluding a round has no published leads.
 - **Cross-check the round arithmetic.** Sum the individual round amounts and compare against any independently reported total. If the company reports $863M raised across six rounds, those six amounts must sum to $863M. A mismatch means a round is missing, duplicated, or mis-sized.
 - When sources conflict, rank them: the company's own announcement and contemporaneous reporting first, then a later aggregator or advisor/legal-vendor page. Vendor "deals" pages can carry wrong figures (one listed an $80M round as $200M; another named the wrong lead investor).
