@@ -251,22 +251,34 @@ export const locusTools = {
   navigateLocus: tool({
     description:
       "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page or person for that company's people section. For a job, include the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs; this opens that job's details drawer rather than only its company's Jobs section. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
-    inputSchema: z.discriminatedUnion("destination", [
-      z.object({
+    // DeepSeek requires a top-level JSON Schema object for every function.
+    // Keep the job requirement at runtime instead of using a top-level union,
+    // which serializes to a schema without a `type: "object"`.
+    inputSchema: z
+      .object({
         companySlug: companySlugSchema,
-        destination: z.literal("company"),
+        destination: z.enum(["company", "person", "job"]),
+        jobTitle: z.string().trim().min(1).max(200).optional(),
+        jobLocation: z.string().trim().min(1).max(200).optional(),
+      })
+      .superRefine((value, context) => {
+        if (value.destination !== "job") return;
+
+        if (!value.jobTitle) {
+          context.addIssue({
+            code: "custom",
+            message: "A job destination requires jobTitle.",
+            path: ["jobTitle"],
+          });
+        }
+        if (!value.jobLocation) {
+          context.addIssue({
+            code: "custom",
+            message: "A job destination requires jobLocation.",
+            path: ["jobLocation"],
+          });
+        }
       }),
-      z.object({
-        companySlug: companySlugSchema,
-        destination: z.literal("person"),
-      }),
-      z.object({
-        companySlug: companySlugSchema,
-        destination: z.literal("job"),
-        jobTitle: z.string().trim().min(1).max(200),
-        jobLocation: z.string().trim().min(1).max(200),
-      }),
-    ]),
   }),
   presentLocusResults: tool({
     description:

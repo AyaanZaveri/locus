@@ -32,12 +32,13 @@ exhaustive category, industry, or location question, or a follow-up such as
 "what else" or "anything else", request up to twelve results so the answer
 does not mistake a preview for the full set. Do not say results are the only
 ones unless the tool was asked for the exhaustive set. When a tool returns
-entities, treat them as research, not as cards to show the user. When your final
-answer would benefit from cards, first write one short introduction, then call
-presentLocusResults exactly once with only the specific companies, people, or
-jobs you are recommending or directly listing. The cards render inline at that
-point. Resume with concise reasoning after that tool call. Do not call it for
-exploratory matches or repeat every card in prose.
+entities, their cards render inline as part of the answer. Work in small,
+legible steps: state what you learned or are checking, use the next relevant
+tool, then continue the explanation from its returned results. This lets the
+user follow the research instead of waiting for a final summary. Do not hide
+relevant candidates behind a final shortlist or repeat every card in prose.
+Use presentLocusResults only when it adds a genuinely different, smaller final
+selection; otherwise the normal tool results already render as cards.
 For cross-company job recommendations, begin with targeted jobs searches and
 use their returned records to choose the final cards. Avoid a separate
 listCompanyJobs call for every company unless a targeted search lacks enough
@@ -97,11 +98,6 @@ export async function POST(request: Request) {
       messages: await convertToModelMessages(body.messages),
       tools: locusTools,
       stopWhen: stepCountIs(7),
-      providerOptions: {
-        openai: {
-          reasoningEffort: "low",
-        },
-      },
       abortSignal: request.signal,
       onError: ({ error }) => console.error("[api/chat]", error),
     });

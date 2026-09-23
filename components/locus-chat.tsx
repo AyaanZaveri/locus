@@ -17,9 +17,11 @@ import {
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import {
   ArrowDown,
+  ArrowUpRightIcon,
   ArrowUpIcon,
   LensConcaveIcon,
   PlusIcon,
+  SearchIcon,
   SquareIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -175,11 +177,71 @@ function toolResultRows(
   type: string,
   output: unknown,
 ): LocusSearchResults | null {
-  return type === "tool-presentLocusResults" ? asSearchResults(output) : null;
+  if (type === "tool-searchLocus" || type === "tool-presentLocusResults") {
+    return asSearchResults(output);
+  }
+
+  if (type === "tool-recommendOutreachTargets" && Array.isArray(output)) {
+    const companies = output
+      .map(asCompanyResult)
+      .filter(Boolean) as LocusCompanyResult[];
+    return companies.length ? { companies, people: [], jobs: [] } : null;
+  }
+
+  if (type === "tool-listCompanyJobs" && Array.isArray(output)) {
+    const jobs = output.map(asJobResult).filter(Boolean) as LocusJobResult[];
+    return jobs.length ? { companies: [], people: [], jobs } : null;
+  }
+
+  if (type === "tool-listCompanyPeople" && Array.isArray(output)) {
+    const people = output
+      .map(asPersonResult)
+      .filter(Boolean) as LocusPersonResult[];
+    return people.length ? { companies: [], people, jobs: [] } : null;
+  }
+
+  if (type === "tool-getCompany") {
+    const company = asCompanyResult(output);
+    return company ? { companies: [company], people: [], jobs: [] } : null;
+  }
+
+  return null;
+}
+
+function describeResults(results: LocusSearchResults) {
+  const labels = [
+    results.companies.length &&
+      `${results.companies.length} ${results.companies.length === 1 ? "company" : "companies"}`,
+    results.people.length &&
+      `${results.people.length} ${results.people.length === 1 ? "person" : "people"}`,
+    results.jobs.length &&
+      `${results.jobs.length} ${results.jobs.length === 1 ? "role" : "roles"}`,
+  ].filter(Boolean);
+
+  return labels.length ? `Found ${labels.join(", ")}.` : null;
+}
+
+function describeNavigation(value: unknown) {
+  const navigation = asLocusNavigation(value);
+  if (!navigation) return "Opening result.";
+  const companyName = navigation.companySlug
+    .split("-")
+    .map((part) => `${part[0]?.toUpperCase() ?? ""}${part.slice(1)}`)
+    .join(" ");
+  if (navigation.destination === "job") {
+    return `Opening ${navigation.jobTitle} at ${companyName}.`;
+  }
+  return `Opening ${companyName}${navigation.destination === "person" ? "’s people" : ""}.`;
 }
 
 type LocusMessageSegment =
   | { kind: "text"; key: string; streaming: boolean; text: string }
+  | {
+      kind: "progress";
+      key: string;
+      text: string;
+      action: "found" | "opening";
+    }
   | { kind: "results"; key: string; results: LocusSearchResults };
 
 function toLocusSegments(parts: ReadonlyArray<unknown>): LocusMessageSegment[] {
@@ -204,8 +266,27 @@ function toLocusSegments(parts: ReadonlyArray<unknown>): LocusMessageSegment[] {
     if (!part.type.startsWith("tool-")) return;
 
     if (part.state === "output-available") {
+      if (part.type === "tool-navigateLocus") {
+        segments.push({
+          kind: "progress",
+          key: `navigation-${index}`,
+          text: describeNavigation(part.input),
+          action: "opening",
+        });
+        return;
+      }
+
       const results = toolResultRows(part.type, part.output);
       if (results) {
+        const description = describeResults(results);
+        if (description) {
+          segments.push({
+            kind: "progress",
+            key: `progress-${index}`,
+            text: description,
+            action: "found",
+          });
+        }
         segments.push({ kind: "results", key: `results-${index}`, results });
       }
       return;
@@ -334,12 +415,11 @@ export function LocusChat() {
 
       startNavigation(() => {
         router.push(href);
-        setFocusState("panel-exiting");
       });
       addToolOutput({
         tool: "navigateLocus",
         toolCallId: toolCall.toolCallId,
-        output: { href },
+        output: { href, ...navigation },
       });
     },
   });
@@ -614,7 +694,7 @@ export function LocusChat() {
                         ? clearedMessages
                         : { opacity: 1, transform: "translateY(0)" }
                     }
-                    className="mb-3 h-fit max-h-72 space-y-3 overflow-y-auto px-1 py-2"
+                    className="mb-3 h-fit max-h-72 space-y-3 overflow-y-auto px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
                     initial={false}
                     onScroll={handleMessageScroll}
                     onAnimationComplete={finishNewChat}
@@ -672,6 +752,28 @@ export function LocusChat() {
                                     {segment.text}
                                   </Streamdown>
                                 </div>
+                              );
+                            }
+
+                            if (segment.kind === "progress") {
+                              return (
+                                <p
+                                  className="flex items-center gap-2 px-2 text-sm text-muted-foreground"
+                                  key={segment.key}
+                                >
+                                  {segment.action === "found" ? (
+                                    <SearchIcon
+                                      aria-hidden="true"
+                                      className="size-3.5 shrink-0 stroke-2"
+                                    />
+                                  ) : (
+                                    <ArrowUpRightIcon
+                                      aria-hidden="true"
+                                      className="size-4 shrink-0 stroke-2"
+                                    />
+                                  )}
+                                  {segment.text}
+                                </p>
                               );
                             }
 
