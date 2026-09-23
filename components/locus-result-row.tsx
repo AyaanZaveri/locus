@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { CommandItem } from "@/components/ui/command";
 import { jobDetailsHref } from "@/lib/job-navigation";
+import { personDetailsHref } from "@/lib/person-navigation";
 
 export type LocusCompanyResult = {
   slug: string;
@@ -24,6 +25,7 @@ export type LocusPersonResult = {
   companySlug: string;
   companyName: string;
   companyLogo: string | null;
+  url: string | null;
   countryCode?: string;
 };
 
@@ -65,7 +67,11 @@ const rowClassName = "items-center gap-3 py-2";
 export function locusResultHref(result: LocusResult) {
   if (result.kind === "company") return `/company/${result.result.slug}`;
   if (result.kind === "person") {
-    return `/company/${result.result.companySlug}#key-people`;
+    return personDetailsHref({
+      companySlug: result.result.companySlug,
+      name: result.result.name,
+      url: result.result.url,
+    });
   }
 
   return jobDetailsHref({

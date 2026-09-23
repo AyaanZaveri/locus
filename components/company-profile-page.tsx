@@ -1,8 +1,8 @@
 // import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { JobCard } from "@/components/job-card";
+import { PersonCard } from "@/components/person-card";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import {
   Tooltip,
@@ -297,86 +297,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
               </h2>
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {profile.people.map((person) => (
-                  <div
-                    className="flex items-center gap-3 rounded-lg border border-border bg-background p-3"
-                    key={person.name}
-                  >
-                    <Avatar className="size-10">
-                      {person.image ? (
-                        <AvatarImage
-                          alt={person.name}
-                          src={person.image}
-                          className={"ring-1 ring-border/50 shadow-xs"}
-                        />
-                      ) : null}
-                      <AvatarFallback>
-                        {person.name
-                          .split(" ")
-                          .map((part) => part[0])
-                          .join("")}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="min-w-0">
-                      <p className="truncate text-sm font-medium">
-                        {person.name}
-                      </p>
-                      <p className="truncate text-xs font-medium text-muted-foreground">
-                        {person.role}
-                      </p>
-                    </div>
-                    <div className="ml-auto flex shrink-0 items-center gap-1">
-                      {person.linkedin ? (
-                        <Button
-                          aria-label={`${person.name} on LinkedIn`}
-                          nativeButton={false}
-                          render={
-                            <a
-                              href={person.linkedin}
-                              rel="noreferrer"
-                              target="_blank"
-                            />
-                          }
-                          size="icon-sm"
-                          variant="ghost"
-                        >
-                          <span
-                            aria-hidden="true"
-                            className="block size-3.5 shrink-0 bg-muted-foreground"
-                            style={{
-                              mask: "url('/icons/linkedin.svg') center / contain no-repeat",
-                              WebkitMask:
-                                "url('/icons/linkedin.svg') center / contain no-repeat",
-                            }}
-                          />
-                        </Button>
-                      ) : null}
-                      {person.x ? (
-                        <Button
-                          aria-label={`${person.name} on X`}
-                          nativeButton={false}
-                          render={
-                            <a
-                              href={person.x}
-                              rel="noreferrer"
-                              target="_blank"
-                            />
-                          }
-                          size="icon-sm"
-                          variant="ghost"
-                        >
-                          <span
-                            aria-hidden="true"
-                            className="block size-3.5 shrink-0 bg-muted-foreground"
-                            style={{
-                              mask: "url('/icons/x.svg') center / contain no-repeat",
-                              WebkitMask:
-                                "url('/icons/x.svg') center / contain no-repeat",
-                            }}
-                          />
-                        </Button>
-                      ) : null}
-                    </div>
-                  </div>
+                  <PersonCard key={person.name} person={person} />
                 ))}
               </div>
             </section>

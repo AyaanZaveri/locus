@@ -86,9 +86,9 @@ export function CompanySearch({
     onOpenChange(false);
     router.push(`/company/${slug}`);
   };
-  const visitPerson = (slug: string) => {
+  const visitPerson = (person: SearchResults["people"][number]) => {
     onOpenChange(false);
-    router.push(`/company/${slug}#key-people`);
+    router.push(locusResultHref({ kind: "person", result: person }));
   };
   const hasResults = Boolean(
     results &&
@@ -164,7 +164,7 @@ export function CompanySearch({
                     <LocusResultRow
                       kind="person"
                       key={`${person.companySlug}-${person.name}-${index}`}
-                      onSelect={() => visitPerson(person.companySlug)}
+                      onSelect={() => visitPerson(person)}
                       result={person}
                       value={`person-${person.companySlug}-${index}`}
                       variant="command"

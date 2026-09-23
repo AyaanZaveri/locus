@@ -43,6 +43,7 @@ import {
   InputGroupInput,
 } from "@/components/ui/input-group";
 import { jobDetailsHref } from "@/lib/job-navigation";
+import { personDetailsHref } from "@/lib/person-navigation";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
@@ -59,7 +60,13 @@ function asNullableString(value: unknown) {
 type LocusNavigation =
   | {
       companySlug: string;
-      destination: "company" | "person";
+      destination: "company";
+    }
+  | {
+      companySlug: string;
+      destination: "person";
+      personName: string;
+      personUrl: string | null;
     }
   | {
       companySlug: string;
@@ -85,7 +92,19 @@ function asLocusNavigation(value: unknown): LocusNavigation | null {
     return { companySlug, destination, jobTitle, jobLocation };
   }
 
-  if (destination === "company" || destination === "person") {
+  if (destination === "person") {
+    const personName = asString(value.personName);
+    if (!personName) return null;
+
+    return {
+      companySlug,
+      destination,
+      personName,
+      personUrl: asNullableString(value.personUrl),
+    };
+  }
+
+  if (destination === "company") {
     return { companySlug, destination };
   }
 
@@ -124,6 +143,7 @@ function asPersonResult(value: unknown): LocusPersonResult | null {
     companySlug,
     companyName,
     image: asNullableString(value.image),
+    url: asNullableString(value.url),
     companyLogo: asNullableString(value.companyLogo),
     countryCode: asString(value.countryCode) ?? undefined,
   };
@@ -231,7 +251,10 @@ function describeNavigation(value: unknown) {
   if (navigation.destination === "job") {
     return `Opening ${navigation.jobTitle} at ${companyName}.`;
   }
-  return `Opening ${companyName}${navigation.destination === "person" ? "’s people" : ""}.`;
+  if (navigation.destination === "person") {
+    return `Opening ${navigation.personName} at ${companyName}.`;
+  }
+  return `Opening ${companyName}.`;
 }
 
 type LocusMessageSegment =
@@ -404,7 +427,11 @@ export function LocusChat() {
       const { companySlug, destination } = navigation;
       const href =
         destination === "person"
-          ? `/company/${companySlug}#key-people`
+          ? personDetailsHref({
+              companySlug,
+              name: navigation.personName,
+              url: navigation.personUrl,
+            })
           : destination === "job"
             ? jobDetailsHref({
                 companySlug,

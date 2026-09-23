@@ -48,10 +48,11 @@ company, then call listCompanyJobs with a short criteria string that preserves
 the user's stated strengths or target role. This ranks the most relevant roles;
 do not call it without criteria and then infer a fit from its alphabetical list.
 When the user explicitly asks to open, show, or visit a known result, use
-navigateLocus after resolving the exact company slug. A job destination requires
+navigateLocus after resolving the exact company slug. A person destination requires
+the exact person's name and should include their URL returned by searchLocus or
+listCompanyPeople; it scrolls to and highlights that person. A job destination requires
 the exact job title and location returned by searchLocus or listCompanyJobs; it
-opens that job's details drawer and scrolls to it. A person destination goes to
-its company's People section. For job navigation, do not use navigateLocus until
+opens that job's details drawer and scrolls to it. For job navigation, do not use navigateLocus until
 you have resolved the specific job. After navigation succeeds, do not navigate
 again in the same turn.
 When searchLocus returns the exact company needed for a navigation request,

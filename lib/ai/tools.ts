@@ -250,7 +250,7 @@ function filterSearchResults(
 export const locusTools = {
   navigateLocus: tool({
     description:
-      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page or person for that company's people section. For a job, include the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs; this opens that job's details drawer rather than only its company's Jobs section. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
+      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page, person for the exact person's card, or job for the exact job's details drawer. A person destination requires the exact personName and should include personUrl returned by searchLocus or listCompanyPeople. A job destination requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
     // DeepSeek requires a top-level JSON Schema object for every function.
     // Keep the job requirement at runtime instead of using a top-level union,
     // which serializes to a schema without a `type: "object"`.
@@ -258,10 +258,19 @@ export const locusTools = {
       .object({
         companySlug: companySlugSchema,
         destination: z.enum(["company", "person", "job"]),
+        personName: z.string().trim().min(1).max(120).optional(),
+        personUrl: z.string().url().max(2_000).optional(),
         jobTitle: z.string().trim().min(1).max(200).optional(),
         jobLocation: z.string().trim().min(1).max(200).optional(),
       })
       .superRefine((value, context) => {
+        if (value.destination === "person" && !value.personName) {
+          context.addIssue({
+            code: "custom",
+            message: "A person destination requires personName.",
+            path: ["personName"],
+          });
+        }
         if (value.destination !== "job") return;
 
         if (!value.jobTitle) {
@@ -338,6 +347,8 @@ export const locusTools = {
                   name: people.name,
                   role: people.role,
                   image: people.image,
+                  linkedin: people.linkedin,
+                  sourceUrl: people.sourceUrl,
                   companySlug: companies.slug,
                   companyName: companies.name,
                   countryCode: companies.countryCode,
@@ -350,7 +361,11 @@ export const locusTools = {
                 )
                 .limit(1);
               return person
-                ? { ...person, companyLogo: companyLogo(person.companyProfile) }
+                ? {
+                    ...person,
+                    url: person.linkedin ?? person.sourceUrl,
+                    companyLogo: companyLogo(person.companyProfile),
+                  }
                 : null;
             }),
           ),
@@ -634,6 +649,7 @@ export const locusTools = {
           role: people.role,
           image: people.image,
           linkedin: people.linkedin,
+          sourceUrl: people.sourceUrl,
           x: people.x,
           isFounder: people.isFounder,
           companySlug: companies.slug,
@@ -648,6 +664,7 @@ export const locusTools = {
         .limit(limit);
       return results.map(({ companyProfile, ...person }) => ({
         ...person,
+        url: person.linkedin ?? person.sourceUrl,
         companyLogo: companyLogo(companyProfile),
       }));
     },

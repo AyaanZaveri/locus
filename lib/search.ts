@@ -28,6 +28,7 @@ export type SearchResponse = {
     name: string;
     role: string;
     image: string | null;
+    url: string | null;
     companySlug: string;
     companyName: string;
     companyLogo: string | null;
@@ -136,6 +137,8 @@ export async function search(
         name: people.name,
         role: people.role,
         image: people.image,
+        linkedin: people.linkedin,
+        sourceUrl: people.sourceUrl,
         companySlug: companies.slug,
         companyName: companies.name,
         countryCode: companies.countryCode,
@@ -174,8 +177,9 @@ export async function search(
       ...company,
       logo: companyLogo(profile),
     })),
-    people: peopleResults.map(({ profile, ...person }) => ({
+    people: peopleResults.map(({ profile, linkedin, sourceUrl, ...person }) => ({
       ...person,
+      url: linkedin ?? sourceUrl,
       companyLogo: companyLogo(profile),
     })),
     jobs: jobResults.map(({ profile, ...job }) => ({

@@ -31,6 +31,16 @@
   }
 }
 
+@keyframes person-arrival {
+  0%,
+  100% {
+    background-color: var(--background);
+  }
+  50% {
+    background-color: var(--muted);
+  }
+}
+
 @font-face {
   font-family: "Sunghyun Sans";
   src: url("/fonts/sunghyun-sans-semibold.woff2") format("woff2");
