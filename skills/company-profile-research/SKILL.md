@@ -92,6 +92,38 @@ Treat this as structured data collection, not a narrative task. Work in passes:
    investment structures change, and historical company records must be backed
    by evidence. If the company confirms participation but not its investment
    amount, keep the round out rather than fabricating a zero-value raise.
+   - Include only bona fide primary financing rounds in `funding.rounds`.
+     Exclude standalone employee/shareholder secondary tenders, liquidity
+     events, and authorized but unclosed offerings: they raise no new capital
+     for the company and must not inflate the total. Record the announced amount
+     of a primary round as announced, even when that round also funds an
+     employee secondary tranche. Many companies sell secondaries inside every
+     round (Supabase funds "liquidity for the employees" from each raise, up to
+     25% of vested stock); the headline figure is still the round size, so do
+     not subtract an embedded secondary from a disclosed round amount. The
+     distinction is standalone versus embedded, not primary versus secondary
+     dollars. If a standalone tender is the company's most newsworthy capital
+     event, note it in `activity` rather than `funding.rounds`.
+   - Record valuations on one stated basis and say which. A valuation is
+     pre-money or post-money and the two differ by the round size, so a profile
+     that mixes them is wrong by construction. Prefer the basis the company
+     states; if only one is reported, use it and keep `financials.valuation`
+     consistent with the latest round. Never silently convert between the two.
+   - Audit for omitted rounds, not just reported ones. Search the company's
+     funding/newsroom history, investor announcements, credible contemporaneous
+     coverage, and regulatory filings where useful. Resolve same-stage
+     extensions and community offerings as separate events when evidence shows
+     distinct primary financings; exclude unrelated-company or same-name
+     contamination.
+   - Store `funding.rounds` newest-first. Confirm the profile UI's rendering
+     convention before changing presentation code; do not reverse the data
+     order merely to compensate for a UI that already reverses it.
+   - Sum the included round amounts and reconcile the result to
+     `financials.totalFunding.amount`. They must match exactly; a profile whose
+     rounds do not sum to its stated total is holding either a missing round, a
+     duplicated one, or a rounded total. Reconcile against independent reported
+     totals too, but do not force the sum to match a contaminated or
+     differently scoped third-party figure.
 5. Enumerate all currently open jobs from the canonical board. Every job needs its exact application URL, not the generic careers URL. **Retrieve the full individual posting before writing `jobs[].description`; an ATS listing card, search result, or API excerpt is never sufficient.** The description must contain the complete substantive job-page copy in sanitized CommonMark. It is a transcription field, not a summary: preserve the source wording, order, and level of detail while converting its presentation to Markdown. Keep structured role facts in parallel. If a board API exposes only a short description, follow the individual job URL or its detail endpoint for the full body. Close emphasis before a following link and leave whitespace between them (for example, `***Announcement.*** [***Read more***](https://example.com)`); never concatenate Markdown marker runs. **Do not assume the ATS from the company name** — a slug that resolves for one company returns empty for another, and a name-based guess can silently yield zero jobs. Derive the real board from the careers page, then prefer its public JSON API over scraping:
    - Ashby: `https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true`
    - Greenhouse: `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs`
@@ -142,6 +174,71 @@ typed repository check parses every job description with `remark-parse` and
 rejects strong-emphasis runs that CommonMark would leave as literal asterisks.
 If it fails, repair the source Markdown, rerun the check, then run
 `npm run validate:companies`; do not import until both pass.
+
+### Profile rules gate
+
+`npm run validate:companies` is not only a schema check. It runs
+`parseCompanyProfile` for shape and then the semantic rules in
+`scripts/lib/company-profile-rules.ts`, which Zod cannot express:
+
+- every `funding.rounds[].announcedAt` is a real `YYYY-MM-DD`, `YYYY-MM`,
+  `YYYY`, or `null`;
+- `funding.rounds` is newest-first across its dated entries, and
+  `funding.latestRoundId` references `rounds[0]`;
+- the round amounts sum exactly to `financials.totalFunding.amount`;
+- no amount `display` carries an unverified marker such as "derived";
+- every `jobs[].skills` entry is trimmed, unique within the job, not a general
+  competency, and traceable to the posting's own title or description.
+
+A failing run lists each violation by company. Do not import while it fails and
+do not weaken the check to make a profile pass: a red run means the data is
+wrong, not that the rule is. When a chip is flagged as untraceable, the posting
+does not name it, so remove the chip rather than expanding the alias table to
+admit it. Extend `SKILL_EVIDENCE` only for a genuine spelling variant the source
+uses, such as an ATS writing "Postgres" for `PostgreSQL`.
+
+### Job skills: concrete named entities only
+
+`jobs[].skills` is a compact filter/tag list of specific, verifiable skills,
+not a summary of the role's responsibilities or general competencies. Include
+concrete named items such as programming languages, frameworks, platforms,
+software products, developer tools, and formally named standards or
+methodologies when the posting supports them. Examples include `SQL`,
+`TypeScript`, `Excel`, `Salesforce`, `Terraform`, `SOC 2`, and `MEDDIC`.
+
+- Do **not** use generic duties, domains, or competencies as skills. Examples
+  to exclude: accounting, forecasting, audit, internal controls, RevOps,
+  accounts payable, fixed assets, negotiation, communication, leadership,
+  customer success, enterprise sales, and cross-functional collaboration.
+- Do not infer a tool from the job title, typical industry practice, company
+  stack, or what a person in that role would normally use. Each skill must be
+  traceable to an explicit mention in that individual posting (including its
+  title). A named tool in a customer list, company context, or unrelated
+  example is not automatically a required skill; inspect how it is used.
+- Use canonical product/technology spelling and capitalization (`TypeScript`,
+  `Node.js`, `PostgreSQL`, `DocuSign`, `ClickHouse`, `OpenSearch`). Preserve
+  intentionally lowercase branding such as `dbt`. Avoid ambiguous terms and
+  acronyms when they can match ordinary prose (for example, `Excel` must not
+  match “excel at”; `REST API` must not match “the rest”; a vendor name that is
+  also a customer must be validated in context).
+- A function or department acronym is not a skill, even a formally named one.
+  `RevOps`, `FP&A`, `ITSM`, and `PLG` name what a team does, so they are
+  excluded alongside `accounting` and `audit`. Named *standards* and
+  *methodologies* (`SOC 2`, `ISO 27001`, `GAAP`, `MEDDIC`, `ABM`) are skills
+  because they are specific, verifiable, and filterable; named *org functions*
+  are not.
+- Prefer the smallest accurate set. Do not add aliases, duplicate a platform
+  and every sub-service without a useful distinction, or add a broad category
+  merely to increase coverage. Do include a specific named product when the
+  posting identifies it as relevant, even if it is a bonus qualification.
+- An empty list is correct when the posting names no concrete skills. Use
+  `skills: []`; do not fill gaps with generic competencies or guessed tools.
+  The complete job description remains authoritative and must not be altered
+  to make the skills list appear more comprehensive.
+- Before saving, review each distinct skill in context and check for false
+  positives, customer-name collisions, ordinary-word matches, and casing.
+  Confirm every chip against the actual full posting, then validate/import the
+  profile as usual.
 
 ## Parallel research
 
@@ -351,17 +448,23 @@ Each `jobs[].url` must take the user directly to that specific role's applicatio
   groups both events under "seed funding". A cohort label alone is insufficient
   evidence of a specific cash amount, announced date, or lead-investor role.
 - **Enumerate every named participant per round, and take that list from the company's own announcement.** A round's full investor list is usually published only in the company's press release (Business Wire / PR Newswire) or its own blog. Aggregator and blog summaries routinely truncate it: a round recorded here as 3 investors had 10 in the company release. Treat "including" in a news story as an explicit signal that the list is partial, and prefer the release that enumerates. Some companies have no blog post for a round at all; others publish at non-obvious slugs (e.g. `/blog/series-b-40m-to-build-the-next-web`), so probe the blog before concluding a round has no published leads.
-- **Cross-check the round arithmetic.** Sum the individual round amounts and compare against any independently reported total. If the company reports $863M raised across six rounds, those six amounts must sum to $863M. A mismatch means a round is missing, duplicated, or mis-sized.
+- **Cross-check the round arithmetic.** Sum the individual round amounts and compare against `financials.totalFunding.amount` and any independently reported total. If the company reports $863M raised across six rounds, those six amounts must sum to $863M. A mismatch means a round is missing, duplicated, or mis-sized. This check catches real defects: it is how a missing $8M round in a $88M total surfaced.
 - When sources conflict, rank them: the company's own announcement and contemporaneous reporting first, then a later aggregator or advisor/legal-vendor page. Vendor "deals" pages can carry wrong figures (one listed an $80M round as $200M; another named the wrong lead investor).
-- Use `YYYY-MM-DD` for a verified funding announcement date. If an exact date
-  cannot be verified, use `null`; do not substitute partial dates.
-- **Always search for exact funding dates.** Do not settle for just the year. Search for each round specifically:
+- Record funding dates at the precision you can actually verify, and never
+  fake the rest. `YYYY-MM-DD` is preferred; a verified `YYYY-MM` or `YYYY` is
+  acceptable as a last resort and is better than `null`, because it preserves
+  real evidence at its true precision. Never pad a partial date into a
+  fabricated full one, and never use `null` for a date you have verified to the
+  year. Any other form (`2019/01`, `Jan 2019`, `Q1 2019`) is invalid.
+- **Always search for exact funding dates first.** Do not settle for a year
+  without trying:
   ```
   WebSearch: "{Company} Series A funding date"
   WebSearch: "{Company} Series A announced"
   WebSearch: site:pitchbook.com "{Company}" OR site:crunchbase.com "{Company}"
   ```
-  PitchBook, Crunchbase, Caplight, and press releases often have exact dates. Only use `YYYY` as a last resort after checking these sources.
+  PitchBook, Crunchbase, Caplight, and press releases often have exact dates.
+  Fall back to `YYYY-MM`, then `YYYY`, only after checking these sources.
 - Retain a compact source record for every non-trivial claim so downstream users can audit it.
 - Use a company's official brand assets only when a direct, stable asset URL is available. Otherwise return `null`; do not fabricate asset URLs.
 - **Fill every field possible.** The output contract has many optional fields — make a serious effort to populate each one. Only leave `null` after searching at least 2-3 sources. Profile quality is measured by completeness.
