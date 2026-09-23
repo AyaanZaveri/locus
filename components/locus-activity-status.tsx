@@ -37,7 +37,7 @@ export function LocusActivityStatus({
   return (
     <div
       aria-busy="true"
-      className="flex items-center gap-2 motion-reduce:[&_[data-locus-loader-cell]]:[animation:none]"
+      className="flex items-center gap-2.5 motion-reduce:[&_[data-locus-loader-cell]]:[animation:none]"
       role="status"
     >
       <span

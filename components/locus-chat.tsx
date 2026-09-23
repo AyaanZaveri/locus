@@ -3,6 +3,7 @@
 import {
   useCallback,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -337,19 +338,19 @@ function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
 
       switch (part.type) {
         case "tool-searchLocus":
-          return "Searching Locus";
+          return "Searching";
         case "tool-listCompanyJobs":
-          return "Skimming jobs";
+          return "Scanning jobs";
         case "tool-listCompanyPeople":
-          return "Skimming people";
+          return "Mapping people";
         case "tool-getCompany":
-          return "Skimming company";
+          return "Reviewing company";
         case "tool-searchCompanyFacts":
-          return "Checking company facts";
+          return "Verifying facts";
         case "tool-recommendOutreachTargets":
-          return "Finding outreach targets";
+          return "Identifying prospects";
         case "tool-presentLocusResults":
-          return "Preparing recommendations";
+          return "Curating recommendations";
         case "tool-navigateLocus":
           return "Navigating";
       }
@@ -392,6 +393,7 @@ export function LocusChat() {
   const isPinnedToBottom = useRef(true);
   const [isScrolledAwayFromBottom, setIsScrolledAwayFromBottom] =
     useState(false);
+  const [hasTranscriptOverflow, setHasTranscriptOverflow] = useState(false);
   const transport = useMemo(
     () => new DefaultChatTransport({ api: "/api/chat" }),
     [],
@@ -486,6 +488,7 @@ export function LocusChat() {
 
     isPinnedToBottom.current = true;
     setIsScrolledAwayFromBottom(false);
+    if (messageList.scrollHeight <= messageList.clientHeight + 1) return;
     messageList.scrollTo({ top: messageList.scrollHeight, behavior });
   }, []);
 
@@ -513,6 +516,21 @@ export function LocusChat() {
       setActivityStartedAt(null);
     }
   }, [isActivityActive]);
+
+  // Keep an unnecessary scrolling container out of the layout. Besides being
+  // visually quieter, this prevents browsers from briefly revealing its
+  // scrollbar while a short follow-up message is being measured.
+  useLayoutEffect(() => {
+    const messageList = messageListRef.current;
+    if (!messageList) {
+      setHasTranscriptOverflow(false);
+      return;
+    }
+
+    setHasTranscriptOverflow(
+      messageList.scrollHeight > messageList.clientHeight + 1,
+    );
+  }, [error, messages]);
 
   // Streaming changes the transcript many times per response. Keep it pinned
   // only while the reader is already at the latest message; scrolling up is an
@@ -663,7 +681,7 @@ export function LocusChat() {
                             ease: [0.23, 1, 0.32, 1],
                           }}
                         >
-                          <div className="flex h-8 items-center rounded-xl border border-border bg-popover/85 px-3 backdrop-blur-sm dark:bg-popover/75">
+                          <div className="flex h-8 items-center rounded-full border border-border bg-popover/85 px-3 backdrop-blur-sm dark:bg-popover/75">
                             <LocusActivityStatus
                               label={activityLabel}
                               startedAt={activityStartedAt}
@@ -691,7 +709,7 @@ export function LocusChat() {
                         }}
                       >
                         <Button
-                          className="h-8 gap-1.5 rounded-xl border border-border bg-popover/85 px-3 text-sm text-muted-foreground backdrop-blur-sm hover:bg-muted hover:text-foreground dark:bg-popover/75"
+                          className="h-8 gap-1.5 rounded-full border border-border bg-popover/85 px-3 text-sm text-muted-foreground backdrop-blur-sm hover:bg-muted hover:text-foreground dark:bg-popover/75"
                           disabled={isClearingChat}
                           onClick={startNewChat}
                           size="sm"
@@ -721,11 +739,14 @@ export function LocusChat() {
                         ? clearedMessages
                         : { opacity: 1, transform: "translateY(0)" }
                     }
-                    className="mb-3 h-fit max-h-72 space-y-3 overflow-y-auto px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
+                    className="mb-3 h-fit max-h-72 space-y-3 px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
                     initial={false}
                     onScroll={handleMessageScroll}
                     onAnimationComplete={finishNewChat}
                     ref={messageListRef}
+                    style={{
+                      overflowY: hasTranscriptOverflow ? "auto" : "hidden",
+                    }}
                     transition={{
                       duration: 0.18,
                       ease: [0.23, 1, 0.32, 1],
@@ -749,9 +770,9 @@ export function LocusChat() {
                         if (!text) return null;
                         return (
                           <motion.div
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={{ opacity: 1 }}
                             className={`ml-auto w-fit max-w-[80%] bg-emerald-500/10 px-4 py-2 text-emerald-950 backdrop-blur-sm dark:bg-emerald-400/10 dark:text-emerald-100 ${isShortUserMessage ? "rounded-full" : "rounded-2xl"}`}
-                            initial={{ opacity: 0, y: 10 }}
+                            initial={{ opacity: 0 }}
                             key={message.id}
                           >
                             <p className="break-words whitespace-pre-wrap text-[15px] leading-6">
