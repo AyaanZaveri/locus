@@ -245,6 +245,16 @@ const GENERIC_SKILLS = new Set(
     "saas",
     "b2b",
     "enterprise",
+    // Interface types and metrics, which are concepts rather than tools. A named
+    // interface style (`REST API`, `GraphQL`, `MCP`) is still a skill.
+    "apis",
+    "sdks",
+    "nrr",
+    "net revenue retention",
+    "arr",
+    "ote",
+    "cac",
+    "ltv",
   ].map(normalizeSkill),
 );
 
@@ -253,48 +263,40 @@ export function isGenericSkill(skill: string): boolean {
 }
 
 /**
- * Evidence patterns proving a chip is named by the posting. The default is the
- * chip itself, matched case-insensitively. Entries exist where the source spells
- * the thing differently from the canonical chip (an ATS writing "Postgres" for
+ * Evidence patterns proving a chip is named by the posting, and the accepted
+ * vocabulary for extraction. Entries exist where the source spells the thing
+ * differently from the canonical chip (an ATS writing "Postgres" for
  * `PostgreSQL`), where a tool is named by one of its products, or where a bare
  * match would hit ordinary prose and the casing must be respected.
+ *
+ * Every chip the extractor can emit has an entry here, so a chip written by
+ * `infer-job-skills` always passes `skillIsTraceable`. Adding an entry widens
+ * both extraction and validation at once.
  */
 const SKILL_EVIDENCE: Record<string, RegExp[]> = {
-  // Case-sensitive because the bare form is an ordinary word or a single letter.
-  R: [/\bR\b/],
-  Excel: [/\bExcel\b/],
-  "REST API": [/\bREST\b/],
-  Linear: [/\bLinear\b/],
-  Notion: [/\bNotion\b/],
-  Segment: [/\bSegment\b/],
-  Slack: [/\bSlack\b/],
-  Zoom: [/\bZoom\b/],
-  Loom: [/\bLoom\b/],
-  Cursor: [/\bCursor\b/],
-  Ramp: [/\bRamp\b/],
-  CircleCI: [/\bCircleCI\b/],
-  Netlify: [/\bNetlify\b/],
-  Mezmo: [/\bMezmo\b/],
-  Playwright: [/\bPlaywright\b/],
-  // Spelling variants and product aliases.
+  // Languages
+  Python: [/\bpython\b/i],
   TypeScript: [/\btypescript\b/i],
-  PostgreSQL: [/\bpostgres(?:ql)?\b/i, /\baurora\b/i],
-  OpenSearch: [/\bopensearch\b/i, /\belasticsearch\b/i],
-  Redis: [/\bredis\b/i, /\belasticache\b/i],
-  Kubernetes: [/\bkubernetes\b/i, /\bk8s\b/i],
-  Docker: [/\bdocker\b/i, /containeri[sz]ed/i],
+  JavaScript: [/\bjavascript\b/i],
+  SQL: [/\bsql\b/i],
+  "C++": [/\bc\+\+/],
+  R: [/\bR\b/],
+  // Frontend
+  React: [/\breact\b/i],
+  "Next.js": [/\bnext\.?js\b/i],
+  Tailwind: [/\btailwind\b/i],
+  Webflow: [/\bwebflow\b/i],
+  // Runtimes, protocols, interfaces
   "Node.js": [/\bnode\.?js\b/i],
-  "SOC 2": [/\bsoc ?2\b/i],
-  "ISO 27001": [/\biso ?27001\b/i],
-  DocuSign: [/\bdocu ?sign\b/i, /e-?signature/i],
-  CPQ: [/\bcpq\b/i, /quote[- ]to[- ]cash/i],
-  ABM: [/\babm\b/i, /account[- ]based marketing/i],
-  NRR: [/\bnrr\b/i, /net revenue retention/i],
-  RAG: [/\brag\b/i, /retrieval[- ]augmented generation/i],
-  LLM: [/\bllms?\b/i, /large language model/i],
-  ETL: [/\betl\b/i, /\belt\b/i],
+  "REST API": [/\bREST\b/],
+  GraphQL: [/\bgraphql\b/i],
+  APIs: [/\bapis?\b/i],
+  SDKs: [/\bsdks?\b/i],
+  MCP: [/\bmcps?\b/i],
+  CLI: [/\bclis?\b/i],
+  Git: [/\bgit\b/i],
   "CI/CD": [/\bci\/cd\b/i, /continuous integration/i, /continuous deployment/i],
-  MDM: [/\bmdm\b/i, /device management/i],
+  // Cloud and infrastructure
   AWS: [
     /\baws\b/i,
     /\bec2\b/i,
@@ -305,8 +307,86 @@ const SKILL_EVIDENCE: Record<string, RegExp[]> = {
     /\becr\b/i,
     /\bcloudwatch\b/i,
   ],
-  Claygent: [/\bclaygents?\b/i],
+  GCP: [/\bgcp\b/i, /google cloud/i],
+  Azure: [/\bazure\b/i],
+  Vercel: [/\bvercel\b/i],
+  Netlify: [/\bNetlify\b/],
+  Terraform: [/\bterraform\b/i],
+  Kubernetes: [/\bkubernetes\b/i, /\bk8s\b/i],
+  Docker: [/\bdocker\b/i, /containeri[sz]ed/i],
+  Linux: [/\blinux\b/i],
+  Chromium: [/\bchromium\b/i],
+  microVMs: [/\bmicro ?vms?\b/i],
+  unikernels: [/\bunikernels?\b/i],
+  Datadog: [/\bdatadog\b/i],
+  Mezmo: [/\bMezmo\b/],
+  CircleCI: [/\bCircleCI\b/],
+  // Browsers and automation
+  Playwright: [/\bPlaywright\b/],
+  Puppeteer: [/\bpuppeteer\b/i],
+  CDP: [/\bcdp\b/i],
+  // Data
+  PostgreSQL: [/\bpostgres(?:ql)?\b/i, /\baurora\b/i],
+  OpenSearch: [/\bopensearch\b/i, /\belasticsearch\b/i],
+  Redis: [/\bredis\b/i, /\belasticache\b/i],
+  ClickHouse: [/\bclick ?house\b/i],
+  Snowflake: [/\bsnowflake\b/i],
+  dbt: [/\bdbt\b/i],
+  Airflow: [/\bairflow\b/i],
+  ETL: [/\betl\b/i, /\belt\b/i],
+  GA4: [/\bga4\b/i],
+  Mixpanel: [/\bmixpanel\b/i],
+  Segment: [/\bSegment\b/],
+  // AI. `LLM` is matched only where it qualifies engineering work: the bare
+  // term also appears in product copy ("LLM-ready", "LLM answers"), which
+  // describes the product rather than a skill the role needs.
+  LLM: [
+    /\bLLMs?\b(?=[\s-]*(?:in production|applications?|engineering|evals?|evaluation|outputs?|driven|based|models?|pipelines?|inference|training|agents?))/i,
+    /\b(?:build|built|building|use|using|uses|worked|working|experience)\s+(?:with\s+)?LLMs?\b/i,
+  ],
+  Claude: [/\bclaude\b/i],
+  ChatGPT: [/\bchatgpt\b/i],
+  Evals: [/\bevals\b/i],
+  RAG: [/\brag\b/i, /retrieval[- ]augmented generation/i],
+  // Security and compliance
+  "SOC 2": [/\bsoc ?2\b/i],
+  "ISO 27001": [/\biso ?27001\b/i],
+  GDPR: [/\bgdpr\b/i],
+  CCPA: [/\bccpa\b/i],
+  SSO: [/\bsso\b/i],
+  SAML: [/\bsaml\b/i],
+  Okta: [/\bokta\b/i],
+  MDM: [/\bmdm\b/i, /device management/i],
+  // Finance, legal and operations software
+  NetSuite: [/\bnetsuite\b/i],
+  QuickBooks: [/\bquickbooks\b/i],
+  Campfire: [/\bcampfire\b/i],
+  Ramp: [/\bRamp\b/],
+  ERP: [/\berp\b/i],
+  GAAP: [/\bgaap\b/i],
+  Ironclad: [/\bironclad\b/i],
+  DocuSign: [/\bdocu ?sign\b/i, /e-?signature/i],
+  CPQ: [/\bcpq\b/i, /quote[- ]to[- ]cash/i],
+  Excel: [/\bExcel\b/],
+  // Go-to-market and collaboration
+  Salesforce: [/\bsalesforce\b/i],
+  HubSpot: [/\bhub ?spot\b/i],
+  Gong: [/\bgong\b/i],
+  ABM: [/\babm\b/i, /account[- ]based marketing/i],
+  NRR: [/\bnrr\b/i, /net revenue retention/i],
+  SEO: [/\bseo\b/i],
+  Notion: [/\bNotion\b/],
+  Linear: [/\bLinear\b/],
+  Slack: [/\bSlack\b/],
+  Zoom: [/\bZoom\b/],
+  Loom: [/\bLoom\b/],
+  Cursor: [/\bCursor\b/],
+  Rootly: [/\brootly\b/i],
   "Google Workspace": [/\bgoogle workspace\b/i, /\bgmail\b/i],
+  // Clay-specific surface
+  Claygent: [/\bclaygents?\b/i],
+  "Clay University": [/\bclay university\b/i],
+  Waterfall: [/\bwaterfall\b/i],
 };
 
 function escapeRegExp(value: string): string {
@@ -340,4 +420,21 @@ export function skillIsTraceable(skill: string, text: string): boolean {
     ];
 
   return patterns.some((pattern) => pattern.test(text));
+}
+
+/**
+ * Every chip named by the given text, in vocabulary order, excluding anything
+ * the blocklist rejects. This is the inverse of `skillIsTraceable`: anything it
+ * returns is traceable and concrete by construction, so an extractor using it
+ * cannot write a chip the validator would reject.
+ */
+export function matchSkills(text: string): string[] {
+  return Object.entries(SKILL_EVIDENCE)
+    .filter(([chip, patterns]) => !isGenericSkill(chip) && patterns.some((pattern) => pattern.test(text)))
+    .map(([chip]) => chip);
+}
+
+/** The accepted chip vocabulary, for reporting coverage. */
+export function skillVocabulary(): string[] {
+  return Object.keys(SKILL_EVIDENCE);
 }
