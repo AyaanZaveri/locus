@@ -69,7 +69,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
   return (
     <main
       id="top"
-      className="min-h-0 min-w-0 flex-1 overflow-y-auto ps-3 pe-1.5 py-3 md:p-6"
+      className="min-h-0 min-w-0 flex-1 overflow-y-auto ps-3 pe-1.5 pt-3 pb-32 md:p-6 md:pb-32"
     >
       <div className="mx-auto grid w-full min-w-0 max-w-7xl gap-6 xl:grid-cols-[minmax(0,1fr)_22rem]">
         <div className="min-w-0">
