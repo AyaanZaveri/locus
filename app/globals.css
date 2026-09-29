@@ -7,6 +7,35 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.investor-arrow {
+  transition:
+    width 200ms cubic-bezier(0.23, 1, 0.32, 1),
+    margin-left 200ms cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.investor-link:focus-visible .investor-arrow {
+  width: 0.875rem;
+  margin-left: 0.125rem;
+  opacity: 1;
+  color: var(--foreground);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .investor-link:hover .investor-arrow {
+    width: 0.875rem;
+    margin-left: 0.125rem;
+    opacity: 1;
+    color: var(--foreground);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .investor-arrow {
+    transition: none;
+  }
+}
+
 /* Motion primitive from Beautiful UI's loading-state component. */
 @keyframes pixel-on {
   0%,

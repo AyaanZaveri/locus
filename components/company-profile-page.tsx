@@ -254,7 +254,10 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                 <div className="flex flex-wrap items-center gap-1.5">
                                   {round.leadInvestors.map((investor) => (
                                     <Button
-                                      className="rounded-full border-border dark:border-border bg-background dark:bg-background"
+                                      className={cn(
+                                        "rounded-full border-border bg-background dark:border-border dark:bg-background",
+                                        investor.website && "investor-link",
+                                      )}
                                       key={investor.name}
                                       nativeButton={!investor.website}
                                       render={
@@ -276,7 +279,20 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                           src={investor.logo}
                                         />
                                       ) : null}
-                                      {investor.name}
+                                      <span className="inline-flex items-center">
+                                        {investor.name}
+                                        {investor.website ? (
+                                          <span
+                                            aria-hidden="true"
+                                            className="investor-arrow grid w-0 shrink-0 overflow-hidden text-muted-foreground opacity-0"
+                                          >
+                                            <ArrowUpRight
+                                              className="size-3.5 shrink-0"
+                                              strokeWidth={2.25}
+                                            />
+                                          </span>
+                                        ) : null}
+                                      </span>
                                     </Button>
                                   ))}
                                 </div>
