@@ -442,6 +442,7 @@ export function LocusChat() {
               })
             : `/company/${companySlug}`;
 
+      setFocusState("panel-exiting");
       startNavigation(() => {
         router.push(href);
       });
