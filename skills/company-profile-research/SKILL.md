@@ -80,7 +80,7 @@ db:generate`, `npm run db:migrate`, and `npm run db:seed`.
 Treat this as structured data collection, not a narrative task. Work in passes:
 
 1. Inspect the target repository schema and existing assets.
-2. Search primary sources first: company site, newsroom/blog, official investor announcements, canonical careers board, and official social profiles.
+2. Search primary sources first: company site, newsroom/blog, official investor announcements, canonical careers board, official social profiles, and—when the company has a Y Combinator profile—the YC company page and linked founder profiles. Use YC as a high-value accelerator source for company facts, batch, founders, team-size snapshot, hiring, founder bios, and founder social/profile-photo links; cross-check changeable facts against current first-party sources.
 3. Use WebSearch for discovery and exact dates, WebFetch for static pages and APIs, and agent-browser for JavaScript-rendered pages. If WebSearch is unavailable, blocked, or fails to surface a needed primary source, use [Brave Search](https://search.brave.com/search?q=) with a URL-encoded query as the fallback. Prefer structured first-party job-board APIs such as Greenhouse or Ashby.
 4. Normalize funding rounds independently. Never merge rounds that share a letter, and never replace a disclosed valuation with an estimate.
    Record a verified accelerator investment, including a YC investment, as its
@@ -130,7 +130,7 @@ Treat this as structured data collection, not a narrative task. Work in passes:
    - Lever: `https://api.lever.co/v0/postings/{slug}?mode=json`
      An empty `jobs` array from a guessed slug is indistinguishable from a company with no openings, so confirm the slug against the careers page before trusting a zero result. Note also that a company may link its own branded paths (e.g. `/careers/{title}-{id}`) that are not the real application URL; resolve each posting to the underlying ATS URL.
 
-6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page, and verify LinkedIn/X URLs. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
+6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page and, if available, the company's YC profile and each linked active founder profile. YC pages can be especially useful for resolving founders, current founder roles, bios, LinkedIn/X links, and identified founder portraits; verify current-role claims against the company's current site or another current source. Verify LinkedIn/X URLs rather than constructing handles from names. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
 8. Write the repository-shaped JSON, download requested assets, then run syntax and path checks.
 
@@ -252,11 +252,15 @@ for that request.
 Use these independent assignments:
 
 - **Company basics:** official website, canonical domain, tagline, location,
-  stage, employee range, and controlled `industry` value.
+  stage, employee range, and controlled `industry` value. Check the YC company
+  profile when one exists; report its facts as a dated snapshot and note any
+  conflicts with the current company site.
 - **Funding:** distinct rounds, arithmetic, investors, and primary-source URLs.
 - **Jobs:** canonical careers board and exact open-job URLs.
 - **People:** current leadership and employee verification plus attributable
-  portraits.
+  portraits. Check the YC company page and founder profiles for named founders,
+  current titles, LinkedIn/X links, and identified founder photos; independently
+  verify that they still work at the company.
 - **Activity:** feeds, recent distinct events, and verified dates.
 - **Brand assets:** logo and banner candidates, source ownership, dimensions,
   and deterministic asset checks.
@@ -321,6 +325,36 @@ Verify the domain by checking the search result URL, not just the title. Common 
 - Some use `.vc` TLD (e.g., `garage.vc`)
 - Some use compound names (e.g., `49palmsvc.com`, `gtmfund.com`)
 
+**Venture-capital logos are a required research pass.** For every named VC,
+venture fund, accelerator, or institutional investor in each funding round,
+resolve and verify its official website/domain first, then try to obtain a logo
+from Logo.dev or Brandfetch. Check `public/investors/{slug}.{ext}` for an
+existing passing asset before fetching; reuse it if it belongs to that same
+investor. Otherwise download a candidate, convert only when needed, save it in
+`public/investors/`, and reference it in the investor object's `logo` field as
+`/investors/{slug}.{ext}`. Never put a remote proxy URL in that field when
+authoring an Autumn profile. Do not stop after finding a domain or after the
+first provider fails: try the other provider before using a favicon fallback.
+Run `image_assets.py check` on every downloaded logo and reject blank, invalid,
+or misattributed files. Record which provider supplied each saved logo in the
+research ledger. Individual angel investors do not need firm logos.
+
+Use only the verified investor domain in the provider URL. The currently
+available public Logo.dev token and Brandfetch client ID are:
+
+```
+https://img.logo.dev/{verified-domain}?token=live_6a1a28fd-6420-4492-aeb0-b297461d9de2&size=128&retina=false&format=webp
+https://cdn.brandfetch.io/domain/{verified-domain}/fallback/lettermark/theme/light/h/400/w/400/icon?c=1bfwsmEH20zzEfSNTed
+```
+
+Try Logo.dev first, then Brandfetch; preserve the actual response format when
+naming the local file. These public image-service client credentials are
+supplied for this workflow, not evidence that a candidate is the correct logo.
+Verify ownership against the investor's official domain/name and run the asset
+checker. If both services fail or return an unusable/misattributed image, try
+an attributable official brand asset and document the failure; `logo: null` is
+the last resort, not the default.
+
 **People LinkedIn URLs** — Search for each person by full name + company:
 
 ```
@@ -342,6 +376,20 @@ WebSearch: site:linkedin.com/company/{handle} "current"
 WebSearch: "{Company} team members 2026"
 WebSearch: "{Company} leadership team"
 ```
+
+**Y Combinator company and founder profiles** — For a YC-backed or YC-founded
+company, locate the exact company profile on `ycombinator.com/companies/{slug}`
+and inspect its current company page plus any linked founder profiles. Use this
+as an explicit research pass, not merely a discovery snippet. Capture the YC
+batch, company description, location, team-size snapshot, active status, hiring
+links, founder names/titles, and any founder social/profile links or photos the
+page identifies. Treat employee count and other time-sensitive YC fields as a
+dated snapshot and prefer newer first-party evidence when it conflicts. A YC
+founder profile or portrait can be an attributable source when the page clearly
+names the person; still corroborate the individual's current company role before
+adding them to `people`. Preserve verified LinkedIn and X URLs in the schema's
+`linkedin` and `x` fields; do not invent handles or store unsupported social
+networks in those fields.
 
 **Important:** Only include current employees in the `people` array. Board directors, investors, and advisors should be noted separately or included in the `investors` array if they have investment roles.
 
@@ -366,8 +414,11 @@ this source order:
 2. An official company press kit, event/speaker page, webinar, podcast, or
    partner announcement that identifies the person in the image.
 3. The person's own site or official bio page.
-4. Their verified LinkedIn profile picture.
-5. A verified GitHub or X profile only when it is clearly the same person and
+4. The person's identified founder photo on their YC founder profile or the
+   company's YC profile. Use only where the page labels/links the person, and
+   corroborate identity and current employment independently.
+5. Their verified LinkedIn profile picture.
+6. A verified GitHub or X profile only when it is clearly the same person and
    no stronger portrait is available.
 
 Search the company domain first (`site:company.com "Full Name"`), then search
@@ -398,8 +449,10 @@ portraits: they are difficult to attribute, may be stale, and do not provide
 enough identity confidence. Use `null` when no attributable, crop-safe image
 can be verified.
 
-**Company/investor logo URLs** — Prefer an official brand asset, Brandfetch, or
-Logo.dev over LinkedIn. LinkedIn is a useful fallback; unavatar is last resort.
+**Company/investor logo URLs** — Prefer a verified official brand asset, then
+Logo.dev and Brandfetch, over LinkedIn. For venture-capital/institutional
+investors, follow the mandatory dual-provider procedure under **Investor
+websites** above. LinkedIn is a useful fallback; unavatar is last resort.
 Extract raw LinkedIn logo URLs only when the stronger sources do not provide a
 usable, attributable asset:
 
@@ -513,9 +566,8 @@ fallback order rather than guessing an X handle.
 
 1. Profile image from `api.fxtwitter.com` for the verified official X handle.
 2. Official company brand, press, or media assets.
-3. Brandfetch Logo or Brand API, using the verified company domain or a
-   resolved brand identity.
-4. Logo.dev Logo or Brand API, using the verified domain.
+3. Logo.dev, using the verified company domain.
+4. Brandfetch, using the verified company domain or a resolved brand identity.
 5. LinkedIn company logo.
 6. unavatar favicon/avatar fallback only when the verified domain has no
    stronger candidate.
@@ -530,10 +582,12 @@ fallback order rather than guessing an X handle.
 5. LinkedIn company cover image.
 6. X/Twitter profile header from the verified handle.
 
-Use Brandfetch and Logo.dev only with credentials or access already available
-to the active environment; never invent tokens or bypass provider terms. When
-a social candidate is selected, confirm it is owned by the verified company
-account, current enough to represent the brand, non-blank, and crop-safe.
+Use Logo.dev and Brandfetch only with the documented public credentials or
+other access already available to the active environment; never invent tokens
+or bypass provider terms. The example client credentials above are available
+for these image requests. When a social candidate is selected, confirm it is
+owned by the verified company account, current enough to represent the brand,
+non-blank, and crop-safe.
 
 ### LinkedIn Company Logo Fallback
 

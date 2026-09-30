@@ -11,8 +11,8 @@ that otherwise tempt you to "just look at the image":
   * an image too small to be a usable avatar or logo
 
 Modes:
-  fetch   Download a logo per "slug=domain" pair, falling back from logo.dev to
-          public favicon services, validating every candidate before keeping it.
+  fetch   Download a logo per "slug=domain" pair, trying Logo.dev, then
+          Brandfetch, then public favicon services, validating every candidate.
   check   Validate one or more existing image files and print an actionable
           verdict for each.
 
@@ -33,6 +33,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 
@@ -138,8 +139,8 @@ def classify(path):
     return out
 
 
-def fetch_one(slug, domain, dest, token, min_dim=MIN_DIM):
-    """Try logo.dev then favicon services. Returns (path, source) or (None, None)."""
+def fetch_one(slug, domain, dest, token, brandfetch_client_id, min_dim=MIN_DIM):
+    """Try Logo.dev, Brandfetch, then favicons. Return path/source/verdict."""
     os.makedirs(dest, exist_ok=True)
 
     for existing in sorted(os.listdir(dest)):
@@ -154,8 +155,15 @@ def fetch_one(slug, domain, dest, token, min_dim=MIN_DIM):
     candidates = []
     if token:
         candidates.append((
-            "logo.dev",
+            "Logo.dev",
             f"https://img.logo.dev/{domain}?token={token}&size=256&retina=true&format=png",
+        ))
+    if brandfetch_client_id:
+        candidates.append((
+            "Brandfetch",
+            "https://cdn.brandfetch.io/domain/"
+            f"{domain}/fallback/lettermark/theme/light/h/400/w/400/icon"
+            f"?c={brandfetch_client_id}&format=png",
         ))
     candidates += [
         ("favicon(ddg)", f"https://icons.duckduckgo.com/ip3/{domain}.ico"),
@@ -164,13 +172,31 @@ def fetch_one(slug, domain, dest, token, min_dim=MIN_DIM):
 
     for source, url in candidates:
         path = os.path.join(dest, f"{slug}.png")
+        download_path = path + ".download"
         try:
-            subprocess.run(["curl", "-sL", "--fail", "--max-time", "30", url, "-o", path],
+            subprocess.run(["curl", "-sL", "--fail", "--max-time", "30", url, "-o", download_path],
                            check=True, capture_output=True)
         except Exception:
+            if os.path.exists(download_path):
+                os.remove(download_path)
+            continue
+        try:
+            # Normalise negotiated WebP/JPEG responses to the .png asset path;
+            # HTML/docs error pages fail decoding and are discarded.
+            if HAVE_PIL:
+                with Image.open(download_path) as im:
+                    im.convert("RGBA").save(path, format="PNG")
+            else:
+                shutil.copyfile(download_path, path)
+        except Exception:
+            if os.path.exists(download_path):
+                os.remove(download_path)
             if os.path.exists(path):
                 os.remove(path)
             continue
+        finally:
+            if os.path.exists(download_path):
+                os.remove(download_path)
         verdict = classify(path)
         if verdict["status"].startswith("OK"):
             return path, source, verdict
@@ -214,7 +240,20 @@ def main(argv=None):
     f = sub.add_parser("fetch", help="download logos for slug=domain pairs")
     f.add_argument("pairs", nargs="+", metavar="slug=domain")
     f.add_argument("--dest", default="public/investors")
-    f.add_argument("--token", default=os.environ.get("LOGO_DEV_TOKEN", ""))
+    f.add_argument(
+        "--token",
+        default=os.environ.get(
+            "LOGO_DEV_TOKEN",
+            "live_6a1a28fd-6420-4492-aeb0-b297461d9de2",
+        ),
+    )
+    f.add_argument(
+        "--brandfetch-client-id",
+        default=os.environ.get(
+            "BRANDFETCH_CLIENT_ID",
+            "1bfwsmEH20zzEfSNTed",
+        ),
+    )
     f.add_argument("--contact-sheet", default=None, metavar="OUT.png")
 
     c = sub.add_parser("check", help="validate existing image files")
@@ -238,7 +277,9 @@ def main(argv=None):
                 failures += 1
                 continue
             slug, domain = pair.split("=", 1)
-            path, source, verdict = fetch_one(slug, domain, args.dest, args.token)
+            path, source, verdict = fetch_one(
+                slug, domain, args.dest, args.token, args.brandfetch_client_id
+            )
             if path:
                 warn = ""
                 if source.startswith("favicon") and max(verdict["width"], verdict["height"]) <= 64:
