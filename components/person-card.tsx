@@ -38,7 +38,7 @@ export function PersonCard({ person }: { person: Person }) {
     <div
       className={`flex items-center gap-3 rounded-lg border border-border bg-background p-3 ${
         isRequestedPerson
-          ? "motion-safe:animate-[person-arrival_1.1s_ease-in-out_2]"
+          ? "motion-safe:animate-[person-arrival_0.8s_ease-in-out_2]"
           : ""
       }`}
       ref={cardRef}
