@@ -934,7 +934,7 @@ export function LocusChat() {
             <Button
               aria-expanded={isOpen}
               aria-keyshortcuts="Meta+J Control+J"
-              className="h-9 rounded-full border border-border backdrop-blur-sm bg-popover/85 dark:bg-popover/75 px-3.5 shadow-xl shadow-emerald-500/7 dark:shadow-emerald-500/10 hover:bg-muted/75!"
+              className="h-9 rounded-full border border-border backdrop-blur-sm bg-popover/85 dark:bg-popover/75 px-3.5 shadow-xl shadow-emerald-500/7 dark:shadow-emerald-500/6 hover:bg-muted/75!"
               onClick={() => setFocusState("launcher-exiting")}
               type="button"
               variant="outline"
