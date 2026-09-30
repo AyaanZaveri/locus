@@ -130,6 +130,46 @@ Treat this as structured data collection, not a narrative task. Work in passes:
    - Lever: `https://api.lever.co/v0/postings/{slug}?mode=json`
      An empty `jobs` array from a guessed slug is indistinguishable from a company with no openings, so confirm the slug against the careers page before trusting a zero result. Note also that a company may link its own branded paths (e.g. `/careers/{title}-{id}`) that are not the real application URL; resolve each posting to the underlying ATS URL.
 
+### Job-location normalization gate
+
+`jobs[].location` is one string with **distinct places separated by ` | `**.
+The UI renders these as ` · ` on a role and treats each place as its own
+location-filter option. A comma separates parts *within* a place, never a list
+of places. Preserve the original posting's eligibility and granularity: a
+province is not a city, a remote-eligible region is not an office, and a
+hybrid role is not necessarily fully remote.
+
+- Take every location from the individual posting or ATS detail data, including
+  secondary locations. Split explicit semicolons/pipes and verified multi-city
+  lists into distinct values before writing. Example:
+  `San Francisco, CA, New York City, NY, Seattle, WA` ->
+  `San Francisco, CA | New York City, NY | Seattle, WA`.
+  The first comma in `San Francisco, CA` is **not** a location boundary.
+- Run the repository's `sanitizeLocation` from `lib/job-location.ts` (also
+  re-exported by `scripts/lib/job-location.ts`) on every job, even when the ATS
+  provides a single location string. This handles known repeated city/state
+  pairs and verified hybrid-city lists. Inspect its output against the source:
+  do not assume it can reliably split arbitrary comma lists or infer geography
+  from a company headquarters.
+- Expand verified country abbreviations in labels to readable names:
+  `Ontario, CAN` -> `Ontario, Canada`, `Dublin, IE` -> `Dublin, Ireland`,
+  `Zürich, CH` -> `Zürich, Switzerland`. Retain US state abbreviations in
+  city/state pairs (`San Francisco, CA`), and never reinterpret a state/province
+  as a city. Preserve a label such as `Remote-Friendly, United States` as a
+  remote eligibility region, not a US city; set `workplaceType` separately from
+  the source's remote/hybrid/onsite designation.
+- For ambiguous unseparated alternatives (`Pune or Bangalore, India`) or broad
+  regions (`APAC`, `Europe`), verify each place on the canonical posting before
+  splitting; if still ambiguous, retain the source label and flag it for review
+  rather than guessing country, city, or eligibility. Geocoding may verify a
+  *single* place but cannot decide where an ATS intended list boundaries.
+- Before import, audit all jobs for multiple cities/countries inside one
+  location segment, e.g. repeated `, CA, ... , NY`, `Hybrid - London, Berlin`,
+  or `San Francisco or Palo Alto`. Review each distinct pattern, then run
+  `npx tsx --test lib/job-location.test.ts`. `parseCompanyProfile` normalizes
+  location strings too, but that safety net does not replace checking the
+  authored payload and source evidence.
+
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page and, if available, the company's YC profile and each linked active founder profile. YC pages can be especially useful for resolving founders, current founder roles, bios, LinkedIn/X links, and identified founder portraits; verify current-role claims against the company's current site or another current source. Verify LinkedIn/X URLs rather than constructing handles from names. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
 8. Write the repository-shaped JSON, download requested assets, then run syntax and path checks.

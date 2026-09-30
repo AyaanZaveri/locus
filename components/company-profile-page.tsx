@@ -1,7 +1,7 @@
 // import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { JobCard } from "@/components/job-card";
+import { CompanyJobs } from "@/components/company-jobs";
 import { PersonCard } from "@/components/person-card";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import {
@@ -197,7 +197,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                     {round.stage}
                                   </p>
                                   {formatFundingDate(round.announcedAt) ||
-                                    round.sourceUrl ? (
+                                  round.sourceUrl ? (
                                     <div className="mt-0.5 flex flex-wrap items-center gap-x-1 text-xs font-medium text-muted-foreground">
                                       {formatFundingDate(round.announcedAt) ? (
                                         <time>
@@ -205,7 +205,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                         </time>
                                       ) : null}
                                       {formatFundingDate(round.announcedAt) &&
-                                        round.sourceUrl ? (
+                                      round.sourceUrl ? (
                                         <span aria-hidden="true">·</span>
                                       ) : null}
                                       {round.sourceUrl ? (
@@ -319,19 +319,11 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             </section>
 
             {profile.jobs.length ? (
-              <section id="jobs" className="mt-6 max-w-none scroll-mt-6">
-                <h2 className="text-lg font-semibold tracking-tight">Jobs</h2>
-                <div className="mt-3 flex flex-col gap-3">
-                  {profile.jobs.map((job, index) => (
-                    <JobCard
-                      company={{ name: profile.name, logo: profile.logo }}
-                      countryCode={profile.location.countryCode}
-                      job={job}
-                      key={`${job.title}-${job.location}-${job.focus}-${job.url ?? ""}-${index}`}
-                    />
-                  ))}
-                </div>
-              </section>
+              <CompanyJobs
+                company={{ name: profile.name, logo: profile.logo }}
+                countryCode={profile.location.countryCode}
+                jobs={profile.jobs}
+              />
             ) : null}
           </div>
         </div>

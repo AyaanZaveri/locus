@@ -122,7 +122,7 @@ type FundingRound = {
 
 type Job = {
   title: string;
-  location: string;
+  location: string; // distinct verified places separated by " | "; commas stay within one place
   focus: string;
   url?: string | null;
   // Almost-lossless, sanitized CommonMark transcription of the full posting.

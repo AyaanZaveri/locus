@@ -2,6 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { connection } from "next/server";
 import { z } from "zod";
+import { sanitizeLocation } from "./job-location";
 
 const activityTypeSchema = z.enum([
   "documentation",
@@ -212,6 +213,18 @@ function normalizeCompany(source: Record<string, unknown>) {
 
   return {
     ...source,
+    jobs: Array.isArray(source.jobs)
+      ? source.jobs.map((job) => {
+          const record = job as Record<string, unknown>;
+          return {
+            ...record,
+            location:
+              typeof record.location === "string"
+                ? sanitizeLocation(record.location)
+                : record.location,
+          };
+        })
+      : source.jobs,
     banner: source.banner ?? null,
     logo: source.logo ?? null,
     funding: {
@@ -300,38 +313,26 @@ export async function getCompanies() {
   }
 }
 
-export async function getCompanyNavigation(): Promise<
-  CompanyNavigationItem[]
-> {
+export async function getCompanyNavigation(): Promise<CompanyNavigationItem[]> {
   await connection();
 
   try {
-    const [{ db }, { companies }] = await Promise.all([
+    const [{ db }, { companies }, { sql }] = await Promise.all([
       import("./db"),
       import("./db/schema"),
+      import("drizzle-orm"),
     ]);
-    return db
+    return await db
       .select({
         slug: companies.slug,
         name: companies.name,
         industry: companies.industry,
         location: companies.location,
         countryCode: companies.countryCode,
-        logo: companies.profile,
+        logo: sql<string | null>`${companies.profile} ->> 'logo'`,
       })
       .from(companies)
-      .orderBy(companies.name)
-      .then((records) =>
-        records.map(({ logo, ...company }) => ({
-          ...company,
-          logo:
-            logo && typeof logo === "object" && "logo" in logo
-              ? typeof logo.logo === "string"
-                ? logo.logo
-                : null
-              : null,
-        })),
-      );
+      .orderBy(companies.name);
   } catch (error) {
     throw new Error("Unable to load company navigation from Neon.", {
       cause: error,

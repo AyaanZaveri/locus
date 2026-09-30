@@ -258,7 +258,11 @@ async function main() {
       status: "open",
       workplaceType:
         workplaceMap[(locationType ?? "").toLowerCase()] ??
-        (isRemote(job.location?.name ?? "", description) ? "remote" : "onsite"),
+        (isRemote(job.location?.name ?? "", description)
+          ? "remote"
+          : /\bhybrid\b/i.test(job.location?.name ?? "")
+            ? "hybrid"
+            : "onsite"),
       employmentType: employmentFrom(job.title),
       department: category ?? job.departments?.[0]?.name ?? null,
       ...(salary
