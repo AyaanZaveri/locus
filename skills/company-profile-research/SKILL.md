@@ -69,6 +69,16 @@ current `data/companies/*/company.json` before writing.
 - After changing profile data, run `npm run db:import -- /absolute/path/to/company.json`.
   It upserts `companies` and replaces the company’s normalized `jobs` and
   `people` rows.
+- After each successful company import or completed batch, commit and push the
+  new or updated **local assets** (`public/companies/{slug}/` and any new
+  `public/investors/` logos) and any related tracked code/schema changes to the
+  deployment branch. Neon can reference an asset path before the file is
+  deployed, so an import alone does not finish a profile with images. Stage
+  only files produced by this task; never commit temporary JSON payloads,
+  secrets, or unrelated working-tree changes. Check `git status` and the
+  staged diff before committing, push, and verify the remote branch contains
+  the commit. If a push is blocked, report that the assets are not yet live.
+  For research-only requests with no repository write, do not create a commit.
 - When changing the profile contract, update `lib/company-profile.ts` first,
   regenerate the JSON schema, update `lib/db/schema.ts`, generate and apply a
   Drizzle migration, then seed: `npm run generate:company-schema`, `npm run
@@ -813,4 +823,6 @@ invent local asset paths until a repository write is in scope.
 Before completion, verify slug, URLs, local paths, country code, dates, and
 money values field by field; then run `npm run validate:companies`. If the Zod
 contract changes, run `npm run generate:company-schema` and include the
-regenerated schema with the source change.
+regenerated schema with the source change. For an imported profile with new or
+updated local assets, complete the commit-and-push gate above before reporting
+the profile as deployed; a database import is not an asset deployment.
