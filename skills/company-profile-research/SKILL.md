@@ -211,6 +211,23 @@ hybrid role is not necessarily fully remote.
   `npx tsx --test lib/job-location.test.ts`. `parseCompanyProfile` normalizes
   location strings too, but that safety net does not replace checking the
   authored payload and source evidence.
+- Before import, list each **distinct** incoming location segment alongside
+  the same city's existing labels across companies. Verify that equivalent
+  places resolve to the same display name (for example, `San Francisco, CA`),
+  including names without a state/country and names with full state/country
+  spellings. If a new, verified variant is missing from `cityAliases`, extend
+  `lib/job-location.ts` and add a regression case to
+  `lib/job-location.test.ts` **before** importing. Never treat an unchanged
+  output from `sanitizeLocation` as evidence that the input is canonical: an
+  unrecognized alias also comes back unchanged. Do not normalize an ambiguous
+  city, a region, or remote eligibility by guessing.
+- After import, compare the company's stored `profile.jobs[].location` with
+  its normalized `jobs.location` rows and check that running
+  `sanitizeLocation` again changes neither. Run
+  `npx tsx --env-file=.env.local scripts/repair-job-locations.ts` in dry-run
+  mode as a broader drift check, and resolve any new locations it flags. A
+  zero-change dry run confirms idempotence for *known* aliases, not that every
+  possible future ATS spelling has been discovered.
 
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page and, if available, the company's YC profile and each linked active founder profile. YC pages can be especially useful for resolving founders, current founder roles, bios, LinkedIn/X links, and identified founder portraits; verify current-role claims against the company's current site or another current source. Verify LinkedIn/X URLs rather than constructing handles from names. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
