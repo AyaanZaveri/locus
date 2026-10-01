@@ -156,8 +156,12 @@ search, cards, and filters remain consistent.
   and the company's careers page, including roles with similar titles.
 - Avoid overlapping or compound categories that create duplicate-looking
   filter chips when the roles have clear separate functions. If the company
-  genuinely uses a cross-functional team name, preserve it only when the
-  source explicitly identifies that team; do not split a real team on a guess.
+  genuinely uses a cross-functional team name, preserve it when the role does
+  not have a clear primary function; do not split a real team on a guess. But
+  an ATS umbrella such as `AI Research & Engineering`, `Research & Research
+  Engineering`, or `Engineering & Infra` must not hide unambiguously research
+  roles from the `Research` filter. Classify those roles by primary function;
+  do not reassign every role in a mixed team with a single blind replacement.
 - Before import, list the distinct departments and their roles, then check the
   exact team chips the UI will derive. After import, verify both the JSON
   profile and normalized jobs rows carry the intended `department` and `focus`.
