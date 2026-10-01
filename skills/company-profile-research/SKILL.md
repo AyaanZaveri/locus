@@ -180,12 +180,17 @@ hybrid role is not necessarily fully remote.
   secondary locations. Split explicit semicolons/pipes and verified multi-city
   lists into distinct values before writing. Example:
   `San Francisco, CA, New York City, NY, Seattle, WA` ->
-  `San Francisco, CA | New York City, NY | Seattle, WA`.
+  `San Francisco, CA | New York, NY | Seattle, WA`.
   The first comma in `San Francisco, CA` is **not** a location boundary.
 - Run the repository's `sanitizeLocation` from `lib/job-location.ts` (also
   re-exported by `scripts/lib/job-location.ts`) on every job, even when the ATS
-  provides a single location string. This handles known repeated city/state
-  pairs and verified hybrid-city lists. Inspect its output against the source:
+  provides a single location string. It maps verified city aliases across
+  companies (e.g. `San Francisco`, `San Francisco, California` and
+  `San Francisco, CA` all become `San Francisco, CA`), and handles known
+  repeated city/state pairs and verified hybrid-city lists. Extend the
+  curated aliases and tests for any new verified variant; do not add fuzzy
+  guesses or city aliases for remote/region labels. Inspect its output against
+  the source:
   do not assume it can reliably split arbitrary comma lists or infer geography
   from a company headquarters.
 - Expand verified country abbreviations in labels to readable names:

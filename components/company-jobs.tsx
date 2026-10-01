@@ -33,7 +33,10 @@ type Props = {
 const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
 
 function displayLocation(place: string) {
-  return place.trim().replace(/^Hybrid\s*[-–]\s*/i, "");
+  return place
+    .trim()
+    .replace(/^Hybrid\s*[-–]\s*/i, "")
+    .replace(/\s*(?:\((?:on-?site|hybrid)\)|\b(?:HQ|Hub|Headquarters))$/i, "");
 }
 
 function getLocationGroups(jobs: Props["jobs"]) {

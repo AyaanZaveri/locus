@@ -4,6 +4,7 @@ import { and, asc, desc, eq, ilike, or, sql } from "drizzle-orm";
 
 import { db } from "./db";
 import { companies, jobs, people } from "./db/schema";
+import { sanitizeLocation } from "./job-location";
 
 const defaultCompanyLimit = 6;
 const defaultPersonLimit = 8;
@@ -99,6 +100,7 @@ export async function search(
   }
 
   const pattern = `%${normalizedQuery}%`;
+  const canonicalLocation = sanitizeLocation(normalizedQuery);
   const wordStart = wordStartPattern(normalizedQuery);
   const exactName = sql`lower(${companies.name}) = lower(${normalizedQuery})`;
   const nameWordStart = sql`${companies.name} ~* ${wordStart}`;
@@ -165,7 +167,12 @@ export async function search(
       .where(
         and(
           or(eq(jobs.status, "open"), eq(jobs.status, "unknown")),
-          ilike(jobs.searchText, pattern),
+          or(
+            ilike(jobs.searchText, pattern),
+            ...(canonicalLocation !== normalizedQuery
+              ? [ilike(jobs.location, `%${canonicalLocation}%`)]
+              : []),
+          ),
         ),
       )
       .orderBy(desc(sql`similarity(${jobs.searchText}, ${normalizedQuery})`))

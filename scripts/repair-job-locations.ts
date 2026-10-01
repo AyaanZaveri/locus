@@ -16,6 +16,7 @@ async function main() {
     .select({
       id: companies.id,
       slug: companies.slug,
+      name: companies.name,
       profile: companies.profile,
     })
     .from(companies);
@@ -54,15 +55,18 @@ async function main() {
         );
       }
       const row = matches[0];
-      if (!row.searchText.includes(job.location)) {
+      const prefix = `${company.name} ${job.title} ${job.location}`;
+      if (!row.searchText.startsWith(prefix)) {
         throw new Error(
-          `${company.slug}: search text missing old location for ${job.title}`,
+          `${company.slug}: unexpected search text for ${job.title}`,
         );
       }
       return {
         row,
         next,
-        searchText: row.searchText.replace(job.location, next),
+        searchText:
+          `${company.name} ${job.title} ${next}` +
+          row.searchText.slice(prefix.length),
       };
     });
 

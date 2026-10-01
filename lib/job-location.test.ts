@@ -6,11 +6,11 @@ import { sanitizeLocation, splitJobLocations } from "./job-location";
 test("separates repeated US city/state pairs without splitting one address", () => {
   assert.equal(
     sanitizeLocation("San Francisco, CA, New York City, NY, Seattle, WA"),
-    "San Francisco, CA | New York City, NY | Seattle, WA",
+    "San Francisco, CA | New York, NY | Seattle, WA",
   );
   assert.equal(
     sanitizeLocation("New York City, New York, United States"),
-    "New York City, New York, United States",
+    "New York, NY",
   );
 });
 
@@ -35,12 +35,12 @@ test("keeps source remote regions distinct while expanding unambiguous country c
 test("separates verified hybrid-city lists and leaves ambiguous regional lists alone", () => {
   assert.equal(
     sanitizeLocation("Hybrid - San Francisco, New York City, Austin"),
-    "Hybrid - San Francisco | Hybrid - New York City | Hybrid - Austin",
+    "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
   );
-  assert.equal(sanitizeLocation("Hybrid - London"), "Hybrid - London");
+  assert.equal(sanitizeLocation("Hybrid - London"), "Hybrid - London, UK");
   assert.equal(
     sanitizeLocation("San Francisco or Palo Alto"),
-    "San Francisco | Palo Alto",
+    "San Francisco, CA | Palo Alto, CA",
   );
   assert.equal(
     sanitizeLocation("Remote - Spain, United Kingdom, Ireland"),
@@ -52,6 +52,37 @@ test("separates verified hybrid-city lists and leaves ambiguous regional lists a
   );
   assert.equal(
     sanitizeLocation("San Francisco | San Francisco"),
-    "San Francisco",
+    "San Francisco, CA",
+  );
+});
+
+test("canonicalizes city aliases without changing remote scope or uncertain places", () => {
+  assert.equal(
+    sanitizeLocation("San Francisco | San Francisco, California | San Francisco, CA"),
+    "San Francisco, CA",
+  );
+  assert.equal(
+    sanitizeLocation("New York City, NY | New York, New York | New York"),
+    "New York, NY",
+  );
+  assert.equal(
+    sanitizeLocation("Hybrid - San Francisco | Toronto, Ontario, Canada | London"),
+    "Hybrid - San Francisco, CA | Toronto, ON | London, UK",
+  );
+  assert.equal(sanitizeLocation("Remote - San Francisco"), "Remote - San Francisco");
+  assert.equal(sanitizeLocation("Remote (Canada)"), "Remote (Canada)");
+  assert.equal(sanitizeLocation("Portland"), "Portland");
+  assert.equal(sanitizeLocation("San Francisco Bay Area"), "San Francisco Bay Area");
+  assert.equal(
+    sanitizeLocation("San Francisco HQ | Toronto Hub"),
+    "San Francisco, CA HQ | Toronto, ON Hub",
+  );
+  assert.equal(
+    sanitizeLocation("San Francisco or NYC | San Francisco, Amsterdam"),
+    "San Francisco, CA | New York, NY | Amsterdam, Netherlands",
+  );
+  assert.equal(
+    sanitizeLocation("United States (New York | San Francisco)"),
+    "New York, NY | San Francisco, CA",
   );
 });

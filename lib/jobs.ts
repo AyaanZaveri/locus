@@ -13,6 +13,7 @@ import {
 
 import { db } from "./db";
 import { companies, jobs } from "./db/schema";
+import { sanitizeLocation } from "./job-location";
 
 export type JobFilters = {
   query?: string;
@@ -43,8 +44,15 @@ export async function getJobs(filters: JobFilters = {}) {
 
   if (filters.query) {
     const query = `%${filters.query.trim()}%`;
+    const canonicalLocation = sanitizeLocation(filters.query.trim());
     clauses.push(
-      or(ilike(jobs.searchText, query), ilike(companies.name, query))!,
+      or(
+        ilike(jobs.searchText, query),
+        ilike(companies.name, query),
+        ...(canonicalLocation !== filters.query.trim()
+          ? [ilike(jobs.location, `%${canonicalLocation}%`)]
+          : []),
+      )!,
     );
   }
   if (filters.commitment) {
@@ -58,7 +66,7 @@ export async function getJobs(filters: JobFilters = {}) {
   if (filters.companyStage)
     clauses.push(eq(companies.stage, filters.companyStage));
   if (filters.location)
-    clauses.push(ilike(jobs.location, `%${filters.location}%`));
+    clauses.push(ilike(jobs.location, `%${sanitizeLocation(filters.location)}%`));
   if (filters.remote) clauses.push(eq(jobs.workplaceType, "remote"));
   if (filters.minimumExperienceYears !== undefined) {
     clauses.push(
