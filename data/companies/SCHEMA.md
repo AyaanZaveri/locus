@@ -62,12 +62,12 @@ npm run validate:companies
   stage: string,
   employees: string,
   financials: {
-    totalFunding: Money,
+    totalFunding: Money | null, // null when no amount has been disclosed
     valuation: Money | null,
     annualRevenue: Money | null,
   },
   funding: {
-    latestRoundId: string,
+    latestRoundId: string | null, // null when there is no verified round
     investors: Investor[],
     rounds: FundingRound[],
   },

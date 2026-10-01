@@ -159,7 +159,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                 </h2>
                 <p className="mt-1 text-sm text-muted-foreground">
                   <span className="font-mono font-semibold tabular-nums text-foreground">
-                    {profile.financials.totalFunding.display}
+                     {profile.financials.totalFunding?.display ?? "Undisclosed"}
                   </span>{" "}
                   total funding · {profile.funding.rounds.length} rounds
                 </p>

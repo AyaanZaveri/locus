@@ -114,27 +114,34 @@
       "type": "object",
       "properties": {
         "totalFunding": {
-          "type": "object",
-          "properties": {
-            "amount": {
-              "type": "number",
-              "minimum": 0
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "currency": {
+                  "type": "string",
+                  "const": "USD"
+                },
+                "display": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "amount",
+                "currency",
+                "display"
+              ],
+              "additionalProperties": false
             },
-            "currency": {
-              "type": "string",
-              "const": "USD"
-            },
-            "display": {
-              "type": "string",
-              "minLength": 1
+            {
+              "type": "null"
             }
-          },
-          "required": [
-            "amount",
-            "currency",
-            "display"
-          ],
-          "additionalProperties": false
+          ]
         },
         "valuation": {
           "anyOf": [
@@ -208,8 +215,15 @@
       "type": "object",
       "properties": {
         "latestRoundId": {
-          "type": "string",
-          "minLength": 1
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "investors": {
           "type": "array",

@@ -135,12 +135,12 @@ export const companyProfileSchema = z.object({
   stage: z.string().min(1),
   employees: z.string().min(1),
   financials: z.object({
-    totalFunding: moneySchema,
+    totalFunding: moneySchema.nullable(),
     valuation: moneySchema.nullable(),
     annualRevenue: moneySchema.nullable(),
   }),
   funding: z.object({
-    latestRoundId: z.string().min(1),
+    latestRoundId: z.string().min(1).nullable(),
     investors: z.array(investorSchema),
     rounds: z.array(fundingRoundSchema),
   }),
