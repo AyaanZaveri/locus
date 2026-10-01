@@ -314,6 +314,30 @@ export async function getCompanies() {
   }
 }
 
+export async function getCompanyDirectory(limit = 6) {
+  await connection();
+
+  try {
+    const [{ db }, { companies }] = await Promise.all([
+      import("./db"),
+      import("./db/schema"),
+    ]);
+    const records = await db.query.companies.findMany({
+      orderBy: (company, { asc }) => asc(company.name),
+      columns: { profile: true },
+      limit,
+    });
+
+    return records.map((record) =>
+      parseCompanyProfile(record.profile as Record<string, unknown>),
+    );
+  } catch (error) {
+    throw new Error("Unable to load company directory from Neon.", {
+      cause: error,
+    });
+  }
+}
+
 export async function getCompanyNavigation(): Promise<CompanyNavigationItem[]> {
   await connection();
 

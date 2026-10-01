@@ -99,7 +99,8 @@ export function AppSidebar({
                 {navigation.slice(0, 1).map((item) => (
                   <SidebarMenuItem key={item.label}>
                     <SidebarMenuButton
-                      render={<a href={`#${item.label.toLowerCase()}`} />}
+                      isActive={pathname === "/companies"}
+                      render={<Link href="/companies" />}
                       tooltip={item.label}
                     >
                       <item.icon className="size-3.5!" />

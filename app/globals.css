@@ -7,6 +7,34 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.company-directory-card {
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.company-directory-card:active {
+  transform: scale(0.99);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .company-directory-banner-overlay {
+    transition: opacity 160ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .company-directory-card:hover .company-directory-banner-overlay {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-directory-card {
+    transition: none;
+  }
+
+  .company-directory-card:active {
+    transform: none;
+  }
+}
+
 .investor-arrow {
   transition:
     width 200ms cubic-bezier(0.23, 1, 0.32, 1),
