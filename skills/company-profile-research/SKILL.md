@@ -140,6 +140,29 @@ Treat this as structured data collection, not a narrative task. Work in passes:
    - Lever: `https://api.lever.co/v0/postings/{slug}?mode=json`
      An empty `jobs` array from a guessed slug is indistinguishable from a company with no openings, so confirm the slug against the careers page before trusting a zero result. Note also that a company may link its own branded paths (e.g. `/careers/{title}-{id}`) that are not the real application URL; resolve each posting to the underlying ATS URL.
 
+### Job team/category gate
+
+The company Jobs UI builds its **team filter from `jobs[].department`**, not
+`jobs[].focus`. Set both fields deliberately for every role; do not use a
+mixed label just because the title spans disciplines. Use the role's primary
+function and the company's actual team labels where available. For example,
+when a company has an applied AI researcher and a separate full-stack engineer,
+use `Research` and `Engineering` respectively, **not** `Research & Engineering`
+and `Engineering`. The researcher's `focus` should also be `Research`, so
+search, cards, and filters remain consistent.
+
+- Treat automated ATS focus/category mapping as a proposal, not verified data.
+  Review each distinct `department`/`focus` pair against the individual role
+  and the company's careers page, including roles with similar titles.
+- Avoid overlapping or compound categories that create duplicate-looking
+  filter chips when the roles have clear separate functions. If the company
+  genuinely uses a cross-functional team name, preserve it only when the
+  source explicitly identifies that team; do not split a real team on a guess.
+- Before import, list the distinct departments and their roles, then check the
+  exact team chips the UI will derive. After import, verify both the JSON
+  profile and normalized jobs rows carry the intended `department` and `focus`.
+  A valid schema is not proof that the taxonomy is useful.
+
 ### Job-location normalization gate
 
 `jobs[].location` is one string with **distinct places separated by ` | `**.
