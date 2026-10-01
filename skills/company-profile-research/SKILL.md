@@ -449,17 +449,21 @@ LinkedIn shows the tagline directly in search snippets (e.g., "Company | 123 fol
 **People portraits** — Find and verify the person before choosing an image. Use
 this source order:
 
-1. The company's team, leadership, author, or newsroom page with the person's
+1. The `user.avatar_url` returned by `https://api.fxtwitter.com/<handle>` for
+   the person's **verified own X account**, provided their identity and current
+   company role are independently confirmed. Apply the mandatory
+   `_normal` → `_400x400` replacement below before downloading the avatar.
+2. The company's team, leadership, author, or newsroom page with the person's
    name and role beside their portrait.
-2. An official company press kit, event/speaker page, webinar, podcast, or
+3. An official company press kit, event/speaker page, webinar, podcast, or
    partner announcement that identifies the person in the image.
-3. The person's own site or official bio page.
-4. The person's identified founder photo on their YC founder profile or the
+4. The person's own site or official bio page.
+5. The person's identified founder photo on their YC founder profile or the
    company's YC profile. Use only where the page labels/links the person, and
    corroborate identity and current employment independently.
-5. Their verified LinkedIn profile picture.
-6. A verified GitHub or X profile only when it is clearly the same person and
-   no stronger portrait is available.
+6. Their verified LinkedIn profile picture.
+7. A verified GitHub profile only when it is clearly the same person and no
+   stronger portrait is available.
 
 Search the company domain first (`site:company.com "Full Name"`), then search
 for the person with the company and role. Verify identity with at least two
@@ -489,10 +493,12 @@ portraits: they are difficult to attribute, may be stale, and do not provide
 enough identity confidence. Use `null` when no attributable, crop-safe image
 can be verified.
 
-**Company/investor logo URLs** — Prefer a verified official brand asset, then
-Logo.dev and Brandfetch, over LinkedIn. For venture-capital/institutional
-investors, follow the mandatory dual-provider procedure under **Investor
-websites** above. LinkedIn is a useful fallback; unavatar is last resort.
+**Company/investor logo URLs** — For a company avatar/logo, first use the
+verified X account and FxTwitter workflow under **Brand assets and banners**;
+only then try official brand assets, Logo.dev, Brandfetch, and LinkedIn. For
+venture-capital/institutional investors, follow the mandatory dual-provider
+procedure under **Investor websites** above. LinkedIn is a useful fallback;
+unavatar is last resort.
 Extract raw LinkedIn logo URLs only when the stronger sources do not provide a
 usable, attributable asset:
 
@@ -564,9 +570,12 @@ Each `jobs[].url` must take the user directly to that specific role's applicatio
 
 ## Avatars and images
 
-**Prioritize attributable portraits over convenient URLs.** Company pages and
-official bios are usually the strongest proof of identity. LinkedIn is a
-useful verified-profile fallback; proxies are not final assets.
+**Prioritize verified X avatars for people when available.** First establish
+the person's identity and current role from a company page or other independent
+evidence, then confirm their own X handle before querying FxTwitter. An X name
+match alone is not identity proof; if attribution fails, use the company's
+identified portrait or official bio instead. LinkedIn is a fallback, not the
+first image provider. Never use an unverified proxy avatar as a final portrait.
 
 ### LinkedIn Profile Pictures
 
@@ -593,14 +602,42 @@ Use trusted asset APIs for discovery, then verify the candidate before writing
 it locally. A provider response establishes a candidate, not a guarantee that
 the image is current, correctly attributed, or suitable for the banner crop.
 
-Before looking up a company logo or banner, resolve its official X handle from
-the company website, an official social link, or the account's company
-identity. Never derive the handle from the company name. For a verified handle,
-query `https://api.fxtwitter.com/<handle>` first and use its returned profile
-image and banner as the first candidates. Only retain direct, stable image URLs
-from that verified profile; then download them locally and run the asset checks
-below. If the response is unavailable or unsuitable, continue through the
-fallback order rather than guessing an X handle.
+Before looking up a company logo (avatar) or banner, resolve its official X
+handle from the company website, an official social link, or the account's
+company identity. Never derive the handle from the company name. Query the
+public FxTwitter user endpoint **first**, before the brand APIs:
+
+```sh
+curl -fsSL 'https://api.fxtwitter.com/elevenlabs'
+```
+
+The response has `code: 200` and a `user` object with `screen_name`, `name`,
+`website`, `avatar_url`, and `banner_url` (the last may be empty). For a real
+company, replace `elevenlabs` with its verified handle and corroborate the
+returned identity/website against its official site. Use `user.avatar_url` for
+the company avatar/logo and `user.banner_url` for the banner as the **first
+candidates**; never use a default X avatar or a missing/blank banner.
+
+**Mandatory avatar resolution (company and people):** FxTwitter often returns
+the tiny `_normal` version. Before downloading **any** `user.avatar_url`,
+replace the `_normal` immediately before its file extension with `_400x400`,
+preserving the rest of the URL, extension, and any query string. For example:
+
+```text
+API:      https://pbs.twimg.com/profile_images/2053914120483999744/t2XFL2R6_normal.jpg
+Download: https://pbs.twimg.com/profile_images/2053914120483999744/t2XFL2R6_400x400.jpg
+```
+
+Fetch the rewritten URL and confirm it returns a real, attributable image of
+sufficient size; do **not** save the `_normal` thumbnail as the final asset. If
+the `_400x400` variant fails, try another verified high-resolution source in
+the fallback order. Do not apply this filename replacement to `banner_url`.
+Only retain direct, stable image URLs from the verified profile; download to
+local `logo.{ext}` and `banner.{ext}` files and run the deterministic checks
+below. If the response or image is unavailable, stale, incorrectly attributed,
+or unsuitable for the UI crop, continue through the fallback order rather than
+guessing an X handle. For verified personal X handles, use the same endpoint's
+`user.avatar_url` as the first portrait candidate under **People portraits**.
 
 **Logo source order:**
 
