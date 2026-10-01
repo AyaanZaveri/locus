@@ -55,6 +55,7 @@ npm run validate:companies
     | "Energy"
     | "Fintech"
     | "Foundation Models"
+    | "Market Intelligence"
     | "Web Search"
     | "Workflow Orchestration",
   location: { label: string, countryCode: string }, // ISO 3166-1 alpha-2, lowercase
@@ -92,6 +93,7 @@ type Industry =
   | "Energy"
   | "Fintech"
   | "Foundation Models"
+  | "Market Intelligence"
   | "Web Search"
   | "Workflow Orchestration";
 ```

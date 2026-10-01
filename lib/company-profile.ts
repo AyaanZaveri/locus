@@ -23,6 +23,7 @@ const industrySchema = z.enum([
   "Energy",
   "Fintech",
   "Foundation Models",
+  "Market Intelligence",
   "Web Search",
   "Workflow Orchestration",
 ]);
