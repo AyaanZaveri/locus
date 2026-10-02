@@ -1,39 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 const chevronDelays = Array.from({ length: 9 }, (_, index) => {
   const row = Math.floor(index / 3);
   const column = index % 3;
   return (column + Math.abs(row - 1)) * 90;
 });
 
-function useElapsed(startedAt: number) {
-  const [elapsedMs, setElapsedMs] = useState(0);
-
-  useEffect(() => {
-    const tick = () => setElapsedMs(Date.now() - startedAt);
-    tick();
-    const timer = window.setInterval(tick, 100);
-    return () => window.clearInterval(timer);
-  }, [startedAt]);
-
-  const seconds = Math.max(0, Math.floor(elapsedMs / 100) / 10);
-  if (seconds < 60) return `${seconds.toFixed(1)}s`;
-
-  const minutes = Math.floor(seconds / 60);
-  return `${minutes}m ${(seconds % 60).toFixed(1)}s`;
-}
-
-export function LocusActivityStatus({
-  label,
-  startedAt,
-}: {
-  label: string;
-  startedAt: number;
-}) {
-  const elapsed = useElapsed(startedAt);
-
+export function LocusActivityStatus({ label }: { label: string }) {
   return (
     <div
       aria-busy="true"
@@ -66,12 +39,6 @@ export function LocusActivityStatus({
       >
         {label}
       </span>
-      {/*<span
-        aria-hidden="true"
-        className="font-mono text-[11px] text-muted-foreground tabular-nums"
-      >
-        {elapsed}
-      </span>*/}
     </div>
   );
 }

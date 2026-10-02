@@ -314,23 +314,50 @@ export async function getCompanies() {
   }
 }
 
-export async function getCompanyDirectory(limit = 6) {
+export type CompanyDirectoryItem = {
+  slug: string;
+  name: string;
+  tagline: string;
+  banner: string | null;
+  bannerPosition?: string;
+  logo: string | null;
+  industry: string;
+  location: { label: string; countryCode: string };
+  stage: string;
+};
+
+export async function getCompanyDirectory(): Promise<CompanyDirectoryItem[]> {
   await connection();
 
   try {
-    const [{ db }, { companies }] = await Promise.all([
+    const [{ db }, { companies }, { sql }] = await Promise.all([
       import("./db"),
       import("./db/schema"),
+      import("drizzle-orm"),
     ]);
-    const records = await db.query.companies.findMany({
-      orderBy: (company, { asc }) => asc(company.name),
-      columns: { profile: true },
-      limit,
-    });
+    const records = await db
+      .select({
+        slug: companies.slug,
+        name: companies.name,
+        industry: companies.industry,
+        locationLabel: companies.location,
+        countryCode: companies.countryCode,
+        stage: companies.stage,
+        tagline: sql<string>`${companies.profile} ->> 'tagline'`,
+        banner: sql<string | null>`${companies.profile} ->> 'banner'`,
+        bannerPosition: sql<
+          string | null
+        >`${companies.profile} ->> 'bannerPosition'`,
+        logo: sql<string | null>`${companies.profile} ->> 'logo'`,
+      })
+      .from(companies)
+      .orderBy(companies.name);
 
-    return records.map((record) =>
-      parseCompanyProfile(record.profile as Record<string, unknown>),
-    );
+    return records.map(({ locationLabel, countryCode, ...record }) => ({
+      ...record,
+      bannerPosition: record.bannerPosition ?? undefined,
+      location: { label: locationLabel, countryCode },
+    }));
   } catch (error) {
     throw new Error("Unable to load company directory from Neon.", {
       cause: error,

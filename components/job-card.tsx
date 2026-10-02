@@ -217,16 +217,23 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
                 />
               ) : null}
             </h3>
-            <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs font-medium text-muted-foreground">
-              <img
-                alt=""
-                aria-hidden="true"
-                className="size-2.5 rounded-full"
-                src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
-              />
-              <span>{job.location.replace(/\s*\|\s*/g, " · ")}</span>
-              <span aria-hidden="true">·</span>
-              <span>{job.focus}</span>
+            <div className="mt-1 text-xs font-medium text-muted-foreground">
+              <div className="flex flex-wrap items-center gap-1.5">
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="size-2.5 rounded-full"
+                  src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
+                />
+                <span>{job.location.replace(/\s*\|\s*/g, " · ")}</span>
+                {job.department ? (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>{job.department}</span>
+                  </>
+                ) : null}
+              </div>
+              <p className="mt-1">{job.focus}</p>
             </div>
           </div>
         </article>

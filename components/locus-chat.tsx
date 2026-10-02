@@ -50,6 +50,10 @@ import {
 import { jobDetailsHref } from "@/lib/job-navigation";
 import { personDetailsHref } from "@/lib/person-navigation";
 import { describeLocusTool, type LocusTrace } from "@/lib/locus-tool-trace";
+import {
+  getLocusActivityLabel,
+  LOCUS_ACTIVITY_VARIANT_COUNT,
+} from "@/lib/locus-activity-label";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
@@ -244,24 +248,29 @@ type LocusMessageSegment =
 
 function ActivityPill({
   label,
-  startedAt,
   reduceMotion,
+  inline = false,
 }: {
   label: string;
-  startedAt: number;
   reduceMotion: boolean | null;
+  inline?: boolean;
 }) {
   return (
     <motion.div
-      className="flex h-8 w-fit items-center rounded-full border border-border bg-popover/85 px-3 backdrop-blur-sm dark:bg-popover/75"
+      className={
+        inline
+          ? "flex w-fit items-center"
+          : "flex h-8 w-fit items-center rounded-full border border-border bg-popover/85 px-3 backdrop-blur-sm dark:bg-popover/75"
+      }
       layoutId="locus-activity-pill"
+      layoutDependency={inline ? "inline" : "header"}
       transition={{
         layout: reduceMotion
           ? { duration: 0 }
           : { duration: 0.22, ease: [0.77, 0, 0.175, 1] },
       }}
     >
-      <LocusActivityStatus label={label} startedAt={startedAt} />
+      <LocusActivityStatus label={label} />
     </motion.div>
   );
 }
@@ -320,30 +329,6 @@ function toLocusSegments(parts: ReadonlyArray<unknown>): LocusMessageSegment[] {
   return segments;
 }
 
-function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
-  for (const message of [...messages].reverse()) {
-    if (message.role !== "assistant") continue;
-
-    for (const part of [...message.parts].reverse()) {
-      if (!isRecord(part) || typeof part.type !== "string") continue;
-      const state = "state" in part ? part.state : undefined;
-      if (
-        state !== "input-streaming" &&
-        state !== "input-available" &&
-        state !== "approval-requested" &&
-        state !== "approval-responded"
-      ) {
-        continue;
-      }
-
-      const trace = describeLocusTool(part);
-      if (trace) return trace.label;
-    }
-  }
-
-  return "Preparing answer";
-}
-
 function lastAssistantMessageContainsNavigation(messages: UIMessage[]) {
   const lastAssistantMessage = [...messages]
     .reverse()
@@ -372,6 +357,7 @@ export function LocusChat() {
     "closed" | "launcher-exiting" | "open" | "panel-exiting"
   >("closed");
   const [input, setInput] = useState("");
+  const [activityVariant, setActivityVariant] = useState(0);
   const [activityStartedAt, setActivityStartedAt] = useState<number | null>(
     null,
   );
@@ -458,7 +444,11 @@ export function LocusChat() {
   const isOpen = focusState === "open" || focusState === "panel-exiting";
   const activityLabel = isNavigating
     ? "Navigating"
-    : getActivityLabel(messages);
+    : getLocusActivityLabel(
+        messages,
+        typeof window !== "undefined" ? window.location.pathname : undefined,
+        activityVariant,
+      );
   const latestMessage = messages.at(-1);
   const hasResponseStarted =
     latestMessage?.role === "assistant" &&
@@ -619,6 +609,11 @@ export function LocusChat() {
 
     isPinnedToBottom.current = true;
     setIsScrolledAwayFromBottom(false);
+    const nextPhraseOffset =
+      1 + Math.floor(Math.random() * (LOCUS_ACTIVITY_VARIANT_COUNT - 1));
+    setActivityVariant(
+      (current) => (current + nextPhraseOffset) % LOCUS_ACTIVITY_VARIANT_COUNT,
+    );
     setActivityStartedAt(Date.now());
     sendMessage({ text }, { body: { sessionId: getSessionId() } });
     setInput("");
@@ -695,7 +690,6 @@ export function LocusChat() {
                           >
                             <ActivityPill
                               label={activityLabel}
-                              startedAt={activityStartedAt}
                               reduceMotion={reduceMotion}
                             />
                           </motion.div>
@@ -855,9 +849,9 @@ export function LocusChat() {
                       {showInlineActivity && activityStartedAt ? (
                         <div className="px-2" key="pending-activity">
                           <ActivityPill
-                            label="Preparing answer"
-                            startedAt={activityStartedAt}
+                            label={activityLabel}
                             reduceMotion={reduceMotion}
+                            inline
                           />
                         </div>
                       ) : null}
