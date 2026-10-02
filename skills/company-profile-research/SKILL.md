@@ -42,13 +42,13 @@ repository record. Do not hand-edit normalized database tables.
 - Write the validated result to a temporary JSON file, then import it with
   `npm run db:import -- /absolute/path/to/company.json`. Do not commit the
   payload under `data/companies/`.
-- Store company assets under `public/companies/{slug}/images/` and reference them as `/companies/{slug}/images/{filename}`.
+- Store company assets under `public/companies/{slug}/images/` in the **separate public GitLab repo** at `/Users/ayaanzaveri/Code/locus-images/`, not in this app repo. Reference the published GitLab Pages URL: `https://locus-images-b3c414.gitlab.io/companies/{slug}/images/{filename}`.
 - Use semantic names such as `banner.{ext}` and `logo.{ext}`; preserve the source format unless conversion is necessary.
-- Store downloaded person portraits under `public/companies/{slug}/people/{person-slug}/avatar.{ext}`.
+- Store downloaded person portraits under `public/companies/{slug}/people/{person-slug}/avatar.{ext}` in the image repo and use the same GitLab Pages URL prefix.
 - Preserve the repository keys `banner`, `logo`, `employees`, `financials`, `funding`, `jobs`, `people`, and `activity`.
-- Store investor logos in the **shared** `public/investors/` folder, named `{slug}.{ext}`, and reference them as `/investors/{slug}.{ext}`. Check for an existing file first and reuse it; only download when absent. Prefer local paths over remote proxy URLs.
-- Never reference a local asset path that does not exist, and never leave a remote proxy URL where a local asset is expected.
-- Validate JSON syntax, confirm every referenced local asset exists, and run
+- Store investor logos in the **shared** `public/investors/` folder of the image repo, named `{slug}.{ext}`, and reference them as `https://locus-images-b3c414.gitlab.io/investors/{slug}.{ext}`. Check for an existing file first and reuse it; only download when absent. Prefer our hosted URL over a third-party proxy URL.
+- Never reference an asset URL that has not been deployed to the public GitLab Pages site. Do not add new images to this app repo's `public/` directory.
+- Validate JSON syntax, confirm every referenced image exists in the image repo and loads anonymously from GitLab Pages, and run
   this skill's `scripts/image_assets.py check` over downloaded assets before
   finishing.
 
@@ -62,28 +62,31 @@ current `data/companies/*/company.json` before writing.
 
 - Preserve every required key and its expected primitive type, including nested funding-round and person fields.
 - Unknown optional facts must remain `null` (or `[]` for collections). In particular, `funding.rounds[].announcedAt` may be `null` when no reliable date exists; never invent a date just to satisfy validation.
-- Use the same `slug` for the import payload and `public/companies/{slug}/` assets.
+- Use the same `slug` for the import payload and the image repo's `public/companies/{slug}/` assets.
 - Before importing, validate the payload with `parseCompanyProfile` or the
   import command. A record that cannot validate must not be presented as
   complete.
 - After changing profile data, run `npm run db:import -- /absolute/path/to/company.json`.
   It upserts `companies` and replaces the company’s normalized `jobs` and
   `people` rows.
-- After each successful company import or completed batch, commit and push the
-  new or updated **local assets** (`public/companies/{slug}/` and any new
-  `public/investors/` logos) and any related tracked code/schema changes to the
-  deployment branch. Neon can reference an asset path before the file is
-  deployed, so an import alone does not finish a profile with images. Stage
-  only files produced by this task; never commit temporary JSON payloads,
-  secrets, or unrelated working-tree changes. Check `git status` and the
-  staged diff before committing, push, and verify the remote branch contains
-  the commit. If a push is blocked, report that the assets are not yet live.
-  For research-only requests with no repository write, do not create a commit.
+- **Before importing a profile with new/updated images**, commit and push only
+  its assets in `/Users/ayaanzaveri/Code/locus-images/` to `origin/main`.
+  Wait for the GitLab Pages pipeline to succeed and verify an anonymous HTTPS
+  request returns the image with the correct MIME type. Then import the JSON
+  with full hosted URLs into Neon. Do not commit images to the Locus app or
+  redeploy it for an image change. Check `git status` and staged diffs in the
+  *image repo*; never commit temporary JSON payloads, secrets, or unrelated
+  changes. For research-only requests, do not create a commit.
+- Older ignored `data/companies/*/company.json` caches may still contain
+  `/companies/...` or `/investors/...` paths from before the migration. Do not
+  run `npm run db:seed` without an explicit, audited import payload: that could
+  restore broken local image references to Neon. Convert any legacy asset paths
+  to published GitLab Pages URLs before importing.
 - When changing the profile contract, update `lib/company-profile.ts` first,
   regenerate the JSON schema, update `lib/db/schema.ts`, generate and apply a
   Drizzle migration, then seed: `npm run generate:company-schema`, `npm run
 db:generate`, `npm run db:migrate`, and `npm run db:seed`.
-- Verify URLs, exact ISO dates, monetary values, country codes, and local asset paths individually. An existing value from another company is not evidence for the target company.
+- Verify URLs, exact ISO dates, monetary values, country codes, and published image URLs individually. An existing value from another company is not evidence for the target company.
 
 ## Reusable research workflow
 
@@ -427,11 +430,11 @@ Verify the domain by checking the search result URL, not just the title. Common 
 **Venture-capital logos are a required research pass.** For every named VC,
 venture fund, accelerator, or institutional investor in each funding round,
 resolve and verify its official website/domain first, then try to obtain a logo
-from Logo.dev or Brandfetch. Check `public/investors/{slug}.{ext}` for an
+from Logo.dev or Brandfetch. Check `public/investors/{slug}.{ext}` **in the image repo** for an
 existing passing asset before fetching; reuse it if it belongs to that same
 investor. Otherwise download a candidate, convert only when needed, save it in
-`public/investors/`, and reference it in the investor object's `logo` field as
-`/investors/{slug}.{ext}`. Never put a remote proxy URL in that field when
+`public/investors/` in that repo, and reference it in the investor object's `logo` field as
+`https://locus-images-b3c414.gitlab.io/investors/{slug}.{ext}`. Never put a third-party proxy URL in that field when
 authoring an Autumn profile. Do not stop after finding a domain or after the
 first provider fails: try the other provider before using a favicon fallback.
 Run `image_assets.py check` on every downloaded logo and reject blank, invalid,
@@ -791,7 +794,7 @@ unavailable.
 Run the bundled checker over everything you downloaded:
 
 ```
-python <skill-dir>/scripts/image_assets.py check public/investors/*.png public/companies/{slug}/images/* public/companies/{slug}/people/*/avatar.*
+python <skill-dir>/scripts/image_assets.py check /Users/ayaanzaveri/Code/locus-images/public/investors/*.png /Users/ayaanzaveri/Code/locus-images/public/companies/{slug}/images/* /Users/ayaanzaveri/Code/locus-images/public/companies/{slug}/people/*/avatar.*
 ```
 
 It reports a verdict per file and exits non-zero on failure:
@@ -814,7 +817,7 @@ What the checks catch, mapped to failures that actually occur:
 Use `fetch` mode to download with the full fallback chain in one call, which also re-validates and re-downloads any existing file that fails its checks:
 
 ```
-python <skill-dir>/scripts/image_assets.py fetch accel=accel.com gv=gv.com --dest public/investors --token "$LOGO_DEV_TOKEN"
+python <skill-dir>/scripts/image_assets.py fetch accel=accel.com gv=gv.com --dest /Users/ayaanzaveri/Code/locus-images/public/investors --token "$LOGO_DEV_TOKEN"
 ```
 
 **When the active model can actually inspect images:** use `--contact-sheet

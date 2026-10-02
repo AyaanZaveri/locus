@@ -41,3 +41,8 @@ coverage/
 
 # Operational research data is canonical in Neon. Keep local import caches out of Git.
 data/companies/*/company.json
+
+# Company, person, and investor images are published from the separate
+# gitlab.com/aytozuno21/locus-images repository via GitLab Pages.
+public/companies/
+public/investors/

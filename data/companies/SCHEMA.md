@@ -22,8 +22,11 @@ npm run validate:companies
 
 - Use `null` when a known nullable value is unavailable. Do not invent values
   or links.
-- URLs must be absolute `https://` or `http://` URLs. Local images use paths
-  such as `/companies/mintlify/images/logo.webp`.
+- URLs must be absolute `https://` or `http://` URLs. New images live in the
+  separate public image repository (`https://gitlab.com/aytozuno21/locus-images`)
+  and should use its GitLab Pages URL, for example
+  `https://locus-images-b3c414.gitlab.io/companies/mintlify/images/logo.webp`.
+  Do not add new images under this app's `public/` directory.
 - Dates use `YYYY-MM-DD`; use `null` if the announcement date is unknown.
 - Monetary values are always USD. `amount` is the unformatted number and
   `display` is the UI-ready value (for example, `67000000` and `"$67M"`).
