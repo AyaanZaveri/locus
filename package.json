@@ -22,7 +22,8 @@
     "db:repair-job-markdown": "tsx --env-file=.env.local scripts/repair-job-markdown.ts",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "audit:job-icons": "tsx --env-file=.env.local scripts/audit-job-category-icons.ts"
+    "audit:job-icons": "tsx --env-file=.env.local scripts/audit-job-category-icons.ts",
+    "eval:focus-presentation": "tsx scripts/evaluate-focus-presentation.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^4.0.71",

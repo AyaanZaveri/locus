@@ -1,0 +1,253 @@
+{
+  "generatedAt": "2026-10-02T19:57:11.613Z",
+  "baseUrl": "http://localhost:3000",
+  "note": "Small live smoke suite; expected entities reflect the current database. Token usage is not exposed by this endpoint. Not a reliability benchmark.",
+  "passed": 9,
+  "total": 9,
+  "cases": [
+    {
+      "scenario": 0,
+      "prompt": "Pick the first five companies alphabetically from the database.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 6774,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "queryCompanies",
+          "input": {
+            "sortBy": "name",
+            "limit": 5
+          }
+        }
+      ],
+      "names": [
+        "Aalo Atomics",
+        "Anthropic",
+        "Autumn AI",
+        "Baseten",
+        "Beltic"
+      ],
+      "text": "43 companies in the database; showing 5 in name ascending order."
+    },
+    {
+      "scenario": 0,
+      "prompt": "Keep just Aalo Atomics, Anthropic and Autumn AI. Put their cards in reverse alphabetical order, no text.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 9363,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "presentLocusResults",
+          "input": {
+            "sort": "nameDesc",
+            "limit": 3,
+            "companySlugs": [
+              "aalo-atomics",
+              "anthropic",
+              "autumn-ai"
+            ],
+            "people": [],
+            "jobs": []
+          }
+        }
+      ],
+      "names": [
+        "Autumn AI",
+        "Anthropic",
+        "Aalo Atomics"
+      ],
+      "text": ""
+    },
+    {
+      "scenario": 0,
+      "prompt": "Redisplay those three A–Z, widgets only.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 10216,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "presentLocusResults",
+          "input": {
+            "sort": "nameAsc",
+            "limit": 3,
+            "companySlugs": [
+              "aalo-atomics",
+              "anthropic",
+              "autumn-ai"
+            ],
+            "people": [],
+            "jobs": []
+          }
+        }
+      ],
+      "names": [
+        "Aalo Atomics",
+        "Anthropic",
+        "Autumn AI"
+      ],
+      "text": ""
+    },
+    {
+      "scenario": 0,
+      "prompt": "Only show companies whose industry contains unobtainium quantum unicorns.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 4888,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "queryCompanies",
+          "input": {
+            "industry": "unobtainium quantum unicorns",
+            "sortBy": "name",
+            "limit": 10
+          }
+        }
+      ],
+      "names": [],
+      "text": "No companies in the database match industry \"unobtainium quantum unicorns.\""
+    },
+    {
+      "scenario": 1,
+      "prompt": "Which companies raised funding in September 2025? Show all matching rounds.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 9770,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "queryFunding",
+          "input": {
+            "announcedAfter": "2025-09-01",
+            "announcedBefore": "2025-09-30",
+            "sortBy": "announcedAt",
+            "limit": 50
+          }
+        }
+      ],
+      "names": [
+        "Vercel",
+        "Modal",
+        "Cohere",
+        "Groq",
+        "Mistral AI",
+        "Baseten",
+        "Exa",
+        "Anthropic"
+      ],
+      "text": "8 funding rounds recorded in Locus with announcement dates from September 1 to September 30, 2025. This is the complete matching set.\n\n* Vercel: September 30, Series F, $300M. [Source](https://www.businesswire.com/news/home/20250930898216/en/)\n* Modal: September 29, Series B, $87M. [Source](https://modal.com/blog/announcing-our-series-b)\n* Cohere: September 24, Growth, $100M. [Source](https://cohere.com/blog/september-2025-funding-round)\n* Groq: September 17, Growth, $750M. [Source](https://www.prnewswire.com/news-releases/groq-raises-750-million-as-inference-demand-surges-302558961.html)\n* Mistral AI: September 9, Series C, $2B. [Source](https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/)\n* Baseten: September 5, Series D, $150M. [Source](https://www.businesswire.com/news/home/20250905680113/en/Baseten-Secures-%24150M-Series-D-as-the-Premier-Inference-Platform-for-AIs-App-Layer)\n* Exa: September 3, Series B, $85M. [Source](https://exa.ai/blog/announcing-series-b)\n* Anthropic: September 2, Series F, $13B. [Source](https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation)\n\nAmounts are individual round amounts, not company total funding."
+    },
+    {
+      "scenario": 1,
+      "prompt": "Give me the three biggest of those rounds.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 14787,
+      "reusedCompleteFundingSet": true,
+      "calls": [
+        {
+          "name": "presentLocusResults",
+          "input": {
+            "sort": "input",
+            "limit": 3,
+            "companySlugs": [
+              "anthropic",
+              "mistral-ai",
+              "groq"
+            ],
+            "people": [],
+            "jobs": []
+          }
+        }
+      ],
+      "names": [
+        "Anthropic",
+        "Mistral AI",
+        "Groq"
+      ],
+      "text": "Ranked by round amount, from the 8 September 2025 rounds:\n\n**Anthropic:** $13B Series F announced 2025-09-02, $183B valuation. Source: https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\n\n**Mistral AI:** $2B Series C announced 2025-09-09, $13.8B valuation. Source: https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/\n\n**Groq:** $750M Growth announced 2025-09-17, $6.9B valuation. Source: https://www.prnewswire.com/news-releases/groq-raises-750-million-as-inference-demand-surges-302558961.html"
+    },
+    {
+      "scenario": 1,
+      "prompt": "Rearrange those three cards alphabetically. Cards only.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 9204,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "presentLocusResults",
+          "input": {
+            "sort": "nameAsc",
+            "limit": 3,
+            "companySlugs": [
+              "anthropic",
+              "groq",
+              "mistral-ai"
+            ],
+            "people": [],
+            "jobs": []
+          }
+        }
+      ],
+      "names": [
+        "Anthropic",
+        "Groq",
+        "Mistral AI"
+      ],
+      "text": ""
+    },
+    {
+      "scenario": 2,
+      "prompt": "Show only the two most recently announced funding rounds in September 2025.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 9180,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "queryFunding",
+          "input": {
+            "announcedAfter": "2025-09-01",
+            "announcedBefore": "2025-09-30",
+            "sortBy": "announcedAt",
+            "limit": 2
+          }
+        }
+      ],
+      "names": [
+        "Vercel",
+        "Modal"
+      ],
+      "text": "8 rounds match September 2025; showing the 2 most recent by announced date.\n\nVercel, Series F, $300M announced 2025-09-30. Source: https://www.businesswire.com/news/home/20250930898216/en/\n\nModal, Series B, $87M announced 2025-09-29. Source: https://modal.com/blog/announcing-our-series-b"
+    },
+    {
+      "scenario": 2,
+      "prompt": "Actually show the three largest rounds from that whole month, not just those two.",
+      "passed": true,
+      "errors": [],
+      "elapsedMs": 7697,
+      "reusedCompleteFundingSet": false,
+      "calls": [
+        {
+          "name": "queryFunding",
+          "input": {
+            "announcedAfter": "2025-09-01",
+            "announcedBefore": "2025-09-30",
+            "sortBy": "amount",
+            "limit": 3
+          }
+        }
+      ],
+      "names": [
+        "Anthropic",
+        "Mistral AI",
+        "Groq"
+      ],
+      "text": "8 rounds in Locus match September 2025; showing the 3 largest by announced amount.\n\n* **Anthropic:** $13B Series F announced 2025-09-02. Source: https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\n* **Mistral AI:** $2B Series C announced 2025-09-09. Source: https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/\n* **Groq:** $750M Growth announced 2025-09-17. Source: https://www.prnewswire.com/news-releases/groq-raises-750-million-as-inference-demand-surges-302558961.html\n\nAmounts are round amounts, not company totals, as recorded in Locus."
+    }
+  ]
+}

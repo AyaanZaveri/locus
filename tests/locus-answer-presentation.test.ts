@@ -1,50 +1,103 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import { test } from "node:test";
+import {
+  presentationOptionsSchema,
+  selectPresentation,
+  withResultPresentation,
+} from "../lib/ai/result-presentation";
+import { presentationPrompt } from "../lib/ai/presentation-prompt";
 
-// Prompt-contract checks, not a substitute for model-output evaluations.
-test("Focus is told that cards answer list requests without duplicate prose", () => {
-  const route = readFileSync("app/api/chat/route.ts", "utf8");
-  assert.match(
-    route,
-    /Result widgets are part of your answer, not hidden tool output/,
+test("presentation sorts verified names, deduplicates and limits without mutating evidence order", () => {
+  const groups = {
+    companies: [
+      { slug: "z", name: "Zebra" },
+      { slug: "a", name: "Alpha" },
+      { slug: "b", name: "Beta" },
+      { slug: "a", name: "Alpha" },
+    ],
+    people: [],
+    jobs: [],
+  };
+  const selected = selectPresentation(groups, { sort: "nameAsc", limit: 2 });
+  assert.deepEqual(
+    selected.companies.map((r) => r.slug),
+    ["a", "b"],
   );
-  assert.match(
-    route,
-    /Do NOT repeat those entities or visible fields in prose, bullets, numbered lists/,
+  assert.equal(groups.companies[0].slug, "z");
+  assert.deepEqual(
+    selectPresentation(groups, { sort: "nameDesc", limit: 3 }).companies.map(
+      (r) => r.slug,
+    ),
+    ["z", "b", "a"],
   );
-  assert.match(route, /43 companies match this period; showing 5/);
-  assert.match(route, /stop after\s+the tool results without a prose summary/);
-  assert.match(route, /For zero results or failed queries/);
-  assert.match(
-    route,
-    /Inline result cards count as concrete details and as the answer/,
+  assert.deepEqual(
+    selectPresentation(groups, { sort: "input", limit: 2 }).companies.map(
+      (r) => r.slug,
+    ),
+    ["z", "a"],
   );
 });
 
-test("presentation tool does not encourage redisplaying automatic result cards", () => {
-  const tools = readFileSync("lib/ai/tools.ts", "utf8");
-  assert.match(
-    tools,
-    /do not redundantly redisplay the same results from another tool in the CURRENT turn/,
-  );
-  assert.match(
-    tools,
-    /Accompanying prose must add new evidence or qualifications/,
+test("presentation limits apply across groups and allow five or more companies", () => {
+  const groups = {
+    companies: [{ slug: "a", name: "Alpha" }],
+    people: [{ name: "Jane", companySlug: "a" }],
+    jobs: [{ title: "Engineer", companySlug: "a", location: "Remote" }],
+  };
+  const selected = selectPresentation(groups, { sort: "input", limit: 2 });
+  assert.equal(selected.jobs.length, 0);
+  assert.equal(selected.people.length, 1);
+  assert.deepEqual(presentationOptionsSchema.parse({ limit: 5 }), {
+    sort: "input",
+    limit: 5,
+  });
+  assert.equal(
+    presentationOptionsSchema.safeParse({ limit: 0 }).success,
+    false,
   );
 });
 
-test("explicit reorder and top-N follow-ups request fresh widgets, including five companies", () => {
-  const route = readFileSync("app/api/chat/route.ts", "utf8");
-  assert.match(route, /You MAY reuse entities from earlier turns/);
-  assert.match(route, /sort those\s+alphabetically/);
-  assert.match(route, /top 3 of those 8 rounds/);
-  assert.match(route, /amount descending with limit 3/);
-  assert.match(
-    route,
-    /restriction does NOT apply to cards in earlier conversation turns/,
+test("rendering metadata matches grouped cards and unique funding/event company cards", () => {
+  const rounds = [
+    { slug: "a", name: "Alpha" },
+    { slug: "a", name: "Alpha" },
+    { slug: "b", name: "Beta" },
+  ];
+  for (const kind of ["rounds", "activity"] as const) {
+    const result = withResultPresentation(
+      { [kind]: rounds, totalMatches: 8 },
+      kind,
+    );
+    assert.deepEqual(result.presentation.displayedCounts, {
+      companies: 2,
+      people: 0,
+      jobs: 0,
+    });
+    assert.equal(result.totalMatches, 8);
+    assert.deepEqual(result.presentation.visibleFields.companies, [
+      "name",
+      "industry",
+      "location",
+    ]);
+  }
+  assert.deepEqual(
+    withResultPresentation({ companies: [], people: [], jobs: [] }).presentation
+      .displayedCounts,
+    { companies: 0, people: 0, jobs: 0 },
   );
-  const tools = readFileSync("lib/ai/tools.ts", "utf8");
-  assert.match(tools, /Input arrays determine display order/);
-  assert.match(tools, /companySlugs: z\.array\(companySlugSchema\)\.max\(50\)/);
+  assert.equal(
+    withResultPresentation({ jobs: [{ title: "Engineer" }] }).presentation
+      .displayedCounts.jobs,
+    1,
+  );
+});
+
+test("the compact contract distinguishes current-turn duplication from explicit follow-ups", () => {
+  assert.match(presentationPrompt, /CURRENT turn/);
+  assert.match(presentationPrompt, /EARLIER turns/);
+  assert.match(
+    presentationPrompt,
+    /incomplete set or missing ranking evidence/,
+  );
+  assert.match(presentationPrompt, /no prose is needed/);
 });

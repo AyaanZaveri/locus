@@ -3,6 +3,11 @@ import "server-only";
 import { tool } from "ai";
 import { and, asc, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { z } from "zod";
+import {
+  presentationOptionsSchema,
+  selectPresentation,
+  withResultPresentation,
+} from "./result-presentation";
 
 import { db } from "@/lib/db";
 import { companies, jobs, people } from "@/lib/db/schema";
@@ -249,7 +254,7 @@ export const locusTools = {
     execute: async (input) => {
       const asOf = new Date().toISOString().slice(0, 10);
       const result = await db.execute(buildJobsQuery(input, asOf));
-      return jobsQueryResult(result.rows, input, asOf);
+      return withResultPresentation(jobsQueryResult(result.rows, input, asOf));
     },
   }),
   queryCompanies: tool({
@@ -258,7 +263,7 @@ export const locusTools = {
     inputSchema: companiesQuerySchema,
     execute: async (input) => {
       const result = await db.execute(buildCompaniesQuery(input));
-      return companiesQueryResult(result.rows, input);
+      return withResultPresentation(companiesQueryResult(result.rows, input));
     },
   }),
   queryPeople: tool({
@@ -267,7 +272,7 @@ export const locusTools = {
     inputSchema: peopleQuerySchema,
     execute: async (input) => {
       const result = await db.execute(buildPeopleQuery(input));
-      return peopleQueryResult(result.rows, input);
+      return withResultPresentation(peopleQueryResult(result.rows, input));
     },
   }),
   queryActivity: tool({
@@ -277,7 +282,10 @@ export const locusTools = {
     execute: async (input) => {
       const asOf = new Date().toISOString().slice(0, 10);
       const result = await db.execute(buildActivityQuery(input, asOf));
-      return activityQueryResult(result.rows, input, asOf);
+      return withResultPresentation(
+        activityQueryResult(result.rows, input, asOf),
+        "activity",
+      );
     },
   }),
   queryFunding: tool({
@@ -287,12 +295,15 @@ export const locusTools = {
     execute: async (input) => {
       const asOf = new Date().toISOString().slice(0, 10);
       const result = await db.execute(buildFundingQuery(input, asOf));
-      return fundingQueryResult(result.rows, input, asOf);
+      return withResultPresentation(
+        fundingQueryResult(result.rows, input, asOf),
+        "rounds",
+      );
     },
   }),
   navigateLocus: tool({
     description:
-      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. Do not navigate for general research questions.",
+      "Navigate only when the user asks to open or visit a result's page/details, not to show, sort or select chat widgets. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. Do not navigate for general research questions.",
     // DeepSeek requires a top-level JSON Schema object for every function.
     // Keep the job requirement at runtime instead of using a top-level union,
     // which serializes to a schema without a `type: "object"`.
@@ -333,8 +344,9 @@ export const locusTools = {
   }),
   presentLocusResults: tool({
     description:
-      "Render verified company, person or job widgets on demand, at most once per turn. Input arrays determine display order. Use this for explicit follow-ups to reorder, narrow, show top N or redisplay results from EARLIER turns; those requests need fresh widgets, not just a textual list. Only use previously verified identities and evidence for ranking; rerun a query if the prior result was incomplete or lacks ranking data. Search and query tools already display entities: do not redundantly redisplay the same results from another tool in the CURRENT turn. Accompanying prose must add new evidence or qualifications, not repeat names and card fields.",
+      "Display previously verified entities as fresh widgets. Call directly without announcing it; the UI shows progress. Use for explicit redisplay, reordering or selection from prior turns, or a curated selection not already displayed this turn. sort handles alphabetical order in code; input preserves ranking order. limit caps total cards. Supply verified identities, not invented matches. If ranking evidence or the complete candidate set is missing, rerun the filtered query instead. Do not redundantly display the same current-turn results. Returns presentation metadata; prose adds only new facts. For cards-only requests emit no text before or after this call.",
     inputSchema: z.object({
+      ...presentationOptionsSchema.shape,
       companySlugs: z.array(companySlugSchema).max(50).default([]),
       people: z
         .array(
@@ -360,6 +372,8 @@ export const locusTools = {
       companySlugs,
       people: selectedPeople,
       jobs: selectedJobs,
+      sort,
+      limit,
     }) => {
       const [selectedCompanies, verifiedPeople, verifiedJobs] =
         await Promise.all([
@@ -441,15 +455,20 @@ export const locusTools = {
           ),
         ]);
 
-      return {
-        companies: selectedCompanies.filter(isPresent),
-        people: verifiedPeople
-          .filter(isPresent)
-          .map(({ companyProfile: _companyProfile, ...person }) => person),
-        jobs: verifiedJobs
-          .filter(isPresent)
-          .map(({ companyProfile: _companyProfile, ...job }) => job),
-      };
+      return withResultPresentation(
+        selectPresentation(
+          {
+            companies: selectedCompanies.filter(isPresent),
+            people: verifiedPeople
+              .filter(isPresent)
+              .map(({ companyProfile: _companyProfile, ...person }) => person),
+            jobs: verifiedJobs
+              .filter(isPresent)
+              .map(({ companyProfile: _companyProfile, ...job }) => job),
+          },
+          { sort, limit },
+        ),
+      );
     },
   }),
   searchLocus: tool({
@@ -465,7 +484,7 @@ export const locusTools = {
       limit: searchResultLimitSchema,
     }),
     execute: async ({ query, types, limit }) =>
-      searchLocus(query, types, limit),
+      withResultPresentation(await searchLocus(query, types, limit)),
   }),
   getCompany: tool({
     description:
