@@ -333,9 +333,9 @@ export const locusTools = {
   }),
   presentLocusResults: tool({
     description:
-      "Render the final, curated result cards in the user's answer. Call this at most once, only after research is complete and only for the exact companies, people, or jobs you are actually recommending or listing in your answer. Do not include exploratory matches. The returned cards are verified against Locus before display.",
+      "Render verified company, person or job widgets on demand, at most once per turn. Input arrays determine display order. Use this for explicit follow-ups to reorder, narrow, show top N or redisplay results from EARLIER turns; those requests need fresh widgets, not just a textual list. Only use previously verified identities and evidence for ranking; rerun a query if the prior result was incomplete or lacks ranking data. Search and query tools already display entities: do not redundantly redisplay the same results from another tool in the CURRENT turn. Accompanying prose must add new evidence or qualifications, not repeat names and card fields.",
     inputSchema: z.object({
-      companySlugs: z.array(companySlugSchema).max(4).default([]),
+      companySlugs: z.array(companySlugSchema).max(50).default([]),
       people: z
         .array(
           z.object({
@@ -343,7 +343,7 @@ export const locusTools = {
             name: z.string().trim().min(1).max(120),
           }),
         )
-        .max(4)
+        .max(50)
         .default([]),
       jobs: z
         .array(
@@ -353,7 +353,7 @@ export const locusTools = {
             location: z.string().trim().min(1).max(200),
           }),
         )
-        .max(5)
+        .max(50)
         .default([]),
     }),
     execute: async ({
