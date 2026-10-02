@@ -22,7 +22,7 @@ import {
 import { type CompanyProfile } from "@/lib/company-profile";
 import { splitJobLocations } from "@/lib/job-location";
 import { getJobLocationCountryCode } from "@/lib/job-location-country";
-import { Globe2, Laptop, Search } from "lucide-react";
+import { Globe2, Laptop, Search, UsersRound } from "lucide-react";
 
 type Props = {
   company: Pick<CompanyProfile, "name" | "logo">;
@@ -160,7 +160,7 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
   const SelectedDepartmentIcon =
     selectedDepartments.length === 1
       ? getJobDepartmentIcon(selectedDepartments[0])
-      : null;
+      : UsersRound;
   const SingleDepartmentIcon =
     departments.length === 1 ? getJobDepartmentIcon(departments[0]) : null;
   const searchTerms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -333,17 +333,15 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
                     type="button"
                     variant={selected ? "default" : "outline"}
                   >
-                    {Icon ? (
-                      <Icon
-                        aria-hidden="true"
-                        className={
-                          selected
-                            ? "text-[color-mix(in_oklch,var(--primary-foreground)_70%,var(--primary)_30%)]"
-                            : "text-muted-foreground"
-                        }
-                        data-icon="inline-start"
-                      />
-                    ) : null}
+                    <Icon
+                      aria-hidden="true"
+                      className={
+                        selected
+                          ? "text-[color-mix(in_oklch,var(--primary-foreground)_70%,var(--primary)_30%)]"
+                          : "text-muted-foreground"
+                      }
+                      data-icon="inline-start"
+                    />
                     <span className="min-w-0 truncate">{department}</span>
                   </Button>
                 );
@@ -416,12 +414,10 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
                         key={item.value}
                         value={item.value}
                       >
-                        {Icon ? (
-                          <Icon
-                            aria-hidden="true"
-                            className="text-muted-foreground"
-                          />
-                        ) : null}
+                        <Icon
+                          aria-hidden="true"
+                          className="text-muted-foreground"
+                        />
                         {item.label}
                       </SelectItem>
                     );
