@@ -105,6 +105,7 @@ export async function getPageCompanyContext(pagePath: unknown) {
     type: "company" as const,
     slug: profile.slug,
     name: profile.name,
+    logo: profile.logo,
     tagline: profile.tagline,
     description: profile.description,
     industry: profile.industry,
@@ -447,15 +448,22 @@ export const locusTools = {
         return {
           slug,
           name: profile.name,
+          logo: profile.logo,
           financials: profile.financials,
           funding: profile.funding,
         };
       }
       if (section === "activity") {
-        return { slug, name: profile.name, activity: profile.activity };
+        return {
+          slug,
+          name: profile.name,
+          logo: profile.logo,
+          activity: profile.activity,
+        };
       }
       const {
         name,
+        logo,
         tagline,
         description,
         website,
@@ -469,6 +477,7 @@ export const locusTools = {
       return {
         slug,
         name,
+        logo,
         tagline,
         description,
         website,
@@ -535,7 +544,7 @@ export const locusTools = {
   }),
   searchKnowledge: tool({
     description:
-      "Search across company About/tagline, funding rounds/investors, and dated activity for claims, products, compliance terms, funding news, and concepts. Give 1-6 distinctive search terms (not a conversational sentence); wrap an exact compliance phrase in double quotes, e.g. \"SOC 1 Type 1\". Quote returned excerpt and source, not just a hit. Use companySlug to narrow to one company, otherwise search globally. Returns top passages, not an exhaustive list. This searches text, not numeric comparisons or the current job/people tables.",
+      'Search across company About/tagline, funding rounds/investors, and dated activity for claims, products, compliance terms, funding news, and concepts. Give 1-6 distinctive search terms (not a conversational sentence); wrap an exact compliance phrase in double quotes, e.g. "SOC 1 Type 1". Quote returned excerpt and source, not just a hit. Use companySlug to narrow to one company, otherwise search globally. Returns top passages, not an exhaustive list. This searches text, not numeric comparisons or the current job/people tables.',
     inputSchema: z.object({
       query: z.string().trim().min(2).max(100),
       companySlug: companySlugSchema.optional(),

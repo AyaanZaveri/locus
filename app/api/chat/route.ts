@@ -1,12 +1,16 @@
 import {
   convertToModelMessages,
+  createUIMessageStream,
+  createUIMessageStreamResponse,
   stepCountIs,
   streamText,
+  toUIMessageStream,
   type UIMessage,
 } from "ai";
 
 import { getLocusModel } from "@/lib/ai/opencode";
 import { getPageCompanyContext, locusTools } from "@/lib/ai/tools";
+import { usesCurrentCompanyPage } from "@/lib/locus-page-intent";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -112,20 +116,54 @@ export async function POST(request: Request) {
   }
 
   try {
-    const pageContext = await getPageCompanyContext(body.pagePath);
-    const result = streamText({
-      model: getLocusModel(body.sessionId),
-      system: `${system}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
-      messages: await convertToModelMessages(body.messages),
-      tools: locusTools,
-      stopWhen: stepCountIs(7),
-      abortSignal: request.signal,
-      onError: ({ error }) => console.error("[api/chat]", error),
+    const latestUserMessage = [...body.messages]
+      .reverse()
+      .find((message) => message.role === "user");
+    const question =
+      latestUserMessage?.parts
+        .filter((part) => part.type === "text")
+        .map((part) => part.text)
+        .join(" ") ?? "";
+    const pageContext = usesCurrentCompanyPage(body.pagePath, question)
+      ? await getPageCompanyContext(body.pagePath)
+      : null;
+    const modelMessages = await convertToModelMessages(body.messages);
+    const isNewTurn = body.messages.at(-1)?.role === "user";
+    const stream = createUIMessageStream({
+      execute: ({ writer }) => {
+        writer.write({ type: "start" });
+        if (pageContext && isNewTurn) {
+          writer.write({
+            type: "data-pageContext",
+            data: {
+              slug: pageContext.slug,
+              name: pageContext.name,
+              logo: pageContext.logo,
+            },
+          });
+        }
+
+        const result = streamText({
+          model: getLocusModel(body.sessionId as string),
+          system: `${system}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
+          messages: modelMessages,
+          tools: locusTools,
+          stopWhen: stepCountIs(7),
+          abortSignal: request.signal,
+          onError: ({ error }) => console.error("[api/chat]", error),
+        });
+
+        writer.merge(
+          toUIMessageStream({
+            stream: result.stream,
+            sendStart: false,
+            onError: () => "Unable to complete that request. Please try again.",
+          }),
+        );
+      },
     });
 
-    return result.toUIMessageStreamResponse({
-      onError: () => "Unable to complete that request. Please try again.",
-    });
+    return createUIMessageStreamResponse({ stream });
   } catch (error) {
     console.error("[api/chat] failed", error);
     return Response.json(
