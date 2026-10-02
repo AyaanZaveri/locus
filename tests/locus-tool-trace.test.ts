@@ -6,6 +6,30 @@ import { describeLocusTool } from "../lib/locus-tool-trace";
 test("every tool invocation has a useful live and completed status", () => {
   const cases = [
     [
+      "queryJobs",
+      { workplaceType: "remote" },
+      { jobs: [{ title: "Engineer" }] },
+      "Found 1 matching role",
+    ],
+    [
+      "queryCompanies",
+      { industry: "Database" },
+      { companies: [{ slug: "x" }] },
+      "Found 1 matching company",
+    ],
+    [
+      "queryPeople",
+      { role: "CTO" },
+      { people: [{ name: "Alice" }] },
+      "Found 1 matching person",
+    ],
+    [
+      "queryActivity",
+      { type: "product" },
+      { activity: [{ title: "Launch" }] },
+      "Found 1 activity event",
+    ],
+    [
       "queryFunding",
       { sortBy: "announcedAt" },
       { rounds: [{ slug: "x" }, { slug: "y" }] },

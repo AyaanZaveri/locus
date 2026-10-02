@@ -207,16 +207,29 @@ function toolResultRows(
   type: string,
   output: unknown,
 ): LocusSearchResults | null {
-  if (type === "tool-searchLocus" || type === "tool-presentLocusResults") {
+  if (
+    [
+      "tool-searchLocus",
+      "tool-presentLocusResults",
+      "tool-queryJobs",
+      "tool-queryCompanies",
+      "tool-queryPeople",
+    ].includes(type)
+  ) {
     return asSearchResults(output);
   }
 
   if (
-    type === "tool-queryFunding" &&
+    (type === "tool-queryFunding" || type === "tool-queryActivity") &&
     isRecord(output) &&
-    Array.isArray(output.rounds)
+    Array.isArray(
+      type === "tool-queryFunding" ? output.rounds : output.activity,
+    )
   ) {
-    const companies = output.rounds
+    const rows = (
+      type === "tool-queryFunding" ? output.rounds : output.activity
+    ) as unknown[];
+    const companies = rows
       .map(asCompanyResult)
       .filter(Boolean) as LocusCompanyResult[];
     const unique = [

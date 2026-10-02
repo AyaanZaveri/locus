@@ -207,7 +207,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
               {company.name.slice(0, 1)}
             </div>
           )}
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <h3 className="flex items-center gap-1 truncate text-sm font-medium">
               <span className="truncate">{job.title}</span>
               {job.url ? (
@@ -218,22 +218,27 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
               ) : null}
             </h3>
             <div className="mt-1 text-xs font-medium text-muted-foreground">
-              <div className="flex flex-wrap items-center gap-1.5">
+              <div className="flex min-w-0 items-center gap-1.5">
                 <img
                   alt=""
                   aria-hidden="true"
-                  className="size-2.5 rounded-full"
+                  className="size-2.5 shrink-0 rounded-full"
                   src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
                 />
-                <span>{job.location.replace(/\s*\|\s*/g, " · ")}</span>
-                {job.department ? (
+                <span className="truncate">
+                  {job.location.replace(/\s*\|\s*/g, " · ")}
+                </span>
+                {job.department || job.focus ? (
                   <>
-                    <span aria-hidden="true">·</span>
-                    <span>{job.department}</span>
+                    <span aria-hidden="true" className="shrink-0">
+                      ·
+                    </span>
+                    <span className="shrink-0">
+                      {job.department || job.focus}
+                    </span>
                   </>
                 ) : null}
               </div>
-              <p className="mt-1">{job.focus}</p>
             </div>
           </div>
         </article>

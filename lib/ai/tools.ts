@@ -13,6 +13,18 @@ import {
   fundingQueryResult,
   fundingQuerySchema,
 } from "./funding-query";
+import { buildJobsQuery, jobsQueryResult, jobsQuerySchema } from "./jobs-query";
+import {
+  buildCompaniesQuery,
+  companiesQueryResult,
+  companiesQuerySchema,
+  buildPeopleQuery,
+  peopleQueryResult,
+  peopleQuerySchema,
+  buildActivityQuery,
+  activityQueryResult,
+  activityQuerySchema,
+} from "./entity-queries";
 
 const companySlugSchema = z
   .string()
@@ -230,6 +242,44 @@ function filterSearchResults(
  * SQL or mutate a record.
  */
 export const locusTools = {
+  queryJobs: tool({
+    description:
+      "Filter/rank jobs by role keywords, title, department, ALL skills, job location, company industry, workplace type, seniority, employment type, minimum annual USD salary, sponsorship and new-grad eligibility. queryScope defaults role (title/skills only); allContent also searches descriptions/departments and can match unrelated roles. Department filters are recorded team labels, not proof of an engineering role. companySlugs composes with other queries. Defaults confirmed open; openOrUnknown includes unconfirmed. Unknown fields never satisfy positive filters. Salary uses the lower bound, not maximum. Returns limited job examples plus totalMatches, hasMore, totalCompanies and companySummaries (up to 50 companies counted BEFORE limit). Set limit to the number of roles requested. Remote does not mean worldwide: preserve location/travel restrictions.",
+    inputSchema: jobsQuerySchema,
+    execute: async (input) => {
+      const asOf = new Date().toISOString().slice(0, 10);
+      const result = await db.execute(buildJobsQuery(input, asOf));
+      return jobsQueryResult(result.rows, input, asOf);
+    },
+  }),
+  queryCompanies: tool({
+    description:
+      "Filter companies by description keywords, industry/location literal substring, country, exact stage, inclusive founded-year bounds, employee bounds and minimum total funding in USD. Employee filters require the entire known range to fit; an unknown/open-ended upper bound cannot satisfy a maximum. Sort name ascending or totalFunding/employees/foundedYear descending (employees sorts lower bounds). Returns company cards, matching fields, totalMatches and hasMore. Funding is company TOTAL, not a round. companySlugs composes with other queries.",
+    inputSchema: companiesQuerySchema,
+    execute: async (input) => {
+      const result = await db.execute(buildCompaniesQuery(input));
+      return companiesQueryResult(result.rows, input);
+    },
+  }),
+  queryPeople: tool({
+    description:
+      "Filter recorded people across companies by name, role, founder status, companySlugs, company industry/location and country. Role CTO/CEO/CFO/COO includes spelled-out titles; other roles use literal substring. Location refers to the COMPANY, not the person's residence. Returns recorded roles, source/profile links, company context, totalMatches and hasMore. Use for cross-company people discovery; do not infer current employment from historical activity.",
+    inputSchema: peopleQuerySchema,
+    execute: async (input) => {
+      const result = await db.execute(buildPeopleQuery(input));
+      return peopleQueryResult(result.rows, input);
+    },
+  }),
+  queryActivity: tool({
+    description:
+      "Query dated company activity by event type, inclusive after/before dates, short text keywords, companySlugs, company industry/location and country. Sort newest first or text relevance. Returns events with dated excerpts and source URLs, totalMatches and hasMore (counts EVENTS, not companies). Unknown/partial dates and future events are excluded. Use for recent launches, hiring signals and news; use queryFunding for structured funding amounts/stages/investors. Text matches are leads, not proof of certification or present-day status.",
+    inputSchema: activityQuerySchema,
+    execute: async (input) => {
+      const asOf = new Date().toISOString().slice(0, 10);
+      const result = await db.execute(buildActivityQuery(input, asOf));
+      return activityQueryResult(result.rows, input, asOf);
+    },
+  }),
   queryFunding: tool({
     description:
       "Query structured funding rounds across the Locus database. Use for latest/recent funding, largest rounds, or filters by inclusive announcement dates, company, exact stage (case-insensitive), minimum USD amount, and investor name substring (lead or participating). Sort descending by announcedAt or amount. Returns round amounts, dates, investors, source URLs and totalMatches/hasMore. These are rounds, not company funding totals. Future rounds are excluded; recency excludes unknown or partial dates. Prefer this over text search for filtering or ranking funding. Use getCompanyProfile for total funding.",

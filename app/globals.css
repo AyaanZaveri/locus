@@ -7,6 +7,36 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.locus-result-arrow {
+  opacity: 0;
+  transform: scale(0.25);
+  transition:
+    opacity 150ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Keyboard selection is immediate; hover motion is limited to fine pointers. */
+.locus-result-row:focus-visible .locus-result-arrow,
+.locus-result-row[data-selected="true"] .locus-result-arrow {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .locus-result-row:hover .locus-result-arrow {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .locus-result-arrow {
+    transform: none;
+    transition: none;
+  }
+}
+
 .company-directory-card {
   transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
 }

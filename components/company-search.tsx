@@ -144,7 +144,7 @@ export function CompanySearch({
             <>
               {results.companies.length ? (
                 <CommandGroup
-                  heading={search.trim() ? "Companies" : "Suggested companies"}
+                  heading={search.trim() ? "Companies" : "Recently funded"}
                 >
                   {results.companies.map((company) => (
                     <LocusResultRow

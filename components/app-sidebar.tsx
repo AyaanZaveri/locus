@@ -47,6 +47,14 @@ export function AppSidebar({
     href: `/company/${company.slug}`,
     logo: company.logo,
   }));
+  const suggestedCompanies = companies
+    .filter((company) => company.latestFundingAt !== null)
+    .sort(
+      (a, b) =>
+        (b.latestFundingAt ?? "").localeCompare(a.latestFundingAt ?? "") ||
+        a.name.localeCompare(b.name),
+    )
+    .slice(0, 6);
 
   function openSearch() {
     if (isMobile) {
@@ -164,7 +172,7 @@ export function AppSidebar({
       <CompanySearch
         onOpenChange={setSearchOpen}
         open={searchOpen}
-        suggestedCompanies={companies}
+        suggestedCompanies={suggestedCompanies}
       />
     </>
   );

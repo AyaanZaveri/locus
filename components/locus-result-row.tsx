@@ -1,6 +1,6 @@
 "use client";
 
-import { BriefcaseBusinessIcon, BuildingIcon } from "lucide-react";
+import { ArrowRight, BriefcaseBusinessIcon, BuildingIcon } from "lucide-react";
 import Link from "next/link";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -62,7 +62,27 @@ type LocusResultRowProps =
       onNavigate?: () => void;
     });
 
-const rowClassName = "items-center gap-3 py-2";
+const rowClassName = "locus-result-row items-center gap-3 py-2";
+
+function ResultTitle({
+  children,
+  showArrow,
+}: {
+  children: React.ReactNode;
+  showArrow: boolean;
+}) {
+  return (
+    <p className="flex min-w-0 items-center gap-1 font-medium">
+      <span className="truncate">{children}</span>
+      {showArrow ? (
+        <ArrowRight
+          aria-hidden="true"
+          className="locus-result-arrow size-4 shrink-0 text-muted-foreground"
+        />
+      ) : null}
+    </p>
+  );
+}
 
 export function locusResultHref(result: LocusResult) {
   if (result.kind === "company") return `/company/${result.result.slug}`;
@@ -100,7 +120,7 @@ function LocationFlag({ countryCode }: { countryCode?: string }) {
   ) : null;
 }
 
-function LocusResultRowContent(props: LocusResult) {
+function LocusResultRowContent(props: LocusResult & { showArrow: boolean }) {
   if (props.kind === "company") {
     const { result } = props;
     return (
@@ -118,7 +138,7 @@ function LocusResultRowContent(props: LocusResult) {
           </div>
         )}
         <div className="min-w-0 flex-1">
-          <p className="truncate font-medium">{result.name}</p>
+          <ResultTitle showArrow={props.showArrow}>{result.name}</ResultTitle>
           <div className="mt-1 flex flex-wrap gap-1.5">
             <Badge
               className="h-5 border-border bg-background px-1.5 text-[11px]"
@@ -148,7 +168,7 @@ function LocusResultRowContent(props: LocusResult) {
           <AvatarFallback>{initials(result.name)}</AvatarFallback>
         </Avatar>
         <div className="min-w-0 flex-1">
-          <p className="truncate font-medium">{result.name}</p>
+          <ResultTitle showArrow={props.showArrow}>{result.name}</ResultTitle>
           <p className="flex items-center gap-1 truncate text-xs text-muted-foreground">
             <span className="truncate font-medium">{result.role} @</span>
             {result.companyLogo ? (
@@ -182,7 +202,7 @@ function LocusResultRowContent(props: LocusResult) {
         </div>
       )}
       <div className="min-w-0 flex-1">
-        <p className="truncate font-medium">{result.title}</p>
+        <ResultTitle showArrow={props.showArrow}>{result.title}</ResultTitle>
         <p className="truncate text-xs text-muted-foreground">
           <span className="font-medium">{result.companyName}</span> ·{" "}
           {result.focus}
@@ -199,21 +219,25 @@ export function LocusResultRow(props: LocusResultRowProps) {
     return (
       <CommandItem
         className={rowClassName}
+        draggable={false}
+        onDragStart={(event) => event.preventDefault()}
         onSelect={props.onSelect}
         value={props.value}
       >
-        <LocusResultRowContent {...props} />
+        <LocusResultRowContent {...props} showArrow={false} />
       </CommandItem>
     );
   }
 
   return (
     <Link
-      className={`group/command-item flex w-full min-w-0 cursor-pointer items-center rounded-lg px-2 text-sm outline-hidden transition-colors hover:bg-emerald-500/10 focus-visible:bg-emerald-500/10 ${rowClassName}`}
+      className={`group/command-item flex w-full min-w-0 cursor-pointer items-center rounded-lg px-2 text-sm outline-hidden transition-transform duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-muted focus-visible:bg-muted active:scale-[0.995] motion-reduce:transform-none motion-reduce:transition-none ${rowClassName}`}
       href={href}
+      draggable={false}
+      onDragStart={(event) => event.preventDefault()}
       onClick={props.onNavigate}
     >
-      <LocusResultRowContent {...props} />
+      <LocusResultRowContent {...props} showArrow />
     </Link>
   );
 }

@@ -197,6 +197,7 @@ export type CompanyNavigationItem = {
   industry: string;
   location: string;
   countryCode: string;
+  latestFundingAt: string | null;
 };
 
 const companiesDirectory = join(process.cwd(), "data", "companies");
@@ -382,6 +383,12 @@ export async function getCompanyNavigation(): Promise<CompanyNavigationItem[]> {
         location: companies.location,
         countryCode: companies.countryCode,
         logo: sql<string | null>`${companies.profile} ->> 'logo'`,
+        latestFundingAt: sql<string | null>`(
+          SELECT max(round ->> 'announcedAt')
+          FROM jsonb_array_elements(coalesce(${companies.profile} -> 'funding' -> 'rounds', '[]'::jsonb)) AS round
+          WHERE round ->> 'announcedAt' ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
+            AND round ->> 'announcedAt' <= to_char(now() AT TIME ZONE 'UTC', 'YYYY-MM-DD')
+        )`,
       })
       .from(companies)
       .orderBy(companies.name);

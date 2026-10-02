@@ -60,6 +60,10 @@ const toolIcons: Record<string, LocusTrace["icon"]> = {
   searchLocus: "search",
   searchKnowledge: "evidence",
   queryFunding: "evidence",
+  queryJobs: "jobs",
+  queryCompanies: "company",
+  queryPeople: "people",
+  queryActivity: "evidence",
   getCompany: "company",
   getCompanyProfile: "company",
   findCompanyPeople: "people",
@@ -100,6 +104,61 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
   }
 
   switch (toolName) {
+    case "queryJobs":
+    case "queryCompanies":
+    case "queryPeople":
+    case "queryActivity": {
+      const config = {
+        queryJobs: {
+          key: "jobs",
+          singular: "matching role",
+          plural: "matching roles",
+          running: "Querying jobs",
+        },
+        queryCompanies: {
+          key: "companies",
+          singular: "matching company",
+          plural: "matching companies",
+          running: "Querying companies",
+        },
+        queryPeople: {
+          key: "people",
+          singular: "matching person",
+          plural: "matching people",
+          running: "Querying people",
+        },
+        queryActivity: {
+          key: "activity",
+          singular: "activity event",
+          plural: "activity events",
+          running: "Querying activity",
+        },
+      }[toolName];
+      const amount = count(record(output)[config.key]);
+      return {
+        icon,
+        phase,
+        label:
+          phase === "complete"
+            ? amount
+              ? `Found ${noun(amount, config.singular, config.plural)}`
+              : `No ${config.plural} found`
+            : config.running,
+        detail: hasInput
+          ? [
+              query,
+              text(input.role),
+              text(input.title),
+              text(input.industry),
+              text(input.location),
+              text(input.workplaceType),
+              text(input.type),
+            ]
+              .filter(Boolean)
+              .join(" · ") || undefined
+          : undefined,
+      };
+    }
     case "queryFunding": {
       const rounds = count(record(output).rounds);
       return {
