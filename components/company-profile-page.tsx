@@ -57,6 +57,27 @@ function getSourceHost(url: string) {
   }
 }
 
+function getBannerObjectPosition(position?: string) {
+  if (!position) return "center";
+  if (position.startsWith("object-[") && position.endsWith("]")) {
+    return position.slice(8, -1).replaceAll("_", " ");
+  }
+
+  const namedPositions: Record<string, string> = {
+    "object-bottom": "bottom",
+    "object-center": "center",
+    "object-left": "left",
+    "object-left-bottom": "left bottom",
+    "object-left-top": "left top",
+    "object-right": "right",
+    "object-right-bottom": "right bottom",
+    "object-right-top": "right top",
+    "object-top": "top",
+  };
+
+  return namedPositions[position] ?? "center";
+}
+
 export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
   const latestRound =
     profile.funding.rounds.find(
@@ -79,10 +100,10 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                 <img
                   alt={`${profile.name} banner`}
                   draggable={false}
-                  className={cn(
-                    "block size-full max-w-full object-cover",
-                    profile.bannerPosition ?? "object-center",
-                  )}
+                  className="block size-full max-w-full object-cover"
+                  style={{
+                    objectPosition: getBannerObjectPosition(profile.bannerPosition),
+                  }}
                   src={profile.banner}
                 />
               ) : (
