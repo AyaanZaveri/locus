@@ -1,0 +1,1623 @@
+[
+  {
+    "model": "glm-5.3-flash",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 11668,
+    "stepCount": 3,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 2 Type 1",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 2\"",
+          "companySlug": "context-dev",
+          "limit": 5
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      }
+    ],
+    "text": "Context.dev mentions **SOC 2 Type 1**, and it's not yet Type 2 certified.\n\n- **About text:** \"...is SOC 2 Type 1 certified.\" (source: context.dev)\n- **Activity (2026-05-18):** \"Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.\" (source: context.dev blog)\n\nType 2 status: not certified yet. Their statement says they only *entered the observation period* for Type 2, and a search of their profile for \"SOC 2 Type 2\" returns no certification record. Type 2 requires an audited observation window after Type 1, so they'd still be in progress.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 16316,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 1\"",
+          "limit": 10
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      }
+    ],
+    "text": "**Context.dev** mentions SOC 2 Type 1 in both its About text and its activity feed.\n\n- **Type 1:** Certified. Its About page states it \"is SOC 2 Type 1 certified,\" and an activity item dated 2026-05-18 titled \"SOC 2 Type 1 compliant\" confirms the announcement (source: https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance).\n- **Type 2:** Not yet certified. The same activity item says Context.dev \"entered the observation period for Type 2,\" meaning Type 2 is in progress rather than already certified.\n\nThe search surfaced Context.dev as the match for this phrase.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 12552,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 1\"",
+          "limit": 6
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      }
+    ],
+    "text": "**Context.dev** (slug: context-dev) mentions SOC 2 Type 1 in both its about text and activity:\n\n- **About:** \"it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.\" ([context.dev](https://www.context.dev))\n- **Activity (2026-05-18):** \"Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.\" ([announcement](https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance))\n\n**Type 2 status:** Not yet certified. The company has only entered the observation period for Type 2, so Type 1 is the certification held today.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 40527,
+    "stepCount": 4,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 1\"",
+          "limit": 5
+        }
+      },
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "context-dev",
+          "section": "activity"
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "input": {
+          "companySlugs": [
+            "context-dev"
+          ],
+          "people": [],
+          "jobs": []
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      },
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "context-dev",
+          "name": "Context.dev",
+          "activity": [
+            {
+              "type": "product",
+              "time": "Sep 28, 2026",
+              "dateTime": "2026-09-28",
+              "title": "Context Highlights launched",
+              "description": "Context.dev shipped Context Highlights, a more token-efficient way to return the most relevant passages from a page.",
+              "sourceUrl": "https://www.context.dev/blog/introducing-context-highlights"
+            },
+            {
+              "type": "product",
+              "time": "Sep 16, 2026",
+              "dateTime": "2026-09-16",
+              "title": "Answers API introduced",
+              "description": "The Answers API takes a research task and returns structured JSON with source URLs, giving apps and agents web research in a single call.",
+              "sourceUrl": "https://www.context.dev/blog/introducing-answers-api"
+            },
+            {
+              "type": "product",
+              "time": "Sep 6, 2026",
+              "dateTime": "2026-09-06",
+              "title": "Free tier returns",
+              "description": "Context.dev reintroduced a free tier so developers can evaluate the API without a credit card.",
+              "sourceUrl": "https://www.context.dev/blog/our-free-tier-is-back"
+            },
+            {
+              "type": "product",
+              "time": "Aug 19, 2026",
+              "dateTime": "2026-08-19",
+              "title": "Context.dev comes to Cursor",
+              "description": "Context.dev released an integration that brings its live web context, scraping, and extraction into the Cursor editor.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-integration-for-cursor"
+            },
+            {
+              "type": "product",
+              "time": "Aug 16, 2026",
+              "dateTime": "2026-08-16",
+              "title": "Context.dev comes to Eve",
+              "description": "Context.dev shipped an integration for the Eve agent platform.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-integration-for-eve"
+            },
+            {
+              "type": "product",
+              "time": "Jul 9, 2026",
+              "dateTime": "2026-07-09",
+              "title": "Monitors launched in beta",
+              "description": "Context.dev launched Monitors: watch a page, sitemap, or structured value for changes on a schedule, then receive signed webhooks or retrieve diffs through the API.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-monitors"
+            },
+            {
+              "type": "growth",
+              "time": "Jul 2, 2026",
+              "dateTime": "2026-07-02",
+              "title": "Launched on Product Hunt",
+              "description": "Context.dev launched publicly on Product Hunt, ranking #1 of the day and #2 of the week for July 2 and #4 of the month for July 2026.",
+              "sourceUrl": "https://www.producthunt.com/products/context-dev"
+            },
+            {
+              "type": "people",
+              "time": "Jun 22, 2026",
+              "dateTime": "2026-06-22",
+              "title": "Second engineer joins",
+              "description": "Founder Yahia Bakour announced that Nikhil Radosevich joined full-time after interning, becoming the company's second team member and moving to San Francisco.",
+              "sourceUrl": "https://x.com/mynameisyahia/status/2068876731415699595"
+            },
+            {
+              "type": "funding",
+              "time": "May 31, 2026",
+              "dateTime": "2026-05-31",
+              "title": "Backed by Y Combinator",
+              "description": "Context.dev joined Y Combinator's Summer 2026 batch with a $500K investment, its first disclosed funding.",
+              "sourceUrl": "https://www.context.dev/blog/were-now-backed-by-ycombinator"
+            },
+            {
+              "type": "news",
+              "time": "May 18, 2026",
+              "dateTime": "2026-05-18",
+              "title": "SOC 2 Type 1 compliant",
+              "description": "Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance"
+            },
+            {
+              "type": "news",
+              "time": "Mar 21, 2026",
+              "dateTime": "2026-03-21",
+              "title": "Brand.dev becomes Context.dev",
+              "description": "The company rebranded from Brand.dev to Context.dev to reflect a platform that had grown beyond brand data into broader web context for AI.",
+              "sourceUrl": "https://www.context.dev/blog/brand-dev-is-now-context-dev"
+            }
+          ]
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "output": {
+          "companies": [
+            {
+              "slug": "context-dev",
+              "name": "Context.dev",
+              "logo": "/companies/context-dev/images/logo.jpg",
+              "industry": "Web Search",
+              "location": "San Francisco, California",
+              "countryCode": "us"
+            }
+          ],
+          "people": [],
+          "jobs": []
+        }
+      }
+    ],
+    "text": "**Context.dev** mentions SOC 2 Type 1 in both About and Activity.\n\n* About: “...and is SOC 2 Type 1 certified.” Source: [context.dev](https://www.context.dev)\n\n* Activity, May 18, 2026, “SOC 2 Type 1 compliant”: “Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.” Source: [announcement](https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance)\n\nType 2 status: not certified in the available record. Type 2 was in observation period as of that announcement, so Type 1 is claimed, Type 2 is unknown/not yet verified.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 25017,
+    "stepCount": 4,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 1\"",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 2\"",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 2 Type 1 certified compliance",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"Type 2\" certification observation period",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 2 compliant certified audit",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2\"",
+          "limit": 10
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      }
+    ],
+    "text": "Context.dev is one. Its About text says it is \"SOC 2 Type 1 certified,\" and a May 18, 2026 activity item states:\n\n\"SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.\"\nSource: https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance (profile: /company/context-dev)\n\nType 2 is not certified yet. The same announcement says Context.dev entered the observation period for Type 2, which is the pre-audit stage, so any Type 2 certification is pending rather than achieved. No other company in the database surfaced a SOC 2 Type 1 mention in my searches.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "gpt-6-luna",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 7426,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 1\"",
+          "limit": 10
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      }
+    ],
+    "text": "**Context.dev** says its About text is SOC 2 Type 1 certified. Its [activity announcement](https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance) says it had entered the observation period for Type 2, so the database does not show Type 2 as certified.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "space-bunny-free",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 12211,
+    "stepCount": 4,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 2 Type 1\"",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 2 Type 2 attestation",
+          "limit": 10
+        }
+      },
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "context-dev",
+          "section": "activity"
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "input": {
+          "companySlugs": [
+            "context-dev"
+          ],
+          "people": [],
+          "jobs": []
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "context-dev",
+          "name": "Context.dev",
+          "activity": [
+            {
+              "type": "product",
+              "time": "Sep 28, 2026",
+              "dateTime": "2026-09-28",
+              "title": "Context Highlights launched",
+              "description": "Context.dev shipped Context Highlights, a more token-efficient way to return the most relevant passages from a page.",
+              "sourceUrl": "https://www.context.dev/blog/introducing-context-highlights"
+            },
+            {
+              "type": "product",
+              "time": "Sep 16, 2026",
+              "dateTime": "2026-09-16",
+              "title": "Answers API introduced",
+              "description": "The Answers API takes a research task and returns structured JSON with source URLs, giving apps and agents web research in a single call.",
+              "sourceUrl": "https://www.context.dev/blog/introducing-answers-api"
+            },
+            {
+              "type": "product",
+              "time": "Sep 6, 2026",
+              "dateTime": "2026-09-06",
+              "title": "Free tier returns",
+              "description": "Context.dev reintroduced a free tier so developers can evaluate the API without a credit card.",
+              "sourceUrl": "https://www.context.dev/blog/our-free-tier-is-back"
+            },
+            {
+              "type": "product",
+              "time": "Aug 19, 2026",
+              "dateTime": "2026-08-19",
+              "title": "Context.dev comes to Cursor",
+              "description": "Context.dev released an integration that brings its live web context, scraping, and extraction into the Cursor editor.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-integration-for-cursor"
+            },
+            {
+              "type": "product",
+              "time": "Aug 16, 2026",
+              "dateTime": "2026-08-16",
+              "title": "Context.dev comes to Eve",
+              "description": "Context.dev shipped an integration for the Eve agent platform.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-integration-for-eve"
+            },
+            {
+              "type": "product",
+              "time": "Jul 9, 2026",
+              "dateTime": "2026-07-09",
+              "title": "Monitors launched in beta",
+              "description": "Context.dev launched Monitors: watch a page, sitemap, or structured value for changes on a schedule, then receive signed webhooks or retrieve diffs through the API.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-monitors"
+            },
+            {
+              "type": "growth",
+              "time": "Jul 2, 2026",
+              "dateTime": "2026-07-02",
+              "title": "Launched on Product Hunt",
+              "description": "Context.dev launched publicly on Product Hunt, ranking #1 of the day and #2 of the week for July 2 and #4 of the month for July 2026.",
+              "sourceUrl": "https://www.producthunt.com/products/context-dev"
+            },
+            {
+              "type": "people",
+              "time": "Jun 22, 2026",
+              "dateTime": "2026-06-22",
+              "title": "Second engineer joins",
+              "description": "Founder Yahia Bakour announced that Nikhil Radosevich joined full-time after interning, becoming the company's second team member and moving to San Francisco.",
+              "sourceUrl": "https://x.com/mynameisyahia/status/2068876731415699595"
+            },
+            {
+              "type": "funding",
+              "time": "May 31, 2026",
+              "dateTime": "2026-05-31",
+              "title": "Backed by Y Combinator",
+              "description": "Context.dev joined Y Combinator's Summer 2026 batch with a $500K investment, its first disclosed funding.",
+              "sourceUrl": "https://www.context.dev/blog/were-now-backed-by-ycombinator"
+            },
+            {
+              "type": "news",
+              "time": "May 18, 2026",
+              "dateTime": "2026-05-18",
+              "title": "SOC 2 Type 1 compliant",
+              "description": "Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance"
+            },
+            {
+              "type": "news",
+              "time": "Mar 21, 2026",
+              "dateTime": "2026-03-21",
+              "title": "Brand.dev becomes Context.dev",
+              "description": "The company rebranded from Brand.dev to Context.dev to reflect a platform that had grown beyond brand data into broader web context for AI.",
+              "sourceUrl": "https://www.context.dev/blog/brand-dev-is-now-context-dev"
+            }
+          ]
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "output": {
+          "companies": [
+            {
+              "slug": "context-dev",
+              "name": "Context.dev",
+              "logo": "/companies/context-dev/images/logo.jpg",
+              "industry": "Web Search",
+              "location": "San Francisco, California",
+              "countryCode": "us"
+            }
+          ],
+          "people": [],
+          "jobs": []
+        }
+      }
+    ],
+    "text": "No other company in the database mentions SOC 2 Type 1 or a Type 2 attestation.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "glm-5.3-flash",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 9960,
+    "stepCount": 3,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "input": {
+          "companySlugs": [],
+          "people": [],
+          "jobs": [
+            {
+              "companySlug": "anthropic",
+              "title": "Senior Software Engineer, Full-stack",
+              "location": "San Francisco, CA | New York, NY | Seattle, WA"
+            }
+          ]
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      },
+      {
+        "name": "presentLocusResults",
+        "output": {
+          "companies": [],
+          "people": [],
+          "jobs": [
+            {
+              "title": "Senior Software Engineer, Full-stack",
+              "location": "San Francisco, CA | New York, NY | Seattle, WA",
+              "focus": "Engineering",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+              "companySlug": "anthropic",
+              "companyName": "Anthropic",
+              "countryCode": "us",
+              "companyLogo": "/companies/anthropic/images/logo.png"
+            }
+          ]
+        }
+      }
+    ],
+    "text": "Recommended: **Senior Software Engineer, Full-stack**, location **San Francisco, CA | New York, NY | Seattle, WA**. It's an open, onsite role in Engineering & Design - Product at Anthropic.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "qwen3.8-flash",
+    "prompt": "Which companies mention SOC 2 Type 1 certification in their about text or activity? Name one and distinguish whether Type 2 is already certified.",
+    "pagePath": "/companies",
+    "durationMs": 89686,
+    "stepCount": 5,
+    "toolCalls": [
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 1 Type II\"",
+          "limit": 5
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 1 Type I\"",
+          "limit": 5
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 1 Type II",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 1 Type I",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "SOC 1 certification",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 1\"",
+          "companySlug": "context-dev",
+          "limit": 10
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "input": {
+          "query": "\"SOC 1\"",
+          "limit": 10
+        }
+      },
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "context-dev",
+          "section": "activity"
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "input": {
+          "companySlugs": [
+            "context-dev"
+          ],
+          "people": [],
+          "jobs": []
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": [
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "activity",
+            "title": "SOC 2 Type 1 compliant",
+            "excerpt": "SOC 2 Type 1 compliant Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+            "date": "2026-05-18",
+            "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance",
+            "pageUrl": "/company/context-dev"
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "section": "about",
+            "title": "About",
+            "excerpt": "One API to scrape, enrich, and understand the web Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified.",
+            "date": null,
+            "sourceUrl": "https://www.context.dev",
+            "pageUrl": "/company/context-dev"
+          }
+        ]
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "context-dev",
+          "name": "Context.dev",
+          "activity": [
+            {
+              "type": "product",
+              "time": "Sep 28, 2026",
+              "dateTime": "2026-09-28",
+              "title": "Context Highlights launched",
+              "description": "Context.dev shipped Context Highlights, a more token-efficient way to return the most relevant passages from a page.",
+              "sourceUrl": "https://www.context.dev/blog/introducing-context-highlights"
+            },
+            {
+              "type": "product",
+              "time": "Sep 16, 2026",
+              "dateTime": "2026-09-16",
+              "title": "Answers API introduced",
+              "description": "The Answers API takes a research task and returns structured JSON with source URLs, giving apps and agents web research in a single call.",
+              "sourceUrl": "https://www.context.dev/blog/introducing-answers-api"
+            },
+            {
+              "type": "product",
+              "time": "Sep 6, 2026",
+              "dateTime": "2026-09-06",
+              "title": "Free tier returns",
+              "description": "Context.dev reintroduced a free tier so developers can evaluate the API without a credit card.",
+              "sourceUrl": "https://www.context.dev/blog/our-free-tier-is-back"
+            },
+            {
+              "type": "product",
+              "time": "Aug 19, 2026",
+              "dateTime": "2026-08-19",
+              "title": "Context.dev comes to Cursor",
+              "description": "Context.dev released an integration that brings its live web context, scraping, and extraction into the Cursor editor.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-integration-for-cursor"
+            },
+            {
+              "type": "product",
+              "time": "Aug 16, 2026",
+              "dateTime": "2026-08-16",
+              "title": "Context.dev comes to Eve",
+              "description": "Context.dev shipped an integration for the Eve agent platform.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-integration-for-eve"
+            },
+            {
+              "type": "product",
+              "time": "Jul 9, 2026",
+              "dateTime": "2026-07-09",
+              "title": "Monitors launched in beta",
+              "description": "Context.dev launched Monitors: watch a page, sitemap, or structured value for changes on a schedule, then receive signed webhooks or retrieve diffs through the API.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-monitors"
+            },
+            {
+              "type": "growth",
+              "time": "Jul 2, 2026",
+              "dateTime": "2026-07-02",
+              "title": "Launched on Product Hunt",
+              "description": "Context.dev launched publicly on Product Hunt, ranking #1 of the day and #2 of the week for July 2 and #4 of the month for July 2026.",
+              "sourceUrl": "https://www.producthunt.com/products/context-dev"
+            },
+            {
+              "type": "people",
+              "time": "Jun 22, 2026",
+              "dateTime": "2026-06-22",
+              "title": "Second engineer joins",
+              "description": "Founder Yahia Bakour announced that Nikhil Radosevich joined full-time after interning, becoming the company's second team member and moving to San Francisco.",
+              "sourceUrl": "https://x.com/mynameisyahia/status/2068876731415699595"
+            },
+            {
+              "type": "funding",
+              "time": "May 31, 2026",
+              "dateTime": "2026-05-31",
+              "title": "Backed by Y Combinator",
+              "description": "Context.dev joined Y Combinator's Summer 2026 batch with a $500K investment, its first disclosed funding.",
+              "sourceUrl": "https://www.context.dev/blog/were-now-backed-by-ycombinator"
+            },
+            {
+              "type": "news",
+              "time": "May 18, 2026",
+              "dateTime": "2026-05-18",
+              "title": "SOC 2 Type 1 compliant",
+              "description": "Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.",
+              "sourceUrl": "https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance"
+            },
+            {
+              "type": "news",
+              "time": "Mar 21, 2026",
+              "dateTime": "2026-03-21",
+              "title": "Brand.dev becomes Context.dev",
+              "description": "The company rebranded from Brand.dev to Context.dev to reflect a platform that had grown beyond brand data into broader web context for AI.",
+              "sourceUrl": "https://www.context.dev/blog/brand-dev-is-now-context-dev"
+            }
+          ]
+        }
+      },
+      {
+        "name": "searchKnowledge",
+        "output": []
+      },
+      {
+        "name": "presentLocusResults",
+        "output": {
+          "companies": [
+            {
+              "slug": "context-dev",
+              "name": "Context.dev",
+              "logo": "/companies/context-dev/images/logo.jpg",
+              "industry": "Web Search",
+              "location": "San Francisco, California",
+              "countryCode": "us"
+            }
+          ],
+          "people": [],
+          "jobs": []
+        }
+      }
+    ],
+    "text": "Exact searches for **SOC 1 Type I**, **SOC 1 Type II**, and **“SOC 1”** found no companies mentioning SOC 1 in their About text or activity.\n\nThe closest returned result is **Context.dev**, which mentions **SOC 2 Type 1**, not SOC 1:\n\n> “Context.dev is a web context API … and is SOC 2 Type 1 certified.”  \n> [Source](https://www.context.dev)\n\nFor its Type 2 status, activity dated May 18, 2026 says:\n\n> “Context.dev announced SOC 2 Type 1 compliance with Comp AI and entered the observation period for Type 2.”  \n> [Source](https://www.context.dev/blog/announcing-context-dev-soc-2-type-1-compliance)\n\nSo **SOC 2 Type 1 is claimed as certified/compliant**, while **SOC 2 Type 2 is not shown as certified yet**.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "compliance",
+    "httpStatus": 200
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 13786,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      }
+    ],
+    "text": "**Senior Software Engineer, Full-stack** at Anthropic, located in San Francisco, CA | New York, NY | Seattle, WA (onsite, full-time, Engineering & Design - Product). The role is open and listed here: https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 46045,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      }
+    ],
+    "text": "**Senior Software Engineer, Full-stack** — San Francisco, CA | New York, NY | Seattle, WA\n\nThis role sits in Anthropic's Product engineering group and is open (full-time, onsite). Two other full-stack roles are also listed: Staff+ Software Engineer, Full-stack and Full Stack Engineer, Education Labs, both at the same locations.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 40336,
+    "stepCount": 3,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      },
+      {
+        "name": "presentLocusResults",
+        "input": {
+          "companySlugs": [],
+          "people": [],
+          "jobs": [
+            {
+              "companySlug": "anthropic",
+              "title": "Senior Software Engineer, Full-stack",
+              "location": "San Francisco, CA | New York, NY | Seattle, WA"
+            }
+          ]
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      },
+      {
+        "name": "presentLocusResults",
+        "output": {
+          "companies": [],
+          "people": [],
+          "jobs": [
+            {
+              "title": "Senior Software Engineer, Full-stack",
+              "location": "San Francisco, CA | New York, NY | Seattle, WA",
+              "focus": "Engineering",
+              "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+              "companySlug": "anthropic",
+              "companyName": "Anthropic",
+              "countryCode": "us",
+              "companyLogo": "/companies/anthropic/images/logo.png"
+            }
+          ]
+        }
+      }
+    ],
+    "text": "Senior Software Engineer, Full-stack in San Francisco, CA | New York, NY | Seattle, WA.",
+    "finishReasons": [
+      "tool-calls",
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "qwen3.8-flash",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 8338,
+    "stepCount": 1,
+    "toolCalls": [],
+    "toolResults": [],
+    "text": "What would you like to know about Anthropic—its business, funding, people, or currently open jobs?",
+    "finishReasons": [
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 7495,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      }
+    ],
+    "text": "**Senior Software Engineer, Full-stack** — San Francisco, CA | New York, NY | Seattle, WA. Onsite, full-time, in the Engineering & Design - Product department.\n\nTwo other full-stack roles are also open: Staff+ Software Engineer, Full-stack (same three locations) and Full Stack Engineer, Education Labs (same locations).",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "gpt-6-luna",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 7876,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      }
+    ],
+    "text": "**Senior Software Engineer, Full-stack** — San Francisco, CA | New York, NY | Seattle, WA.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  },
+  {
+    "model": "space-bunny-free",
+    "prompt": "Recommend one job here related to full-stack engineering. Give the exact title and location.",
+    "pagePath": "/company/anthropic",
+    "durationMs": 6945,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "listCompanyJobs",
+        "input": {
+          "slug": "anthropic",
+          "limit": 3,
+          "criteria": "full-stack engineering"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "listCompanyJobs",
+        "output": [
+          {
+            "title": "Senior Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Staff+ Software Engineer, Full-stack",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Engineering",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Engineering & Design - Product",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          },
+          {
+            "title": "Full Stack Engineer, Education Labs",
+            "location": "San Francisco, CA | New York, NY | Seattle, WA",
+            "focus": "Other",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+            "status": "open",
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "department": "Technical Education",
+            "skills": [],
+            "experienceLevel": null,
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "countryCode": "us",
+            "companyLogo": "/companies/anthropic/images/logo.png"
+          }
+        ]
+      }
+    ],
+    "text": "**Senior Software Engineer, Full-stack** in San Francisco, CA | New York, NY | Seattle, WA. Full-time, onsite, in Engineering & Design - Product.\n\nTwo other full-stack openings at Anthropic:\n\n- Staff+ Software Engineer, Full-stack, same three cities, same department\n- Full Stack Engineer, Education Labs, same three cities, in Technical Education\n\nWithout knowing your experience level, the Senior Software Engineer, Full-stack posting is the standard entry point; the Staff+ one targets more experienced candidates, and the Education Labs role sits under Technical Education rather than Product.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ],
+    "streamErrors": [],
+    "key": "jobs",
+    "httpStatus": 200
+  }
+]

@@ -1,0 +1,9 @@
+model,score_of_3,mean_seconds,median_seconds,about_seconds,compliance_seconds,jobs_seconds,steps_total,tool_calls_total
+gpt-6-luna,3,6.291,7.426,3.572,7.426,7.876,6,3
+muse-spark-1.3-contributor,3,28.954,40.336,5.999,40.527,40.336,9,6
+glm-5.3-flash,2.75,7.634,9.96,1.274,11.668,9.96,7,4
+deepseek-v4.1-flash,2.75,11.678,7.495,2.521,25.017,7.495,7,7
+longcat-2.5-preview-free,2.75,14.53,13.786,13.489,16.316,13.786,6,3
+mimo-v2.6-flash,2.75,21.469,12.552,5.811,12.552,46.045,6,3
+space-bunny-free,2,7.251,6.945,2.598,12.211,6.945,8,6
+qwen3.8-flash,1.5,34.226,8.338,4.655,89.686,8.338,8,10

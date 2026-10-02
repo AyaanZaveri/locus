@@ -6,6 +6,7 @@ import { z } from "zod";
 
 import { db } from "@/lib/db";
 import { companies, jobs, people } from "@/lib/db/schema";
+import { parseCompanyProfile } from "@/lib/company-profile";
 import { search, type SearchResponse } from "@/lib/search";
 
 const companySlugSchema = z
@@ -49,57 +50,24 @@ function jobSearchStem(word: string) {
   return word;
 }
 
+function jobWords(value: string) {
+  return (
+    value
+      .toLowerCase()
+      .replace(/fullstack/g, "full stack")
+      .match(/[a-z0-9]{2,}/g)
+      ?.map(jobSearchStem) ?? []
+  );
+}
+
 function jobSearchTerms(criteria?: string) {
   if (!criteria) return [];
 
   return [
     ...new Set(
-      criteria
-        .toLowerCase()
-        .match(/[a-z0-9][a-z0-9-]{1,}/g)
-        ?.map(jobSearchStem)
-        .filter((word) => !jobRelevanceStopWords.has(word)) ?? [],
+      jobWords(criteria).filter((word) => !jobRelevanceStopWords.has(word)),
     ),
   ];
-}
-
-function jobSearchWords(value: string | null | undefined) {
-  return new Set(
-    value
-      ?.toLowerCase()
-      .match(/[a-z0-9][a-z0-9-]{1,}/g)
-      ?.map(jobSearchStem) ?? [],
-  );
-}
-
-function jobRelevanceScore(
-  job: {
-    title: string;
-    focus: string | null;
-    department: string | null;
-    skills: string[] | null;
-    searchText: string;
-  },
-  terms: string[],
-) {
-  if (!terms.length) return 0;
-
-  const title = jobSearchWords(job.title);
-  const focus = jobSearchWords(job.focus);
-  const department = jobSearchWords(job.department);
-  const skills = jobSearchWords(job.skills?.join(" "));
-  const description = jobSearchWords(job.searchText);
-
-  return terms.reduce((score, term) => {
-    return (
-      score +
-      Number(title.has(term)) * 12 +
-      Number(focus.has(term)) * 7 +
-      Number(department.has(term)) * 5 +
-      Number(skills.has(term)) * 3 +
-      Number(description.has(term))
-    );
-  }, 0);
 }
 
 function companyLogo(profile: unknown) {
@@ -118,37 +86,45 @@ function isPresent<T>(value: T): value is NonNullable<T> {
   return value !== null && value !== undefined;
 }
 
-function factQueryTerms(query: string) {
-  return [
-    ...new Set(
-      query
-        .toLowerCase()
-        .match(/[a-z0-9][a-z0-9-]{2,}/g)
-        ?.filter((word) => !searchStopWords.has(word)) ?? [],
-    ),
-  ].slice(0, 4);
-}
+const pageCompanyPath = /^\/company\/([a-z0-9-]{1,100})\/?$/;
 
-function profileFacts(profile: unknown, terms: string[]) {
-  if (!isRecord(profile)) return [];
+export async function getPageCompanyContext(pagePath: unknown) {
+  if (typeof pagePath !== "string") return null;
+  const match = pageCompanyPath.exec(pagePath);
+  if (!match) return null;
 
-  const activity = Array.isArray(profile.activity) ? profile.activity : [];
-  return activity
-    .filter(isRecord)
-    .filter((item) =>
-      terms.some((term) => JSON.stringify(item).toLowerCase().includes(term)),
-    )
-    .slice(0, 2)
-    .map((item) => ({
-      type: typeof item.type === "string" ? item.type : "activity",
-      title: typeof item.title === "string" ? item.title : "Untitled activity",
-      date: typeof item.dateTime === "string" ? item.dateTime : null,
-      description:
-        typeof item.description === "string"
-          ? item.description.slice(0, 500)
-          : null,
-      sourceUrl: typeof item.sourceUrl === "string" ? item.sourceUrl : null,
-    }));
+  const [row] = await db
+    .select({ profile: companies.profile })
+    .from(companies)
+    .where(eq(companies.slug, match[1]))
+    .limit(1);
+  if (!row) return null;
+
+  const profile = parseCompanyProfile(row.profile as Record<string, unknown>);
+  return {
+    type: "company" as const,
+    slug: profile.slug,
+    name: profile.name,
+    tagline: profile.tagline,
+    description: profile.description,
+    industry: profile.industry,
+    location: profile.location.label,
+    stage: profile.stage,
+    employees: profile.employees,
+    foundedYear: profile.foundedYear,
+    financials: profile.financials,
+    recentActivity: [...profile.activity]
+      .sort((a, b) => b.dateTime.localeCompare(a.dateTime))
+      .slice(0, 3)
+      .map(({ title, dateTime, description, sourceUrl }) => ({
+        title,
+        dateTime,
+        description: description.slice(0, 400),
+        sourceUrl,
+      })),
+    peopleCount: profile.people.length,
+    jobsCount: profile.jobs.filter((job) => job.status !== "closed").length,
+  };
 }
 
 const searchStopWords = new Set([
@@ -250,7 +226,7 @@ function filterSearchResults(
 export const locusTools = {
   navigateLocus: tool({
     description:
-      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Use searchLocus first to resolve the exact company slug. Set destination to company for the company page, person for the exact person's card, or job for the exact job's details drawer. A person destination requires the exact personName and should include personUrl returned by searchLocus or listCompanyPeople. A job destination requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. This is client-side navigation and runs automatically. Do not use it merely to present search results or to answer a research question.",
+      "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. Do not navigate for general research questions.",
     // DeepSeek requires a top-level JSON Schema object for every function.
     // Keep the job requirement at runtime instead of using a top-level union,
     // which serializes to a schema without a `type: "object"`.
@@ -450,38 +426,170 @@ export const locusTools = {
         : { error: `No company found for slug "${slug}".` };
     },
   }),
-  searchCompanyFacts: tool({
+  getCompanyProfile: tool({
     description:
-      "Find evidence for historical company facts such as acquisitions, funding, launches, partnerships, or executive changes. Search for distinctive names or a short fact phrase. Returns only matching activity snippets and source URLs, never complete company profiles.",
+      "Read authoritative, complete company profile sections from the database. Use for About/what it does, employee count, funding totals/rounds/investors, or dated activity. The current page slug may be used directly. People and jobs have separate focused tools.",
     inputSchema: z.object({
-      query: z.string().trim().min(3).max(80),
-      limit: resultLimitSchema,
+      slug: companySlugSchema,
+      section: z.enum(["overview", "funding", "activity"]),
     }),
-    execute: async ({ query, limit }) => {
-      const terms = factQueryTerms(query);
-      if (terms.length === 0) return [];
-
-      const results = await db
-        .select({
-          slug: companies.slug,
-          name: companies.name,
-          industry: companies.industry,
-          location: companies.location,
-          profile: companies.profile,
-        })
+    execute: async ({ slug, section }) => {
+      const [row] = await db
+        .select({ profile: companies.profile })
         .from(companies)
+        .where(eq(companies.slug, slug))
+        .limit(1);
+      if (!row) return { error: `No company found for slug "${slug}".` };
+      const profile = parseCompanyProfile(
+        row.profile as Record<string, unknown>,
+      );
+      if (section === "funding") {
+        return {
+          slug,
+          name: profile.name,
+          financials: profile.financials,
+          funding: profile.funding,
+        };
+      }
+      if (section === "activity") {
+        return { slug, name: profile.name, activity: profile.activity };
+      }
+      const {
+        name,
+        tagline,
+        description,
+        website,
+        foundedYear,
+        industry,
+        location,
+        stage,
+        employees,
+        financials,
+      } = profile;
+      return {
+        slug,
+        name,
+        tagline,
+        description,
+        website,
+        foundedYear,
+        industry,
+        location,
+        stage,
+        employees,
+        financials,
+      };
+    },
+  }),
+  findCompanyPeople: tool({
+    description:
+      "Find a person by role or name within a specific company, e.g. CTO, Chief Technology Officer, founder. Filter BEFORE limiting. The current page slug may be used directly. Returns verified people with URLs usable for cards and navigation.",
+    inputSchema: z.object({
+      slug: companySlugSchema,
+      query: z.string().trim().min(2).max(80),
+      limit: searchResultLimitSchema,
+    }),
+    execute: async ({ slug, query, limit }) => {
+      const normalized = query.toLowerCase();
+      const alternatives =
+        normalized === "cto"
+          ? ["cto", "chief technology officer", "chief technical officer"]
+          : normalized === "ceo"
+            ? ["ceo", "chief executive officer"]
+            : [normalized];
+      const matches = await db
+        .select({
+          name: people.name,
+          role: people.role,
+          image: people.image,
+          linkedin: people.linkedin,
+          sourceUrl: people.sourceUrl,
+          companySlug: companies.slug,
+          companyName: companies.name,
+          countryCode: companies.countryCode,
+          companyProfile: companies.profile,
+        })
+        .from(people)
+        .innerJoin(companies, eq(people.companyId, companies.id))
         .where(
           and(
-            ...terms.map((term) =>
-              ilike(sql`${companies.profile}::text`, `%${term}%`),
+            eq(companies.slug, slug),
+            or(
+              ...alternatives.flatMap((term) => [
+                ilike(people.name, `%${term}%`),
+                ilike(people.role, `%${term}%`),
+              ]),
             ),
           ),
         )
+        .orderBy(asc(people.name))
         .limit(limit);
-
-      return results.map(({ profile, ...company }) => ({
-        ...company,
-        facts: profileFacts(profile, terms),
+      return matches.map(
+        ({ companyProfile, linkedin, sourceUrl, ...person }) => ({
+          ...person,
+          url: linkedin ?? sourceUrl,
+          companyLogo: companyLogo(companyProfile),
+        }),
+      );
+    },
+  }),
+  searchKnowledge: tool({
+    description:
+      "Search across company About/tagline, funding rounds/investors, and dated activity for claims, products, compliance terms, funding news, and concepts. Give 1-6 distinctive search terms (not a conversational sentence); wrap an exact compliance phrase in double quotes, e.g. \"SOC 1 Type 1\". Quote returned excerpt and source, not just a hit. Use companySlug to narrow to one company, otherwise search globally. Returns top passages, not an exhaustive list. This searches text, not numeric comparisons or the current job/people tables.",
+    inputSchema: z.object({
+      query: z.string().trim().min(2).max(100),
+      companySlug: companySlugSchema.optional(),
+      limit: z.number().int().min(1).max(10).default(5),
+    }),
+    execute: async ({ query, companySlug, limit }) => {
+      // The GIN expression index covers the candidate set. Only matching
+      // passages are returned, so unrelated text elsewhere in the JSON cannot
+      // be mistaken for evidence.
+      const result = await db.execute(sql`
+        WITH q AS (SELECT websearch_to_tsquery('english', ${query}) AS terms),
+        candidates AS (
+          SELECT c.slug, c.name, c.profile
+          FROM ${companies} c, q
+          WHERE to_tsvector('english', c.profile) @@ q.terms
+            ${companySlug ? sql`AND c.slug = ${companySlug}` : sql``}
+        )
+        SELECT c.slug, c.name, passage.section, passage.title,
+          passage.content, passage.date, passage.source_url AS "sourceUrl",
+          ts_rank_cd(to_tsvector('english', passage.content), q.terms) AS relevance
+        FROM candidates c CROSS JOIN q
+        CROSS JOIN LATERAL (
+          SELECT 'about' AS section, 'About' AS title,
+            coalesce(c.profile->>'tagline', '') || ' ' || coalesce(c.profile->>'description', '') AS content,
+            NULL::text AS date, c.profile->>'website' AS source_url
+          UNION ALL
+          SELECT 'activity', item->>'title',
+            coalesce(item->>'title', '') || ' ' || coalesce(item->>'description', ''),
+            item->>'dateTime', item->>'sourceUrl'
+          FROM jsonb_array_elements(coalesce(c.profile->'activity', '[]'::jsonb)) item
+          UNION ALL
+          SELECT 'funding', 'Funding ' || coalesce(round->>'stage', ''),
+            concat_ws(' ', round->>'stage', round->'amount'->>'display',
+              round->'valuation'->>'display',
+              (SELECT string_agg(investor->>'name', ' ')
+               FROM jsonb_array_elements(coalesce(round->'leadInvestors', '[]'::jsonb)) investor),
+              (SELECT string_agg(investor->>'name', ' ')
+               FROM jsonb_array_elements(coalesce(round->'investors', '[]'::jsonb)) investor)),
+            round->>'announcedAt', round->>'sourceUrl'
+          FROM jsonb_array_elements(coalesce(c.profile->'funding'->'rounds', '[]'::jsonb)) round
+        ) passage
+        WHERE to_tsvector('english', passage.content) @@ q.terms
+        ORDER BY relevance DESC, passage.date DESC NULLS LAST, c.name
+        LIMIT ${limit}
+      `);
+      return result.rows.map((row) => ({
+        slug: row.slug,
+        name: row.name,
+        section: row.section,
+        title: row.title,
+        excerpt: String(row.content).slice(0, 900),
+        date: row.date,
+        sourceUrl: row.sourceUrl,
+        pageUrl: `/company/${row.slug}`,
       }));
     },
   }),
@@ -583,7 +691,7 @@ export const locusTools = {
   }),
   listCompanyJobs: tool({
     description:
-      "List open or unknown-status jobs at a company. Use the company slug returned by searchLocus. When recommending a role based on a user's background, include their concise skills or role criteria in criteria. Matching jobs are ranked by title, focus, department, skills, and description relevance instead of alphabetically.",
+      "List open or unknown-status jobs at a company. Use the current page slug directly when applicable; otherwise resolve it with searchLocus. When recommending a role based on a user's background, include concise skills or role criteria. All matching jobs are ranked by title, focus, department, skills, and description before applying the result limit.",
     inputSchema: z.object({
       slug: companySlugSchema,
       limit: resultLimitSchema,
@@ -591,6 +699,21 @@ export const locusTools = {
     }),
     execute: async ({ slug, limit, criteria }) => {
       const terms = jobSearchTerms(criteria);
+      const relevance = terms.length
+        ? sql<number>`(${sql.join(
+            terms.map((term) => {
+              const pattern = `%${term}%`;
+              return sql`(
+              CASE WHEN ${jobs.title} ILIKE ${pattern} THEN 12 ELSE 0 END +
+              CASE WHEN ${jobs.focus} ILIKE ${pattern} THEN 7 ELSE 0 END +
+              CASE WHEN ${jobs.department} ILIKE ${pattern} THEN 5 ELSE 0 END +
+              CASE WHEN array_to_string(${jobs.skills}, ' ') ILIKE ${pattern} THEN 3 ELSE 0 END +
+              CASE WHEN ${jobs.searchText} ILIKE ${pattern} THEN 1 ELSE 0 END
+            )`;
+            }),
+            sql` + `,
+          )})`
+        : sql<number>`0`;
       const results = await db
         .select({
           title: jobs.title,
@@ -603,7 +726,6 @@ export const locusTools = {
           department: jobs.department,
           skills: jobs.skills,
           experienceLevel: jobs.experienceLevel,
-          searchText: jobs.searchText,
           companySlug: companies.slug,
           companyName: companies.name,
           countryCode: companies.countryCode,
@@ -617,22 +739,13 @@ export const locusTools = {
             or(eq(jobs.status, "open"), eq(jobs.status, "unknown")),
           ),
         )
-        .orderBy(asc(jobs.title))
-        .limit(200);
+        .orderBy(desc(relevance), asc(jobs.title))
+        .limit(limit);
 
-      return results
-        .map(({ companyProfile, searchText, ...job }) => ({
-          ...job,
-          companyLogo: companyLogo(companyProfile),
-          relevance: jobRelevanceScore({ ...job, searchText }, terms),
-        }))
-        .sort(
-          (a, b) => b.relevance - a.relevance || a.title.localeCompare(b.title),
-        )
-        .slice(0, limit)
-        .map(({ relevance: _relevance, ...job }) => ({
-          ...job,
-        }));
+      return results.map(({ companyProfile, ...job }) => ({
+        ...job,
+        companyLogo: companyLogo(companyProfile),
+      }));
     },
   }),
   listCompanyPeople: tool({

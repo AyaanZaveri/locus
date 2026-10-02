@@ -1,6 +1,6 @@
 import "server-only";
 
-import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
+import { createOpenAI } from "@ai-sdk/openai";
 
 const baseURL = "https://opencode.ai/zen/go/v1";
 const userAgent = "locus/1.0";
@@ -16,13 +16,12 @@ export function getLocusModel(sessionId: string) {
     throw new Error("OPENCODE_GO_API_KEY is not configured.");
   }
 
-  return createOpenAICompatible({
-    name: "opencode",
+  return createOpenAI({
     baseURL,
     apiKey,
     headers: {
       "x-opencode-session": sessionId,
       "user-agent": userAgent,
     },
-  }).chatModel("deepseek-v4.1-flash");
+  }).responses("gpt-6-luna");
 }

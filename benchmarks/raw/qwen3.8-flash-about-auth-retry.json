@@ -1,0 +1,34 @@
+{
+  "model": "qwen3.8-flash",
+  "prompt": "What does this company do and how many employees does it have?",
+  "pagePath": "/company/autumn-ai",
+  "durationMs": 4655,
+  "stepCount": 2,
+  "toolCalls": [
+    {
+      "name": "getCompanyProfile",
+      "input": { "slug": "autumn-ai", "section": "overview" }
+    }
+  ],
+  "toolResults": [
+    {
+      "name": "getCompanyProfile",
+      "output": {
+        "slug": "autumn-ai",
+        "name": "Autumn AI",
+        "tagline": "Everything on anyone.",
+        "description": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Autumn AI is part of Y Combinator’s Winter 2026 batch and is based in San Francisco.",
+        "website": "https://autumn.ai",
+        "foundedYear": 2025,
+        "industry": "Market Intelligence",
+        "location": { "label": "San Francisco, California", "countryCode": "us" },
+        "stage": "YC W26",
+        "employees": "2 employees",
+        "financials": { "totalFunding": null, "valuation": null, "annualRevenue": null }
+      }
+    }
+  ],
+  "text": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news, and other web evidence to resolve identities, map relationships, and produce cited company and person profiles. It supports startup discovery, prospect research, and cohort search through its interface and API.\n\nIt has **2 employees**.",
+  "finishReasons": ["tool-calls", "stop"],
+  "streamErrors": []
+}

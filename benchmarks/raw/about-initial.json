@@ -1,0 +1,263 @@
+[
+  {
+    "model": "glm-5.3-flash",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 1274,
+    "stepCount": 1,
+    "toolCalls": [],
+    "toolResults": [],
+    "text": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles, supporting use cases like startup discovery, prospect research and cohort search via its interface and API.\n\nIt has 2 employees.",
+    "finishReasons": [
+      "stop"
+    ]
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 5811,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "autumn-ai",
+          "section": "overview"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "autumn-ai",
+          "name": "Autumn AI",
+          "tagline": "Everything on anyone.",
+          "description": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Autumn AI is part of Y Combinator’s Winter 2026 batch and is based in San Francisco.",
+          "website": "https://autumn.ai",
+          "foundedYear": 2025,
+          "industry": "Market Intelligence",
+          "location": {
+            "label": "San Francisco, California",
+            "countryCode": "us"
+          },
+          "stage": "YC W26",
+          "employees": "2 employees",
+          "financials": {
+            "totalFunding": null,
+            "valuation": null,
+            "annualRevenue": null
+          }
+        }
+      }
+    ],
+    "text": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news, and other web evidence to resolve identities, map relationships, and produce cited company and person profiles. The product supports startup discovery, prospect research, and cohort search through both its interface and API.\n\nThe company has 2 employees. It was founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, is part of Y Combinator's Winter 2026 batch, and is based in San Francisco.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ]
+  },
+  {
+    "model": "qwen3.8-flash",
+    "durationMs": 292,
+    "error": "AI_NoOutputGeneratedError: No output generated. Check the stream for errors."
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 5999,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "autumn-ai",
+          "section": "overview"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "autumn-ai",
+          "name": "Autumn AI",
+          "tagline": "Everything on anyone.",
+          "description": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Autumn AI is part of Y Combinator’s Winter 2026 batch and is based in San Francisco.",
+          "website": "https://autumn.ai",
+          "foundedYear": 2025,
+          "industry": "Market Intelligence",
+          "location": {
+            "label": "San Francisco, California",
+            "countryCode": "us"
+          },
+          "stage": "YC W26",
+          "employees": "2 employees",
+          "financials": {
+            "totalFunding": null,
+            "valuation": null,
+            "annualRevenue": null
+          }
+        }
+      }
+    ],
+    "text": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles for startup discovery, prospect research and cohort search through its interface and API.\n\nIt has 2 employees.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ]
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 2521,
+    "stepCount": 1,
+    "toolCalls": [],
+    "toolResults": [],
+    "text": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API.\n\nIt has **2 employees**. The company was founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, is based in San Francisco, and is part of Y Combinator's Winter 2026 batch.",
+    "finishReasons": [
+      "stop"
+    ]
+  },
+  {
+    "model": "gpt-6-luna",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 3572,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "autumn-ai",
+          "section": "overview"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "autumn-ai",
+          "name": "Autumn AI",
+          "tagline": "Everything on anyone.",
+          "description": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Autumn AI is part of Y Combinator’s Winter 2026 batch and is based in San Francisco.",
+          "website": "https://autumn.ai",
+          "foundedYear": 2025,
+          "industry": "Market Intelligence",
+          "location": {
+            "label": "San Francisco, California",
+            "countryCode": "us"
+          },
+          "stage": "YC W26",
+          "employees": "2 employees",
+          "financials": {
+            "totalFunding": null,
+            "valuation": null,
+            "annualRevenue": null
+          }
+        }
+      }
+    ],
+    "text": "Autumn AI builds a research platform that uses public records, professional profiles, code, news, and other web evidence to create cited profiles of people and companies. It supports startup discovery, prospect research, and cohort search. The company has **2 employees**.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ]
+  },
+  {
+    "model": "space-bunny-free",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 2598,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "autumn-ai",
+          "section": "overview"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "autumn-ai",
+          "name": "Autumn AI",
+          "tagline": "Everything on anyone.",
+          "description": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Autumn AI is part of Y Combinator’s Winter 2026 batch and is based in San Francisco.",
+          "website": "https://autumn.ai",
+          "foundedYear": 2025,
+          "industry": "Market Intelligence",
+          "location": {
+            "label": "San Francisco, California",
+            "countryCode": "us"
+          },
+          "stage": "YC W26",
+          "employees": "2 employees",
+          "financials": {
+            "totalFunding": null,
+            "valuation": null,
+            "annualRevenue": null
+          }
+        }
+      }
+    ],
+    "text": "Autumn AI (autumn.ai) builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships, and produce cited company and person profiles. The product covers startup discovery, prospect research, and cohort search through a web interface and API.\n\nEmployee count: 2, a two-person team. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Y Combinator Winter 2026 batch, based in San Francisco, categorized as Market Intelligence.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ]
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "prompt": "What does this company do and how many employees does it have?",
+    "pagePath": "/company/autumn-ai",
+    "durationMs": 13489,
+    "stepCount": 2,
+    "toolCalls": [
+      {
+        "name": "getCompanyProfile",
+        "input": {
+          "slug": "autumn-ai",
+          "section": "overview"
+        }
+      }
+    ],
+    "toolResults": [
+      {
+        "name": "getCompanyProfile",
+        "output": {
+          "slug": "autumn-ai",
+          "name": "Autumn AI",
+          "tagline": "Everything on anyone.",
+          "description": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API. Founded in 2025 by Vishnu Sampathkumar and Shiv Kampani, Autumn AI is part of Y Combinator’s Winter 2026 batch and is based in San Francisco.",
+          "website": "https://autumn.ai",
+          "foundedYear": 2025,
+          "industry": "Market Intelligence",
+          "location": {
+            "label": "San Francisco, California",
+            "countryCode": "us"
+          },
+          "stage": "YC W26",
+          "employees": "2 employees",
+          "financials": {
+            "totalFunding": null,
+            "valuation": null,
+            "annualRevenue": null
+          }
+        }
+      }
+    ],
+    "text": "Autumn AI builds a source-backed research platform for people and companies. Its agents connect public records, professional profiles, code, news and other web evidence to resolve identities, map relationships and produce cited company and person profiles. The product supports startup discovery, prospect research and cohort search through its interface and API.\n\nThe company has **2 employees**.",
+    "finishReasons": [
+      "tool-calls",
+      "stop"
+    ]
+  }
+]

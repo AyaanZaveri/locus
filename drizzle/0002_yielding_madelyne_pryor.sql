@@ -1,0 +1,1 @@
+CREATE INDEX "companies_knowledge_idx" ON "companies" USING gin (to_tsvector('english', "profile"));

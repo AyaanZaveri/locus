@@ -1,0 +1,11 @@
+{
+  "capturedOn": "2026-10-01",
+  "source": "Temporary local-only /api/benchmark route, removed after testing",
+  "files": {
+    "about-initial.json": "Original eight-model About batch. The Qwen item records an adapter-authentication error, not a model answer.",
+    "compliance-and-jobs.json": "All eight corrected-configuration compliance and job runs, including complete tool results and final answers.",
+    "qwen3.8-flash-about-auth-retry.json": "Exact JSON response captured in the tool transcript after fixing the Messages adapter to send x-api-key; used for the scored About result. Archived from the captured response rather than the initial batch file."
+  },
+  "selection": "Use Qwen's corrected-auth About retry in scored aggregates; keep its original auth error for auditability.",
+  "secrets": "No API keys or authorization headers are stored in the raw responses."
+}

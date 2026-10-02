@@ -8,6 +8,7 @@ import {
   timestamp,
   uuid,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 
 /**
  * A company stays as a complete profile document for the rich company page.
@@ -32,6 +33,10 @@ export const companies = pgTable(
   (table) => [
     index("companies_industry_idx").on(table.industry),
     index("companies_stage_idx").on(table.stage),
+    index("companies_knowledge_idx").using(
+      "gin",
+      sql`to_tsvector('english', ${table.profile})`,
+    ),
   ],
 );
 

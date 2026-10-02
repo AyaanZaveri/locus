@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-01",
+  "nModels": 8,
+  "nPromptsPerModel": 3,
+  "nSuccessfulBenchmarkedRequests": 24,
+  "notes": "One run per distinct prompt; scores are manually graded against the recorded database facts. Initial Qwen auth failure is archived separately, not scored.",
+  "models": [
+    {
+      "model": "gpt-6-luna",
+      "scores": {
+        "about": 1,
+        "compliance": 1,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees.",
+        "compliance": "Cites Context.dev and says the record does not show Type 2 certification.",
+        "jobs": "Correct open Anthropic full-stack role and locations."
+      },
+      "scoreTotal": 3,
+      "latencySeconds": {
+        "about": 3.572,
+        "compliance": 7.426,
+        "jobs": 7.876
+      },
+      "meanSeconds": 6.291,
+      "medianSeconds": 7.426,
+      "minSeconds": 3.572,
+      "maxSeconds": 7.876,
+      "steps": {
+        "about": 2,
+        "compliance": 2,
+        "jobs": 2
+      },
+      "stepsTotal": 6,
+      "toolCalls": {
+        "about": 1,
+        "compliance": 1,
+        "jobs": 1
+      },
+      "toolCallsTotal": 3
+    },
+    {
+      "model": "muse-spark-1.3-contributor",
+      "scores": {
+        "about": 1,
+        "compliance": 1,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees.",
+        "compliance": "Correct Context.dev evidence and qualified Type 2 as unknown/not verified in available record.",
+        "jobs": "Correct role and locations."
+      },
+      "scoreTotal": 3,
+      "latencySeconds": {
+        "about": 5.999,
+        "compliance": 40.527,
+        "jobs": 40.336
+      },
+      "meanSeconds": 28.954,
+      "medianSeconds": 40.336,
+      "minSeconds": 5.999,
+      "maxSeconds": 40.527,
+      "steps": {
+        "about": 2,
+        "compliance": 4,
+        "jobs": 3
+      },
+      "stepsTotal": 9,
+      "toolCalls": {
+        "about": 1,
+        "compliance": 3,
+        "jobs": 2
+      },
+      "toolCallsTotal": 6
+    },
+    {
+      "model": "glm-5.3-flash",
+      "scores": {
+        "about": 1,
+        "compliance": 0.75,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees.",
+        "compliance": "Correct Context.dev evidence, but asserts it is still not Type 2 certified based on a dated announcement.",
+        "jobs": "Correct role and locations."
+      },
+      "scoreTotal": 2.75,
+      "latencySeconds": {
+        "about": 1.274,
+        "compliance": 11.668,
+        "jobs": 9.96
+      },
+      "meanSeconds": 7.634,
+      "medianSeconds": 9.96,
+      "minSeconds": 1.274,
+      "maxSeconds": 11.668,
+      "steps": {
+        "about": 1,
+        "compliance": 3,
+        "jobs": 3
+      },
+      "stepsTotal": 7,
+      "toolCalls": {
+        "about": 0,
+        "compliance": 2,
+        "jobs": 2
+      },
+      "toolCallsTotal": 4
+    },
+    {
+      "model": "deepseek-v4.1-flash",
+      "scores": {
+        "about": 1,
+        "compliance": 0.75,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees.",
+        "compliance": "Correct Context.dev evidence, but extrapolates current Type 2 status from dated evidence and makes six knowledge searches.",
+        "jobs": "Correct role and locations."
+      },
+      "scoreTotal": 2.75,
+      "latencySeconds": {
+        "about": 2.521,
+        "compliance": 25.017,
+        "jobs": 7.495
+      },
+      "meanSeconds": 11.678,
+      "medianSeconds": 7.495,
+      "minSeconds": 2.521,
+      "maxSeconds": 25.017,
+      "steps": {
+        "about": 1,
+        "compliance": 4,
+        "jobs": 2
+      },
+      "stepsTotal": 7,
+      "toolCalls": {
+        "about": 0,
+        "compliance": 6,
+        "jobs": 1
+      },
+      "toolCallsTotal": 7
+    },
+    {
+      "model": "longcat-2.5-preview-free",
+      "scores": {
+        "about": 1,
+        "compliance": 0.75,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees.",
+        "compliance": "Correct Context.dev evidence, but asserts current Type 2 status from an old observation-period statement.",
+        "jobs": "Correct role, locations, and job URL."
+      },
+      "scoreTotal": 2.75,
+      "latencySeconds": {
+        "about": 13.489,
+        "compliance": 16.316,
+        "jobs": 13.786
+      },
+      "meanSeconds": 14.53,
+      "medianSeconds": 13.786,
+      "minSeconds": 13.489,
+      "maxSeconds": 16.316,
+      "steps": {
+        "about": 2,
+        "compliance": 2,
+        "jobs": 2
+      },
+      "stepsTotal": 6,
+      "toolCalls": {
+        "about": 1,
+        "compliance": 1,
+        "jobs": 1
+      },
+      "toolCallsTotal": 3
+    },
+    {
+      "model": "mimo-v2.6-flash",
+      "scores": {
+        "about": 1,
+        "compliance": 0.75,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees.",
+        "compliance": "Correct Context.dev evidence, but asserts it has no Type 2 certification today.",
+        "jobs": "Correct role and locations."
+      },
+      "scoreTotal": 2.75,
+      "latencySeconds": {
+        "about": 5.811,
+        "compliance": 12.552,
+        "jobs": 46.045
+      },
+      "meanSeconds": 21.469,
+      "medianSeconds": 12.552,
+      "minSeconds": 5.811,
+      "maxSeconds": 46.045,
+      "steps": {
+        "about": 2,
+        "compliance": 2,
+        "jobs": 2
+      },
+      "stepsTotal": 6,
+      "toolCalls": {
+        "about": 1,
+        "compliance": 1,
+        "jobs": 1
+      },
+      "toolCallsTotal": 3
+    },
+    {
+      "model": "space-bunny-free",
+      "scores": {
+        "about": 1,
+        "compliance": 0,
+        "jobs": 1
+      },
+      "gradeNotes": {
+        "about": "Correct product and employee count (two-person team).",
+        "compliance": "Retrieved Context.dev but final answer says only 'No other company' without naming the requested match.",
+        "jobs": "Correct role, locations, and alternatives."
+      },
+      "scoreTotal": 2,
+      "latencySeconds": {
+        "about": 2.598,
+        "compliance": 12.211,
+        "jobs": 6.945
+      },
+      "meanSeconds": 7.251,
+      "medianSeconds": 6.945,
+      "minSeconds": 2.598,
+      "maxSeconds": 12.211,
+      "steps": {
+        "about": 2,
+        "compliance": 4,
+        "jobs": 2
+      },
+      "stepsTotal": 8,
+      "toolCalls": {
+        "about": 1,
+        "compliance": 4,
+        "jobs": 1
+      },
+      "toolCallsTotal": 6
+    },
+    {
+      "model": "qwen3.8-flash",
+      "scores": {
+        "about": 1,
+        "compliance": 0.5,
+        "jobs": 0
+      },
+      "gradeNotes": {
+        "about": "Correct product and 2 employees on the corrected-auth rerun; initial auth-configuration failure preserved separately.",
+        "compliance": "Eventually cites Context.dev's SOC 2 Type 1 record, but first searches SOC 1 repeatedly and frames answer around the wrong standard.",
+        "jobs": "Does not recommend any job; asks user what they want to know instead."
+      },
+      "scoreTotal": 1.5,
+      "latencySeconds": {
+        "about": 4.655,
+        "compliance": 89.686,
+        "jobs": 8.338
+      },
+      "meanSeconds": 34.226,
+      "medianSeconds": 8.338,
+      "minSeconds": 4.655,
+      "maxSeconds": 89.686,
+      "steps": {
+        "about": 2,
+        "compliance": 5,
+        "jobs": 1
+      },
+      "stepsTotal": 8,
+      "toolCalls": {
+        "about": 1,
+        "compliance": 9,
+        "jobs": 0
+      },
+      "toolCallsTotal": 10
+    }
+  ]
+}

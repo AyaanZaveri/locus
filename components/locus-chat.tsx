@@ -214,7 +214,10 @@ function toolResultRows(
     return jobs.length ? { companies: [], people: [], jobs } : null;
   }
 
-  if (type === "tool-listCompanyPeople" && Array.isArray(output)) {
+  if (
+    (type === "tool-listCompanyPeople" || type === "tool-findCompanyPeople") &&
+    Array.isArray(output)
+  ) {
     const people = output
       .map(asPersonResult)
       .filter(Boolean) as LocusPersonResult[];
@@ -342,10 +345,12 @@ function getActivityLabel(messages: ReadonlyArray<UIMessage>) {
         case "tool-listCompanyJobs":
           return "Scanning jobs";
         case "tool-listCompanyPeople":
+        case "tool-findCompanyPeople":
           return "Mapping people";
         case "tool-getCompany":
+        case "tool-getCompanyProfile":
           return "Reviewing company";
-        case "tool-searchCompanyFacts":
+        case "tool-searchKnowledge":
           return "Verifying facts";
         case "tool-recommendOutreachTargets":
           return "Identifying prospects";
@@ -365,9 +370,16 @@ function lastAssistantMessageContainsNavigation(messages: UIMessage[]) {
     .reverse()
     .find((message) => message.role === "assistant");
 
-  return lastAssistantMessage?.parts.some(
-    (part) => isRecord(part) && part.type === "tool-navigateLocus",
-  );
+  return lastAssistantMessage?.parts.some((part) => {
+    if (!isRecord(part) || part.type !== "tool-navigateLocus") return false;
+    const navigation = asLocusNavigation(part.input);
+    // Same-page person focus is not a page departure; allow the model to
+    // finish its answer after the navigation tool result is submitted.
+    return !(
+      navigation?.destination === "person" &&
+      window.location.pathname === `/company/${navigation.companySlug}`
+    );
+  });
 }
 
 /**
@@ -395,7 +407,12 @@ export function LocusChat() {
     useState(false);
   const [hasTranscriptOverflow, setHasTranscriptOverflow] = useState(false);
   const transport = useMemo(
-    () => new DefaultChatTransport({ api: "/api/chat" }),
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        // Also sent on automatic tool-call continuations, not just the first turn.
+        body: () => ({ pagePath: window.location.pathname }),
+      }),
     [],
   );
   const {
@@ -442,7 +459,10 @@ export function LocusChat() {
               })
             : `/company/${companySlug}`;
 
-      setFocusState("panel-exiting");
+      const samePagePerson =
+        destination === "person" &&
+        window.location.pathname === `/company/${companySlug}`;
+      if (!samePagePerson) setFocusState("panel-exiting");
       startNavigation(() => {
         router.push(href);
       });

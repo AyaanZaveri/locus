@@ -1,0 +1,50 @@
+{
+  "rubric": {
+    "1": "Answers all requested facts from the database without unsupported status claims.",
+    "0.75": "Correct core answer but overstates present-day Type 2 status from a dated observation-period record.",
+    "0.5": "Eventually provides the requested evidence but materially confuses SOC 1 with SOC 2 or wastes retrieval on the wrong question.",
+    "0": "Fails to deliver the requested company or job in the final answer."
+  },
+  "models": {
+    "gpt-6-luna": {
+      "about": { "score": 1, "note": "Correct product and 2 employees." },
+      "compliance": { "score": 1, "note": "Cites Context.dev and says the record does not show Type 2 certification." },
+      "jobs": { "score": 1, "note": "Correct open Anthropic full-stack role and locations." }
+    },
+    "glm-5.3-flash": {
+      "about": { "score": 1, "note": "Correct product and 2 employees." },
+      "compliance": { "score": 0.75, "note": "Correct Context.dev evidence, but asserts it is still not Type 2 certified based on a dated announcement." },
+      "jobs": { "score": 1, "note": "Correct role and locations." }
+    },
+    "space-bunny-free": {
+      "about": { "score": 1, "note": "Correct product and employee count (two-person team)." },
+      "compliance": { "score": 0, "note": "Retrieved Context.dev but final answer says only 'No other company' without naming the requested match." },
+      "jobs": { "score": 1, "note": "Correct role, locations, and alternatives." }
+    },
+    "deepseek-v4.1-flash": {
+      "about": { "score": 1, "note": "Correct product and 2 employees." },
+      "compliance": { "score": 0.75, "note": "Correct Context.dev evidence, but extrapolates current Type 2 status from dated evidence and makes six knowledge searches." },
+      "jobs": { "score": 1, "note": "Correct role and locations." }
+    },
+    "longcat-2.5-preview-free": {
+      "about": { "score": 1, "note": "Correct product and 2 employees." },
+      "compliance": { "score": 0.75, "note": "Correct Context.dev evidence, but asserts current Type 2 status from an old observation-period statement." },
+      "jobs": { "score": 1, "note": "Correct role, locations, and job URL." }
+    },
+    "mimo-v2.6-flash": {
+      "about": { "score": 1, "note": "Correct product and 2 employees." },
+      "compliance": { "score": 0.75, "note": "Correct Context.dev evidence, but asserts it has no Type 2 certification today." },
+      "jobs": { "score": 1, "note": "Correct role and locations." }
+    },
+    "muse-spark-1.3-contributor": {
+      "about": { "score": 1, "note": "Correct product and 2 employees." },
+      "compliance": { "score": 1, "note": "Correct Context.dev evidence and qualified Type 2 as unknown/not verified in available record." },
+      "jobs": { "score": 1, "note": "Correct role and locations." }
+    },
+    "qwen3.8-flash": {
+      "about": { "score": 1, "note": "Correct product and 2 employees on the corrected-auth rerun; initial auth-configuration failure preserved separately." },
+      "compliance": { "score": 0.5, "note": "Eventually cites Context.dev's SOC 2 Type 1 record, but first searches SOC 1 repeatedly and frames answer around the wrong standard." },
+      "jobs": { "score": 0, "note": "Does not recommend any job; asks user what they want to know instead." }
+    }
+  }
+}
