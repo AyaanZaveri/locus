@@ -161,6 +161,8 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
     selectedDepartments.length === 1
       ? getJobDepartmentIcon(selectedDepartments[0])
       : null;
+  const SingleDepartmentIcon =
+    departments.length === 1 ? getJobDepartmentIcon(departments[0]) : null;
   const searchTerms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const visibleJobs = jobs.filter((job) => {
     if (
@@ -272,6 +274,18 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
                   </Button>
                 );
               })}
+            </div>
+          ) : null}
+
+          {departments.length === 1 ? (
+            <div
+              aria-label={`Team: ${departments[0]}`}
+              className="flex min-h-9 items-center gap-2 rounded-md border border-border px-3 text-sm text-muted-foreground"
+            >
+              {SingleDepartmentIcon ? (
+                <SingleDepartmentIcon aria-hidden="true" className="size-4" />
+              ) : null}
+              <span>{departments[0]}</span>
             </div>
           ) : null}
 
