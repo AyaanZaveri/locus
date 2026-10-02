@@ -1,0 +1,191 @@
+{
+  "slug": "kanu",
+  "name": "Kanu AI",
+  "tagline": "Applied AI built for enterprise",
+  "description": "Kanu builds enterprise AI agents and applications around an organization's data, judgment, and workflows. Deployed inside a customer's own cloud, its platform connects existing systems, captures how teams work, and produces finished outputs with human review and auditability.",
+  "website": "https://www.getkanu.com/",
+  "foundedYear": 2025,
+  "banner": "/companies/kanu/images/banner.png",
+  "logo": "/companies/kanu/images/logo.png",
+  "industry": "Workflow Orchestration",
+  "location": {
+    "label": "Seattle, Washington",
+    "countryCode": "us"
+  },
+  "stage": "Seed",
+  "employees": "1-10 employees",
+  "financials": {
+    "totalFunding": {
+      "amount": 11700000,
+      "currency": "USD",
+      "display": "$11.7M"
+    },
+    "valuation": null,
+    "annualRevenue": null
+  },
+  "funding": {
+    "latestRoundId": "seed-2026",
+    "investors": [
+      {
+        "name": "Trilogy Equity Partners",
+        "website": "https://www.trilogyequity.com/",
+        "logo": "/investors/trilogy-equity-partners.png"
+      },
+      {
+        "name": "a16z speedrun",
+        "website": "https://speedrun.a16z.com/",
+        "logo": "/investors/andreessen-horowitz.jpeg"
+      },
+      {
+        "name": "BMW i Ventures",
+        "website": "https://www.bmwiventures.com/",
+        "logo": "/investors/bmw-i-ventures.png"
+      },
+      {
+        "name": "Accel",
+        "website": "https://www.accel.com/",
+        "logo": "/investors/accel.png"
+      }
+    ],
+    "rounds": [
+      {
+        "id": "seed-2026",
+        "stage": "Seed",
+        "announcedAt": "2026-09-30",
+        "amount": {
+          "amount": 11700000,
+          "currency": "USD",
+          "display": "$11.7M"
+        },
+        "valuation": null,
+        "leadInvestors": [
+          {
+            "name": "Trilogy Equity Partners",
+            "website": "https://www.trilogyequity.com/",
+            "logo": "/investors/trilogy-equity-partners.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "a16z speedrun",
+            "website": "https://speedrun.a16z.com/",
+            "logo": "/investors/andreessen-horowitz.jpeg"
+          },
+          {
+            "name": "BMW i Ventures",
+            "website": "https://www.bmwiventures.com/",
+            "logo": "/investors/bmw-i-ventures.png"
+          },
+          {
+            "name": "Accel",
+            "website": "https://www.accel.com/",
+            "logo": "/investors/accel.png"
+          }
+        ],
+        "sourceUrl": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "title": "AI Engineer",
+      "location": "Seattle, Washington",
+      "focus": "Build the core enterprise AI platform across backend services, agents, and cloud automation.",
+      "url": "https://jobs.gem.com/kanu-ai/am9icG9zdDo01b7TB2rXJMU1Dz9CUbUP",
+      "description": "# AI Engineer - Kanu AI\n\n## About Kanu AI\n\nEvery business, reduced to its essence, is three things: the data it gathers, the logic it applies, and the artifacts it produces. Kanu is an AI-agent platform that automates all three — it doesn't assist the business, it runs the work of the business.\n\nKanu began as the AI Cloud Engineer: an agent system that autonomously builds, deploys, and validates production infrastructure and large codebases inside a customer's own cloud account. Working with enterprise customers surfaced the insight the company is now built on — every business reduces to data, intelligence, and artifacts — so we aimed that engine at the core of business itself. Today the platform ingests the documents and emails flowing through an organization, applies the organization's own reasoning through governed, reusable AI modules, and generates finished outputs — deliverables, dashboards, models, client-facing artifacts, even full websites and forms — with a human approving every consequential step.\n\nAdoption at our flagship customer has grown nearly 10x in the past months.\n\n## The Role\n\nWe're hiring an AI Engineer to build the core Kanu platform. You'll work across the stack — backend, AI agents, and cloud automation — on the three pillars of the product: data ingestion and flexible, user-defined ontologies; the intelligence layer (extraction agents with citations, skills, and modules that capture how organizations reason); and generative outputs, where the agent builds whatever the work requires.\n\nYou'll play a hands-on role shaping our engineering culture and shipping high-impact features that move directly into production environments inside customer clouds.\n\n## What You'll Do\n\n- Design, build, and maintain full-stack features: backend APIs, agent orchestration, LLM integration and optimization, evals, and cloud integrations.\n- Build the platform primitives — document extraction with citation and conflict resolution, flexible entity ontologies, reusable skills and logic modules, and generative outputs (dashboards, documents, client portals).\n- Work directly with real customer workflows and iterate rapidly on practitioner feedback.\n- Collaborate with product and GTM teams to deliver enterprise-ready, human-in-the-loop experiences.\n- Improve reliability, performance, and testing coverage across the platform.\n\n## You May Be A Fit If You\n\n- Have 2+ years (excluding internships) building production-grade full-stack applications.\n- Are comfortable in a fast-moving, high-ownership environment.\n- Communicate clearly and collaborate across teams with a bias toward action.\n- Have familiarity with agent frameworks and LLM-powered products.\n\n## Bonus Points\n\n- Experience building AI-driven, document-intelligence, or developer-tooling products.\n- Experience with data platforms, search/retrieval, or schema/ontology design.\n\n## Compensation & Benefits\n\n- Competitive salary and equity.\n- Full medical, dental & vision coverage.\n- Generous PTO.\n- Relocation and visa support if applicable.\n- Annual team offsites.",
+      "status": "open",
+      "workplaceType": "hybrid",
+      "employmentType": "full-time",
+      "department": "Engineering",
+      "skills": [],
+      "experience": {
+        "minimumYears": 2
+      },
+      "lastSeenAt": "2026-10-02"
+    }
+  ],
+  "people": [
+    {
+      "name": "Karan Grover",
+      "role": "Founder and CEO",
+      "image": "/companies/kanu/people/karan-grover/avatar.jpg",
+      "linkedin": "https://www.linkedin.com/in/kgrover1",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+      "isFounder": true
+    },
+    {
+      "name": "Harsh Patel",
+      "role": "Co-Founder",
+      "image": null,
+      "linkedin": "https://www.linkedin.com/in/harsh-patel1",
+      "sourceUrl": "https://www.linkedin.com/company/kanu-ai",
+      "isFounder": true
+    },
+    {
+      "name": "Philipp Schröppel",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Param Shah",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Daniel Avnieli",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Pranav Chaparala",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Wentai Zhao",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Bowie Cooper",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Michael Yang",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    },
+    {
+      "name": "Soumil Chugh",
+      "role": "Founding Team",
+      "image": null,
+      "linkedin": null,
+      "sourceUrl": "https://www.getkanu.com/about-us"
+    }
+  ],
+  "activity": [
+    {
+      "type": "funding",
+      "time": "September 2026",
+      "dateTime": "2026-09-30",
+      "title": "Kanu emerges from stealth with $11.7M seed funding",
+      "description": "Trilogy Equity Partners led the round, with participation from a16z speedrun, BMW i Ventures, and Accel. Kanu also announced availability through AWS Marketplace and Google Cloud Marketplace.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html"
+    }
+  ]
+}
