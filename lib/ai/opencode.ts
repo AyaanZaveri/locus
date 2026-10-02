@@ -16,6 +16,8 @@ export function getLocusModel(sessionId: string) {
     throw new Error("OPENCODE_GO_API_KEY is not configured.");
   }
 
+  // Muse currently accepts the Responses protocol on Go; Chat Completions
+  // and Anthropic Messages both return ModelProtocolUnsupported.
   return createOpenAI({
     baseURL,
     apiKey,
@@ -23,5 +25,5 @@ export function getLocusModel(sessionId: string) {
       "x-opencode-session": sessionId,
       "user-agent": userAgent,
     },
-  }).responses("gpt-6-luna");
+  }).responses("muse-spark-1.3-contributor");
 }

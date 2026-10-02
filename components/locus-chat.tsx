@@ -211,6 +211,20 @@ function toolResultRows(
     return asSearchResults(output);
   }
 
+  if (
+    type === "tool-queryFunding" &&
+    isRecord(output) &&
+    Array.isArray(output.rounds)
+  ) {
+    const companies = output.rounds
+      .map(asCompanyResult)
+      .filter(Boolean) as LocusCompanyResult[];
+    const unique = [
+      ...new Map(companies.map((company) => [company.slug, company])).values(),
+    ];
+    return unique.length ? { companies: unique, people: [], jobs: [] } : null;
+  }
+
   if (type === "tool-recommendOutreachTargets" && Array.isArray(output)) {
     const companies = output
       .map(asCompanyResult)
@@ -734,7 +748,7 @@ export function LocusChat() {
                 )}
                 <motion.section
                   aria-label="Ask Locus"
-                  className="w-full rounded-xl! bg-popover/85 p-2 text-popover-foreground shadow-2xl shadow-emerald-500/10 ring-1 ring-border backdrop-blur-sm dark:bg-popover/75 dark:shadow-emerald-500/15"
+                  className="w-full rounded-xl! bg-popover/95 p-2 text-popover-foreground shadow-2xl shadow-emerald-500/10 ring-1 ring-border backdrop-blur-sm dark:bg-popover/75 dark:shadow-emerald-500/15"
                   style={{ transformOrigin: "bottom center" }}
                 >
                   {(messages.length > 0 || error) && (
@@ -744,7 +758,7 @@ export function LocusChat() {
                           ? clearedMessages
                           : { opacity: 1, transform: "translateY(0)" }
                       }
-                      className="mb-3 h-fit max-h-72 space-y-3 px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
+                      className="mb-3 h-fit max-h-72 space-y-5 px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
                       initial={false}
                       onScroll={handleMessageScroll}
                       onAnimationComplete={finishNewChat}

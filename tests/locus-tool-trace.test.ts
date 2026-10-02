@@ -6,6 +6,12 @@ import { describeLocusTool } from "../lib/locus-tool-trace";
 test("every tool invocation has a useful live and completed status", () => {
   const cases = [
     [
+      "queryFunding",
+      { sortBy: "announcedAt" },
+      { rounds: [{ slug: "x" }, { slug: "y" }] },
+      "Found 2 funding rounds",
+    ],
+    [
       "searchLocus",
       { query: "Toronto", types: ["companies"] },
       { companies: [{ slug: "x" }], people: [], jobs: [] },

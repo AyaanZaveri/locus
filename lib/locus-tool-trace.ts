@@ -59,6 +59,7 @@ function resultCount(value: unknown) {
 const toolIcons: Record<string, LocusTrace["icon"]> = {
   searchLocus: "search",
   searchKnowledge: "evidence",
+  queryFunding: "evidence",
   getCompany: "company",
   getCompanyProfile: "company",
   findCompanyPeople: "people",
@@ -99,6 +100,32 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
   }
 
   switch (toolName) {
+    case "queryFunding": {
+      const rounds = count(record(output).rounds);
+      return {
+        icon,
+        phase,
+        label:
+          phase === "complete"
+            ? rounds
+              ? `Found ${noun(rounds, "funding round")}`
+              : "No matching funding rounds"
+            : "Querying funding rounds",
+        detail: hasInput
+          ? [
+              text(input.companySlug),
+              text(input.stage),
+              text(input.investor),
+              input.announcedAfter ? `From ${text(input.announcedAfter)}` : "",
+              input.announcedBefore
+                ? `Through ${text(input.announcedBefore)}`
+                : "",
+            ]
+              .filter(Boolean)
+              .join(" · ") || undefined
+          : undefined,
+      };
+    }
     case "searchLocus": {
       const categories = Array.isArray(input.types)
         ? input.types.filter((item): item is string => typeof item === "string")

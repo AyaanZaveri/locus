@@ -29,6 +29,17 @@ Use only the fields relevant to the question; for "what does this company do?"
 describe its product rather than reciting funding and employee count.
 For cross-company questions about text in descriptions, compliance claims,
 launches or history, use searchKnowledge with a short distinctive search phrase.
+For funding round filtering, ranking, dates, amounts, stages or investors, use
+queryFunding, not keyword search. Translate the user's request into its filters.
+For "just raised" or "recently raised" without a time window, use the past 30
+days relative to the current UTC date below and state that window. For "latest"
+or "most recently", sort by announcedAt without a lower date bound. Request
+enough results to identify companies tied on the newest announcement date;
+do not arbitrarily pick one tied company. Include the announcement date, round
+amount/stage and source URL. Distinguish rounds from total funding and honor
+hasMore: a limited preview is not exhaustive. If no rounds match a requested
+window, say so rather than silently substituting older rounds. These answers
+describe what is recorded in Locus, not an exhaustive live funding news feed.
 Search matches are leads, not proof of certification or other status: quote the
 actual evidence with a clickable source URL when one exists, and distinguish
 claimed, verified and unknown. Use
@@ -145,7 +156,7 @@ export async function POST(request: Request) {
 
         const result = streamText({
           model: getLocusModel(body.sessionId as string),
-          system: `${system}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
+          system: `${system}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
           messages: modelMessages,
           tools: locusTools,
           stopWhen: stepCountIs(7),

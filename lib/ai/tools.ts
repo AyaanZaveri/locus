@@ -8,6 +8,11 @@ import { db } from "@/lib/db";
 import { companies, jobs, people } from "@/lib/db/schema";
 import { parseCompanyProfile } from "@/lib/company-profile";
 import { search, type SearchResponse } from "@/lib/search";
+import {
+  buildFundingQuery,
+  fundingQueryResult,
+  fundingQuerySchema,
+} from "./funding-query";
 
 const companySlugSchema = z
   .string()
@@ -225,6 +230,16 @@ function filterSearchResults(
  * SQL or mutate a record.
  */
 export const locusTools = {
+  queryFunding: tool({
+    description:
+      "Query structured funding rounds across the Locus database. Use for latest/recent funding, largest rounds, or filters by inclusive announcement dates, company, exact stage (case-insensitive), minimum USD amount, and investor name substring (lead or participating). Sort descending by announcedAt or amount. Returns round amounts, dates, investors, source URLs and totalMatches/hasMore. These are rounds, not company funding totals. Future rounds are excluded; recency excludes unknown or partial dates. Prefer this over text search for filtering or ranking funding. Use getCompanyProfile for total funding.",
+    inputSchema: fundingQuerySchema,
+    execute: async (input) => {
+      const asOf = new Date().toISOString().slice(0, 10);
+      const result = await db.execute(buildFundingQuery(input, asOf));
+      return fundingQueryResult(result.rows, input, asOf);
+    },
+  }),
   navigateLocus: tool({
     description:
       "Navigate the user to a Locus result they explicitly asked to open, show, or visit. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. Do not navigate for general research questions.",
@@ -404,7 +419,7 @@ export const locusTools = {
   }),
   getCompany: tool({
     description:
-      "Get the core Locus profile fields for one company when you know its slug. Use searchLocus first when the slug is unknown. For acquisitions, funding events, or other historical facts, use searchCompanyFacts instead.",
+      "Get the core Locus profile fields for one company when you know its slug. Use searchLocus first when the slug is unknown. For funding rounds use queryFunding; for acquisitions or other historical facts use searchKnowledge.",
     inputSchema: z.object({ slug: companySlugSchema }),
     execute: async ({ slug }) => {
       const [company] = await db
