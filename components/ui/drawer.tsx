@@ -32,14 +32,19 @@ function DrawerContent({
   className,
   children,
   side = "left",
+  portalAttributes,
   ...props
-}: DrawerPrimitive.Popup.Props & { side?: "bottom" | "left" }) {
+}: DrawerPrimitive.Popup.Props & {
+  side?: "bottom" | "left";
+  portalAttributes?: Record<`data-${string}`, string>;
+}) {
   const isBottomSheet = side === "bottom";
 
   return (
     <DrawerPortal>
-      <DrawerOverlay />
+      <DrawerOverlay {...portalAttributes} />
       <DrawerPrimitive.Viewport
+        {...portalAttributes}
         className={cn(
           "fixed inset-0 z-50 flex p-2",
           isBottomSheet

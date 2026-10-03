@@ -13,9 +13,14 @@ test("panel clicks stay inside Focus", () => {
   assert.equal(isLocusFocusClickZone([new EventTarget(), panel], panel), true);
 });
 
-test("portaled menu and submenu clicks stay inside Focus without the panel in their path", () => {
+test("portaled menus, drawer contents and drawer backdrop clicks stay inside Focus", () => {
   const panel = new EventTarget();
-  for (const portal of [new PortalZone(), new PortalZone()]) {
+  for (const portal of [
+    new PortalZone(),
+    new PortalZone(),
+    new PortalZone(),
+    new PortalZone(),
+  ]) {
     assert.equal(
       isLocusFocusClickZone(
         [new EventTarget(), portal, new EventTarget()],

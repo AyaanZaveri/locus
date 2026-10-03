@@ -619,7 +619,7 @@ export function LocusChat() {
       if (
         event.defaultPrevented ||
         (event.target instanceof Element &&
-          event.target.closest('[role="menu"]'))
+          event.target.closest("[data-locus-focus-click-zone]"))
       )
         return;
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "j") {
