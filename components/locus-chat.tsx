@@ -32,6 +32,8 @@ import { useRouter } from "next/navigation";
 import { Streamdown } from "streamdown";
 
 import { Button } from "@/components/ui/button";
+import { LocusModelPicker } from "@/components/locus-model-picker";
+import { useLocusModel } from "@/lib/use-locus-model";
 import { LocusActivityStatus } from "@/components/locus-activity-status";
 import { LocusTraceRow } from "@/components/locus-trace-row";
 import { Kbd, KbdGroup } from "@/components/ui/kbd";
@@ -44,6 +46,7 @@ import {
 } from "@/components/locus-result-rows";
 import {
   InputGroup,
+  InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
 } from "@/components/ui/input-group";
@@ -398,12 +401,20 @@ export function LocusChat() {
   const [isScrolledAwayFromBottom, setIsScrolledAwayFromBottom] =
     useState(false);
   const [hasTranscriptOverflow, setHasTranscriptOverflow] = useState(false);
+  const [modelId, setModelId] = useLocusModel();
+  const modelIdRef = useRef(modelId);
+  useLayoutEffect(() => {
+    modelIdRef.current = modelId;
+  }, [modelId]);
   const transport = useMemo(
     () =>
       new DefaultChatTransport({
         api: "/api/chat",
         // Also sent on automatic tool-call continuations, not just the first turn.
-        body: () => ({ pagePath: window.location.pathname }),
+        body: () => ({
+          pagePath: window.location.pathname,
+          modelId: modelIdRef.current,
+        }),
       }),
     [],
   );
@@ -604,6 +615,12 @@ export function LocusChat() {
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
+      if (
+        event.defaultPrevented ||
+        (event.target instanceof Element &&
+          event.target.closest('[role="menu"]'))
+      )
+        return;
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "j") {
         event.preventDefault();
         setFocusState((state) =>
@@ -913,10 +930,13 @@ export function LocusChat() {
                       </div>
                     ) : null}
                     <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
-                      <LensConcaveIcon
-                        aria-hidden="true"
-                        className="ml-2 size-5 shrink-0 stroke-[1.5] text-muted-foreground"
-                      />
+                      <InputGroupAddon>
+                        <LocusModelPicker
+                          modelId={modelId}
+                          onChange={setModelId}
+                          disabled={isBusy}
+                        />
+                      </InputGroupAddon>
                       <InputGroupInput
                         aria-label="Message Locus"
                         autoComplete="off"

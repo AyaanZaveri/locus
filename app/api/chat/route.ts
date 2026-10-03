@@ -13,6 +13,7 @@ import { getPageCompanyContext, locusTools } from "@/lib/ai/tools";
 import { usesCurrentCompanyPage } from "@/lib/locus-page-intent";
 import { presentationPrompt } from "@/lib/ai/presentation-prompt";
 import { toolFirstStream } from "@/lib/ai/tool-first-stream";
+import { DEFAULT_LOCUS_MODEL, isLocusModelId } from "@/lib/locus-models";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -137,6 +138,7 @@ export async function POST(request: Request) {
     messages?: UIMessage[];
     sessionId?: unknown;
     pagePath?: unknown;
+    modelId?: unknown;
   };
 
   if (!Array.isArray(body.messages)) {
@@ -153,6 +155,13 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
+
+  if (body.modelId !== undefined && !isLocusModelId(body.modelId)) {
+    return Response.json({ error: "Invalid model." }, { status: 400 });
+  }
+  const modelId = isLocusModelId(body.modelId)
+    ? body.modelId
+    : DEFAULT_LOCUS_MODEL;
 
   try {
     const latestUserMessage = [...body.messages]
@@ -183,7 +192,7 @@ export async function POST(request: Request) {
         }
 
         const result = streamText({
-          model: getLocusModel(body.sessionId as string),
+          model: getLocusModel(body.sessionId as string, modelId),
           system: `${system}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
           messages: modelMessages,
           tools: locusTools,
