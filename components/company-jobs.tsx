@@ -26,7 +26,6 @@ import { Globe2, Laptop, Search, UsersRound } from "lucide-react";
 
 type Props = {
   company: Pick<CompanyProfile, "name" | "logo">;
-  countryCode: string;
   jobs: CompanyProfile["jobs"];
 };
 
@@ -117,7 +116,7 @@ function LocationIcon({ location }: { location: string }) {
   );
 }
 
-export function CompanyJobs({ company, countryCode, jobs }: Props) {
+export function CompanyJobs({ company, jobs }: Props) {
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState("all");
   const [selectedDepartments, setSelectedDepartments] = useState<string[]>([]);
@@ -213,8 +212,8 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
     <section id="jobs" className="mt-6 max-w-none scroll-mt-6">
       <h2 className="text-lg font-semibold tracking-tight">Jobs</h2>
 
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        <InputGroup className="w-full min-w-0 bg-transparent md:min-w-60 md:flex-1 dark:bg-input/30">
+      <div className="mt-3 grid grid-cols-2 items-start gap-2 md:flex">
+        <InputGroup className="col-span-2 w-full min-w-0 bg-transparent md:w-auto md:flex-1 dark:bg-input/30">
           <InputGroupAddon>
             <Search aria-hidden="true" />
           </InputGroupAddon>
@@ -235,7 +234,7 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
             </span>
           </InputGroupAddon>
         </InputGroup>
-        <div className="flex w-full min-w-0 flex-wrap items-center gap-2 md:w-auto md:max-w-full md:flex-none">
+        <div className="flex w-full min-w-0 items-center gap-2 md:w-44 md:flex-none">
           {hasRemoteJobs || locations.length > 0 ? (
             <Select
               items={locationItems}
@@ -244,7 +243,7 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
             >
               <SelectTrigger
                 aria-label="Filter locations"
-                className="w-full sm:w-52"
+                className="w-full"
                 title={
                   location === "all"
                     ? "All locations"
@@ -254,7 +253,21 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
                 }
               >
                 <LocationIcon location={location} />
-                <SelectValue className="min-w-0 truncate" />
+                <SelectValue className="min-w-0 overflow-hidden">
+                  <span
+                    className={
+                      location === "all"
+                        ? "min-w-0 truncate text-muted-foreground"
+                        : "min-w-0 truncate"
+                    }
+                  >
+                    {location === "all"
+                      ? "Location"
+                      : location === "remote"
+                        ? "Remote"
+                        : location}
+                  </span>
+                </SelectValue>
               </SelectTrigger>
               <SelectContent
                 align="start"
@@ -306,10 +319,9 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
             </Select>
           ) : null}
         </div>
-      </div>
 
       {departments.length ? (
-        <div className="mt-3 flex flex-wrap gap-1">
+        <div className="flex min-w-0 flex-wrap gap-1 md:max-w-[50%] md:flex-none">
           {departments.length > 1 && departments.length <= 4 ? (
             <div
               aria-label="Filter by team"
@@ -377,7 +389,7 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
             >
               <SelectTrigger
                 aria-label="Filter teams"
-                className="w-full sm:w-44"
+                className="w-full md:w-44"
                 title={
                   selectedDepartments.length
                     ? selectedDepartments.join(", ")
@@ -390,14 +402,22 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
                     className="text-muted-foreground"
                   />
                 ) : null}
-                <SelectValue className="min-w-0 truncate">
-                  {(value: string[]) =>
-                    value.length === 0
-                      ? "All teams"
-                      : value.length === 1
-                        ? value[0]
-                        : `${value.length} teams`
-                  }
+                <SelectValue className="min-w-0 overflow-hidden">
+                  {(value: string[]) => (
+                    <span
+                      className={
+                        value.length === 0
+                          ? "min-w-0 truncate text-muted-foreground"
+                          : "min-w-0 truncate"
+                      }
+                    >
+                      {value.length === 0
+                        ? "Teams"
+                        : value.length === 1
+                          ? value[0]
+                          : `${value.length} teams`}
+                    </span>
+                  )}
                 </SelectValue>
               </SelectTrigger>
               <SelectContent
@@ -428,13 +448,13 @@ export function CompanyJobs({ company, countryCode, jobs }: Props) {
           ) : null}
         </div>
       ) : null}
+      </div>
 
       {visibleJobs.length ? (
         <div className="mt-3 flex flex-col gap-3">
           {visibleJobs.map((job, index) => (
             <JobCard
               company={company}
-              countryCode={countryCode}
               job={job}
               key={`${job.title}-${job.location}-${job.focus}-${job.url ?? ""}-${index}`}
             />

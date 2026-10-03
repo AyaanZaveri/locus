@@ -342,7 +342,6 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             {profile.jobs.length ? (
               <CompanyJobs
                 company={{ name: profile.name, logo: profile.logo }}
-                countryCode={profile.location.countryCode}
                 jobs={profile.jobs}
               />
             ) : null}

@@ -1,15 +1,15 @@
-// Job-board location labels are free text. Only show a flag when the label
-// unambiguously identifies one country; multi-country regions keep a globe.
+// Job-board location labels are free text. Match known countries and cities,
+// never the company's headquarters, and preserve the source location order.
 const countryPatterns: [code: string, pattern: RegExp][] = [
   [
     "us",
-    /\b(united states|san francisco|san mateo|palo alto|mountain view|new york|nyc|seattle|washington|austin|boston|chicago|los angeles|san diego|san antonio|atlanta|cincinnati|dallas|denver|houston|idaho falls|miami|nashville|new jersey|philadelphia|phoenix|portland|raleigh|richmond|saint paul|salt lake city|california|colorado|georgia|illinois|massachusetts|minnesota|oregon|pennsylvania|texas|virginia)\b/i,
+    /\b(united states|usa|u\.s\.|us|san francisco|san mateo|palo alto|mountain view|new york|nyc|seattle|washington|austin|boston|chicago|los angeles|san diego|san antonio|atlanta|cincinnati|dallas|denver|houston|idaho falls|miami|nashville|new jersey|philadelphia|phoenix|portland|raleigh|richmond|saint paul|salt lake city|california|colorado|georgia|illinois|massachusetts|minnesota|oregon|pennsylvania|texas|virginia)\b/i,
   ],
   [
     "ca",
     /\b(canada|canadian|toronto|montreal|montréal|vancouver|ottawa|calgary|edmonton|halifax|winnipeg|ontario|alberta)\b|,\s*CAN\b/i,
   ],
-  ["gb", /\b(united kingdom|london|edinburgh|england)\b|,\s*UK\b/i],
+  ["gb", /\b(united kingdom|uk|london|edinburgh|england)\b/i],
   ["fr", /\b(france|paris|marseille)\b/i],
   ["de", /\b(germany|berlin|munich|frankfurt)\b/i],
   ["nl", /\b(netherlands|amsterdam)\b/i],
@@ -22,7 +22,8 @@ const countryPatterns: [code: string, pattern: RegExp][] = [
   ["jp", /\b(japan|tokyo)\b/i],
   ["sg", /\bsingapore\b/i],
   ["kr", /\b(korea|seoul)\b/i],
-  ["au", /\b(australia|sydney|melbourne|canberra)\b/i],
+  ["au", /\b(australia|sydney|melbourne|canberra|brisbane)\b/i],
+  ["za", /\b(south africa|cape town)\b/i],
   ["ae", /\b(uae|united arab emirates|dubai|abu dhabi)\b/i],
   ["sa", /\b(saudi arabia|riyadh)\b/i],
   ["br", /\b(brazil|são paulo|sao paulo)\b/i],
@@ -39,7 +40,7 @@ const countryPatterns: [code: string, pattern: RegExp][] = [
   ["cl", /\bchile\b/i],
   ["co", /\bcolombia\b/i],
   ["pe", /\bperu\b/i],
-  ["ph", /\bphilippines\b/i],
+  ["ph", /\b(philippines|makati(?: city)?|manila|cebu)\b/i],
   ["ro", /\bromania\b/i],
   ["cz", /\bczechia\b/i],
   ["hr", /\bcroatia\b/i],
@@ -48,11 +49,21 @@ const countryPatterns: [code: string, pattern: RegExp][] = [
   ["ua", /\bukraine\b/i],
 ];
 
+export function getJobLocationCountryCodes(location: string): string[] {
+  if (/\b(worldwide|anywhere|global)\b/i.test(location)) return [];
+
+  return countryPatterns
+    .flatMap(([code, pattern]) => {
+      const match = pattern.exec(location);
+      return match ? [{ code, index: match.index }] : [];
+    })
+    .sort((a, b) => a.index - b.index)
+    .map(({ code }) => code);
+}
+
 export function getJobLocationCountryCode(location: string): string | null {
   if (/\b(europe|emea|apac|apj|middle east)\b/i.test(location)) return null;
 
-  const matches = countryPatterns
-    .filter(([, pattern]) => pattern.test(location))
-    .map(([code]) => code);
+  const matches = getJobLocationCountryCodes(location);
   return matches.length === 1 ? matches[0] : null;
 }

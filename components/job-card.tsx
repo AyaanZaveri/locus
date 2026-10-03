@@ -5,6 +5,7 @@ import { type CSSProperties, useEffect, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Streamdown } from "streamdown";
 
+import { JobLocations } from "@/components/job-location-flags";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,7 +20,6 @@ type Job = CompanyProfile["jobs"][number];
 
 type JobCardProps = {
   company: Pick<CompanyProfile, "name" | "logo">;
-  countryCode: string;
   job: Job;
 };
 
@@ -129,7 +129,7 @@ function JobDetails({ job }: { job: Job }) {
   ) : null;
 }
 
-export function JobCard({ company, countryCode, job }: JobCardProps) {
+export function JobCard({ company, job }: JobCardProps) {
   const [open, setOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -219,15 +219,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
             </h3>
             <div className="mt-1 text-xs font-medium text-muted-foreground">
               <div className="flex min-w-0 items-center gap-1.5">
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  className="size-2.5 shrink-0 rounded-full"
-                  src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
-                />
-                <span className="truncate">
-                  {job.location.replace(/\s*\|\s*/g, " · ")}
-                </span>
+                <JobLocations location={job.location} />
                 {job.department || job.focus ? (
                   <>
                     <span aria-hidden="true" className="shrink-0">
@@ -273,13 +265,7 @@ export function JobCard({ company, countryCode, job }: JobCardProps) {
               {job.title}
             </DrawerTitle>
             <DrawerDescription className="mt-2 flex items-center gap-1.5 text-sm font-medium text-muted-foreground">
-              <img
-                alt=""
-                aria-hidden="true"
-                className="size-3 rounded-full"
-                src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
-              />
-              <span>{job.location.replace(/\s*\|\s*/g, " · ")}</span>
+              <JobLocations location={job.location} size="details" />
             </DrawerDescription>
           </div>
           <Button
