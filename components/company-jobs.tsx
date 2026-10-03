@@ -212,7 +212,7 @@ export function CompanyJobs({ company, jobs }: Props) {
     <section id="jobs" className="mt-6 max-w-none scroll-mt-6">
       <h2 className="text-lg font-semibold tracking-tight">Jobs</h2>
 
-      <div className="mt-3 grid grid-cols-2 items-start gap-2 md:flex">
+      <div className="mt-3 grid grid-cols-2 items-start gap-2 md:flex md:flex-wrap">
         <InputGroup className="col-span-2 w-full min-w-0 bg-transparent md:w-auto md:flex-1 dark:bg-input/30">
           <InputGroupAddon>
             <Search aria-hidden="true" />
@@ -321,7 +321,13 @@ export function CompanyJobs({ company, jobs }: Props) {
         </div>
 
       {departments.length ? (
-        <div className="flex min-w-0 flex-wrap gap-1 md:max-w-[50%] md:flex-none">
+        <div
+          className={
+            departments.length > 4
+              ? "flex min-w-0 flex-wrap gap-1 md:max-w-[50%] md:flex-none"
+              : "col-span-2 flex w-full min-w-0 flex-wrap gap-1 md:basis-full"
+          }
+        >
           {departments.length > 1 && departments.length <= 4 ? (
             <div
               aria-label="Filter by team"
