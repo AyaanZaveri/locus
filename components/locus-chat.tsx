@@ -34,6 +34,7 @@ import { Streamdown } from "streamdown";
 import { Button } from "@/components/ui/button";
 import { LocusModelPicker } from "@/components/locus-model-picker";
 import { useLocusModel } from "@/lib/use-locus-model";
+import { isLocusFocusClickZone } from "@/lib/locus-focus-click-zone";
 import { LocusActivityStatus } from "@/components/locus-activity-status";
 import { LocusTraceRow } from "@/components/locus-trace-row";
 import { Kbd, KbdGroup } from "@/components/ui/kbd";
@@ -582,8 +583,8 @@ export function LocusChat() {
   }, [error, isBusy, isOpen, messages, scrollToLatest]);
 
   // The status/New pill lives above the panel, so keep both inside one ref.
-  // A press anywhere else should dismiss Focus, without stealing presses from
-  // the composer, result cards, or either pill.
+  // Focus-owned portals also belong to this click zone. A press anywhere else
+  // dismisses Focus without stealing presses from its controls.
   useEffect(() => {
     if (focusState !== "open") return;
 
@@ -592,7 +593,7 @@ export function LocusChat() {
       if (
         event.button !== 0 ||
         !focusPanel ||
-        event.composedPath().includes(focusPanel)
+        isLocusFocusClickZone(event.composedPath(), focusPanel)
       ) {
         return;
       }

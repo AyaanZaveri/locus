@@ -64,6 +64,7 @@ export function LocusModelPicker({
       </Menu.Trigger>
       <Menu.Portal>
         <Menu.Positioner
+          data-locus-focus-click-zone=""
           side="top"
           align="start"
           sideOffset={10}
@@ -83,6 +84,7 @@ export function LocusModelPicker({
                   </Menu.SubmenuTrigger>
                   <Menu.Portal>
                     <Menu.Positioner
+                      data-locus-focus-click-zone=""
                       side="right"
                       align="start"
                       alignOffset={-3}
