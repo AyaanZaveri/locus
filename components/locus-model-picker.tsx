@@ -8,6 +8,7 @@ import {
   ChevronRightIcon,
   LensConcaveIcon,
   BadgeInfoIcon,
+  InfoIcon,
   XIcon,
 } from "lucide-react";
 import { InputGroupButton } from "@/components/ui/input-group";
@@ -152,8 +153,12 @@ export function LocusModelPicker({
                     {model.lab}
                   </span>
                   {model.id === "muse-spark-1.3-contributor" ? (
-                    <span className="mt-1 block text-xs text-muted-foreground">
-                      Meta trains on your prompts and responses.
+                    <span className="mt-1 flex items-start gap-1.5 text-xs text-muted-foreground">
+                      <InfoIcon
+                        aria-hidden="true"
+                        className="mt-0.5 size-3 shrink-0"
+                      />
+                      <span>Meta trains on your prompts and responses.</span>
                     </span>
                   ) : null}
                 </span>
@@ -242,8 +247,14 @@ export function LocusModelPicker({
                           </Menu.RadioItem>
                         </Menu.RadioGroup>
                         {model.id === "muse-spark-1.3-contributor" ? (
-                          <p className="max-w-56 px-2 py-1 text-xs text-muted-foreground">
-                            Meta trains on your prompts and responses.
+                          <p className="flex max-w-56 items-start gap-1.5 px-2 py-1 text-xs text-muted-foreground">
+                            <InfoIcon
+                              aria-hidden="true"
+                              className="mt-0.5 size-3 shrink-0"
+                            />
+                            <span>
+                              Meta trains on your prompts and responses.
+                            </span>
                           </p>
                         ) : null}
                       </Menu.Popup>
