@@ -54,13 +54,13 @@ export function LocusModelPicker({
         render={
           <InputGroupButton
             size="icon-sm"
-            className="ml-1 text-muted-foreground"
+            className="ml-1 size-9 text-muted-foreground active:scale-[0.98]"
           />
         }
         aria-label={`Choose model. Current model: ${selected.label}`}
         title={`Model: ${selected.label}`}
       >
-        <LensConcaveIcon aria-hidden="true" className="stroke-[1.5]" />
+        <LensConcaveIcon aria-hidden="true" className="size-5 stroke-[1.5]" />
       </Menu.Trigger>
       <Menu.Portal>
         <Menu.Positioner
