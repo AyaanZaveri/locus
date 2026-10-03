@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import { getJobDepartmentIcon } from "@/components/job-department-icon";
 import { JobCard } from "@/components/job-card";
+import { CompanyJobFilterDrawer } from "@/components/company-job-filter-drawer";
+import { useMobileSheet } from "@/hooks/use-mobile-sheet";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,
@@ -120,6 +122,7 @@ export function CompanyJobs({ company, jobs }: Props) {
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState("all");
   const [selectedDepartments, setSelectedDepartments] = useState<string[]>([]);
+  const isMobile = useMobileSheet();
 
   const departments = useMemo(
     () =>
@@ -236,224 +239,310 @@ export function CompanyJobs({ company, jobs }: Props) {
         </InputGroup>
         <div className="flex w-full min-w-0 items-center gap-2 md:w-44 md:flex-none">
           {hasRemoteJobs || locations.length > 0 ? (
-            <Select
-              items={locationItems}
-              onValueChange={(value) => setLocation(value ?? "all")}
-              value={location}
-            >
-              <SelectTrigger
-                aria-label="Filter locations"
-                className="w-full"
-                title={
-                  location === "all"
-                    ? "All locations"
-                    : location === "remote"
-                      ? "Remote"
-                      : location
-                }
+            isMobile ? (
+              <CompanyJobFilterDrawer
+                title="Location"
+                values={[location]}
+                onChange={(values) => setLocation(values[0] ?? "all")}
+                groups={[
+                  {
+                    options: [
+                      {
+                        value: "all",
+                        label: "All locations",
+                        icon: <LocationIcon location="all" />,
+                      },
+                      ...(hasRemoteJobs
+                        ? [
+                            {
+                              value: "remote",
+                              label: "Remote",
+                              icon: <LocationIcon location="remote" />,
+                            },
+                          ]
+                        : []),
+                    ],
+                  },
+                  ...locationGroups.map((group) => ({
+                    label: group.label,
+                    options: group.places.map((place) => ({
+                      value: place,
+                      label: place,
+                      icon: <LocationIcon location={place} />,
+                    })),
+                  })),
+                ]}
               >
                 <LocationIcon location={location} />
-                <SelectValue className="min-w-0 overflow-hidden">
-                  <span
-                    className={
-                      location === "all"
-                        ? "min-w-0 truncate text-muted-foreground"
-                        : "min-w-0 truncate"
-                    }
-                  >
-                    {location === "all"
-                      ? "Location"
+                <span
+                  className={`min-w-0 flex-1 truncate ${location === "all" ? "text-muted-foreground" : ""}`}
+                >
+                  {location === "all"
+                    ? "Location"
+                    : location === "remote"
+                      ? "Remote"
+                      : location}
+                </span>
+              </CompanyJobFilterDrawer>
+            ) : (
+              <Select
+                items={locationItems}
+                onValueChange={(value) => setLocation(value ?? "all")}
+                value={location}
+              >
+                <SelectTrigger
+                  aria-label="Filter locations"
+                  className="w-full"
+                  title={
+                    location === "all"
+                      ? "All locations"
                       : location === "remote"
                         ? "Remote"
-                        : location}
-                  </span>
-                </SelectValue>
-              </SelectTrigger>
-              <SelectContent
-                align="start"
-                alignItemWithTrigger={false}
-                className="min-w-60"
-              >
-                <SelectGroup className="pb-0">
-                  <SelectItem className="pr-12" value="all">
-                    <span className="flex items-center gap-2">
-                      <LocationIcon location="all" />
-                      All locations
-                    </span>
-                  </SelectItem>
-                  {hasRemoteJobs ? (
-                    <SelectItem className="pr-12" value="remote">
-                      <span className="flex items-center gap-2">
-                        <LocationIcon location="remote" />
-                        Remote
-                      </span>
-                    </SelectItem>
-                  ) : null}
-                </SelectGroup>
-                {locations.length ? (
-                  <>
-                    <SelectSeparator className="my-1" />
-                    {locationGroups.map((group, index) => (
-                      <SelectGroup
-                        className={index === 0 ? "pt-0" : undefined}
-                        key={group.code}
-                      >
-                        <SelectLabel>{group.label}</SelectLabel>
-                        {group.places.map((place) => (
-                          <SelectItem
-                            className="pr-12"
-                            key={place}
-                            value={place}
-                          >
-                            <span className="flex items-center gap-2">
-                              <LocationIcon location={place} />
-                              {place}
-                            </span>
-                          </SelectItem>
-                        ))}
-                      </SelectGroup>
-                    ))}
-                  </>
-                ) : null}
-              </SelectContent>
-            </Select>
-          ) : null}
-        </div>
-
-      {departments.length ? (
-        <div
-          className={
-            departments.length > 4
-              ? "flex min-w-0 flex-wrap gap-1 md:max-w-[50%] md:flex-none"
-              : "col-span-2 flex w-full min-w-0 flex-wrap gap-1 md:basis-full"
-          }
-        >
-          {departments.length > 1 && departments.length <= 4 ? (
-            <div
-              aria-label="Filter by team"
-              className="flex min-w-0 max-w-full flex-wrap gap-1"
-              role="group"
-            >
-              {departments.map((department) => {
-                const selected = selectedDepartments.includes(department);
-                const Icon = getJobDepartmentIcon(department);
-                return (
-                  <Button
-                    aria-pressed={selected}
-                    className={
-                      selected
-                        ? "max-w-full"
-                        : "max-w-full dark:bg-input/30 dark:hover:bg-input/50"
-                    }
-                    key={department}
-                    onClick={() => toggleDepartment(department)}
-                    title={department}
-                    type="button"
-                    variant={selected ? "default" : "outline"}
-                  >
-                    <Icon
-                      aria-hidden="true"
-                      className={
-                        selected
-                          ? "text-[color-mix(in_oklch,var(--primary-foreground)_70%,var(--primary)_30%)]"
-                          : "text-muted-foreground"
-                      }
-                      data-icon="inline-start"
-                    />
-                    <span className="min-w-0 truncate">{department}</span>
-                  </Button>
-                );
-              })}
-            </div>
-          ) : null}
-
-          {departments.length === 1 ? (
-            <Button
-              aria-pressed={true}
-              className="max-w-full cursor-default"
-              title={departments[0]}
-              type="button"
-              variant="default"
-            >
-              {SingleDepartmentIcon ? (
-                <SingleDepartmentIcon
-                  aria-hidden="true"
-                  className="text-[color-mix(in_oklch,var(--primary-foreground)_70%,var(--primary)_30%)]"
-                  data-icon="inline-start"
-                />
-              ) : null}
-              <span className="min-w-0 truncate">{departments[0]}</span>
-            </Button>
-          ) : null}
-
-          {departments.length > 4 ? (
-            <Select
-              items={departmentItems}
-              multiple
-              onValueChange={setSelectedDepartments}
-              value={selectedDepartments}
-            >
-              <SelectTrigger
-                aria-label="Filter teams"
-                className="w-full md:w-44"
-                title={
-                  selectedDepartments.length
-                    ? selectedDepartments.join(", ")
-                    : "All teams"
-                }
-              >
-                {SelectedDepartmentIcon ? (
-                  <SelectedDepartmentIcon
-                    aria-hidden="true"
-                    className="text-muted-foreground"
-                  />
-                ) : null}
-                <SelectValue className="min-w-0 overflow-hidden">
-                  {(value: string[]) => (
+                        : location
+                  }
+                >
+                  <LocationIcon location={location} />
+                  <SelectValue className="min-w-0 overflow-hidden">
                     <span
                       className={
-                        value.length === 0
+                        location === "all"
                           ? "min-w-0 truncate text-muted-foreground"
                           : "min-w-0 truncate"
                       }
                     >
-                      {value.length === 0
-                        ? "Teams"
-                        : value.length === 1
-                          ? value[0]
-                          : `${value.length} teams`}
+                      {location === "all"
+                        ? "Location"
+                        : location === "remote"
+                          ? "Remote"
+                          : location}
                     </span>
-                  )}
-                </SelectValue>
-              </SelectTrigger>
-              <SelectContent
-                align="start"
-                alignItemWithTrigger={false}
-                className="w-[min(24rem,calc(100vw-2rem))]"
-              >
-                <SelectGroup>
-                  {departmentItems.map((item) => {
-                    const Icon = getJobDepartmentIcon(item.value);
-                    return (
-                      <SelectItem
-                        className="pr-12"
-                        key={item.value}
-                        value={item.value}
-                      >
-                        <Icon
-                          aria-hidden="true"
-                          className="text-muted-foreground"
-                        />
-                        {item.label}
+                  </SelectValue>
+                </SelectTrigger>
+                <SelectContent
+                  align="start"
+                  alignItemWithTrigger={false}
+                  className="min-w-60"
+                >
+                  <SelectGroup className="pb-0">
+                    <SelectItem className="pr-12" value="all">
+                      <span className="flex items-center gap-2">
+                        <LocationIcon location="all" />
+                        All locations
+                      </span>
+                    </SelectItem>
+                    {hasRemoteJobs ? (
+                      <SelectItem className="pr-12" value="remote">
+                        <span className="flex items-center gap-2">
+                          <LocationIcon location="remote" />
+                          Remote
+                        </span>
                       </SelectItem>
-                    );
-                  })}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
+                    ) : null}
+                  </SelectGroup>
+                  {locations.length ? (
+                    <>
+                      <SelectSeparator className="my-1" />
+                      {locationGroups.map((group, index) => (
+                        <SelectGroup
+                          className={index === 0 ? "pt-0" : undefined}
+                          key={group.code}
+                        >
+                          <SelectLabel>{group.label}</SelectLabel>
+                          {group.places.map((place) => (
+                            <SelectItem
+                              className="pr-12"
+                              key={place}
+                              value={place}
+                            >
+                              <span className="flex items-center gap-2">
+                                <LocationIcon location={place} />
+                                {place}
+                              </span>
+                            </SelectItem>
+                          ))}
+                        </SelectGroup>
+                      ))}
+                    </>
+                  ) : null}
+                </SelectContent>
+              </Select>
+            )
           ) : null}
         </div>
-      ) : null}
+
+        {departments.length ? (
+          <div
+            className={
+              isMobile || departments.length > 4
+                ? "flex min-w-0 flex-wrap gap-1 md:max-w-[50%] md:flex-none"
+                : "col-span-2 flex w-full min-w-0 flex-wrap gap-1 md:basis-full"
+            }
+          >
+            {isMobile ? (
+              <CompanyJobFilterDrawer
+                title="Teams"
+                multiple
+                values={selectedDepartments}
+                onChange={setSelectedDepartments}
+                groups={[
+                  {
+                    options: departments.map((department) => {
+                      const Icon = getJobDepartmentIcon(department);
+                      return {
+                        value: department,
+                        label: department,
+                        icon: (
+                          <Icon
+                            aria-hidden="true"
+                            className="size-4 shrink-0 text-muted-foreground"
+                          />
+                        ),
+                      };
+                    }),
+                  },
+                ]}
+              >
+                <SelectedDepartmentIcon
+                  aria-hidden="true"
+                  className="text-muted-foreground"
+                />
+                <span
+                  className={`min-w-0 flex-1 truncate ${selectedDepartments.length === 0 ? "text-muted-foreground" : ""}`}
+                >
+                  {selectedDepartments.length === 0
+                    ? "Teams"
+                    : selectedDepartments.length === 1
+                      ? selectedDepartments[0]
+                      : `${selectedDepartments.length} teams`}
+                </span>
+              </CompanyJobFilterDrawer>
+            ) : null}
+            {!isMobile && departments.length > 1 && departments.length <= 4 ? (
+              <div
+                aria-label="Filter by team"
+                className="flex min-w-0 max-w-full flex-wrap gap-1"
+                role="group"
+              >
+                {departments.map((department) => {
+                  const selected = selectedDepartments.includes(department);
+                  const Icon = getJobDepartmentIcon(department);
+                  return (
+                    <Button
+                      aria-pressed={selected}
+                      className={
+                        selected
+                          ? "max-w-full"
+                          : "max-w-full dark:bg-input/30 dark:hover:bg-input/50"
+                      }
+                      key={department}
+                      onClick={() => toggleDepartment(department)}
+                      title={department}
+                      type="button"
+                      variant={selected ? "default" : "outline"}
+                    >
+                      <Icon
+                        aria-hidden="true"
+                        className={
+                          selected
+                            ? "text-[color-mix(in_oklch,var(--primary-foreground)_70%,var(--primary)_30%)]"
+                            : "text-muted-foreground"
+                        }
+                        data-icon="inline-start"
+                      />
+                      <span className="min-w-0 truncate">{department}</span>
+                    </Button>
+                  );
+                })}
+              </div>
+            ) : null}
+
+            {!isMobile && departments.length === 1 ? (
+              <Button
+                aria-pressed={true}
+                className="max-w-full cursor-default"
+                title={departments[0]}
+                type="button"
+                variant="default"
+              >
+                {SingleDepartmentIcon ? (
+                  <SingleDepartmentIcon
+                    aria-hidden="true"
+                    className="text-[color-mix(in_oklch,var(--primary-foreground)_70%,var(--primary)_30%)]"
+                    data-icon="inline-start"
+                  />
+                ) : null}
+                <span className="min-w-0 truncate">{departments[0]}</span>
+              </Button>
+            ) : null}
+
+            {!isMobile && departments.length > 4 ? (
+              <Select
+                items={departmentItems}
+                multiple
+                onValueChange={setSelectedDepartments}
+                value={selectedDepartments}
+              >
+                <SelectTrigger
+                  aria-label="Filter teams"
+                  className="w-full md:w-44"
+                  title={
+                    selectedDepartments.length
+                      ? selectedDepartments.join(", ")
+                      : "All teams"
+                  }
+                >
+                  {SelectedDepartmentIcon ? (
+                    <SelectedDepartmentIcon
+                      aria-hidden="true"
+                      className="text-muted-foreground"
+                    />
+                  ) : null}
+                  <SelectValue className="min-w-0 overflow-hidden">
+                    {(value: string[]) => (
+                      <span
+                        className={
+                          value.length === 0
+                            ? "min-w-0 truncate text-muted-foreground"
+                            : "min-w-0 truncate"
+                        }
+                      >
+                        {value.length === 0
+                          ? "Teams"
+                          : value.length === 1
+                            ? value[0]
+                            : `${value.length} teams`}
+                      </span>
+                    )}
+                  </SelectValue>
+                </SelectTrigger>
+                <SelectContent
+                  align="start"
+                  alignItemWithTrigger={false}
+                  className="w-max min-w-(--anchor-width) max-w-[min(24rem,calc(100vw-2rem))]"
+                >
+                  <SelectGroup>
+                    {departmentItems.map((item) => {
+                      const Icon = getJobDepartmentIcon(item.value);
+                      return (
+                        <SelectItem
+                          className="pr-12"
+                          key={item.value}
+                          value={item.value}
+                        >
+                          <Icon
+                            aria-hidden="true"
+                            className="text-muted-foreground"
+                          />
+                          {item.label}
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+            ) : null}
+          </div>
+        ) : null}
       </div>
 
       {visibleJobs.length ? (

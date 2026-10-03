@@ -2,7 +2,8 @@
 
 import { Menu } from "@base-ui/react/menu";
 import { Drawer as DrawerPrimitive } from "@base-ui/react/drawer";
-import { useState, useSyncExternalStore } from "react";
+import { useState } from "react";
+import { useMobileSheet } from "@/hooks/use-mobile-sheet";
 import {
   CheckIcon,
   ChevronRightIcon,
@@ -31,16 +32,6 @@ const surface =
 const row =
   "relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none select-none data-highlighted:bg-accent data-highlighted:text-accent-foreground";
 
-// Match the existing drawers' sm breakpoint: below it, sheets slide up.
-const mobileQuery = "(max-width: 639px)";
-function subscribeMobile(listener: () => void) {
-  const query = window.matchMedia(mobileQuery);
-  query.addEventListener("change", listener);
-  return () => query.removeEventListener("change", listener);
-}
-const mobileSnapshot = () => window.matchMedia(mobileQuery).matches;
-const serverSnapshot = () => false;
-
 function Logo({ src }: { src: string }) {
   return (
     <span
@@ -68,11 +59,7 @@ export function LocusModelPicker({
   disabled: boolean;
 }) {
   const selected = LOCUS_MODELS.find((model) => model.id === modelId)!;
-  const isMobile = useSyncExternalStore(
-    subscribeMobile,
-    mobileSnapshot,
-    serverSnapshot,
-  );
+  const isMobile = useMobileSheet();
   const [drawerOpen, setDrawerOpen] = useState(false);
   if (isMobile) {
     return (

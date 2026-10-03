@@ -33,10 +33,12 @@ function DrawerContent({
   children,
   side = "left",
   portalAttributes,
+  contentClassName,
   ...props
 }: DrawerPrimitive.Popup.Props & {
   side?: "bottom" | "left";
   portalAttributes?: Record<`data-${string}`, string>;
+  contentClassName?: string;
 }) {
   const isBottomSheet = side === "bottom";
 
@@ -64,7 +66,9 @@ function DrawerContent({
           )}
           {...props}
         >
-          <DrawerPrimitive.Content className="flex min-h-full w-full flex-col">
+          <DrawerPrimitive.Content
+            className={cn("flex min-h-full w-full flex-col", contentClassName)}
+          >
             {children}
           </DrawerPrimitive.Content>
         </DrawerPrimitive.Popup>
