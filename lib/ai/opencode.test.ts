@@ -25,7 +25,7 @@ test("every selectable model sends the correct ID, protocol and session header",
           };
           throw new Error("mock transport: no network request");
         },
-        { preconnect: originalFetch.preconnect },
+        originalFetch,
       );
       await assert.rejects(
         async () =>
