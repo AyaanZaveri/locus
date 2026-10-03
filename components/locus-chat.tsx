@@ -35,6 +35,7 @@ import { Button } from "@/components/ui/button";
 import { LocusModelPicker } from "@/components/locus-model-picker";
 import { useLocusModel } from "@/lib/use-locus-model";
 import { isLocusFocusClickZone } from "@/lib/locus-focus-click-zone";
+import { LocusResponseTimer } from "@/lib/locus-response-timer";
 import { LocusActivityStatus } from "@/components/locus-activity-status";
 import { LocusTraceRow } from "@/components/locus-trace-row";
 import { Kbd, KbdGroup } from "@/components/ui/kbd";
@@ -388,6 +389,10 @@ export function LocusChat() {
     "closed" | "launcher-exiting" | "open" | "panel-exiting"
   >("closed");
   const [input, setInput] = useState("");
+  const [responseDurations, setResponseDurations] = useState<
+    Record<string, number>
+  >({});
+  const [responseTimer] = useState(() => new LocusResponseTimer());
   const [activityVariant, setActivityVariant] = useState(0);
   const [activityStartedAt, setActivityStartedAt] = useState<number | null>(
     null,
@@ -430,6 +435,30 @@ export function LocusChat() {
     addToolOutput,
   } = useChat({
     transport,
+    onError: () => responseTimer.reset(),
+    onFinish: ({
+      message,
+      messages: finishedMessages,
+      isAbort,
+      isDisconnect,
+      isError,
+      finishReason,
+    }) => {
+      const duration = responseTimer.finish({
+        unsuccessful:
+          isAbort || isDisconnect || isError || finishReason === "error",
+        continues:
+          lastAssistantMessageIsCompleteWithToolCalls({
+            messages: finishedMessages,
+          }) && !lastAssistantMessageContainsNavigation(finishedMessages),
+      });
+      if (duration !== null) {
+        setResponseDurations((current) => ({
+          ...current,
+          [message.id]: duration,
+        }));
+      }
+    },
     sendAutomaticallyWhen: ({ messages }) =>
       lastAssistantMessageIsCompleteWithToolCalls({ messages }) &&
       !lastAssistantMessageContainsNavigation(messages),
@@ -570,7 +599,7 @@ export function LocusChat() {
     setHasTranscriptOverflow(
       messageList.scrollHeight > messageList.clientHeight + 1,
     );
-  }, [error, messages]);
+  }, [error, messages, responseDurations]);
 
   // Streaming changes the transcript many times per response. Keep it pinned
   // only while the reader is already at the latest message; scrolling up is an
@@ -580,7 +609,7 @@ export function LocusChat() {
 
     const frame = window.requestAnimationFrame(() => scrollToLatest("auto"));
     return () => window.cancelAnimationFrame(frame);
-  }, [error, isBusy, isOpen, messages, scrollToLatest]);
+  }, [error, isBusy, isOpen, messages, responseDurations, scrollToLatest]);
 
   // The status/New pill lives above the panel, so keep both inside one ref.
   // Focus-owned portals also belong to this click zone. A press anywhere else
@@ -660,6 +689,7 @@ export function LocusChat() {
       (current) => (current + nextPhraseOffset) % LOCUS_ACTIVITY_VARIANT_COUNT,
     );
     setActivityStartedAt(Date.now());
+    responseTimer.start();
     sendMessage({ text }, { body: { sessionId: getSessionId() } });
     setInput("");
   }
@@ -674,6 +704,8 @@ export function LocusChat() {
     if (!isClearingChat) return;
 
     setMessages([]);
+    responseTimer.reset();
+    setResponseDurations({});
     clearError();
     setInput("");
     isPinnedToBottom.current = true;
@@ -888,6 +920,12 @@ export function LocusChat() {
 
                               return null;
                             })}
+                            {responseDurations[message.id] !== undefined ? (
+                              <p className="mt-2 px-2 font-mono text-[11px] leading-4 text-muted-foreground tabular-nums">
+                                Done in{" "}
+                                {responseDurations[message.id].toFixed(1)}s
+                              </p>
+                            ) : null}
                           </div>
                         );
                       })}

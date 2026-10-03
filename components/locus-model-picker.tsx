@@ -100,7 +100,7 @@ export function LocusModelPicker({
           side="bottom"
           portalAttributes={{ "data-locus-focus-click-zone": "" }}
           data-locus-focus-click-zone=""
-          className="h-auto max-h-[88dvh] bg-sidebar/95 text-sidebar-foreground ring-0 shadow-[0_18px_56px_oklch(0_0_0_/_0.14)] backdrop-blur-2xl dark:bg-sidebar/85"
+          className="h-auto max-h-[88dvh] bg-background/95 text-foreground ring-0 shadow-[0_18px_56px_oklch(0_0_0_/_0.14)] backdrop-blur-2xl dark:bg-background/85"
         >
           <div
             aria-hidden="true"
@@ -111,8 +111,8 @@ export function LocusModelPicker({
               <DrawerTitle className="text-xl leading-7 font-semibold tracking-tight">
                 Choose model
               </DrawerTitle>
-              <DrawerDescription className="mt-2 text-sm text-muted-foreground">
-                Your choice is saved for future chats.
+              <DrawerDescription className="sr-only">
+                Select the model for Locus Focus.
               </DrawerDescription>
             </div>
             <Button
