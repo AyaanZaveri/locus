@@ -15,6 +15,11 @@ import {
 import { InputGroupButton } from "@/components/ui/input-group";
 import { Button } from "@/components/ui/button";
 import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import {
   Drawer,
   DrawerContent,
   DrawerTitle,
@@ -32,11 +37,11 @@ const surface =
 const row =
   "relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none select-none data-highlighted:bg-accent data-highlighted:text-accent-foreground";
 
-function Logo({ src }: { src: string }) {
+function Logo({ src, small = false }: { src: string; small?: boolean }) {
   return (
     <span
       aria-hidden="true"
-      className="size-4 shrink-0 rounded-sm bg-current"
+      className={`${small ? "size-3.5" : "size-4"} shrink-0 rounded-sm bg-current`}
       style={{
         maskImage: `url(${src})`,
         WebkitMaskImage: `url(${src})`,
@@ -68,22 +73,38 @@ export function LocusModelPicker({
         onOpenChange={setDrawerOpen}
         swipeDirection="down"
       >
-        <DrawerPrimitive.Trigger
-          disabled={disabled}
-          render={
-            <InputGroupButton
-              size="icon-sm"
-              className="ml-1 size-9 text-muted-foreground active:scale-[0.98]"
+        <Tooltip>
+          <DrawerPrimitive.Trigger
+            disabled={disabled}
+            render={
+              <TooltipTrigger
+                disabled={disabled}
+                render={
+                  <InputGroupButton
+                    disabled={disabled}
+                    size="icon-sm"
+                    className="size-9 text-muted-foreground active:scale-[0.98]"
+                  />
+                }
+              />
+            }
+            aria-label={`Choose model. Current model: ${selected.label}`}
+          >
+            <LensConcaveIcon
+              aria-hidden="true"
+              className="size-5 stroke-[1.5]"
             />
-          }
-          aria-label={`Choose model. Current model: ${selected.label}`}
-          title={`Model: ${selected.label}`}
-        >
-          <LensConcaveIcon
-            aria-hidden="true"
-            className="size-5 -translate-x-0.5 stroke-[1.5]"
-          />
-        </DrawerPrimitive.Trigger>
+          </DrawerPrimitive.Trigger>
+          <TooltipContent
+            showArrow={false}
+            className="gap-1.5 bg-background/90 px-2 py-1.5 text-foreground ring-1 ring-border shadow-xs backdrop-blur-sm"
+          >
+            <Logo src={selected.logo} small />
+            <span className="font-mono font-medium tracking-tight">
+              {selected.label}
+            </span>
+          </TooltipContent>
+        </Tooltip>
         <DrawerContent
           side="bottom"
           portalAttributes={{ "data-locus-focus-click-zone": "" }}
@@ -161,22 +182,35 @@ export function LocusModelPicker({
   }
   return (
     <Menu.Root>
-      <Menu.Trigger
-        disabled={disabled}
-        render={
-          <InputGroupButton
-            size="icon-sm"
-            className="ml-1 size-9 text-muted-foreground active:scale-[0.98]"
-          />
-        }
-        aria-label={`Choose model. Current model: ${selected.label}`}
-        title={`Model: ${selected.label}`}
-      >
-        <LensConcaveIcon
-          aria-hidden="true"
-          className="size-5 -translate-x-0.5 stroke-[1.5]"
-        />
-      </Menu.Trigger>
+      <Tooltip>
+        <Menu.Trigger
+          disabled={disabled}
+          render={
+            <TooltipTrigger
+              disabled={disabled}
+              render={
+                <InputGroupButton
+                  disabled={disabled}
+                  size="icon-sm"
+                  className="size-9 text-muted-foreground active:scale-[0.98]"
+                />
+              }
+            />
+          }
+          aria-label={`Choose model. Current model: ${selected.label}`}
+        >
+          <LensConcaveIcon aria-hidden="true" className="size-5 stroke-[1.5]" />
+        </Menu.Trigger>
+        <TooltipContent
+          showArrow={false}
+          className="gap-1.5 bg-background/90 px-2 py-1.5 text-foreground ring-1 ring-border shadow-xs backdrop-blur-sm"
+        >
+          <Logo src={selected.logo} small />
+          <span className="font-mono font-medium tracking-tight">
+            {selected.label}
+          </span>
+        </TooltipContent>
+      </Tooltip>
       <Menu.Portal>
         <Menu.Positioner
           data-locus-focus-click-zone=""
@@ -210,7 +244,7 @@ export function LocusModelPicker({
                         <Menu.RadioGroup
                           value={modelId}
                           onValueChange={(value) => {
-                            if (isLocusModelId(value)) onChange(value);
+                            if (!disabled && isLocusModelId(value)) onChange(value);
                           }}
                         >
                           <Menu.RadioItem

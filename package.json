@@ -20,6 +20,7 @@
     "db:sync-greenhouse": "tsx scripts/sync-greenhouse-jobs.ts",
     "db:normalize-jobs": "tsx scripts/normalize-job-markdown.ts",
     "db:repair-job-markdown": "tsx --env-file=.env.local scripts/repair-job-markdown.ts",
+    "db:normalize-job-locations": "tsx --env-file=.env.local scripts/repair-job-locations.ts",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "audit:job-icons": "tsx --env-file=.env.local scripts/audit-job-category-icons.ts",

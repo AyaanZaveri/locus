@@ -1,3 +1,5 @@
+import { jobRegionAliases, verifiedJobPlaceAliases } from "./job-location-aliases";
+
 /** A job's locations are distinct places, separated by pipes in the profile. */
 const usRegions =
   "AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC";
@@ -63,6 +65,10 @@ const cityAliases: Record<string, string> = {
   "chicago, illinois": "Chicago, IL",
   "dallas, tx": "Dallas, TX",
   "dallas, texas": "Dallas, TX",
+  "denver": "Denver, CO",
+  "denver, co": "Denver, CO",
+  "denver, colorado": "Denver, CO",
+  "denver, colorado, united states": "Denver, CO",
   "washington dc": "Washington, DC",
   "washington, d.c.": "Washington, DC",
   "washington, dc": "Washington, DC",
@@ -93,8 +99,24 @@ const cityAliases: Record<string, string> = {
   "munich, germany": "Munich, Germany",
   "stockholm": "Stockholm, Sweden",
   "stockholm, sweden": "Stockholm, Sweden",
-  "sydney": "Sydney, Australia",
-  "sydney, australia": "Sydney, Australia",
+  "sydney": "Sydney, NSW",
+  "sydney, australia": "Sydney, NSW",
+  "sydney, nsw": "Sydney, NSW",
+  "sydney, new south wales": "Sydney, NSW",
+  "sydney, nsw, australia": "Sydney, NSW",
+  "sydney, new south wales, australia": "Sydney, NSW",
+  "melbourne": "Melbourne, VIC",
+  "melbourne, australia": "Melbourne, VIC",
+  "melbourne, vic": "Melbourne, VIC",
+  "melbourne, victoria": "Melbourne, VIC",
+  "melbourne, vic, australia": "Melbourne, VIC",
+  "melbourne, victoria, australia": "Melbourne, VIC",
+  "brisbane": "Brisbane, QLD",
+  "brisbane, australia": "Brisbane, QLD",
+  "brisbane, qld": "Brisbane, QLD",
+  "brisbane, queensland": "Brisbane, QLD",
+  "brisbane, qld, australia": "Brisbane, QLD",
+  "brisbane, queensland, australia": "Brisbane, QLD",
   "tokyo": "Tokyo, Japan",
   "tokyo, japan": "Tokyo, Japan",
   "seoul": "Seoul, South Korea",
@@ -110,15 +132,32 @@ const cityAliases: Record<string, string> = {
 };
 
 function canonicalPlace(place: string): string {
-  if (/\b(remote|distributed|anywhere|worldwide)\b/i.test(place)) return place;
+  if (/\b(distributed|anywhere)\b/i.test(place)) return place;
+  if (/^Remote-Friendly\s*\(Travel[- ]Required\)$/i.test(place)) {
+    return "Remote-Friendly (Travel Required)";
+  }
+  if (/^Remote-Friendly\b/i.test(place)) return place;
+
+  const remotePrefix = place.match(/^Remote(?:\s*[-–,]\s*|\s*\((.*)\)$)(.*)$/i);
+  const remoteSuffix = place.match(/^(.*?)\s*(?:[-–,]\s*Remote|\(Remote\))$/i);
+  if (remotePrefix || remoteSuffix) {
+    const eligibility = (remotePrefix ? remotePrefix[1] || remotePrefix[2] : remoteSuffix![1]).trim();
+    // Normalize spelling, never turn remote eligibility into an office or split
+    // an eligibility list into new independent locations.
+    const region = jobRegionAliases[eligibility.toLocaleLowerCase("en")];
+    const city = verifiedJobPlaceAliases[eligibility.toLocaleLowerCase("en")];
+    return `Remote - ${region || city || eligibility}`;
+  }
+  if (/^Remote$/i.test(place)) return "Remote";
 
   // Keep workplace modifiers visible, but don't let them make identical cities
   // different filter options. Do not remove a qualifier we cannot recognize.
   const prefix = place.match(/^(Hybrid\s*[-–]\s*)(.+)$/i);
   const base = prefix ? prefix[2] : place;
-  const suffix = base.match(/^(.*?)(\s*\((?:on-?site|hybrid)\))$/i);
+  const suffix = base.match(/^(.*?)(\s*(?:\((?:on-?site|hybrid|preferred)\)|HQ|Hub|Headquarters))$/i);
   const name = (suffix ? suffix[1] : base).trim();
-  const canonical = cityAliases[name.toLocaleLowerCase("en")];
+  const key = name.toLocaleLowerCase("en");
+  const canonical = verifiedJobPlaceAliases[key] || cityAliases[key] || jobRegionAliases[key];
   if (!canonical) return place;
   return `${prefix ? prefix[1] : ""}${canonical}${suffix ? suffix[2] : ""}`;
 }
@@ -135,6 +174,14 @@ function normalizePlace(place: string) {
 }
 
 function separateKnownPlaces(part: string): string[] {
+  // Verified on Together's individual postings: alternatives, not one address.
+  if (/^Pune or Bangalore, India$/i.test(part)) return ["Pune", "Bangalore"];
+  if (/^London & Amsterdam$/i.test(part)) return ["London", "Amsterdam"];
+  if (/^Japan \(Tokyo\)$/i.test(part)) return ["Tokyo, Japan"];
+  // Keep Firecrawl's preference and remote time-zone restriction intact.
+  if (part === "San Francisco, US or Toronto, Canada (Preferred) OR Remote (Americas, UTC-3 to UTC-10)") {
+    return ["San Francisco, CA", "Toronto, ON (Preferred)", "Remote - Americas, UTC-3 to UTC-10"];
+  }
   // A repeated city/state pattern is evidence of multiple US places; commas
   // inside a single address (e.g. "New York City, New York, United States") are not.
   const matches = [...part.matchAll(usPlace)];
@@ -174,7 +221,11 @@ export function splitJobLocations(location: string): string[] {
   // One verified ATS pattern encloses two explicit US cities in parentheses.
   const listedPlaces = location === "United States (New York | San Francisco)"
     ? "New York | San Francisco"
-    : location;
+    : location
+        // Verified ATS region labels with explicitly enumerated cities. Keep
+        // the broad region, rather than silently narrowing eligibility.
+        .replace("Europe (London | Brussels | Munich)", "Europe | London | Brussels | Munich")
+        .replace("Middle East (Dubai | Riyadh)", "Middle East | Dubai | Riyadh");
   return [
     ...new Set(
       listedPlaces
@@ -188,4 +239,33 @@ export function splitJobLocations(location: string): string[] {
 
 export function sanitizeLocation(location: string): string {
   return splitJobLocations(location).join(" | ");
+}
+
+const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
+const verifiedRegions = new Set([
+  "Europe", "North America", "Americas", "Middle East", "APAC", "APJ", "EMEA", "ANZ", "Worldwide",
+  "Arizona", "California", "New Jersey", "Ontario", "Ontario, Canada", "Alberta, Canada", "Victoria", "Korea",
+]);
+for (let first = 65; first <= 90; first++) {
+  for (let second = 65; second <= 90; second++) {
+    const code = String.fromCharCode(first, second);
+    const name = countryNames.of(code);
+    if (name && name !== code) verifiedRegions.add(name);
+  }
+}
+const verifiedPlaces = new Set([
+  ...Object.values(cityAliases),
+  ...Object.values(verifiedJobPlaceAliases),
+]);
+
+/** Unknown labels need source review, not a guessed city or subdivision. */
+export function getJobLocationReviewIssues(location: string): string[] {
+  return splitJobLocations(location).flatMap((place) => {
+    if (/^Remote(?: - |$)|^Remote-Friendly\b/i.test(place)) return [];
+    const base = place
+      .replace(/^Hybrid\s*[-–]\s*/i, "")
+      .replace(/\s*(?:\((?:on-?site|hybrid|preferred)\)|HQ|Hub|Headquarters)$/i, "")
+      .trim();
+    return verifiedPlaces.has(base) || verifiedRegions.has(base) ? [] : [place];
+  });
 }

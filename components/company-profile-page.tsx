@@ -116,7 +116,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
             </div>
             <SidebarTrigger
               aria-label="Open sidebar"
-              className="absolute top-3 left-3 border-border/50 bg-background/90 dark:bg-background/75 p-4! text-foreground shadow-xs backdrop-blur-sm hover:bg-background md:hidden"
+              className="absolute top-3 left-3 size-8 rounded-lg border-border/50 bg-background/85 p-0 text-foreground shadow-xs backdrop-blur-xl backdrop-saturate-150 hover:bg-background/95 md:hidden dark:bg-background/75 dark:hover:bg-background/85 [&_svg]:size-4!"
               size="icon"
             />
             <div className="absolute -bottom-8 left-4 rounded-xl ring-1 ring-border/75 bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-bottom-6 sm:left-5">
@@ -296,7 +296,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                                       {investor.logo ? (
                                         <img
                                           alt=""
-                                          className="size-3 rounded-full object-contain mr-0.5"
+                                          className="mr-0.5 size-3 rounded-full object-contain"
                                           src={investor.logo}
                                         />
                                       ) : null}

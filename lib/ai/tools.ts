@@ -246,8 +246,12 @@ function filterSearchResults(
  * Every query is constructed through Drizzle; it cannot execute model-authored
  * SQL or mutate a record.
  */
+// Responses can normalize omitted `strict` into strict schemas, making every
+// optional filter required. Explicitly opt out: Zod still validates tool input,
+// and callers can omit filters they do not need instead of inventing values.
 export const locusTools = {
   queryJobs: tool({
+    strict: false,
     description:
       "Filter/rank jobs by role keywords, title, department, ALL skills, job location, company industry, workplace type, seniority, employment type, minimum annual USD salary, sponsorship and new-grad eligibility. queryScope defaults role (title/skills only); allContent also searches descriptions/departments and can match unrelated roles. Department filters are recorded team labels, not proof of an engineering role. companySlugs composes with other queries. Defaults confirmed open; openOrUnknown includes unconfirmed. Unknown fields never satisfy positive filters. Salary uses the lower bound, not maximum. Returns limited job examples plus totalMatches, hasMore, totalCompanies and companySummaries (up to 50 companies counted BEFORE limit). Set limit to the number of roles requested. Remote does not mean worldwide: preserve location/travel restrictions.",
     inputSchema: jobsQuerySchema,
@@ -258,6 +262,7 @@ export const locusTools = {
     },
   }),
   queryCompanies: tool({
+    strict: false,
     description:
       "Filter companies by description keywords, industry/location literal substring, country, exact stage, inclusive founded-year bounds, employee bounds and minimum total funding in USD. Employee filters require the entire known range to fit; an unknown/open-ended upper bound cannot satisfy a maximum. Sort name ascending or totalFunding/employees/foundedYear descending (employees sorts lower bounds). Returns company cards, matching fields, totalMatches and hasMore. Funding is company TOTAL, not a round. companySlugs composes with other queries.",
     inputSchema: companiesQuerySchema,
@@ -267,6 +272,7 @@ export const locusTools = {
     },
   }),
   queryPeople: tool({
+    strict: false,
     description:
       "Filter recorded people across companies by name, role, founder status, companySlugs, company industry/location and country. Role CTO/CEO/CFO/COO includes spelled-out titles; other roles use literal substring. Location refers to the COMPANY, not the person's residence. Returns recorded roles, source/profile links, company context, totalMatches and hasMore. Use for cross-company people discovery; do not infer current employment from historical activity.",
     inputSchema: peopleQuerySchema,
@@ -276,6 +282,7 @@ export const locusTools = {
     },
   }),
   queryActivity: tool({
+    strict: false,
     description:
       "Query dated company activity by event type, inclusive after/before dates, short text keywords, companySlugs, company industry/location and country. Sort newest first or text relevance. Returns events with dated excerpts and source URLs, totalMatches and hasMore (counts EVENTS, not companies). Unknown/partial dates and future events are excluded. Use for recent launches, hiring signals and news; use queryFunding for structured funding amounts/stages/investors. Text matches are leads, not proof of certification or present-day status.",
     inputSchema: activityQuerySchema,
@@ -289,6 +296,7 @@ export const locusTools = {
     },
   }),
   queryFunding: tool({
+    strict: false,
     description:
       "Query structured funding rounds across the Locus database. Use for latest/recent funding, largest rounds, or filters by inclusive announcement dates, company, exact stage (case-insensitive), minimum USD amount, and investor name substring (lead or participating). Sort descending by announcedAt or amount. Returns round amounts, dates, investors, source URLs and totalMatches/hasMore. These are rounds, not company funding totals. Future rounds are excluded; recency excludes unknown or partial dates. Prefer this over text search for filtering or ranking funding. Use getCompanyProfile for total funding.",
     inputSchema: fundingQuerySchema,
@@ -302,6 +310,7 @@ export const locusTools = {
     },
   }),
   navigateLocus: tool({
+    strict: false,
     description:
       "Navigate only when the user asks to open or visit a result's page/details, not to show, sort or select chat widgets. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. Do not navigate for general research questions.",
     // DeepSeek requires a top-level JSON Schema object for every function.
@@ -343,6 +352,7 @@ export const locusTools = {
       }),
   }),
   presentLocusResults: tool({
+    strict: false,
     description:
       "Display previously verified entities as fresh widgets. Call directly without announcing it; the UI shows progress. Use for explicit redisplay, reordering or selection from prior turns, or a curated selection not already displayed this turn. sort handles alphabetical order in code; input preserves ranking order. limit caps total cards. Supply verified identities, not invented matches. If ranking evidence or the complete candidate set is missing, rerun the filtered query instead. Do not redundantly display the same current-turn results. Returns presentation metadata; prose adds only new facts. For cards-only requests emit no text before or after this call.",
     inputSchema: z.object({
@@ -472,6 +482,7 @@ export const locusTools = {
     },
   }),
   searchLocus: tool({
+    strict: false,
     description:
       "Search Locus for companies, people, and currently open jobs. Set types to exactly the entity categories the user requested. Use limit 3 for a focused lookup or recommendation. Use a larger limit (up to 12) when the user asks for all results in an industry, category, or location, or asks a follow-up such as 'what else' or 'anything else'. Results are ordered by relevance. Use this before answering a broad or ambiguous lookup question.",
     inputSchema: z.object({
@@ -487,6 +498,7 @@ export const locusTools = {
       withResultPresentation(await searchLocus(query, types, limit)),
   }),
   getCompany: tool({
+    strict: false,
     description:
       "Get the core Locus profile fields for one company when you know its slug. Use searchLocus first when the slug is unknown. For funding rounds use queryFunding; for acquisitions or other historical facts use searchKnowledge.",
     inputSchema: z.object({ slug: companySlugSchema }),
@@ -512,6 +524,7 @@ export const locusTools = {
     },
   }),
   getCompanyProfile: tool({
+    strict: false,
     description:
       "Read authoritative, complete company profile sections from the database. Use for About/what it does, employee count, funding totals/rounds/investors, or dated activity. The current page slug may be used directly. People and jobs have separate focused tools.",
     inputSchema: z.object({
@@ -575,6 +588,7 @@ export const locusTools = {
     },
   }),
   findCompanyPeople: tool({
+    strict: false,
     description:
       "Find a person by role or name within a specific company, e.g. CTO, Chief Technology Officer, founder. Filter BEFORE limiting. The current page slug may be used directly. Returns verified people with URLs usable for cards and navigation.",
     inputSchema: z.object({
@@ -627,6 +641,7 @@ export const locusTools = {
     },
   }),
   searchKnowledge: tool({
+    strict: false,
     description:
       'Search across company About/tagline, funding rounds/investors, and dated activity for claims, products, compliance terms, funding news, and concepts. Give 1-6 distinctive search terms (not a conversational sentence); wrap an exact compliance phrase in double quotes, e.g. "SOC 1 Type 1". Quote returned excerpt and source, not just a hit. Use companySlug to narrow to one company, otherwise search globally. Returns top passages, not an exhaustive list. This searches text, not numeric comparisons or the current job/people tables.',
     inputSchema: z.object({
@@ -687,6 +702,7 @@ export const locusTools = {
     },
   }),
   recommendOutreachTargets: tool({
+    strict: false,
     description:
       "Recommend companies to contact based on a user's current company and location. It ranks companies with active hiring signals in that location, prioritizing the same industry as the user's current company. Use this for questions like 'I work at X, who should I reach out to near Y?'.",
     inputSchema: z.object({
@@ -783,6 +799,7 @@ export const locusTools = {
     },
   }),
   listCompanyJobs: tool({
+    strict: false,
     description:
       "List open or unknown-status jobs at a company. Use the current page slug directly when applicable; otherwise resolve it with searchLocus. When recommending a role based on a user's background, include concise skills or role criteria. All matching jobs are ranked by title, focus, department, skills, and description before applying the result limit.",
     inputSchema: z.object({
@@ -842,6 +859,7 @@ export const locusTools = {
     },
   }),
   listCompanyPeople: tool({
+    strict: false,
     description:
       "List people recorded for a company. Use the company slug returned by searchLocus.",
     inputSchema: z.object({

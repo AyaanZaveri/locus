@@ -1,12 +1,52 @@
 ---
 name: company-profile-research
-description: Research companies into validated Autumn company profiles with evidence-backed funding, people, jobs, activity, and brand assets. Use for company-profile data work, not prose reports or UI implementation.
+description: Research companies into validated Autumn company profiles, automatically source and publish images to the locus-images GitLab repository, and import the profile with verified hosted image URLs into Neon. Use for company-profile data work, not prose reports or UI implementation.
 ---
 
 # Company Profile Research
 
 Return a single valid JSON object for the requested company. The result is data
 for a company profile, not a prose report or UI implementation.
+
+## Default invocation: complete research, images, publication, and import
+
+Running this skill for Autumn (for example, “run /company-profile-research on
+Heidi Health”) requests the entire workflow, including images and publication.
+Do not treat it as research-only unless the user explicitly requests a dry run,
+JSON-only output, or no publishing/database changes. No separate “do the images”
+prompt or routine confirmation is needed.
+
+1. Research the company and source its logo, banner, current employee portraits,
+   and investor logos. Reuse verified existing assets when suitable. Images are
+   part of every full run, not an optional follow-up.
+2. Save accepted images to `/Users/ayaanzaveri/Code/locus-images/public/`, using
+   the paths below. Check the checkout's remote points to
+   `gitlab.com/aytozuno21/locus-images` and read its README. If the checkout is
+   absent, locate or clone that repository using available credentials.
+3. Run `scripts/image_assets.py check` over every added/changed image. Reject
+   invalid or blank files; preserve alpha and account for background-only marks.
+4. Stage only the intended assets, inspect the staged diff, commit, and push to
+   `origin/main` automatically. Preserve unrelated changes; never force-push,
+   include secrets, or overwrite other work. Reuse existing published files
+   without an empty commit when nothing changed. Use new filenames for replaced
+   images to avoid stale CDN/browser caches.
+5. Wait for GitLab Pages publication and verify each image URL anonymously:
+   successful HTTP response, correct image MIME type, and decodable image bytes.
+   Use `https://locus-images-b3c414.gitlab.io/` plus its path relative to `public/`.
+6. Put those verified URLs in `logo`, `banner`, `people[].image`, and investor
+   `logo` fields throughout the validated profile. Import the complete payload
+   with `npm run db:import -- /absolute/path/to/company.json` from Autumn, then
+   verify the stored company profile in Neon contains the intended image URLs.
+   Preserve existing jobs/people when doing an images-only refresh, since the
+   importer replaces those collections.
+
+Finish only after publication, URL checks, validation, and database import have
+succeeded. If authentication, push, deployment, or import actually fails, report
+the precise failing step and retain the payload/assets for retry. Do not assume
+publishing is unavailable without trying the configured checkout and credentials,
+or silently use `null` to conceal a deployment failure. `null` is appropriate
+only when no attributable, usable image can be verified after sourcing attempts;
+preserve a valid existing image rather than removing it on a failed refresh.
 
 ## Autumn contract: source of truth
 
@@ -46,6 +86,16 @@ repository record. Do not hand-edit normalized database tables.
 - Use semantic names such as `banner.{ext}` and `logo.{ext}`; preserve the source format unless conversion is necessary.
 - Store downloaded person portraits under `public/companies/{slug}/people/{person-slug}/avatar.{ext}` in the image repo and use the same GitLab Pages URL prefix.
 - Preserve the repository keys `banner`, `logo`, `employees`, `financials`, `funding`, `jobs`, `people`, and `activity`.
+- Format `employees` as a number, numeric range, or supported lower bound followed
+  by ` employees`: `300 employees`, `11–50 employees`, `5,000+ employees`.
+  A `+` is valid when the source supports "at least" or "more than"; preserve it
+  rather than turning a lower bound into an exact count. Omit "approximately",
+  "estimated", source names, dates, parentheses, brackets, and explanatory notes
+  from this display field. Keep that provenance and uncertainty in the separate
+  research/evidence ledger instead. Preserve supported numbers/range endpoints;
+  do not invent a count, midpoint, or upper bound to satisfy the format.
+  Before import, check both `profile.employees` and `companies.employee_count`
+  use this format and match; verify both again on database readback.
 - Store investor logos in the **shared** `public/investors/` folder of the image repo, named `{slug}.{ext}`, and reference them as `https://locus-images-b3c414.gitlab.io/investors/{slug}.{ext}`. Check for an existing file first and reuse it; only download when absent. Prefer our hosted URL over a third-party proxy URL.
 - Never reference an asset URL that has not been deployed to the public GitLab Pages site. Do not add new images to this app repo's `public/` directory.
 - Validate JSON syntax, confirm every referenced image exists in the image repo and loads anonymously from GitLab Pages, and run
@@ -94,7 +144,7 @@ Treat this as structured data collection, not a narrative task. Work in passes:
 
 1. Inspect the target repository schema and existing assets.
 2. Search primary sources first: company site, newsroom/blog, official investor announcements, canonical careers board, official social profiles, and—when the company has a Y Combinator profile—the YC company page and linked founder profiles. Use YC as a high-value accelerator source for company facts, batch, founders, team-size snapshot, hiring, founder bios, and founder social/profile-photo links; cross-check changeable facts against current first-party sources.
-3. Use WebSearch for discovery and exact dates, WebFetch for static pages and APIs, and agent-browser for JavaScript-rendered pages. If WebSearch is unavailable, blocked, or fails to surface a needed primary source, use [Brave Search](https://search.brave.com/search?q=) with a URL-encoded query as the fallback. Prefer structured first-party job-board APIs such as Greenhouse or Ashby.
+3. Load the `ketch` skill and use Ketch first: `search` for discovery and exact dates, `scrape` for known URLs, and `crawl` to enumerate careers boards/blogs/site sections. Ketch can extract JavaScript-heavy ATS pages, including Ashby, without interactive browsing. Follow the Research tools section below for budgets and fallbacks. Cross-check structured first-party job-board APIs such as Greenhouse or Ashby for exhaustive listings and structured role facts.
 4. Normalize funding rounds independently. Never merge rounds that share a letter, and never replace a disclosed valuation with an estimate.
    Record a verified accelerator investment, including a YC investment, as its
    own funding round rather than only an accelerator badge. Use the disclosed
@@ -175,9 +225,15 @@ search, cards, and filters remain consistent.
 `jobs[].location` is one string with **distinct places separated by ` | `**.
 The UI renders these as ` · ` on a role and treats each place as its own
 location-filter option. A comma separates parts *within* a place, never a list
-of places. Preserve the original posting's eligibility and granularity: a
-province is not a city, a remote-eligible region is not an office, and a
-hybrid role is not necessarily fully remote.
+of places. Normalize verified cities in the US, Canada, and Australia as
+`City, official State/Province abbreviation` (Denver, CO; Toronto, ON;
+Melbourne, VIC; Sydney, NSW; Brisbane, QLD). For other countries use
+`City, Country` consistently (London, UK; Berlin, Germany; Tokyo, Japan),
+without requiring or inventing an administrative subdivision. Country-only
+labels such as `Japan` stay country-only; region/province-only labels retain
+their granularity. Preserve eligibility and workplace qualifiers: a province is
+not a city, a remote-eligible region is not an office, and hybrid is not
+necessarily fully remote.
 
 - Take every location from the individual posting or ATS detail data, including
   secondary locations. Split explicit semicolons/pipes and verified multi-city
@@ -185,24 +241,16 @@ hybrid role is not necessarily fully remote.
   `San Francisco, CA, New York City, NY, Seattle, WA` ->
   `San Francisco, CA | New York, NY | Seattle, WA`.
   The first comma in `San Francisco, CA` is **not** a location boundary.
-- Run the repository's `sanitizeLocation` from `lib/job-location.ts` (also
-  re-exported by `scripts/lib/job-location.ts`) on every job, even when the ATS
-  provides a single location string. It maps verified city aliases across
-  companies (e.g. `San Francisco`, `San Francisco, California` and
-  `San Francisco, CA` all become `San Francisco, CA`), and handles known
-  repeated city/state pairs and verified hybrid-city lists. Extend the
-  curated aliases and tests for any new verified variant; do not add fuzzy
-  guesses or city aliases for remote/region labels. Inspect its output against
-  the source:
-  do not assume it can reliably split arbitrary comma lists or infer geography
-  from a company headquarters.
-- Expand verified country abbreviations in labels to readable names:
-  `Ontario, CAN` -> `Ontario, Canada`, `Dublin, IE` -> `Dublin, Ireland`,
-  `Zürich, CH` -> `Zürich, Switzerland`. Retain US state abbreviations in
-  city/state pairs (`San Francisco, CA`), and never reinterpret a state/province
-  as a city. Preserve a label such as `Remote-Friendly, United States` as a
-  remote eligibility region, not a US city; set `workplaceType` separately from
-  the source's remote/hybrid/onsite designation.
+- Run the shared `sanitizeLocation` deterministic normalizer on every job at
+  parse/import boundaries, even for a single ATS location. Use curated aliases
+  and regression tests for verified variants only. Do not fuzzy-geocode,
+  destructively infer places, infer from headquarters, split arbitrary comma
+  lists, or turn country-only/region labels into cities.
+- Remote-eligible geographies are never offices/cities. Use
+  `Remote - {original verified eligibility}`; preserve qualifiers such as
+  `Remote-Friendly` and travel restrictions, and never guess eligibility.
+  Keep workplaceType aligned with source designation and preserve hybrid,
+  onsite, and HQ qualifiers.
 - For ambiguous unseparated alternatives (`Pune or Bangalore, India`) or broad
   regions (`APAC`, `Europe`), verify each place on the canonical posting before
   splitting; if still ambiguous, retain the source label and flag it for review
@@ -218,23 +266,35 @@ hybrid role is not necessarily fully remote.
   the same city's existing labels across companies. Verify that equivalent
   places resolve to the same display name (for example, `San Francisco, CA`),
   including names without a state/country and names with full state/country
-  spellings. If a new, verified variant is missing from `cityAliases`, extend
-  `lib/job-location.ts` and add a regression case to
+   spellings. If a new, verified variant is missing, extend the exact alias
+   registry in `lib/job-location-aliases.ts` (or the verified splitting rules
+   in `lib/job-location.ts`) and add a regression case to
   `lib/job-location.test.ts` **before** importing. Never treat an unchanged
   output from `sanitizeLocation` as evidence that the input is canonical: an
   unrecognized alias also comes back unchanged. Do not normalize an ambiguous
-  city, a region, or remote eligibility by guessing.
+   city, a region, or remote eligibility by guessing.
+- Run `getJobLocationReviewIssues` on every normalized location before import.
+  The importer enforces this gate before writes. If it flags a label, verify
+  its place and source scope; qualify an ambiguous city explicitly rather than
+  making an unsafe global alias. Country-only labels such as `Japan` are valid.
 - After import, compare the company's stored `profile.jobs[].location` with
   its normalized `jobs.location` rows and check that running
   `sanitizeLocation` again changes neither. Run
-  `npx tsx --env-file=.env.local scripts/repair-job-locations.ts` in dry-run
-  mode as a broader drift check, and resolve any new locations it flags. A
-  zero-change dry run confirms idempotence for *known* aliases, not that every
-  possible future ATS spelling has been discovered.
+   `npm run db:normalize-job-locations` as a broader
+  whole-database audit of profile locations, normalized rows, and search text.
+  Require dry-run review, backup, atomic optimistic-safe updates, preserved IDs
+  and all non-location data, idempotence, and all-record readback. Never mutate
+  the database without explicit authorization. Resolve ambiguity using canonical
+   ATS sources; do not infer a headquarters or geocode destructively.
+   Apply an authorized, reviewed repair with
+   `npm run db:normalize-job-locations -- --apply --backup /absolute/new-backup.json`;
+   the command refuses unresolved labels and existing backup filenames. Use
+   `--overrides /absolute/source-reviewed-overrides.json` only for exact
+   posting-URL/old-location corrections backed by `sourceUrl` evidence.
 
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page and, if available, the company's YC profile and each linked active founder profile. YC pages can be especially useful for resolving founders, current founder roles, bios, LinkedIn/X links, and identified founder portraits; verify current-role claims against the company's current site or another current source. Verify LinkedIn/X URLs rather than constructing handles from names. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
-8. Write the repository-shaped JSON, download requested assets, then run syntax and path checks.
+8. Complete the default image-publication workflow above: source and download images, validate them, commit/push to the GitLab image repository, verify hosted URLs, validate the profile, import it into Neon, and verify the stored image URLs.
 
 ### Job-description fidelity gate
 
@@ -390,25 +450,52 @@ the same passes sequentially rather than skipping them.
 
 ## Research tools
 
-Use a layered approach to gather information efficiently:
+### Ketch first: discovery, pages, and careers-board enumeration
 
-1. **WebSearch** — Initial discovery: funding announcements, news, Crunchbase/Tracxn profiles, LinkedIn results, job boards. Cast a wide net first.
-   - **Fallback:** When WebSearch cannot provide an actionable result, open `https://search.brave.com/search?q={URL-encoded query}` and continue from the result's primary source. Brave is a discovery fallback, not a citation substitute.
-2. **WebFetch** — Pull structured content from pages that render well without JavaScript: company about pages, press releases, blog posts, SEC filings.
-3. **agent-browser** — Use for pages that require JavaScript rendering, interactive navigation, or block simple fetches:
-   - Company career pages (Ashby, Greenhouse, Lever, Workday)
-   - LinkedIn profiles and company pages (for extracting profile pictures, logos, and banners)
-   - Crunchbase, Tracxn, PitchBook pages behind dynamic loaders
-   - GitHub repositories (for star counts, contributor data)
-   - Any page where WebFetch returns incomplete or empty content
+Use the `ketch` skill and CLI before another search/scraping tool. These are
+the default entry points for every evidence lane, including subagents:
 
-   Example workflow:
+```sh
+ketch search 'Company funding announcement' --json --limit 5
+ketch scrape 'https://company.com/announcement' --json --max-chars 8000
+ketch crawl 'https://jobs.ashbyhq.com/verified-board-slug' --json --depth 1
+ketch scrape 'https://jobs.ashbyhq.com/verified-board-slug/posting-id' --json --max-chars 8000
+```
 
-   ```
-   agent-browser open https://company.com/careers
-   agent-browser snapshot -i
-   // read job listings from the snapshot
-   ```
+Save large crawl/scrape results to a research file and inspect bounded summaries
+or selected entries instead of dumping entire boards into context. Keep Markdown
+formatting for job-description collection; `--trim` is for text-only inspection.
+Read `ketch <surface> --help` for supported flags. Check exit status and each
+result's errors. Verify title, company identity, and direct source URLs: search
+can still return similarly named companies.
+
+For jobs, derive the real ATS board from the company careers page, crawl the
+board to enumerate exact posting URLs and listing metadata, then scrape each
+individual posting for its complete description. Cross-check the canonical
+ATS JSON API for the full job set, secondary locations, workplace mode, dates,
+salary currency/ranges, and equity. Use the complete API body as an additional
+primary source or fallback when a detail scrape is incomplete. A crawl result
+containing every job link is not proof that all linked descriptions were read.
+Do not truncate or summarize descriptions to fit the default output budget;
+inspect the returned ending/length and raise the cap for a longer known posting.
+
+Verified on Heidi's Ashby board: `ketch scrape` of the Support Engineer posting
+returned the full role, requirements, values, and benefits; `ketch crawl` of
+`https://jobs.ashbyhq.com/heidihealth.com.au` returned a single board page with
+79 distinct posting links and listing metadata. It did not return 79 full
+posting bodies. Treat this as a workflow example, not a permanent job count.
+
+Fallback only after Ketch is unavailable or demonstrably fails: DonSeTch CLI
+(`donsetch-cli` skill) for search/fetch, then built-in `websearch` for discovery.
+For authentication, forms, screenshots, or interaction that extraction cannot
+handle, use `bladebro-cli`; do not use `agent-browser`. Do not fetch a
+search-results page as a substitute for a search tool. Direct structured ATS
+API calls are allowed and complement this source-reading workflow.
+
+Search-query examples labeled `WebSearch` below are query suggestions for
+`ketch search`, not instructions to bypass Ketch. Older social-profile browser
+examples describe extraction intent; use `bladebro-cli` when interaction is
+necessary, not `agent-browser`.
 
 ## Exhaustive URL resolution
 
@@ -511,20 +598,24 @@ LinkedIn shows the tagline directly in search snippets (e.g., "Company | 123 fol
 **People portraits** — Find and verify the person before choosing an image. Use
 this source order:
 
-1. The `user.avatar_url` returned by `https://api.fxtwitter.com/<handle>` for
-   the person's **verified own X account**, provided their identity and current
-   company role are independently confirmed. Apply the mandatory
+1. The company's official team, leadership, or brand page with the person's
+   name and role beside their portrait. Check this before social providers;
+   use these official portraits for everyone for whom they are available.
+2. **unavatar.io through the `curl-via-proxy` skill**, using the person's
+   verified LinkedIn username or own X/Twitter username, when the company
+   has no official team page with pictures or that page lacks this person's
+   usable portrait. Follow the workflow below; never guess a username.
+3. The `user.avatar_url` returned by `https://api.fxtwitter.com/<handle>` for
+   the person's verified own X account. Apply the mandatory
    `_normal` → `_400x400` replacement below before downloading the avatar.
-2. The company's team, leadership, author, or newsroom page with the person's
-   name and role beside their portrait.
-3. An official company press kit, event/speaker page, webinar, podcast, or
+4. An official company author/newsroom, press kit, event/speaker page, webinar, podcast, or
    partner announcement that identifies the person in the image.
-4. The person's own site or official bio page.
-5. The person's identified founder photo on their YC founder profile or the
+5. The person's own site or official bio page.
+6. The person's identified founder photo on their YC founder profile or the
    company's YC profile. Use only where the page labels/links the person, and
    corroborate identity and current employment independently.
-6. Their verified LinkedIn profile picture.
-7. A verified GitHub profile only when it is clearly the same person and no
+7. Their verified LinkedIn profile picture retrieved directly, where permitted.
+8. A verified GitHub profile only when it is clearly the same person and no
    stronger portrait is available.
 
 Search the company domain first (`site:company.com "Full Name"`), then search
@@ -535,7 +626,56 @@ Avoid group shots, stock images, heavily cropped photos, and low-resolution
 avatars. Prefer a recent, square-or-crop-safe headshot with enough resolution
 for the profile UI.
 
-**LinkedIn profile pictures** — LinkedIn is a strong fallback, not the default.
+### Second-priority portraits: unavatar.io with curl-via-proxy
+
+Load the `curl-via-proxy` skill and use its bundled Bun helper for these
+public image GET requests. Use exact usernames from verified profile URLs
+or official social links; corroborate the person's identity and current role
+before selecting their image. Search `Full Name Company site:linkedin.com/in/`
+to discover LinkedIn URLs; do not fabricate handles. A search snippet can
+identify a profile without opening LinkedIn when the user requests that.
+
+Supported endpoints:
+
+```text
+https://unavatar.io/linkedin/user:{username}
+https://unavatar.io/x/{username}
+```
+
+Run from the `curl-via-proxy` skill directory, or resolve its script path:
+
+```sh
+bun run scripts/download.ts \
+  'https://unavatar.io/linkedin/user:simon-last-41404140' \
+  --output '/absolute/temp/path/simon-last.jpg' --expect-image --country us
+bun run scripts/download.ts \
+  'https://unavatar.io/x/verified-username' \
+  --output '/absolute/temp/path/person-avatar.jpg' --expect-image --country us
+```
+
+Keep TLS verification enabled. Never send credentials, cookies, private URLs,
+or authorization headers through free proxies, and never silently fall back
+to a direct request. Record the returned proxy, HTTP status, actual MIME type,
+byte count, endpoint, and output path in the research ledger. All-proxy failure
+means try the next ranked portrait source, not invent an image.
+
+Inspect the response before publishing: HTTP 200 and `image/*` can still be
+a generic silhouette, default SVG, initials, blank image, or unrelated person.
+Reject generic placeholders and misattributed images. A branded illustration
+is acceptable only when attributable to that specific person's verified
+profile; do not describe it as a photograph. Preserve the actual image format,
+not the requested filename extension, and run `scripts/image_assets.py check`.
+
+For Autumn writes, download accepted portraits into the separate image repo's
+`public/companies/{slug}/people/{person-slug}/avatar.{ext}`. Automatically
+commit/push only the intended assets, wait for GitLab Pages success, verify
+each hosted URL anonymously with the correct MIME type, then import the
+updated profile with `npm run db:import -- /absolute/path/to/company.json`.
+Do not stop at a temporary download or store an unavatar.io proxy URL in Neon.
+For research-only requests, do not publish or import.
+
+**Direct LinkedIn profile pictures** — This is a later fallback after official
+team portraits and the unavatar.io proxy workflow.
 When the profile and current role are verified, extract the raw image URL:
 
 ```
@@ -550,10 +690,10 @@ https://media.licdn.com/dms/image/v2/{path}/profile-displayphoto-scale_200_200/{
 ```
 
 If LinkedIn does not provide a usable image, continue through the ranked
-sources above. Do not use unavatar.io or email/avatar proxies as final profile
-portraits: they are difficult to attribute, may be stale, and do not provide
-enough identity confidence. Use `null` when no attributable, crop-safe image
-can be verified.
+sources above. Accepted unavatar.io downloads may be final portrait assets
+after identity, placeholder, image-quality, and publication checks; never use
+an unverified email/avatar proxy or its remote endpoint as the stored image.
+Use `null` when no attributable, crop-safe image can be verified.
 
 **Company/investor logo URLs** — For a company avatar/logo, first use the
 verified X account and FxTwitter workflow under **Brand assets and banners**;
@@ -581,11 +721,14 @@ Fallback: Use unavatar.io with the verified domain:
 https://unavatar.io/{verified-domain.com}
 ```
 
-**Career page URLs** — Use agent-browser to scrape the actual career page and extract the **exact deep-link URL for each job posting**. Do not use the generic careers page URL for individual jobs. Use JavaScript evaluation to extract hrefs:
+**Career page URLs** — Use Ketch to scrape the actual careers page and crawl
+its verified ATS board to extract the **exact deep-link URL for each posting**.
+Do not use the generic careers page URL for individual jobs. For example:
 
 ```bash
-agent-browser open https://company.com/careers
-agent-browser eval "Array.from(document.querySelectorAll('a')).filter(a => a.href.includes('/jobs/')).map(a => ({title: a.textContent.trim(), url: a.href}))"
+ketch scrape 'https://company.com/careers' --json --max-chars 8000
+ketch crawl 'https://jobs.ashbyhq.com/verified-board-slug' --json --depth 1
+ketch scrape 'https://jobs.ashbyhq.com/verified-board-slug/posting-id' --json --max-chars 8000
 ```
 
 Each `jobs[].url` must take the user directly to that specific role's application page. Open that exact page (or its detail API) and capture its whole substantive posting for `jobs[].description`; do not stop at the careers-listing preview.
@@ -632,16 +775,17 @@ Each `jobs[].url` must take the user directly to that specific role's applicatio
 
 ## Avatars and images
 
-**Prioritize verified X avatars for people when available.** First establish
-the person's identity and current role from a company page or other independent
-evidence, then confirm their own X handle before querying FxTwitter. An X name
-match alone is not identity proof; if attribution fails, use the company's
-identified portrait or official bio instead. LinkedIn is a fallback, not the
-first image provider. Never use an unverified proxy avatar as a final portrait.
+**Prioritize official team portraits, then unavatar.io via curl-via-proxy.**
+Follow the ranked **People portraits** workflow above for both LinkedIn and
+X/Twitter avatars. FxTwitter and direct LinkedIn images are later fallbacks.
+Establish identity and current role independently; a name match or successful
+proxy response alone is not identity proof. Publish and import accepted new
+portraits automatically for Autumn writes, just like logos and banners.
 
 ### LinkedIn Profile Pictures
 
-For people, extract the raw LinkedIn profile picture URL:
+If the higher-priority sources failed and direct LinkedIn browsing is permitted,
+extract the raw LinkedIn profile picture URL:
 
 ```
 agent-browser open https://linkedin.com/in/{handle}
@@ -699,7 +843,8 @@ local `logo.{ext}` and `banner.{ext}` files and run the deterministic checks
 below. If the response or image is unavailable, stale, incorrectly attributed,
 or unsuitable for the UI crop, continue through the fallback order rather than
 guessing an X handle. For verified personal X handles, use the same endpoint's
-`user.avatar_url` as the first portrait candidate under **People portraits**.
+`user.avatar_url` as a later portrait candidate under **People portraits**,
+after official team portraits and unavatar.io through `curl-via-proxy`.
 
 **Logo source order:**
 
@@ -770,7 +915,7 @@ verification” below.
 
 ### Fallback: unavatar.io for company and investor logos
 
-Use [unavatar.io](https://unavatar.io) only for a company or investor logo when
+For company or investor logos, use [unavatar.io](https://unavatar.io) only when
 official assets, Brandfetch, Logo.dev, and LinkedIn do not provide a usable
 candidate:
 

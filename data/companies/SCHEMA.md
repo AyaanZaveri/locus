@@ -35,6 +35,36 @@ npm run validate:companies
 - `activity.time` is display text; `activity.dateTime` is a machine-readable
   date or timestamp.
 
+## Automatic image publication for company research
+
+A normal `/company-profile-research` run includes image sourcing and publication
+and Neon import automatically, without a separate images request. Only an
+explicit research-only/dry-run/no-publish request skips these writes.
+
+- Use the image checkout `/Users/ayaanzaveri/Code/locus-images`, whose remote is
+  `https://gitlab.com/aytozuno21/locus-images`. Do not save new images in this
+  application's `public/` folder.
+- Download company logo/banner to `public/companies/<slug>/images/`, portraits
+  to `public/companies/<slug>/people/<person-slug>/avatar.<ext>`, and investor
+  logos to shared `public/investors/` in that image checkout. Reuse suitable
+  verified existing images. Use new filenames when replacing published images.
+- Run the research skill's `scripts/image_assets.py check` on added/changed
+  assets, then automatically commit and push only those assets to `origin/main`.
+  Inspect staged changes and preserve unrelated work; never force-push.
+- Wait for GitLab Pages publication, then verify each anonymous hosted URL
+  returns decodable image bytes with the appropriate MIME type. Use
+  `https://locus-images-b3c414.gitlab.io/` plus the path relative to `public/`.
+- Set `logo`, `banner`, `people[].image`, and investor `logo` fields to verified
+  hosted URLs; validate the payload, run `npm run db:import -- /absolute/path/to/company.json`,
+  and verify the image URLs in the stored Neon profile. An images-only import
+  must preserve the existing jobs and people collections.
+
+Do not stop after researching or downloading images. Publication and import
+are completion gates. Report actual access/deployment/import failures rather
+than assuming publication is unavailable or substituting `null` for a failed
+deployment. Use `null` only for images that genuinely cannot be sourced and
+verified, and keep valid existing images on a failed refresh.
+
 ## Required top-level shape
 
 ```ts
@@ -127,7 +157,7 @@ type FundingRound = {
 
 type Job = {
   title: string;
-  location: string; // distinct verified places separated by " | "; commas stay within one place
+  location: string; // normalized verified places separated by " | "; commas stay within one place
   focus: string;
   url?: string | null;
   // Almost-lossless, sanitized CommonMark transcription of the full posting.
@@ -199,6 +229,32 @@ type Activity = {
   sourceUrl?: string | null;
 };
 ```
+
+### Job location policy
+
+Normalize every job location with the shared deterministic `sanitizeLocation`
+normalizer at parse/import boundaries. Use curated verified aliases only; do
+not fuzzy-geocode, infer from headquarters, or destructively guess ambiguous
+places. Verify ambiguous alternatives against the canonical ATS posting. Split
+only explicit or source-verified alternatives, with ` | ` between places and
+commas only within a place.
+
+- US, Canadian, and Australian cities use `City, official State/Province
+  abbreviation` (Denver, CO; Toronto, ON; Melbourne, VIC; Sydney, NSW;
+  Brisbane, QLD).
+- Cities in other countries use `City, Country` consistently (London, UK;
+  Berlin, Germany; Tokyo, Japan); do not invent an administrative subdivision.
+  Preserve country-only labels (Japan) and region/province-only granularity.
+- Remote eligibility is not an office or city. Canonicalize as
+  `Remote - {original verified eligibility}`; preserve qualifiers such as
+  `Remote-Friendly`, travel restrictions, and hybrid/onsite/HQ qualifiers.
+  Never guess eligibility or workplace type.
+
+Run `scripts/repair-job-locations.ts` for whole-database drift audits across
+profile locations, normalized job rows, and searchable text. Repairs require a
+reviewed dry run and backup, atomic optimistic-safe updates, preservation of IDs
+and all non-location data, idempotence, and readback of every record. Do not
+perform database mutations without authorization.
 
 ## Compatibility note
 

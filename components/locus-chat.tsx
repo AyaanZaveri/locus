@@ -27,6 +27,7 @@ import {
   LensConcaveIcon,
   PlusIcon,
   SquareIcon,
+  TimerIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Streamdown } from "streamdown";
@@ -921,8 +922,14 @@ export function LocusChat() {
                               return null;
                             })}
                             {responseDurations[message.id] !== undefined ? (
-                              <p className="mt-2 px-2 font-mono text-[11px] leading-4 text-muted-foreground tabular-nums">
-                                Done in{" "}
+                              <p
+                                className="mt-2 flex items-center gap-1.5 px-2 font-mono text-[11px] leading-4 text-muted-foreground tabular-nums"
+                                aria-label={`Response completed in ${responseDurations[message.id].toFixed(1)} seconds`}
+                              >
+                                <TimerIcon
+                                  aria-hidden="true"
+                                  className="size-3"
+                                />
                                 {responseDurations[message.id].toFixed(1)}s
                               </p>
                             ) : null}
@@ -969,7 +976,7 @@ export function LocusChat() {
                       </div>
                     ) : null}
                     <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
-                      <InputGroupAddon>
+                      <InputGroupAddon className="cursor-default">
                         <LocusModelPicker
                           modelId={modelId}
                           onChange={setModelId}

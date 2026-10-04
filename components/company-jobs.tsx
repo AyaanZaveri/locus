@@ -24,6 +24,11 @@ import {
 import { type CompanyProfile } from "@/lib/company-profile";
 import { splitJobLocations } from "@/lib/job-location";
 import { getJobLocationCountryCode } from "@/lib/job-location-country";
+import {
+  displayJobFilterLocation as displayLocation,
+  matchesJobLocationFilter,
+  normalizeJobLocationSelection,
+} from "@/lib/job-location-filter";
 import { Globe2, Laptop, Search, UsersRound } from "lucide-react";
 
 type Props = {
@@ -32,13 +37,6 @@ type Props = {
 };
 
 const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
-
-function displayLocation(place: string) {
-  return place
-    .trim()
-    .replace(/^Hybrid\s*[-–]\s*/i, "")
-    .replace(/\s*(?:\((?:on-?site|hybrid)\)|\b(?:HQ|Hub|Headquarters))$/i, "");
-}
 
 function getLocationGroups(jobs: Props["jobs"]) {
   const counts = new Map<string, number>();
@@ -120,7 +118,7 @@ function LocationIcon({ location }: { location: string }) {
 
 export function CompanyJobs({ company, jobs }: Props) {
   const [query, setQuery] = useState("");
-  const [location, setLocation] = useState("all");
+  const [selectedLocations, setSelectedLocations] = useState<string[]>(["all"]);
   const [selectedDepartments, setSelectedDepartments] = useState<string[]>([]);
   const isMobile = useMobileSheet();
 
@@ -153,12 +151,27 @@ export function CompanyJobs({ company, jobs }: Props) {
   );
   const locationItems = useMemo(
     () => [
-      { label: "Location", value: "all" },
+      { label: "All locations", value: "all" },
       ...(hasRemoteJobs ? [{ label: "Remote", value: "remote" }] : []),
       ...locations.map((place) => ({ label: place, value: place })),
     ],
     [hasRemoteJobs, locations],
   );
+  const allLocations = selectedLocations.includes("all");
+  const locationIcon =
+    selectedLocations.length === 1 ? selectedLocations[0] : "all";
+  const locationLabel = allLocations
+    ? "Location"
+    : selectedLocations.length === 1
+      ? selectedLocations[0] === "remote"
+        ? "Remote"
+        : selectedLocations[0]
+      : `${selectedLocations.length} locations`;
+  function changeLocations(next: string[]) {
+    setSelectedLocations((previous) =>
+      normalizeJobLocationSelection(previous, next),
+    );
+  }
   const SelectedDepartmentIcon =
     selectedDepartments.length === 1
       ? getJobDepartmentIcon(selectedDepartments[0])
@@ -172,21 +185,7 @@ export function CompanyJobs({ company, jobs }: Props) {
       (!job.department || !selectedDepartments.includes(job.department))
     )
       return false;
-    if (
-      location === "remote" &&
-      job.workplaceType !== "remote" &&
-      !/\bremote\b/i.test(job.location)
-    )
-      return false;
-    if (
-      location !== "all" &&
-      location !== "remote" &&
-      !splitJobLocations(job.location).some(
-        (place) =>
-          displayLocation(place).toLowerCase() === location.toLowerCase(),
-      )
-    )
-      return false;
+    if (!matchesJobLocationFilter(job, selectedLocations)) return false;
     if (!searchTerms.length) return true;
 
     const searchableText = [
@@ -241,9 +240,10 @@ export function CompanyJobs({ company, jobs }: Props) {
           {hasRemoteJobs || locations.length > 0 ? (
             isMobile ? (
               <CompanyJobFilterDrawer
-                title="Location"
-                values={[location]}
-                onChange={(values) => setLocation(values[0] ?? "all")}
+                title="Locations"
+                multiple
+                values={selectedLocations}
+                onChange={changeLocations}
                 groups={[
                   {
                     options: [
@@ -273,48 +273,43 @@ export function CompanyJobs({ company, jobs }: Props) {
                   })),
                 ]}
               >
-                <LocationIcon location={location} />
+                <LocationIcon location={locationIcon} />
                 <span
-                  className={`min-w-0 flex-1 truncate ${location === "all" ? "text-muted-foreground" : ""}`}
+                  className={`min-w-0 flex-1 truncate ${allLocations ? "text-muted-foreground" : ""}`}
                 >
-                  {location === "all"
-                    ? "Location"
-                    : location === "remote"
-                      ? "Remote"
-                      : location}
+                  {locationLabel}
                 </span>
               </CompanyJobFilterDrawer>
             ) : (
               <Select
                 items={locationItems}
-                onValueChange={(value) => setLocation(value ?? "all")}
-                value={location}
+                multiple
+                onValueChange={changeLocations}
+                value={selectedLocations}
               >
                 <SelectTrigger
                   aria-label="Filter locations"
                   className="w-full"
                   title={
-                    location === "all"
+                    allLocations
                       ? "All locations"
-                      : location === "remote"
-                        ? "Remote"
-                        : location
+                      : selectedLocations
+                          .map((value) =>
+                            value === "remote" ? "Remote" : value,
+                          )
+                          .join(", ")
                   }
                 >
-                  <LocationIcon location={location} />
+                  <LocationIcon location={locationIcon} />
                   <SelectValue className="min-w-0 overflow-hidden">
                     <span
                       className={
-                        location === "all"
+                        allLocations
                           ? "min-w-0 truncate text-muted-foreground"
                           : "min-w-0 truncate"
                       }
                     >
-                      {location === "all"
-                        ? "Location"
-                        : location === "remote"
-                          ? "Remote"
-                          : location}
+                      {locationLabel}
                     </span>
                   </SelectValue>
                 </SelectTrigger>

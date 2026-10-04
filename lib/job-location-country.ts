@@ -3,11 +3,11 @@
 const countryPatterns: [code: string, pattern: RegExp][] = [
   [
     "us",
-    /\b(united states|usa|u\.s\.|us|san francisco|san mateo|palo alto|mountain view|new york|nyc|seattle|washington|austin|boston|chicago|los angeles|san diego|san antonio|atlanta|cincinnati|dallas|denver|houston|idaho falls|miami|nashville|new jersey|philadelphia|phoenix|portland|raleigh|richmond|saint paul|salt lake city|california|colorado|georgia|illinois|massachusetts|minnesota|oregon|pennsylvania|texas|virginia)\b/i,
+    /\b(united states|usa|u\.s\.|us|san francisco|san mateo|palo alto|mountain view|new york|nyc|seattle|washington|austin|boston|chicago|los angeles|san diego|san antonio|atlanta|charlotte|cincinnati|dallas|denver|detroit|houston|idaho falls|las vegas|miami|nashville|new jersey|philadelphia|phoenix|portland|raleigh|richmond|saint paul|salt lake city|tampa|california|colorado|georgia|illinois|massachusetts|minnesota|oregon|pennsylvania|texas|virginia)\b/i,
   ],
   [
     "ca",
-    /\b(canada|canadian|toronto|montreal|montréal|vancouver|ottawa|calgary|edmonton|halifax|winnipeg|ontario|alberta)\b|,\s*CAN\b/i,
+    /\b(canada|canadian|toronto|montreal|montréal|vancouver|ottawa|calgary|edmonton|halifax|winnipeg|ontario|alberta)\b|,\s*(CAN|BC|QC)\b/i,
   ],
   ["gb", /\b(united kingdom|uk|london|edinburgh|england)\b/i],
   ["fr", /\b(france|paris|marseille)\b/i],

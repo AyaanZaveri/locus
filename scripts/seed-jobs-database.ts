@@ -7,6 +7,7 @@ import {
 import { readFile } from "node:fs/promises";
 import { db } from "../lib/db/client";
 import { companies, jobs, people } from "../lib/db/schema";
+import { getJobLocationReviewIssues } from "../lib/job-location";
 
 function searchText(
   companyName: string,
@@ -44,6 +45,21 @@ async function main() {
     : await getCompaniesFromFiles();
   let jobCount = 0;
   let peopleCount = 0;
+
+  // Check the entire import before any writes. An unchanged normalization
+  // result can mean an unknown alias, not a correctly formatted place.
+  const locationIssues = profiles.flatMap((profile) =>
+    profile.jobs.flatMap((job) =>
+      getJobLocationReviewIssues(job.location).map(
+        (place) => `${profile.slug}: ${job.title}: ${place}`,
+      ),
+    ),
+  );
+  if (locationIssues.length) {
+    throw new Error(
+      `Unreviewed job locations. Verify the posting, qualify ambiguous places, and extend the shared aliases/tests before importing:\n${locationIssues.join("\n")}`,
+    );
+  }
 
   for (const profile of profiles) {
     const [company] = await db

@@ -71,7 +71,7 @@ export function CompanyJobFilterDrawer({
           </DrawerTitle>
           <DrawerDescription className="sr-only">
             {multiple
-              ? "Select one or more teams to filter jobs."
+              ? `Select one or more ${title.toLowerCase()} to filter jobs.`
               : "Select a location to filter jobs."}
           </DrawerDescription>
           <Button
@@ -109,7 +109,7 @@ export function CompanyJobFilterDrawer({
                     />
                     <span
                       aria-hidden="true"
-                      className="flex size-4.5 shrink-0 items-center justify-center [&>svg]:size-4.5 [&>img]:size-4.5"
+                      className={`flex size-4.5 shrink-0 items-center justify-center [&>svg]:size-4.5 [&>img]:size-4.5 [&>img]:-translate-y-px ${option.value === "all" || option.value === "remote" ? "[&>svg]:-translate-y-px" : ""}`}
                     >
                       {option.icon}
                     </span>
