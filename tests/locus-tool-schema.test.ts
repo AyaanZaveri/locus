@@ -3,6 +3,13 @@ import { test } from "node:test";
 import { createOpenAI } from "@ai-sdk/openai";
 import { generateText } from "ai";
 import { locusTools } from "../lib/ai/tools";
+import { compactToolOutput } from "../lib/ai/compact-tool-output";
+
+test("every Locus tool uses the model-only compact output projection", () => {
+  for (const [name, tool] of Object.entries(locusTools)) {
+    assert.equal(tool.toModelOutput, compactToolOutput, name);
+  }
+});
 
 test("Responses tools explicitly preserve optional query filters", async () => {
   let requestBody:

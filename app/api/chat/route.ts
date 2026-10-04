@@ -43,6 +43,9 @@ previews: queryCompanies intersects the full matching set before counting/limiti
 All filters inside a relation must match the same round, job, person or activity
 item. Return the final matching companies, not intermediate candidate cards.
 Its countUnit is companies; nested evidence counts are records, not companies.
+Model-facing company evidence inherits company identity from its enclosing
+company. Shared evidenceContext contains each relation's filters/date policies;
+per-company evidence retains counts, completeness and supporting records.
 Once that combined query returns valid matches, answer from its evidence rather
 than querying again merely to curate the requested limit or narrowing the user's
 criteria based on its bounded evidence preview. Preserve the user's role scope;
@@ -196,7 +199,9 @@ export async function POST(request: Request) {
     const pageContext = usesCurrentCompanyPage(body.pagePath, question)
       ? await getPageCompanyContext(body.pagePath)
       : null;
-    const modelMessages = await convertToModelMessages(body.messages);
+    const modelMessages = await convertToModelMessages(body.messages, {
+      tools: locusTools,
+    });
     const isNewTurn = body.messages.at(-1)?.role === "user";
     const stream = createUIMessageStream({
       execute: ({ writer }) => {
