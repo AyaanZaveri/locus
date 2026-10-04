@@ -20,9 +20,11 @@ import {
 } from "./funding-query";
 import { buildJobsQuery, jobsQueryResult, jobsQuerySchema } from "./jobs-query";
 import {
-  buildCompaniesQuery,
-  companiesQueryResult,
-  companiesQuerySchema,
+  buildCompanyDiscoveryQuery,
+  companyDiscoveryResult,
+  companyDiscoverySchema,
+} from "./company-discovery";
+import {
   buildPeopleQuery,
   peopleQueryResult,
   peopleQuerySchema,
@@ -264,11 +266,14 @@ export const locusTools = {
   queryCompanies: tool({
     strict: false,
     description:
-      "Filter companies by description keywords, industry/location literal substring, country, exact stage, inclusive founded-year bounds, employee bounds and minimum total funding in USD. Employee filters require the entire known range to fit; an unknown/open-ended upper bound cannot satisfy a maximum. Sort name ascending or totalFunding/employees/foundedYear descending (employees sorts lower bounds). Returns company cards, matching fields, totalMatches and hasMore. Funding is company TOTAL, not a round. companySlugs composes with other queries.",
-    inputSchema: companiesQuerySchema,
+      "Discover companies by description keywords, industry/location literal substring, country, exact company stage, founded-year/employee bounds and minimum total USD funding. Combine nested funding, jobs, people and activity filters in ONE call for cross-entity questions such as recently funded companies hiring remotely. All relations must match; all filters within a relation must match ONE record. Intersect the full candidate set BEFORE counting or limiting companies, not separate limited funding/job previews. jobs.location is job location; top-level location is company location. jobs defaults confirmed open; recorded remote does not imply worldwide eligibility. Returns final company cards with bounded matching evidence (3 records per relation per company), exact company totalMatches/countUnit and hasMore. Omit unrequested relations; {} explicitly requires a qualifying record. Nested funding filters apply to rounds; minimumTotalFunding applies to company TOTAL. Employee filters require the entire known range to fit; unknown bounds are not positive matches. Sort name ascending or totalFunding/employees/foundedYear descending (employees sorts lower bounds).",
+    inputSchema: companyDiscoverySchema,
     execute: async (input) => {
-      const result = await db.execute(buildCompaniesQuery(input));
-      return withResultPresentation(companiesQueryResult(result.rows, input));
+      const asOf = new Date().toISOString().slice(0, 10);
+      const result = await db.execute(buildCompanyDiscoveryQuery(input, asOf));
+      return withResultPresentation(
+        companyDiscoveryResult(result.rows, input, asOf),
+      );
     },
   }),
   queryPeople: tool({

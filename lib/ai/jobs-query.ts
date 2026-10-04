@@ -53,8 +53,12 @@ export function buildJobsQuery(
   input: JobsQuery,
   asOf: string,
   source: SQL = sql`${jobs} j INNER JOIN ${companies} c ON j.company_id=c.id`,
+  additionalFilters: SQL[] = [],
 ) {
-  const filters: SQL[] = [sql`(j.posted_at IS NULL OR j.posted_at <= ${asOf})`];
+  const filters: SQL[] = [
+    sql`(j.posted_at IS NULL OR j.posted_at <= ${asOf})`,
+    ...additionalFilters,
+  ];
   const roleVector = sql`(setweight(to_tsvector('english', coalesce(j.title, '')), 'A') || setweight(to_tsvector('english', coalesce(array_to_string(j.skills, ' '), '')), 'B'))`;
   const searchVector =
     input.queryScope === "allContent"

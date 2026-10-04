@@ -112,8 +112,13 @@ const datePattern = "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$";
 export function buildCompaniesQuery(
   input: z.infer<typeof companiesQuerySchema>,
   source: SQL = sql`${companies} c`,
+  relations: { joins: SQL[]; filters: SQL[]; columns: SQL[] } = {
+    joins: [],
+    filters: [],
+    columns: [],
+  },
 ) {
-  const filters = commonFilters(input);
+  const filters = [...commonFilters(input), ...relations.filters];
   if (input.query)
     filters.push(
       sql`to_tsvector('english', concat_ws(' ', name, tagline, description)) @@ websearch_to_tsquery('english', ${input.query})`,
@@ -158,16 +163,19 @@ export function buildCompaniesQuery(
     )
     SELECT slug, name, industry, stage, location, country_code, logo, tagline,
       employee_count, employee_min, employee_max, founded_year, total_funding,
-      funding_currency, funding_display, source_url, count(*) OVER() AS total_matches
-    FROM bounds WHERE ${where(filters)} ORDER BY ${order}, slug LIMIT ${input.limit}
+       funding_currency, funding_display, source_url, count(*) OVER() AS total_matches
+       ${relations.columns.length ? sql`, ${sql.join(relations.columns, sql`, `)}` : sql``}
+    FROM bounds ${sql.join(relations.joins, sql` `)}
+    WHERE ${where(filters)} ORDER BY ${order}, slug LIMIT ${input.limit}
   `;
 }
 
 export function buildPeopleQuery(
   input: z.infer<typeof peopleQuerySchema>,
   source: SQL = sql`${people} p INNER JOIN ${companies} c ON p.company_id = c.id`,
+  additionalFilters: SQL[] = [],
 ) {
-  const filters = commonFilters(input);
+  const filters = [...commonFilters(input), ...additionalFilters];
   if (input.name) filters.push(contains(sql`name`, input.name));
   if (input.role) {
     const aliases: Record<string, string> = {
@@ -177,7 +185,7 @@ export function buildPeopleQuery(
       coo: "\\mcoo\\M|chief operating officer",
     };
     filters.push(
-      aliases[input.role.toLowerCase()]
+      Object.hasOwn(aliases, input.role.toLowerCase())
         ? sql`role ~* ${aliases[input.role.toLowerCase()]}`
         : contains(sql`role`, input.role),
     );
@@ -208,8 +216,9 @@ export function buildActivityQuery(
   input: z.infer<typeof activityQuerySchema>,
   asOf: string,
   source: SQL = sql`${companies} c`,
+  additionalFilters: SQL[] = [],
 ) {
-  const filters = commonFilters(input);
+  const filters = [...commonFilters(input), ...additionalFilters];
   filters.push(sql`date IS NOT NULL AND date <= ${asOf}`);
   if (input.type) filters.push(sql`type = ${input.type}`);
   if (input.after) filters.push(sql`date >= ${input.after}`);

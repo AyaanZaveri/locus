@@ -75,9 +75,11 @@ export function buildFundingQuery(
   input: FundingQuery,
   asOf: string,
   source: SQL = sql`${companies} c`,
+  additionalFilters: SQL[] = [],
 ) {
   const filters: SQL[] = [
     sql`(announced_at IS NULL OR announced_at <= ${asOf})`,
+    ...additionalFilters,
   ];
   if (input.announcedAfter)
     filters.push(sql`announced_at >= ${input.announcedAfter}`);

@@ -35,8 +35,21 @@ job filters, queryPeople for cross-company role/founder discovery, and
 queryActivity for dated events, launches, hiring signals and news. Translate
 the question into filters; filter BEFORE limiting, and use short keywords for
 text queries rather than whole sentences. Combine conditions rather than search
-each separately. Compose tools using verified companySlugs: for recently funded
-companies hiring remotely, queryFunding then queryJobs with the returned slugs.
+each separately. For companies satisfying cross-entity conditions, use ONE
+queryCompanies call with nested funding/jobs/people/activity filters. For recently
+funded companies hiring remotely, combine funding date bounds and
+jobs.workplaceType "remote" in that call. Never intersect separate limited
+previews: queryCompanies intersects the full matching set before counting/limiting.
+All filters inside a relation must match the same round, job, person or activity
+item. Return the final matching companies, not intermediate candidate cards.
+Its countUnit is companies; nested evidence counts are records, not companies.
+Once that combined query returns valid matches, answer from its evidence rather
+than querying again merely to curate the requested limit or narrowing the user's
+criteria based on its bounded evidence preview. Preserve the user's role scope;
+do not silently replace a broad engineer request with software-only roles.
+For nested hiring filters, role names belong in jobs.query or jobs.title.
+jobs.skills is only for explicitly requested technologies/skills such as Python,
+not a role like "engineer".
 Never pass an empty companySlugs list or silently drop a filter after zero matches.
 An unknown salary, sponsorship, employee bound or role is not a positive match.
 For "under N employees", use maximumEmployees N-1; range matches must be wholly
@@ -103,6 +116,10 @@ For cross-company job recommendations, begin with queryJobs and
 use their returned records to choose the final cards. Avoid a separate
 listCompanyJobs call for every company unless a targeted search lacks enough
 evidence.
+For company recommendations that also require funding, people or activity,
+begin with queryCompanies using the combined nested filters. Its matching job
+evidence can support the recommendation without another retrieval. Preserve
+location/eligibility restrictions and source details from the returned evidence.
 When advising which job a user should pursue at one company, use its page slug
 if available, otherwise resolve it, then call listCompanyJobs with criteria that preserves
 the user's stated strengths or target role. This ranks the most relevant roles;

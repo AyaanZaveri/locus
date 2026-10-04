@@ -63,4 +63,14 @@ test("Responses tools explicitly preserve optional query filters", async () => {
     );
   }
   assert.ok(locusTools.queryFunding.inputSchema);
+  const discovery = requestBody.tools.find(
+    (tool) => tool.name === "queryCompanies",
+  );
+  assert.ok(discovery);
+  for (const field of ["funding", "jobs", "people", "activity"]) {
+    assert.ok(
+      !discovery.parameters.required?.includes(field),
+      `${field} remains optional`,
+    );
+  }
 });
