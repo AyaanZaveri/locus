@@ -6,6 +6,7 @@ export type LocusTrace = {
     | "navigation"
     | "people"
     | "search"
+    | "semantic"
     | "selection";
   phase: "running" | "complete" | "error";
   label: string;
@@ -103,6 +104,52 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
     return { icon, phase, label: `Couldn’t finish ${fallback}` };
   }
 
+  if (toolName === "queryJobs" || toolName === "queryCompanies") {
+    const retrieval = record(record(output).retrieval);
+    const semanticQuery = text(input.semanticQuery);
+    // Input tells us the requested mode while running; the actual output is
+    // authoritative on completion (semantic requests can fall back to keywords).
+    const semantic =
+      phase === "complete"
+        ? retrieval.mode === "semantic"
+        : hasInput && Boolean(semanticQuery);
+    const keywordFallback =
+      phase === "complete" && retrieval.mode === "lexical-fallback";
+    if (semantic || keywordFallback) {
+      const jobs = toolName === "queryJobs";
+      const amount = count(record(output)[jobs ? "jobs" : "companies"]);
+      const singular = jobs ? "role" : "company";
+      const plural = jobs ? "roles" : "companies";
+      const coverage =
+        typeof retrieval.embeddedRecords === "number" &&
+        typeof retrieval.eligibleRecords === "number"
+          ? `${retrieval.embeddedRecords}/${retrieval.eligibleRecords} eligible records embedded${retrieval.completeCoverage === false ? " · incomplete coverage" : ""}`
+          : "";
+      return {
+        icon: semantic ? "semantic" : "search",
+        phase,
+        label: keywordFallback
+          ? `Keyword fallback · ${amount ? `${noun(amount, singular, plural)} found` : "no matches"}`
+          : phase === "complete"
+            ? `Semantic search · ${amount ? `${noun(amount, singular, plural)} ranked` : `no ranked ${plural}`}`
+            : `Semantic search · Ranking ${plural}`,
+        detail:
+          [
+            keywordFallback
+              ? text(retrieval.queryUsed)
+              : text(retrieval.query) || semanticQuery,
+            coverage,
+            retrieval.queryCacheHit === true
+              ? "Query vector reused from cache"
+              : "",
+            keywordFallback ? text(retrieval.reason) : "",
+          ]
+            .filter(Boolean)
+            .join(" · ") || undefined,
+      };
+    }
+  }
+
   switch (toolName) {
     case "queryJobs":
     case "queryCompanies":
@@ -135,15 +182,20 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
         },
       }[toolName];
       const amount = count(record(output)[config.key]);
+      const modeLabel =
+        toolName === "queryJobs" || toolName === "queryCompanies"
+          ? "Database search · "
+          : "";
       return {
         icon,
         phase,
         label:
-          phase === "complete"
+          modeLabel +
+          (phase === "complete"
             ? amount
               ? `Found ${noun(amount, config.singular, config.plural)}`
               : `No ${config.plural} found`
-            : config.running,
+            : config.running),
         detail: hasInput
           ? [
               query,

@@ -3,19 +3,104 @@ import { test } from "node:test";
 
 import { describeLocusTool } from "../lib/locus-tool-trace";
 
+test("semantic traces use a distinct icon and candidate language, with cache/coverage details", () => {
+  for (const [tool, key, entity] of [
+    ["queryJobs", "jobs", "role"],
+    ["queryCompanies", "companies", "company"],
+  ] as const) {
+    const input = { semanticQuery: "distributed infrastructure" };
+    const running = describeLocusTool({
+      type: `tool-${tool}`,
+      state: "input-available",
+      input,
+    });
+    assert.equal(running?.icon, "semantic");
+    assert.match(running!.label, /^Semantic search/);
+    const complete = describeLocusTool({
+      type: `tool-${tool}`,
+      state: "output-available",
+      input,
+      output: {
+        [key]: [{}],
+        totalCandidates: 52,
+        retrieval: {
+          mode: "semantic",
+          query: input.semanticQuery,
+          eligibleRecords: 3980,
+          embeddedRecords: 52,
+          completeCoverage: false,
+          queryCacheHit: true,
+        },
+      },
+    });
+    assert.equal(complete?.icon, "semantic");
+    assert.equal(complete?.label, `Semantic search · 1 ${entity} ranked`);
+    assert.match(complete!.detail!, /52\/3980 eligible records embedded/);
+    assert.match(complete!.detail!, /incomplete coverage/);
+    assert.match(complete!.detail!, /reused from cache/);
+    assert.doesNotMatch(complete!.label, /matching|52/);
+  }
+});
+
+test("completed traces use actual retrieval mode, not the model's semantic intent", () => {
+  const part = {
+    type: "tool-queryJobs",
+    state: "output-available",
+    input: { semanticQuery: "distributed infrastructure" },
+  };
+  const fallback = describeLocusTool({
+    ...part,
+    output: {
+      jobs: [{}],
+      retrieval: {
+        mode: "lexical-fallback",
+        queryUsed: "distributed infrastructure",
+        reason: "No current vectors within the exact filters",
+      },
+    },
+  });
+  assert.equal(fallback?.icon, "search");
+  assert.equal(fallback?.label, "Keyword fallback · 1 role found");
+  assert.match(fallback!.detail!, /No current vectors/);
+  const legacy = describeLocusTool({ ...part, output: { jobs: [{}] } });
+  assert.notEqual(legacy?.icon, "semantic");
+  assert.match(legacy!.label, /^Database search/);
+  const actual = describeLocusTool({
+    ...part,
+    input: {},
+    output: { jobs: [], retrieval: { mode: "semantic" } },
+  });
+  assert.equal(actual?.icon, "semantic");
+  assert.equal(actual?.label, "Semantic search · no ranked roles");
+  const streaming = describeLocusTool({
+    ...part,
+    state: "input-streaming",
+    input: { semanticQuery: "partial" },
+    output: undefined,
+  });
+  assert.notEqual(streaming?.icon, "semantic");
+  const error = describeLocusTool({
+    ...part,
+    state: "output-error",
+    errorText: "provider failed",
+  });
+  assert.equal(error?.phase, "error");
+  assert.doesNotMatch(error!.label, /ranked|found/);
+});
+
 test("every tool invocation has a useful live and completed status", () => {
   const cases = [
     [
       "queryJobs",
       { workplaceType: "remote" },
       { jobs: [{ title: "Engineer" }] },
-      "Found 1 matching role",
+      "Database search · Found 1 matching role",
     ],
     [
       "queryCompanies",
       { industry: "Database" },
       { companies: [{ slug: "x" }] },
-      "Found 1 matching company",
+      "Database search · Found 1 matching company",
     ],
     [
       "queryPeople",

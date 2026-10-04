@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, SearchIcon } from "lucide-react";
+import { ArrowUpRightIcon, NetworkIcon, SearchIcon } from "lucide-react";
 
 import type { LocusTrace } from "@/lib/locus-tool-trace";
 
@@ -19,6 +19,11 @@ export function LocusTraceRow({ trace }: { trace: LocusTrace }) {
           aria-hidden="true"
           className="size-4 shrink-0 rounded-[3.5px] object-contain"
           src={trace.logo}
+        />
+      ) : trace.icon === "semantic" ? (
+        <NetworkIcon
+          aria-hidden="true"
+          className="size-3.5 shrink-0 stroke-2"
         />
       ) : trace.icon === "navigation" ? (
         <ArrowUpRightIcon
