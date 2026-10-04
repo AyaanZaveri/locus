@@ -1,0 +1,200 @@
+[
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "cross-company",
+    "flags": [
+      "Transport/stream/tool error",
+      "No final answer text",
+      "Returned jobs differ from deterministic oracle (review relevance/order/alternative tools)",
+      "Requested input differs: limit expected 5, got 20"
+    ]
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "exa-confirmed",
+    "flags": []
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "exa-unconfirmed",
+    "flags": []
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "salary-ranking",
+    "flags": [
+      "Transport/stream/tool error",
+      "No final answer text",
+      "Expected query tool not used; inspect alternative retrieval"
+    ]
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "glm-5.3-flash",
+    "caseId": "funding-window",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "cross-company",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "exa-confirmed",
+    "flags": [
+      "Returned jobs differ from deterministic oracle (review relevance/order/alternative tools)",
+      "Requested input differs: status expected 'open', got 'openOrUnknown'"
+    ]
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "exa-unconfirmed",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "salary-ranking",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "deepseek-v4.1-flash",
+    "caseId": "funding-window",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "cross-company",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "exa-confirmed",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "exa-unconfirmed",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "salary-ranking",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "space-bunny-free",
+    "caseId": "funding-window",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "cross-company",
+    "flags": [
+      "Transport/stream/tool error",
+      "No final answer text"
+    ]
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "exa-confirmed",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "exa-unconfirmed",
+    "flags": [
+      "Returned jobs differ from deterministic oracle (review relevance/order/alternative tools)",
+      "Requested input differs: limit expected 3, got 10"
+    ]
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "salary-ranking",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "longcat-2.5-preview-free",
+    "caseId": "funding-window",
+    "flags": []
+  }
+]

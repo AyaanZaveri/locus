@@ -1,0 +1,1261 @@
+{
+  "preparedAt": "2026-10-04T15:43:07.666Z",
+  "method": "Direct database tools; semantic vectors from existing cache; no model answers used as oracle.",
+  "tests": [
+    {
+      "id": "cursor-semantic",
+      "category": "Semantic job relevance",
+      "pagePath": "/company/cursor",
+      "question": "At Cursor, return the three recorded roles most relevant to distributed storage and large-scale data infrastructure, including unconfirmed-status roles but not closed roles. Use exactly this semantic search intent: \"Engineering roles building distributed data infrastructure and large-scale storage systems\". Explain the strongest match with description evidence, give source links and recorded hiring status, and say whether semantic coverage is complete.",
+      "tool": "queryJobs",
+      "input": {
+        "companySlugs": [
+          "cursor"
+        ],
+        "semanticQuery": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+        "status": "openOrUnknown",
+        "sortBy": "relevance",
+        "limit": 3
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "companySlugs": [
+            "cursor"
+          ],
+          "semanticQuery": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+          "queryScope": "role",
+          "status": "openOrUnknown",
+          "sortBy": "relevance",
+          "limit": 3
+        },
+        "totalCompanies": 1,
+        "companySummaries": [
+          {
+            "jobCount": 132,
+            "companyName": "Cursor",
+            "companySlug": "cursor"
+          }
+        ],
+        "datePolicy": "Future postings are excluded. Recency sorting requires a known posted date; salary bounds require annual USD minimum salary. Role-scope keywords search titles/skills; allContent also searches descriptions and department. Recorded remote status does not imply worldwide eligibility; preserve location/travel restrictions.",
+        "jobs": [
+          {
+            "title": "Software Engineer, Storage",
+            "focus": "Engineering",
+            "location": "San Francisco, CA | New York, NY",
+            "url": "https://cursor.com/careers/software-engineer-storage",
+            "companySlug": "cursor",
+            "companyName": "Cursor",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cursor/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [
+              "PostgreSQL",
+              "MySQL"
+            ],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": null,
+              "maximum": null,
+              "currency": null,
+              "period": null
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-06-28",
+            "semanticScore": 0.5626639984450351,
+            "descriptionExcerpt": "Our mission is to automate coding. The first step in our journey is to build the best tool for professional programmers, using a combination of inventive research, design, and engineering. Our organization is very flat, and our team is small and talent dense. We particularly like people who are truth-seeking, passionate, and creative. We enjoy spirited debate, crazy ideas, and shipping code.\n\nAbout the Role\n\nAs a Software Engineer on the Storage team at SpaceXAI, you'll own the data layer that underpins every product surface: the databases, caches, and the strategy for how teams provision, query, and scale their data stores.\n\nMillions of developers depend on Cursor every day, and the future of our storage architecture is one of the highest-leverage problems at the company: get it right, and every team ships faster, every product surface gets more reliable, and SpaceXAI can scale to meet explosive demand. You'll design and execute the path to a robust, multi-database topology built for that growth.\n\nExample projects include...\n\nDesigning the next-generation data architecture: evolving our storage layer into a partitioned, resilient topology that keeps pace with SpaceXAI's rapid growth.\n\nBuilding query attribution and guardrails: instrumenting every database query by service, catching bad patterns before they hit production, and making it impossible to ship problematic queries without review.\n\nDefining the \"when to use what\" strategy for data stores: creating clear guidance and golden pathways so every team picks the right engine for their workload without second-guessing.\n\nOwning cache infrastructure end-to-end: reliability, capacity planning, and patterns that let product teams move fast without worrying about cache correctness.\n\nYou may be a fit if\n\nYou have deep exper"
+          },
+          {
+            "title": "Engineering Manager, Infrastructure",
+            "focus": "Engineering",
+            "location": "San Francisco, CA | New York, NY",
+            "url": "https://cursor.com/careers/engineering-manager-infrastructure",
+            "companySlug": "cursor",
+            "companyName": "Cursor",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cursor/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [
+              "AWS",
+              "Kubernetes",
+              "PostgreSQL",
+              "ClickHouse"
+            ],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": "manager",
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": null,
+              "maximum": null,
+              "currency": null,
+              "period": null
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-04-07",
+            "semanticScore": 0.5311158262353151,
+            "descriptionExcerpt": "Our mission is to automate coding. The first step in our journey is to build the best tool for professional programmers, using a combination of inventive research, design, and engineering. Our organization is very flat, and our team is small and talent dense. We particularly like people who are truth-seeking, passionate, and creative. We enjoy spirited debate, crazy ideas, and shipping code.\n\n### About the Role\n\nAs an Engineering Manager on the **Infrastructure** team at SpaceXAI, you'll lead the team that owns the foundational cloud, networking, storage, and compute layer that every service runs on: network foundations, container orchestration, edge and security infrastructure, data storage systems, and the compute runtimes that power production. SpaceXAI is one of the fastest-growing developer tools in the world, and you'll drive the cost management, regional deployment strategy, and infrastructure unification that make that growth possible. When your team's systems work well, every team is more productive, every product surface is more reliable, and Cursor can expand to serve developers everywhere.\n\nYou'll set technical direction, write and review code, and lead a team of strong infrastructure engineers, balancing hands-on contribution with growing your team's impact.\n\n### **What you’ll do**\n\n-   Owning Kubernetes and cluster foundations: building and operating production clusters with proper service mesh, scaling, and ingress that teams can confidently deploy to.\n\n-   Designing the geo-deployment architecture: building a replicable, robust process for deploying geo-replicated services across cloud regions and providers.\n\n-   Building edge and security infrastructure: designing the networking and security layer at the edge to protect against abuse, manage rate limiti"
+          },
+          {
+            "title": "Software Engineer, Pretraining",
+            "focus": "Engineering",
+            "location": "San Francisco, CA",
+            "url": "https://cursor.com/careers/software-engineer-pretraining",
+            "companySlug": "cursor",
+            "companyName": "Cursor",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cursor/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": null,
+              "maximum": null,
+              "currency": null,
+              "period": null
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-08-24",
+            "semanticScore": 0.5087872440345746,
+            "descriptionExcerpt": "Our mission is to automate coding. The first step in our journey is to build the best tool for professional programmers, using a combination of inventive research, design, and engineering. Our organization is very flat, and our team is small and talent dense. We particularly like people who are truth-seeking, passionate, and creative. We enjoy spirited debate, crazy ideas, and shipping code.\n\n## About the role\n\nWe’re looking for Software Engineers to build the data systems behind our frontier coding models’ initial training. You’ll work on large-scale crawling, data platform, and pipeline infrastructure, turning raw dumps into the datasets our models train on, and making iteration with researchers fast and reliable.\n\n-   **The Data Quality team** owns the entire road between raw internet-scale data and the tokens that train frontier models. This team makes sure the right data, in the right form, hits the training clusters on time and at the quality bar required to push the scaling curve. This is done by building our own models, our own high-performance pipelines, and by running the experiments that prove the data is actually stellar.\n\n-   **The Data Platform Team** owns the infrastructure and pipelines that transform raw data dumps into training-ready datasets. This team improves the speed, reliability, and developer experience of our initial training data pipelines so researchers can quickly experiment with new data sources, quality filters, taxonomies, multimodal data, and data mixes that improve model performance.\n\n-   **The Crawling team** owns large-scale web crawling and parsing that feeds the top of the funnel for initial training. They discover, schedule, fetch, and parse public web content so high-quality documents become the raw scrapes that Data Quality and D"
+          }
+        ],
+        "totalCandidates": 132,
+        "hasMoreCandidates": true,
+        "retrieval": {
+          "mode": "semantic",
+          "query": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+          "model": "voyage/voyage-4-large",
+          "eligibleRecords": 132,
+          "embeddedRecords": 132,
+          "unembeddedRecords": 0,
+          "completeCoverage": true,
+          "countMeaning": "Counts are vector-covered candidates satisfying exact filters, not proven semantic matches.",
+          "policy": "Semantic scores are ranking signals, not probabilities or proof. Review returned descriptions. Unembedded records are excluded from vector ranking but remain searchable using ordinary tools. No exhaustive dataset-wide semantic claim is supported with incomplete coverage.",
+          "queryCacheHit": true,
+          "queryEmbeddingRequested": true
+        },
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 0,
+            "jobs": 3
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "cross-company",
+      "category": "Cross-company ranking and scope",
+      "pagePath": "/company/openai",
+      "question": "Compare only Exa, Cursor, Baseten and Cohere for distributed storage and large-scale data infrastructure responsibilities. Return the five strongest recorded roles overall, not five per company; include unconfirmed-status roles but exclude closed roles. Use exactly this semantic search intent: \"Engineering roles building distributed data infrastructure and large-scale storage systems\". Give description evidence, source links, recorded statuses and coverage.",
+      "tool": "queryJobs",
+      "input": {
+        "companySlugs": [
+          "exa",
+          "cursor",
+          "baseten",
+          "cohere"
+        ],
+        "semanticQuery": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+        "status": "openOrUnknown",
+        "sortBy": "relevance",
+        "limit": 5
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "companySlugs": [
+            "exa",
+            "cursor",
+            "baseten",
+            "cohere"
+          ],
+          "semanticQuery": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+          "queryScope": "role",
+          "status": "openOrUnknown",
+          "sortBy": "relevance",
+          "limit": 5
+        },
+        "totalCompanies": 4,
+        "companySummaries": [
+          {
+            "jobCount": 101,
+            "companyName": "Baseten",
+            "companySlug": "baseten"
+          },
+          {
+            "jobCount": 142,
+            "companyName": "Cohere",
+            "companySlug": "cohere"
+          },
+          {
+            "jobCount": 132,
+            "companyName": "Cursor",
+            "companySlug": "cursor"
+          },
+          {
+            "jobCount": 52,
+            "companyName": "Exa",
+            "companySlug": "exa"
+          }
+        ],
+        "datePolicy": "Future postings are excluded. Recency sorting requires a known posted date; salary bounds require annual USD minimum salary. Role-scope keywords search titles/skills; allContent also searches descriptions and department. Recorded remote status does not imply worldwide eligibility; preserve location/travel restrictions.",
+        "jobs": [
+          {
+            "title": "Software Engineer, Data Infrastructure",
+            "focus": "Engineering",
+            "location": "New York, NY | San Francisco, CA | Canada | United States | Toronto, ON | Montréal, QC",
+            "url": "https://jobs.ashbyhq.com/cohere/6aa3cb2b-ee8b-4c92-b505-3a7509f80d7f",
+            "companySlug": "cohere",
+            "companyName": "Cohere",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cohere/images/logo.jpg",
+            "countryCode": "ca",
+            "department": "Engineering & Infra",
+            "skills": [],
+            "workplaceType": "remote",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 160000,
+              "maximum": 325000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "unknown",
+            "postedAt": "2026-05-14",
+            "semanticScore": 0.6502426668929285,
+            "descriptionExcerpt": "## Who are we?\n\nCohere is the leading security-first enterprise AI company.  We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems.\n\nWe’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that.\n\nWe obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a team of researchers, engineers, designers, and more, who are all passionate about their craft.\n\nWe are a global technology company headquartered in Toronto with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul. Join us!\n\n## Why this role?\n\nThe Data Infrastructure team at Cohere is responsible for the storage and data movement layer underlying every model training run. We're building the unified storage layer that feeds our training workloads. It needs to serve petabytes of training data and model checkpoints fast enough to keep thousands of GPUs busy across several training clusters. In this role, you’d have an opportunity to build this system from the ground up. You’d be a key contributor, working on a problem few teams have had to solve at this scale.\n\n**In this role, you will:**\n\n- Design, build, and operate the distributed storage system that feeds model training and evaluation.\n- Run this system multiple on Kubernetes clusters at petabyte scale.\n- Work with researchers and training-infra teams on how jobs actually read and write data, and turn that into throughput, latency, and durability requirements\n- Work through the networking, I/O"
+          },
+          {
+            "title": "Software Engineer, Distributed Data Systems",
+            "focus": "Engineering",
+            "location": "San Francisco, CA",
+            "url": "https://jobs.ashbyhq.com/exa/5f10cc28-bcad-4ce4-8fa1-996a59c59e65",
+            "companySlug": "exa",
+            "companyName": "Exa",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 180000,
+              "maximum": 350000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": "available",
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "unknown",
+            "postedAt": "2025-12-19",
+            "semanticScore": 0.6255087479645771,
+            "descriptionExcerpt": "Exa is an applied AI lab building a search engine unlike the world has ever seen. We build massive-scale infra to crawl the entire web, train state-of-the-art embedding models to process it, and design super high performant vector databases to retrieve over it. We now power search for Cursor, Cognition, HubSpot, and over 400,000 developers and have raised $350m from Lightspeed, Benchmark, and a16z.\n\n \n\nOur ultimate goal is to build perfect search over all the world's information, far beyond Google. If you want to build massive-scale ML systems that will define the way the new AI world consumes information, this is the place for you.\n\n \n\nAs a Data Engineer, you'll architect and build the data infrastructure that powers everything we do—from crawling billions of pages to training our embedding models to serving real-time search. You'll have enormous autonomy in designing systems that scale to hundreds of petabytes. If you've ever wanted to build data pipelines at a scale that most companies only dream about, this is your chance.\n\n \n\n### Who You Are\n- Deep understanding of lakehouse architectures (Delta Lake, Iceberg, Hudi) and when to use them\n- Experience building and operating large-scale distributed data processing pipelines\n- Hands-on experience with streaming data systems (Kafka, Flink, or similar)\n- Familiarity with Ray, Spark, or ClickHouse at production scale\n- An obsessive focus on reliability and building systems that don't page you at 3am\n\n### Bonus\n- Experience with Lance or other vector-native storage formats\n- Background in GPU-accelerated data processing (RAPIDS, cuDF)\n\n \n\n### What You Could Do\n- Design a lakehouse architecture that handles 100+ PB of web crawl data\n- Build streaming pipelines that process billions of documents per day for real-time indexin"
+          },
+          {
+            "title": "Software Engineer, Storage",
+            "focus": "Engineering",
+            "location": "San Francisco, CA | New York, NY",
+            "url": "https://cursor.com/careers/software-engineer-storage",
+            "companySlug": "cursor",
+            "companyName": "Cursor",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cursor/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [
+              "PostgreSQL",
+              "MySQL"
+            ],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": null,
+              "maximum": null,
+              "currency": null,
+              "period": null
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-06-28",
+            "semanticScore": 0.5626639984450351,
+            "descriptionExcerpt": "Our mission is to automate coding. The first step in our journey is to build the best tool for professional programmers, using a combination of inventive research, design, and engineering. Our organization is very flat, and our team is small and talent dense. We particularly like people who are truth-seeking, passionate, and creative. We enjoy spirited debate, crazy ideas, and shipping code.\n\nAbout the Role\n\nAs a Software Engineer on the Storage team at SpaceXAI, you'll own the data layer that underpins every product surface: the databases, caches, and the strategy for how teams provision, query, and scale their data stores.\n\nMillions of developers depend on Cursor every day, and the future of our storage architecture is one of the highest-leverage problems at the company: get it right, and every team ships faster, every product surface gets more reliable, and SpaceXAI can scale to meet explosive demand. You'll design and execute the path to a robust, multi-database topology built for that growth.\n\nExample projects include...\n\nDesigning the next-generation data architecture: evolving our storage layer into a partitioned, resilient topology that keeps pace with SpaceXAI's rapid growth.\n\nBuilding query attribution and guardrails: instrumenting every database query by service, catching bad patterns before they hit production, and making it impossible to ship problematic queries without review.\n\nDefining the \"when to use what\" strategy for data stores: creating clear guidance and golden pathways so every team picks the right engine for their workload without second-guessing.\n\nOwning cache infrastructure end-to-end: reliability, capacity planning, and patterns that let product teams move fast without worrying about cache correctness.\n\nYou may be a fit if\n\nYou have deep exper"
+          },
+          {
+            "title": "Engineering Manager, Infrastructure",
+            "focus": "Engineering",
+            "location": "San Francisco, CA | New York, NY",
+            "url": "https://cursor.com/careers/engineering-manager-infrastructure",
+            "companySlug": "cursor",
+            "companyName": "Cursor",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cursor/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [
+              "AWS",
+              "Kubernetes",
+              "PostgreSQL",
+              "ClickHouse"
+            ],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": "manager",
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": null,
+              "maximum": null,
+              "currency": null,
+              "period": null
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-04-07",
+            "semanticScore": 0.5311158262353151,
+            "descriptionExcerpt": "Our mission is to automate coding. The first step in our journey is to build the best tool for professional programmers, using a combination of inventive research, design, and engineering. Our organization is very flat, and our team is small and talent dense. We particularly like people who are truth-seeking, passionate, and creative. We enjoy spirited debate, crazy ideas, and shipping code.\n\n### About the Role\n\nAs an Engineering Manager on the **Infrastructure** team at SpaceXAI, you'll lead the team that owns the foundational cloud, networking, storage, and compute layer that every service runs on: network foundations, container orchestration, edge and security infrastructure, data storage systems, and the compute runtimes that power production. SpaceXAI is one of the fastest-growing developer tools in the world, and you'll drive the cost management, regional deployment strategy, and infrastructure unification that make that growth possible. When your team's systems work well, every team is more productive, every product surface is more reliable, and Cursor can expand to serve developers everywhere.\n\nYou'll set technical direction, write and review code, and lead a team of strong infrastructure engineers, balancing hands-on contribution with growing your team's impact.\n\n### **What you’ll do**\n\n-   Owning Kubernetes and cluster foundations: building and operating production clusters with proper service mesh, scaling, and ingress that teams can confidently deploy to.\n\n-   Designing the geo-deployment architecture: building a replicable, robust process for deploying geo-replicated services across cloud regions and providers.\n\n-   Building edge and security infrastructure: designing the networking and security layer at the edge to protect against abuse, manage rate limiti"
+          },
+          {
+            "title": "Data Engineer, Data Foundations",
+            "focus": "Engineering",
+            "location": "New York, NY | Canada | United States",
+            "url": "https://jobs.ashbyhq.com/cohere/9baccd88-c051-474f-bfe8-6867fca54cee",
+            "companySlug": "cohere",
+            "companyName": "Cohere",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/cohere/images/logo.jpg",
+            "countryCode": "ca",
+            "department": "Engineering & Infra",
+            "skills": [],
+            "workplaceType": "remote",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": "5",
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 160000,
+              "maximum": 325000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "unknown",
+            "postedAt": "2026-08-14",
+            "semanticScore": 0.5188536621506616,
+            "descriptionExcerpt": "## Who are we?\n\nCohere is the leading security-first enterprise AI company.  We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems.\n\nWe’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that.\n\nWe obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a team of researchers, engineers, designers, and more, who are all passionate about their craft.\n\nWe are a global technology company headquartered in Toronto with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul. Join us!\n\n## Why this role?\n\nWe're building the foundational infrastructure that will define how the world thinks about and deploys AI, and we want the sharpest, most curious people to help us do it. As a member of our Analytics & Data Insights team, you'll tackle the kind of problems that don't have textbook answers yet, launch products that didn't exist a year ago, and help enterprises understand what foundational AI actually means for their bottom line.\n\n**As a Data Engineer, you will:**\n\n- Work directly on new customer experiences built on one of the most advanced AI systems in the world\n- Collaborate daily with researchers and engineers who are some of the best in the world at what they do\n- Run implementations end-to-end and see initiatives through to real outcomes\n- Partner across research, marketing, sales, and finance to help define how Cohere grows, with your recommendations feeding directly into products and strategy\n\n**Yo"
+          }
+        ],
+        "totalCandidates": 427,
+        "hasMoreCandidates": true,
+        "retrieval": {
+          "mode": "semantic",
+          "query": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+          "model": "voyage/voyage-4-large",
+          "eligibleRecords": 427,
+          "embeddedRecords": 427,
+          "unembeddedRecords": 0,
+          "completeCoverage": true,
+          "countMeaning": "Counts are vector-covered candidates satisfying exact filters, not proven semantic matches.",
+          "policy": "Semantic scores are ranking signals, not probabilities or proof. Review returned descriptions. Unembedded records are excluded from vector ranking but remain searchable using ordinary tools. No exhaustive dataset-wide semantic claim is supported with incomplete coverage.",
+          "queryCacheHit": true,
+          "queryEmbeddingRequested": true
+        },
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 0,
+            "jobs": 5
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "about-semantic",
+      "category": "Global About discovery",
+      "pagePath": "/company/openai",
+      "question": "Across the whole database, which three companies best fit neural web retrieval APIs for AI agents? Use exactly this semantic search intent: \"Companies providing neural web retrieval APIs for AI agents\". Search company About text, not jobs. Explain the fit with product evidence and sources, and state whether semantic coverage is complete.",
+      "tool": "queryCompanies",
+      "input": {
+        "semanticQuery": "Companies providing neural web retrieval APIs for AI agents",
+        "sortBy": "relevance",
+        "limit": 3
+      },
+      "expected": {
+        "filters": {
+          "semanticQuery": "Companies providing neural web retrieval APIs for AI agents",
+          "sortBy": "relevance",
+          "limit": 3
+        },
+        "policy": "Employee bounds match only when the entire known range fits; open-ended/unknown upper bounds cannot satisfy a maximum. Employee sorting uses the lower bound, not an exact count. Funding filters/sorting use USD company totals, not round amounts. Founded-year bounds are inclusive. Source URLs are profile references, not necessarily evidence for every field. All supplied relations are intersected before counting and limiting companies. Filters within each relation must match the same record. Evidence is capped at 3 records per relation per company; evidence counts are not company counts. Job eligibility and date policies are returned with the evidence.",
+        "companies": [
+          {
+            "slug": "tavily",
+            "name": "Tavily",
+            "industry": "Web Search",
+            "location": "New York, New York",
+            "countryCode": "us",
+            "logo": "https://locus-images-b3c414.gitlab.io/companies/tavily/images/logo.jpg",
+            "pageUrl": "/company/tavily",
+            "tagline": "Connect your AI agents to the web",
+            "stage": "Acquired by Nebius",
+            "employees": {
+              "display": "11-50 employees",
+              "minimum": 11,
+              "maximum": 50
+            },
+            "foundedYear": 2024,
+            "totalFunding": {
+              "amount": 25000000,
+              "currency": "USD",
+              "display": "$25M"
+            },
+            "sourceUrl": "https://tavily.com",
+            "semanticScore": 0.6638147435298727,
+            "descriptionExcerpt": "Tavily provides a real-time search, extraction, crawling, and mapping API purpose-built for AI agents and retrieval-augmented generation, returning structured, LLM-ready results with citations rather than links. Founded in late 2024 by Rotem Weiss, it sells to Fortune 500 enterprises and AI companies from New York and Tel Aviv. Nebius announced an agreement to acquire Tavily in February 2026 to add agentic search to its AI cloud platform; Tavily continues to operate as a brand and is still hiring."
+          },
+          {
+            "slug": "parallel",
+            "name": "Parallel",
+            "industry": "Web Search",
+            "location": "Palo Alto, California",
+            "countryCode": "us",
+            "logo": "https://locus-images-b3c414.gitlab.io/companies/parallel/images/logo.webp",
+            "pageUrl": "/company/parallel",
+            "tagline": "Infrastructure for intelligence on the web",
+            "stage": "Series B",
+            "employees": {
+              "display": "70-80 employees",
+              "minimum": 70,
+              "maximum": 80
+            },
+            "foundedYear": 2023,
+            "totalFunding": {
+              "amount": 230000000,
+              "currency": "USD",
+              "display": "$230M"
+            },
+            "sourceUrl": "https://parallel.ai",
+            "semanticScore": 0.61750328540802,
+            "descriptionExcerpt": "Parallel Web Systems builds web infrastructure for AI agents, giving systems programmatic access to the open web through crawling, indexing, ranking, retrieval, and reasoning technologies. The company is building the infrastructure layer for AI systems that need accurate, real-time information from the web."
+          },
+          {
+            "slug": "context-dev",
+            "name": "Context.dev",
+            "industry": "Web Search",
+            "location": "San Francisco, California",
+            "countryCode": "us",
+            "logo": "https://locus-images-b3c414.gitlab.io/companies/context-dev/images/logo.jpg",
+            "pageUrl": "/company/context-dev",
+            "tagline": "One API to scrape, enrich, and understand the web",
+            "stage": "Seed",
+            "employees": {
+              "display": "1-10 employees",
+              "minimum": 1,
+              "maximum": 10
+            },
+            "foundedYear": 2025,
+            "totalFunding": {
+              "amount": 500000,
+              "currency": "USD",
+              "display": "$500K"
+            },
+            "sourceUrl": "https://www.context.dev",
+            "semanticScore": 0.6116702788072669,
+            "descriptionExcerpt": "Context.dev is a web context API that gives software and AI agents live, structured access to the internet through a single REST API and official SDKs. Founded in 2025 by Yahia Bakour as Brand.dev, the company rebranded in March 2026 to reflect a broader platform that combines scraping and crawling into LLM-ready Markdown, schema-validated structured extraction, web search, brand and company intelligence, people enrichment, and website change monitoring. Backed by Y Combinator's Summer 2026 batch, it reports powering hundreds of companies including Mintlify, daily.dev, Klarna, and Rho, and is SOC 2 Type 1 certified."
+          }
+        ],
+        "asOf": "2026-10-04",
+        "countUnit": "companies",
+        "totalCandidates": 53,
+        "hasMoreCandidates": true,
+        "retrieval": {
+          "mode": "semantic",
+          "query": "Companies providing neural web retrieval APIs for AI agents",
+          "model": "voyage/voyage-4-large",
+          "eligibleRecords": 53,
+          "embeddedRecords": 53,
+          "unembeddedRecords": 0,
+          "completeCoverage": true,
+          "countMeaning": "Counts are vector-covered candidates satisfying exact filters, not proven semantic matches.",
+          "policy": "Semantic scores are ranking signals, not probabilities or proof. Review returned descriptions. Unembedded records are excluded from vector ranking but remain searchable using ordinary tools. No exhaustive dataset-wide semantic claim is supported with incomplete coverage.",
+          "queryCacheHit": true,
+          "queryEmbeddingRequested": true
+        },
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 3,
+            "people": 0,
+            "jobs": 0
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "exa-confirmed",
+      "category": "No false hiring claims",
+      "pagePath": "/company/exa",
+      "question": "How many Exa job records are confirmed open in Locus? Search only confirmed-open records. If none, say so; do not substitute unconfirmed roles or claim Exa is not hiring in the real world.",
+      "tool": "queryJobs",
+      "input": {
+        "companySlugs": [
+          "exa"
+        ],
+        "status": "open",
+        "limit": 3
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "companySlugs": [
+            "exa"
+          ],
+          "queryScope": "role",
+          "status": "open",
+          "sortBy": "relevance",
+          "limit": 3
+        },
+        "totalMatches": 0,
+        "hasMore": false,
+        "totalCompanies": 0,
+        "companySummaries": [],
+        "datePolicy": "Future postings are excluded. Recency sorting requires a known posted date; salary bounds require annual USD minimum salary. Role-scope keywords search titles/skills; allContent also searches descriptions and department. Recorded remote status does not imply worldwide eligibility; preserve location/travel restrictions.",
+        "jobs": [],
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 0,
+            "jobs": 0
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "exa-unconfirmed",
+      "category": "Unknown hiring status",
+      "pagePath": "/company/exa",
+      "question": "Find Exa's three recorded roles most relevant to distributed storage and data infrastructure. Include unconfirmed-status records and exclude closed records. Use exactly this semantic search intent: \"Engineering roles building distributed data infrastructure and large-scale storage systems\". Label each hiring status accurately, provide evidence and source links, and don't say an unconfirmed role is open.",
+      "tool": "queryJobs",
+      "input": {
+        "companySlugs": [
+          "exa"
+        ],
+        "semanticQuery": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+        "status": "openOrUnknown",
+        "sortBy": "relevance",
+        "limit": 3
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "companySlugs": [
+            "exa"
+          ],
+          "semanticQuery": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+          "queryScope": "role",
+          "status": "openOrUnknown",
+          "sortBy": "relevance",
+          "limit": 3
+        },
+        "totalCompanies": 1,
+        "companySummaries": [
+          {
+            "jobCount": 52,
+            "companyName": "Exa",
+            "companySlug": "exa"
+          }
+        ],
+        "datePolicy": "Future postings are excluded. Recency sorting requires a known posted date; salary bounds require annual USD minimum salary. Role-scope keywords search titles/skills; allContent also searches descriptions and department. Recorded remote status does not imply worldwide eligibility; preserve location/travel restrictions.",
+        "jobs": [
+          {
+            "title": "Software Engineer, Distributed Data Systems",
+            "focus": "Engineering",
+            "location": "San Francisco, CA",
+            "url": "https://jobs.ashbyhq.com/exa/5f10cc28-bcad-4ce4-8fa1-996a59c59e65",
+            "companySlug": "exa",
+            "companyName": "Exa",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 180000,
+              "maximum": 350000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": "available",
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "unknown",
+            "postedAt": "2025-12-19",
+            "semanticScore": 0.6255087479645771,
+            "descriptionExcerpt": "Exa is an applied AI lab building a search engine unlike the world has ever seen. We build massive-scale infra to crawl the entire web, train state-of-the-art embedding models to process it, and design super high performant vector databases to retrieve over it. We now power search for Cursor, Cognition, HubSpot, and over 400,000 developers and have raised $350m from Lightspeed, Benchmark, and a16z.\n\n \n\nOur ultimate goal is to build perfect search over all the world's information, far beyond Google. If you want to build massive-scale ML systems that will define the way the new AI world consumes information, this is the place for you.\n\n \n\nAs a Data Engineer, you'll architect and build the data infrastructure that powers everything we do—from crawling billions of pages to training our embedding models to serving real-time search. You'll have enormous autonomy in designing systems that scale to hundreds of petabytes. If you've ever wanted to build data pipelines at a scale that most companies only dream about, this is your chance.\n\n \n\n### Who You Are\n- Deep understanding of lakehouse architectures (Delta Lake, Iceberg, Hudi) and when to use them\n- Experience building and operating large-scale distributed data processing pipelines\n- Hands-on experience with streaming data systems (Kafka, Flink, or similar)\n- Familiarity with Ray, Spark, or ClickHouse at production scale\n- An obsessive focus on reliability and building systems that don't page you at 3am\n\n### Bonus\n- Experience with Lance or other vector-native storage formats\n- Background in GPU-accelerated data processing (RAPIDS, cuDF)\n\n \n\n### What You Could Do\n- Design a lakehouse architecture that handles 100+ PB of web crawl data\n- Build streaming pipelines that process billions of documents per day for real-time indexin"
+          },
+          {
+            "title": "Software Engineer, Knowledge Systems",
+            "focus": "Engineering",
+            "location": "San Francisco, CA",
+            "url": "https://jobs.ashbyhq.com/exa/1f90ebb9-0f74-4a52-822a-d0ea6acdef4f",
+            "companySlug": "exa",
+            "companyName": "Exa",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 180000,
+              "maximum": 350000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": "available",
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "unknown",
+            "postedAt": "2026-06-14",
+            "semanticScore": 0.48314192891121255,
+            "descriptionExcerpt": "Exa is an applied AI lab building a search engine unlike the world has ever seen. We build massive-scale infra to crawl the entire web, train state-of-the-art embedding models to process it, and design super high performant vector databases to retrieve over it. We now power search for Cursor, Cognition, HubSpot, and over 400,000 developers and have raised $350m from Lightspeed, Benchmark, and a16z.\n\n \n\nOur ultimate goal is to build perfect search over all the world's information, far beyond Google. If you want to build massive-scale ML systems that will define the way the new AI world consumes information, this is the place for you.\n\nAs a Software Engineer on **Knowledge Systems**, you’ll help build systems that understand what is true about the world. You’ll work on extracting, connecting, retrieving, and reasoning over knowledge from the web and beyond so AI agents can answer questions with unprecedented precision and completeness.\n\n### Desired Experience\n\n- You have experience building and maintaining complex distributed backend systems\n- You can build data pipelines that process petabytes of documents, metadata, and unstructured data\n- You’re comfortable optimizing systems for correctness, reliability, and scale\n- You care deeply about data quality and finding high-quality information\n- Plus: experience building systems involving graph traversal, entity resolution, data quality, or truth discovery\n\n### Example Projects\n\n- Build a system that can answer every factual question about every person in the world\n- Design a new query language for searching, traversing, and reasoning over billions of facts\n\n### Logistics\n\n- Location: This is an in-person opportunity in San Francisco.\n- Visas: We're happy to sponsor international candidates (e.g., STEM OPT, OPT, H1B, O1, E3)"
+          },
+          {
+            "title": "Software Engineer, Backend",
+            "focus": "Engineering",
+            "location": "San Francisco, CA",
+            "url": "https://jobs.ashbyhq.com/exa/41eb773d-9909-422c-b6b8-5bbdc407d318",
+            "companySlug": "exa",
+            "companyName": "Exa",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "countryCode": "us",
+            "department": "Engineering",
+            "skills": [],
+            "workplaceType": "onsite",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 180000,
+              "maximum": 350000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": "available",
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "unknown",
+            "postedAt": "2025-06-26",
+            "semanticScore": 0.4520428833910366,
+            "descriptionExcerpt": "Exa is an applied AI lab building a search engine unlike the world has ever seen. We build massive-scale infra to crawl the entire web, train state-of-the-art embedding models to process it, and design super high performant vector databases to retrieve over it. We now power search for Cursor, Cognition, HubSpot, and over 400,000 developers and have raised $350m from Lightspeed, Benchmark, and a16z.\n\n \n\nOur ultimate goal is to build perfect search over all the world's information, far beyond Google. If you want to build massive-scale ML systems that will define the way the new AI world consumes information, this is the place for you.\n\n \n\nAs a backend engineer, you'd play a critical role in our search architecture. We're pretty flexible on what projects people work on based on their skills and interests.\n\n### Desired Experience\n- You have experience writing and maintaining high throughput, low latency systems\n- You can build data processing pipelines that deal with millions of documents per day\n- You’re comfortable optimizing a system to an exceptional degree\n- You care about the problem of finding high quality information and recognize how important this is for the world\n- Plus: Experience in some high performance language (C++, Rust, etc.)\n\n### Example Projects\n- Recreate Google-level keyword search over 10 billion pages in 1 month\n- Build a state-of-the-art crawling system that works optimally for any website\n- Build a custom vector database that runs over a billion vectors in under 100ms\n\n### Logistics\n- Location: This is an in-person opportunity in San Francisco.\n- Visas: We're happy to sponsor international candidates (e.g., STEM OPT, OPT, H1B, O1, E3). While we cannot guarantee your visa, we have historically been successful in sponsoring candidates from all over t"
+          }
+        ],
+        "totalCandidates": 52,
+        "hasMoreCandidates": true,
+        "retrieval": {
+          "mode": "semantic",
+          "query": "Engineering roles building distributed data infrastructure and large-scale storage systems",
+          "model": "voyage/voyage-4-large",
+          "eligibleRecords": 52,
+          "embeddedRecords": 52,
+          "unembeddedRecords": 0,
+          "completeCoverage": true,
+          "countMeaning": "Counts are vector-covered candidates satisfying exact filters, not proven semantic matches.",
+          "policy": "Semantic scores are ranking signals, not probabilities or proof. Review returned descriptions. Unembedded records are excluded from vector ranking but remain searchable using ordinary tools. No exhaustive dataset-wide semantic claim is supported with incomplete coverage.",
+          "queryCacheHit": true,
+          "queryEmbeddingRequested": true
+        },
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 0,
+            "jobs": 3
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "impossible-filters",
+      "category": "Never relax exact constraints",
+      "pagePath": "/company/cursor",
+      "question": "Find confirmed-open roles at Cursor with recorded location containing Mars and a recorded minimum annual USD salary of at least $1,000,000,000. Require both conditions on the same role. If none exist, say none; don't relax location, salary or status.",
+      "tool": "queryJobs",
+      "input": {
+        "companySlugs": [
+          "cursor"
+        ],
+        "status": "open",
+        "location": "Mars",
+        "minimumSalary": 1000000000,
+        "limit": 3
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "companySlugs": [
+            "cursor"
+          ],
+          "queryScope": "role",
+          "location": "Mars",
+          "minimumSalary": 1000000000,
+          "status": "open",
+          "sortBy": "relevance",
+          "limit": 3
+        },
+        "totalMatches": 0,
+        "hasMore": false,
+        "totalCompanies": 0,
+        "companySummaries": [],
+        "datePolicy": "Future postings are excluded. Recency sorting requires a known posted date; salary bounds require annual USD minimum salary. Role-scope keywords search titles/skills; allContent also searches descriptions and department. Recorded remote status does not imply worldwide eligibility; preserve location/travel restrictions.",
+        "jobs": [],
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 0,
+            "jobs": 0
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "salary-ranking",
+      "category": "Salary semantics and ranking",
+      "pagePath": "/company/exa",
+      "question": "Across the database, return the three highest-paying confirmed-open remote jobs with a recorded minimum annual USD salary of at least $200,000, ranked by that minimum salary. Include company, title, location restrictions, salary range, currency, period and source link. Exclude unknown salaries and non-USD or non-annual pay. Don't restrict this to Exa.",
+      "tool": "queryJobs",
+      "input": {
+        "status": "open",
+        "workplaceType": "remote",
+        "minimumSalary": 200000,
+        "sortBy": "salary",
+        "limit": 3
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "queryScope": "role",
+          "workplaceType": "remote",
+          "minimumSalary": 200000,
+          "status": "open",
+          "sortBy": "salary",
+          "limit": 3
+        },
+        "totalMatches": 77,
+        "hasMore": true,
+        "totalCompanies": 7,
+        "companySummaries": [
+          {
+            "jobCount": 20,
+            "companyName": "Anthropic",
+            "companySlug": "anthropic"
+          },
+          {
+            "jobCount": 21,
+            "companyName": "Figma",
+            "companySlug": "figma"
+          },
+          {
+            "jobCount": 1,
+            "companyName": "Modal",
+            "companySlug": "modal"
+          },
+          {
+            "jobCount": 15,
+            "companyName": "OpenAI",
+            "companySlug": "openai"
+          },
+          {
+            "jobCount": 10,
+            "companyName": "OpenRouter",
+            "companySlug": "openrouter"
+          },
+          {
+            "jobCount": 4,
+            "companyName": "Temporal",
+            "companySlug": "temporal"
+          },
+          {
+            "jobCount": 6,
+            "companyName": "Vercel",
+            "companySlug": "vercel"
+          }
+        ],
+        "datePolicy": "Future postings are excluded. Recency sorting requires a known posted date; salary bounds require annual USD minimum salary. Role-scope keywords search titles/skills; allContent also searches descriptions and department. Recorded remote status does not imply worldwide eligibility; preserve location/travel restrictions.",
+        "jobs": [
+          {
+            "title": "Research Engineer, Universes",
+            "focus": "Research",
+            "location": "Remote-Friendly (Travel Required) | San Francisco, CA | Seattle, WA | New York, NY",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5061517008",
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/anthropic/images/logo.png",
+            "countryCode": "us",
+            "department": "AI Research & Engineering",
+            "skills": [],
+            "workplaceType": "remote",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 500000,
+              "maximum": 850000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-01-09"
+          },
+          {
+            "title": "Staff+ Software Engineer, Data Infrastructure",
+            "focus": "Engineering",
+            "location": "Remote-Friendly (Travel Required) | San Francisco, CA | Seattle, WA | New York, NY",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5114768008",
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/anthropic/images/logo.png",
+            "countryCode": "us",
+            "department": "Software Engineering - Infrastructure",
+            "skills": [],
+            "workplaceType": "remote",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": "10",
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 405000,
+              "maximum": 485000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-02-13"
+          },
+          {
+            "title": "Warehouse and Logistics Capability Manager",
+            "focus": "Engineering",
+            "location": "San Francisco, CA | New York, NY",
+            "url": "https://job-boards.greenhouse.io/anthropic/jobs/5416696008",
+            "companySlug": "anthropic",
+            "companyName": "Anthropic",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/anthropic/images/logo.png",
+            "countryCode": "us",
+            "department": "Software Engineering - Infrastructure",
+            "skills": [],
+            "workplaceType": "remote",
+            "employmentType": "full-time",
+            "experienceLevel": null,
+            "minimumExperienceYears": null,
+            "maximumExperienceYears": null,
+            "acceptsNewGrads": null,
+            "salary": {
+              "minimum": 405000,
+              "maximum": 485000,
+              "currency": "USD",
+              "period": "year"
+            },
+            "visaSponsorship": null,
+            "requiresUsWorkAuthorization": null,
+            "citizenshipRequired": null,
+            "status": "open",
+            "postedAt": "2026-09-04"
+          }
+        ],
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 0,
+            "jobs": 3
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "founders",
+      "category": "People facts and page-scope isolation",
+      "pagePath": "/company/openai",
+      "question": "Who are Exa's recorded founders in Locus? List all their names and recorded roles with evidence/source links. Do not answer about OpenAI even though its page is open.",
+      "tool": "queryPeople",
+      "input": {
+        "companySlugs": [
+          "exa"
+        ],
+        "isFounder": true,
+        "limit": 50
+      },
+      "expected": {
+        "filters": {
+          "companySlugs": [
+            "exa"
+          ],
+          "isFounder": true,
+          "limit": 50
+        },
+        "totalMatches": 2,
+        "hasMore": false,
+        "policy": "Roles are recorded profile fields, not independently verified present-day employment. Founder status uses an explicit true flag or a founder/co-founder title; false requires an explicit profile flag, otherwise unknown. Location and industry filters refer to the company, not the person's residence.",
+        "people": [
+          {
+            "name": "Jeff Wang",
+            "role": "Co-founder",
+            "image": "https://locus-images-b3c414.gitlab.io/companies/exa/people/jeff-wang/avatar.jpg",
+            "isFounder": true,
+            "url": "https://www.linkedin.com/in/wangzjeff/",
+            "sourceUrl": "https://exa.ai/about",
+            "companySlug": "exa",
+            "companyName": "Exa",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "countryCode": "us",
+            "companyIndustry": "Web Search",
+            "companyLocation": "San Francisco, California"
+          },
+          {
+            "name": "Will Bryk",
+            "role": "Co-founder & CEO",
+            "image": "https://locus-images-b3c414.gitlab.io/companies/exa/people/will-bryk/avatar.jpg",
+            "isFounder": true,
+            "url": "https://www.linkedin.com/in/william-bryk",
+            "sourceUrl": "https://exa.ai/about",
+            "companySlug": "exa",
+            "companyName": "Exa",
+            "companyLogo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "countryCode": "us",
+            "companyIndustry": "Web Search",
+            "companyLocation": "San Francisco, California"
+          }
+        ],
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 0,
+            "people": 2,
+            "jobs": 0
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    },
+    {
+      "id": "funding-window",
+      "category": "Funding dates and round-vs-total",
+      "pagePath": "/company/cursor",
+      "question": "Which recorded funding rounds for search-industry companies were announced from September 1 through September 30, 2025, inclusive? Return all matching rounds with company, announcement date, round stage, round amount and source link. Distinguish round amounts from total funding. If no rounds match, don't substitute older dates.",
+      "tool": "queryFunding",
+      "input": {
+        "industry": "search",
+        "announcedAfter": "2025-09-01",
+        "announcedBefore": "2025-09-30",
+        "sortBy": "announcedAt",
+        "limit": 50
+      },
+      "expected": {
+        "asOf": "2026-10-04",
+        "filters": {
+          "industry": "search",
+          "announcedAfter": "2025-09-01",
+          "announcedBefore": "2025-09-30",
+          "sortBy": "announcedAt",
+          "limit": 50
+        },
+        "totalMatches": 1,
+        "hasMore": false,
+        "datePolicy": "Date bounds are inclusive. Future rounds are excluded. Recency requires a full announcement date; unknown or partial dates are not evidence of recency. Amount filters are in USD.",
+        "rounds": [
+          {
+            "slug": "exa",
+            "name": "Exa",
+            "industry": "Web Search",
+            "location": "San Francisco, California",
+            "countryCode": "us",
+            "logo": "https://locus-images-b3c414.gitlab.io/companies/exa/images/logo.png",
+            "roundId": "series-b-2025",
+            "stage": "Series B",
+            "announcedAt": "2025-09-03",
+            "amount": {
+              "amount": 85000000,
+              "currency": "USD",
+              "display": "$85M"
+            },
+            "valuation": {
+              "amount": 700000000,
+              "display": "$700M",
+              "currency": "USD"
+            },
+            "leadInvestors": [
+              {
+                "logo": "https://locus-images-b3c414.gitlab.io/investors/benchmark.jpeg",
+                "name": "Benchmark",
+                "website": "https://www.benchmark.com"
+              }
+            ],
+            "investors": [
+              {
+                "logo": "https://locus-images-b3c414.gitlab.io/investors/lightspeed.png",
+                "name": "Lightspeed Venture Partners",
+                "website": "https://lsvp.com"
+              },
+              {
+                "logo": "https://locus-images-b3c414.gitlab.io/investors/y-combinator.png",
+                "name": "Y Combinator",
+                "website": "https://www.ycombinator.com"
+              },
+              {
+                "logo": "https://locus-images-b3c414.gitlab.io/investors/nvidia.png",
+                "name": "NVentures",
+                "website": "https://www.nvidia.com/en-us/nventures/"
+              }
+            ],
+            "sourceUrl": "https://exa.ai/blog/announcing-series-b",
+            "pageUrl": "/company/exa"
+          }
+        ],
+        "presentation": {
+          "mode": "automaticInlineCards",
+          "displayedCounts": {
+            "companies": 1,
+            "people": 0,
+            "jobs": 0
+          },
+          "visibleFields": {
+            "companies": [
+              "name",
+              "industry",
+              "location"
+            ],
+            "people": [
+              "name",
+              "role",
+              "company"
+            ],
+            "jobs": [
+              "title",
+              "company",
+              "department/focus",
+              "location"
+            ]
+          },
+          "textPolicy": "Cards are the answer. Add only facts not visible in cards, totals, evidence or caveats. Do not repeat the list. Earlier-turn cards may be explicitly redisplayed."
+        }
+      }
+    }
+  ]
+}

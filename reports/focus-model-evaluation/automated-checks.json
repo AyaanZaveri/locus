@@ -1,0 +1,142 @@
+[
+  {
+    "model": "gpt-6-luna",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "cross-company",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "exa-confirmed",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "exa-unconfirmed",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "salary-ranking",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "gpt-6-luna",
+    "caseId": "funding-window",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "cross-company",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "exa-confirmed",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "exa-unconfirmed",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "salary-ranking",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "muse-spark-1.3-contributor",
+    "caseId": "funding-window",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "cursor-semantic",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "cross-company",
+    "flags": [
+      "Transport/stream/tool error",
+      "No final answer text",
+      "Returned jobs differ from deterministic oracle (review relevance/order/alternative tools)",
+      "Requested input differs: limit expected 5, got 50"
+    ]
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "about-semantic",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "exa-confirmed",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "exa-unconfirmed",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "impossible-filters",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "salary-ranking",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "founders",
+    "flags": []
+  },
+  {
+    "model": "mimo-v2.6-flash",
+    "caseId": "funding-window",
+    "flags": []
+  }
+]
