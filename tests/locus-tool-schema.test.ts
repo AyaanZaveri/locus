@@ -44,7 +44,11 @@ test(
     assert.ok("retrieval" in global);
     assert.equal(global.retrieval.mode, "semantic");
     assert.ok("completeCoverage" in global.retrieval);
-    assert.equal(global.retrieval.completeCoverage, false);
+    assert.ok("unembeddedRecords" in global.retrieval);
+    assert.equal(
+      global.retrieval.completeCoverage,
+      global.retrieval.unembeddedRecords === 0,
+    );
     assert.equal(global.jobs.length, 1);
     const about = await locusTools.queryCompanies.execute!(
       {

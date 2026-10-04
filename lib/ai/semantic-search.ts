@@ -231,17 +231,18 @@ export async function retrieveSemantic(
   const result = await db.execute(
     semanticRankingQuery(base, entity, query.vector, limit, sortBy),
   );
+  const rows: Record<string, unknown>[] = result.rows.map((row) => ({
+    ...row,
+    total_matches: embedded,
+    ...(entity === "jobs"
+      ? {
+          company_matches: coverage.rows[0]?.company_matches,
+          company_summaries: coverage.rows[0]?.company_summaries ?? [],
+        }
+      : {}),
+  }));
   return {
-    rows: result.rows.map((row) => ({
-      ...row,
-      total_matches: embedded,
-      ...(entity === "jobs"
-        ? {
-            company_matches: coverage.rows[0]?.company_matches,
-            company_summaries: coverage.rows[0]?.company_summaries ?? [],
-          }
-        : {}),
-    })),
+    rows,
     metadata: {
       ...metadata,
       queryCacheHit: query.cacheHit,

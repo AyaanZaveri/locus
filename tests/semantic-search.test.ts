@@ -305,7 +305,10 @@ test(
         ),
       )
     ).rows[0];
-    assert.equal(Number(global.embedded), 52);
+    assert.ok(
+      Number(global.embedded) >= 52,
+      "Exa vectors must remain covered as rollout coverage expands",
+    );
     assert.ok(
       Date.now() - coverageStartedAt < 10000,
       "Global coverage regressed: avoid per-job extraction of huge company profiles",
@@ -339,6 +342,21 @@ test(
       ),
       0,
     );
+    const partialSource = sql`(SELECT (jsonb_populate_record(NULL::jobs, to_jsonb(original) || jsonb_build_object('description',
+      CASE WHEN original.id = (SELECT id FROM jobs WHERE company_id=(SELECT id FROM companies WHERE slug='exa') ORDER BY id LIMIT 1)
+      THEN original.description || ' Changed partial fixture' ELSE original.description END))).*
+      FROM jobs original WHERE original.company_id=(SELECT id FROM companies WHERE slug='exa')) j JOIN companies c ON c.id=j.company_id`;
+    const partial = await retrieveSemantic(
+      buildJobsQuery(input, "2026-10-04", partialSource, [], true),
+      "jobs",
+      cachedQuery,
+      3,
+      "relevance",
+    );
+    assert.equal(partial.metadata.eligibleRecords, 52);
+    assert.equal(partial.metadata.embeddedRecords, 51);
+    assert.equal(partial.metadata.completeCoverage, false);
+    assert.equal(partial.metadata.queryCacheHit, true);
     const company = buildCompanyDiscoveryQuery(
       companyDiscoverySchema.parse({ companySlugs: ["exa"] }),
       "2026-10-04",
