@@ -42,7 +42,13 @@ const funding = z
     },
   );
 const hiring = jobsQuerySchema
-  .omit({ companySlugs: true, industry: true, limit: true, sortBy: true })
+  .omit({
+    companySlugs: true,
+    industry: true,
+    limit: true,
+    sortBy: true,
+    semanticQuery: true,
+  })
   .safeExtend({
     query: jobsQuerySchema.shape.query.describe(
       "Role/title keywords, e.g. 'engineer OR technical staff'. Use this for engineers/designers; do not put role names in skills. Supports quoted phrases, OR and exclusions.",
@@ -125,6 +131,7 @@ export function buildCompanyDiscoveryQuery(
     jobs: sql`${jobs} j INNER JOIN ${companies} c ON j.company_id = c.id`,
     people: sql`${people} p INNER JOIN ${companies} c ON p.company_id = c.id`,
   },
+  fullCandidates = false,
 ) {
   const queries = relationInputs(input);
   const relations = {
@@ -182,7 +189,12 @@ export function buildCompanyDiscoveryQuery(
     relations.filters.push(sql`activity_evidence.records IS NOT NULL`);
     relations.columns.push(sql`activity_evidence.records AS activity_records`);
   }
-  return buildCompaniesQuery(input, sources.companies, relations);
+  return buildCompaniesQuery(
+    input,
+    sources.companies,
+    relations,
+    fullCandidates,
+  );
 }
 
 function records(value: unknown): Record<string, unknown>[] {

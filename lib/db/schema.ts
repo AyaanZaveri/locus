@@ -1,12 +1,15 @@
 import {
   boolean,
   index,
+  integer,
   jsonb,
   numeric,
   pgTable,
+  primaryKey,
   text,
   timestamp,
   uuid,
+  vector,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 
@@ -114,4 +117,46 @@ export const people = pgTable(
     index("people_company_idx").on(table.companyId),
     index("people_name_idx").on(table.name),
   ],
+);
+
+/** Content-addressed vectors outlive entity imports; only entity links cascade. */
+export const embeddingCache = pgTable("embedding_cache", {
+  key: text("key").primaryKey(),
+  modelId: text("model_id").notNull(),
+  dimensions: integer("dimensions").notNull(),
+  recipe: text("recipe").notNull(),
+  inputType: text("input_type").notNull(),
+  contentText: text("content_text").notNull(),
+  embedding: vector("embedding", { dimensions: 1024 }).notNull(),
+});
+
+export const jobEmbeddings = pgTable("job_embeddings", {
+  jobId: uuid("job_id")
+    .primaryKey()
+    .references(() => jobs.id, { onDelete: "cascade" }),
+  cacheKey: text("cache_key")
+    .notNull()
+    .references(() => embeddingCache.key),
+});
+
+export const companyEmbeddings = pgTable("company_embeddings", {
+  companyId: uuid("company_id")
+    .primaryKey()
+    .references(() => companies.id, { onDelete: "cascade" }),
+  cacheKey: text("cache_key")
+    .notNull()
+    .references(() => embeddingCache.key),
+});
+
+export const embeddingRequests = pgTable(
+  "embedding_requests",
+  {
+    key: text("key").notNull().unique(),
+    day: text("day").notNull(),
+    slot: integer("slot").notNull(),
+    state: text("state").notNull().default("pending"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    receipt: jsonb("receipt"),
+  },
+  (table) => [primaryKey({ columns: [table.day, table.slot] })],
 );

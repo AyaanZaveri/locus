@@ -4,6 +4,7 @@ import { tool } from "ai";
 import { and, asc, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { z } from "zod";
 import { compactToolOutput } from "./compact-tool-output";
+import { retrieveSemantic, semanticResult } from "./semantic-search";
 import {
   presentationOptionsSchema,
   selectPresentation,
@@ -196,10 +197,48 @@ export const locusTools = {
     toModelOutput: compactToolOutput,
     strict: false,
     description:
+      "For conceptual responsibility/fit requests use semanticQuery (natural-language intent), not keyword query. Omit semanticQuery for names, exact skills, or salary/location/status-only filters. Semantic ranks only current vector-covered candidates and reports coverage, scores and description evidence; not exhaustive relevance counts. query remains an additional strict lexical constraint if supplied. Defaults confirmed open; explicitly use openOrUnknown for recorded roles with unconfirmed status, never call them open. " +
       "Filter/rank jobs by role keywords, title, department, ALL skills, job location, company industry, workplace type, seniority, employment type, minimum annual USD salary, sponsorship and new-grad eligibility. queryScope defaults role (title/skills only); allContent also searches descriptions/departments and can match unrelated roles. Department filters are recorded team labels, not proof of an engineering role. companySlugs composes with other queries. Defaults confirmed open; openOrUnknown includes unconfirmed. Unknown fields never satisfy positive filters. Salary uses the lower bound, not maximum. Returns limited job examples plus totalMatches, hasMore, totalCompanies and companySummaries (up to 50 companies counted BEFORE limit). Set limit to the number of roles requested. Remote does not mean worldwide: preserve location/travel restrictions.",
     inputSchema: jobsQuerySchema,
     execute: async (input) => {
+      input = jobsQuerySchema.parse(input);
       const asOf = new Date().toISOString().slice(0, 10);
+      if (input.semanticQuery) {
+        let unavailable =
+          "Embedding service unavailable, rate-limited, or request budget exhausted";
+        try {
+          const semantic = await retrieveSemantic(
+            buildJobsQuery(input, asOf, undefined, [], true),
+            "jobs",
+            input.semanticQuery,
+            input.limit,
+            input.sortBy,
+          );
+          if (!semantic.unavailable)
+            return withResultPresentation({
+              ...semanticResult(jobsQueryResult(semantic.rows, input, asOf)),
+              retrieval: semantic.metadata,
+            });
+          unavailable = semantic.unavailable;
+        } catch {
+          /* Controlled lexical fallback; never relax exact filters. */
+        }
+        const fallback = {
+          ...input,
+          query: input.query ?? input.semanticQuery,
+        };
+        const result = await db.execute(buildJobsQuery(fallback, asOf));
+        return withResultPresentation({
+          ...jobsQueryResult(result.rows, input, asOf),
+          retrieval: {
+            mode: "lexical-fallback",
+            queryUsed: fallback.query,
+            reason: unavailable,
+            policy:
+              "Semantic retrieval was unavailable. These are keyword matches under unchanged structured filters, not vector results. No synonyms or filter relaxation were applied.",
+          },
+        });
+      }
       const result = await db.execute(buildJobsQuery(input, asOf));
       return withResultPresentation(jobsQueryResult(result.rows, input, asOf));
     },
@@ -208,10 +247,52 @@ export const locusTools = {
     toModelOutput: compactToolOutput,
     strict: false,
     description:
+      "Use top-level semanticQuery for conceptual company About/product discovery (natural-language intent), with sortBy relevance unless a different order is requested. It ranks vector-covered companies AFTER all exact and relation filters, with coverage disclosure. Omit it for names, aliases, or structured-only requests. query adds a strict keyword constraint; nested jobs currently uses lexical/structured filters only. Semantic counts are covered candidates, not proof of relevance. " +
       "Discover companies by description keywords, industry/location literal substring, country, exact company stage, founded-year/employee bounds and minimum total USD funding. Combine nested funding, jobs, people and activity filters in ONE call for cross-entity questions such as recently funded companies hiring remotely. All relations must match; all filters within a relation must match ONE record. Intersect the full candidate set BEFORE counting or limiting companies, not separate limited funding/job previews. jobs.location is job location; top-level location is company location. jobs defaults confirmed open; recorded remote does not imply worldwide eligibility. Returns final company cards with bounded matching evidence (3 records per relation per company), exact company totalMatches/countUnit and hasMore. Omit unrequested relations; {} explicitly requires a qualifying record. Nested funding filters apply to rounds; minimumTotalFunding applies to company TOTAL. Employee filters require the entire known range to fit; unknown bounds are not positive matches. Sort name ascending or totalFunding/employees/foundedYear descending (employees sorts lower bounds).",
     inputSchema: companyDiscoverySchema,
     execute: async (input) => {
+      input = companyDiscoverySchema.parse(input);
       const asOf = new Date().toISOString().slice(0, 10);
+      if (input.semanticQuery) {
+        let unavailable =
+          "Embedding service unavailable, rate-limited, or request budget exhausted";
+        try {
+          const semantic = await retrieveSemantic(
+            buildCompanyDiscoveryQuery(input, asOf, undefined, true),
+            "companies",
+            input.semanticQuery,
+            input.limit,
+            input.sortBy,
+          );
+          if (!semantic.unavailable)
+            return withResultPresentation({
+              ...semanticResult(
+                companyDiscoveryResult(semantic.rows, input, asOf),
+              ),
+              retrieval: semantic.metadata,
+            });
+          unavailable = semantic.unavailable;
+        } catch {
+          /* Preserve all original structured/relation constraints. */
+        }
+        const fallback = {
+          ...input,
+          query: input.query ?? input.semanticQuery,
+        };
+        const result = await db.execute(
+          buildCompanyDiscoveryQuery(fallback, asOf),
+        );
+        return withResultPresentation({
+          ...companyDiscoveryResult(result.rows, input, asOf),
+          retrieval: {
+            mode: "lexical-fallback",
+            queryUsed: fallback.query,
+            reason: unavailable,
+            policy:
+              "Semantic unavailable. Keyword-only results, with all original structured and relation filters preserved.",
+          },
+        });
+      }
       const result = await db.execute(buildCompanyDiscoveryQuery(input, asOf));
       return withResultPresentation(
         companyDiscoveryResult(result.rows, input, asOf),

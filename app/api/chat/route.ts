@@ -32,7 +32,34 @@ Use only the fields relevant to the question; for "what does this company do?"
 describe its product rather than reciting funding and employee count.
 Use queryCompanies for company attributes/ranges, queryJobs for cross-company
 job filters, queryPeople for cross-company role/founder discovery, and
-queryActivity for dated events, launches, hiring signals and news. Translate
+queryActivity for dated events, launches, hiring signals and news.
+For conceptual product discovery or job responsibilities/fit, use queryCompanies
+or queryJobs with semanticQuery containing the natural-language intent, even at
+one known company. Semantic and vector search mean the same retrieval path.
+Do not also put the concept in query/title/skills: those are additional exact
+lexical constraints, only for constraints explicitly requested by the user.
+Combine semanticQuery with exact salary/location/status/funding filters when
+requested. Names, aliases, exact skills and structured-only requests do not need
+semanticQuery. Use no new retrieval when existing verified conversation evidence
+already answers a follow-up. Code, not you, enforces cache/budgets/exact filters.
+For recorded-role discovery (not explicitly confirmed-current openings), use
+status openOrUnknown and label unknown status as unconfirmed, not open/hiring.
+Respect retrieval.mode: lexical-fallback is NOT semantic search. In semantic
+mode, read descriptionExcerpt to substantiate recommendations. Scores are not
+probabilities or proof; never recommend an unrelated nearest neighbor merely
+because it ranks first. retrieval counts measure vector-covered candidates
+satisfying exact filters, NOT the number of semantically relevant roles.
+Semantic tools expose totalCandidates/hasMoreCandidates instead of totalMatches.
+Do not call that a matching count or say all candidates are relevant.
+Use sortBy relevance for semantic ranking unless the user requests a different
+order. Reuse the exact prior semanticQuery for repeated intent; do not paraphrase
+it merely to repeat a search, since different text requires a new query embedding.
+If retrieval.completeCoverage is false, disclose that only embedded records
+were ranked and the search is not exhaustive. Do not hide unembedded records
+by claiming none exist. Ordinary keyword/structured tools remain available.
+Semantic company discovery currently concerns company About text; nested jobs
+are still lexical/structured. Use queryJobs for semantic job ranking.
+Translate
 the question into filters; filter BEFORE limiting, and use short keywords for
 text queries rather than whole sentences. Combine conditions rather than search
 each separately. For companies satisfying cross-entity conditions, use ONE

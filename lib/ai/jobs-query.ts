@@ -3,57 +3,63 @@ import { z } from "zod";
 
 import { companies, jobs } from "../db/schema";
 
-export const jobsQuerySchema = z.object({
-  companySlugs: z
-    .array(
-      z
-        .string()
-        .trim()
-        .regex(/^[a-z0-9-]+$/)
-        .max(100),
-    )
-    .min(1)
-    .max(50)
-    .optional(),
-  query: z.string().trim().min(1).max(200).optional(),
-  queryScope: z.enum(["role", "allContent"]).default("role"),
-  title: z.string().trim().min(1).max(120).optional(),
-  department: z.string().trim().min(1).max(120).optional(),
-  skills: z.array(z.string().trim().min(1).max(80)).min(1).max(10).optional(),
-  location: z.string().trim().min(1).max(120).optional(),
-  industry: z.string().trim().min(1).max(120).optional(),
-  workplaceType: z.enum(["remote", "hybrid", "onsite", "flexible"]).optional(),
-  experienceLevel: z
-    .enum([
-      "intern",
-      "entry",
-      "mid",
-      "senior",
-      "staff",
-      "principal",
-      "manager",
-      "director",
-      "executive",
-    ])
-    .optional(),
-  employmentType: z
-    .enum(["full-time", "part-time", "contract", "internship", "temporary"])
-    .optional(),
-  minimumSalary: z.number().finite().nonnegative().optional(),
-  visaSponsorship: z.enum(["available", "unavailable", "unknown"]).optional(),
-  acceptsNewGrads: z.boolean().optional(),
-  status: z.enum(["open", "openOrUnknown", "closed"]).default("open"),
-  sortBy: z.enum(["relevance", "salary", "postedAt"]).default("relevance"),
-  limit: z.number().int().min(1).max(50).default(10),
-});
+export const jobsQuerySchema = z
+  .object({
+    companySlugs: z
+      .array(
+        z
+          .string()
+          .trim()
+          .regex(/^[a-z0-9-]+$/)
+          .max(100),
+      )
+      .min(1)
+      .max(50)
+      .optional(),
+    query: z.string().trim().min(1).max(200).optional(),
+    semanticQuery: z.string().trim().min(1).max(500).optional(),
+    queryScope: z.enum(["role", "allContent"]).default("role"),
+    title: z.string().trim().min(1).max(120).optional(),
+    department: z.string().trim().min(1).max(120).optional(),
+    skills: z.array(z.string().trim().min(1).max(80)).min(1).max(10).optional(),
+    location: z.string().trim().min(1).max(120).optional(),
+    industry: z.string().trim().min(1).max(120).optional(),
+    workplaceType: z
+      .enum(["remote", "hybrid", "onsite", "flexible"])
+      .optional(),
+    experienceLevel: z
+      .enum([
+        "intern",
+        "entry",
+        "mid",
+        "senior",
+        "staff",
+        "principal",
+        "manager",
+        "director",
+        "executive",
+      ])
+      .optional(),
+    employmentType: z
+      .enum(["full-time", "part-time", "contract", "internship", "temporary"])
+      .optional(),
+    minimumSalary: z.number().finite().nonnegative().optional(),
+    visaSponsorship: z.enum(["available", "unavailable", "unknown"]).optional(),
+    acceptsNewGrads: z.boolean().optional(),
+    status: z.enum(["open", "openOrUnknown", "closed"]).default("open"),
+    sortBy: z.enum(["relevance", "salary", "postedAt"]).default("relevance"),
+    limit: z.number().int().min(1).max(50).default(10),
+  })
+  .strict();
 
 export type JobsQuery = z.infer<typeof jobsQuerySchema>;
 
 export function buildJobsQuery(
   input: JobsQuery,
   asOf: string,
-  source: SQL = sql`${jobs} j INNER JOIN ${companies} c ON j.company_id=c.id`,
+  source?: SQL,
   additionalFilters: SQL[] = [],
+  fullCandidates = false,
 ) {
   const filters: SQL[] = [
     sql`(j.posted_at IS NULL OR j.posted_at <= ${asOf})`,
@@ -122,12 +128,27 @@ export function buildJobsQuery(
         : input.query
           ? sql`relevance DESC, posted_at DESC NULLS LAST`
           : sql`title ASC`;
-  return sql`WITH matches AS (
+  // Company profiles contain full imported jobs and are often large/toasted.
+  // Extract tiny display fields once per company, not repeatedly per job.
+  const effectiveSource =
+    source ?? sql`${jobs} j INNER JOIN company_context c ON j.company_id=c.id`;
+  return sql`WITH company_context AS MATERIALIZED (
+    SELECT id,slug,name,jsonb_build_object('logo',profile->>'logo','industry',profile->>'industry','location',profile->'location') AS profile
+    FROM ${companies}
+    ${
+      input.companySlugs
+        ? sql`WHERE slug IN (${sql.join(
+            input.companySlugs.map((slug) => sql`${slug}`),
+            sql`, `,
+          )})`
+        : sql``
+    }
+  ), matches AS (
     SELECT j.*, c.slug AS company_slug, c.name AS company_name,
       c.profile->>'logo' AS company_logo, c.profile->'location'->>'countryCode' AS country_code,
       c.profile->>'industry' AS company_industry,
       ${input.query ? sql`ts_rank_cd(${searchVector}, websearch_to_tsquery('english', ${input.query}))` : sql`0`} AS relevance
-    FROM ${source}
+    FROM ${effectiveSource}
     WHERE ${sql.join(filters, sql` AND `)}
   ) SELECT *, count(*) OVER() AS total_matches,
       (SELECT count(DISTINCT company_slug) FROM matches) AS company_matches,
@@ -136,7 +157,7 @@ export function buildJobsQuery(
         FROM matches GROUP BY company_slug, company_name ORDER BY company_name LIMIT 50
       ) company_counts) AS company_summaries
     FROM matches
-    ORDER BY ${order}, title, company_slug, id LIMIT ${input.limit}`;
+     ORDER BY ${order}, title, company_slug, id ${fullCandidates ? sql`` : sql`LIMIT ${input.limit}`}`;
 }
 
 export function jobsQueryResult(
@@ -182,6 +203,12 @@ export function jobsQueryResult(
       citizenshipRequired: row.citizenship_required,
       status: row.status,
       postedAt: row.posted_at,
+      ...(row.semantic_score !== undefined
+        ? {
+            semanticScore: Number(row.semantic_score),
+            descriptionExcerpt: String(row.description ?? "").slice(0, 1800),
+          }
+        : {}),
     })),
   };
 }

@@ -7,6 +7,93 @@ import { compactToolOutput } from "../lib/ai/compact-tool-output";
 import { search } from "../lib/search";
 
 test(
+  "semantic tools preserve evidence/count meaning; disabled service falls back without relaxing filters",
+  { skip: !process.env.DATABASE_URL },
+  async () => {
+    const options = {
+      toolCallId: "semantic-regression",
+      messages: [],
+      context: {},
+    };
+    const input = {
+      companySlugs: ["exa"],
+      semanticQuery:
+        "Engineering roles building distributed data infrastructure and large-scale storage systems",
+      queryScope: "role" as const,
+      status: "openOrUnknown" as const,
+      sortBy: "relevance" as const,
+      limit: 3,
+    };
+    const result = await locusTools.queryJobs.execute!(input, options);
+    assert.ok("retrieval" in result);
+    assert.equal(result.retrieval.mode, "semantic");
+    assert.equal("totalMatches" in result, false);
+    assert.ok("totalCandidates" in result);
+    assert.equal(result.totalCandidates, 52);
+    assert.equal(
+      result.jobs[0].title,
+      "Software Engineer, Distributed Data Systems",
+    );
+    assert.equal(result.jobs[0].status, "unknown");
+    assert.ok("descriptionExcerpt" in result.jobs[0]);
+    assert.equal("embedding" in result.jobs[0], false);
+    const global = await locusTools.queryJobs.execute!(
+      { ...input, companySlugs: undefined, limit: 1 },
+      options,
+    );
+    assert.ok("retrieval" in global);
+    assert.equal(global.retrieval.mode, "semantic");
+    assert.ok("completeCoverage" in global.retrieval);
+    assert.equal(global.retrieval.completeCoverage, false);
+    assert.equal(global.jobs.length, 1);
+    const about = await locusTools.queryCompanies.execute!(
+      {
+        companySlugs: ["exa"],
+        semanticQuery:
+          "Companies providing neural web retrieval APIs for AI agents",
+        sortBy: "relevance",
+        limit: 1,
+      },
+      options,
+    );
+    assert.ok("retrieval" in about);
+    assert.equal(about.retrieval.mode, "semantic");
+    assert.equal(about.companies[0].slug, "exa");
+    assert.ok("descriptionExcerpt" in about.companies[0]);
+    const previous = process.env.LOCUS_SEMANTIC_SEARCH;
+    process.env.LOCUS_SEMANTIC_SEARCH = "off";
+    try {
+      const fallback = await locusTools.queryJobs.execute!(
+        { ...input, query: "engineer", location: "Mars", minimumSalary: 1e9 },
+        options,
+      );
+      assert.ok("retrieval" in fallback);
+      assert.equal(fallback.retrieval.mode, "lexical-fallback");
+      assert.equal(fallback.jobs.length, 0);
+      assert.equal(fallback.filters.location, "Mars");
+      assert.equal(fallback.filters.minimumSalary, 1e9);
+      const company = await locusTools.queryCompanies.execute!(
+        {
+          companySlugs: ["exa"],
+          semanticQuery:
+            "Companies providing neural web retrieval APIs for AI agents",
+          countryCode: "ZZ",
+          sortBy: "name",
+          limit: 3,
+        },
+        options,
+      );
+      assert.ok("retrieval" in company);
+      assert.equal(company.retrieval.mode, "lexical-fallback");
+      assert.equal(company.companies.length, 0);
+    } finally {
+      if (previous === undefined) delete process.env.LOCUS_SEMANTIC_SEARCH;
+      else process.env.LOCUS_SEMANTIC_SEARCH = previous;
+    }
+  },
+);
+
+test(
   "live search respects entity scope and never retries isolated words",
   { skip: !process.env.DATABASE_URL },
   async () => {

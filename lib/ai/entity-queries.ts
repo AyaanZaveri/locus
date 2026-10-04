@@ -26,6 +26,7 @@ export const companiesQuerySchema = z
   .object({
     ...companyFilters,
     query: shortText.optional(),
+    semanticQuery: z.string().trim().min(1).max(500).optional(),
     stage: shortText.optional(),
     minimumEmployees: count.optional(),
     maximumEmployees: count.optional(),
@@ -33,10 +34,11 @@ export const companiesQuerySchema = z
     foundedBefore: z.number().int().min(1800).max(2100).optional(),
     minimumTotalFunding: z.number().finite().nonnegative().optional(),
     sortBy: z
-      .enum(["name", "totalFunding", "employees", "foundedYear"])
+      .enum(["name", "relevance", "totalFunding", "employees", "foundedYear"])
       .default("name"),
     limit,
   })
+  .strict()
   .refine(
     (v) =>
       v.minimumEmployees === undefined ||
@@ -117,6 +119,7 @@ export function buildCompaniesQuery(
     filters: [],
     columns: [],
   },
+  fullCandidates = false,
 ) {
   const filters = [...commonFilters(input), ...relations.filters];
   if (input.query)
@@ -139,6 +142,9 @@ export function buildCompaniesQuery(
     );
   const order = {
     name: sql`name ASC`,
+    relevance: input.query
+      ? sql`ts_rank_cd(to_tsvector('english',concat_ws(' ',name,tagline,description)),websearch_to_tsquery('english',${input.query})) DESC`
+      : sql`name ASC`,
     totalFunding: sql`CASE WHEN funding_currency = 'USD' THEN total_funding END DESC NULLS LAST`,
     employees: sql`employee_min DESC NULLS LAST`,
     foundedYear: sql`founded_year DESC NULLS LAST`,
@@ -162,11 +168,12 @@ export function buildCompaniesQuery(
       FROM base
     )
     SELECT slug, name, industry, stage, location, country_code, logo, tagline,
-      employee_count, employee_min, employee_max, founded_year, total_funding,
+       employee_count, employee_min, employee_max, founded_year, total_funding,
+       ${fullCandidates ? sql`description,` : sql``}
        funding_currency, funding_display, source_url, count(*) OVER() AS total_matches
        ${relations.columns.length ? sql`, ${sql.join(relations.columns, sql`, `)}` : sql``}
     FROM bounds ${sql.join(relations.joins, sql` `)}
-    WHERE ${where(filters)} ORDER BY ${order}, slug LIMIT ${input.limit}
+     WHERE ${where(filters)} ORDER BY ${order}, slug ${fullCandidates ? sql`` : sql`LIMIT ${input.limit}`}
   `;
 }
 
@@ -288,6 +295,12 @@ export function companiesQueryResult(
         display: row.funding_display,
       },
       sourceUrl: row.source_url,
+      ...(row.semantic_score !== undefined
+        ? {
+            semanticScore: Number(row.semantic_score),
+            descriptionExcerpt: row.description,
+          }
+        : {}),
     })),
   };
 }
