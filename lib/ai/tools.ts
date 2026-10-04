@@ -153,80 +153,19 @@ export async function getPageCompanyContext(pagePath: unknown) {
   };
 }
 
-const searchStopWords = new Set([
-  "about",
-  "are",
-  "based",
-  "can",
-  "company",
-  "companies",
-  "find",
-  "for",
-  "from",
-  "how",
-  "in",
-  "is",
-  "jobs",
-  "locus",
-  "people",
-  "please",
-  "show",
-  "that",
-  "the",
-  "through",
-  "what",
-  "which",
-  "who",
-  "with",
-]);
-
-function hasSearchResults(result: SearchResponse) {
-  return (
-    result.companies.length > 0 ||
-    result.people.length > 0 ||
-    result.jobs.length > 0
-  );
-}
-
-/**
- * The database search is intentionally a literal substring lookup. If an
- * agent sends a whole conversational sentence, retry its useful keywords so
- * "which companies are based in Toronto" still finds "Toronto" records.
- */
+// Search only requested entities, without silently retrying separate words
+// and dropping the rest of the request. Structured filters use query tools.
 async function searchLocus(
   query: string,
   types: Array<z.infer<typeof searchResultTypeSchema>>,
   limit: number,
 ) {
   const directResult = await search(query, {
+    types,
     companyLimit: limit,
     personLimit: limit,
     jobLimit: limit,
   });
-  if (hasSearchResults(directResult)) {
-    return filterSearchResults(directResult, types, limit);
-  }
-
-  const keywords = [
-    ...new Set(
-      query
-        .toLowerCase()
-        .match(/[a-z0-9][a-z0-9-]{2,}/g)
-        ?.filter((word) => !searchStopWords.has(word)) ?? [],
-    ),
-  ].slice(0, 4);
-
-  for (const keyword of keywords) {
-    const result = await search(keyword, {
-      companyLimit: limit,
-      personLimit: limit,
-      jobLimit: limit,
-    });
-    if (hasSearchResults(result)) {
-      return filterSearchResults(result, types, limit);
-    }
-  }
-
   return filterSearchResults(directResult, types, limit);
 }
 

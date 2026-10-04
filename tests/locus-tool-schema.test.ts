@@ -4,6 +4,56 @@ import { createOpenAI } from "@ai-sdk/openai";
 import { generateText } from "ai";
 import { locusTools } from "../lib/ai/tools";
 import { compactToolOutput } from "../lib/ai/compact-tool-output";
+import { search } from "../lib/search";
+
+test(
+  "live search respects entity scope and never retries isolated words",
+  { skip: !process.env.DATABASE_URL },
+  async () => {
+    const jobsOnly = await search("evelenlabs", { types: ["jobs"] });
+    assert.deepEqual(jobsOnly.companies, []);
+    assert.deepEqual(jobsOnly.people, []);
+    const peopleOnly = await search("", { types: ["people"] });
+    assert.deepEqual(peopleOnly, { companies: [], people: [], jobs: [] });
+    const execute = locusTools.searchLocus.execute!;
+    const options = { toolCallId: "test-search", messages: [], context: {} };
+    const result = await execute(
+      { query: "evelenlabs", types: ["companies"], limit: 3 },
+      options,
+    );
+    assert.ok("companies" in result);
+    assert.equal(result.companies[0].slug, "elevenlabs");
+    assert.equal(result.companies[0].matchType, "fuzzy-name");
+    assert.deepEqual(result.jobs, []);
+    assert.deepEqual(result.people, []);
+    const constrained = await execute(
+      { query: "evelenlabs hiring on Mars", types: ["companies"], limit: 3 },
+      options,
+    );
+    assert.ok("companies" in constrained);
+    assert.deepEqual(constrained.companies, []);
+    const alias = await execute(
+      { query: "ZEIT", types: ["companies"], limit: 3 },
+      options,
+    );
+    assert.ok("companies" in alias);
+    assert.equal(alias.companies[0].slug, "vercel");
+    assert.equal(alias.companies[0].matchType, "alias-exact");
+    assert.equal(
+      alias.companies[0].matchedAlias?.sourceUrl,
+      "https://vercel.com/blog/zeit-is-now-vercel",
+    );
+    const person = await execute(
+      { query: "Aidan Gmoez", types: ["people"], limit: 3 },
+      options,
+    );
+    assert.ok("people" in person);
+    assert.equal(person.people[0].name, "Aidan Gomez");
+    assert.equal(person.people[0].matchType, "fuzzy-name");
+    assert.deepEqual(person.companies, []);
+    assert.deepEqual(person.jobs, []);
+  },
+);
 
 test("every Locus tool uses the model-only compact output projection", () => {
   for (const [name, tool] of Object.entries(locusTools)) {

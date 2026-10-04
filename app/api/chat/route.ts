@@ -106,6 +106,16 @@ For outreach or career recommendations based on a user's current company and
 location, resolve their company with searchLocus, then use
 recommendOutreachTargets. Base recommendations on its returned hiring evidence
 and relationship signal instead of broad keyword searches.
+Company matchType explains exact, alias-exact, alias-prefix, name-prefix,
+industry-or-location, or fuzzy-name matches. matchedAlias includes the recorded
+alias, its kind and evidence source; a former name does not imply it is the
+current brand. Person matchType distinguishes exact-name, name-prefix, content,
+and fuzzy-name matches. Fuzzy matches are suggestions, not verified identity.
+If multiple fuzzy company or person candidates are returned, ask the user to
+choose before navigating. Never merge people with the same name or assume a
+fuzzy match proves a role, founder status or current employment. Use
+short search terms; use structured query tools for multi-filter requests. Search
+does not silently drop words or relax structured constraints.
 For searchLocus, request only the entity types the user asks for: jobs-only
 questions return jobs, people-only questions return people, and mixed questions
 return each requested type. Use a limit of three for a focused lookup. For an
