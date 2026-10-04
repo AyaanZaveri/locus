@@ -3,16 +3,49 @@ import { z } from "zod";
 
 import { companies } from "../db/schema";
 
+const companySlug = z
+  .string()
+  .trim()
+  .regex(/^[a-z0-9-]+$/)
+  .max(100);
+const companyText = z.string().trim().min(1).max(120);
+
 export const fundingQuerySchema = z
-  .object({
+  .strictObject({
     announcedAfter: z.string().date().optional(),
     announcedBefore: z.string().date().optional(),
-    companySlug: z
+    companySlug: companySlug
+      .optional()
+      .describe(
+        "One verified company slug. Omit for cross-company discovery; do not also supply companySlugs.",
+      ),
+    companySlugs: z
+      .array(companySlug)
+      .min(1)
+      .max(50)
+      .optional()
+      .describe(
+        "Match any of these verified company slugs. Omit when no specific companies are requested.",
+      ),
+    industry: companyText
+      .optional()
+      .describe(
+        "Case-insensitive literal substring of company industry, e.g. 'search' for search companies. Omit unless requested.",
+      ),
+    location: companyText
+      .optional()
+      .describe(
+        "Case-insensitive literal substring of company location, not investor location. Omit unless requested.",
+      ),
+    countryCode: z
       .string()
       .trim()
-      .regex(/^[a-z0-9-]+$/)
-      .max(100)
-      .optional(),
+      .regex(/^[a-zA-Z]{2}$/)
+      .toLowerCase()
+      .optional()
+      .describe(
+        "Exact two-letter company country code, e.g. 'us' or 'ca'. Omit unless requested.",
+      ),
     stage: z.string().trim().min(1).max(100).optional(),
     minimumAmount: z.number().finite().nonnegative().optional(),
     investor: z.string().trim().min(1).max(120).optional(),
@@ -24,8 +57,15 @@ export const fundingQuerySchema = z
       !value.announcedAfter ||
       !value.announcedBefore ||
       value.announcedAfter <= value.announcedBefore,
-    { message: "announcedAfter must not exceed announcedBefore." },
-  );
+    {
+      message: "announcedAfter must not exceed announcedBefore.",
+      path: ["announcedBefore"],
+    },
+  )
+  .refine((value) => !value.companySlug || !value.companySlugs, {
+    message: "Use companySlug or companySlugs, not both.",
+    path: ["companySlugs"],
+  });
 
 export type FundingQuery = z.infer<typeof fundingQuerySchema>;
 
@@ -44,6 +84,19 @@ export function buildFundingQuery(
   if (input.announcedBefore)
     filters.push(sql`announced_at <= ${input.announcedBefore}`);
   if (input.companySlug) filters.push(sql`slug = ${input.companySlug}`);
+  if (input.companySlugs)
+    filters.push(
+      sql`slug IN (${sql.join(
+        input.companySlugs.map((slug) => sql`${slug}`),
+        sql`, `,
+      )})`,
+    );
+  if (input.industry)
+    filters.push(sql`strpos(lower(industry), lower(${input.industry})) > 0`);
+  if (input.location)
+    filters.push(sql`strpos(lower(location), lower(${input.location})) > 0`);
+  if (input.countryCode)
+    filters.push(sql`lower(country_code) = ${input.countryCode}`);
   if (input.stage) filters.push(sql`lower(stage) = lower(${input.stage})`);
   if (input.minimumAmount !== undefined)
     filters.push(sql`currency = 'USD' AND amount >= ${input.minimumAmount}`);

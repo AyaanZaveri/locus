@@ -298,7 +298,7 @@ export const locusTools = {
   queryFunding: tool({
     strict: false,
     description:
-      "Query structured funding rounds across the Locus database. Use for latest/recent funding, largest rounds, or filters by inclusive announcement dates, company, exact stage (case-insensitive), minimum USD amount, and investor name substring (lead or participating). Sort descending by announcedAt or amount. Returns round amounts, dates, investors, source URLs and totalMatches/hasMore. These are rounds, not company funding totals. Future rounds are excluded; recency excludes unknown or partial dates. Prefer this over text search for filtering or ranking funding. Use getCompanyProfile for total funding.",
+      "Query structured funding rounds across the Locus database. Combine inclusive announcement dates with company industry/location literal substrings, exact countryCode, companySlug or companySlugs, exact stage (case-insensitive), minimum USD amount, and investor name substring (lead or participating). For 'search company raised in September 2025', use industry: 'search', announcedAfter: '2025-09-01', announcedBefore: '2025-09-30' in ONE call. All filters apply before counting and limiting; omit unrequested filters. Sort descending by announcedAt or amount. Returns round amounts, dates, investors, source URLs and totalMatches/hasMore. Counts are rounds, not distinct companies or funding totals. Future rounds are excluded; recency excludes unknown or partial dates. Prefer this over text search for filtering or ranking funding. Use getCompanyProfile for total funding.",
     inputSchema: fundingQuerySchema,
     execute: async (input) => {
       const asOf = new Date().toISOString().slice(0, 10);

@@ -40,6 +40,57 @@ test("user filters remain parameters, including literal investor wildcards", () 
   assert.match(query.sql, /strpos/);
 });
 
+test("validates company filters without silently dropping unsupported fields", () => {
+  assert.deepEqual(
+    fundingQuerySchema.parse({
+      industry: " Search ",
+      location: " San Francisco ",
+      countryCode: " US ",
+      companySlugs: ["exa", "vercel"],
+    }),
+    {
+      industry: "Search",
+      location: "San Francisco",
+      countryCode: "us",
+      companySlugs: ["exa", "vercel"],
+      sortBy: "announcedAt",
+      limit: 10,
+    },
+  );
+  for (const input of [
+    { industry: " " },
+    { location: "x".repeat(121) },
+    { countryCode: "USA" },
+    { countryCode: "_%" },
+    { companySlugs: [] },
+    { companySlugs: Array(51).fill("exa") },
+    { companySlugs: ["not a slug"] },
+    { companySlug: "exa", companySlugs: ["vercel"] },
+    { companyIndustry: "Search" },
+  ]) {
+    assert.equal(fundingQuerySchema.safeParse(input).success, false);
+  }
+});
+
+test("company filters use parameters and literal substring matching", () => {
+  const text = "Search_%'; DROP TABLE companies;--";
+  const query = new PgDialect().sqlToQuery(
+    buildFundingQuery(
+      fundingQuerySchema.parse({
+        industry: text,
+        location: text,
+        companySlugs: ["exa", "vercel"],
+      }),
+      "2026-10-02",
+    ),
+  );
+  assert.ok(!query.sql.includes(text));
+  assert.ok(query.params.includes(text));
+  assert.ok(query.params.includes("exa"));
+  assert.ok(query.params.includes("vercel"));
+  assert.match(query.sql, /strpos/);
+});
+
 test("result metadata distinguishes a limited preview from all matches", () => {
   const output = fundingQueryResult(
     [
@@ -63,6 +114,95 @@ test("result metadata distinguishes a limited preview from all matches", () => {
 });
 
 const url = process.env.DATABASE_URL_POOLED ?? process.env.DATABASE_URL;
+test(
+  "real PostgreSQL: funding company filters intersect before counts and limits",
+  { skip: !url },
+  async () => {
+    const db = drizzle({ client: neon(url!) });
+    const fixtures = [
+      {
+        slug: "developer",
+        industry: "Developer Tools",
+        location: { label: "San Francisco", countryCode: "us" },
+        amounts: [300],
+      },
+      {
+        slug: "search-uk",
+        industry: "Search Infrastructure",
+        location: { label: "London", countryCode: "gb" },
+        amounts: [100],
+      },
+      {
+        slug: "exa",
+        industry: "Web Search",
+        location: { label: "San Francisco, California", countryCode: "us" },
+        amounts: [85, 20],
+      },
+      { slug: "unknown", amounts: [200] },
+    ];
+    const source = sql`(VALUES ${sql.join(
+      fixtures.map(
+        ({ slug, amounts, ...profile }) =>
+          sql`(${slug}::text, ${slug}::text, ${JSON.stringify({
+            ...profile,
+            funding: {
+              rounds: amounts.map((amount, index) => ({
+                id: `${slug}-${index}`,
+                announcedAt: "2025-09-03",
+                stage: "Series B",
+                amount: { amount, currency: "USD" },
+                leadInvestors: [{ name: "Benchmark" }],
+              })),
+            },
+          })}::jsonb)`,
+      ),
+      sql`, `,
+    )}) AS c(slug, name, profile)`;
+    const run = async (filters: Record<string, unknown>) => {
+      const input = fundingQuerySchema.parse(filters);
+      const result = await db.execute(
+        buildFundingQuery(input, "2026-10-02", source),
+      );
+      return fundingQueryResult(result.rows, input, "2026-10-02");
+    };
+    const filtered = await run({
+      industry: "SEARCH",
+      location: "francisco",
+      countryCode: "US",
+      announcedAfter: "2025-09-01",
+      announcedBefore: "2025-09-30",
+      investor: "benchmark",
+      stage: "series b",
+      minimumAmount: 25,
+      sortBy: "amount",
+      limit: 1,
+    });
+    assert.equal(filtered.totalMatches, 1);
+    assert.equal(filtered.hasMore, false);
+    assert.equal(filtered.rounds[0].slug, "exa");
+    assert.equal(filtered.rounds[0].amount.amount, 85);
+    assert.equal(filtered.rounds[0].industry, "Web Search");
+    const preview = await run({
+      industry: "search",
+      sortBy: "amount",
+      limit: 1,
+    });
+    assert.equal(preview.totalMatches, 3);
+    assert.equal(preview.hasMore, true);
+    assert.equal(preview.rounds[0].slug, "search-uk");
+    assert.equal(
+      (await run({ companySlugs: ["exa", "search-uk"] })).totalMatches,
+      3,
+    );
+    assert.equal(
+      (await run({ companySlug: "exa", countryCode: "gb" })).totalMatches,
+      0,
+    );
+    assert.equal((await run({ industry: "_%" })).totalMatches, 0);
+    assert.equal((await run({ location: "_%" })).totalMatches, 0);
+    assert.equal((await run({ countryCode: "ca" })).totalMatches, 0);
+  },
+);
 test(
   "real PostgreSQL: recent ties, dates, amounts, investor and combined filters",
   { skip: !url },

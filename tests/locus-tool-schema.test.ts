@@ -47,7 +47,16 @@ test("Responses tools explicitly preserve optional query filters", async () => {
     (tool) => tool.name === "queryFunding",
   );
   assert.ok(funding);
-  for (const field of ["companySlug", "stage", "investor", "minimumAmount"]) {
+  for (const field of [
+    "companySlug",
+    "companySlugs",
+    "industry",
+    "location",
+    "countryCode",
+    "stage",
+    "investor",
+    "minimumAmount",
+  ]) {
     assert.ok(
       !funding.parameters.required?.includes(field),
       `${field} is optional`,

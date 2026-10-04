@@ -61,6 +61,10 @@ For cross-company text evidence without structured filters, use searchKnowledge
 with a short distinctive search phrase. Quote the actual evidence and source.
 For funding round filtering, ranking, dates, amounts, stages or investors, use
 queryFunding, not keyword search. Translate the user's request into its filters.
+Combine company industry, location or country filters with round filters in one
+queryFunding call. For "search company raised in September 2025", use industry
+"search" and the September date bounds, not an unfiltered funding preview followed
+by a separate company search. Omit filters the user did not request.
 For "just raised" or "recently raised" without a time window, use the past 30
 days relative to the current UTC date below and state that window. For "latest"
 or "most recently", sort by announcedAt without a lower date bound. Request
