@@ -1,0 +1,1844 @@
+{
+  "companySlug": "heidi-health",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/47f384c6-d850-4f15-b48a-3be07b948904",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/47f384c6-d850-4f15-b48a-3be07b948904",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSydney; London; Melbourne"
+      ],
+      "sourceSha256": "dc339662e8379ec4ec23e39761ea81efb035c317bfe97f2ffd4701bfd40aba7d",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/18a4b7c8-f627-4d29-9bbf-72603d17189e",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/18a4b7c8-f627-4d29-9bbf-72603d17189e",
+      "location": "London",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "9c70f33e383947144f07fbfc6f0d4d36c70f1c4e19c23e9d5898bd80e3694c45",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/b3ac6234-5bef-4b7f-b799-6b72ee44056c",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/b3ac6234-5bef-4b7f-b799-6b72ee44056c",
+      "location": "Paris, France",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "rcial Analyst, France\n\n## Location\n\nParis, France\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMSales\n\nWe’re Heidi.\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. Our platform has absorbed the administrative chaos of 175 million patie"
+      ],
+      "sourceSha256": "00beeaaf7507f702f27b1b19a6d41a6d0fb6d8a165cfe6e7873da64dd91c335a",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "4cdef33e-7798-8b23-a881-7d5364c8b82b",
+          "label": "Paris, France",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Paris, France"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/8767c5d8-ae43-429a-a350-b451a0ec1069",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/8767c5d8-ae43-429a-a350-b451a0ec1069",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "83b7ea9683a6d8143190ef6ac26bcc32d93be423aaec46ea2322d0c9eff646a7",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/7fdd3cba-4de9-4b82-b26c-c90ca97d3fb5",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/7fdd3cba-4de9-4b82-b26c-c90ca97d3fb5",
+      "location": "Toronto",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "e481ee62199d29d081961baa289b235a324056fb8e9177afcf6a478f4b24d4f8",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/2dcc335b-2777-477b-b232-fe06b2fa0fe2",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/2dcc335b-2777-477b-b232-fe06b2fa0fe2",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "e7f85024d0e3367d672d725c5c11bc837386cbe33ba6f7f1884ee402a59400d4",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/67910ba8-c7bd-4c01-88e3-a3b8618b1cff",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/67910ba8-c7bd-4c01-88e3-a3b8618b1cff",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "rector of Growth Marketing\n\n## Location\n\nNew York\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nOn-site\n\n## Department\n\nMarketing\n\n## Compensation\n\n- Estimated Base Salary $175K – $190K • Offers Equity\n\n## **Who We Are**\n\nHealthcare needs a better rhythm: one that keeps care continuous and deeply human. Heidi is bu"
+      ],
+      "sourceSha256": "f019e0b11bbe61490ec4f9ce785ff7dd73c15a075f095bcd85b848986e44a7f1",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/bdb8d524-9f21-4035-bbf9-79186a31c58b",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/bdb8d524-9f21-4035-bbf9-79186a31c58b",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "42d116b8550aad4c5e875999ea9c38e0531c48758e06b0e5e9ded22bfbfd285d",
+      "note": "Explicit On-site location type; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/64b3cce2-ba54-4aa3-9cfc-0c8d177a5479",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/64b3cce2-ba54-4aa3-9cfc-0c8d177a5479",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "pression of Interest (AU)\n\n## Location\n\nMelbourne\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nOther\n\n**Who are Heidi**\n\nHeidi is on a mission to half the time it takes to deliver world class care.\n\nWe believe that in 2050 every clinician will practice with AI systems that free them from adm"
+      ],
+      "sourceSha256": "178f1b3de44c09e390f61532bb8684799c8e0d05f1228c6567119543274be5d6",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/f2a33fd0-e4bc-4e0b-84e3-c136a32af0ab",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/f2a33fd0-e4bc-4e0b-84e3-c136a32af0ab",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "6538fe45c528c71f31d423d11f3209b02b210ecea8fcfe4dd59c007f2dd25a6e",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/cb516a08-6b62-4bee-b8cc-47d2b30d00a9",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/cb516a08-6b62-4bee-b8cc-47d2b30d00a9",
+      "location": "Denver",
+      "workplaceType": null,
+      "evidence": [
+        "# Expression of Interest (US)\n\n## Location\n\nDenver\n\n## Employment Type\n\nFull time\n\n## Department\n\nOther\n\n### **Who are Heidi?**\n\nHeidi is building an AI Care Partner that supports "
+      ],
+      "sourceSha256": "6a2c8e998629bcfabfab668c079fc9877f18f93fbbbad5ff9b3d1bb2ace468d2",
+      "note": "Location only; no arrangement evidence in full description.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "e036ad58-c393-8dc2-b032-e3737f60395f",
+          "label": "Denver, CO",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Denver, CO"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/835ccbd5-6fc2-424e-b2b8-8d25f71c0c97",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/835ccbd5-6fc2-424e-b2b8-8d25f71c0c97",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# GTM Operations"
+      ],
+      "sourceSha256": "742e42a1ba6dc2d4f8fdce0d382f422bfc5f6900e0057c4dd6336e6076c89de1",
+      "note": "Individual extraction omits the header block; London geography and Hybrid arrangement corroborated by exact-posting ATS fields.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/835ccbd5-6fc2-424e-b2b8-8d25f71c0c97\"",
+            "\"location\": \"London\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/a1fb51c2-d5bc-4166-b6fe-0579886b3c19",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/a1fb51c2-d5bc-4166-b6fe-0579886b3c19",
+      "location": "Japan",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Customer Success Lead\n\n## Location\n\nJapan\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nCustomer ExperienceCustomer Support\n\nWe’re Heidi.\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. In just 18 months, our clinical AI products "
+      ],
+      "sourceSha256": "dc8718ae82339672b6d98ca0cdff6041175a14ccedd59f840869d0746b5c793f",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "89de02cb-9b99-89d1-b907-edfe2cfb6153",
+          "label": "Japan",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Japan"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/a039aa00-4c00-4e68-9f1a-8424799eafef",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/a039aa00-4c00-4e68-9f1a-8424799eafef",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "5154fc2e834e2165ad30d59c107735a6ce1163045a3e6c5293caa98f3ab32f07",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/47924685-8546-4f4d-a748-17965bd2f550",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/47924685-8546-4f4d-a748-17965bd2f550",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSydney; Melbourne"
+      ],
+      "sourceSha256": "e6f04ccf6e10ebf0d9b64d52f55eeb20eeb0e575169dd58a9f4a0fc22439786e",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/5b09bea9-1a91-4225-af7c-709d4d78288e",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/5b09bea9-1a91-4225-af7c-709d4d78288e",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "c58837e016bc62eb63e42fd1ecae957fc6417d6c78621677fba3857290f0d12e",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/4287eae3-56cb-488a-8734-c25aa9689ad7",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/4287eae3-56cb-488a-8734-c25aa9689ad7",
+      "location": "Sydney",
+      "workplaceType": "remote",
+      "evidence": [
+        "al leave and 18 weeks paid secondary parental leave, fertility support up to $10,000, four weeks of work from anywhere per year, and serious equity.\n\nWe chose to open-source our [benefits hub](https://app.notion.com/p/heidihealth/Benefits-Hub-356ca630286e80b1927cd275a206fa58?source=copy_link), if you care to take a pee"
+      ],
+      "sourceSha256": "33e79f805657b9dd79b2ffe9818e5275390ac5cb0e865a59a223699c70dee8c7",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/e46840b6-fb27-4423-bc08-3d87913d4139",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/e46840b6-fb27-4423-bc08-3d87913d4139",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": [
+        "# Partnerships Associate"
+      ],
+      "sourceSha256": "c064cc30a2430b76787393938bb62ae7bb3964f44919df9d98ecb1d3d5413efa",
+      "note": "City-only geography with benefits-only remote mentions; arrangement unspecified.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/e46840b6-fb27-4423-bc08-3d87913d4139\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/391fe188-6b95-4aa1-bf46-22d8bceb9f4b",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/391fe188-6b95-4aa1-bf46-22d8bceb9f4b",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon; Berlin, Germany; Paris, France"
+      ],
+      "sourceSha256": "685844fdcc7e0e6acecc11a7f4db177f94572cfcd46f92d364a2b2e35ffab4e2",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/275b3280-2e55-4069-9f42-32d049c97c55",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/275b3280-2e55-4069-9f42-32d049c97c55",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "2e93790f271dffc7c60922cf5ac89b9f2eaadf8455b17a7cc398a86d3af89cad",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/66eead48-384b-4afc-99da-77c886e0fc20",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/66eead48-384b-4afc-99da-77c886e0fc20",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "40ed88d17356692175c1f64ca5d739c3d65951f8b51009704597d07facc438e6",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/d43551da-7ea9-47c4-a747-8d7a2c4256a3",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/d43551da-7ea9-47c4-a747-8d7a2c4256a3",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "99bc45c7cdc08d0017d34a7dc4a7a4e80269b779d95db0d03838f63aa1e679bd",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/31e03395-c3a1-46c3-955c-ed9f50c2e8d7",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/31e03395-c3a1-46c3-955c-ed9f50c2e8d7",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSydney; Melbourne"
+      ],
+      "sourceSha256": "b402d1d33dc063e1f42888e1f8b68d9b91673962f1168cb3a053e89a8394977a",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/0444c7c5-5a9e-4447-90df-46db950fba2f",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/0444c7c5-5a9e-4447-90df-46db950fba2f",
+      "location": "Remote",
+      "workplaceType": null,
+      "evidence": [
+        "# Expression of Interest (Remote)\n\n## Location\n\nRemote\n\n## Employment Type\n\nFull time\n\n## Department\n\nOther\n\n**Who are Heidi**\n\nHeidi is on a mission to half the time it takes to d"
+      ],
+      "sourceSha256": "eb037a592f529b3e6b8af937735d6fe305c6b629a516ce2c60b93bcedcb0b7ac",
+      "note": "Location only; no arrangement evidence in full description.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/63441be2-6dab-479e-b772-f2a114d2c33e",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/63441be2-6dab-479e-b772-f2a114d2c33e",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "nt Representative\n\n## Location\n\nSydney; Melbourne\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMSales\n\n## **Who We Are**\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. Our platform has absorbed the administrative chaos of 175 million "
+      ],
+      "sourceSha256": "b24cd8e4f4c35c11a5975074366beb4ce65c8ab28084855f1f151c95a73a77d4",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/406e5e54-d125-4e8a-a601-dd06998f4001",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/406e5e54-d125-4e8a-a601-dd06998f4001",
+      "location": "Singapore",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSingapore"
+      ],
+      "sourceSha256": "f4cbc875d5b2cf8a05832383783541e97ddc6ca2b4ccc0c11ab83bbb2d54f2aa",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/58447f81-a189-4209-bcd7-5fdf62f93d74",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/58447f81-a189-4209-bcd7-5fdf62f93d74",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "4fad1232778ce10bede3abf801d5cedacbd3a4c58bef2a8d08c339a084d96b35",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/656f84a5-fa57-4394-826c-e72bc3a9ef57",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/656f84a5-fa57-4394-826c-e72bc3a9ef57",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSydney; Melbourne"
+      ],
+      "sourceSha256": "8c45c9ddecbbd1ba3778a6f048d40995c1afa01fb2ade5251f4859073b612415",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/2c42d512-ae07-488b-ae74-d74c61c24678",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/2c42d512-ae07-488b-ae74-d74c61c24678",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSydney; Melbourne"
+      ],
+      "sourceSha256": "ab7866d963b3c68dd4779ea89bc01badea3055f7631c076b03d03ab2c9353d94",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/69a7f6cd-2bf1-4390-ac51-df68e59cde4c",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/69a7f6cd-2bf1-4390-ac51-df68e59cde4c",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid",
+        "Flexibility that works.** A hybrid environment, with 3 days in the office."
+      ],
+      "sourceSha256": "24585fc1aecad645d0dbd9a2d74e4df0b8e020fbc9da08f36d9fe1632d03a718",
+      "note": "Explicit Hybrid location type with 3-day office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/b9863b71-a84b-4dc5-bf07-c473f129fb3c",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/b9863b71-a84b-4dc5-bf07-c473f129fb3c",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "ity • $150K – $175K Commission\n\n# **Sales Director**\n\nNorth America\n\n*Heidi Health · New York, NY · In-Office*\n\n**Who We Are**\n\nHeidi Health AI has been a global rocketship, and this is your chance to get in early but not too early.\n\nWe are a clinician-founded healthcare AI company building an AI Care Partner for docto"
+      ],
+      "sourceSha256": "e3b6b086e2e79850dec2febfc48266e6d167fe43bd5bf700981b38b7cf516ebd",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/ebb59341-ef24-44b5-b3ef-c85b8cdbd1c5",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/ebb59341-ef24-44b5-b3ef-c85b8cdbd1c5",
+      "location": "Brisbane",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nBrisbane"
+      ],
+      "sourceSha256": "0368197871b2d99c72882e425814ebf5039492e79dd63533c35b1b10fb6ea746",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "1ac6f490-bfc2-8b47-bfdf-37ec2540f60b",
+          "label": "Brisbane, QLD",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Brisbane, QLD"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/3c900079-29a0-4855-b187-56384d08470a",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/3c900079-29a0-4855-b187-56384d08470a",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne"
+      ],
+      "sourceSha256": "19be2b08acecb6f3f0bb4f1926936b184178d041265457d8ef65476c12372377",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/7864731d-b1c7-41cf-ac41-beb2bc2e41a7",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/7864731d-b1c7-41cf-ac41-beb2bc2e41a7",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSan Francisco; New York"
+      ],
+      "sourceSha256": "b9e78b139496c35f3d82bfbf48d9dde8914ee6ffa3a31b7e4d1be18e376c9cef",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/6d2e2042-49f1-46ee-b844-8e73a45009b1",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/6d2e2042-49f1-46ee-b844-8e73a45009b1",
+      "location": "Sydney | Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Operations"
+      ],
+      "sourceSha256": "f178bae130bf18046edceb5055f7562d499bc00342de96c0e51dd21372a713cf",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/6d2e2042-49f1-46ee-b844-8e73a45009b1\"",
+            "\"location\": \"Sydney\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        },
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/efab7f0a-36e9-4c30-8022-87e9bc7ddf41",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/efab7f0a-36e9-4c30-8022-87e9bc7ddf41",
+      "location": "Makati City",
+      "workplaceType": "remote",
+      "evidence": [
+        "l leave and 18 weeks paid secondary parental leave, fertility support up to ₱150,000, four weeks of work from anywhere per year, and comprehensive HMO coverage for you and up to two dependents.\n\nWe chose to open-source our [benefits hub](https://heidihealth.notion.site/Heidi-s-Benefits-Hub-6c7ca630286e82f694058141ca6da"
+      ],
+      "sourceSha256": "c8b0d00ba03376064e6305bd00a381e3afe4c4bebbd2f72fa777dc373f52a829",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "c67c0446-75cf-8502-b7b5-7cd96c76bc54",
+          "label": "Makati, Philippines",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Makati City, Philippines"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/b3327f3c-374a-4f97-8976-7c74dff0493c",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/b3327f3c-374a-4f97-8976-7c74dff0493c",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Flexibility that works.** A hybrid environment, with 3 days in the office."
+      ],
+      "sourceSha256": "7e76266111c2aa4862a66968f61505b8d5482ee1895af322a3f20cf162b543eb",
+      "note": "Explicit hybrid 3-day office arrangement in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/e650e14f-d42a-4cf0-9063-2ad27406b764",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/e650e14f-d42a-4cf0-9063-2ad27406b764",
+      "location": "Makati City",
+      "workplaceType": "remote",
+      "evidence": [
+        "l leave and 18 weeks paid secondary parental leave, fertility support up to ₱150,000, four weeks of work from anywhere per year, and comprehensive HMO coverage for you and up to two dependents.\n\nWe chose to open-source our [benefits hub](https://heidihealth.notion.site/Heidi-s-Benefits-Hub-6c7ca630286e82f694058141ca6da"
+      ],
+      "sourceSha256": "49adbc11b3118ea30a3aaec2ea1344a7e41214b2ffe7ba8f8b9fe827716ea592",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "c67c0446-75cf-8502-b7b5-7cd96c76bc54",
+          "label": "Makati, Philippines",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Makati City, Philippines"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/5d352f63-74c2-458c-b40d-0666881f263f",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/5d352f63-74c2-458c-b40d-0666881f263f",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "174accc52e7d356954714c2c558570381b3b6e2e3d6aecf1673a974349073868",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/c8bf90ec-4869-4873-90f0-61efd45c3ccb",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/c8bf90ec-4869-4873-90f0-61efd45c3ccb",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "db9c750e5886d997301f4c9f4d4c81641aa6b61f6d5c8e046d76bb4b5b7b3ef5",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/1303b875-e3c0-4eb2-9b6a-29415eb73d6e",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/1303b875-e3c0-4eb2-9b6a-29415eb73d6e",
+      "location": "Melbourne | Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Support Engineer"
+      ],
+      "sourceSha256": "61d2f80753cd4895ab6a14040fd4fb39466b1de70adfaa0373054db4787e4821",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/1303b875-e3c0-4eb2-9b6a-29415eb73d6e\"",
+            "\"location\": \"Melbourne\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        },
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/5139980a-392f-4312-a9c6-0b30ac768a3e",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/5139980a-392f-4312-a9c6-0b30ac768a3e",
+      "location": "Remote | New York, NY",
+      "workplaceType": "remote",
+      "evidence": [
+        "New York; Remote",
+        "This is a remote role"
+      ],
+      "sourceSha256": "51bfa46bb7e8c9e319bd81c2969049f71564447116e7949d7be4a1c8ce9eea22",
+      "note": "Header lists New York alongside Remote with explicit remote-role statement; remote kept as an available option, not a restriction on New York.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/cf1935bc-0404-46b0-903d-e17833757adf",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/cf1935bc-0404-46b0-903d-e17833757adf",
+      "location": "Toronto",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "I Lead (Account Management)\n\n## Location\n\nToronto\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTM\n\n## Compensation\n\n- Estimated Base Salary $140K – $165K • Offers Equity • Offers Commission\n\n## **We’re Heidi.**\n\nWe're building the future of healthcare by giving every clinician the earth's f"
+      ],
+      "sourceSha256": "c492ed5d92ba78475443ba1939aaa047a7316a16b1196eacfc73898ec941ed1e",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/53e0f504-72ff-4591-9a2f-917ba15a1bd5",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/53e0f504-72ff-4591-9a2f-917ba15a1bd5",
+      "location": "Melbourne | Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Bid Manager"
+      ],
+      "sourceSha256": "3fa45fbf6b4a03ff96b96adf5054fd5ec6242f232e3205e8cada7ade4f08290b",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/53e0f504-72ff-4591-9a2f-917ba15a1bd5\"",
+            "\"location\": \"Melbourne\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        },
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/cd20d610-8794-47cb-bbe7-21db374ae936",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/cd20d610-8794-47cb-bbe7-21db374ae936",
+      "location": "Cape Town",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location\n\nCape Town",
+        "## Location Type\n\nHybrid",
+        "Flexibility that works.** A hybrid environment, with 3 days in the office."
+      ],
+      "sourceSha256": "c868d21b0af3368d22f1452f3926807765da0b2906cf263987d0b9867d1aacda",
+      "note": "Explicit Hybrid location type with 3-day office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "08f8af5e-7664-8bef-bc0e-5328adfcd7e5",
+          "label": "Cape Town, South Africa",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cape Town, South Africa"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/f1f97d3f-7338-448c-83ea-d1030248f08d",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/f1f97d3f-7338-448c-83ea-d1030248f08d",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "a67fb783a034c7becacf4dcae2e6129ef240251881034d156977d707c379d80d",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/4e3532d7-a0e8-48d7-b547-91aa39ceb854",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/4e3532d7-a0e8-48d7-b547-91aa39ceb854",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "d89bae80682970a3c8e718fddd2babb06952932dea8667542e70f50ab4711ee8",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/63447d0e-b88c-48c2-a1d0-c2e283bdf79c",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/63447d0e-b88c-48c2-a1d0-c2e283bdf79c",
+      "location": "London",
+      "workplaceType": "remote",
+      "evidence": [
+        "High degree of autonomy and ownership in a small, remote-first global finance team"
+      ],
+      "sourceSha256": "94f5c9f93ab6a6c0f4bc325d33170e78d90420b449da9dca34a6b19da05d76eb",
+      "note": "Explicit remote-first team statement.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/67bf789b-e6bb-4429-93f6-9e0d81c0d5fe",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/67bf789b-e6bb-4429-93f6-9e0d81c0d5fe",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "ector of Product Marketing\n\n## Location\n\nNew York\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nOn-site\n\n## Department\n\nMarketing\n\n## Compensation\n\n- Estimated Base Salary $180K – $200K • Offers Equity\n\n## **Who We Are**\n\nHealthcare needs a better rhythm: one that keeps care continuous and deeply human. Heidi is bu"
+      ],
+      "sourceSha256": "de75b11e2296b8fb626dfdb6f6f62518ca3c93ca02b81c7c65073c2201fe2dfe",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/e0e16150-8794-4d5a-b267-1fe469e598f0",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/e0e16150-8794-4d5a-b267-1fe469e598f0",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "elbourne; London; New York; San Francisco; Sydney\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nOtherAll Departments\n\nThis is truly a once-in-an-eon opportunity for the smartest young folk across the globe.\n\nWe review EOIs on a rolling basis and reach out directly when roles open. Submitting "
+      ],
+      "sourceSha256": "6e0190608bf0980cb252ff6406099a8be16cda598228a289380a8c4758ccc09e",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/a597fbd6-0805-407e-bab5-d26b0f769668",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/a597fbd6-0805-407e-bab5-d26b0f769668",
+      "location": "Remote - Makati City",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Digital Designer"
+      ],
+      "sourceSha256": "b0b49931830c9d36c4147ec318cbe6293d7fe46fa7847a756d172c1eaf6eba22",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/a597fbd6-0805-407e-bab5-d26b0f769668\"",
+            "\"location\": \"Makati City\"",
+            "\"workplaceType\": \"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "c67c0446-75cf-8502-b7b5-7cd96c76bc54",
+          "label": "Makati, Philippines",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Makati City, Philippines"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/5396411b-79cc-4aae-a3a6-bdba7cca1d04",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/5396411b-79cc-4aae-a3a6-bdba7cca1d04",
+      "location": "Makati City",
+      "workplaceType": "remote",
+      "evidence": [
+        "l leave and 18 weeks paid secondary parental leave, fertility support up to ₱150,000, four weeks of work from anywhere per year, and comprehensive HMO coverage for you and up to two dependents.\n\nWe chose to open-source our [benefits hub](https://heidihealth.notion.site/Heidi-s-Benefits-Hub-6c7ca630286e82f694058141ca6da"
+      ],
+      "sourceSha256": "afdd2572b303463adb5d2a938cb268fb7dcb4bc558be57544cc6dd039938c444",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "c67c0446-75cf-8502-b7b5-7cd96c76bc54",
+          "label": "Makati, Philippines",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Makati City, Philippines"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/85f0fd4b-85ce-4e4e-a448-4d4ea9b7c460",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/85f0fd4b-85ce-4e4e-a448-4d4ea9b7c460",
+      "location": "Makati City",
+      "workplaceType": "remote",
+      "evidence": [
+        "l leave and 18 weeks paid secondary parental leave, fertility support up to ₱150,000, four weeks of work from anywhere per year, and comprehensive HMO coverage for you and up to two dependents.\n\nWe chose to open-source our [benefits hub](https://heidihealth.notion.site/Heidi-s-Benefits-Hub-6c7ca630286e82f694058141ca6da"
+      ],
+      "sourceSha256": "b818c978af037e8dfb9b46a3b7d888e08fa3a1c49b1070b5926ab2e4eac8d986",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "c67c0446-75cf-8502-b7b5-7cd96c76bc54",
+          "label": "Makati, Philippines",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Makati City, Philippines"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/1ffdfb05-3ed6-4a81-9519-d59bef526a07",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/1ffdfb05-3ed6-4a81-9519-d59bef526a07",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "c3af51ed5709c9a5dfb30321e6ea958f5ac91cabbd467c6810a1cfbaa944f918",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/4d9b8a5e-53e4-452c-a2ec-337657acf8a7",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/4d9b8a5e-53e4-452c-a2ec-337657acf8a7",
+      "location": "Berlin, Germany",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "CH\n\n## Location\n\nBerlin, Germany; Munich, Germany\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMSuccess\n\nWe’re Heidi.\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. Our platform has absorbed the administrative chaos of 175 million pat"
+      ],
+      "sourceSha256": "2c70d91f3b1c629621831b3b0f910ec1354a7db0996194fcaed7ee652c055608",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/e215c184-9a76-4f7e-ad91-8ce82d098527",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/e215c184-9a76-4f7e-ad91-8ce82d098527",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "alist (Account Management)\n\n## Location\n\nNew York\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nOn-site\n\n## Department\n\nGTM\n\n## Compensation\n\n- Estimated Base Salary $115K – $135K • Offers Equity • Offers Commission\n\n## **Who We Are**\n\nHealthcare needs a better rhythm: one that keeps care continuous and deeply huma"
+      ],
+      "sourceSha256": "279caf934d43f2c706fe4c59d89f360dd7f4e4e5b5e3d7d26e5db312f3f09c67",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/7db3578f-d767-4aa4-8cf4-10fe1caa53c3",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/7db3578f-d767-4aa4-8cf4-10fe1caa53c3",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "25a9b5fb92ffe62bae0795a20b1e4f3e813021000080eb9c74e4d097dac44476",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/104aa8ca-8282-4921-8fa3-17c86a509870",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/104aa8ca-8282-4921-8fa3-17c86a509870",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Brand Designer"
+      ],
+      "sourceSha256": "cee3b97a2144eb36be37ae5710e73c2a50fc0169cf6e2226a0b6d84b7b52f650",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/104aa8ca-8282-4921-8fa3-17c86a509870\"",
+            "\"location\": \"Melbourne\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/02ad14b7-a9bb-45e3-a90f-631179f86d8d",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/02ad14b7-a9bb-45e3-a90f-631179f86d8d",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "4faaea544fe533474886e75db901af1c2b177f2b97a0c26e12efcc44e8999d09",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/7f5c091e-5cfb-4b52-a59c-b59b2ec30526",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/7f5c091e-5cfb-4b52-a59c-b59b2ec30526",
+      "location": "Japan",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Lead"
+      ],
+      "sourceSha256": "bf33f05d62d6c6818794e14dcceaf079ca27398f7a489f4331bab7f65c572ec2",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/7f5c091e-5cfb-4b52-a59c-b59b2ec30526\"",
+            "\"location\": \"Japan\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "89de02cb-9b99-89d1-b907-edfe2cfb6153",
+          "label": "Japan",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Japan"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/5a0d7a56-bfd0-443d-8123-29db65679a59",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/5a0d7a56-bfd0-443d-8123-29db65679a59",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": [
+        "# Principal Platform Engineer - London"
+      ],
+      "sourceSha256": "9375e4e1996d2c08ad31ed29def22ab2f2f5c6fe299938d42c185337605f7416",
+      "note": "City-only geography with benefits-only remote mentions; arrangement unspecified.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/5a0d7a56-bfd0-443d-8123-29db65679a59\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/16c5fb6b-b074-4f70-aefc-d1740f047caf",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/16c5fb6b-b074-4f70-aefc-d1740f047caf",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne"
+      ],
+      "sourceSha256": "e42a3dc2b9f6e577ae29d89e532be468057279ffa099000aff110bbb0c3abafa",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/de693765-56a1-41fe-8b14-c4f3f2922090",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/de693765-56a1-41fe-8b14-c4f3f2922090",
+      "location": "Berlin, Germany",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "rcial Analyst, DACH\n\n## Location\n\nBerlin, Germany\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMSales\n\nWe’re Heidi.\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. Our platform has absorbed the administrative chaos of 175 million patie"
+      ],
+      "sourceSha256": "a85f6971ac262c02ec5a2b1529bc68f952bebea54b4e512d4570d44a3cb2a523",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/e88d4490-abd1-43a7-a81e-3ff8e6b49209",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/e88d4490-abd1-43a7-a81e-3ff8e6b49209",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": [
+        "# New Business Representative\n\n## Location\n\nNew York\n\n## Employment Type\n\nFull time\n\n## Department\n\nGTMSales\n\n## Compensation\n\n- $65K – $70K • Offers Equity • Offers Commission\n\n##"
+      ],
+      "sourceSha256": "04f1ce18ac6634de3899f5c3ff12a5626c2d747d0fcc6b97cf8e68fb6a1b3f04",
+      "note": "Location only; no arrangement evidence in full description.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/1864adf1-f997-4e8b-8a89-7828b4e5d551",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/1864adf1-f997-4e8b-8a89-7828b4e5d551",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "f6915dcfe505b5872ea11f858c7fa5dae8ce9f4d0a055a62a4db7cedecc8cbf4",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/43e0667b-2efc-4cb2-80a2-07b5e1ab20f5",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/43e0667b-2efc-4cb2-80a2-07b5e1ab20f5",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Partnerships Lead (UK&I)\n\n## Location\n\nLondon\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMPartnerships\n\n## **Who is Heidi?**\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. Our platform has absorbed the administrative chaos of 17"
+      ],
+      "sourceSha256": "a3a14f13c4414602a3ede960d28451daf140682c9a487908fa275927e295aeb4",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/2d1f625a-60d6-4e65-bafd-5e4f6fa03c5c",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/2d1f625a-60d6-4e65-bafd-5e4f6fa03c5c",
+      "location": "Toronto",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "glish)\n\n## Location\n\nToronto; Montreal; Vancouver\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMSales\n\n## **We’re Heidi.**\n\nWe're building the future of healthcare by giving every clinician the earth's finest AI Care Partner. Our platform has absorbed the administrative chaos of 175 millio"
+      ],
+      "sourceSha256": "1b9595a92ae7ab2b3dd8a1d5ef17f68f74c243908736c6b603f2abe8d399268b",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/0253c879-0267-43c8-99f5-e62c810cc0af",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/0253c879-0267-43c8-99f5-e62c810cc0af",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "f6c2d1a25f92ab2d0ea062e849967956195cec22d222355eba5417ecc9bff50d",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/4b1d82dd-bc4b-4c60-ab70-ff5dd95f47ec",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/4b1d82dd-bc4b-4c60-ab70-ff5dd95f47ec",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "nce Manager, North America\n\n## Location\n\nNew York\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nOn-site\n\n## Department\n\nFinance\n\n## Compensation\n\n- Estimated Base Salary $150K – $180K • Offers Equity\n\n# Who We Are\n\nHealthcare needs a better rhythm: one that keeps care continuous and deeply human. Heidi is building "
+      ],
+      "sourceSha256": "f56812b663be7eda04c329d032d5edb88f8abb3a1c79492b894bf91181b14b90",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/cd46c71d-277a-4587-b992-5b6eb1f696c8",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/cd46c71d-277a-4587-b992-5b6eb1f696c8",
+      "location": "Vancouver",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "mer Success Manager, West\n\n## Location\n\nVancouver\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nHybrid\n\n## Department\n\nGTMSuccess\n\n## **Who We Are**\n\nHealthcare needs a better rhythm: one that keeps care continuous and deeply human. Heidi is building an AI Care Partner that works alongside clinicians to make that p"
+      ],
+      "sourceSha256": "249fb74b063ac40d7c3ce7e613bd2be9af5e2757aff4c5bd54a69d1031a40fd0",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "fea09181-16e9-8766-abd5-d3fd79d1e439",
+          "label": "Vancouver, BC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Vancouver, BC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/1b072fa0-83da-40c2-8160-164c66813720",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/1b072fa0-83da-40c2-8160-164c66813720",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "nology, North America\n\n## Location\n\nSan Francisco\n\n## Employment Type\n\nFull time\n\n## Location Type\n\nOn-site\n\n## Department\n\nProductProduct\n\n## Compensation\n\n- $255K – $300K • Offers Equity • Offers Commission • Offers Bonus\n\n# Who We Are\n\nHealthcare needs a better rhythm: one that keeps care continuous and deeply human"
+      ],
+      "sourceSha256": "853f4897fd5a3d56da26061896e0f88d4db458925bb3dbb9f03b0ec0f5be5a6b",
+      "note": "Arrangement evidence explicit in body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/a6ab283e-d27b-4066-af79-cce362985d3e",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/a6ab283e-d27b-4066-af79-cce362985d3e",
+      "location": "Sydney",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nSydney; Melbourne"
+      ],
+      "sourceSha256": "27df92cba4503df5e29d826971159a52642b8b9616cac25511e1600a3bcf3152",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/1fb42cde-a802-4cc9-97ec-96716a9faf04",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/1fb42cde-a802-4cc9-97ec-96716a9faf04",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "22ffc3caf7227b1e1a39717c6f42759b9ea1211794f2cb34b250cedb85e8eed8",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/40db06ad-0f7f-4f14-95bb-d2c8d36a6774",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/40db06ad-0f7f-4f14-95bb-d2c8d36a6774",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco; New York"
+      ],
+      "sourceSha256": "312b948c567a4cafa615803af35e77d0d7088cd8ea0ef75a6edae911007566d4",
+      "note": "Explicit On-site location type; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/39c0c4a8-2e29-4efd-a2ab-3062b15cb3ae",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/39c0c4a8-2e29-4efd-a2ab-3062b15cb3ae",
+      "location": "Japan",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Marketing Lead"
+      ],
+      "sourceSha256": "a4df196beaa1b03049a20bbdaddffef125126c3c63a6fa5f14e42953d5f34169",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the current exact-posting first-party ATS fields. Benefits boilerplate consistent.",
+      "qualifier": null,
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/heidihealth.com.au?includeCompensation=true",
+          "sourceSha256": "cb915017922b07ee3d835385e8cffa91295f4596a7d3352bc674c9cfa6b87fd3",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/heidihealth.com.au/39c0c4a8-2e29-4efd-a2ab-3062b15cb3ae\"",
+            "\"location\": \"Japan\"",
+            "\"workplaceType\": \"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "89de02cb-9b99-89d1-b907-edfe2cfb6153",
+          "label": "Japan",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Japan"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/73b63cb6-b34b-4780-86f2-1d717b5ac9c9",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/73b63cb6-b34b-4780-86f2-1d717b5ac9c9",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne"
+      ],
+      "sourceSha256": "9a8d6b0178e578060f93f42488602b2b3f8aec7058051aa4827c04c34602de55",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/1e1d9ce4-1d62-4175-ba3b-cceb7e4cd2ef",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/1e1d9ce4-1d62-4175-ba3b-cceb7e4cd2ef",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "8cb0a3eb3243c42a6e6a60f9ffcea13c9c7f492d8ff5456557949373a79eeee4",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/c6b7c2b6-5b9b-47b4-8e65-ba866225c95f",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/c6b7c2b6-5b9b-47b4-8e65-ba866225c95f",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "3437603b579672c350a337e71d642501453cb37dcf287546de56e1522d60fb04",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/heidihealth.com.au/cde90d57-737b-4305-8dab-703ea685c1b8",
+      "sourceUrl": "https://jobs.ashbyhq.com/heidihealth.com.au/cde90d57-737b-4305-8dab-703ea685c1b8",
+      "location": "Melbourne",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location Type\n\nHybrid",
+        "## Location\n\nMelbourne; Sydney"
+      ],
+      "sourceSha256": "f03fd11a851a4e052e6d88b7d21ea5b9c0b165ccf87a92df1d628643e32cda0e",
+      "note": "Explicit Hybrid location type with hybrid office arrangement; corrected from remote.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "6cce97f0-de7a-8e56-81bb-7c3127b94bd2",
+          "label": "Melbourne, VIC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Melbourne, VIC"
+        }
+      ]
+    }
+  ]
+}

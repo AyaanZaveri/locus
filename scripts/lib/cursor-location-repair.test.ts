@@ -44,6 +44,36 @@ test("hybrid-prefixed sources resolve to the same New York city identity", () =>
   assert.equal(resolveSourcePlace("Remote - New York, NY")?.id, city.id);
 });
 
+test("staged city repairs bypass mistaken state aliases before alias registration", () => {
+  const state = resolvePlace("New York, United States")!;
+  const catalog = new LocationCatalog(
+    [state],
+    [{ alias: "new york, ny", locationId: state.id }],
+  );
+  const refs = catalog.references("Remote - New York City", "remote", {
+    inferRemoteEligibility: false,
+  });
+  assert.equal(refs[0].label, "New York, NY");
+  assert.equal(catalog.places.get(refs[0].locationId!)?.kind, "city");
+  assert.equal(catalog.aliases.get("new york, ny"), state.id);
+});
+
+test("explicitly evidenced US states resolve as subdivisions", () => {
+  for (const state of [
+    "Alaska",
+    "Hawaii",
+    "Idaho",
+    "Montana",
+    "Oregon",
+    "Washington",
+    "Wyoming",
+  ]) {
+    const place = resolvePlace(state)!;
+    assert.equal(place.kind, "subdivision");
+    assert.equal(place.countryCode, "US");
+  }
+});
+
 test("all source-reviewed Cursor roles rebuild cleanly without stale remote inference", () => {
   assert.equal(audit.roles.length, 132);
   const catalog = new LocationCatalog();

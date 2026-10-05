@@ -2,7 +2,8 @@
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { LoaderCircleIcon } from "lucide-react";
+import { CommandSearchCache } from "@/lib/command-search-cache";
+import { immediateCompanyMatches } from "@/lib/command-company-matches";
 import {
   Command,
   CommandDialog,
@@ -19,53 +20,74 @@ import {
 type SearchResults = LocusSearchResults;
 
 const noSelectionValue = "__locus_no_command_selection__";
+const emptyResults: SearchResults = { companies: [], people: [], jobs: [] };
 
 export function CompanySearch({
   open,
   onOpenChange,
   suggestedCompanies,
+  companies,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   suggestedCompanies: SearchResults["companies"];
+  companies: SearchResults["companies"];
 }) {
   const router = useRouter();
   const [search, setSearch] = useState("");
   const [selectedValue, setSelectedValue] = useState(noSelectionValue);
-  const [results, setResults] = useState<SearchResults>({
-    companies: suggestedCompanies.slice(0, 6),
-    people: [],
-    jobs: [],
+  const [snapshot, setSnapshot] = useState({
+    query: "",
+    results: emptyResults,
+    error: false,
   });
-  const [isLoading, setIsLoading] = useState(false);
+  const cache = useRef(new CommandSearchCache<SearchResults>());
   const listRef = useRef<HTMLDivElement>(null);
+  const query = search.trim();
+  const isLoading = open && Boolean(query) && snapshot.query !== query;
+  // Never allow keyboard navigation into results from an older query.
+  const results = !query
+    ? { companies: suggestedCompanies.slice(0, 6), people: [], jobs: [] }
+    : snapshot.query === query
+      ? snapshot.results
+      : {
+          companies: immediateCompanyMatches(companies, query),
+          people: [],
+          jobs: [],
+        };
 
   useEffect(() => {
-    const query = search.trim();
     if (!open || !query) return;
-    const semanticEligible = query.split(/\s+/).length >= 3;
+    const cached = cache.current.get(query);
+    if (cached) {
+      setSnapshot({ query, results: cached, error: false });
+      return;
+    }
     const controller = new AbortController();
     const timeout = window.setTimeout(async () => {
-      setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/search?q=${encodeURIComponent(query)}${semanticEligible ? "&semantic=1" : ""}`,
+          `/api/search?q=${encodeURIComponent(query)}`,
           { signal: controller.signal },
         );
         if (!response.ok) throw new Error("Search request failed.");
-        setResults((await response.json()) as SearchResults);
+        const data = (await response.json()) as SearchResults;
+        if (controller.signal.aborted) return;
+        cache.current.set(query, data);
+        setSnapshot({ query, results: data, error: false });
       } catch (error) {
-        if ((error as DOMException).name !== "AbortError")
-          setResults({ companies: [], people: [], jobs: [] });
-      } finally {
-        if (!controller.signal.aborted) setIsLoading(false);
+        if (
+          !controller.signal.aborted &&
+          (error as DOMException).name !== "AbortError"
+        )
+          setSnapshot({ query, results: emptyResults, error: true });
       }
-    }, 500);
+    }, 80);
     return () => {
       controller.abort();
       window.clearTimeout(timeout);
     };
-  }, [open, search]);
+  }, [open, query]);
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -95,10 +117,17 @@ export function CompanySearch({
     results &&
     (results.companies.length || results.people.length || results.jobs.length),
   );
+  const firstResultValue = results.companies[0]
+    ? `company-${results.companies[0].slug}`
+    : results.people[0]
+      ? `person-${results.people[0].companySlug}-0`
+      : results.jobs[0]
+        ? `job-${results.jobs[0].companySlug}-0`
+        : noSelectionValue;
 
   return (
     <CommandDialog
-      description="Search companies, people, and open jobs."
+      description="Quickly find companies, people, and jobs."
       onOpenChange={onOpenChange}
       open={open}
       title="Search Locus"
@@ -107,39 +136,65 @@ export function CompanySearch({
       <Command
         onValueChange={setSelectedValue}
         shouldFilter={false}
-        value={selectedValue}
+        value={
+          query && selectedValue === noSelectionValue
+            ? firstResultValue
+            : selectedValue
+        }
       >
         <div className="relative">
           <CommandInput
             autoFocus
+            className={isLoading && hasResults ? "pr-24" : undefined}
             onValueChange={(value) => {
               setSearch(value);
               setSelectedValue(noSelectionValue);
-              if (!value.trim()) {
-                setResults({
-                  companies: suggestedCompanies.slice(0, 6),
-                  people: [],
-                  jobs: [],
+              const cached = cache.current.get(value.trim());
+              if (cached)
+                setSnapshot({
+                  query: value.trim(),
+                  results: cached,
+                  error: false,
                 });
-              }
             }}
             placeholder="Search companies, people, and jobs..."
             value={search}
           />
-          {isLoading ? (
-            <LoaderCircleIcon
-              aria-label="Searching"
-              className="pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 animate-spin text-muted-foreground"
-            />
+          {isLoading && hasResults ? (
+            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs">
+              <span
+                role="status"
+                className="shimmer shimmer-color-foreground text-foreground/60"
+              >
+                Searching…
+              </span>
+            </span>
           ) : null}
         </div>
         <CommandList
           ref={listRef}
+          aria-busy={isLoading}
           className="max-h-[min(24rem,calc(100dvh-12rem))] sm:max-h-[min(30rem,calc(100dvh-4rem))]"
         >
           {!hasResults ? (
             <p className="py-6 text-center text-sm text-muted-foreground">
-              No matching companies, people, or jobs.
+              {isLoading ? (
+                <span
+                  role="status"
+                  className="shimmer shimmer-color-foreground text-foreground/60"
+                >
+                  Searching…
+                </span>
+              ) : snapshot.query === query && snapshot.error ? (
+                "Search unavailable. Try again."
+              ) : (
+                "No matching companies, people, or jobs."
+              )}
+              {!isLoading && !snapshot.error ? (
+                <span className="mt-2 block text-xs">
+                  For deeper searches, use Locus Focus (⌘J).
+                </span>
+              ) : null}
             </p>
           ) : (
             <>

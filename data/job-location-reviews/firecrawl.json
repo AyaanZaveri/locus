@@ -1,0 +1,749 @@
+{
+  "companySlug": "firecrawl",
+  "verifiedAt": "2026-10-05T06:04:23.297166+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/762b4426-b4aa-4377-96d3-51f40c59cbf7",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/762b4426-b4aa-4377-96d3-51f40c59cbf7",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "b63047191e13a4eac6db0a1f568b06bf6da6782a98491ccd018ea7700c6c858c",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/42dfd256-b986-44e6-984b-e1fff1548563",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/42dfd256-b986-44e6-984b-e1fff1548563",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "94e8bc4464f47d25b761fd059d65356504655ff1a23d9b0ba66e4269e1bac56e",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/f2e1fa1b-8186-49be-848a-20b1216820ab",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/f2e1fa1b-8186-49be-848a-20b1216820ab",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "2b43bab6fb57bd325229a378a4ff5f5410211dd45142beb207d01e34f2470c62",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/30856716-e88c-48ba-8d55-efaec9c0713a",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/30856716-e88c-48ba-8d55-efaec9c0713a",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "7ab3356602d6355c379f4d4751bf11663da0e5b93bd556a34c55257ce15ae12f",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/d35c74ec-bd98-485f-81e7-663cfe2d5dc3",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/d35c74ec-bd98-485f-81e7-663cfe2d5dc3",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "03fc27f55dd821baa011a1d3ecc82898454b66a39f62c80206a3557c6320ebe6",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/61f134a9-d91f-4b7b-a35d-14c60916454e",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/61f134a9-d91f-4b7b-a35d-14c60916454e",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "c484ab4f2d695ccbb5e814c7fb174486c333060b99be1d7cd9d4a4bdb2752d00",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/4fed8a26-d8e1-47b1-9283-59e547e6e02a",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/4fed8a26-d8e1-47b1-9283-59e547e6e02a",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "6bb1cf4875ff296453ae7e7f191799da44abf7729f52ff55cbbe9360c08dc063",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/5dd71524-6f88-453a-94a0-9521351981ab",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/5dd71524-6f88-453a-94a0-9521351981ab",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "1522a959af75dec7df8c79b8df817a7bd82be377b40911ddf0ca4f0580a8e5c3",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/4d095906-803f-4987-a5a4-941e3f1a1600",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/4d095906-803f-4987-a5a4-941e3f1a1600",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "cd21791b4163e6255dcc942f3c380089d3639978ad7a0e9a9449f092d3d0ec80",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/72f9dc1d-65db-48c9-b3d9-c6ccdb997006",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/72f9dc1d-65db-48c9-b3d9-c6ccdb997006",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "26bec0862944888e1e68cbd49039428d61daaa31dd2137fc04c3c3f1483118af",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/fe538f2b-7dd5-4d8d-941e-f8014a911652",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/fe538f2b-7dd5-4d8d-941e-f8014a911652",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "e9be233afa31bde3793291c7290e0995fdaf321e1f487f48bdce439f69a2133d",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/0995d222-ec66-4542-b9cc-3914c5d080c6",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/0995d222-ec66-4542-b9cc-3914c5d080c6",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "89a84290c8dd6702532be5906d569e7fcc7c946910ff202a2e27410addd81612",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/6840bbee-aae5-4846-97a2-ec2e764ee75b",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/6840bbee-aae5-4846-97a2-ec2e764ee75b",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "53650cd8b9d6604beeeb103d1ef7a74a3f63c09c71a969be147da23bc0224863",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/252206c1-56a2-4598-abef-d2ed9e2295de",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/252206c1-56a2-4598-abef-d2ed9e2295de",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "6960076090d8d666392ef9ba8ca01b5cc7ab4c980719cf9a67841fd5dbb386b3",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/095c7ce7-5b17-432a-9ec6-83a7ca0060d1",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/095c7ce7-5b17-432a-9ec6-83a7ca0060d1",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "32ac6d391b3c026359186b904d2373af003a4b99c4d928cff7eb37c1af075567",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/2bd672ee-34b1-4702-9432-36ae00bad762",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/2bd672ee-34b1-4702-9432-36ae00bad762",
+      "location": "San Francisco, US or Toronto, Canada (Preferred) OR Remote (Americas, UTC-3 to UTC-10)",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "913b66f5303d285775c5c2b88480ca9a141ce85ed493ee4487dd6a75c70d7bca",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "(Preferred)",
+          "sourceLabel": "Toronto, ON (Preferred)"
+        },
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": "UTC-3 to UTC-10",
+          "sourceLabel": "Remote - Americas, UTC-3 to UTC-10"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/f590ffb6-f88e-4a37-af0d-67145b9dda2c",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/f590ffb6-f88e-4a37-af0d-67145b9dda2c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "c36355313b9f91f782d2eb97ca11fc7c885341beb45a61e06c9b221dd8b36d38",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/8bf4500f-7064-42c2-858f-89f6f67cb7d6",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/8bf4500f-7064-42c2-858f-89f6f67cb7d6",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "7fd3d5ab75843a03956e3537a270924b1b1b764e812d55da5f4d16fbcbc00c45",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/b1db13d1-402c-40e9-95fa-4ac67bacb078",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/b1db13d1-402c-40e9-95fa-4ac67bacb078",
+      "location": "San Francisco, US or Toronto, Canada (Preferred) OR Remote (Americas, UTC-3 to UTC-10)",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "ceeaa6d93cfa72598145b78715f5fa8a1146cc5e6aae6ba3897008950d40de20",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "(Preferred)",
+          "sourceLabel": "Toronto, ON (Preferred)"
+        },
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": "UTC-3 to UTC-10",
+          "sourceLabel": "Remote - Americas, UTC-3 to UTC-10"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/83249105-3b1e-41fc-a991-4fd41670ffca",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/83249105-3b1e-41fc-a991-4fd41670ffca",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "2af7aea5648a0d498a66c4ded0954a77cbbe01edb6c865152a641f7b9d85c3a9",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/0c635f7b-559b-4bca-930a-fcac4a9c4a7d",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/0c635f7b-559b-4bca-930a-fcac4a9c4a7d",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "6b94a3d2b3dc2987f19f6cf38803eeb8ba347333d46c2d25c2961f92188d57b2",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/27a38804-9e98-49bb-8a43-b8dddea1ae15",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/27a38804-9e98-49bb-8a43-b8dddea1ae15",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "bce05a73b323ebdbebefa8a35ee57a80fe0e812614ca2e42fad12203de1980f6",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/d96c0160-113d-441a-8e90-92d1bd28591a",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/d96c0160-113d-441a-8e90-92d1bd28591a",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "95e73d99d79f713472e1e65f006825a8440fbf73cae656ef8699c326d4a094e2",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/a81209e5-5e75-4ac8-905a-0df49891d61b",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/a81209e5-5e75-4ac8-905a-0df49891d61b",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "63cd323df43114b4a9bcf74b93356a51d571d6d563d2e526acc53f09a04a1a7a",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/bda40f47-a69b-44d4-ac1a-3f86f20d802d",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/bda40f47-a69b-44d4-ac1a-3f86f20d802d",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "1a9dcc68737026e609a54290277c3dbf1e74f42ff4412d29b23a1a8bd11b65f5",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/84c209e5-d65c-4b27-b42f-c53507461acd",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/84c209e5-d65c-4b27-b42f-c53507461acd",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "a67d22f80185e19a1d94fde38804ea1dfaaddf6e969844c76ddeda60f8c71aa7",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/8e835654-7765-48c0-925e-4a088635514f",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/8e835654-7765-48c0-925e-4a088635514f",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "48cdacf3f134c8369fbf88c70b5a95de938a902709f167c1eac4078cb5031a51",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/25092c0e-9a32-4191-af79-050738213704",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/25092c0e-9a32-4191-af79-050738213704",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "f503b904f2dbbd30c46d68dff5b929cdb0ac93bd17d223595c72cc9e3a6a455b",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/fe6ab2c9-0528-4751-a6dd-67467e90fc0e",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/fe6ab2c9-0528-4751-a6dd-67467e90fc0e",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "12d2ef7f2f9068fee45510eca00842181fb980bbad724b5824d820c2dced4067",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/5a7ce67e-0b71-428a-b774-e7c05e7841b6",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/5a7ce67e-0b71-428a-b774-e7c05e7841b6",
+      "location": "San Francisco HQ; Toronto Hub",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "8662dbc5b6821b3a7324c697112a9b0d260689c445d2ec2012732642a587f879",
+      "note": "Posting header/location type and body reviewed; role body arrangement corroborated by Ashby explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "HQ",
+          "sourceLabel": "San Francisco, CA HQ"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": "Hub",
+          "sourceLabel": "Toronto, ON Hub"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/firecrawl/5b4bfd81-b3ef-417b-888d-c350270d81d2",
+      "sourceUrl": "https://jobs.ashbyhq.com/firecrawl/5b4bfd81-b3ef-417b-888d-c350270d81d2",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (33 IDs) and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:13:29.998484+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/firecrawl"
+    }
+  ]
+}

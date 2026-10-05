@@ -1,0 +1,1875 @@
+{
+  "companySlug": "fireworks",
+  "verifiedAt": "2026-10-05T15:05:04.367744+00:00",
+  "unavailable": [
+    "https://jobs.ashbyhq.com/fireworks/08bafd48-fd91-404b-b7c0-b19c30f8a058",
+    "https://jobs.ashbyhq.com/fireworks/0e0c2c47-6aa2-4b8c-98f9-19fc51bc2ea2",
+    "https://jobs.ashbyhq.com/fireworks/6746dfde-8f8d-4a13-9961-7ae1e222a4c0",
+    "https://jobs.ashbyhq.com/fireworks/d2475828-01b1-4c21-bee9-9aebd009156b",
+    "https://jobs.ashbyhq.com/fireworks/e172e100-1ba5-4fc8-b3e0-d80dd66aac70",
+    "https://jobs.ashbyhq.com/fireworks/e1a1373c-7b45-4b49-b3ef-c6126ec1c8bb"
+  ],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/ee05e8a5-a7b8-41bf-9e7b-fdb1dc6e6bcb",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/ee05e8a5-a7b8-41bf-9e7b-fdb1dc6e6bcb",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Deployment Strategist (EMEA)",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "0b24b215401d8aa1850737bf80fe5dbb6236bb5f95066e7fc19c4cf1302cf6dc",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/a6c58388-14b7-4c16-bd1f-5c2d3753d297",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/a6c58388-14b7-4c16-bd1f-5c2d3753d297",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Lifecycle Marketing Manager",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d38a7698c1a8077d4b5f8441375315c388168b37a56d45c2c0ed953e39114aea",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/7a9c5827-cbeb-4397-b364-b7a5177b9f62",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/7a9c5827-cbeb-4397-b364-b7a5177b9f62",
+      "location": "San Mateo, CA | London, UK",
+      "workplaceType": null,
+      "evidence": [
+        "# Developer Advocate",
+        "This role is based in San Mateo, CA or London."
+      ],
+      "sourceSha256": "98ff2a0d826bf06442f815432a0f8acbaa605531304f2d330b10886a9609e2b1",
+      "note": "Bases in San Mateo or London with conference travel; no office schedule stated.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/51aa1cdc-945e-4077-b5c7-c9ab37b420be",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/51aa1cdc-945e-4077-b5c7-c9ab37b420be",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Manager, Platform",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ca65eb3dc21933f9eb2e593678ea2c290056d6b5ccf5349f544432f7f4e02082",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/b6366240-4106-4898-ac07-af0c266b78f2",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/b6366240-4106-4898-ac07-af0c266b78f2",
+      "location": "San Francisco, CA | New York, NY | San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Account Executive, AI Native Team",
+        "## Location\n\nSan Francisco; New York; San Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "342cbc296df5b19390708dc701c786bd3e38a00fb9ce7da87145f347a1e5660c",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/e5a9746e-49ac-407f-b953-5cf3c08a7802",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/e5a9746e-49ac-407f-b953-5cf3c08a7802",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Applied Machine Learning Engineer, EMEA",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "fc9e8aad5c01fb5847c0b21b805875f3e43be1054f1cb363373ba418ba2e9d4c",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/82013447-2713-46ca-aab1-b0a34f7b565a",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/82013447-2713-46ca-aab1-b0a34f7b565a",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, LLM Infrastructure",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "7c83428e5877b5a81aa2b0b35a9f1b1bd07209a9ed7a955b19735b5a6586b670",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/782b8fec-ec75-486d-a6fa-69f737f45e58",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/782b8fec-ec75-486d-a6fa-69f737f45e58",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Deployment Strategist",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "cbca88ac5d330cf2ca9076e26a2ee24193d6bd9f03ae9cfb8a1bc85c99666ad4",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/28dd73da-d8ff-4baa-a5df-e01231dede48",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/28dd73da-d8ff-4baa-a5df-e01231dede48",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Tax",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f9b24b07308d71ef9bb41656a65c01d281227245525edf97125029ce73670904",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/1e8064d8-27ed-41b9-9d7a-1f9129e24ce0",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/1e8064d8-27ed-41b9-9d7a-1f9129e24ce0",
+      "location": "San Francisco, CA | New York, NY | San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive, AI Native Team",
+        "## Location\n\nSan Francisco; New York; San Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "bcb82122d2b1627eff4f4fc5e8aa6b1f37b17668f2f9909bf2e917602d2e1daf",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/85e542b8-6349-48a7-b1b4-3818baf945aa",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/85e542b8-6349-48a7-b1b4-3818baf945aa",
+      "location": "Remote - United States | New York, NY",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Enterprise Account Executive",
+        "United States, Remote; New York; United States, Remote"
+      ],
+      "sourceSha256": "8136163894d4ecfd3f46295f14260cb98c308e5f765b4fb4ec487246fae73750",
+      "note": "Remote option listed alongside cities with no restriction; cities are alternatives, remote is available.",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/85486dc8-023f-4a82-9cdb-8394bbfcf1ab",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/85486dc8-023f-4a82-9cdb-8394bbfcf1ab",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Data Analytics Engineer",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "8d5405b7fc2f6563265d3580a0c7794a779d07f809e1c14f0a1b81f971a4a95c",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/a2a1cdd0-c79c-4023-b8ba-3c1349aedbdb",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/a2a1cdd0-c79c-4023-b8ba-3c1349aedbdb",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Pursuits Account Executive, AI Native",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "cfd0d62b2eaea9432e1dd812a001aeaa4f52df78a71a8e9be6468d934d8cdc98",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/17a81efc-93db-457d-b92b-996722a0f64d",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/17a81efc-93db-457d-b92b-996722a0f64d",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Designer"
+      ],
+      "sourceSha256": "939daca4589e341cd325ecb89b68fc661cf95bb0c106c3d3a067d130915e6946",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "roduct Manager**\n\\\nProduct • San Mateo • Full time • Hybrid\n\\\n$160K – $180K • Offers Equity](https://jobs.ashbyhq.com/fireworks/69375f41-258a-4c25-ad78-5985606c438a)\n\n[**Product Designer**\n\\\nProduct • San Mateo • Full time • Hybrid\n\\\n$160K – $191K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/7ad6d17e-950e-4413-be33-9c1489f069d8",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/7ad6d17e-950e-4413-be33-9c1489f069d8",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Performance Optimization",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "bdbae0e2504f7c8e7e89ae940a12235291bfe0ce08d01c532d0b7fb67559150c",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/08c095a0-2f02-4078-938f-374394040b0e",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/08c095a0-2f02-4078-938f-374394040b0e",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Partnerships Lead"
+      ],
+      "sourceSha256": "44a52d45e2b7e886335a81308c2b89136e28537bcb68ea5e5f71e074a0b114e9",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "es**\n\\\nPartnerships • San Francisco • Full time • Hybrid\n\\\n$320K – $350K • Offers Equity](https://jobs.ashbyhq.com/fireworks/0db73dd8-3ade-4da8-9a87-16ded8efe589)\n\n[**Partnerships Lead**\n\\\nPartnerships • London • Full time • Hybrid\n\\\n£200K – £220K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/0628f651-a8f6-4ef9-beec-6f31c3268c85",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/0628f651-a8f6-4ef9-beec-6f31c3268c85",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of GTM Engineering & Systems",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ab9c2cac7158fd07e8e3116e57de295e53e96740750dce80476060aa82ed3483",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/69375f41-258a-4c25-ad78-5985606c438a",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/69375f41-258a-4c25-ad78-5985606c438a",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Associate Product Manager",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "478d8faec28f87dc8a991a273c123e34b896e9f553729f95cc3eeb1ca38ec7b8",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/c3c61f23-477a-446c-89cb-c22cc10a347e",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/c3c61f23-477a-446c-89cb-c22cc10a347e",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Deal Desk",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "fbb59fc18227647f1f32b2a081068de5cb3bfec27c418723669d6ef2c7a5c565",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/3af80f2c-ee2f-442a-b921-6529aaef49d9",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/3af80f2c-ee2f-442a-b921-6529aaef49d9",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Partnerships Lead",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "93b2e2cbe637f7c1b9a3d9089163c7d22b4e03951da6b9459489c80b2dbe0b3e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/e47bf56b-2696-48b2-93fc-11fd1263906c",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/e47bf56b-2696-48b2-93fc-11fd1263906c",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Field Marketing Manager, Startups",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "996cfaf74331f32a143b8416d7747a5b4c9b8d1ddb2e4d3f727bfbfdab120496",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/ee35bd97-43f9-4574-8ab7-81debd5d3d1a",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/ee35bd97-43f9-4574-8ab7-81debd5d3d1a",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Research",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "35317c2b252bd025ab0fce8e1c12e64d51609f5cae6139ed1ec91b1ca4e3adae",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/2facf9c7-9d73-4828-bbab-8adc37708f4c",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/2facf9c7-9d73-4828-bbab-8adc37708f4c",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Enterprise Account Executive, EMEA",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "71f075c2e4f24b61e9424d6e1c01f52eb831fb8fbd2dd7920218a81a413b5947",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/2b9193ea-dbff-40b1-a766-0f872665c7fe",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/2b9193ea-dbff-40b1-a766-0f872665c7fe",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sr Field Marketing Manager",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "48101d8f7168d102e1df5251d26d8f1d578448d462d886ebb00e532ea7962777",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/5907602a-16c5-47e7-a9ec-42fc036ec6fd",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/5907602a-16c5-47e7-a9ec-42fc036ec6fd",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Compensation Partner"
+      ],
+      "sourceSha256": "42649fa97f2f0512e31da10e23e448bdf9c5cbe661787d8ed33003713326cb07",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "Partnerships • New York • Full time • Hybrid\n\\\n$275K – $300K • Offers Equity](https://jobs.ashbyhq.com/fireworks/3af80f2c-ee2f-442a-b921-6529aaef49d9)\n\n## People\n\n[**Compensation Partner**\n\\\nPeople • San Mateo • Full time • Hybrid\n\\\n$180K – $220K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/4a5dbfe4-b0d5-4394-a94b-42345fb425b4",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/4a5dbfe4-b0d5-4394-a94b-42345fb425b4",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Field Engineer - Strategic Partnerships",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6e83a51bf88cfbc163ede82920838c1219f4ae98ecda0da7217a693d57c76f43",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/a09d7658-2986-46f9-a4e1-a8ce9a98a07c",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/a09d7658-2986-46f9-a4e1-a8ce9a98a07c",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Field Marketing Manager, EMEA",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "25c6d1acfbca411fe147c61319054b57e5c9f5be3d366710a0f5926f0a5acdcc",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/69739e4f-1ca5-45db-8a70-4309d961c0b7",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/69739e4f-1ca5-45db-8a70-4309d961c0b7",
+      "location": "San Mateo, CA | New York, NY | Remote - United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Field Engineer - Enterprise",
+        "## Location\n\nSan Mateo; New York; United States, Remote",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "aff4f452f1865d0763aef9ee81861739acef6264342eb152183be3319cd5f8bf",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/b8d8d5ab-f5d2-452a-8276-c16c2f7c3a05",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/b8d8d5ab-f5d2-452a-8276-c16c2f7c3a05",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of AI Enabled Business Systems",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "b9512b9153110cdb2b2b747d98e006bbc7fdbbda756b1bae4a5b1de287498299",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/cd8233f0-e958-40b5-a9a6-e35ecb9a76a4",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/cd8233f0-e958-40b5-a9a6-e35ecb9a76a4",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Representative (BDR)",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "016e11cf9761123fd8e4994cb6f27cc524e42afe252dad49c4ef6573bd9633e3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/5494d188-bc33-4f92-8c92-9d57bcd66c2a",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/5494d188-bc33-4f92-8c92-9d57bcd66c2a",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Representative (BDR), EMEA",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f0b71c49c4e3c5717c9ca3009e0d5a39b0a549c4c574c6ec5058534007d3d647",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/38aa9926-2865-45c4-ac38-585b78ee68ac",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/38aa9926-2865-45c4-ac38-585b78ee68ac",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff- Full Stack",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "cb375f5cfa1852e3eb4d1ce7b5c5e8014b1728d5734af201a1835bc0964117b3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/b5d24188-bbd2-4f85-86bd-465edba8c0de",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/b5d24188-bbd2-4f85-86bd-465edba8c0de",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Finance Manager, Infrastructure and R&D",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9b395cde968cef5ce1846a73e3bcfb148ac265008f4b5ea3edc27447be78daf9",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/17394579-2c5f-4b43-91cb-e531700b8a26",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/17394579-2c5f-4b43-91cb-e531700b8a26",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Manager, Training",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f283ee512466b7e2ba966bb0241c83ac3c3fc29654cbcd0c52b103e6cd0be38a",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/da8f0b05-ac82-40a4-8cb8-64767c956018",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/da8f0b05-ac82-40a4-8cb8-64767c956018",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Social and Community Manager",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6a647dd6cdfc05f56fa277a8028e2df50e46d7bd77f57cb982b74a4b4e4a803b",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/58083381-6c71-4d58-9014-bd2bcb3e1e85",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/58083381-6c71-4d58-9014-bd2bcb3e1e85",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Paid Growth Marketer",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2721aa4728e990d9d511896fd729208234a46dc4bec5d52628406de07a436a94",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/a2850702-dea3-4e2c-a3ec-7ae257d36eb7",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/a2850702-dea3-4e2c-a3ec-7ae257d36eb7",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, AI Training Infrastructure",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "7cd25eb81482d2f719fbef96c24cbb3767f8d767812256d5d434d72cc1222198",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/cf2eec9f-be27-4694-861d-87e72ae535a1",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/cf2eec9f-be27-4694-861d-87e72ae535a1",
+      "location": "San Mateo, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# People Partner, GTM",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "84e089b1c403585914da3d5d6092577299519678ec9778903677bd20d0c9b66f",
+      "note": "Explicit On-site location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/04e5e023-d9cc-4785-b410-7364d4f4fe15",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/04e5e023-d9cc-4785-b410-7364d4f4fe15",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# GTM Engineer, Marketing & SDR",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "18227f2f9016494c0724a71757104dd2dfb274dc930538d52e715fbadbaef7a2",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/ccc2b11a-0996-4ed1-b5d6-7da20bbe73bc",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/ccc2b11a-0996-4ed1-b5d6-7da20bbe73bc",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Projects Lead",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d8b45d90c2da72d509ca3b3125c4a716722da71f940ff55c34f4071f6e0c9ac8",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/01166f87-1b1f-4e2e-8b7d-be6708566434",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/01166f87-1b1f-4e2e-8b7d-be6708566434",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# GTM Engineer"
+      ],
+      "sourceSha256": "c309123100f4625f7023614f38b4597b263d41cd4ee5764b624b66ef5ca4cd77",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "ateo • Full time • Hybrid\n\\\n$150K – $300K • Offers Equity](https://jobs.ashbyhq.com/fireworks/ccc2b11a-0996-4ed1-b5d6-7da20bbe73bc)\n\n## Revenue Operations\n\n[**GTM Engineer**\n\\\nRevenue Operations • San Francisco • Full time • Hybrid\n\\\n$180K – $210K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/fab3e536-5f1d-4ecc-8446-899e8c056672",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/fab3e536-5f1d-4ecc-8446-899e8c056672",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive, AI Native Team",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3e1bb78e29d6e6279243c9ec5e0df54b8fc6bebb0320b6f56f3007513514c5e6",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/b0509951-7280-4e88-ab1e-a20631d3f5f2",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/b0509951-7280-4e88-ab1e-a20631d3f5f2",
+      "location": "San Mateo, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Sales Enablement Lead",
+        "It follows the San Mateo in-office policy (Monday/Wednesday/Friday)"
+      ],
+      "sourceSha256": "e5990828f373c73e8bd8a89721abe810e30deeba9a40f99d7ecee9bc4c2b8004",
+      "note": "Explicit San Mateo in-office policy Mon/Wed/Fri.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/fc3845e6-e8ba-4756-a03e-654f14ce605b",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/fc3845e6-e8ba-4756-a03e-654f14ce605b",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Applied Machine Learning Engineer",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "498c9bf287d72ef0a153bd09a8f0c7631cf049c100001e277a80f728f36ffd88",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/d5b05158-ad16-49a8-964f-b5e5d8e6191d",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/d5b05158-ad16-49a8-964f-b5e5d8e6191d",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Facilities Manager"
+      ],
+      "sourceSha256": "202f5aed47cd044052e81c7a79c7dc993ad4e7b44732dc3fe9ab17bcefe26b8f",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "cutive Assistant**\n\\\nGeneral Admin • San Mateo • Full time • Hybrid\n\\\n$140K – $180K • Offers Equity](https://jobs.ashbyhq.com/fireworks/2393546c-ef71-4054-8c75-4f16caeffc5b)\n\n[**Facilities Manager**\n\\\nGeneral Admin • San Mateo • Full time • Hybrid\n\\\n$150K – $170K](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/2b47b54e-ef8c-45da-acfa-25074396a4e1",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/2b47b54e-ef8c-45da-acfa-25074396a4e1",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Marketing Lead, Partnerships",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "327351d5e942c60d388875f1ddfba701bf0c37c438de8102a1e5e77424ee4274",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/a8abf746-17f5-45e3-a72e-085ccb8f2d74",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/a8abf746-17f5-45e3-a72e-085ccb8f2d74",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Cloud Infrastructure",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "09615ace3f4cd68d1a4db16fb9eee3e3a5d818fc55f06e526f954c612a0456ce",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/492db6a8-c757-4c4e-a2b3-f2ed183f8e6f",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/492db6a8-c757-4c4e-a2b3-f2ed183f8e6f",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Software Engineer",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6d88c048fdc73dfb39b7a558ab5b49d172d5dd60c4edd5434684cf5cf5c992b6",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/5f5e3669-e6c5-4772-9cc9-0e8b760733be",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/5f5e3669-e6c5-4772-9cc9-0e8b760733be",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Billing Operations Analyst - Usage Billing",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4b3fa69529e4b55f4334acf5f1560c2a5d815e4b257f1132bb9dcefcf92390d5",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/976cf215-3710-4136-aac8-f0c0f08ef45e",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/976cf215-3710-4136-aac8-f0c0f08ef45e",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# MTS, Security"
+      ],
+      "sourceSha256": "7bb1f2b3505569379a8ab61d93a85cb738248d4819efa3edd2b7750c09b07adf",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "rastructure (2026 PhD New Grad)**\n\\\nEngineering • San Mateo; New York • Full time • Hybrid\n\\\n$200K – $230K](https://jobs.ashbyhq.com/fireworks/ad58a098-ef75-4a4b-8475-55c2653213ef)\n\n[**MTS, Security**\n\\\nEngineering • San Mateo • Full time • Hybrid\n\\\n$180K – $220K](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/89d811de-2505-4173-bf37-b173ce53ecf1",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/89d811de-2505-4173-bf37-b173ce53ecf1",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Enterprise Foundations",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "670a3a71a085d64f99a179929c614768081e82c637efc41614e386627ff81b47",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/1fc5eb25-08ad-4c82-aaee-5b903b9ab0ea",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/1fc5eb25-08ad-4c82-aaee-5b903b9ab0ea",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": [
+        "# AI Field Engineer, Singapore"
+      ],
+      "sourceSha256": "d7406fcef4efa51d4f910860ec9c687635fb52437824dbde1082332828ee5550",
+      "note": "Singapore geography confirmed; customer field duties do not establish an office schedule.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "4b-42345fb425b4)\n\n[**AI Field Engineer, EMEA**\n\\\nSales • London • Full time • Hybrid](https://jobs.ashbyhq.com/fireworks/504591e5-fccd-4a7f-a9ca-81b51d2a5a12)\n\n[**AI Field Engineer, Singapore**\n\\\nSales • Singapore • Full time\n\\\nSGD 200K – SGD 280K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/7730b5a4-0b58-46c7-bcff-61a929a3d1bd",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/7730b5a4-0b58-46c7-bcff-61a929a3d1bd",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Field Engineer - AI Natives",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "85ea55b73349307ed5eff080ce26041bdb1b6e85376ca19cc0839f1a1b82cf33",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/1c4bd96f-108a-4217-a30d-f110ce54bb46",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/1c4bd96f-108a-4217-a30d-f110ce54bb46",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Sales Manager, AI Native",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "35c101533387bcf87e9ad809f24c3ce81f48f2c8d7eaba0f23b0ae33dc659d59",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/93faf385-9322-4172-8ef2-42a9a6c889e6",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/93faf385-9322-4172-8ef2-42a9a6c889e6",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff, Cloud Infrastructure, Singapore"
+      ],
+      "sourceSha256": "398fd929dac3f1bd72a3b5803f6c1111863ce905cab36a94c1cf521b9a6d3a35",
+      "note": "Singapore geography confirmed; customer field duties do not establish an office schedule.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "ll time • Hybrid\n\\\n$175K – $220K • Offers Equity](https://jobs.ashbyhq.com/fireworks/a8abf746-17f5-45e3-a72e-085ccb8f2d74)\n\n[**Member of Technical Staff, Cloud Infrastructure, Singapore**\n\\\nEngineering • Singapore • Full time\n\\\nSGD 180K – SGD 250K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/ff11ca2c-d95f-4802-8370-09c2cf394842",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/ff11ca2c-d95f-4802-8370-09c2cf394842",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff - AI Infrastructure Reliability",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "a0e250c5a148c44dcef572bd7deec1fc050d41f25a6fd3fe3b6b4834eced3222",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/2d0a20e1-8b0a-40b0-9b5e-514bca715fba",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/2d0a20e1-8b0a-40b0-9b5e-514bca715fba",
+      "location": "San Mateo, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# AI Product Engineer - Nexus",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "9fc79f58f00e08c2e8f18a8cadee2bcebb1297a4a80a9e2ef95aba2905c8f037",
+      "note": "Explicit On-site location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/82b41f4a-a945-4aee-a1fd-1ef9ab513e58",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/82b41f4a-a945-4aee-a1fd-1ef9ab513e58",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Research (2026 PhD New Grad)",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "83d168350a7c27a4eda8b28be78b2b4fc9af2e2c2305611fb8eaaac2e9fa8034",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/53ae49ee-b149-493c-bcab-b9c8840fa3d1",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/53ae49ee-b149-493c-bcab-b9c8840fa3d1",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Revenue Accountant",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "e95f70afe5c89a71bb529d106d9e2f1a7d593c5326f1d47c70c0faad2c83259d",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/0c78aede-7c21-4d1e-88f1-f309deb9819e",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/0c78aede-7c21-4d1e-88f1-f309deb9819e",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, New Grad (BS/MS)",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "091febe7d5459eda8b8b9c351627843c6c96cdd05d8caebb209e100a026c22cb",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/ad58a098-ef75-4a4b-8475-55c2653213ef",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/ad58a098-ef75-4a4b-8475-55c2653213ef",
+      "location": "San Mateo, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Systems Infrastructure (2026 PhD New Grad)",
+        "## Location\n\nSan Mateo; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "7c5147c4bc7d66f237d9584232c5c1dcc55b646acecb58a71bffc4ac6c6eb6aa",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/0e175af6-e53a-4e48-91ba-db3aaef8dac7",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/0e175af6-e53a-4e48-91ba-db3aaef8dac7",
+      "location": "San Mateo, CA | Remote - United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Marketing Operations",
+        "## Location\n\nSan Mateo; United States, Remote",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "27ce7893418eabfb5f2ca0b70f804368ef2cdd7bb903e601274426cc0e2852f3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/cca38fd5-9cbd-4cee-8fdb-d6e6d230b036",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/cca38fd5-9cbd-4cee-8fdb-d6e6d230b036",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Evals Platform",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "42d0c27fbac512bfaa5dc17bc9d1a1c0f62a28f44f397535c559d49009763da6",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/28b3ecfd-6ebf-4f5b-9f85-b0a9eff68290",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/28b3ecfd-6ebf-4f5b-9f85-b0a9eff68290",
+      "location": "Remote - United States | London, UK | New York, NY | San Mateo, CA",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Sales Enablement Manager",
+        "United States, Remote; London; New York; San Mateo"
+      ],
+      "sourceSha256": "e3d5139ea81d038e50bfd34a5f4e531050212de6dea0cbd0bcdc562e86c0b17b",
+      "note": "Remote option listed alongside cities with no restriction; cities are alternatives, remote is available.",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/55f8e95c-f1ec-41b1-b387-1b98ff560f57",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/55f8e95c-f1ec-41b1-b387-1b98ff560f57",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff (EMEA)",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2aec8599f8ea5323a484eda821cc5c8ef6c839a6d09dcdd2e4e7fd19465a849c",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/d5063bc9-d2ac-4ee4-9e0c-23ea74ad83b2",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/d5063bc9-d2ac-4ee4-9e0c-23ea74ad83b2",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Product Marketing",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9c369471cbe8cef50bb6060f49b39c2cdde381b9ca2dd6159816de60b8254a5e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/044b1823-7d0d-4da2-b265-676f2a5a50c3",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/044b1823-7d0d-4da2-b265-676f2a5a50c3",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": [
+        "# Applied Machine Learning Engineer, Singapore"
+      ],
+      "sourceSha256": "1595dbc417e0108f9ab35a8696ae8526297400274a941efac6b08662bd54930d",
+      "note": "Singapore geography confirmed; customer field duties do not establish an office schedule.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "g Engineer, EMEA**\n\\\nEngineering • London • Full time • Hybrid](https://jobs.ashbyhq.com/fireworks/e5a9746e-49ac-407f-b953-5cf3c08a7802)\n\n[**Applied Machine Learning Engineer, Singapore**\n\\\nEngineering • Singapore • Full time\n\\\nSGD 150K – SGD 191K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/fe0e6fc9-45de-4f65-ba4a-2516f914c2ba",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/fe0e6fc9-45de-4f65-ba4a-2516f914c2ba",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Representative (BDR)",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "31fcf44725f94641db95fac104ac357c16caf81b4f958c15413e06af8785588f",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/6c283170-bf6c-4259-a6cb-9f1e2315e7c9",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/6c283170-bf6c-4259-a6cb-9f1e2315e7c9",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Order to Cash",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "e9f54fcacb0cd562f00df47f8fe760f29d4b35f9e1cc9c95ebbbff60296830ff",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/504591e5-fccd-4a7f-a9ca-81b51d2a5a12",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/504591e5-fccd-4a7f-a9ca-81b51d2a5a12",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Field Engineer, EMEA",
+        "## Location\n\nLondon",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "cafb6731265b673002b293b76b5d9471956031c706b783a6c60619329453f670",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/35fc89d0-b297-4721-8fe8-09f5c6967db4",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/35fc89d0-b297-4721-8fe8-09f5c6967db4",
+      "location": "San Mateo, CA | New York, NY | Remote - United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Security Operations Lead",
+        "## Location\n\nSan Mateo; New York; United States, Remote",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4bca7a451110bc4c7dd55794b0ad93dd8840fd1a9cdeda8e4f24fe343158a366",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/2393546c-ef71-4054-8c75-4f16caeffc5b",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/2393546c-ef71-4054-8c75-4f16caeffc5b",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Executive Assistant"
+      ],
+      "sourceSha256": "69715cd5d37642bc01ec323877d3f2a13ec569201fe8edd7052ba701082ca75a",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by the canonical board listing for this exact posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/fireworks",
+          "sourceSha256": "449e091c948492ef522e63e36900c512404319da252a4210ad435aaec92f8fff",
+          "evidence": [
+            "R&D**\n\\\nFinance • San Mateo • Full time • Hybrid\n\\\n$180K – $210K](https://jobs.ashbyhq.com/fireworks/b5d24188-bbd2-4f85-86bd-465edba8c0de)\n\n## General Admin\n\n[**Executive Assistant**\n\\\nGeneral Admin • San Mateo • Full time • Hybrid\n\\\n$140K – $180K • Offers Equity](https://jobs.ashbyhq.com/fireworks/"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/fireworks/a83a980e-9e31-489b-964c-abd6cd11dff2",
+      "sourceUrl": "https://jobs.ashbyhq.com/fireworks/a83a980e-9e31-489b-964c-abd6cd11dff2",
+      "location": "San Mateo, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# IT DevOps Engineer",
+        "## Location\n\nSan Mateo",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4d3be11394688bc8189e2cf2a242d0d3d9ead9dce6f53d3a5ed106ed777dc7a2",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "locations": [
+        {
+          "locationId": "f51ad402-a2af-8249-9c8e-bb7a9c8e4d53",
+          "label": "San Mateo, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Mateo, CA"
+        }
+      ]
+    }
+  ]
+}

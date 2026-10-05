@@ -1,0 +1,191 @@
+{
+  "companySlug": "llamaindex",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/36a0249e-a672-44df-a08e-b5a5523dec26",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/36a0249e-a672-44df-a08e-b5a5523dec26",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# AI Content Engineer",
+        "San Francisco",
+        "## Location Type\n\nHybrid",
+        "In-person in San Francisco"
+      ],
+      "sourceSha256": "971220e17aeba89dd3918fcda977a18edc6b2d4fdf3ef0bedd06b81509bb2437",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/5ef32675-090d-4eb2-bca0-ddb6fbde0215",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/5ef32675-090d-4eb2-bca0-ddb6fbde0215",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Applied Research",
+        "San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1b899e691b344bfc8cf3a72cdf9fcd2f98576de99c53afae14663373d6cb73db",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/e8168e8a-451e-41bb-9c13-8f24b4b84e50",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/e8168e8a-451e-41bb-9c13-8f24b4b84e50",
+      "location": "San Francisco, CA | Remote",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Infrastructure",
+        "San Francisco; Remote",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "99dc674a27bd6bbb8ccc5f6a89b1e2fa76e67dcdf09e7e27b321e6bb2d33105e",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/a2f14066-9e18-4da3-8861-2da3230e393c",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/a2f14066-9e18-4da3-8861-2da3230e393c",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Member of Technical Staff, Backend",
+        "San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "8ac5f77535fc12823f00774addccfdcded7766726b67e8f8690f89f18ca19c12",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/b0a0e9d0-9826-46c5-b3a6-8ef3feb9cd9d",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/b0a0e9d0-9826-46c5-b3a6-8ef3feb9cd9d",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Developer Evangelist, Technical Content",
+        "San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3212ba5fe63d3b51606441e1cbc5ac78c3c516bf707ce33d64140e5d3a91c063",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/0492125b-7a1a-4b60-a8c9-feda326ff8a4",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/0492125b-7a1a-4b60-a8c9-feda326ff8a4",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Enterprise Account Executive - Digital Native",
+        "San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "0a407628721945b1090550a32ca91a82dfe5fb5bf82bcb330927bb12267e9467",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/927fc367-c22b-47aa-817d-e1f4810149a7",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/927fc367-c22b-47aa-817d-e1f4810149a7",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Enterprise Account Executive - EMEA",
+        "London, UK",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9efde8ab341c2fdec78f5dff9e0ae2cf25b80758e26f9c8c295580334fdc638e",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/llamaindex/ee009847-6f1d-42f5-ab9f-805072f7a3e9",
+      "sourceUrl": "https://jobs.ashbyhq.com/llamaindex/ee009847-6f1d-42f5-ab9f-805072f7a3e9",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Developer Evangelist, Growth",
+        "San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "aa0555ce353a9982e42b7c13cb47eac1fbf543644c7b71bef5302e16dd0642ac",
+      "note": "Full individual body read; ATS fields corroborate. Conflicts preserved from lane review.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    }
+  ]
+}

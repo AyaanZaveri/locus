@@ -33,7 +33,7 @@ export function buildPersonSearchQuery(
     )
     SELECT p.name, p.role, p.image, p.linkedin, p.source_url AS "sourceUrl",
       c.slug AS "companySlug", c.name AS "companyName",
-      c.country_code AS "countryCode", c.profile,
+      c.country_code AS "countryCode", jsonb_build_object('logo', c.profile->>'logo') AS profile,
       p.match_type AS "matchType", p.score AS "matchScore"
     FROM candidates p JOIN ${companySource} c ON c.id = p.company_id
     ORDER BY p.rank, p.score DESC, p.name, c.slug, p.id LIMIT ${limit}

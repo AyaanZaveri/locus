@@ -1,0 +1,2531 @@
+{
+  "companySlug": "langchain",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/df7a4d66-2159-4dff-b5ff-92f6e835f242",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/df7a4d66-2159-4dff-b5ff-92f6e835f242",
+      "location": "Dallas, TX | Austin, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "620f633e4a2e23bfd2372d0122e3495e49b78ef5ca7aabd58641045dceb59521",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/7af64749-bc2c-4722-b40a-febac36fc56b",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/7af64749-bc2c-4722-b40a-febac36fc56b",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "6802c61465ae1ff4a947fae94b983410dcbc5962c98d2795a3a3edd62c965df1",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/1b125fc4-be24-422f-a180-30b7431fc6cf",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/1b125fc4-be24-422f-a180-30b7431fc6cf",
+      "location": "Remote - US | Boston, MA | New York, NY",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote - US; Boston, MA; New York, NY",
+        "Remote",
+        "- Design and implement reusable, composable React components that are flexible, accessible, and production-ready"
+      ],
+      "sourceSha256": "f2c136833832790333db38122758d278b953996672a425bf807f7a30fe73232d",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6c1c47cf-fac0-4367-975e-795197df2c5d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6c1c47cf-fac0-4367-975e-795197df2c5d",
+      "location": "Atlanta, GA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "e2b75aa9f6f0d560376958a4a366f8e80760b204fe7009c24d0fae77e53368be",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/2e05a8c8-a9d8-4627-a651-6700923b2a70",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/2e05a8c8-a9d8-4627-a651-6700923b2a70",
+      "location": "Houston, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "eb8b1822542f01571b2737dfab1fe8ffdb46462914768a82b32b8854a474e875",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "43a7500c-ddd1-8ede-8fed-4d1f2a7daf6d",
+          "label": "Houston, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Houston, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/fc868832-3865-4f4a-8222-33422a7d3d96",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/fc868832-3865-4f4a-8222-33422a7d3d96",
+      "location": "Amsterdam",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote",
+        "- Remote with up to 25% travel"
+      ],
+      "sourceSha256": "530e61827c80174346806c4a4bb1d40d139d335dba472a9fdd3db708abd6bfe3",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/d96a60dd-849b-4a2f-a48a-ea73845b86ea",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/d96a60dd-849b-4a2f-a48a-ea73845b86ea",
+      "location": "Amsterdam",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "f367d93963a94f3dd9c5b861aaa85816bc5a65b06fbacb03e6ac0f16ecbecfba",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/b47dbcea-222c-427d-bf4d-9e30a6b60d4a",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/b47dbcea-222c-427d-bf4d-9e30a6b60d4a",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "dca9c6346281c1ba28c5eaa01e5c43e3d2801fea0596a66a914005d89393b9dd",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f07bfbad-6daf-4b11-b5bb-2c3bbc47c53c",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f07bfbad-6daf-4b11-b5bb-2c3bbc47c53c",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "LangChain is hiring a Senior Fullstack Engineer to build the foundational product features and integrations that power user acquisition, rapid experimentation, and self-serve expansion. This is a high-impact 0→1 role on a newly formed team responsible for building growth systems from the ground up. You’ll work closely with product, design, GTM, and analytics to streamline activation, optimize packaging, and deliver a seamless growth story for developers and enterprise customers alike. This role will be in person 5 days/week in New York City."
+      ],
+      "sourceSha256": "cccf47de708983da53a4d6e17927e79109870c5fe0c174b657ddbd92bd0ae9d2",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/8e39ab8c-2288-4327-8f8e-1b8b4cfc73a5",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/8e39ab8c-2288-4327-8f8e-1b8b4cfc73a5",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "e2ccb99ea36707b2e060a3866bf2b0b28a12d83c1cdd61ce417b13dd0759990d",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6c5eacaf-0f0c-43c5-bac8-78c98424b979",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6c5eacaf-0f0c-43c5-bac8-78c98424b979",
+      "location": "New York, NY",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nNew York, NY",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "7a8ba8a1c0e234ca014937e3ef5fbcd49212c875df326e6b0e08b098a5a11fb4",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/d81ac364-7b1c-48d2-a8b7-4bc7336c6be5",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/d81ac364-7b1c-48d2-a8b7-4bc7336c6be5",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "- Work with field marketing on in-person activities: executive dinners, regional events, on-site meetings that move deals forward and deepen relationships",
+        "- Work with field marketing on in-person activities: executive dinners, regional events, on-site meetings that move deals forward and deepen relationships"
+      ],
+      "sourceSha256": "be8ee62b1b1f298626c63d271f3b53859b0403dab75f5a16dd3ea058b45ad5a8",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f71210f9-12e1-4726-88b9-ebafa194d5b2",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f71210f9-12e1-4726-88b9-ebafa194d5b2",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "a44654ee3e9eb5bdd3332eebcd25c38d419dd35fd9e6b5f36404a05deb13f699",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/24af8cb4-aa2a-4d98-a6af-9feb6817f872",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/24af8cb4-aa2a-4d98-a6af-9feb6817f872",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "951de36c6932bac7f4542b5c3604bb4f669aa0d22e20aa9a48d3da7cabd54111",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e773649c-4ea7-47c2-9987-74d525474e82",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e773649c-4ea7-47c2-9987-74d525474e82",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "f04f62ee3ca26e2126123c6e23801c969564bcab35a1f987fb0775f1652050fd",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e6d2bc1e-e0b9-4076-be01-ef8681863c01",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e6d2bc1e-e0b9-4076-be01-ef8681863c01",
+      "location": "Boston, MA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "*This role is onsite 5 days/week in Boston, MA*"
+      ],
+      "sourceSha256": "fdda6275f2a9c8378ad77e61e68531971d915e9ff431ec00ffe4121bc7beb684",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/d1dc8b4d-5f7f-46b3-bfd9-dfcb375a614b",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/d1dc8b4d-5f7f-46b3-bfd9-dfcb375a614b",
+      "location": "Atlanta, GA | Austin, TX | Dallas, TX | Las Vegas, NV | Nashville, TN | Seattle, WA | Boston, MA | Detroit, MI | San Diego, CA | Denver, CO",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote",
+        "Remote"
+      ],
+      "sourceSha256": "a2172b28147149cd59fae20c41322cd638407f5dba6d7448095ee3dee2757d8b",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        },
+        {
+          "locationId": "53ca8f8e-031c-8ec8-9c7d-acbaa6632a1b",
+          "label": "Las Vegas, NV",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Las Vegas, NV"
+        },
+        {
+          "locationId": "11649330-8f55-8226-8cfc-1da52e1b7b94",
+          "label": "Nashville, TN",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Nashville, TN"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "f7dd4fa2-85a6-884d-a520-eabf08690ad7",
+          "label": "Detroit, MI",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Detroit, MI"
+        },
+        {
+          "locationId": "9d7284de-f8ce-8053-b89a-cc1f9a987112",
+          "label": "San Diego, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Diego, CA"
+        },
+        {
+          "locationId": "e036ad58-c393-8dc2-b032-e3737f60395f",
+          "label": "Denver, CO",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Denver, CO"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/25d40647-c821-46ff-bf25-bacf21fa38b5",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/25d40647-c821-46ff-bf25-bacf21fa38b5",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "3f39609a5058254014d1f8815c192795623b3cfb1d1952d2cb3b84172194cbf2",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/7b1e5ff7-4531-4d4a-8379-52a21b6d386d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/7b1e5ff7-4531-4d4a-8379-52a21b6d386d",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "dab275ff6ea4fff3cfe9ee2b40eae00aef4a3df8035e4a1c669df3a4b2c737fe",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/df3a645d-5c08-4ea2-8823-7e40a5cbf9a6",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/df3a645d-5c08-4ea2-8823-7e40a5cbf9a6",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "a397eb238340a0721e75804d4d9dcd5ae55d4d3b0726549f9fb92e2e78b1aef0",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6f50988c-8e95-4a68-aeea-a94872651ff7",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6f50988c-8e95-4a68-aeea-a94872651ff7",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "241bb6d9cfbf38ebc8f6163c563bc0d0208526dc1b132f9bf6e6fc14b992d258",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/01b42b2d-538f-4d5f-b9f1-2de1197bc0cb",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/01b42b2d-538f-4d5f-b9f1-2de1197bc0cb",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "0e9161a6932c9a4c134ba3d79242ae2334fc5a594f68f0c950d68501707bea5d",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/28aba38e-de19-4ae5-9316-08575a11ae4d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/28aba38e-de19-4ae5-9316-08575a11ae4d",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "\\*This position will be onsite in San Francisco, CA"
+      ],
+      "sourceSha256": "8df2a5c5f927592e298c8b2909abcc915684f5231c3416089b62a17187681895",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/d7454c6d-7025-4e46-befc-e23bedd8f452",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/d7454c6d-7025-4e46-befc-e23bedd8f452",
+      "location": "Charlotte, NC",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "ccbe808741f66ce32e5834a29f45aeea12ec6c75ecb68e80290a69da595ffb5e",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "cae0e96b-176a-839d-87e0-62a43dba2dde",
+          "label": "Charlotte, NC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Charlotte, NC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/3a9b99ca-347f-4abf-8d34-9d66259c017f",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/3a9b99ca-347f-4abf-8d34-9d66259c017f",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "0f4901984b31891e8f9916163f47f2a1626a934ace23007c3f618a04a8475378",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f07c1416-f126-4925-8606-5dd7c5a90f6f",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f07c1416-f126-4925-8606-5dd7c5a90f6f",
+      "location": "San Francisco, CA | Boston, MA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "*In person 5 days/week in San Francisco, Boston, MA, New York.*"
+      ],
+      "sourceSha256": "b2c4f6de090c1fc96783491e1acf502c90c832746484de29224999d58485097e",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/c882af7e-59aa-4017-b791-9a8094c0ef6f",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/c882af7e-59aa-4017-b791-9a8094c0ef6f",
+      "location": "Remote - Singapore",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote - Singapore",
+        "Remote"
+      ],
+      "sourceSha256": "cceaede35a3d6965a6e38683acee2d7347bb9b8ee8c3a5739f9a31a4830d780f",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/74e5f9f4-e44a-4594-ba26-abdf71bf287d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/74e5f9f4-e44a-4594-ba26-abdf71bf287d",
+      "location": "San Francisco, CA | Boston, MA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "**In person 5 days/week in San Francisco, CA or Boston, MA** (SF preferred)"
+      ],
+      "sourceSha256": "b18333f76bb82cb15fe2ceadd447d12fdcbc113f47182f5aea4b2ff5d8596286",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6f31aa85-23ce-4c6a-a395-363b7a659de1",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6f31aa85-23ce-4c6a-a395-363b7a659de1",
+      "location": "Philadelphia, PA",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "ef33dbc4bef964b4cd5d2a11a7aace42bf69137e50cdee2e34c4355bb8fccca1",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "02c21c92-f2a7-8ab2-a130-f2190524d45c",
+          "label": "Philadelphia, PA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Philadelphia, PA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/dfbba971-a7e2-4feb-a0d9-8e38a1155134",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "d6f07b039060f3663e0238cc59fea13d9f5638418643e85990708bff7b80c07b",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/c16d44ab-faf0-4111-9ca7-8acb5dffcf46",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/c16d44ab-faf0-4111-9ca7-8acb5dffcf46",
+      "location": "London",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "6ca1495952092a77f69e255f3ba63cd120be4cdc7d76f01ea54fc98c41068cbd",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e725293d-c27b-4a79-959d-19f5618f2f8e",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e725293d-c27b-4a79-959d-19f5618f2f8e",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "**Location:** In person 5 days/week in San Francisco, CA or New York, NY"
+      ],
+      "sourceSha256": "49b79584254a7ae54dd48aad9f61938e821abc7b37fd733e617b4e55ef5e2955",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/72eefb77-605d-4616-adda-820eb5208ac8",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/72eefb77-605d-4616-adda-820eb5208ac8",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Us**"
+      ],
+      "sourceSha256": "6a7a63e9f82c3252f5948c40c2b9480808b0b37f664dcc0d861a156d1c095399",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/72eefb77-605d-4616-adda-820eb5208ac8\"",
+            "\"location\": \"San Francisco, CA\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/22bd243f-4088-49e0-bf02-fbad4442b0cb",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/22bd243f-4088-49e0-bf02-fbad4442b0cb",
+      "location": "New York, NY | Atlanta, GA | Nashville, TN | Boston, MA | Washington DC | Charlotte, NC",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "96a63d2416262e50da4aded79f5f188141ed244a7b835b7fbfec106ceb9cae33",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        },
+        {
+          "locationId": "11649330-8f55-8226-8cfc-1da52e1b7b94",
+          "label": "Nashville, TN",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Nashville, TN"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        },
+        {
+          "locationId": "cae0e96b-176a-839d-87e0-62a43dba2dde",
+          "label": "Charlotte, NC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Charlotte, NC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f4a7aa79-3e7f-4de1-8fda-16f161cc909d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f4a7aa79-3e7f-4de1-8fda-16f161cc909d",
+      "location": "Washington DC",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "951cdfc1a4fcab9188712497f86be4f34cd59b95fc09f993164675e27dba7401",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/5f5f8239-603c-47ca-a1ee-5a7ed34b502d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/5f5f8239-603c-47ca-a1ee-5a7ed34b502d",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "2400772c885cafdb69e2d0c4bc6fe12d54a5386276e0b7b0591a9a100e5b8458",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/65dbb419-ca80-4fda-b1b7-b81c08878992",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/65dbb419-ca80-4fda-b1b7-b81c08878992",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "fb8019293af55453b097b4daf50693fe92556ae9b303733f5ce5421083670c9e",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/70b5d446-7238-4324-9e70-a971b67a438c",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/70b5d446-7238-4324-9e70-a971b67a438c",
+      "location": "Tampa, FL",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "1fa0cdc05180c9b04ca156c3cfe4f67221c103f529cf0ae07a4708cdd7dc4ce3",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "af221f11-235a-8c0b-8e90-b2bcff858562",
+          "label": "Tampa, FL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Tampa, FL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/825b6d91-bc5e-4165-8a7c-2022a2248f7e",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/825b6d91-bc5e-4165-8a7c-2022a2248f7e",
+      "location": "New York, NY | Austin, TX | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# **About Us**"
+      ],
+      "sourceSha256": "eb4b02c3357efd8b25f081e6f40ed70ff46bcf319f411cd6f694f3efaf4b72dd",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/825b6d91-bc5e-4165-8a7c-2022a2248f7e\"",
+            "\"location\": \"New York, NY\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/98fcaa18-d323-49cd-b231-b2d4b905419d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/98fcaa18-d323-49cd-b231-b2d4b905419d",
+      "location": "Chicago, IL",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "bc00a74e16cb2031daef54791c3ace81c9d27e73ccaf8a7c61583e150bac7dcd",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/c8150807-d346-47d5-9242-b0994d77ca87",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/c8150807-d346-47d5-9242-b0994d77ca87",
+      "location": "Germany",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "cc4e71689c24f4ead08d12fbb2a0f207327d4b567bd8f09b36e9954b9ed7eedd",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "860ab4c3-f05e-8681-bddf-c693e6752993",
+          "label": "Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/34083fce-1e80-4595-9ce9-76387b735c70",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/34083fce-1e80-4595-9ce9-76387b735c70",
+      "location": "Boston, MA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "e8dd8094a373b9057e34021040387b257e3c5b156a4f108dd0507c4a20a4ade6",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/385313eb-bff4-4019-8106-42714dc9879a",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/385313eb-bff4-4019-8106-42714dc9879a",
+      "location": "Houston, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "cd50778ce73e7692daf4bce8439c7088ffcc926c127b227a0d396a49c2a0d169",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "43a7500c-ddd1-8ede-8fed-4d1f2a7daf6d",
+          "label": "Houston, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Houston, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/47a3bc2a-2bed-4d61-b1de-b3d7ec211a08",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/47a3bc2a-2bed-4d61-b1de-b3d7ec211a08",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Us**"
+      ],
+      "sourceSha256": "37f7f1b4213df0af6cb3f856c23530935d90903624134ba515b8de7797451b5e",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/47a3bc2a-2bed-4d61-b1de-b3d7ec211a08\"",
+            "\"location\": \"San Francisco, CA\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/933a41a3-43ca-44de-a0ae-f541149151b7",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/933a41a3-43ca-44de-a0ae-f541149151b7",
+      "location": "Dallas, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "135fa486771685d682e04b723fa5b387fe21eb5e691f1aaf4627c5219a06d5df",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6847e38f-ec98-4fb2-a2cb-a97cdd9be108",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6847e38f-ec98-4fb2-a2cb-a97cdd9be108",
+      "location": "Washington DC",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "d1696049266a73db53dc2e3c1f3efe78af536b3797ac67f055cd399cb8170473",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/7c4fd239-1166-4ed4-b7bf-686b7a390928",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/7c4fd239-1166-4ed4-b7bf-686b7a390928",
+      "location": "Arizona",
+      "workplaceType": null,
+      "evidence": [
+        "# Enterprise Account Executive (AZ)"
+      ],
+      "sourceSha256": "619a0c5dff608f50f19bf1fa9d48bd8e794e0240e88711ca150444691f8e9a8a",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/7c4fd239-1166-4ed4-b7bf-686b7a390928\"",
+            "\"location\": \"Arizona\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "d4dfe83f-56bd-8fe9-be6d-f8d465c4543e",
+          "label": "Arizona, United States",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Arizona"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/afb91b9b-46d5-4c9d-aa84-a4f1a3f74263",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/afb91b9b-46d5-4c9d-aa84-a4f1a3f74263",
+      "location": "San Francisco, CA | Boston, MA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "*(In person 5 days/week in San Francisco, CA, New York, Boston )*"
+      ],
+      "sourceSha256": "8c1550b2f16befa9ed2cfe450dcf38d036b45b0e300f1d491772de1b3fdf0bb5",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/b23ea9af-c6dc-40fa-86ce-75042b905173",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/b23ea9af-c6dc-40fa-86ce-75042b905173",
+      "location": "Boston, MA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "*This role is based onsite in Boston, MA.*"
+      ],
+      "sourceSha256": "a159be43d2fa6eb7a8c537e64293c0e8a3bfe8421ffeeb1a315a91ec172aba58",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/b9cf3229-c257-4536-bae6-e9b63134dc68",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/b9cf3229-c257-4536-bae6-e9b63134dc68",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "dbe661379be4fa9901b9e77c4769709819eb7886208cd7e041e539bd04aca0b6",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/2b151a4e-f3a4-41fc-95f7-4e802906f2cb",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/2b151a4e-f3a4-41fc-95f7-4e802906f2cb",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "6ef2070597b1f0275ece06dcb2a37c0579cc0e169cc30959a5c53b2b9c4c9a5e",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/3e31c750-67f2-4d3d-ac29-48a2b57cf4bd",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/3e31c750-67f2-4d3d-ac29-48a2b57cf4bd",
+      "location": "Atlanta, GA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "87f013caa099297f00f10e1cf95f26219f50491423a2880b36f380d3de7717d9",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/32c6fe13-76e0-49a2-849d-991014416987",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/32c6fe13-76e0-49a2-849d-991014416987",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Us**"
+      ],
+      "sourceSha256": "eb4b02c3357efd8b25f081e6f40ed70ff46bcf319f411cd6f694f3efaf4b72dd",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/32c6fe13-76e0-49a2-849d-991014416987\"",
+            "\"location\": \"San Francisco, CA\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/88cba16a-9131-4166-96a7-8f879edcda27",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/88cba16a-9131-4166-96a7-8f879edcda27",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "San Francisco, CA — in office 5 days per week.",
+        "- **Run cohort day.** Facilitate our twice-monthly in-person onboarding cohorts in SF, including everything from compliance to the employee experience.",
+        "- **Build the process, don't just run it.** Write and maintain the onboarding SOPs, close the parity gap between in-office and remote onboarding, and build distinct paths for rehires and international hires."
+      ],
+      "sourceSha256": "b8161d4998ef40294f3540b318703a2937f6f28dbe75ae52ee3cff4a401cc419",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/60d3bd4f-e80f-45fb-9801-725d8b681d54",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/60d3bd4f-e80f-45fb-9801-725d8b681d54",
+      "location": "Seattle, WA",
+      "workplaceType": null,
+      "evidence": [
+        "# Deployed Engineer (Seattle)"
+      ],
+      "sourceSha256": "36cb62d5cb5db772cda3095c4c15d0deb8dee27c2f11fec6ebdf8e2d80d18df1",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/60d3bd4f-e80f-45fb-9801-725d8b681d54\"",
+            "\"location\": \"Seattle, WA\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/461a1356-24fc-40f2-88d6-ce253f94eeb4",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/461a1356-24fc-40f2-88d6-ce253f94eeb4",
+      "location": "Boston, MA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "e03c813d72f179a023539362d3754b467b27d60cb06d1b93f02a821366b2bd6a",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/a03b3e54-495d-4960-aee7-0194a3cef57d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/a03b3e54-495d-4960-aee7-0194a3cef57d",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "*In person 5 days/week in San Francisco*"
+      ],
+      "sourceSha256": "7056bc8e48e1a5a031ea44ffc09274db74f9f02a3448d6a418d49a9b66bbd2df",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/a7a90682-b893-4296-9435-cc3de29f044f",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/a7a90682-b893-4296-9435-cc3de29f044f",
+      "location": "Atlanta, GA",
+      "workplaceType": null,
+      "evidence": [
+        "# Regional Director, Enterprise Sales"
+      ],
+      "sourceSha256": "c266e2aa50c42dde3ac03318aabab633ec7f2deb87b9487f351f1f1cc5f4869f",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/a7a90682-b893-4296-9435-cc3de29f044f\"",
+            "\"location\": \"Atlanta, GA\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/8b533cc4-6654-44b4-b3fc-004def2a9927",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/8b533cc4-6654-44b4-b3fc-004def2a9927",
+      "location": "Dallas, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "1c942081311e79dfa288c3a574be261a8f2a0242bf366677ca7228fbe24c2c09",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/733417d6-7b74-4260-95d9-3cabf85ce0b8",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/733417d6-7b74-4260-95d9-3cabf85ce0b8",
+      "location": "Raleigh, NC",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "7453f8ac59a2d9a65f8bb0efef201b7ac00c92d071b8764b47e92c3231cc920d",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "9d4ba35e-9631-8ad9-92b5-a00e7e51be77",
+          "label": "Raleigh, NC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Raleigh, NC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/c450c07a-196e-4ad4-9938-f368eb0ba65d",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/c450c07a-196e-4ad4-9938-f368eb0ba65d",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "68fbe273a55d3c4caf146ed66fa6eaf61528aefe9ef7de78dff2dd74482a93e0",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/97ac0410-c6db-4c2a-9492-b68f62fcbbe3",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/97ac0410-c6db-4c2a-9492-b68f62fcbbe3",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "b3333b18d5c62c2a8fd3d762f82eaeeab7ee2dcbcfd2f6704e2594043ae1643c",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/faeb56fd-e7d6-47d6-babe-e35315969206",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/faeb56fd-e7d6-47d6-babe-e35315969206",
+      "location": "London",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote",
+        "- Remote with up to 25% travel"
+      ],
+      "sourceSha256": "ca4d3e5171a3f8a1b8952e4296abc190f37d915a7f815438c108f4bb6ef0172d",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/9930dd01-d12e-42e1-b751-5240c3814f85",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/9930dd01-d12e-42e1-b751-5240c3814f85",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "b7519c73c274ede51a97259198db8c59b3b9100df11ea5cd7c77649c7705fe57",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/d81c35c1-7243-45e4-bfe2-7fc8746c76b9",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/d81c35c1-7243-45e4-bfe2-7fc8746c76b9",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "f54ae5d2c2d917c8c62128c36255020ce2c8d66996ecaea04f9c617fb8205282",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/0a5dd30c-6da1-4095-bd96-b16f27eeb333",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/0a5dd30c-6da1-4095-bd96-b16f27eeb333",
+      "location": "Los Angeles, CA | Salt Lake City, UT | Seattle, WA | Denver, CO",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Deployed Architect, Professional Services (Remote)",
+        "Remote",
+        "**Location:** Remote"
+      ],
+      "sourceSha256": "4d390528e704935a4523eb1e12367e8bb05ce3ef3b911c04334813abc4098c78",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        },
+        {
+          "locationId": "401f4a9d-624a-87e7-b349-2778038fbfe0",
+          "label": "Salt Lake City, UT",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Salt Lake City, UT"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "e036ad58-c393-8dc2-b032-e3737f60395f",
+          "label": "Denver, CO",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Denver, CO"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/890884ed-1143-43a5-8a46-1aef8f66e119",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/890884ed-1143-43a5-8a46-1aef8f66e119",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "**Location:** London or Amsterdam (one of our EMEA office hubs)."
+      ],
+      "sourceSha256": "e026159c37c49b6f9f74fdc92334887395614f2e7f0083603e785560676757d8",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/3c38ac0d-4cb5-4c04-86c0-37b20166c8ec",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/3c38ac0d-4cb5-4c04-86c0-37b20166c8ec",
+      "location": "Chicago, IL",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "f41df21f59e82ccbc8caabe4391844d358a57625c3429756e4b1e4f31c0a44a5",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/068b2e23-af01-42c7-9bce-d86976ea4d6e",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/068b2e23-af01-42c7-9bce-d86976ea4d6e",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "a3a9ade7cf6de7db40700d28ad54d885af8f74da145dfab1032334473872a4e1",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/426359a5-3a48-4b81-ba25-b2f32678b153",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/426359a5-3a48-4b81-ba25-b2f32678b153",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "f2cfeb29acd5b764a2072bd9e72b7ab98880b18bdea6454d5dc893bf4c090b59",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e86a5b13-75e7-4b4e-bc18-3c81b58d1543",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e86a5b13-75e7-4b4e-bc18-3c81b58d1543",
+      "location": "Cincinnati, OH | Detroit, MI",
+      "workplaceType": null,
+      "evidence": [
+        "# Enterprise Account Executive (Ohio)"
+      ],
+      "sourceSha256": "a82799db15b16701e904d25523caf524fc4f1a40b3f7e42f90dd6cb7ed3fbf92",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/e86a5b13-75e7-4b4e-bc18-3c81b58d1543\"",
+            "\"location\": \"Cincinnati, OH\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "f7dd4fa2-85a6-884d-a520-eabf08690ad7",
+          "label": "Detroit, MI",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Detroit, MI"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e12d7176-8b9f-438a-8f3b-0cbbffab9c5c",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e12d7176-8b9f-438a-8f3b-0cbbffab9c5c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "b03e0b993d8af654836d287c405a6fe6f9e19d85bf770c18e895d31a847fb1a2",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/eadd2a71-47fc-483b-948f-4b2384f7f93f",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/eadd2a71-47fc-483b-948f-4b2384f7f93f",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "f53d4f0762b1ae308eb34f80998c6a10238fa4e0a32adb20778b0603482f75f8",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f0396971-39fa-4d40-9af8-60e529bb6c86",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f0396971-39fa-4d40-9af8-60e529bb6c86",
+      "location": "Boston, MA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "06ce5a3b5905e5fffcb0d842b4860e35fa52d907d629900b39c1f5a33a368a81",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e8020aeb-207f-4a4d-9df4-0cca5183e657",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e8020aeb-207f-4a4d-9df4-0cca5183e657",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "ed2e8c6bbe2f0af33aafeb0a4216c478a21c747d247babc600f1c6010e8248c0",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/da7cbabd-ceed-4d7d-ae25-f226cac0c1c1",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/da7cbabd-ceed-4d7d-ae25-f226cac0c1c1",
+      "location": "Austin, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "9605c2513363a0f1b3e818dbef353f47c806b87f5d4e3e0836ab3a2ae525efbc",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/ddf92275-1cc3-49c0-9f25-e8ded43b07f6",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/ddf92275-1cc3-49c0-9f25-e8ded43b07f6",
+      "location": "San Francisco, CA | Boston, MA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "4dee9c247e7463af392550c106a8ac60d4941e0e58898e3bd6d777ce642cec60",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/589ecc6e-7e82-42f0-8789-10dcc7cd30be",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/589ecc6e-7e82-42f0-8789-10dcc7cd30be",
+      "location": "San Francisco, CA | Chicago, IL | Austin, TX | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "eb75417fae93ff3f8a25fce992a15f729b2bf84710f1518f56c7be0b76ebf9fd",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/7441ccb7-bc77-4966-8d2f-e9ff487bc651",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/7441ccb7-bc77-4966-8d2f-e9ff487bc651",
+      "location": "Remote - US",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote - US",
+        "Remote"
+      ],
+      "sourceSha256": "ad44e2fa6e74e1fd060bca8979ea7f978696528f614f37cc9d4cdffa662b67e9",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/1683a053-1bca-4a54-9889-bc32259df4e1",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/1683a053-1bca-4a54-9889-bc32259df4e1",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "691753cfeb3f3000da95271d16a0f3743fb0823b568df85400e019ee02b29f9b",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/937e131f-1055-4f1f-bd8a-f036e4ba0666",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/937e131f-1055-4f1f-bd8a-f036e4ba0666",
+      "location": "Austin, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "a76b814f67c05e312e9616f1ee69d91800a61bf2454384d2e3dedd96192414d6",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6dc92e79-0018-43a8-9319-64bf2302339f",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6dc92e79-0018-43a8-9319-64bf2302339f",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "c66dadcfb9be0007aca47126706e046a4e6f24c108218da50b67d537677a4dc4",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6b6ee951-6f94-4a2f-9e53-8410e9928614",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6b6ee951-6f94-4a2f-9e53-8410e9928614",
+      "location": "Denver, CO",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "a86a71aa669133a104a5d4e5a50134a886d62cd242d6999eb1ae6139491e7c50",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "e036ad58-c393-8dc2-b032-e3737f60395f",
+          "label": "Denver, CO",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Denver, CO"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/9ef63e88-b1ff-4e88-9bf8-20c01439b80a",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/9ef63e88-b1ff-4e88-9bf8-20c01439b80a",
+      "location": "Sweden",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "2f9d5231aba5e65238293c7224b086b9aa1a1c8f1e9ca104615a814f0538110f",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "9e47efa8-4e2a-86ab-b2a7-f9adca7ddcd5",
+          "label": "Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/8aa63e71-b431-49d7-ab4a-bf4b3630d8e6",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/8aa63e71-b431-49d7-ab4a-bf4b3630d8e6",
+      "location": "San Francisco, CA | Chicago, IL | Austin, TX | Atlanta, GA | Tampa, FL | Seattle, WA | Boston, MA | New York, NY | San Diego, CA | Washington DC | Los Angeles, CA",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote",
+        "**Location**: Remote"
+      ],
+      "sourceSha256": "b5b2da8ee8b9b9df539c9f70cd076035ebc0a904787b2be0e61f469ec4c8f3b8",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        },
+        {
+          "locationId": "af221f11-235a-8c0b-8e90-b2bcff858562",
+          "label": "Tampa, FL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Tampa, FL"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "9d7284de-f8ce-8053-b89a-cc1f9a987112",
+          "label": "San Diego, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Diego, CA"
+        },
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        },
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/329c0b62-0ca0-4311-a827-50a5a3333861",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/329c0b62-0ca0-4311-a827-50a5a3333861",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid"
+      ],
+      "sourceSha256": "069f546fc8774739de00eba26ca28ca39bbafa3a5d814ca887ebcd96d6aa92fa",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/e67d79a1-cbeb-4dd2-8c81-00eb0969f911",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/e67d79a1-cbeb-4dd2-8c81-00eb0969f911",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "We're looking for a Lead Applied AI Engineer based in our NYC office. This is a hands on role leading technical projects end to end and mentoring other engineers. You will help drive the development of complex agentic projects.",
+        "\\*This role is based onsite in New York, NY"
+      ],
+      "sourceSha256": "573d90a660189d599e2ed2048938b9ede2632615344e7a1183b5c76d076153f3",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/49e5ee0c-7293-4ce6-80fc-70199e4172f8",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/49e5ee0c-7293-4ce6-80fc-70199e4172f8",
+      "location": "Los Angeles, CA",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "a8f2d713d78d3ba9c522f18cbf9f6a6107fedad99d849148af1d4299b4b5976a",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/0ee73994-b8a3-4a75-9675-da536abd3e10",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/0ee73994-b8a3-4a75-9675-da536abd3e10",
+      "location": "Remote - Singapore",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote - Singapore",
+        "Remote",
+        "Remote in Singapore"
+      ],
+      "sourceSha256": "a2e9b8de8673bc831bd1eaa0948b0a08daac0f7707d1bda8172d3cd64ea90cab",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/45773971-c904-41c4-b7af-1f3a661c49cc",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/45773971-c904-41c4-b7af-1f3a661c49cc",
+      "location": "San Francisco, CA | Seattle, WA | San Diego, CA | Los Angeles, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "a19f9b5f9cba00709ea96891de43f27a6149c71123777be0bb529b24c104fd4e",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "9d7284de-f8ce-8053-b89a-cc1f9a987112",
+          "label": "San Diego, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Diego, CA"
+        },
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/d1ffe5ac-2f03-408b-a051-dad74c72771c",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/d1ffe5ac-2f03-408b-a051-dad74c72771c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Us**"
+      ],
+      "sourceSha256": "f906a5fb7963cc23b834a651e250db43fa9b7773b6960057aa46e17564d21165",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/langchain?includeCompensation=true",
+          "sourceSha256": "68b6226c6844429af47aaa5f1b325c9ec999061fdcc319e8f36286824c82974e",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/langchain/d1ffe5ac-2f03-408b-a051-dad74c72771c\"",
+            "\"location\": \"San Francisco, CA\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/c425239d-ddca-4333-84fd-d719b8d3cb8b",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/c425239d-ddca-4333-84fd-d719b8d3cb8b",
+      "location": "Washington DC",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "d6421281c199aa2ceb8228bd06baabb3fd4b66731e58e866ddd4cec00ec26638",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/14727440-65bd-4cce-bed1-27d0c863eab3",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/14727440-65bd-4cce-bed1-27d0c863eab3",
+      "location": "Boston, MA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "*(Onsite in Boston)*"
+      ],
+      "sourceSha256": "fa27d4f124e04590074336a4034479316c8071a4060dcbb9a7627e51e5ae8560",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f7de4819-e7aa-4dfb-9acd-8b81ad8caf2c",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f7de4819-e7aa-4dfb-9acd-8b81ad8caf2c",
+      "location": "San Francisco, CA | Boston, MA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "On-site",
+        "**\\***This role can be based in our San Francisco, New York, or Boston office. Employees within commuting distance work from the office five days per week. Candidates who live outside commuting distance (e.g. &gt;1hr each way), may be eligible for hybrid arrangements depending on location and role requirements."
+      ],
+      "sourceSha256": "eb92769fa399e8ee2d39f5fa5a2669b2c539d69d724db44ca3248e3798df5222",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/38947013-3d0c-4257-aa58-ab8fe247ea3e",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/38947013-3d0c-4257-aa58-ab8fe247ea3e",
+      "location": "Chicago, IL",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Remote",
+        "This will be a hybrid in office role in Chicago, IL."
+      ],
+      "sourceSha256": "031dcac10ceffac57a835c893ce8fe8e03b75c069310d07deeb6de90d810c874",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/bdc96ffd-2a95-4d63-bf8f-193574961e00",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/bdc96ffd-2a95-4d63-bf8f-193574961e00",
+      "location": "New York, NY | San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "e13076c7a14c4f14b65ed001407a607a40c8bf3100a30696f00c25a1244d002b",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/fd3767ba-6247-47bd-85ae-7e76be3871e6",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/fd3767ba-6247-47bd-85ae-7e76be3871e6",
+      "location": "Dallas, TX",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "86b57443e7d39bd9f239e7e7702a81897585df538d43c9e4506358f975dc01e3",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site"
+      ],
+      "sourceSha256": "23de5a3d77ffed61c15da7d7edd771b1d858f5cfd2ac710f38bc92dd63587061",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/f166d46a-de9a-4c60-a275-496359dd650e",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/f166d46a-de9a-4c60-a275-496359dd650e",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "On-site",
+        "San Francisco, CA; New York, NY; open to remote",
+        "- **Global employment experience across multiple regions** — EoR coordination (Rippling Global, Multiplier, Remote, Deel, or similar), international contractor structuring, and cross-border compliance across US, UK, EU, APAC, or LATAM"
+      ],
+      "sourceSha256": "4cb8070cbff372f7c074131862b0a9791079c2441f297f880b62213cc43bd9c7",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/6eecbcda-d94f-4700-b8c7-ce54cb212290",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/6eecbcda-d94f-4700-b8c7-ce54cb212290",
+      "location": "Washington DC",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote"
+      ],
+      "sourceSha256": "cfa8781914b85367d9c174869cbcace5aa2126ff31566c5f50c892ba5866e37f",
+      "note": "Ketch full posting reviewed; location reconciled with Ashby API location/secondaryLocations. Arrangement uses API workplaceType, corroborated by body where explicit.",
+      "locations": [
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/langchain/df918915-25ae-4381-a142-376c3dd99036",
+      "sourceUrl": "https://jobs.ashbyhq.com/langchain/df918915-25ae-4381-a142-376c3dd99036",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (102 IDs) and current ATS API (102 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:19:39.181465+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/langchain"
+    }
+  ]
+}

@@ -1,0 +1,849 @@
+{
+  "companySlug": "modal",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a",
+      "location": "New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# ML Research Intern",
+        "On-site"
+      ],
+      "sourceSha256": "fe90759653458589376414b20a4442c083e4a8eac8b6a8e330235aea3bf9abef",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/cbbbee50-3d3b-4873-8ae8-ff4b885b8e54",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/cbbbee50-3d3b-4873-8ae8-ff4b885b8e54",
+      "location": "New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer - Systems",
+        "On-site"
+      ],
+      "sourceSha256": "1fac442462518ecd565a20ff72718ef970c439b9cd025e58d8fc98c3321c675b",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/5778babc-3f59-4b5f-9c60-10bc2b9a32e3",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/5778babc-3f59-4b5f-9c60-10bc2b9a32e3",
+      "location": "New York | San Francisco | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Account Executive - Enterprise",
+        "On-site"
+      ],
+      "sourceSha256": "00ed701801039061d594bb02f9af743b9d98e36a447c4ca948af2b1535184985",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/af17da5e-23ca-4802-854d-5f0546e1ed32",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/af17da5e-23ca-4802-854d-5f0546e1ed32",
+      "location": "New York | San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff - ML Performance"
+      ],
+      "sourceSha256": "f0ee66ba69387a4225910aabb48679447507ddd957e1892a761b249928cd9970",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/3b3c6c42-326e-40c5-b78d-9f556739513b",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/3b3c6c42-326e-40c5-b78d-9f556739513b",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff - Systems",
+        "- Ability to work in-person in our Stockholm office."
+      ],
+      "sourceSha256": "9f95a42cfd9daa0071acf5af0c99da5d9197c583fa0f5d1f1b91f6e73540a65e",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/23311dfd-2a80-40dc-a41c-1ff7202e15a2",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/23311dfd-2a80-40dc-a41c-1ff7202e15a2",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Design Staff - Brand"
+      ],
+      "sourceSha256": "fd27e5fed21b469f9e3f4c8e11321fa59b1810e2dd6ab55e2560c5a21854ea11",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/b16126e4-cf92-4db9-955e-0da6eec0574d",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/b16126e4-cf92-4db9-955e-0da6eec0574d",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "# Systems Engineering Manager"
+      ],
+      "sourceSha256": "595171d86ffc983be6e710f9109daafc82f42681609e74864d6789cf8545aedc",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/a4b8b2b6-5d0c-4ba6-9256-b84be84fb79e",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/a4b8b2b6-5d0c-4ba6-9256-b84be84fb79e",
+      "location": "New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff - Product (Backend)",
+        "On-site"
+      ],
+      "sourceSha256": "0f0827a2e26d7f9182efdc53616deb8d50c3744bc2e1c61f401952567d492e1a",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/d33a46c8-44d8-4bf4-bdca-dd11c0a48588",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/d33a46c8-44d8-4bf4-bdca-dd11c0a48588",
+      "location": "San Francisco | New York",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Account Manager"
+      ],
+      "sourceSha256": "02b6514fe6a2fc404aa5a1debd32d35adea57525437a3938d1a56cc491a2c148",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/73c97bbc-8e27-4c5d-b38b-90b3afdb0d93",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/73c97bbc-8e27-4c5d-b38b-90b3afdb0d93",
+      "location": "New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff - Research, Inference",
+        "- Ability to work in-person, in our NYC or San Francisco office."
+      ],
+      "sourceSha256": "0b700042dac36b43795d905dbb418cbe1ff5ee3bf880b183287f66078b39407c",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/2f5d046a-bd5f-44bb-a606-98bf13577c69",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/2f5d046a-bd5f-44bb-a606-98bf13577c69",
+      "location": "San Francisco | Stockholm | New York | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Solutions Architect",
+        "On-site"
+      ],
+      "sourceSha256": "a386e23f562f611649a15044804e56339f41bc92e0212802c381811b3f9c1551",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/8de60620-09bf-4905-910f-a290814a29ee",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/8de60620-09bf-4905-910f-a290814a29ee",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": [
+        "# Infrastructure Security Engineer"
+      ],
+      "sourceSha256": "2048c235f3b1bf8ecd20c7828af0d01bd0d43c08522891f2be59c2c44a8f1b78",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/7db771eb-e379-47fe-974f-765a8780dc10",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/7db771eb-e379-47fe-974f-765a8780dc10",
+      "location": "New York | San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff - Research, Post-Training"
+      ],
+      "sourceSha256": "197a11e95f159d9bb3890f9dfe3628e5963b53d63a5c155be41d884c4f9d0dd4",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/9181633f-d7f0-4343-84b4-0bbf3b4e93ed",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/9181633f-d7f0-4343-84b4-0bbf3b4e93ed",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# People Operations Generalist",
+        "Reporting to our People Lead, Europe, you'll be the go-to person for UK employees and managers, with ownership across the employee lifecycle - from onboarding and payroll coordination to employee changes and offboarding. You'll bring strong UK People Operations expertise, help build scalable processes, and partner with the broader People team on global programs. You'll also help run the day-to-day London office and work closely with Recruiting on the final stages of the UK candidate experience, including onsite interview coordination and candidate support."
+      ],
+      "sourceSha256": "6f10c25e15813d64c88ce18a2371cad98eed6f95893a930156488d452f6dbdc3",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/c85a3e3d-f1a5-479d-91e3-9e0b34279a82",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/c85a3e3d-f1a5-479d-91e3-9e0b34279a82",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer - Systems",
+        "- Ability to work in-person in our Stockholm office"
+      ],
+      "sourceSha256": "64f07b67159e7692596174056cd000e8373fa7818e7067326e0c474d5e33af74",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/17eba4cc-3a50-4f6e-b55b-bf20180091f2",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/17eba4cc-3a50-4f6e-b55b-bf20180091f2",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# People Operations Generalist",
+        "On-site"
+      ],
+      "sourceSha256": "c90f5b134587db847d929b1263a5c48aec7ce3c999f02bd2d91f1e91c78e544b",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/0d9c249b-f305-4b0e-b325-3242ac7274e7",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/0d9c249b-f305-4b0e-b325-3242ac7274e7",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer - ML",
+        "- Willing to work in-person in Stockholm"
+      ],
+      "sourceSha256": "dce8026fc9b1152052325f9bc493e872729b5a1bd802af592d96249c62ec8c17",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/a5d0e0e2-8d15-491d-9169-64be23f62034",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/a5d0e0e2-8d15-491d-9169-64be23f62034",
+      "location": "San Francisco | New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Revenue Operations",
+        "We're seeking a Revenue Operations Manager with a strong track record, a builder's mindset, and a bias for action to join our in-person team in New York or SF."
+      ],
+      "sourceSha256": "103cc08ff7bde405fcd0ca3711279115efbf6259caba9902eb8f9a44e11193fb",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/aa4c345a-66e1-45b7-8c75-b7b4a0662eaa",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/aa4c345a-66e1-45b7-8c75-b7b4a0662eaa",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": [
+        "# Systems Engineering Manager"
+      ],
+      "sourceSha256": "ddb08c41b4b848d56dd6bf34134e661e629d304a4554bb16b32f4e6289515e3d",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/0d4c15af-afa7-4430-b3db-dd8258950aec",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/0d4c15af-afa7-4430-b3db-dd8258950aec",
+      "location": "New York | San Francisco | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Regional Director"
+      ],
+      "sourceSha256": "df6f5f57b8f88670cd24bb768b00e53c970f639ede8c6f1b8011c19e7985b4cb",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/e1915603-d9de-4760-b445-c266a1080499",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/e1915603-d9de-4760-b445-c266a1080499",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": [
+        "# Detection and Response Engineer"
+      ],
+      "sourceSha256": "406810bf4205428977974bae80bc8b75043480bb45eea3388199db228ddcd0b8",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/225b43d8-ef14-4082-b16e-005c74b42957",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/225b43d8-ef14-4082-b16e-005c74b42957",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Business Operations Manager",
+        "- Is excited about working in-person in NYC."
+      ],
+      "sourceSha256": "695077c61b6e63436a8d96832ab37282cf034b1be769dc78faa2b944b0dd210a",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/265d6127-dd34-433b-819a-1f935572c7d8",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/265d6127-dd34-433b-819a-1f935572c7d8",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff - SDK",
+        "- Ability to work in-person in our Stockholm office."
+      ],
+      "sourceSha256": "5332eb75c3e4f4cb8c8166ad480482339c253d6a873a5e976414f5e2dbefc459",
+      "note": "ATS primary location is Stockholm with no workplace flags; no explicit arrangement on the posting. Corrected from onsite to unspecified for consistency with identical evidence.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/44b57790-528e-4f97-8613-03564316be8a",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/44b57790-528e-4f97-8613-03564316be8a",
+      "location": "New York | San Francisco | London or Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "# Customer Engineer"
+      ],
+      "sourceSha256": "ffe87bad0b7efb7112f6894af58fa701e35a3098ea73e5e2abed2e18cb52acff",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/9fe70d84-1d3a-42ab-87c8-df0266628c16",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/9fe70d84-1d3a-42ab-87c8-df0266628c16",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff - Product (Growth)",
+        "- Ability to work in-person in our NYC office."
+      ],
+      "sourceSha256": "a496e6c287084561637d6468dc69b833377664534f0a829424c0fe7f467889e0",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/7c3aaece-ef84-4e28-95c0-bd1be33d567b",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/7c3aaece-ef84-4e28-95c0-bd1be33d567b",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Talent Programs Manager",
+        "On-site"
+      ],
+      "sourceSha256": "5b08700c18d8c34627e13e3c08e3b1c7d9cb03be6b3472ce000bb714af798696",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/9b33ebe7-e829-4f03-97ba-5c94dbd7daf6",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/9b33ebe7-e829-4f03-97ba-5c94dbd7daf6",
+      "location": "New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff - Systems",
+        "On-site"
+      ],
+      "sourceSha256": "bff042814cdde37094cd1d34938539b0e841c8568b7ae313bbeb542c6b5fd591",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/ead55e1a-873d-4837-8450-95fe8f4c8931",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/ead55e1a-873d-4837-8450-95fe8f4c8931",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Inference Engineering and Product Lead",
+        "On-site"
+      ],
+      "sourceSha256": "33f56f1f322f4c22fdd0c20869dfe683e46149349e2da10ea20c574d22b73437",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/9fadb51f-ce11-41b1-84d5-470e66cc8ee9",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/9fadb51f-ce11-41b1-84d5-470e66cc8ee9",
+      "location": "New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer - ML",
+        "- Willing to work in-person in New York City, San Francisco, or Stockholm"
+      ],
+      "sourceSha256": "a9fc9ef31ce7cc59165789437e79faf9da7e6bdc26747f5f8640a5a6c6adca37",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/84467a68-6876-4730-9d80-6c6f3d0c2d71",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/84467a68-6876-4730-9d80-6c6f3d0c2d71",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff - Platform Engineering",
+        "- Ability to work in-person in our NYC or Stockholm offices."
+      ],
+      "sourceSha256": "01a49f1675fd34ce97022e27616c105a1f2ea54ef9710231df83acfebc59d8e2",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/546c9eb1-aaf7-47ba-8e9d-0bcd443b3e94",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/546c9eb1-aaf7-47ba-8e9d-0bcd443b3e94",
+      "location": "San Francisco | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Developer Relations Engineer",
+        "On-site"
+      ],
+      "sourceSha256": "06ff668ca860b807913757788a87e3242932a751576335af2c20a669e7e87859",
+      "note": "Review based on full Ketch markdown and current Ashby listing fields; location is ATS primary and secondary locations.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/modal/5113f35e-988d-41bc-a899-3261a9454e40",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/5113f35e-988d-41bc-a899-3261a9454e40",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (37 IDs) and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:13:05.822915+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/modal"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/1dffcf2e-32e1-4caa-a1ca-21ad416d4598",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/1dffcf2e-32e1-4caa-a1ca-21ad416d4598",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (37 IDs) and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:13:05.822915+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/modal"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/modal/f1465314-5f6c-4c28-89f1-55a4ae6e11c0",
+      "sourceUrl": "https://jobs.ashbyhq.com/modal/f1465314-5f6c-4c28-89f1-55a4ae6e11c0",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (37 IDs) and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:13:05.822915+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/modal"
+    }
+  ]
+}

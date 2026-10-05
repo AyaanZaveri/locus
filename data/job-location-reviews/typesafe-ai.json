@@ -1,0 +1,143 @@
+{
+  "companySlug": "typesafe-ai",
+  "verifiedAt": "2026-10-05T05:51:46.457160+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/4da613b6-6d56-4e8d-8cc4-fad8ca57e4ce",
+      "sourceUrl": "https://jobs.ashbyhq.com/typesafe-ai/4da613b6-6d56-4e8d-8cc4-fad8ca57e4ce",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff, Infrastructure (Kubernetes Specialist)",
+        "## Location\n\nSan Francisco Office",
+        "## Location Type\n\nOn-site",
+        "We’re a small, flat, close-knit team working to make intelligence dependable enough to become part of everyday software. We work fully in person from our San Francisco office near Embarcadero station. We love what we do and care deeply about the work."
+      ],
+      "sourceSha256": "7f71978d14666c04c88894c981aeab434ba9186d5ca961b7f0b351bf9f9aa86a",
+      "note": "Full body read; fully in-person SF office corroborated by body + ATS OnSite.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/df3dbf1b-9a47-4d8a-88a8-d28c8b8a2ef0",
+      "sourceUrl": "https://jobs.ashbyhq.com/typesafe-ai/df3dbf1b-9a47-4d8a-88a8-d28c8b8a2ef0",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff, Model Capabilities",
+        "## Location\n\nSan Francisco Office",
+        "## Location Type\n\nOn-site",
+        "We’re a small, flat, close-knit team working to make intelligence dependable enough to become part of everyday software. We work fully in person from our San Francisco office near Embarcadero station. We love what we do and care deeply about the work."
+      ],
+      "sourceSha256": "028db34c034e3391a321e193fd15dca2f0f67becde60d055bbb8bfd59f23698e",
+      "note": "Full body read; fully in-person SF office corroborated by body + ATS OnSite.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/941ab475-393c-4943-a115-903b9d4dec68",
+      "sourceUrl": "https://jobs.ashbyhq.com/typesafe-ai/941ab475-393c-4943-a115-903b9d4dec68",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# About TypeSafe",
+        "We’re a small, flat, close-knit team working to make intelligence dependable enough to become part of everyday software. We work fully in person from our San Francisco office near Embarcadero station. We love what we do and care deeply about the work."
+      ],
+      "sourceSha256": "f79bab62719e4a747c61e723d9ec670ca9f341ca94e411dc9e81b61ede68d781",
+      "note": "Full body read; fully in-person SF office corroborated by body + ATS OnSite.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/d15fb33c-0679-4822-be50-2afb75320e4b",
+      "sourceUrl": "https://jobs.ashbyhq.com/typesafe-ai/d15fb33c-0679-4822-be50-2afb75320e4b",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Technical Staff, Backend/Platform",
+        "## Location\n\nSan Francisco Office",
+        "## Location Type\n\nOn-site",
+        "We’re a small, flat, close-knit team working to make intelligence dependable enough to become part of everyday software. We work fully in person from our San Francisco office near Embarcadero station. We love what we do and care deeply about the work."
+      ],
+      "sourceSha256": "3d5d661f1b8f7e00ad5d9b3828acf62798b36a23847a81ccdcbbf74cbae37e43",
+      "note": "Full body read; fully in-person SF office corroborated by body + ATS OnSite.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/4537eb37-94a3-43d6-9760-6f41c125aba4",
+      "sourceUrl": "https://jobs.ashbyhq.com/typesafe-ai/4537eb37-94a3-43d6-9760-6f41c125aba4",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location\n\nSan Francisco Office",
+        "## Location Type\n\nOn-site",
+        "- Engage with the developer community via our Discord, in-person events, conferences, and whatever else the future holds"
+      ],
+      "sourceSha256": "e7c05c8b7ae88a42cb3768812d629b9a40b5b546ee4d773dc228be574fb904c9",
+      "note": "Full body read; fully in-person SF office corroborated by body + ATS OnSite.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/typesafe-ai/cbc0b60a-1613-4b0d-b38a-04fc5558152c",
+      "sourceUrl": "https://jobs.ashbyhq.com/typesafe-ai/cbc0b60a-1613-4b0d-b38a-04fc5558152c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Member of Staff",
+        "## Location\n\nSan Francisco Office",
+        "## Location Type\n\nOn-site",
+        "We’re a small, flat, close-knit team dedicated to real-world impact preparing the world for Transformative AI. Our team works fully in-person in our San Francisco office near Embarcadero station. We love what we do and care about our work a lot."
+      ],
+      "sourceSha256": "516943fad8c8bfc29c37742849c1cd9ea641cca27001db966fadf5a5a7049a0c",
+      "note": "Full body read; fully in-person SF office corroborated by body + ATS OnSite.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    }
+  ]
+}

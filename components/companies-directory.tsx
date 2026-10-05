@@ -150,7 +150,7 @@ export function CompaniesDirectory({
                 alt=""
                 aria-hidden="true"
                 className="size-3.5 shrink-0 rounded-full"
-                src={`https://hatscripts.github.io/circle-flags/flags/${selectedCountryCode}.svg`}
+                 src={`https://hatscripts.github.io/circle-flags/flags/${selectedCountryCode.toLowerCase()}.svg`}
               />
             ) : (
               <Globe2
@@ -282,7 +282,7 @@ export function CompaniesDirectory({
                         aria-hidden="true"
                         draggable={false}
                         className="size-3 rounded-full"
-                        src={`https://hatscripts.github.io/circle-flags/flags/${company.location.countryCode}.svg`}
+                         src={`https://hatscripts.github.io/circle-flags/flags/${company.location.countryCode.toLowerCase()}.svg`}
                       />
                       {company.location.label}
                     </Badge>

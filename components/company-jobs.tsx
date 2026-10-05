@@ -68,7 +68,7 @@ function LocationIcon({
       alt=""
       aria-hidden="true"
       className="size-3.5 shrink-0 rounded-full"
-      src={`https://hatscripts.github.io/circle-flags/flags/${code}.svg`}
+       src={`https://hatscripts.github.io/circle-flags/flags/${code.toLowerCase()}.svg`}
     />
   ) : (
     <Globe2

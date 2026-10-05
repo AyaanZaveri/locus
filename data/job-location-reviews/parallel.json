@@ -1,0 +1,937 @@
+{
+  "companySlug": "parallel",
+  "verifiedAt": "2026-10-05T04:58:50.381626+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/428ebd80-ad4d-41db-bfa0-82bb3284db75",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/428ebd80-ad4d-41db-bfa0-82bb3284db75",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "1f78b35d4cd4ca7cf515d9d16125328a2e83cf1c4c96cc7b421980ca0a75b450",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/428ebd80-ad4d-41db-bfa0-82bb3284db75\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/2738b2a4-978a-49cb-bd6f-68098f3794d6",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/2738b2a4-978a-49cb-bd6f-68098f3794d6",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "0f19d9319c0d7ce3c3b56954c9a81943c8953b330b5f06d910b3950866ed1eff",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/2738b2a4-978a-49cb-bd6f-68098f3794d6\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/4fac04bc-a15a-4b4b-9fe0-a5cbec27c687",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/4fac04bc-a15a-4b4b-9fe0-a5cbec27c687",
+      "location": "San Francisco, CA | Palo Alto, CA | New York, New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto; New York, New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "c6281401a205cfab8a0fb36cea30c21239426f404d625660c30a7b6651249192",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/4fac04bc-a15a-4b4b-9fe0-a5cbec27c687\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/5fac39a3-a44d-470b-94ed-15b2239d410f",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/5fac39a3-a44d-470b-94ed-15b2239d410f",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "44edba8926480505eb5b0c6cbb548f74b7aca895c2187fbb2283a15b7aa2ad51",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/5fac39a3-a44d-470b-94ed-15b2239d410f\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/b7bd3dda-7504-48d7-a757-8d89b52ff985",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/b7bd3dda-7504-48d7-a757-8d89b52ff985",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "1b52e5a968a25821b7fa15ee365546fee38ebd73dfd23764121f0b932f718f99",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/b7bd3dda-7504-48d7-a757-8d89b52ff985\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/056e41f8-7d5f-41c1-99fd-bf002dc072fd",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/056e41f8-7d5f-41c1-99fd-bf002dc072fd",
+      "location": "Palo Alto",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nPalo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "fb7bd30f1a0e5e2e80abaa01dbe266ea30d50a93597426bc187d9c1a9d1d2c3c",
+      "atsLocation": "Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/056e41f8-7d5f-41c1-99fd-bf002dc072fd\"",
+            "\"location\":\"Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/fe935559-4209-4736-baa8-6d2478d424ba",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/fe935559-4209-4736-baa8-6d2478d424ba",
+      "location": "San Francisco, CA | Palo Alto, CA | New York, New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto; New York, New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "f1b3eaf106297b16ac55eeb507c078ad4486e3ca4058d3509bf8f80a7bde2996",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/fe935559-4209-4736-baa8-6d2478d424ba\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/2560a1fb-7ac2-4edb-bcf6-c5a3c8780556",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/2560a1fb-7ac2-4edb-bcf6-c5a3c8780556",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "807ea8c87d3e14fa591e735c8d425d73f355e8c84b0c684249a70b06b2c731fd",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/2560a1fb-7ac2-4edb-bcf6-c5a3c8780556\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/0231ced2-2ca8-4fb4-a105-8f81c6feab6d",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/0231ced2-2ca8-4fb4-a105-8f81c6feab6d",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "9b29f730e9fd5a4dfd291e8bd806ef7fc78567cae2fb6545a5093f2cc7fec4a4",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/0231ced2-2ca8-4fb4-a105-8f81c6feab6d\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/ec8dd697-1bec-4b23-9cfd-e899e9144e9e",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/ec8dd697-1bec-4b23-9cfd-e899e9144e9e",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "342e6bae1d0283ffd7a5cb75275c2335874f72dd5398c037dad09ec760f21f58",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/ec8dd697-1bec-4b23-9cfd-e899e9144e9e\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/f3a80c31-90a1-4252-b4d3-a6274f4d205c",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/f3a80c31-90a1-4252-b4d3-a6274f4d205c",
+      "location": "San Francisco, CA | Palo Alto, CA | New York, New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto; New York, New York; San Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "30c539f99dc5242626d43238510698e6a1c4bfd3922288461b0940834b362ffa",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/f3a80c31-90a1-4252-b4d3-a6274f4d205c\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/144b4be3-f46e-4e3a-af46-8ec6afc3a60f",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/144b4be3-f46e-4e3a-af46-8ec6afc3a60f",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "11b7763b75b1628e99cf5906e28204f5f69281dde5498e7b4bb4c96ebe46ed14",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/144b4be3-f46e-4e3a-af46-8ec6afc3a60f\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/bc715d40-ec81-4d8d-8a5a-92db5227679c",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/bc715d40-ec81-4d8d-8a5a-92db5227679c",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "523cf2f4ba16f2bd8c00cf1e9b6caed26bcd58bf998063d069a2ea13077288a5",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/bc715d40-ec81-4d8d-8a5a-92db5227679c\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/485a039c-a176-4dfe-ba5f-475b63439651",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/485a039c-a176-4dfe-ba5f-475b63439651",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "6cebae39c3664412c80be54b89045fd3a591864d24ec5428d0144f0e3accb91a",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/485a039c-a176-4dfe-ba5f-475b63439651\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/08b29fa6-eb90-4aac-b28a-8ef6a46edc15",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/08b29fa6-eb90-4aac-b28a-8ef6a46edc15",
+      "location": "Palo Alto",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Our team works **fully in-person**, between our Palo Alto HQ and San Francisco office."
+      ],
+      "note": "ATS fields used because posting body has no populated location header.",
+      "sourceSha256": "114a2ce4a5aef3fc64f20078781673578b23dcb4298c1ed99c1c2c04ad38463a",
+      "atsLocation": "Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/08b29fa6-eb90-4aac-b28a-8ef6a46edc15\"",
+            "\"location\":\"Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/07e9f010-e7c8-4c01-b650-997b659c53fb",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/07e9f010-e7c8-4c01-b650-997b659c53fb",
+      "location": "Palo Alto",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Our team works **fully in-person**, between our Palo Alto HQ and San Francisco office."
+      ],
+      "note": "ATS fields used because posting body has no populated location header.",
+      "sourceSha256": "01d94107cf4f15bf02f4f42c9d566af0f59ebbfbb811b963b9c5d4a047f2f7de",
+      "atsLocation": "Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/07e9f010-e7c8-4c01-b650-997b659c53fb\"",
+            "\"location\":\"Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/fc674743-e5ca-494f-a06e-92bc5977423f",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/fc674743-e5ca-494f-a06e-92bc5977423f",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "33359e9152c1d06eb5bcf388f5447de521d396070166a36625aa79f3ae3d1f09",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/fc674743-e5ca-494f-a06e-92bc5977423f\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/8df69e21-f99c-4867-bdc8-59605259274e",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/8df69e21-f99c-4867-bdc8-59605259274e",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "f52c52e34a4b96f6a06f26a02105335391c48d1acd655dc02562f489c53b37eb",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/8df69e21-f99c-4867-bdc8-59605259274e\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/bb00e740-3647-4ce8-b6e7-3dcf611f66b6",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/bb00e740-3647-4ce8-b6e7-3dcf611f66b6",
+      "location": "San Francisco, CA | Palo Alto, CA | New York, New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto; New York, New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "e97f34da8837c7b17f2489c05d23db867eaaed2f71932081d426f06c6caf6052",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/bb00e740-3647-4ce8-b6e7-3dcf611f66b6\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/a550cc1c-6bec-416b-a2da-a7ef06f754bc",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/a550cc1c-6bec-416b-a2da-a7ef06f754bc",
+      "location": "Palo Alto | New York, New York | San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nPalo Alto; New York, New York; San Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "23f9adb89df48389eb9e8c951e4b960b10b72f6140eb92eda1c2d6c3eb12e006",
+      "atsLocation": "Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/a550cc1c-6bec-416b-a2da-a7ef06f754bc\"",
+            "\"location\":\"Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/23a9fd93-9c62-4793-99ca-f7b3efa11f02",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/23a9fd93-9c62-4793-99ca-f7b3efa11f02",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "5197696d8691de828bcc49fd881a8898956f7cb25614e2720d369d73cb62fc9c",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/23a9fd93-9c62-4793-99ca-f7b3efa11f02\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/7e24dbb5-efcf-4b92-a13b-d08e515cde1d",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/7e24dbb5-efcf-4b92-a13b-d08e515cde1d",
+      "location": "San Francisco, CA | Palo Alto, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco or Palo Alto",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": null,
+      "sourceSha256": "29980a2e36ccb84f1fbfefc23e66cbf969e803a1b2eae558b4e26f4aaed426e6",
+      "atsLocation": "San Francisco or Palo Alto",
+      "atsWorkplaceType": "OnSite",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/parallel?includeCompensation=true",
+          "sourceSha256": "21a46e05c55ae39f13926ee85522e94f6b2424ee6eac433302a6e94549840efc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/parallel/7e24dbb5-efcf-4b92-a13b-d08e515cde1d\"",
+            "\"location\":\"San Francisco or Palo Alto\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/e4f2bdcb-5cd1-4643-8e93-3e165fba88d8",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/e4f2bdcb-5cd1-4643-8e93-3e165fba88d8",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/parallel"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel/548910bb-5cc1-41ff-9a86-002b90f06595",
+      "sourceUrl": "https://jobs.ashbyhq.com/parallel/548910bb-5cc1-41ff-9a86-002b90f06595",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/parallel"
+    }
+  ]
+}

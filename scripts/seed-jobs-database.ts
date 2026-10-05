@@ -16,6 +16,7 @@ import {
 } from "../lib/db/schema";
 import { getJobLocationReviewIssues } from "../lib/job-location";
 import { reviewedCursorLocation } from "./lib/cursor-location-review";
+import { getReviewedJobLocations } from "./lib/reviewed-job-locations";
 import {
   LocationCatalog,
   type CanonicalLocation,
@@ -62,6 +63,7 @@ async function main() {
     await db.select().from(locationAliases),
   );
   for (const profile of profiles) {
+    const reviewedLocations = await getReviewedJobLocations(profile.slug);
     const sourceLabel = profile.location.sourceLabel ?? profile.location.label;
     const place = catalog.place(sourceLabel, profile.location.countryCode);
     profile.location = {
@@ -78,11 +80,17 @@ async function main() {
               ...reviewedCursorLocation(job.url!),
               locations: undefined,
             }
-          : job;
+          : reviewedLocations
+            ? {
+                ...job,
+                ...reviewedLocations.get(job.url!),
+              }
+            : job;
       return {
         ...job,
         ...catalog.job(source, {
-          inferRemoteEligibility: profile.slug !== "cursor",
+          inferRemoteEligibility:
+            profile.slug !== "cursor" && !reviewedLocations,
         }),
       };
     });

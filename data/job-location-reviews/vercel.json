@@ -1,0 +1,2738 @@
+{
+  "companySlug": "vercel",
+  "verifiedAt": "2026-10-05T15:22:14.607365+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6142959004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6142959004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Deal Desk Analyst",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "99ee2e710027f9951bb91e59aca01af2554b59870dcd2afa7c44f013b0598683",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6142959004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6188898004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6188898004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Product Partnerships Lead",
+        "Hybrid - San Francisco",
+        "This is a hybrid position, requiring 3 days per week in one of our San Francisco, Austin, or New York City offices. "
+      ],
+      "sourceSha256": "359eb2b341516c05b73363cf1d8856375d6ea354a807f7bb619a7e1a38a04034",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6188898004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6113157004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6113157004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Compute",
+        "Hybrid - London",
+        "This role is based in **London, UK**. If you're within commuting distance of our London office, the role includes in-office anchor days. If you're located further afield within the UK, the role is fully remote. For location-specific details, please connect with our recruiting team."
+      ],
+      "sourceSha256": "91dfc59e59a4763b726e45a2ca45aa3aa344114f1a0e90400e4e260893b1a347",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6113157004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5579560004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5579560004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Brand Designer",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "0c559a40e1ba354e284a5909a140c231b4c09da0dd80583ab7266c3f273106e9",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5579560004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6199608004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6199608004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Agentic Infrastructure",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "95e94e78159f2acd623966c7667c954e4a965426ed914e3534000d206b92feed",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6199608004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6142097004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6142097004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Scaled Commercial Account Executive, Install base",
+        "Hybrid - San Francisco, New York City, Austin",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "8e35e9be22765afe610ce05b73e8546e20b9fde18c4a15d26b09af486693a537",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6142097004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5649459004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5649459004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Trust & Safety",
+        "Hybrid - San Francisco, New York City",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "85d58503ccf4198ef03ac43e74c62af619cb38e1e9ac59965892d4da5de5a3e2",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5649459004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6105394004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6105394004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, CDN Content",
+        "Hybrid - San Francisco",
+        "If you're based within a pre-determined commuting distance of one of our offices (SF or NY), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with our recruiting tea"
+      ],
+      "sourceSha256": "4a069ea6d35fce157ac78f9929078a966179535910cec3c31d055971e447d55e",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6105394004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6163582004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6163582004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Sourcing Manager",
+        "Hybrid - San Francisco",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. For location-specific details, please connect with our recruiting team."
+      ],
+      "sourceSha256": "2b0456d827d40edeeadd55b090104f632d4d94c7fbd2a91dc161434f2db7c767",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6163582004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5752684004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5752684004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Forward-Deployed Engineer",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "cfee5526c4dc8e52b6ebc8c7e656d3e3033b024d02a124b082d852d06f505696",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5752684004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6102335004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6102335004",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Security Engineer, Cloud",
+        "Remote - United States",
+        "You'll report to the Security Operations Manager, and this is a hybrid or fully remote within the United States. If you're based within commuting distance of our SF or NY offices, the role includes in-office anchor days on Monday, Tuesday, and Friday."
+      ],
+      "sourceSha256": "103a4411ffae4672b9afccc3cb7a29bc618dd0b8eec385cd9214c3a305d65d2c",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6102335004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6179794004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6179794004",
+      "location": "Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# IT Ops Engineer",
+        "Hybrid - New York City",
+        "In this role, you'll be the go-to person for in-office IT support: resolving hardware and software issues and partnering with teams across the company to make sure everyone has what they need to do their best work. You'll manage the tools and systems Vercel's employees rely on every day, from endpoi"
+      ],
+      "sourceSha256": "7fc50eebba9980a8d87645f77debdd4a38b3aac1685dbf1d6b8ffb0911e69846",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6179794004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6121381004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6121381004",
+      "location": "Hybrid - London, UK | Hybrid - Berlin, Germany",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Technical Account Manager",
+        "Hybrid - London, Berlin"
+      ],
+      "sourceSha256": "958541f4d5a7bbcef729ade9c102943a18befa4710b123f5162e5ee1771f81d2",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6121381004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5704320004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5704320004",
+      "location": "Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Agent",
+        "Hybrid - New York City",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday, even if the role is listed as remote. For location-specific details, please connect with our recruiting team."
+      ],
+      "sourceSha256": "e53581c6d0db05efff45c33dc882ef8252168e702f903c3f91d8d42001f03227",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5704320004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5995789004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5995789004",
+      "location": "Remote - Australia",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Manager, Solutions Architect",
+        "Remote - Australia"
+      ],
+      "sourceSha256": "d31b3b3fa6ee9785348d513994b924a35b91804e0d250710964afb3df9aba703",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5995789004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "30804a14-a1da-81eb-890e-4696893dbf91",
+          "label": "Australia",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Australia"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6119765004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6119765004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Integrated Campaigns Manager",
+        "Hybrid - San Francisco",
+        "The role includes in-office anchor days on Monday, Tuesday, and Friday out of our SF office."
+      ],
+      "sourceSha256": "b77c2c9c5fe543716a6be849510c258c13e26d179cb867dcadb197ee8544809a",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6119765004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5914474004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5914474004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, GTM",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "349a3b610173ec941ba47132866640a78edd66daa941006942edf109c6fcf3a7",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5914474004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6122619004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6122619004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Integrated Campaigns Manager",
+        "Hybrid - San Francisco, New York City, Austin",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "f8f31a10817fd92d76525f5a919ce4f814e93ba0bd3e627741f52f2d7a1647fb",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6122619004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6137983004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6137983004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Workday Integrations Developer",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "6a31ef483474bebcbfaa4244dec616c0cd1f386b9498992a92220fce35199ce9",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6137983004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6128387004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6128387004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Presentation Designer",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "995752329e4969767549b1b6a374a26ecc24d34dae7261cab6e16ae0e79cfa3b",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6128387004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6147956004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6147956004",
+      "location": "Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Manager, Observability",
+        "Hybrid - New York City",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "1112e43f1932a5475271a3a3aa4bfcfb637e7628ced3493a0c425e25899eee32",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6147956004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5979111004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5979111004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Field Engineering Operations",
+        "Hybrid - San Francisco",
+        "We are looking for a Head of Field Engineering Operations to join our Revenue Operations team. In this role, you’ll architect the systems, processes, and insights that enable a fast-growing Field Engineering organization to scale even more effectively. As a strategic partner to the VP of Field Engin"
+      ],
+      "sourceSha256": "d33ecd992a6c84aa6ee38855f02b14ddb8a93858bb5b8c4f5e3a22e9d868d5c7",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5979111004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5039945004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5039945004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Representative, Majors",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "f189ff7aa5d320a190cdec4db9629af1b8da54724300cc017b35143bfcd1fa5a",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5039945004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5701765004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5701765004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Engineering Manager, CDN",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "fda6331d77d4786cb330502b74ab14352a56bdb368065d4da5c54d9921f1967b",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5701765004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6098390004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6098390004",
+      "location": "Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, eve",
+        "Hybrid - New York City",
+        "We are looking for a **Software Engineer** to join the **Agent Stack** team and help build eve — Vercel's framework for building production-ready AI agents. Eve is to agents what Next.js is to web apps: an opinionated, batteries-included framework that lets developers write only what's unique about "
+      ],
+      "sourceSha256": "b423d9ba53b2fdf6b03eb9511d221e4cfed70c04f3b5a67ac6f76eebd5b7b56a",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6098390004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5691965004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5691965004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Legal Counsel, Product",
+        "Hybrid - San Francisco",
+        "We are looking for an experienced, technical, and business-minded Senior Counsel to enable Vercel’s product innovation and shipping velocity. You will partner closely with Engineering, Product and Design (”EPD”), Security, and other cross-functional teams to provide all aspects of legal support thro"
+      ],
+      "sourceSha256": "80b9557a03444b8ba6dc6775de155aa21f55a734fac4b40fb1856f3e254b38fe",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5691965004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5895013004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5895013004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Financial Data Platform",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "bf0a12d8dc854a9a2645c882e432d7eb46f12218bdf0153279aef2df34505eda",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5895013004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6090854004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6090854004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior HRBP - G&A",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "27d5a6e7ac8855afea29db6ccbd72c40dcb69cb87c0eacce15821fa399e6653d",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6090854004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6121474004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6121474004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Communications Manager",
+        "Hybrid - San Francisco",
+        "You will report to the Head of Communications and will be located in our SF office with in-office anchor days on Monday, Tuesday, and Friday."
+      ],
+      "sourceSha256": "87cebaa23302aeefa33bf6a3848260f0202adda785a74da6d20dec4215099aa1",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6121474004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5430088004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5430088004",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Software Engineer, Backend",
+        "Remote - United States",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "72bdeb8a7dd1281058f83981a497bff5e1a9c1e8c8dcf0d6d44a2529d9e487f8",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5430088004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6122437004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6122437004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# DevRel Engineer, Agentic Infrastructure",
+        "Hybrid - San Francisco, New York City, Austin",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday, even if the role is listed as remote. For location-specific details, please connect with our recruiting team."
+      ],
+      "sourceSha256": "1fdf79ad3e8bd4e20fc52e175debecf9640d7e17ab1675ca3823ee7f8f1799c5",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6122437004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5825469004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5825469004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Cloud Partnerships Lead",
+        "Hybrid - San Francisco",
+        "This is a hybrid position, based in San Francisco, with in-office anchor days on Monday, Tuesday, and Friday. "
+      ],
+      "sourceSha256": "7bb5c844906fc0e44a8c0e9212f44eb715f7f4ecb9661f3264783d770b289053",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5825469004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6011651004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6011651004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Strategy & Operations",
+        "Hybrid - San Francisco",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "289e039f6f42f7e716689ccc5329eae8af609bcaa10586f562abc1c4765beb7f",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6011651004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6111332004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6111332004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Security Engineer, Detection Response",
+        "Hybrid - San Francisco, New York City, London",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, or London), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with our recru"
+      ],
+      "sourceSha256": "73be7d59b9bcf153856e622d6dee3108875452473012a519432767d5d63350d1",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6111332004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6123443004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6123443004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Commercial Account Executive, Install Base",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "20a3adb5241a082dfda9000361812f5a19427c56537ac185041e2295751e6254",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6123443004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5844601004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5844601004",
+      "location": "Hybrid - London, UK | Hybrid - Berlin, Germany",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Partner Lead, EMEA",
+        "Hybrid - London, Berlin"
+      ],
+      "sourceSha256": "f99c182ff51dcdacde873168ba87c374b342e468ca763174aaaadc6c4ef30bf7",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5844601004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5798406004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5798406004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, AI Gateway",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "ad8f2601f2e6ec1f252f10b7d77a1f3aaef8ab64afe2bffa86f6dad1d5ef4b12",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5798406004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6129441004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6129441004",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Design Engineer",
+        "Remote - United States",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "e657f1d7721b47984d9a92d727a55d4589fda14320175fe78f52cfeb718277a9",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6129441004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5841911004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5841911004",
+      "location": "Hybrid - Sydney, NSW",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive, Majors (APAC)",
+        "Hybrid - Sydney",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "6db420a8ea9ab83b8d8109f5a0ac7a0923f90ecc0eaeebad6b83bc1416fe77be",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5841911004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6163585004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6163585004",
+      "location": "Hybrid - India",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# SOX Manager",
+        "Hybrid - India"
+      ],
+      "sourceSha256": "1559175d0442df61d61e3c1cdd58729c4bff2733f398190ea9c4afe3d8e64312",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6163585004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "a5fcbd2a-f031-8126-9a08-8b688a479310",
+          "label": "India",
+          "relation": "unspecified",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6200325004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6200325004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Legal Counsel - Commercial",
+        "Hybrid - San Francisco",
+        "You will report to the Senior Director of Legal, Commercial and will be based in San Francisco with a 3 day/week in-office requirement."
+      ],
+      "sourceSha256": "fadcec99e633abde2be2305b7767205315854be1c6b81e4990dbd87f0baad359",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6200325004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5806749004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5806749004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Solutions Architect",
+        "Hybrid - San Francisco, New York City, Austin",
+        "- Some travel elements are expected relating to industry events, customer on-sites."
+      ],
+      "sourceSha256": "a75d9da32205412aaa45baf8a1f3ee8a32e4168765b6f52abd6aa5a8b70c4559",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5806749004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6011904004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6011904004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Performance Marketing Manager",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "330277575cb8fd984d6341d1f5d3dc5b778c6edb06fdf4d7ea1d5676cbae9fe0",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6011904004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5822513004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5822513004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Representative , Startups",
+        "Hybrid - London"
+      ],
+      "sourceSha256": "05d4497fe58ad675644a2b831dd7361d34d657550cd35d5805636d228ffd387b",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5822513004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6102343004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6102343004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Security Engineer",
+        "Hybrid - San Francisco, New York City, London",
+        "If you're based within a pre-determined commuting distance of one of our offices (SF, NY, or London), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with our recru"
+      ],
+      "sourceSha256": "a1c0f04b94bba1750a5baf08812ee346399c8331b9d600f4ed7774461255fd4a",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6102343004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6102654004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6102654004",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# GRC Analyst",
+        "Remote - United States",
+        "You will collaborate with cross-functional teams to promote a culture of accountability and integrity throughout the organization and foster an environment where everyone understands the importance of adhering to established guidelines and ethical practices. You will report to the Head of GRC and wi"
+      ],
+      "sourceSha256": "2072d00a8e12aef5727485bcf13ffdc31914a6ee1f87d303b5c9ff2e57f27fe8",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6102654004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5179639004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5179639004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, CDN",
+        "Hybrid - San Francisco, New York City",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF or NY), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with our recruiting tea"
+      ],
+      "sourceSha256": "ba7c65303c90819e687023c3dcb9f70721878f76a8e20a9fb651b814a073c155",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5179639004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6120051004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6120051004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Professional Services",
+        "Hybrid - San Francisco, New York City, Austin",
+        "This is a hybrid position based in San Francisco, Austin or New York, with 3 days per week required in office."
+      ],
+      "sourceSha256": "fc0e58c57bab9ecf5bc2d8b9fdd951e7b6dde4522e1099a2c22755d15e7f8ee8",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6120051004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6137958004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6137958004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Next.js",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "6ee97f7cd0ad89228029fcc3a6abcd0d054da1ad09dc6d65181347054309d47e",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6137958004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5732855004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5732855004",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Site Engineer",
+        "Remote - United States",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "f21e3456ca00fa149af86998859ab3cc50f26e2832e1d1424e2093a54a28ce35",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5732855004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6188400004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6188400004",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Software Engineer - Data Platform",
+        "Remote - United States"
+      ],
+      "sourceSha256": "2267483d6d78c0ac33b33b0c281ecdd5a253700fef49e09e0df00d22d7a9b72e",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6188400004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5428982004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5428982004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Observability",
+        "Hybrid - San Francisco, New York City, London",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "46b54ec7e2b545510031868c0afde1ab25b7d2f811f9e237fff1320be7d1eaab",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5428982004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5042166004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5042166004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Commercial Account Executive, Greenfield",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "2f16c8fa64e740858cdf5c098c6e63fd32514d2ff2fd9a9c9bd5e2a91d0aebbe",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5042166004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6112845004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6112845004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Technical Account Manager",
+        "Hybrid - San Francisco, New York City, Austin"
+      ],
+      "sourceSha256": "50db7ab84718857376da1e09138d53a931456993ac41a046a770dd570c85462e",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6112845004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6100103004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6100103004",
+      "location": "Hybrid - Sydney, NSW",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive, Majors- Install Base (APAC)",
+        "Hybrid - Sydney"
+      ],
+      "sourceSha256": "12e310c07ad40a35d1df76218d78bbcf6e95aff91ef515de2be563341fee6e28",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6100103004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "01a7df1a-785b-8d6b-a88d-9b6200dd9001",
+          "label": "Sydney, NSW",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Sydney, NSW"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6195280004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6195280004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Platform",
+        "Hybrid - San Francisco, New York City",
+        "We are looking for a Software Engineer to join our Platform team. You will build the observability systems that give Vercel visibility into how we build, ship, and operate our systems. Core Platform owns Vercel’s reliability, resilience, and engineering velocity. We’re looking for engineers to creat"
+      ],
+      "sourceSha256": "eead6c0d555da4cbe1394db7d4f6a6d8951f84ab31f01894e168a1089de54679",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6195280004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6131210004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6131210004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Product Designer, Growth",
+        "Hybrid - San Francisco, New York City",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "e3bce75c43af2fb90c1209f662d0e675be7d756abb5c71ebeb1b4fa13c6a5046",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6131210004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6181759004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6181759004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineering Intern - Summer '27",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "09bbb75e3e4cf88d5cb75e1065b599020beaf0fde3599a4cabd95dac29f16e50",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6181759004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6183272004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6183272004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# FP&A Manager, Product",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "f9b6c71266862ca42be90959bb6c930e71d6f369941592fb168b01a5ad590ed3",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6183272004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6140055004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6140055004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Engineering Manager - Next.js",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "521ba974268119b62155a9e5a707f3dbdb5355ab03524ac43af47cef47215f65",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6140055004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5752956004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5752956004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive-Startups, EMEA (French Speaker)",
+        "Hybrid - London",
+        "If you’re based within commuting distance of our London office, the role includes in-office anchor days. "
+      ],
+      "sourceSha256": "ccca187d0f9383172685ab5fd59a2ba143aaaa5b2d09382299112bdfad988ac3",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5752956004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6181755004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6181755004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineering Intern - Winter '27",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "943381524eb437b011577224d50ac7cd408defc3382f359738984f76a37ffd53",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6181755004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5474915004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5474915004",
+      "location": "Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, AI SDK",
+        "Hybrid - New York City",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "431a2b8e46030e324c4179a6072f82a6a7e62b6f4dab6266f7a0efb0f865a784",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5474915004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5999792004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5999792004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive, Majors",
+        "Hybrid - London",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "945bf1a0623a945faedef96f9a4260b1acf26002d3a6439698b6bbef7c98c5c0",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5999792004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5971203004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5971203004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Startups Program Lead",
+        "Hybrid - San Francisco, New York City"
+      ],
+      "sourceSha256": "5fcbce2d0c611bd727d35f8e9f93bde43ab22ebd2aace9bf60abfdc9bb4e8187",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5971203004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6136160004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6136160004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive, Commercial",
+        "Hybrid - London"
+      ],
+      "sourceSha256": "a4a1c913314b48e0a46f2e055190dd5bbcaaa7d7d1ec33bb964ae71e92529e60",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6136160004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5855000004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5855000004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Finance Manager, Product",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "2a178b9c3071d1e0c0864a8f7f95edd88c6ab8472f8781af5151ce0e1ea702c8",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5855000004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6134374004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6134374004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer, Internal Agent",
+        "Hybrid - San Francisco"
+      ],
+      "sourceSha256": "55c30d9f7b6defdfa7fb9135261a3aed7b54a70421cb18b0d27f67d51c91ca77",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6134374004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6119846004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Solutions Architecture, Startups",
+        "Hybrid - San Francisco, New York City, Austin",
+        "This is a hybrid position based in San Francisco, Austin, or New York, with 3 days per week in office."
+      ],
+      "sourceSha256": "165df615f91b99893bc9ade5e2edded1d0286e53ad48f17c6e1bd1bdda114bee",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6119846004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5974107004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5974107004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Director, Commercial Sales, EMEA",
+        "Hybrid - London",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "24cf9fa5e32a2fc04ed014a788279307ad6f2ce8e573db753c24fe91957c9e49",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5974107004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6121468004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6121468004",
+      "location": "Hybrid - India",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sr. Manager, Accounting (India)",
+        "Hybrid - India"
+      ],
+      "sourceSha256": "6758ca2923752c8cf0601df167bc25e83eb24cf06410fe64ec829d94819c0bb0",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6121468004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "a5fcbd2a-f031-8126-9a08-8b688a479310",
+          "label": "India",
+          "relation": "unspecified",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6111005004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6111005004",
+      "location": "Hybrid - London, UK | Hybrid - Berlin, Germany",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Solutions Architecture, EMEA",
+        "Hybrid - London, Berlin",
+        "This is a hybrid position based in our London or Berlin office, with three days per week onsite."
+      ],
+      "sourceSha256": "9353c0d55f1feee8a5fa0ec468dc075deaada48ea59e44282e1f3f60921b2ace",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6111005004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5557835004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/5557835004",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Development Representative, UK&I",
+        "Hybrid - London",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. "
+      ],
+      "sourceSha256": "13a110aa1fc7cd65523c60029840b8717208745f406934a627e6a305c7485631",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 5557835004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6132416004",
+      "location": "Hybrid - London, UK | Hybrid - Berlin, Germany",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Partner Solutions Engineer, EMEA",
+        "Hybrid - London, Berlin",
+        "**This is an in-person (hybrid) position that will require you to be based in Vercel's London or Berlin office with a required 3 days per week in office.** "
+      ],
+      "sourceSha256": "e670e0abf2fa94563bfe411bc5974444e0c6aa7932911916a9208f6eb632484a",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6132416004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6160974004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6160974004",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Designer, Marketplace",
+        "Hybrid - San Francisco",
+        "If you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with o"
+      ],
+      "sourceSha256": "2e91d8a7e0c2c1d0b8fc977b7b36e78566de9bab1b10218173a7ce593b26b234",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6160974004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6188894004",
+      "sourceUrl": "https://job-boards.greenhouse.io/vercel/jobs/6188894004",
+      "location": "Hybrid - San Francisco, CA | Hybrid - New York, NY | Hybrid - Austin, TX",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Partner Programs Manager",
+        "Hybrid - San Francisco, New York City, Austin",
+        "This is an hybrid position, with a required 3 days per week in one of our San Francisco, Austin, or New York City offices."
+      ],
+      "sourceSha256": "fb781dfb6b1e325607b8cc5b70261346d1b81e1c55be55a6eb91a4902b3e4fac",
+      "note": "Explicit arrangement-prefixed location header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs",
+          "sourceSha256": "6205940138b240ad0da3b6d9aea649d1cf529017871b05b0d00b85e9bd2c836a",
+          "evidence": [
+            "\"id\": 6188894004"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - New York, NY"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - Austin, TX"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5042174004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/5042174004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/5798416004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/5798416004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6016765004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/6016765004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6093255004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/6093255004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6115991004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/6115991004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6117204004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/6117204004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6117209004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/6117209004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/vercel/jobs/6144467004",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs/6144467004",
+      "reason": "First-party detail API explicitly returns HTTP 404 Job not found; current complete listing (85 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T15:24:34.204103+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    }
+  ]
+}

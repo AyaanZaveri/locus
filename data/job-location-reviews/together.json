@@ -1,0 +1,1586 @@
+{
+  "companySlug": "together",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238461007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238461007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "a970cfa9d4ad74c29281715cf76e08eb965051d47d05ae3d09d80b6fd1a92973",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5140763007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5140763007",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "be64757a402358241eb167a1798bac8a7bf81e6cf2643ebaa913bfe0644f0ebe",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "36152aaa43e325923289eeb097967ea7af57ba591b14601cf6122328106a13b6",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5232036007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5232036007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "e30ff0c9820d5c932983752b2c5897a383d791ab950523afb3d272034b19728f",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4840844007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4840844007",
+      "location": "Pune, India | Bengaluru, India",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)",
+        "Pune or Bangalore, India"
+      ],
+      "sourceSha256": "4507ce5e481e5db28712e9ebeaecc1ad43ee6506969b6a291c3951fee3d90a90",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null. Explicit source alternative split; Bangalore normalized to canonical Bengaluru.",
+      "locations": [
+        {
+          "locationId": "15efc6a7-8bc0-8564-a0fd-1ffadf1f6d38",
+          "label": "Pune, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Pune, India"
+        },
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5211582007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5211582007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "d6228cdba16aa4b474dcdf00b990f30cde32593e00dcd602a4d3d27defbe2eb3",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238467007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238467007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "a84d0f969b3bedb7e37424fdcedf8c4026291ef12f0e4db47fbde044f4692460",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5210729007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5210729007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "da199feab7b1d8a9577a487694c4b4904de78fabf53cc1a09e4a6de60931c6fc",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5213322007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5213322007",
+      "location": "Amsterdam",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "5b37ada0a650ec1e3d3f3017668b7845c6464d8b651a4fef1d6cc1dc09d392e4",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5178712007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5178712007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "0957981534af207c002c3146477f2d7c21eb20e4c3c721dbfbaa59121296cbc8",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5233669007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5233669007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "c22eb576b4c78bb1dbe8712e1a99caf645cf9f425076627d56e40ed67f289978",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5172169007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5172169007",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "1315c853914c2ba1784d390d88ed95352246aac617142413031acaf87bc65b95",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5217063007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5217063007",
+      "location": "India",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote based in India"
+      ],
+      "sourceSha256": "6a36fc0309bb2687acc67cff6dda44c5efb196b34a909a06c5233cac94cb18f8",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a5fcbd2a-f031-8126-9a08-8b688a479310",
+          "label": "India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4753072007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4753072007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "3e29ed89425887a7f97490f417a3e393b7da864ce3cde611c1f32a027802dbd1",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238472007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238472007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "cc6378a6db0360749be03a48aa7db97af57779dc2c88d412cb0146dfcfb863d1",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5222270007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5222270007",
+      "location": "London",
+      "workplaceType": "remote",
+      "evidence": [
+        "Remote based in the UK"
+      ],
+      "sourceSha256": "fbc41d9b92a9bdef040d2a4186fbe3d6cd9c4a73272a066b02bee009a81f42cf",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5028862007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5028862007",
+      "location": "Amsterdam",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work two days per week in our Amsterdam office?"
+      ],
+      "sourceSha256": "e01bda8d00e1980ecf3446d9b423e9231beb23dc093bcedfa38703645643bb86",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4790243007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4790243007",
+      "location": "San Francisco ",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "5ec645da2715f2b8252e3bf5e0a6cc674ecf4276b35066a4f4325d0d731054f5",
+      "note": "No role-specific arrangement: the SF-office application question is shared form boilerplate asked identically on India postings; event duties and remote-work flexibility mentions do not establish a schedule.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5213325007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5213325007",
+      "location": "India ",
+      "workplaceType": "remote",
+      "evidence": [
+        "**REMOTE IN INDIA**"
+      ],
+      "sourceSha256": "efad9366a6d373a18b7ecde97023d34ce16a9b515a6fbcaab0545455b473b23f",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a5fcbd2a-f031-8126-9a08-8b688a479310",
+          "label": "India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5211627007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5211627007",
+      "location": "San Francisco or NYC",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "fb30c9c3305d345cb45d547077065398ba99b80ffae2b348c3a93604bec17256",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5233125007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5233125007",
+      "location": "Pune, India | Bengaluru, India",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)",
+        "Pune or Bangalore, India"
+      ],
+      "sourceSha256": "30776def85916e69329babbfece49f2943b407e750356882578c52ee35d349da",
+      "note": "Explicit source alternative split into Pune and Bengaluru (Bangalore normalized to canonical Bengaluru). The San Francisco-office question is generic application-form boilerplate alongside US demographic questions, not role-specific evidence; arrangement unspecified.",
+      "locations": [
+        {
+          "locationId": "15efc6a7-8bc0-8564-a0fd-1ffadf1f6d38",
+          "label": "Pune, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Pune, India"
+        },
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4555544007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4555544007",
+      "location": "Amsterdam, Netherlands | Remote - United Kingdom",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "**Hybrid at our office in Amsterdam or Remote in the UK.**"
+      ],
+      "sourceSha256": "716e67c1d5a1ac47298a8ed3de380bd01649f6ec8c50399247c922966f63ccc2",
+      "note": "Posting offers hybrid in the Amsterdam office OR remote in the UK; both preserved. Primary association kept hybrid.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        },
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5214645007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5214645007",
+      "location": "London & Amsterdam",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "e59e9b9a32d1aac90ff21dfbb364150706af80ebafbe94fcceb43c028333efd7",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5171124007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5171124007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "7f2ac6eade978dba258462690930bbc07077ece674a387246acba90850380cb7",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4624894007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4624894007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "c096c8301ffa7f113363280c4bf52640d1db9362d6d39de50cb0fce9d77a6c74",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4188119007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4188119007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work three days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "494b21231cdd1425b618d2c491d28867020feb3f81341db57c032021630faa96",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5180977007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5180977007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "c2fecc879fa104151c82d1921d03fd10903a55c62ae70af4c2217f5dd0526b25",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5145183007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5145183007",
+      "location": "Amsterdam",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Are you willing to work two days per week in our Amsterdam office?"
+      ],
+      "sourceSha256": "ece5727f0bc722a85e9d4e970e3766eb15b8e7300d79b2c090800407d4d3a486",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5230846007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5230846007",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "8253624bcdaafb3cc493cea64716c5464c3084191fd946e5fa7e407f5c071ce9",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4835763007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4835763007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work three days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "1a98b10152d3de41ebbbac589976d2548da95115e4efe3c32391b585b46de260",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238633007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238633007",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "b1bd35982dd2a0ca7dbe51c9b49067be121998f993dacf44e9f00fce2a1fa363",
+      "note": "No role-specific arrangement: the SF-office application question is shared form boilerplate asked identically on India postings; event duties and remote-work flexibility mentions do not establish a schedule.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4967737007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4967737007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "87e9eb086784aa5ab0444871022fc076653f747845cc8956e8d0e853b3242d1f",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5070981007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5070981007",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Program Manager, Data Center Delivery",
+        "flexibility in terms of remote work"
+      ],
+      "sourceSha256": "7748a87acfa1d18980688b46cf50741a7c218f6eed12267c7d61d369d2e837d1",
+      "note": "Standalone Remote location with remote-work flexibility in body; the SF-office application question is shared form boilerplate (also asked on India postings) and is not role evidence.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5181912007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5181912007",
+      "location": "San Francisco or NYC",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "88bc8bde4968cc05743cc0cb30aeed5dd27816cf2ecbd66b6d6fe43dd8e1e16a",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5210933007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5210933007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "a3146bded7c60ef395b03655864e450f141f5e33a45a373557ec73ab6e33ddbf",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238460007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238460007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "dee91b70bb95802f3a4a7f223140459f3e0ca43213465af05b5198a65668e04f",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4627491007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4627491007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "949c1a0d2636f87dd5f6860af8a55987f61554358db0ba9ae370023c58747436",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5231263007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5231263007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "9b98deebefedbbf360f0a9b285e0c5f9a34a5c2624cdbcaeb4c52f5380655ea6",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5090473007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5090473007",
+      "location": "Amsterdam ",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "bf07c6a21c97562359948499a126152fc66b9464d90268fdcda9cec34d45885f",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5214243007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5214243007",
+      "location": "Amsterdam, Netherlands ",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our Amsterdam office?"
+      ],
+      "sourceSha256": "0e15621edefbd096aea9fee58efe8e037c3ed10a7a7ee66fb8211bacdd8f47f7",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5222294007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5222294007",
+      "location": "Amsterdam",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid in Amsterdam"
+      ],
+      "sourceSha256": "55ac71715f4f0d6ce8d33e6a2dc8449707892fe6e1fc9564f700d0f70ba49ee1",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4543435007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4543435007",
+      "location": "San Francisco, New York City",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "4599232b1b245d951d52a3aee8c4499d30c509a95dff797a8a1ed53dab50b37d",
+      "note": "No role-specific arrangement: the SF-office application question is shared form boilerplate asked identically on India postings; event duties and remote-work flexibility mentions do not establish a schedule.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5182998007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5182998007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "0b23eb32ed036ef93df8b23a5e0675d5f4b3471db9adf62e290b83f38e116a59",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238465007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238465007",
+      "location": "San Francisco, Amsterdam",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "a017cde98fa0916c1593f6d225bf76014e7cb192301afd4e59189a0f616e9504",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238462007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238462007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "b094e67141d5fdb29003fd863d8977f5f8a610123cd1ab7baf529589d93c943c",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5212018007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5212018007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "032b1e2715e370fbc8fd0e6569c411483f32f82e66a06f6009f75930f1abed8b",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5210951007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5210951007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "ca932d14b51e2201f60e5a4de34ebb8c33badc84b5323533a5f01f9972538caa",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5180690007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5180690007",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)",
+        "- Experience with service meshes, zero-trust networking, policy-as-code, multi-region or hybrid infrastructure, or supply-chain security."
+      ],
+      "sourceSha256": "f1c3a0b9357990c62f813e6b1bb2540b628655c8eba350482b9bec1b737fe948",
+      "note": "No role-specific arrangement: the SF-office application question is shared form boilerplate asked identically on India postings; event duties and remote-work flexibility mentions do not establish a schedule.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5088817007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5088817007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "3eec9e730bff49fe68ea9bb74ada7c6b8589d52cf7402903e75d2853b64b60f8",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5192898007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5192898007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "07f996711884cc9a4cb1db848ad474efaa89680e3bfea87c22fdc3cd0e754005",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5026002007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5026002007",
+      "location": "Amsterdam",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "a544369b36767b93da058b946e23f1ad3bf8281e79313aa121c8ccf3a7c892f5",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4385540007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4385540007",
+      "location": "San Francisco ",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "e16d69132d70a9cf90dc8225b5a7c992f8a592ea6e9871b8a285f9b4a8f93e07",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5160139007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5160139007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "08d96db37549bea1a63680ad2153d7a40368e91ff4ecff0edcdb52cc3b78d2f9",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5196805007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5196805007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "9d5bf5fb55f479afeb93825d71a2257201ee113852b335b7556e68a609e2b0a6",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5180155007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5180155007",
+      "location": "Bangalore, India",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "5b25729eb6d70dbc20e5323b54ea13283b52b97fcb154ea45f5c33efad8271d9",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5199554007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5199554007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "df07c0b5a7d2bc7749fc9f7cffe5e680e52ffff07c2e4c700dc29944df653aa0",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4774159007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4774159007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "f760a0bb234e52c977cdcfffae5a7ac2d1138e47b9d00a2c35214db9b4c3a94d",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4749787007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4749787007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work three days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "8c02fb0d65c2314052b7063b17aa434d676f7a61c62fd4593773e53526529f47",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238466007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238466007",
+      "location": "San Francisco, Amsterdam",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "81e8e2df6bfe5738d97c9e0b9d52b7268b0069ccdc6bcf0acd11ed68f51d241b",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5155722007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5155722007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "c279a0717a4aba1083397f8dd2faf37c0d9a6bc0adb4ad9197be003c58e34c68",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4971774007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/4971774007",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "f2f69e91a33f86b59bbe1f15be841989825a9e3e6e412651e0c7aa6c66f12a23",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5179372007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5179372007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "6ccf0654b5f23f5ce22bad301160df08606340f709c26b8b2beacaffe3cdc5f4",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5186628007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5186628007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "895fc549d17b3f21d49a621934fbf65589e9de3539f77e352724c3f3b2f85fb0",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5135941007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5135941007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "299fb3eb8e5cfdae409f78ced12ca28b58e36b6c8202979352e86183d5025c6b",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5069532007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5069532007",
+      "location": "Pune, India | Bengaluru, India",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)",
+        "Pune or Bangalore, India"
+      ],
+      "sourceSha256": "ce3ce52fcce488d90a881fe84247ccba6eb4666befed385134f18eb770f21c3d",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null. Explicit source alternative split; Bangalore normalized to canonical Bengaluru.",
+      "locations": [
+        {
+          "locationId": "15efc6a7-8bc0-8564-a0fd-1ffadf1f6d38",
+          "label": "Pune, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Pune, India"
+        },
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5199993007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5199993007",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "3e175312eae328be3cb7c5543ff19607d48fdc7556dcc46f9f7d79260320f4ac",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238654007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238654007",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "1c5c37e5d86ef7943423b6e97edb4a984851bc15b731a855e149696947960115",
+      "note": "No role-specific arrangement: the SF-office application question is shared form boilerplate asked identically on India postings; event duties and remote-work flexibility mentions do not establish a schedule.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5138540007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5138540007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "e9496785c0b25798e86178b3272813f7f9a7e947bf8972f16b83de4a9131c84f",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5152193007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5152193007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "bd721eab61ccef4c9b435c1af4c22d029857f3a3669bac75f148f935125b0ecb",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5131941007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5131941007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "aeedd59a708700bd35272f5e5305328cad30bdc44914cb78d02248409f45e002",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238468007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238468007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Are you willing to work four days per week in our San Francisco office?"
+      ],
+      "sourceSha256": "66e39d44630902a0a52f22541951ff8b6d1d6f0aa73a3adfd0367643852f783c",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5238411007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5238411007",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "[Back to jobs](https://job-boards.greenhouse.io/togetherai)"
+      ],
+      "sourceSha256": "8a629daf6de079fbc72ac4998aba6f6fd86e8396e9bb0a0b7509c2643cc82177",
+      "note": "Reviewed full Ketch Markdown; workplace type based on explicit body wording when present, otherwise null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5123203007",
+      "sourceUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5123203007",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "San Francisco, CA (Hybrid) or New York, NY (Hybrid)"
+      ],
+      "sourceSha256": "6d4ce29d8338333370646b114fb9bb35405d83a0fdd0cd433c62d1e872f4c1fb",
+      "note": "Body explicitly lists SF Hybrid or NY Hybrid options.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5101202007",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs/5101202007",
+      "reason": "First-party detail API explicitly returns HTTP 404; current complete listing (76 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T14:35:25.430859+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5223190007",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs/5223190007",
+      "reason": "First-party detail API explicitly returns HTTP 404; current complete listing (76 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T14:35:25.430859+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5209804007",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs/5209804007",
+      "reason": "First-party detail API explicitly returns HTTP 404; current complete listing (76 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T14:35:25.430859+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/4946442007",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs/4946442007",
+      "reason": "First-party detail API explicitly returns HTTP 404; current complete listing (76 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T14:35:25.430859+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/togetherai/jobs/5226095007",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs/5226095007",
+      "reason": "First-party detail API explicitly returns HTTP 404; current complete listing (76 roles) excludes this ID.",
+      "checkedAt": "2026-10-05T14:35:25.430859+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs"
+    }
+  ]
+}

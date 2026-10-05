@@ -115,7 +115,7 @@ function LocationFlag({ countryCode }: { countryCode?: string }) {
       alt=""
       aria-hidden="true"
       className="size-2.5 shrink-0 rounded-full"
-      src={`https://hatscripts.github.io/circle-flags/flags/${countryCode}.svg`}
+       src={`https://hatscripts.github.io/circle-flags/flags/${countryCode.toLowerCase()}.svg`}
     />
   ) : null;
 }

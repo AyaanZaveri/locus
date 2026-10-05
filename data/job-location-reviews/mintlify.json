@@ -1,0 +1,398 @@
+{
+  "companySlug": "mintlify",
+  "verifiedAt": "2026-10-05T04:58:44.094014Z",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/4da2f7a2-3d5a-4652-bf01-aed59f4cb72b",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/4da2f7a2-3d5a-4652-bf01-aed59f4cb72b",
+      "location": "San Francisco, CA",
+      "workplaceType": null,
+      "evidence": [
+        "## Location\n\nSan Francisco"
+      ],
+      "note": "ATS workplaceType=None; ATS location=San Francisco. Source gives city only; no arrangement evidence, therefore null.",
+      "sourceSha256": "7fa2b23c741b0771030039124b32e94dd2a3ede2cff60ee4ba9a096c3708de78",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/4da2f7a2-3d5a-4652-bf01-aed59f4cb72b\"",
+            "\"location\":\"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/85f927d5-efce-4389-b346-d02b78abf1b5",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/85f927d5-efce-4389-b346-d02b78abf1b5",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": "ATS workplaceType=OnSite; ATS location=San Francisco. Explicit source location type. ATS/source arrangement conflict.",
+      "sourceSha256": "915a45a95ce48030f0493f92c7518580db7303637bfba45976a758a5b0342e6c",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/85f927d5-efce-4389-b346-d02b78abf1b5\"",
+            "\"location\":\"San Francisco\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/a4245873-582a-48d7-8a07-b92784ec7be3",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/a4245873-582a-48d7-8a07-b92784ec7be3",
+      "location": "San Francisco, CA",
+      "workplaceType": null,
+      "evidence": [
+        "## Location\n\nSan Francisco"
+      ],
+      "note": "ATS workplaceType=None; ATS location=San Francisco. Source gives city only; no arrangement evidence, therefore null.",
+      "sourceSha256": "4ed1b53ca11f26f12143ff850bcd43f0805307136768ef383ba5820702542a17",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/a4245873-582a-48d7-8a07-b92784ec7be3\"",
+            "\"location\":\"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/0050e75d-c840-44a8-ae87-28a7024fcc9d",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/0050e75d-c840-44a8-ae87-28a7024fcc9d",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": "ATS workplaceType=OnSite; ATS location=San Francisco. Explicit source location type. ATS/source arrangement conflict.",
+      "sourceSha256": "335bd7da45bcb624af2eb638fddb41867ab3e076735fd588efe9d69f3ad6a895",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/0050e75d-c840-44a8-ae87-28a7024fcc9d\"",
+            "\"location\":\"San Francisco\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/1e231925-7a38-41c9-a31c-26bf15457888",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/1e231925-7a38-41c9-a31c-26bf15457888",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": "ATS workplaceType=OnSite; ATS location=San Francisco. Explicit source location type. ATS/source arrangement conflict.",
+      "sourceSha256": "adb753d9f19d823f8b423f13a4580cd2b53b067c5c712bf25029eecc269acd54",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/1e231925-7a38-41c9-a31c-26bf15457888\"",
+            "\"location\":\"San Francisco\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/f4661035-7dce-4dbe-b5f5-6f1288d5ec07",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/f4661035-7dce-4dbe-b5f5-6f1288d5ec07",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco | New York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": "ATS workplaceType=OnSite; ATS location=San Francisco | New York City. Explicit source location type. ATS/source arrangement conflict.",
+      "sourceSha256": "f711b0f2f0a07a495795881422869ba83c77041a21d8ab139440b0e120caf224",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/f4661035-7dce-4dbe-b5f5-6f1288d5ec07\"",
+            "\"location\":\"San Francisco | New York City\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/7df478a7-8116-48cf-8e51-70176ca36f6e",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/7df478a7-8116-48cf-8e51-70176ca36f6e",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "note": "ATS workplaceType=OnSite; ATS location=San Francisco. Explicit source location type. ATS/source arrangement conflict.",
+      "sourceSha256": "cbc4da75a288f75990a2609ff85b6bb26f3c3ce71a7937487c6837be9f2aa853",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/7df478a7-8116-48cf-8e51-70176ca36f6e\"",
+            "\"location\":\"San Francisco\"",
+            "\"workplaceType\":\"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/dedb7b58-3372-4804-8a3e-20a8fc816200",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/dedb7b58-3372-4804-8a3e-20a8fc816200",
+      "location": "San Francisco, CA",
+      "workplaceType": null,
+      "evidence": [
+        "# **Why Mintlify?**"
+      ],
+      "note": "ATS workplaceType=None; ATS location=San Francisco. Source gives city only; no arrangement evidence, therefore null.",
+      "sourceSha256": "ca27072e9a029254c9cd9a987f0fa6419ced202813b777bbbd1029d180476d93",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/dedb7b58-3372-4804-8a3e-20a8fc816200\"",
+            "\"location\":\"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/2e61e198-fb04-4de8-b786-3038dc0a5934",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/2e61e198-fb04-4de8-b786-3038dc0a5934",
+      "location": "San Francisco, CA",
+      "workplaceType": null,
+      "evidence": [
+        "## Location\n\nSan Francisco"
+      ],
+      "note": "ATS workplaceType=None; ATS location=San Francisco. Source gives city only; no arrangement evidence, therefore null.",
+      "sourceSha256": "120d1f8d5758070e07f8161ae7ea40513c0226e59631d43b0628400d44b7adc7",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/2e61e198-fb04-4de8-b786-3038dc0a5934\"",
+            "\"location\":\"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/ec55d98f-6e94-4ffb-9a55-4adad39297c3",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/ec55d98f-6e94-4ffb-9a55-4adad39297c3",
+      "location": "San Francisco, CA",
+      "workplaceType": null,
+      "evidence": [
+        "## Location\n\nSan Francisco"
+      ],
+      "note": "ATS workplaceType=None; ATS location=San Francisco. Source gives city only; no arrangement evidence, therefore null.",
+      "sourceSha256": "4beeaa5d6c6495980ed97e1dbccaa8539851f8cb60cf60a207799356961c8543",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/ec55d98f-6e94-4ffb-9a55-4adad39297c3\"",
+            "\"location\":\"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/6dcd6527-b5c2-4c3f-9058-b3434877adb1",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/6dcd6527-b5c2-4c3f-9058-b3434877adb1",
+      "location": "New York, NY",
+      "workplaceType": null,
+      "evidence": [
+        "## Location\n\nNew York City"
+      ],
+      "note": "ATS workplaceType=None; ATS location=New York City. Source gives city only; no arrangement evidence, therefore null.",
+      "sourceSha256": "0ebd82a5833a5328e9fddd4f77bc3091c085b1c6fc0f49bff0f6e4417dd9fbf5",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/mintlify?includeCompensation=true",
+          "sourceSha256": "bb45b27ae24e29c4733a98336451214b96520d1e734275ba2f0ace50552ee1a0",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/mintlify/6dcd6527-b5c2-4c3f-9058-b3434877adb1\"",
+            "\"location\":\"New York City\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/db16fe6d-e564-4fb3-a3ff-22564a8de699",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/db16fe6d-e564-4fb3-a3ff-22564a8de699",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/mintlify"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/108d6b90-b2ce-4583-bf32-9c164cf89ed0",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/108d6b90-b2ce-4583-bf32-9c164cf89ed0",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/mintlify"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/fc6c0de3-a50f-4d85-b8bb-5ae5437eb02b",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/fc6c0de3-a50f-4d85-b8bb-5ae5437eb02b",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/mintlify"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/31adc1b5-e99a-4f33-bd0b-a49e331226a8",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/31adc1b5-e99a-4f33-bd0b-a49e331226a8",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/mintlify"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/c59870b5-a568-41ae-ab9e-8a65969d76bf",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/c59870b5-a568-41ae-ab9e-8a65969d76bf",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/mintlify"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/mintlify/c671d842-82de-4bc9-9d23-26c7d5b6516f",
+      "sourceUrl": "https://jobs.ashbyhq.com/mintlify/c671d842-82de-4bc9-9d23-26c7d5b6516f",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/mintlify"
+    }
+  ]
+}

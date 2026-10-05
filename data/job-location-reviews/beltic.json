@@ -1,0 +1,49 @@
+{
+  "companySlug": "beltic",
+  "verifiedAt": "2026-10-05T05:57:49.052933+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://beltic.typeform.com/to/C8rXwUpr",
+      "sourceUrl": "https://www.beltic.com/careers/gtm",
+      "title": "Go-to-Market Lead",
+      "location": "Remote - UTC-5 to UTC+3",
+      "workplaceType": "remote",
+      "evidence": [
+        "Go-to-MarketRemote (UTC-5 to UTC+3)full-time$140,000 – $190,000 + equity"
+      ],
+      "sourceSha256": "2a3bd8b81089401c86bb95ae19bfe759268d8a4baabd1294dcfa63d306a2aa0c",
+      "note": "Title and role-specific description match stored listing; current page resolves stored Typeform application URL. Careers page lists this as a current remote role.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "UTC-5 to UTC+3",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - UTC-5 to UTC+3"
+        }
+      ]
+    },
+    {
+      "url": "https://beltic.typeform.com/to/C8rXwUpr",
+      "sourceUrl": "https://www.beltic.com/careers/ml-engineer",
+      "title": "ML Engineer",
+      "location": "Remote - UTC-5 to UTC+3",
+      "workplaceType": "remote",
+      "evidence": [
+        "EngineeringRemote (UTC-5 to UTC+3)full-time$170,000 – $220,000 + equity"
+      ],
+      "sourceSha256": "b8d627b22f5fc94138fd61a69d0289be7173dff7d4e41e4fe559e69790abbf0a",
+      "note": "Title and role-specific description match stored listing; current page resolves stored Typeform application URL. Careers page lists this as a current remote role.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "UTC-5 to UTC+3",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - UTC-5 to UTC+3"
+        }
+      ]
+    }
+  ]
+}

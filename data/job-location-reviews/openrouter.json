@@ -1,0 +1,693 @@
+{
+  "companySlug": "openrouter",
+  "verifiedAt": "2026-10-05T04:59:06.835528+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/407f71b5-4b1f-4666-91bd-394f3c26f19d",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/407f71b5-4b1f-4666-91bd-394f3c26f19d",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "89102f667f4f8747107eb499cef56a930eaf7fa8aed590b518eba56a0f7943b4",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/407f71b5-4b1f-4666-91bd-394f3c26f19d\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/11a8c381-1f78-47da-ab58-ae9ed9cae9f1",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/11a8c381-1f78-47da-ab58-ae9ed9cae9f1",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "99defcb78679e0c44b3125bad1c8ba19664e77aa766e4aa41198f4446a251034",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/11a8c381-1f78-47da-ab58-ae9ed9cae9f1\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/c5bbcca4-5591-4152-982b-d43ccbabb863",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/c5bbcca4-5591-4152-982b-d43ccbabb863",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "b2c6e3c92668f665df1126c229726b5da156b97b2c57ba81f09c793a1b82338e",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/c5bbcca4-5591-4152-982b-d43ccbabb863\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "cd803590b8f1f6cc9590a8f2fa54c67a81a418a2128cba5a5bd349269d3f9de1",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/34db850d-579f-4b4c-9827-76bc712b1a41",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/34db850d-579f-4b4c-9827-76bc712b1a41",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "feb6cf67b6626902fa15099b445d55cbd049a231217b54467227ced8cd5de805",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/34db850d-579f-4b4c-9827-76bc712b1a41\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/8daf0f29-2e78-4ab1-8230-52e3988fe42c",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/8daf0f29-2e78-4ab1-8230-52e3988fe42c",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Research Scientist"
+      ],
+      "note": "Full individual body read; missing extracted header is corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement found.",
+      "sourceSha256": "e0ae1733fe6493579e5d4a70e322c1b07ff0842363ed00d7a72483767f9521b1",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/8daf0f29-2e78-4ab1-8230-52e3988fe42c\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/7c5cb1ca-71ba-464d-bf98-33743e8b1474",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/7c5cb1ca-71ba-464d-bf98-33743e8b1474",
+      "location": "San Francisco Bay Area, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "San Francisco Bay Area, California"
+      ],
+      "note": "City-only location; arrangement unspecified. ATS workplace classification not sufficient to invent or override role requirements.",
+      "sourceSha256": "4402acb6a59c766df1a471ec4c63e966cfebaa86a68e01efa68d98b9a6a40796",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/7c5cb1ca-71ba-464d-bf98-33743e8b1474\"",
+            "\"location\":\"San Francisco Bay Area, California\"",
+            "\"workplaceType\":\"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "282c9b23-e21f-8062-9bc1-0f717ab0cb31",
+          "label": "San Francisco Bay Area, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco Bay Area, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/8b56aa1f-1049-499d-912b-eb869747ebdf",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/8b56aa1f-1049-499d-912b-eb869747ebdf",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "4ae9a93361304cbac7aab4951704ccd645d946b42ba5440ca269758a3d4df072",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/8b56aa1f-1049-499d-912b-eb869747ebdf\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/cbda7683-f4fc-41ac-b71b-81d7ccca5508",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/cbda7683-f4fc-41ac-b71b-81d7ccca5508",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "193232f164f2ad20ef3e85dd80a8c024c4a77747f9919078d77bd6f839b213b3",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/cbda7683-f4fc-41ac-b71b-81d7ccca5508\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/58dd70b9-f387-4ba1-8bee-1033f91e76ee",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/58dd70b9-f387-4ba1-8bee-1033f91e76ee",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "fa7e0c99381d19296805458fb143cc514abc6371319a712872d5950ec39bf859",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/58dd70b9-f387-4ba1-8bee-1033f91e76ee\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/1b26f0a2-4aab-4bef-8c21-0f8de9a059e3",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/1b26f0a2-4aab-4bef-8c21-0f8de9a059e3",
+      "location": "San Francisco Bay Area, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "San Francisco Bay Area, California",
+        "## **THIS ROLE MUST BE BASED IN THE SAN FRANCISCO BAY AREA (CALIFORNIA)**",
+        "This role will require the ability to work regularly from our customers' offices across the San Francisco Bay Area and potentially travel to other locations as needed."
+      ],
+      "note": "Body requires SF Bay Area base and regular customer-office work but gives no work schedule; ATS says Hybrid, but arrangement is left unspecified.",
+      "sourceSha256": "6b598afe3c8428eac3b5e162426855acc3e2639722c93ee29592da96330cbf66",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/1b26f0a2-4aab-4bef-8c21-0f8de9a059e3\"",
+            "\"location\":\"San Francisco Bay Area, California\"",
+            "\"workplaceType\":\"Hybrid\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "282c9b23-e21f-8062-9bc1-0f717ab0cb31",
+          "label": "San Francisco Bay Area, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco Bay Area, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/22d85a56-5500-40a5-9913-c98558d77f41",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/22d85a56-5500-40a5-9913-c98558d77f41",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "09ab02fcd52a8eaff97399d1318d3d4c5b5526607366564b0eb67f424637248b",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/22d85a56-5500-40a5-9913-c98558d77f41\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/47c2bcd2-f71c-47a6-831f-a4130d607a7b",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/47c2bcd2-f71c-47a6-831f-a4130d607a7b",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "945985cf1abaa7bd8aa59049932a75a83d1e344131931a97d1f53b7548da1e37",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/47c2bcd2-f71c-47a6-831f-a4130d607a7b\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/25a8105e-6e3f-4663-9c99-332d44f5933a",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/25a8105e-6e3f-4663-9c99-332d44f5933a",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "70ef7122d7484dd05b5d560950e2ac6e77bd73e3a47639b1a9ce4c857be76737",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/25a8105e-6e3f-4663-9c99-332d44f5933a\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/0c6bbb7f-ea09-45b6-b185-8a17a8de214d",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/0c6bbb7f-ea09-45b6-b185-8a17a8de214d",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "69083b98ae8cf5981f71907f710fb76464d3f1b226f2eb71859a34fffd74528c",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/0c6bbb7f-ea09-45b6-b185-8a17a8de214d\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/a25c7850-4bb1-45ce-ab08-04a2a9c42f95",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/a25c7850-4bb1-45ce-ab08-04a2a9c42f95",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "15496ac1b38384b3690dc5f872f60c9695c1b03b38930c5a7a81103e396fae7a",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/a25c7850-4bb1-45ce-ab08-04a2a9c42f95\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/9f38ecfe-ee22-4338-863b-a01e43a481bc",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/9f38ecfe-ee22-4338-863b-a01e43a481bc",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Customer Engineer"
+      ],
+      "note": "Full individual body read; missing extracted header is corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement found.",
+      "sourceSha256": "464852a2cbcb45c91c16c1ab94ce6e418e98d1839ba537a681095761aad424d6",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/9f38ecfe-ee22-4338-863b-a01e43a481bc\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/412cfd6b-81a5-4662-bae2-d86ea1ee324c",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/412cfd6b-81a5-4662-bae2-d86ea1ee324c",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "2878a429c0583d301a16055ab30f7bfd0297af052178d012c47a45b8617ee9b7",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/412cfd6b-81a5-4662-bae2-d86ea1ee324c\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/9c1cb711-cd17-4d07-9be5-f122c0a865b9",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/9c1cb711-cd17-4d07-9be5-f122c0a865b9",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "Remote (US)"
+      ],
+      "note": "Explicit Remote (US) header and matching body availability language; interpreted as US remote geography, not worldwide.",
+      "sourceSha256": "28e1089a2da29b477cfda2fb2a633ad882fd9c624d94b738e4356906e96990a2",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/9c1cb711-cd17-4d07-9be5-f122c0a865b9\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/44ef374e-b234-4d77-b002-8b38b4fda18f",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/44ef374e-b234-4d77-b002-8b38b4fda18f",
+      "location": "Remote - United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "Remote (US)",
+        "The ideal candidate is based in the Bay Area, or has the ability to travel for events regularly."
+      ],
+      "note": "Source explicitly lists Hybrid and Remote (US), with Bay Area preference/event travel. Preserve both facts; do not infer an office attendance schedule from events or a remote team.",
+      "sourceSha256": "8dc7149d4df08ae3bd4afa9f58ece42d2f58e3d864d5cd0cb2c6655e330afdf8",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/openrouter?includeCompensation=true",
+          "sourceSha256": "add8d1c27ebaf5574bd88c30ffbc635723672bcd09eab5abb3f1c1e7e88a3cdc",
+          "evidence": [
+            "\"jobUrl\":\"https://jobs.ashbyhq.com/openrouter/44ef374e-b234-4d77-b002-8b38b4fda18f\"",
+            "\"location\":\"Remote (US)\"",
+            "\"workplaceType\":\"Hybrid\""
+          ]
+        }
+      ],
+      "qualifier": "Bay Area preferred; regular event travel",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": "Bay Area preferred; regular event travel",
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/973955a0-c0d1-4bb4-9252-9ab3943a29c0",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/973955a0-c0d1-4bb4-9252-9ab3943a29c0",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/openrouter"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/69c4fe23-137b-4995-8ad1-25123bee06fb",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/69c4fe23-137b-4995-8ad1-25123bee06fb",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/openrouter"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/89ff6b47-ba08-4418-b24b-c136dbf2ef82",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/89ff6b47-ba08-4418-b24b-c136dbf2ef82",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/openrouter"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/99aa680f-19e2-49f1-acd5-b56c4aaa679f",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/99aa680f-19e2-49f1-acd5-b56c4aaa679f",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/openrouter"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/c8ee3a10-ae18-4d8b-9390-369ebea7b03f",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/c8ee3a10-ae18-4d8b-9390-369ebea7b03f",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/openrouter"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openrouter/7088bf7a-6ed7-4c35-bd61-6303e712205c",
+      "sourceUrl": "https://jobs.ashbyhq.com/openrouter/7088bf7a-6ed7-4c35-bd61-6303e712205c",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/openrouter"
+    }
+  ]
+}

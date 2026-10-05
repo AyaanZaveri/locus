@@ -1,0 +1,664 @@
+{
+  "companySlug": "coder",
+  "verifiedAt": "2026-10-05T04:58:43.649944+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/c54c5de4-2380-4672-a15f-820e1ac09410/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/c54c5de4-2380-4672-a15f-820e1ac09410",
+      "location": "Remote - London",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nLondon",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "179d9f2484cca2ee3d4f8d888fd8a28556d1856e37235c93104607cef876b9a7",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - London"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/a923d2a8-a994-4cc2-9c71-bc8e7d99f583/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/a923d2a8-a994-4cc2-9c71-bc8e7d99f583",
+      "location": "Remote - DC-metro area",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote",
+        "Physically based in the DC / Maryland / Virginia (DMV) area, with ability to travel to customer sites as required"
+      ],
+      "note": "Role is remote but explicitly restricted to the DMV area, not the whole United States.",
+      "sourceSha256": "0596e63b9c25d964b58c4cec59dd32e735cff4bb19e23fb220490f7e15eb1660",
+      "qualifier": "customer-site travel as required",
+      "locations": [
+        {
+          "locationId": "04ac49c9-ea6e-8fa5-bdd4-da4e5d29d29b",
+          "label": "DC-metro area",
+          "relation": "eligibility",
+          "qualifier": "customer-site travel as required",
+          "sourceLabel": "Remote - DC-metro area"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/e75e3ee8-6bc2-49fb-91aa-f398c0fc2630/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/e75e3ee8-6bc2-49fb-91aa-f398c0fc2630",
+      "location": "Remote - United Kingdom | Remote - Ireland | Remote - Poland",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom; Ireland; Poland",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "f78b0201f76509ba58b7d8ca8493cc80554028fb5123b062958f5b2c9dda69b5",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        },
+        {
+          "locationId": "36a15e58-bd54-8d6f-a6b2-1884f1b2b36b",
+          "label": "Poland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Poland"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/afb0b507-24ba-4f39-ac51-739e23ce8938/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/afb0b507-24ba-4f39-ac51-739e23ce8938",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States; Canada",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "d8d6ab5e949ba5a1e0141e3e4b7c2e19ddcf86fefd4177b0b138cfd0cc4f5532",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/75ebc45d-0781-4c0a-ae73-805c1a0d47a1/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/75ebc45d-0781-4c0a-ae73-805c1a0d47a1",
+      "location": "Remote - United Kingdom",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "4bc265e18ac39b363788f7b1d80433884a4eb576ad911765c5a2e2e62f684d59",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/fdb9204a-c2f4-4728-8648-06978ed50d03/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/fdb9204a-c2f4-4728-8648-06978ed50d03",
+      "location": "Remote - United Kingdom",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "51f584bbd72d8bc7ac1aaee25e2a4f3d85dfa221f3ff87b5eabbca88a79fea95",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/ccb0803c-4443-481b-85ec-84045e2ed132/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/ccb0803c-4443-481b-85ec-84045e2ed132",
+      "location": "Remote - United Kingdom | Remote - Ireland | Remote - Poland",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom; Ireland; Poland",
+        "## Location Type\n\nRemote",
+        "**Location:** Remote EMEA (UK preferred)"
+      ],
+      "note": "Explicit ATS countries are retained; body describes wider EMEA and UK preference. Wider regional wording is not assumed to authorize every EMEA country.",
+      "sourceSha256": "c66ae9a2ceda3813f5bd014f94927aa037e28b8ec7bb59dbbf2d67eb504eb6e3",
+      "qualifier": "UK preferred",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": "UK preferred",
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": "UK preferred",
+          "sourceLabel": "Remote - Ireland"
+        },
+        {
+          "locationId": "36a15e58-bd54-8d6f-a6b2-1884f1b2b36b",
+          "label": "Poland",
+          "relation": "eligibility",
+          "qualifier": "UK preferred",
+          "sourceLabel": "Remote - Poland"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/9605615c-db33-496d-8173-fc9caf3b6869/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/9605615c-db33-496d-8173-fc9caf3b6869",
+      "location": "Remote - United Kingdom",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "7bd8db32db40a5dc0c9bc64d1d325bea72e7c9b30188894bfe8197b7b1bb1a25",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/ce4d2680-e31c-4c31-8fe3-3bca41805132/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/ce4d2680-e31c-4c31-8fe3-3bca41805132",
+      "location": "Remote - London",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nLondon",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "3c45327a3cf52c3326aa5ce74ee0576bae66e4c6b00bda9e57a78622ace06dad",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - London"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/0a832997-ab1b-41f0-a29e-d22b508855ff/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/0a832997-ab1b-41f0-a29e-d22b508855ff",
+      "location": "Remote - United Kingdom",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "0ee186537d00006c262fc74925f712187d264dbdf7dfa82c6260c0111d267b18",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/2e097858-2abd-4874-a82c-6699cfd201d5/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/2e097858-2abd-4874-a82c-6699cfd201d5",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "5df07e27b6ebc2c8a030b51fabb51e283c3b4010274d8c731401b1715e314654",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/bc552c4c-4a8b-4995-a110-3d2822f07f03/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/bc552c4c-4a8b-4995-a110-3d2822f07f03",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "8a58f0626d658d60712e672195b14e0051e7037a37607eca643abba2ad0a90a7",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/579336f9-2022-488c-8b1f-5caadafb08d6/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/579336f9-2022-488c-8b1f-5caadafb08d6",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "6c5b76e69b4e0bd09a6e9e07e8f1729100171f2f616e6439f0b51018b0dcd46e",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/30b33883-7e5f-462a-acea-25986908cf8b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/30b33883-7e5f-462a-acea-25986908cf8b",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "9abb589f4d2ef66206df128476830650999262d297e3651f80dbccf264926dd5",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/0d951b83-8763-4f9e-81f3-9f44af680b65/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/0d951b83-8763-4f9e-81f3-9f44af680b65",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States; Canada",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "09b93e1eed4304dc3e5b9d8e71464812b3d62d83883205de0b2770ca96fc97e8",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/b2779e7d-e280-420c-9fc1-eeb27900134a/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/b2779e7d-e280-420c-9fc1-eeb27900134a",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "deeb6ec58614cb346c2985dac578467b5b5f09dc5bc5f3ea13c442df09bed177",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/e3e5ff26-a17f-43b9-b995-8b199ef5f3b7/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/e3e5ff26-a17f-43b9-b995-8b199ef5f3b7",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "e3ab44b3f7e5e0956eadf308766e5adafa08e84fe98ae219456eebead62faf49",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/e6eac654-0172-45ac-8598-d1a615f4886b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/e6eac654-0172-45ac-8598-d1a615f4886b",
+      "location": "Remote - United Kingdom | Remote - Ireland | Remote - Poland",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom; Ireland; Poland",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "f2d9a3190e719a1e89125d26b3d1c18a25ade0824b019acceaa9e50dc73e6806",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        },
+        {
+          "locationId": "36a15e58-bd54-8d6f-a6b2-1884f1b2b36b",
+          "label": "Poland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Poland"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/646bee7e-d18a-43f3-880f-3b9c4bf880d1/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/646bee7e-d18a-43f3-880f-3b9c4bf880d1",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "5d01baf995c199fa614e3805052edcdab564a029fec4f3b564f63d791f30808e",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/ac353b47-1ad0-4c22-b6a8-e6012a68d394/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/ac353b47-1ad0-4c22-b6a8-e6012a68d394",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "fcc461d0f2ccaf66849c21b14e487c345487928d30b88b85cdec4b38ddc357f7",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/9b117535-7028-43fe-8278-8e700c19c3d8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/9b117535-7028-43fe-8278-8e700c19c3d8",
+      "location": "Remote - United Kingdom | Remote - Ireland | Remote - Poland",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited Kingdom; Ireland; Poland",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "bf01ebd3f92b1dddda24037276780be3bd5afb79329722440649340af5fb7962",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        },
+        {
+          "locationId": "36a15e58-bd54-8d6f-a6b2-1884f1b2b36b",
+          "label": "Poland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Poland"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/fdc65fc6-1848-4be3-b53f-74c6916690ed/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/fdc65fc6-1848-4be3-b53f-74c6916690ed",
+      "location": "Hybrid - San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location\n\nSan Francisco",
+        "This position follows a hybrid work model. Candidates should be local and able to work from our local office on a regular weekly basis, with scheduling flexibility."
+      ],
+      "note": "Explicit role-specific hybrid requirement; remote work mentioned elsewhere does not make this fully remote.",
+      "sourceSha256": "1e7300a894c6f51d75f392ec03c41a06f3d565fef4dd5728b2b6953c2ae6f611",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/8d76dce2-97f7-413e-a93e-9e3f0ba8d259/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/8d76dce2-97f7-413e-a93e-9e3f0ba8d259",
+      "location": "Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nEurope",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "6e29a57e37a2f0b2aac907a3935926e6adbf545d7ce621b415c76cba038aad31",
+      "locations": [
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/ba28b752-0170-4889-88ea-c26d6b3f4c8b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/ba28b752-0170-4889-88ea-c26d6b3f4c8b",
+      "location": "Remote - New York City",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nNew York City",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "94be897c49db692b80c6fe43d39201834004e00499ef881930edae38c4c65a96",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - New York City"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/e8499cd9-44c2-4ee8-bce8-9f2794da4dd3/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/e8499cd9-44c2-4ee8-bce8-9f2794da4dd3",
+      "location": "Remote - Poland",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nPoland",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "0fa5e4994a6b0124f57e34c57f5051f4bc5af2fedb0cccf271eaebeb1ea7f0c9",
+      "locations": [
+        {
+          "locationId": "36a15e58-bd54-8d6f-a6b2-1884f1b2b36b",
+          "label": "Poland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Poland"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/cd346ef3-24dd-4e1f-b863-4af569def480/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/cd346ef3-24dd-4e1f-b863-4af569def480",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States; Canada",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "799811b6e8c03c0892056c6e361291c997f17f64a02e83624121853824fcdf75",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/5d6b0aba-e35b-4a1b-babb-b755bcc0ca63/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/5d6b0aba-e35b-4a1b-babb-b755bcc0ca63",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location\n\nUnited States",
+        "## Location Type\n\nRemote"
+      ],
+      "note": "Location Type explicitly Remote; header geography is remote-eligible as stated, without inferring country restriction from a city-only label.",
+      "sourceSha256": "b2eb98eda69edea77313f5fba7eb9e805d557a5aaa9fb75e3b0810ac9d5da693",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/Coder/481af57e-cdec-4933-b019-1248dc7d67fa/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Coder/481af57e-cdec-4933-b019-1248dc7d67fa",
+      "reason": "Fresh uncached individual URL explicitly says not found, and the fresh canonical public board omits this posting ID.",
+      "checkedAt": "2026-10-05T05:20:34.468398+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/Coder"
+    }
+  ]
+}

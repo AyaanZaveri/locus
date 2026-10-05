@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/sidebar";
 import { ModeToggle } from "@/components/mode-toggle";
 import { CompanySearch } from "@/components/company-search";
+import { Kbd, KbdGroup } from "@/components/ui/kbd";
 import type { CompanyNavigationItem } from "@/lib/company-profile";
 
 const navigation = [
@@ -102,6 +103,10 @@ export function AppSidebar({
                   >
                     <SearchIcon className="size-3.5!" />
                     <span>Explore</span>
+                    <KbdGroup className="ml-auto hidden sm:inline-flex group-data-[collapsible=icon]:hidden">
+                      <Kbd>⌘</Kbd>
+                      <Kbd>K</Kbd>
+                    </KbdGroup>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
                 {navigation.slice(0, 1).map((item) => (
@@ -170,6 +175,7 @@ export function AppSidebar({
         </SidebarContent>
       </Sidebar>
       <CompanySearch
+        companies={companies}
         onOpenChange={setSearchOpen}
         open={searchOpen}
         suggestedCompanies={suggestedCompanies}

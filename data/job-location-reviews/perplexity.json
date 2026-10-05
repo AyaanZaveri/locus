@@ -1,0 +1,3664 @@
+{
+  "companySlug": "perplexity",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/5930b6bf-b4b1-4134-a183-832d69dd085f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/5930b6bf-b4b1-4134-a183-832d69dd085f",
+      "location": "San Francisco; New York City; Washington, DC",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4009e483dd9f6e9b23239e3a4ae531597ec4c435d19f6bce3b6a0761692ba511",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3b6ad2b6-4310-48f1-a71f-dc344c94f2b0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3b6ad2b6-4310-48f1-a71f-dc344c94f2b0",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4849266e35089afaa678b954f902e954a784f893de752bb74e3318f1db8f4ace",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/29625b7a-5470-463b-8446-21fac84e80b9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/29625b7a-5470-463b-8446-21fac84e80b9",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Engineering Manager (API Platform)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "170e50f07142953ad05d329b8b212ab13c3169a7a27e73f942be934e14006717",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/7dedcdea-42be-4bb0-b603-791146ff73f0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/7dedcdea-42be-4bb0-b603-791146ff73f0",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Model Platform)",
+        "## Location\n\nSan Francisco; Palo Alto"
+      ],
+      "sourceSha256": "afa9ebbc034226c20f951fd3ed79951b6cf3bffbaaa081d31e74ea68ee97b8f9",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/08f1a218-bdff-4cdd-aefe-0d55529b1ece/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/08f1a218-bdff-4cdd-aefe-0d55529b1ece",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Associate Product Marketing Manager",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "271d8b9a8a1cf71cfc61c1be3353e710dfdfbca7a3fa3e0fe7145940cda4ce81",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/e0e8188a-9c92-4795-82a5-7384f1b25bc7/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/e0e8188a-9c92-4795-82a5-7384f1b25bc7",
+      "location": "San Francisco; Austin; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6c30020fa2a133f1cb43e0a4cbea1d7b6228a98eb87f570ac263314c0cacb5f1",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/b349ec0e-be02-47b0-8595-8de0dbb074c5/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/b349ec0e-be02-47b0-8595-8de0dbb074c5",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Growth Manager, Enterprise Lifecycle",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "c7392e90949662f5166c9f439514aae4374b8771792a45ca2478af9dfa9ac5c1",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/d5bc2302-202f-4596-9c4d-8720d1e79064/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/d5bc2302-202f-4596-9c4d-8720d1e79064",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "19e47a3ea4ad58a99c29d037623811556b309d9916a34d4736937409e2f7d41b",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/b404e73c-5aff-4151-a1a8-6593fb6ccabf/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/b404e73c-5aff-4151-a1a8-6593fb6ccabf",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Storage Platform)",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "56d10c661b90070c56299648114281b9c3e75d28edaa8968637829109a0da8d2",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/affd3040-91e4-4e0c-bd2f-4b022c613f91/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/affd3040-91e4-4e0c-bd2f-4b022c613f91",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (ML Engineer, Recommendations & User Modeling)",
+        "## Location\n\nSan Francisco; Palo Alto"
+      ],
+      "sourceSha256": "d39c49b75ab7845b112e375f59f16f8d41af1c382ea5a3af230fcd22bbc8bc75",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/04d73be4-8a69-4e62-9b0d-e9b7968cf860/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/04d73be4-8a69-4e62-9b0d-e9b7968cf860",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "573887fee139cb2ebec68335b4a90bf478e41fad98459aff3e897fa41d342d85",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/09a2f0e5-c38c-49ee-a5af-9a179e137a44/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/09a2f0e5-c38c-49ee-a5af-9a179e137a44",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3b1bd96dbfebd5147e842d59d364f065f284c12a185b6db0c3a46f15d4dfdac0",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/759fc651-210a-48d5-8a9c-7f7789e20ab1/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/759fc651-210a-48d5-8a9c-7f7789e20ab1",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "963903df4db5e19c06e80edeab6f7e2feaf2fae1a63bbb2ac1765807712b6693",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/a5b97109-222d-49e1-b2ac-e101487a5ddd/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/a5b97109-222d-49e1-b2ac-e101487a5ddd",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "29f154b28ec7966db44a050b56213adbe05966c4eb0795f2d6f0edbdbb649028",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3c656963-876a-458d-bca6-916a42a24c1a/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3c656963-876a-458d-bca6-916a42a24c1a",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Applied AI)",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "468d06a20be908cebd08b4a4a4b3054c82210de99a32a99a97b64951bfe29524",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3c9c051f-e6ca-4a70-9abf-1f640e154ee1/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3c9c051f-e6ca-4a70-9abf-1f640e154ee1",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager, Mobile Apps",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "5eb8b091aa563370d13bd84fbe5a58576974e83ed482ec2da54d58fa821d6979",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/daafcaba-cc39-487a-b941-d7a407753788/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/daafcaba-cc39-487a-b941-d7a407753788",
+      "location": "San Francisco; New York City; Palo Alto; Seattle",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "10a352e0153d89c3d6549c06853e39713214cfaf9b324965b53f97b6e3237289",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/7f880194-7276-4b46-8a50-58b48da8882e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/7f880194-7276-4b46-8a50-58b48da8882e",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager, AI Capabilities",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "a6825e959e925daff342a7035d47884a38634d5e72d712ae162149214a156188",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/977b626c-5546-42c6-95c8-4e2350ec41c9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/977b626c-5546-42c6-95c8-4e2350ec41c9",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Governance, Risk & Compliance Analyst",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "b967e6c5cdd7efe6ff9f86a957aa4427aa797353b1a4f96463772cf60148e6e4",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/598e1f7d-b802-4de2-99ac-90eb2bc33315/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/598e1f7d-b802-4de2-99ac-90eb2bc33315",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (AI Infrastructure Engineer)",
+        "## Location\n\nSan Francisco; Palo Alto"
+      ],
+      "sourceSha256": "4f85916a12603d4f7f5ca80753a7ec5e9b7a7d8c657ae962ee24e939c747ac7c",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/5ec96ca1-319a-4b85-99ce-e06629099cf9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/5ec96ca1-319a-4b85-99ce-e06629099cf9",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4b5f6a8c1757c1a381303894ffd7ccfa795aa00b7a7502a277df6645182736d2",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/39250c5d-1670-4a63-8a66-bfd495c85e6f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/39250c5d-1670-4a63-8a66-bfd495c85e6f",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6b8bdfbce070631b7863301bec7fda9cd515842056496c352a17cfbc7f5624f1",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/229b066a-afb2-4eca-86ac-e20f38d11a19/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/229b066a-afb2-4eca-86ac-e20f38d11a19",
+      "location": "Belgrade, Serbia; Berlin; Ireland; London; Remote",
+      "workplaceType": null,
+      "evidence": [
+        "Belgrade; Berlin; Ireland; London; Remote"
+      ],
+      "sourceSha256": "9d83245e795f8f1377fe94a1c1fce19e97c9e02817c2443a8df2edae84ac3327",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Ireland"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/fdc2ea75-c198-4a9e-9c0a-df835ed61ed0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/fdc2ea75-c198-4a9e-9c0a-df835ed61ed0",
+      "location": "San Francisco; Austin; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3cbb50bdb33828ec110ae51bf737f3a12c5420b57c9f185a05ca142f7ee35b31",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/cf0c3486-3fdc-4045-aece-9459cb7d7a6d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/cf0c3486-3fdc-4045-aece-9459cb7d7a6d",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6587ab459e9bcb38c2bd2a874dc63495e9fe307862e33aaa37420e431af02901",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/94ccf41e-d3e1-41aa-9569-c3bcbffc4184/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/94ccf41e-d3e1-41aa-9569-c3bcbffc4184",
+      "location": "Belgrade, Serbia; Berlin; London",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Backend Software Engineer, Search Crawler)",
+        "## Location\n\nBelgrade; Berlin; London"
+      ],
+      "sourceSha256": "62d36da2fd627c05d733d69ea42dda57da3e6fa280bd5d4e651a5bf966b68713",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/76e72775-69db-4aea-b03b-a87d5a589f58/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/76e72775-69db-4aea-b03b-a87d5a589f58",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9e1a99608ef354b8aaaabf0d43b27e7364a5b9769611186f6d116a546dda9fe1",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/82ccb259-a9e7-4fb0-bf9a-04be588e015f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/82ccb259-a9e7-4fb0-bf9a-04be588e015f",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Business Development Manager, Enterprise",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "df3328bdd31eb65dc2b046f26beb9dc0e7f270f03d85cfe71cf72c9364bcccda",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/69fd6a56-0050-44f7-9ed2-2c3a7320908d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/69fd6a56-0050-44f7-9ed2-2c3a7320908d",
+      "location": "San Francisco; Belgrade, Serbia; London; New York City; Remote (United States)",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "301e993cdf78b1f6264cd25c865e102f9e235813edc924c09ff414b74338aab7",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/1523826c-80ca-4e32-95f2-ddd6604afd26/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/1523826c-80ca-4e32-95f2-ddd6604afd26",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Sr. Technical Sourcer",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "572e5ea3dea4a866ca16aea78c30c6900be83370a2f8e3506b564c3d0e3e51af",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/6c9b3c71-85ba-47db-bce5-44fd9fa95d03/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/6c9b3c71-85ba-47db-bce5-44fd9fa95d03",
+      "location": "San Francisco; Belgrade, Serbia; London; New York City; Remote (United States)",
+      "workplaceType": null,
+      "evidence": [
+        "San Francisco; Belgrade; London; New York City; Remote (United States)"
+      ],
+      "sourceSha256": "707816ff68d698e51f74a491ba9b7483ac5f75de42f7c28a386f7841a2d2ef97",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/883bd78f-c9cd-4ae5-afbf-b21f16f06a6f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/883bd78f-c9cd-4ae5-afbf-b21f16f06a6f",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Engineering Manager (Enterprise)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "8ea2f1e63d44aa1647ec70436038d457d519a50274b7abe327a466838e30b8d2",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3d7ef710-b1f6-4a80-af57-946f9bccd35b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3d7ef710-b1f6-4a80-af57-946f9bccd35b",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Technical Sourcer, AI",
+        "## Location\n\nSan Francisco; Palo Alto"
+      ],
+      "sourceSha256": "77342d752e9d9421643f2ad2ad1b849dd5ba32f8f8e38ae3a0140a6aa9e91280",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/19d535e2-e0f5-42b6-a995-662d69772168/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/19d535e2-e0f5-42b6-a995-662d69772168",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "75259729f030e63962cdcb0a2432c32b663391b8f1a65d20ab3ae773f7ce8b4e",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/9a570310-305d-4f4e-9807-b8862b31194b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/9a570310-305d-4f4e-9807-b8862b31194b",
+      "location": "San Francisco; Austin; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Enterprise Customer Success Manager",
+        "## Location\n\nSan Francisco; Austin; New York City"
+      ],
+      "sourceSha256": "8a82d5afcbe1503dc8e3b6dec5cecec518fc13dbcfb9f94525a441b044a56cdb",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/fa088d92-b08b-43f7-9232-275b0ae08827/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/fa088d92-b08b-43f7-9232-275b0ae08827",
+      "location": "New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager, Growth",
+        "## Location\n\nNew York City"
+      ],
+      "sourceSha256": "0b7404ce8e4c4bc64e151be0b0efd7d32a9771ffe26e9ab3b2875f229b8f3f8b",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/8fe61c73-0daf-4432-a47d-44714c1ef764/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/8fe61c73-0daf-4432-a47d-44714c1ef764",
+      "location": "San Francisco; Berlin; London; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "- Background in personalization and preference learning"
+      ],
+      "sourceSha256": "2c3a15f181346f34c4a6f486d1df756842f7b1424c548e1afa32196387f1e88c",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/5c561bd0-c180-4ee1-b079-647f3c20bdc0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/5c561bd0-c180-4ee1-b079-647f3c20bdc0",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Applied AI Engineer, Agent Capabilities)",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "ec651d6f558a6393f079c8aef58e2244b034fe3692ed79574bf2460b6484e343",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3f800e42-7c48-4f9a-9b12-43ee23e52516/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3f800e42-7c48-4f9a-9b12-43ee23e52516",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, API Platform)",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "1b3c5ba1d6b95eabbb781f1ef44615a1573fce9768c4c546917376415a4c2c7e",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/60deb376-51b5-46c6-9e17-55377a5ef34e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/60deb376-51b5-46c6-9e17-55377a5ef34e",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "21cd5a3d5e247c700469fb6b47618d5cb6994e062d125a331008c967261a3150",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/cf99602c-3f06-4443-bc8a-e03d0a67ad4c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/cf99602c-3f06-4443-bc8a-e03d0a67ad4c",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1cc51d950311fbd4e8e8755661f8ffd140fe1721cebc937b40e0590a0bd33b98",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/2e73bc78-684c-47c5-95df-e9973a10e0b6/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/2e73bc78-684c-47c5-95df-e9973a10e0b6",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Data Platform)",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "e1e814f5f1f3d5657854405ef8989e6a18830d5aba663c5ea7c2cb62882ba780",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/27aa1a14-bc59-4613-a65a-38598695076f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/27aa1a14-bc59-4613-a65a-38598695076f",
+      "location": "Belgrade, Serbia; Berlin; London",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Search Engine Developer, Search Core)",
+        "## Location\n\nBelgrade; Berlin; London"
+      ],
+      "sourceSha256": "df799b2a71d7398adc55286bb9a5b1abdae00c50d7c9a046be46790bd9c8b1ac",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/c6c857f3-c0db-4d93-aeed-638b9f9d4eb6/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/c6c857f3-c0db-4d93-aeed-638b9f9d4eb6",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": [
+        "**Location: London, United Kingdom (Hybrid)**"
+      ],
+      "sourceSha256": "05437c2aafba4a646b335a5e1d92903ab2ec90c1d8b80129fd6a798a127e67fb",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+      "location": "Belgrade, Serbia",
+      "workplaceType": null,
+      "evidence": [
+        "Internship program: 12 - 24 weeks, full-time, part-time, in-person in the Belgrade office."
+      ],
+      "sourceSha256": "9bc50d6f750d0cc5937c69dbd84d69dd1805af47a85ec2917f5509303041169c",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/d38e4b28-6ced-46b0-bb58-37ba49776e77/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/d38e4b28-6ced-46b0-bb58-37ba49776e77",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "b06aa69141a045f608f99ed07519d445c28300cadad877b08ecb1e27f7134d32",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/0c5d5a82-bfed-4786-b411-79073979af07/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/0c5d5a82-bfed-4786-b411-79073979af07",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (TPM, Inference)",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "47a1737ac76426811d6af037e808b02191ffba761fb57223fb18094c43fa1238",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/be94e89b-89d5-4f2a-a58b-7929c8d97f92/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/be94e89b-89d5-4f2a-a58b-7929c8d97f92",
+      "location": "Belgrade, Serbia",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "b94416ad7e8fff8dfdbf1806dc262c4328cc9f108fdd6ab2d23e0adb5131b38a",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/5a4cec8b-5688-497c-a5ec-884f75d09511/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/5a4cec8b-5688-497c-a5ec-884f75d09511",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (New Grad)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "22d22206fd3f2d5818fff3f2c11466967453e078e533f0abdf44ae89cf109e84",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/f4d81f6b-958c-4bc0-a9aa-9850c3508ca9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/f4d81f6b-958c-4bc0-a9aa-9850c3508ca9",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "fd2ec13e62a88c3555a670dd782dd40b997fbcd93a16156eecd18ac5258be2b0",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/32a36cae-ad73-4198-9354-a72b141ff055/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/32a36cae-ad73-4198-9354-a72b141ff055",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Secure Intelligence Institute)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "d7960dc6d6505c3f814a10e21e8a9932cc47cec0520b176bad97efab3da8e656",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/fed8d2c4-9c82-43ad-a168-434146c759ff/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/fed8d2c4-9c82-43ad-a168-434146c759ff",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Data Staff (Analytics Engineer)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "6267620d3b1fa9c876d21049aafef8259704814ab56b571ba1b135337b7386ed",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/03f8f956-1cb3-4945-81d1-73b7ff048d4e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/03f8f956-1cb3-4945-81d1-73b7ff048d4e",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "db5a5e58365300043fbd4d0d451894028ac3dc100295491ed8664f1fa5d3bb27",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/7795683f-6c5f-40cd-af2d-51294edddd4b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/7795683f-6c5f-40cd-af2d-51294edddd4b",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Backend Platform)",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "3975dd448e690ca1bae389d196b2ea83eb551eb14e8319d94e707b3add107285",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/6eedd99c-ff6a-470b-a7cc-3303e1c0b7fc/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/6eedd99c-ff6a-470b-a7cc-3303e1c0b7fc",
+      "location": "San Francisco; Austin; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3384645ca57ed8bdada137d5937ca1d27d5b589e6224e840cd256784a6cef23a",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/c5dcc0db-7fdc-4e09-86c7-b6618400df16/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/c5dcc0db-7fdc-4e09-86c7-b6618400df16",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "e0712989a1b63e9e4abf7f6d2abdd31727973744b29449d1a1d53011e6f7dc31",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/f05bd47b-bed8-4f00-9d9c-026c72578e82/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/f05bd47b-bed8-4f00-9d9c-026c72578e82",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "906999347d1409727a4db54e2f25bb6ba917d137caf4b55f4889d76821d1f543",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/38caef61-f8b9-4ba9-a640-870a1e77ba54/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/38caef61-f8b9-4ba9-a640-870a1e77ba54",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "91e44cb2526bc87009677aa447929be79ba3a33e291b739c5120786fb347a86c",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/8a976851-9bef-4b07-8d36-567fa9540aef/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/8a976851-9bef-4b07-8d36-567fa9540aef",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (AI Inference Engineer)",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "65b66aabbcb08c2451cf8ef2216ef08f71a2fa2324d8b18abc7413c423b99539",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/5080dab5-7eb7-4cb2-9e2c-c61531fd3ad1/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/5080dab5-7eb7-4cb2-9e2c-c61531fd3ad1",
+      "location": "San Francisco; Remote (United States)",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "51678e321900acfda6adda1ff4db8438f69f6b6ca6100eebe52087b31eac3669",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/8f2873af-9149-4037-a36f-2dda73cee1a0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/8f2873af-9149-4037-a36f-2dda73cee1a0",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Internal Communications Manager",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "75d81f4af85ac1af090d983d0e5eeb61d72a1520c952b7f41c2a421dc0878fe4",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/ef269656-94ef-463a-ae0e-6102ca3a94dd/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/ef269656-94ef-463a-ae0e-6102ca3a94dd",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Technical Recruiter, AI",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "a84319fd832dfba60d85fb5a1022df9c993f76c3271dbdb1f6b7c157899a2747",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/7ae341c4-411e-468c-bc26-bbdd8e55d388/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/7ae341c4-411e-468c-bc26-bbdd8e55d388",
+      "location": "New York City; Remote (United States); San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "New York City; Remote (United States); San Francisco"
+      ],
+      "sourceSha256": "403cc98dd4d5e45310a24afea2e20c8be6e2890924dd7a19250ceb24a4f32e05",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/ab076e26-adf1-414f-a006-7b1bdc9247c8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/ab076e26-adf1-414f-a006-7b1bdc9247c8",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Perplexity Research Fellowship",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "e68f1867b8c3e6f1406d6d08b82ac0a6043b5d518721912f07f10f8b288f8bf3",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/2c6ae16b-d03e-4e33-9d32-362c5388e956/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/2c6ae16b-d03e-4e33-9d32-362c5388e956",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "20f10dae20a2377dd4ddd50fc5053a987389ebf710db6e1121592dd5031f5f76",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/ea87532c-69a0-497d-9cf3-04cc2a6c6410/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/ea87532c-69a0-497d-9cf3-04cc2a6c6410",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Integrations)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "0a0e185898b983e4babdce7de39bfd354b4b795f4963337919dbd791de69ebb1",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/a8c79425-eb48-40e0-8557-93460fa67097/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/a8c79425-eb48-40e0-8557-93460fa67097",
+      "location": "New York City; San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager, Platform",
+        "## Location\n\nNew York City; San Francisco"
+      ],
+      "sourceSha256": "c849ab29fbdff58034353e5af2dfa6d9f8c17f2b4cf3000bc321bf5aa974b481",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/678d1162-e650-4d6d-9532-b287255c00fb/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/678d1162-e650-4d6d-9532-b287255c00fb",
+      "location": "New York City; Remote (United States); San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "New York City; Remote (United States); San Francisco"
+      ],
+      "sourceSha256": "3acdb0824c3ff4d922100a6ba16e5da9dc716440153d331a53630244612bfa79",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/6f3c5131-2efa-400c-8248-44203a4dbfbb/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/6f3c5131-2efa-400c-8248-44203a4dbfbb",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager, Core Experience",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "4b84ecb05823f28ce5b9e19fb6b58d05481a302ddd06919641a015166e845b0a",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/daa9120e-94ff-46e0-b4bd-4d2d290cb409/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/daa9120e-94ff-46e0-b4bd-4d2d290cb409",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff, AI Products (Early Career - Industry)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "9964a8b4680aff918def245440eb09c32fdb80e1d1b35852cd42c8c10a0e1d72",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/ebd5d9b3-39c4-498b-85a6-2f565e001d7e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/ebd5d9b3-39c4-498b-85a6-2f565e001d7e",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Senior Editor",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "e3c5de436461f5df732420a675f355a93fc8ad0d7b76eadaa2af2810ab7b6f2d",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/25fb9e90-e164-4a50-b35f-535572f35a30/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/25fb9e90-e164-4a50-b35f-535572f35a30",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Principal Counsel, Corporate",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "d15c60682e0a937e9c707b7ef72c92897eea0214c6dfe8c29ec66a2a4f060392",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/e4777627-ff8f-4257-8612-3a016bb58592/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/e4777627-ff8f-4257-8612-3a016bb58592",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (AI Inference Engineer)",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "02b57ea657bf19a4b11bc123323f6a5745f2e72c271a1ccdfcd9dd19eeca3059",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3163a2c9-f9d3-4596-bf88-0c55298bd027/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3163a2c9-f9d3-4596-bf88-0c55298bd027",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6ea7daf3efa156eb264edc46ce13eb771445d98c51169d4c0165f977187a7564",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/971c4e14-6a13-4cd3-a473-015e29541a15/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/971c4e14-6a13-4cd3-a473-015e29541a15",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d0db8faa296e406ff10324faaf2d1171eebea03e673f0db969d18ac665d91ded",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/76c9b39f-aecc-4247-b5f5-ebcd02dff7c3/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/76c9b39f-aecc-4247-b5f5-ebcd02dff7c3",
+      "location": "San Francisco; Austin; Berlin; London; New York City; Seattle; Toronto",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "c3355ee0a112b3590db11a4da821535f4879f6e0847401bf713597bc32dd2b2d",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/9e3a4516-b893-4579-9a6a-3720658e4b6d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/9e3a4516-b893-4579-9a6a-3720658e4b6d",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "75a81b12842049b33bd03c9f23b8db868d073562cf20bfca4038681f8bc3cff6",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/74a5eaeb-0a4b-412b-ac3a-ad73403b3fb7/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/74a5eaeb-0a4b-412b-ac3a-ad73403b3fb7",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "efac807d3a931f4d735bfd7908232b706bb8fb1f8599a2f3f2775f7bacd36c43",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/fd64d88c-823e-4329-b133-f09754e0f4b8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/fd64d88c-823e-4329-b133-f09754e0f4b8",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "70cba32bec23fc8e0559d18e6d39e26d6a93f45e0359bdf8811662242999b3a6",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/f45ba174-7e99-4743-9d19-6e4d3e196458/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/f45ba174-7e99-4743-9d19-6e4d3e196458",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Acceleration)",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "5ce180c247dda02d2dec8401353b5ec8851bd55aa75f89b571b698011d6743f8",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/5551fd7b-9ede-460e-9b38-4328c476a521/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/5551fd7b-9ede-460e-9b38-4328c476a521",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "670644767b346d07f36420929b5549f74c6f5084ebeeb9a8421b3e09d3afe795",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/18509f15-ab49-450d-8a01-4b280e464ad0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/18509f15-ab49-450d-8a01-4b280e464ad0",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "500291c91c0811286bfbedd1b37af92d07a9332eba39cbbf61312d2e420f684a",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/f25e190e-0508-4707-b575-fcaed358dc13/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/f25e190e-0508-4707-b575-fcaed358dc13",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager (Builder)",
+        "## Location\n\nSan Francisco; Palo Alto"
+      ],
+      "sourceSha256": "5ce999e533f245886a94dd16a4f7514520fe11f6080066eb8a8903ee52dbf390",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/1a3df802-9238-4827-ab1f-12a9d1e4b81c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/1a3df802-9238-4827-ab1f-12a9d1e4b81c",
+      "location": "Berlin",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Machine Learning Research Engineer)",
+        "## Location\n\nBerlin"
+      ],
+      "sourceSha256": "f28232dd91a042236237ab88ae2a2607b3352e0172851709b32d18ef5cc1e2f4",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/4c0ac8bb-55bf-4fb0-b7d7-36d69f55e6c8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/4c0ac8bb-55bf-4fb0-b7d7-36d69f55e6c8",
+      "location": "San Francisco; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Computer)",
+        "## Location\n\nSan Francisco; New York City; Palo Alto"
+      ],
+      "sourceSha256": "d1587153542c919bde2b26d94bda38b17c58bc05781e4de9dce59fb61a31d61d",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/8ede25ea-9212-4007-bb99-feae4d1a3014/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/8ede25ea-9212-4007-bb99-feae4d1a3014",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2baa02557934ab2cc20e00920fa7ec479c22aa8939683e3ccbb84227ddb627ae",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/441daa65-5fd9-499d-91ac-acecdc1952d2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/441daa65-5fd9-499d-91ac-acecdc1952d2",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "495db29b4ada03e6eedb1bc1f8aca16613406177c3a8e0accf930bc4282d3879",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/4d8f7e23-8c80-4bd8-ad27-3f40cf17197b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/4d8f7e23-8c80-4bd8-ad27-3f40cf17197b",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "26f6be2b84494ac751764a65a6ce64aa655df22fb0f97421adc8101fc597e142",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/6e328b72-9f57-49e0-a1a8-4428abf8ff81/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/6e328b72-9f57-49e0-a1a8-4428abf8ff81",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Multimodal)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "3738d6a9693fb9deb8c31fe9cb8c91b422e26860584c00d33aba5a8adff4f33c",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/d7e05546-4d42-4f1a-8ccd-c95d2519f5f6/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/d7e05546-4d42-4f1a-8ccd-c95d2519f5f6",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f46fdabc5a0b500ad346107adf1cd8c938c8f3435d9a4d7c40c59b7ef2f2780a",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/182ab2ec-6fb1-409b-a2dc-63c7832b0a13/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/182ab2ec-6fb1-409b-a2dc-63c7832b0a13",
+      "location": "New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Product Manager, SMB Growth",
+        "## Location\n\nNew York City"
+      ],
+      "sourceSha256": "3b9c5d5175c8f8e0ea0cf4048326f495589d0eaf2d0670755b651d856fb9eb7a",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/846e6848-dfb5-4f60-ac5d-5803f6a5e73d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/846e6848-dfb5-4f60-ac5d-5803f6a5e73d",
+      "location": "Washington, DC",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "ca29a48c9513c438b8a29fcc27d45963ffdbafd9c89fc48ae785cf8d22d5b7b1",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3b349a2f-360e-44e6-a57d-6a87bc3016a7/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3b349a2f-360e-44e6-a57d-6a87bc3016a7",
+      "location": "Belgrade, Serbia; Berlin; London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "78af4a10116c0ae5874f681e2626aa8a8031c5978048a9a137229b4c2b8db6bf",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/2be717cb-ad3e-4052-a464-79b107a70406/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/2be717cb-ad3e-4052-a464-79b107a70406",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "03258a6bed14b0f6ed0738bfe552caf6d21752fb905baf20c254a2b49af431c2",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/fbbd496b-1d14-4396-b31d-38fbea0dc666/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/fbbd496b-1d14-4396-b31d-38fbea0dc666",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Design Engineer, Growth & Marketing",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "6143f6edd8488ba95bd16567891b2726581a19033c4d63c110e045cb572b215c",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/acd466ba-536f-49da-968a-15b8c53298f8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/acd466ba-536f-49da-968a-15b8c53298f8",
+      "location": "San Francisco; Austin; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "95dc89d9b452f624e03e45d4669805d8a388d7107577a6559638a5f5d991e288",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/fb1815de-07d9-4933-8746-979dbcb00870/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/fb1815de-07d9-4933-8746-979dbcb00870",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# AI Strategist, Legal",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "08c87baa5c603c0aafc96e8777f71ffa386ab7c210d31e35577053601e8245aa",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/a14c4626-ed07-4151-a923-3a710fb66de2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/a14c4626-ed07-4151-a923-3a710fb66de2",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Data Staff (Data Acceleration)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "0cc77e6c3fcf7f187d806f37c10b5e01f43ec6e2374fca4debbfd2cdc1cc9f97",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/e7ab0be5-68ba-4a2c-abb1-ee33886d955d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/e7ab0be5-68ba-4a2c-abb1-ee33886d955d",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Computer Growth)",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "c353dbb0e27bbb70251dd12ec58e934c7609f88bcff09ffbc71011de4cebe0ac",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/739411fa-6580-4c8b-9960-035d5fa3c00e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/739411fa-6580-4c8b-9960-035d5fa3c00e",
+      "location": "Belgrade, Serbia; Berlin; London",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Search Core DevOps Engineer)",
+        "## Location\n\nBelgrade; Berlin; London"
+      ],
+      "sourceSha256": "ca884009bcd74748568e59dad54c0133cff010f48abe28031c02210e49547894",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/9740bc68-7297-4d69-ae54-3be81ae3745a/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/9740bc68-7297-4d69-ae54-3be81ae3745a",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "357a0c3d912c9b956dd5cbae16c30f6f00a1a80469cf652a820ae23ccee71b60",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/ea29039d-3900-43d3-a555-ff790677cbe9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/ea29039d-3900-43d3-a555-ff790677cbe9",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Director, Litigation",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "e9429b1a2aa81645dbe05d7b8046f633f0baa73dc52c029ad6fe6d791d8c6931",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/31dfcb60-a0df-4983-b3a4-d653cdc0aa8f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/31dfcb60-a0df-4983-b3a4-d653cdc0aa8f",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "de8aaca9c7a726f89e8ed9fa5e083ce7794f32d0f98b05d93a07a881df45a837",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/7755eb0a-0f51-4286-b75e-591e44c741bc/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/7755eb0a-0f51-4286-b75e-591e44c741bc",
+      "location": "San Francisco; Palo Alto",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "96d967ed645f214024e934800be3c004615830af748cada053ca1e64b77d88f6",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/b00cbb00-f672-4909-a7be-bbd02c7d7b5f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/b00cbb00-f672-4909-a7be-bbd02c7d7b5f",
+      "location": "San Francisco; Belgrade, Serbia; New York City; Remote (United States)",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "89042cec8770aa8920dbe762aefa5ebb62436c5be63db5248c613d793631cfb3",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/71168628-1998-47d3-87a9-be7bc56a430d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/71168628-1998-47d3-87a9-be7bc56a430d",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": [
+        "Internship program: 12 - 24 weeks, full-time, in-person in the **London** office."
+      ],
+      "sourceSha256": "1fd2562b9a570851a9933d896eb885e8eacd2d2ea6ae78fe3cb3c042eefae70d",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/0190699f-010b-44f2-8399-278899fef018/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/0190699f-010b-44f2-8399-278899fef018",
+      "location": "Belgrade, Serbia; Berlin; London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2f20ecb26e1bbf945e4a9cd7057f1b738b1e9aa2706f7014a5c4fc9a40918b5d",
+      "note": "Location Type listing metadata corroborated by posting body. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/a172ada5-1a6e-4646-8e0d-26747422af24/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/a172ada5-1a6e-4646-8e0d-26747422af24",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (AI Software Engineer, Agents)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "7035c4c78cfdd941b965ccefd86457c9818eacafdaf029028abe125dc2adb671",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/6754c9cc-89c2-4d7f-b966-66de6e8cac4b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/6754c9cc-89c2-4d7f-b966-66de6e8cac4b",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2e86663671e022ed9ab5819b6c4f89a68e4b4f46f5bccc02683e6b6a8b2364b7",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/0d722589-0f8c-4500-ae79-d3bba5c8a0ea/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/0d722589-0f8c-4500-ae79-d3bba5c8a0ea",
+      "location": "San Francisco; Belgrade, Serbia; Berlin; London; New York City; Palo Alto",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Cloud Infrastructure)",
+        "## Location\n\nSan Francisco; Belgrade; Berlin; London; New York City; Palo Alto"
+      ],
+      "sourceSha256": "84429d3706f0cb4ecd1f52768f1a8a45c29744adfde0e694af78ca2798279254",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "8c0e6248-0a2b-8166-9f11-1bb0152630fb",
+          "label": "Palo Alto, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Palo Alto, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/043d6a58-87a1-4e3c-bf47-4dc351b94cf4/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/043d6a58-87a1-4e3c-bf47-4dc351b94cf4",
+      "location": "San Francisco; New York City",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Monetization)",
+        "## Location\n\nSan Francisco; New York City"
+      ],
+      "sourceSha256": "baefaf03198cb8cdc7520d0ab0758f037bb7fbd5f994f9641f971e498d1f4d9a",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/d680e788-14d3-43f6-8ce8-5df486ca32d0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/d680e788-14d3-43f6-8ce8-5df486ca32d0",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "c91c94e0682e8a8558a30d894c4a93dd59c3c7c74cf8c827d48166cbb21f9c56",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/19d8bcfd-e493-4b3a-b8fd-11a2a6502da2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/19d8bcfd-e493-4b3a-b8fd-11a2a6502da2",
+      "location": "Belgrade, Serbia; London",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Machine Learning Engineer, Ranking Quality - Search)",
+        "## Location\n\nBelgrade; London"
+      ],
+      "sourceSha256": "83f4605dfae990d49beeb381ce20c841137c01d47ee33d532e885e53b8cc14ca",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/d0b3d839-a0bf-43cc-a19f-d1c2627bef1b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/d0b3d839-a0bf-43cc-a19f-d1c2627bef1b",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Sr. Technical Recruiter",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "dba859798e66c5e409cc4b66b92b6acc35fb5e1e5df618e1676dac61ceebcd19",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/4fba58de-a168-4948-9d82-a7d4b38f45f2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/4fba58de-a168-4948-9d82-a7d4b38f45f2",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Applied AI Architect, Perplexity Computer",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "194800de14cd400a6c8f9f4e689d77de7bb159c97deefd4fb3441ba6912f1691",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/3077e11d-8008-4980-a901-84d8b7993bc9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/3077e11d-8008-4980-a901-84d8b7993bc9",
+      "location": "New York City",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "65d3fbf73ef3099599c58c66e8e0e24f5754508564d2b29367d6a1a115f67683",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/9ce0fef8-7ead-4c0d-a71e-433bdd5b4d82/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/9ce0fef8-7ead-4c0d-a71e-433bdd5b4d82",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d4ddff17bf08f88647db27b8e9bb50a7cebf9636c3bed2f0c4e2543fd3dea248",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/39d520eb-6b81-4b61-8b23-5efcdac4cad9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/39d520eb-6b81-4b61-8b23-5efcdac4cad9",
+      "location": "New York City; Remote (United States); San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "b3b2c1d4d82f92a10a97228c63581161190e4eb28193cc3f67cac020b09250c0",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/656b4b2e-5670-411c-9091-f355983a92a0/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/656b4b2e-5670-411c-9091-f355983a92a0",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": [
+        "# Engineering Manager (TLM, Agents)",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "11f4cbf0cbede04ac3ca0b1f1748da0a956e7e5fdb6901abc51500721729ecd0",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/78675022-c4a7-41d2-9259-7c59be4de93c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/78675022-c4a7-41d2-9259-7c59be4de93c",
+      "location": "San Francisco; New York City; Seattle",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "83e9079a84d6ef39eb960d430d30f0f396a5de9a1162c9f6b9ee48de553b5cda",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/dd9c7675-1369-4320-afdb-c8caef22ce3a/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/dd9c7675-1369-4320-afdb-c8caef22ce3a",
+      "location": "San Francisco; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1aed35d382b760850a7b79baef5983061e61833118ecbdd217f976c0551f7c98",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/2df92d4a-48eb-422f-af9c-4a963fd6135c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/2df92d4a-48eb-422f-af9c-4a963fd6135c",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ae11430c6e3954fef551825b8172bd8efdb5644b790ab315b0e9f7eee2a3cd2e",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/89750227-f7fe-4e9f-bcdd-eada353163fd/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/89750227-f7fe-4e9f-bcdd-eada353163fd",
+      "location": "Belgrade, Serbia; Berlin; London; Remote",
+      "workplaceType": null,
+      "evidence": [
+        "Belgrade; Berlin; London; Remote"
+      ],
+      "sourceSha256": "2c9a8f3810f127d0ee2d7471bf29857940e54aa06afaf6476af11c956bf4c091",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/b75db90b-ca13-4a2f-aac4-c7764b631540/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/b75db90b-ca13-4a2f-aac4-c7764b631540",
+      "location": "San Francisco; Austin; New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "76f122e0b5b66b2242e1f163394a45389ce3e03f16d8678fc491ab1ac926f8e5",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/dd80ab52-34bd-42af-aa5e-6283b7e6c194/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/dd80ab52-34bd-42af-aa5e-6283b7e6c194",
+      "location": "Belgrade, Serbia; Berlin; London",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Backend/Infrastructure Engineer, Search)",
+        "## Location\n\nBelgrade; Berlin; London"
+      ],
+      "sourceSha256": "6bb858d86df5b7f5b1b5e7a040de363c07f175b011ff98d0965d73503cd3359f",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence. Normalized variant spellings to canonical shared labels.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "57c506f2-00db-8095-96b7-9c3fe71b5848",
+          "label": "Belgrade, Serbia",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Belgrade, Serbia"
+        },
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/2c5fdd71-472a-4c62-bc53-deafb66e7941/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/2c5fdd71-472a-4c62-bc53-deafb66e7941",
+      "location": "San Francisco; New York City; Seattle",
+      "workplaceType": null,
+      "evidence": [
+        "# Member of Technical Staff (Software Engineer, Enterprise AI Products)",
+        "## Location\n\nSan Francisco; New York City; Seattle"
+      ],
+      "sourceSha256": "228631de036f94e3f08e6fcd3a557b4830d3c10390740f9f73624ae31b827297",
+      "note": "No explicit role-specific workplace arrangement established; city/location header alone is not arrangement evidence.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c",
+      "location": "Berlin",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d3ecca7b2ee0554184a4f36d16435d1e48b92f73b2c37c6ebc1c437c09d7e128",
+      "note": "Location Type listing metadata corroborated by posting body.",
+      "qualifier": null,
+      "locations": [
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        }
+      ]
+    }
+  ]
+}

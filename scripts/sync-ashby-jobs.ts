@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 import { sanitizeJobMarkdown } from "./lib/job-markdown";
 import { sanitizeLocation } from "./lib/job-location";
+import { getReviewedJobLocations } from "./lib/reviewed-job-locations";
 
 const slug = process.argv[2] ?? "parallel";
 // Board slug and profile slug can differ.
@@ -161,6 +162,10 @@ function structuredFields(job: AshbyJob) {
 }
 
 async function main() {
+  if (await getReviewedJobLocations(profileSlug))
+    throw new Error(
+      `${profileSlug} has source-reviewed job locations. ATS-only sync is blocked; run a fresh full careers audit instead.`,
+    );
   if (profileSlug === "cursor")
     throw new Error(
       "Cursor careers headers and bodies disagree with Ashby workplace flags. Use a fresh full Ketch careers audit and repair-cursor-remote-locations.ts; ATS-only Cursor sync is intentionally blocked.",

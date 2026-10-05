@@ -1,0 +1,315 @@
+{
+  "companySlug": "kernel",
+  "verifiedAt": "2026-10-05T05:46:08.932967+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/b6fa4e1c-ec90-441e-afa1-1abd70ef4700",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/b6fa4e1c-ec90-441e-afa1-1abd70ef4700",
+      "location": "San Francisco | Cincinnati | New York | Seattle",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# DevRel Engineer",
+        "## Location\n\nSan Francisco; Cincinnati; New York; Seattle",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "a4df4991e8799391b0a6c5ae15ba01d6bbce0a476d1da49cc0d9ef817e5ab79d",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/fa10ef43-2df3-41ff-83ff-2f793117ccf7",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/fa10ef43-2df3-41ff-83ff-2f793117ccf7",
+      "location": "San Francisco | Cincinnati | New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Solutions Engineer",
+        "## Location\n\nSan Francisco; Cincinnati; New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "5dc45aa8e805d48008caa0b5d0b3c5a8cf9d5ee9cddee9741daca317ee1820eb",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/eefe949b-7bd6-4983-b21e-d8549c46c0ce",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel",
+      "location": "San Francisco | New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "[**Account Executive**",
+        "Sales • San Francisco; New York • Full time • On-site"
+      ],
+      "sourceSha256": "c11338e0d77d307ae52764388631c2a7ff7fec301f45cc36a3cd3227e02f953d",
+      "note": "Individual body omits a location section; geography and On-site come from the canonical board listing header for this exact posting. Full body read for role constraints.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/a4b11f7d-c748-4af7-9682-77f7ff297a9b",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/a4b11f7d-c748-4af7-9682-77f7ff297a9b",
+      "location": "San Francisco | Cincinnati | New York | Seattle",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Infrastructure Engineer",
+        "## Location\n\nSan Francisco; Cincinnati; New York; Seattle",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "91129022111fc0d57fd6d619b18efe1882ff2b2f367bb87f846add8c2efb5cac",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/de8e7bf8-9ce7-4c4f-9d25-a9ceb831f4b1",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/de8e7bf8-9ce7-4c4f-9d25-a9ceb831f4b1",
+      "location": "San Francisco | Cincinnati | New York | Seattle",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Product Engineer",
+        "## Location\n\nSan Francisco; Cincinnati; New York; Seattle",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "331e84d444dfe130e0784477cd933d55005349a5f6d5067e0df4e95f7ce2fd99",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/5a4e70ee-666c-4cd0-affb-701b186e1aa8",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/5a4e70ee-666c-4cd0-affb-701b186e1aa8",
+      "location": "San Francisco | Cincinnati | New York | Seattle",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Developer Advocate",
+        "## Location\n\nSan Francisco; Cincinnati; New York; Seattle",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "fb1db1c598dd75d6f27bde25c0b9acfecc3ba2cb206a0387188221dbf09ecbd4",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/516dde72-d6fc-477e-a20e-19c01e1f7656",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/516dde72-d6fc-477e-a20e-19c01e1f7656",
+      "location": "San Francisco | New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Technical Content Engineer",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "176f5eb52c7f799b0a5bd05725b0114b31507c1065c2315ad7dae9a4a1d98b75",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/usekernel/2867232b-94ba-4785-bac9-acfc705bc52d",
+      "sourceUrl": "https://jobs.ashbyhq.com/usekernel/2867232b-94ba-4785-bac9-acfc705bc52d",
+      "location": "San Francisco | Cincinnati | New York | Seattle",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Browser Security Engineer",
+        "## Location\n\nSan Francisco; Cincinnati; New York; Seattle",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "2c42f51fbeac16e2d7133e73ddacaa055a9cab26f9d6a4aa0bb354b01a501520",
+      "note": "Explicit Location Type On-site on the individual posting; geography from the same posting header.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "da4f421b-a330-86d3-950c-628dc58a3ea1",
+          "label": "Cincinnati, OH",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Cincinnati, OH"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    }
+  ]
+}

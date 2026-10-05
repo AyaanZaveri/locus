@@ -1,0 +1,168 @@
+{
+  "companySlug": "browserbase",
+  "verifiedAt": "2026-10-05T05:51:13.561560+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/7724fbe3-6a27-4418-9705-2dcc40751a16",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/7724fbe3-6a27-4418-9705-2dcc40751a16",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer (Agent Platform)",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "2bd727065718a8c5bd64819324b1de3bd8b749d3c2d591c81192a8bf6d3f2e8a",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/da147914-cd4e-4451-811e-8687f26a2ce9",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/da147914-cd4e-4451-811e-8687f26a2ce9",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "ebd7bdb90f612b61dcb1db94e569bcfbb96e450e8fee6cd209393281577a4bb6",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/bcbf0fb9-2405-497b-bbc9-e09d8f7a4963",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/bcbf0fb9-2405-497b-bbc9-e09d8f7a4963",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer (Core Infrastructure)",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "27860919e450fc0fe845be51b7dedd84dd4d0b8ed9c60b58371f8756a90860b4",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/be6c011e-9bb1-4be0-93c2-ed615ef070d8",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/be6c011e-9bb1-4be0-93c2-ed615ef070d8",
+      "location": "San Francisco; New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer (Dashboard) - San Francisco",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "4993d591550cb4ced9a616e921ffa29172aebfabed1eeff14ba4d433ab2afed7",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/583115ff-0422-4d66-b60b-1ca3a0a7f732",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/583115ff-0422-4d66-b60b-1ca3a0a7f732",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Technical Customer Success Manager (TCSM)",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site",
+        "We are fully in office 5 days a week in downtown San Francisco. We have a hard working, collaborative culture, and we’re energized by the prospect of Browserbase powering the largest AI applications."
+      ],
+      "sourceSha256": "1d91cfda45b07bf490c5c8d340a9777d53a64ba6106873ccef26c4a9e102ac42",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/9df2fe4b-0efc-40c4-9aaf-bbe3a67849c7",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/9df2fe4b-0efc-40c4-9aaf-bbe3a67849c7",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Sales Engineer",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "095d6e577798359092e93261e8a6c1e5e8b0f06819eec424f2d87758a3cd1a4f",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/browserbase/0054846b-1592-4596-8e6f-8d9a162bf62d",
+      "sourceUrl": "https://jobs.ashbyhq.com/browserbase/0054846b-1592-4596-8e6f-8d9a162bf62d",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Business Recruiter",
+        "- This role is located in San Francisco and Browserbase is in person 4 days a week."
+      ],
+      "sourceSha256": "56fcbb7ca1099dfcd1d219bf1a3495ba6fecea161d4c0ef7e5c59caa53f93400",
+      "note": "Full body read; arrangement from explicit Location Type/body requirement.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    }
+  ]
+}

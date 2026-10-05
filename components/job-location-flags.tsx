@@ -40,7 +40,7 @@ export function JobLocationFlags({
         <Avatar className={size === "details" ? "size-3" : "size-2.5"}>
           <AvatarImage
             alt=""
-            src={`https://hatscripts.github.io/circle-flags/flags/${country}.svg`}
+             src={`https://hatscripts.github.io/circle-flags/flags/${country.toLowerCase()}.svg`}
           />
           <AvatarFallback>
             <Globe aria-hidden="true" className="size-full" />

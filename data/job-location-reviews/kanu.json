@@ -1,0 +1,29 @@
+{
+  "companySlug": "kanu",
+  "verifiedAt": "2026-10-05T05:57:42.477455+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.gem.com/kanu-ai/am9icG9zdDo01b7TB2rXJMU1Dz9CUbUP",
+      "sourceUrl": "https://jobs.gem.com/kanu-ai/am9icG9zdDo01b7TB2rXJMU1Dz9CUbUP",
+      "location": "Seattle, WA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Hybrid",
+        "Seattle"
+      ],
+      "sourceSha256": "75206a5cbb073fe45449de3e94d1a2f13def31eeb55dc73b6cfa5040e9e24148",
+      "note": "Header states hybrid and Seattle.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    }
+  ]
+}

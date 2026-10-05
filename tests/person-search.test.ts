@@ -73,7 +73,7 @@ test(
   { skip: !process.env.DATABASE_URL },
   async () => {
     const db = drizzle(neon(process.env.DATABASE_URL!));
-    const source = sql`(SELECT *, '{}'::jsonb AS profile FROM (VALUES
+    const source = sql`(SELECT *, '{}'::jsonb AS profile, NULL::uuid AS headquarters_location_id FROM (VALUES
     ('vercel', 'Vercel', 'Tools', 'NYC', 'us'),
     ('zeit', 'ZEIT', 'Software', 'London', 'gb'),
     ('other', 'Other', 'Software', 'Paris', 'fr')

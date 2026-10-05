@@ -1,0 +1,115 @@
+{
+  "companySlug": "browser-use",
+  "verifiedAt": "2026-10-05T05:50:42.307788+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/ji4Im8S-founding-forward-deployed-engineer",
+      "sourceUrl": "https://www.ycombinator.com/companies/browser-use/jobs/ji4Im8S-founding-forward-deployed-engineer",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "You want to work extremely hard and be obsessed with us in person in San Francisco.",
+        "Do not apply if you want remote work, predictable hours, a narrow role, or a comfortable pace."
+      ],
+      "sourceSha256": "21ab5bd8da7bd274cb120b78aa052c56ff3d585d32b38010bcfd3e29d775febd",
+      "note": "YC posting full body reviewed; source identifies role and San Francisco location.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/jDXD9an-software-engineer",
+      "sourceUrl": "https://www.ycombinator.com/companies/browser-use/jobs/jDXD9an-software-engineer",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "San Francisco. In person. Extremely intense.",
+        "If you want remote work, predictable hours, a narrow role, or a comfortable pace, do not apply."
+      ],
+      "sourceSha256": "626fca30fa89cbfadf47f90540b27aeb115988d6cb7aa484d4311f59e90b827f",
+      "note": "YC posting full body reviewed; source identifies role and San Francisco location.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/JwGWpEP-summer-software-engineering-intern-now-and-summer-2026",
+      "sourceUrl": "https://www.ycombinator.com/companies/browser-use/jobs/JwGWpEP-summer-software-engineering-intern-now-and-summer-2026",
+      "location": "San Francisco, CA",
+      "workplaceType": null,
+      "evidence": [
+        "$6K - $16K / monthly•San Francisco, CA, US"
+      ],
+      "sourceSha256": "7d8977c99853c00bea6396543a705f7a2baa79f08c45a92b11fe4a7ae9b7789d",
+      "note": "City-only header; no arrangement specified in full posting.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/rxVZd5T-founding-engineer-ex-yc-founders-only",
+      "sourceUrl": "https://www.ycombinator.com/companies/browser-use/jobs/rxVZd5T-founding-engineer-ex-yc-founders-only",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "San Francisco. In person. Extremely intense.",
+        "If you want remote work, predictable hours, or a narrow engineering role, do not apply."
+      ],
+      "sourceSha256": "affa245d2fc8af553a54b67236d269119c46606cb48b4ff472192ef6a6b8e948",
+      "note": "YC posting full body reviewed; source identifies role and San Francisco location.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/browser-use/jobs/8BYM83A-infra-god",
+      "sourceUrl": "https://www.ycombinator.com/companies/browser-use/jobs/8BYM83A-infra-god",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "This is an extremely intense, in-person role. If you want remote work, predictable hours, or a comfortable pace, do not apply."
+      ],
+      "sourceSha256": "15b444d64a975e96708a968b872f37eb8bfcbb37c21f67b51fa4609a4abbaca2",
+      "note": "YC posting full body reviewed; source identifies role and San Francisco location.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    }
+  ]
+}

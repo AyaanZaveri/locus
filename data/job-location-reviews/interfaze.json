@@ -1,0 +1,56 @@
+{
+  "companySlug": "interfaze",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://interfaze.ai/careers/applied-ai-engineer-and-researcher",
+      "sourceUrl": "https://interfaze.ai/careers/applied-ai-engineer-and-researcher",
+      "location": "San Francisco, CA",
+      "workplaceType": "flexible",
+      "evidence": [
+        "**Location:** San Francisco, CA",
+        "Flexible and remote-friendly"
+      ],
+      "sourceSha256": "90c8d46be08d704c46d6bcaacd1662afab11243379d042cb8243dd3f484265f3",
+      "note": "Official role page reviewed in full; careers page and posting location header support the listed geography. Benefits explicitly describe remote-friendly work and flexibility; no remote geographic eligibility restriction stated.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://interfaze.ai/careers/founding-full-stack-engineer",
+      "sourceUrl": "https://interfaze.ai/careers/founding-full-stack-engineer",
+      "location": "San Francisco, CA | London, UK",
+      "workplaceType": "flexible",
+      "evidence": [
+        "**Location:** San Francisco, USA, London",
+        "Flexible and remote-friendly"
+      ],
+      "sourceSha256": "1329b36fbf7799e842416d9b71e43eb50eec873661c75845ea6cd628c908592e",
+      "note": "Official role page reviewed in full; careers page and posting location header support the listed geography. Benefits explicitly describe remote-friendly work and flexibility; no remote geographic eligibility restriction stated.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    }
+  ]
+}

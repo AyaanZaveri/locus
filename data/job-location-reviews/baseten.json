@@ -1,0 +1,4084 @@
+{
+  "companySlug": "baseten",
+  "verifiedAt": "2026-10-05T15:03:11.257388+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/d29e748c-7209-460d-a024-8f77ae0a3d4d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/d29e748c-7209-460d-a024-8f77ae0a3d4d",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Model Performance",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1cfa3a53363bee0f34c698ba22228d09befb0931dbf79dbdb98e75c32796b2bc",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/d29e748c-7209-460d-a024-8f77ae0a3d4d\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Continuous Delivery",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9fb04887421026fad53fcfc42649af8f3d091ef92c6df0c162f33f43aa22d133",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/fb886b59-fdc3-4315-a9b3-c49808bcd2ce\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/2ae59494-97a5-4344-ae34-ffa3fab364be",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/2ae59494-97a5-4344-ae34-ffa3fab364be",
+      "location": "San Francisco, CA | New York, NY | Remote",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Motion Designer (Brand Team)",
+        "## Location\n\nSan Francisco; New York; Remote",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "57b5c88c73ae48de5aab3ed1824b911258092704be1cc9b9c9ccb0a8695e41b8",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/2ae59494-97a5-4344-ae34-ffa3fab364be\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/5bf99d98-8df7-4d8e-b040-42a66c28cd67",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/5bf99d98-8df7-4d8e-b040-42a66c28cd67",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Enablement Lead",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1ff24869f72b06162cd1b6e6311771abfe022ce254136a64a89cc5df25b4f778",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/5bf99d98-8df7-4d8e-b040-42a66c28cd67\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/5a1c6228-3906-4ccc-9988-d9bd67383b9d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/5a1c6228-3906-4ccc-9988-d9bd67383b9d",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Field Productivity & Enablement Lead",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "80f7a295d49c0295e8fe59b9db55d7ee4500e11711a3b25e7ea28e460e759cb6",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/5a1c6228-3906-4ccc-9988-d9bd67383b9d\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/223f44cf-c7b8-416c-b694-e265579aa1c2",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/223f44cf-c7b8-416c-b694-e265579aa1c2",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive - Enterprise",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "451a626bfcdead546edcb605642cfe87b5b7be978a08a6045c2ecbdfcec278a7",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/223f44cf-c7b8-416c-b694-e265579aa1c2\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/2d78fdcf-53e1-45d3-a047-2aefb5ad3153",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/2d78fdcf-53e1-45d3-a047-2aefb5ad3153",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Manager, Developer Experience",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2c619cfe8f09fc1c48141e41ff192120276272d8b3e1ef4deeba90d5ffc00731",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/2d78fdcf-53e1-45d3-a047-2aefb5ad3153\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/55de4d92-fd47-4a92-a3f5-fab2624f6015",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/55de4d92-fd47-4a92-a3f5-fab2624f6015",
+      "location": "London, UK",
+      "workplaceType": null,
+      "evidence": [
+        "# Head of EMEA Sales",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "7963632119156046ccacebace15babd320d32803bce62e186c3f410d3d3ce379",
+      "note": "City-only geography with no explicit arrangement; unspecified.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/55de4d92-fd47-4a92-a3f5-fab2624f6015\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/9ed34cdb-7ee6-4060-baff-b3b610221d23",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/9ed34cdb-7ee6-4060-baff-b3b610221d23",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Office Manager",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "9fb6bfe0b6849af4d066d829e2d7a358f4f61a2170b1236428a68d082e2e5e04",
+      "note": "Explicit On-site location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/9ed34cdb-7ee6-4060-baff-b3b610221d23\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/7d9d5a1f-3834-434e-b22f-4bd62317be3c",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/7d9d5a1f-3834-434e-b22f-4bd62317be3c",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Technical Program Manager, Infrastructure",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1cb97cd406625432ababb2da773424761fdc5e7b7bd6f425e14504c061682645",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/7d9d5a1f-3834-434e-b22f-4bd62317be3c\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/90917db5-8555-4a69-91c2-3b5ddbdbdd56",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/90917db5-8555-4a69-91c2-3b5ddbdbdd56",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Executive Assistant to the Head of Marketing",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "3f6237574355a460bd04a87e012827bb8509afe92fc351f674cd1a1f5d9e8461",
+      "note": "Explicit On-site location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/90917db5-8555-4a69-91c2-3b5ddbdbdd56\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/b7fad264-bfe7-4d90-a8c7-493e7896c5c7",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/b7fad264-bfe7-4d90-a8c7-493e7896c5c7",
+      "location": "London, UK",
+      "workplaceType": null,
+      "evidence": [
+        "# Account Executive - Enterprise (London)",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "a49e9c0c43405572942c372f6755d924e21e901d773f0fa96ca9251597bb74bc",
+      "note": "City-only geography with no explicit arrangement; unspecified.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/b7fad264-bfe7-4d90-a8c7-493e7896c5c7\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/e0fa6f6c-fddb-4447-9636-43e9d5646aa6",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/e0fa6f6c-fddb-4447-9636-43e9d5646aa6",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Hyperscalers & Strategic Neoclouds Lead",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "88f5bc3138cd4b11a0133c1f0b29e241316c88cbe63f8a1ee8ab20f3497dce47",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/e0fa6f6c-fddb-4447-9636-43e9d5646aa6\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/8608bdbc-1b8b-4b69-a433-83864f151375",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/8608bdbc-1b8b-4b69-a433-83864f151375",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive - Strategic",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "8ffadc25413a06dbf4078c276e73a11de90e4e6c1aa991da7a05cd0caf9c623a",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/8608bdbc-1b8b-4b69-a433-83864f151375\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - AI Developer Productivity",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9b9ea786e981b7b97eca9004695a17bd6c80b6b4942326e577c68b7b998ab7d1",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/e71e97a8-6367-4050-b6a9-42ce62ec78f1\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/e5ea31d5-a61f-4b91-957b-b2ddb1454bfb",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/e5ea31d5-a61f-4b91-957b-b2ddb1454bfb",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Development Manager",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "398b5eef7b2cd34d904f37b244496299322c2a3c051d1298eac7d0c09b1222f9",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/e5ea31d5-a61f-4b91-957b-b2ddb1454bfb\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/ae64d1d4-7b0a-4be4-8d77-7f5ce63849a7",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/ae64d1d4-7b0a-4be4-8d77-7f5ce63849a7",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Infrastructure",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2a03bc1c9f5ee9cf28e5f3648e3534dfd94a4b69d5783f58321b20c9702d8c5b",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/ae64d1d4-7b0a-4be4-8d77-7f5ce63849a7\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c29da145-0f53-4842-9f52-32b93a5b2f43",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c29da145-0f53-4842-9f52-32b93a5b2f43",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Executive Assistant to Head of Engineering",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4279ac09ef6417250582bf6ed3ba77e0281c20e381167c6d72740777df4e08fe",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c29da145-0f53-4842-9f52-32b93a5b2f43\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/df2f0ebb-a84a-45c2-bc74-dc9589fcc1ae",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/df2f0ebb-a84a-45c2-bc74-dc9589fcc1ae",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive - AI Native",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "dcd9400be6512a34e051f59dd1ab3af9f324ef78d75a15c6347c134a9c0ae9d4",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/df2f0ebb-a84a-45c2-bc74-dc9589fcc1ae\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/74b4fde1-d4e9-4080-be05-48adf2b84f6a",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/74b4fde1-d4e9-4080-be05-48adf2b84f6a",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Capacity Manager, Programs",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "a30bc5e458ca206928006fa78f4675d3547cc18c86c8d8993675f96cd2a3df43",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/74b4fde1-d4e9-4080-be05-48adf2b84f6a\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c6e86fec-9412-4d47-b23c-19da03003364",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c6e86fec-9412-4d47-b23c-19da03003364",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Field Marketing Manager",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "e515efa399e0857706e1e88a99a78fe4cf959921b4f8aa52b44324e51cd49c12",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c6e86fec-9412-4d47-b23c-19da03003364\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/1f7d7fda-5540-4205-890b-cdbf774f0814",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/1f7d7fda-5540-4205-890b-cdbf774f0814",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - GPU Networking & Distributed Systems",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "49254b020e6526fe36dccfc5a8b3f37b56dbe46cb8321c90be9593eb4aef9b8a",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/1f7d7fda-5540-4205-890b-cdbf774f0814\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c4b0f856-102f-40df-9985-539cb48072de",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c4b0f856-102f-40df-9985-539cb48072de",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Manager, Strategic Sales",
+        "## Location\n\nLondon",
+        "Based in London and able to be in office at least 3 days per week (Tuesday to Thursday)"
+      ],
+      "sourceSha256": "6ab9aaf8fadf5fd892da65c862b0d61e518d53add0d2e2ddb124fae166c7adf3",
+      "note": "Explicit London office 3-day (Tue-Thu) requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c4b0f856-102f-40df-9985-539cb48072de\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/85ddf6dc-38ea-46df-8ab2-fe8826c92bf2",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/85ddf6dc-38ea-46df-8ab2-fe8826c92bf2",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Finance Systems Lead",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ae8777d1ca2a37c8082cf5f450166ac67d3bdc41d720d657c0f282d15eb4355f",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/85ddf6dc-38ea-46df-8ab2-fe8826c92bf2\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/40bce839-10ad-4274-a988-7cee8e0f795e",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/40bce839-10ad-4274-a988-7cee8e0f795e",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Technical Program Manager, Model Performance",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4e073f93cc30c2646745e70cbbb10afb0dbb5d72261a68da03d34e9aa6044de2",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/40bce839-10ad-4274-a988-7cee8e0f795e\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/5fdfe98f-c926-4af8-891a-79610b52ff96",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/5fdfe98f-c926-4af8-891a-79610b52ff96",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Revenue Strategy & Operations, Sr. Analyst",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "0b8fd9527271dd510c758b49ac541208c118c7f75137cfd1b4a637fe58ad8f08",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/5fdfe98f-c926-4af8-891a-79610b52ff96\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Testing Frameworks",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "a9e6f250aa8e72933355ab528dbb2a836280212215565d8825886347f5a4139d",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/78028a72-2431-4373-aaec-d6e2c9a1cc7d\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/ca54940e-83a0-458c-a384-b57cb4b7f888",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/ca54940e-83a0-458c-a384-b57cb4b7f888",
+      "location": "New York, NY | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# GTM Recruiter",
+        "## Location\n\nNew York; San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "1a22540e8ee2a7bda93aa7df3ec992a9297d4865dae6edfcf3efeffc9ed11ec5",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/ca54940e-83a0-458c-a384-b57cb4b7f888\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c8701794-bdc1-4932-bffa-a444ce57ed73",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c8701794-bdc1-4932-bffa-a444ce57ed73",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Baseten Inference Stack",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d592f410be412ff13c7449d0c6038b1e9e90ceff59a40c490a98a834b6c9de6e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c8701794-bdc1-4932-bffa-a444ce57ed73\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/dbb12091-6cee-41b7-be98-ca0106e9fc14",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/dbb12091-6cee-41b7-be98-ca0106e9fc14",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Real Estate & Workplace",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ab3373000f932575e68a483d21af0491b063e62bb2c4a5608647222ddb807a27",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/dbb12091-6cee-41b7-be98-ca0106e9fc14\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/ff008b8e-b38d-4941-b24f-9a48c970e7fb",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/ff008b8e-b38d-4941-b24f-9a48c970e7fb",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Site Reliability Engineer",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "a89fea227da09c8a2036d6bac1692710245c9018535391fc92c76b543b15cf56",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/ff008b8e-b38d-4941-b24f-9a48c970e7fb\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/e2638fb0-15c8-4109-b7ee-70df1325885d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/e2638fb0-15c8-4109-b7ee-70df1325885d",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Enterprise Platform",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "5399c60c13e20376a45b8b7ba3914bd0a85f68604148c81d0bf8d288f234b12e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/e2638fb0-15c8-4109-b7ee-70df1325885d\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/122f0319-3410-4492-9d2a-953c9c13d7ea",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/122f0319-3410-4492-9d2a-953c9c13d7ea",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# NVIDIA, OEM & Chip Providers Lead",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "05cfb90b2c3eba79deb41610b516a45437b854f7f14c6bc0414460e73670a0d1",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/122f0319-3410-4492-9d2a-953c9c13d7ea\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/fdbbf773-0857-4771-8b90-f3dfa1d8683f",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/fdbbf773-0857-4771-8b90-f3dfa1d8683f",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Development Representative - Outbound",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "15d5d537febb05c48683d2f1203f05ce422b9804411388914b7c859482fd74a1",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/fdbbf773-0857-4771-8b90-f3dfa1d8683f\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/75d7beac-0298-40fa-b206-2e0c0c08a64f",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/75d7beac-0298-40fa-b206-2e0c0c08a64f",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Model Performance Systems",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "860026ed5d344d44c71e94c8ec0ca23d5b3caa542256f30fbc7b2b53fda2f75a",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/75d7beac-0298-40fa-b206-2e0c0c08a64f\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/fc6e5f2e-eb2d-4a6c-8a51-8422e8662bde",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/fc6e5f2e-eb2d-4a6c-8a51-8422e8662bde",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Dedicated Inference",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "0313f4b6bf64ec9996ec40628e2098e731007a37c0b46cd02ee5d5b30bc241f6",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/fc6e5f2e-eb2d-4a6c-8a51-8422e8662bde\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/64181d8a-960d-4aa4-8d98-3cb22b1e0616",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/64181d8a-960d-4aa4-8d98-3cb22b1e0616",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Engineer",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "549350d347fae032a43b0cd0dcff03a3b8deaedb8ef14f22a4a3c51ef9cbd758",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/64181d8a-960d-4aa4-8d98-3cb22b1e0616\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/ee8fd565-d505-49be-861f-d16995583d5a",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/ee8fd565-d505-49be-861f-d16995583d5a",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Marketing Analytics Manager",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "e55b289b4e598cb15ecb152ad6b325d881c13d394113fecaae91ad4a49ccf461",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/ee8fd565-d505-49be-861f-d16995583d5a\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/d073254f-729c-471e-9a33-520358ead183",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/d073254f-729c-471e-9a33-520358ead183",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Billing & Internal Tooling",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "090caf8ca5cb6b511297e1f7b007064cf228b91751d21767a899dbcad60e3393",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/d073254f-729c-471e-9a33-520358ead183\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/68328a94-f785-463b-a3d7-b0dfc11839b5",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/68328a94-f785-463b-a3d7-b0dfc11839b5",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Post-Training Research Engineer",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "a1c501e0f1a158ab5a322e6b754031c78918004e13caac58faec55e7cf770bb3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/68328a94-f785-463b-a3d7-b0dfc11839b5\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/3622a1ee-50a9-4c45-af6e-aa12bd5de22f",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/3622a1ee-50a9-4c45-af6e-aa12bd5de22f",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Frontend Engineer - Dedicated Inference",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "01ba6a9aab39316c2a3327036dbaf8325730e5683c8ea6843c8e836e924ace2a",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/3622a1ee-50a9-4c45-af6e-aa12bd5de22f\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/6f947409-2bc0-491a-81b3-507cdc95df85",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/6f947409-2bc0-491a-81b3-507cdc95df85",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Training Infrastructure",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "908f60a2b5feda9855588588636a3c842f4da2c2f13454b6230a3d8254088809",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/6f947409-2bc0-491a-81b3-507cdc95df85\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/9eb05eb7-75a8-415c-8370-a10005c0d2cc",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/9eb05eb7-75a8-415c-8370-a10005c0d2cc",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Revenue Accounting Manager",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "5013ff10f19e5c61d691b24ea14afe9a8babe928b4c61d3ea952f2571bcb147b",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/9eb05eb7-75a8-415c-8370-a10005c0d2cc\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/b13ec426-d09d-4122-8112-cf25adbd7d60",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/b13ec426-d09d-4122-8112-cf25adbd7d60",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Engineer",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "670e8ff76320b0cf16856b2564c85f6dda8c8c31745cf84e33d6449c570c88dc",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/b13ec426-d09d-4122-8112-cf25adbd7d60\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/0870ed34-7365-4b9f-a50a-481783b8c266",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/0870ed34-7365-4b9f-a50a-481783b8c266",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Engineering Manager, Cloud Platform",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "40192fd469af49ab2c711a5715ab0c44282fa5053ca4b37ac65c415066a00d34",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/0870ed34-7365-4b9f-a50a-481783b8c266\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/19972142-ec0b-4049-8d8f-6a341f57f938",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/19972142-ec0b-4049-8d8f-6a341f57f938",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Identity & Authorization",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "9c9e0596702067e7d9b61952176be9497b9866ece6e95ac5ac059b35686d98e2",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/19972142-ec0b-4049-8d8f-6a341f57f938\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c9e18247-d145-486b-8ac4-3b3e3db53f10",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c9e18247-d145-486b-8ac4-3b3e3db53f10",
+      "location": "London, UK",
+      "workplaceType": null,
+      "evidence": [
+        "# Account Executive - Strategic",
+        "## Location\n\nLondon"
+      ],
+      "sourceSha256": "395eab79bc60a0411b8c1bcc64ee6466f8855baee3cd9bb5724866ff8e7ccb5d",
+      "note": "City-only geography with no explicit arrangement; unspecified.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c9e18247-d145-486b-8ac4-3b3e3db53f10\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/fc0f0182-5084-4e94-a6ac-49179ba26140",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/fc0f0182-5084-4e94-a6ac-49179ba26140",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Data Centers & Powered Land Sourcing Lead",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "76fbeb1446c63f176f47d5434a2d032fad43b2ed66b96a1b98aee0ae16289c84",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/fc0f0182-5084-4e94-a6ac-49179ba26140\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c07eb44f-b5fa-4808-90b7-03b265d97836",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c07eb44f-b5fa-4808-90b7-03b265d97836",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# IT Support / Operations Engineer",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "a28d86849f8fb7cd58af97ee1eeceec852cccd8c5364dbb7a4592a1527e2f626",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c07eb44f-b5fa-4808-90b7-03b265d97836\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/91048864-210d-497c-8b4d-440769bf8660",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/91048864-210d-497c-8b4d-440769bf8660",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Corporate Accounting Manager",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "bd7969dab48eff57b7e3937a20dafdc31a309f5e776a9b32b7853750c9ad9810",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/91048864-210d-497c-8b4d-440769bf8660\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/ddb5bc98-6116-49a2-802e-1c05398663f1",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/ddb5bc98-6116-49a2-802e-1c05398663f1",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - GPU Kernels",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "78bd7f60e69873ed242ad7ee1ef2670fd0cd9e3126fde117e32566d2dad31196",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/ddb5bc98-6116-49a2-802e-1c05398663f1\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/b1b5ab31-f90c-41f9-b9f2-13408b1c072b",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/b1b5ab31-f90c-41f9-b9f2-13408b1c072b",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Manager - AI Native",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "2561f0206e1c9d150496cda09d2345f2c102c906e8f30b1865fa38d2ff408171",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/b1b5ab31-f90c-41f9-b9f2-13408b1c072b\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/14aebdde-4e9c-4171-a422-9531e3185402",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/14aebdde-4e9c-4171-a422-9531e3185402",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# People Operations Coordinator",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "0081c702983548f5ed5894bf8806899547f0b0f439e1f3d4e253979a4e5508cd",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/14aebdde-4e9c-4171-a422-9531e3185402\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/a615d797-44a4-4831-9ab9-49b4130bda7c",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/a615d797-44a4-4831-9ab9-49b4130bda7c",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Global Capacity Manager",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "cef5850f5f984a972af42702f5e3fb78cebee35bdae5419b6343c8db17b30a52",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/a615d797-44a4-4831-9ab9-49b4130bda7c\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/b6dc9f81-ba0c-4c6a-9844-97be9f5c9e69",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/b6dc9f81-ba0c-4c6a-9844-97be9f5c9e69",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Recruiting Coordinator",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "43ed9088337ad253cfdedf86d5c10975d2504c7dc82cd12a2a7c8d52612889d8",
+      "note": "Explicit On-site location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/b6dc9f81-ba0c-4c6a-9844-97be9f5c9e69\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/28291849-b57f-4813-a7e0-66b1050b2d1b",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/28291849-b57f-4813-a7e0-66b1050b2d1b",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Capacity Manager, Operations",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ddf2e33d40716aaccee4f5a875dd0856652a6c1addccba3cc013a743ea7bb6a3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/28291849-b57f-4813-a7e0-66b1050b2d1b\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/6e133f8f-9cfe-4629-9f96-8001cdf3b4bf",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/6e133f8f-9cfe-4629-9f96-8001cdf3b4bf",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Social Media Manager",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "324de0535a94e712e8753cb80d7b3c576f913692964da2e6435a398dc2790410",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/6e133f8f-9cfe-4629-9f96-8001cdf3b4bf\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/49aaa88c-75b5-4d4e-b726-28bfecd4300e",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/49aaa88c-75b5-4d4e-b726-28bfecd4300e",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Development Representative - Inbound",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f5c4ebfc192f7be5ddd8ae225bb2872dc08b66f66e6b3961abceb8eec066ea34",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/49aaa88c-75b5-4d4e-b726-28bfecd4300e\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/aae72bd3-6f75-4238-9741-95fec11facb9",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/aae72bd3-6f75-4238-9741-95fec11facb9",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Engineering Manager, Runtime Fabric",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f2b7f3ab49e25aa0fa2dc6160f90fee31668a15b24d5c7cec5c3bbe9f34864b0",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/aae72bd3-6f75-4238-9741-95fec11facb9\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/0d1f68d4-ee6c-4b5f-9ef9-21a2dabbc152",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/0d1f68d4-ee6c-4b5f-9ef9-21a2dabbc152",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive - Strategic",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "92b8a6207d67506fd32af2f727a6fcac98799b8508696c69c38f545ab219a911",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/0d1f68d4-ee6c-4b5f-9ef9-21a2dabbc152\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/2fdb06a3-ea27-40ee-bf64-0d51e01b8464",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/2fdb06a3-ea27-40ee-bf64-0d51e01b8464",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Model Products",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "d80db659f155201324bddf188759cf78a1ac79a4dcfa9fa5e9c18706d40d752e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/2fdb06a3-ea27-40ee-bf64-0d51e01b8464\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/f3636826-2c87-4380-bf99-d35f3d22720d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/f3636826-2c87-4380-bf99-d35f3d22720d",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Sales Manager - Enterprise",
+        "## Location\n\nLondon",
+        "Based in London and able to be in office at least 3 days per week (Tuesday to Thursday)"
+      ],
+      "sourceSha256": "3085179eceb71ff0a11e2a97db9f8127806cf5f42c6eafe47c591648e93bcf77",
+      "note": "Explicit London office 3-day (Tue-Thu) requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/f3636826-2c87-4380-bf99-d35f3d22720d\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/36a76195-a9fc-4b10-9963-532e8c168e6a",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/36a76195-a9fc-4b10-9963-532e8c168e6a",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Marketing Manager, Training",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "b5aeab5265a14a64b84ebb2bc5a2b0222ea91edd6a2a8a5c84f981ce7ef61e6b",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/36a76195-a9fc-4b10-9963-532e8c168e6a\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# AI Inference Engineer",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ea9fba26dad3fbcd960d31260059a1bd91e5b6ce4c47e4734f6cebb8f4066f12",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/db6477fc-111a-4340-bf00-525fe023e6f3\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/6e396eb7-acb3-436a-89ec-05e755c477f2",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/6e396eb7-acb3-436a-89ec-05e755c477f2",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Voice AI (Inference Runtime)",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "dd6b5904e31153796dd676707abc1832f73c73416d5b7ee8fe3805f77685bf51",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/6e396eb7-acb3-436a-89ec-05e755c477f2\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/768bca5d-287f-405a-b677-605317607178",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/768bca5d-287f-405a-b677-605317607178",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Capacity Strategy & Operations",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "40e52dd7b3d95b0ed9375ebdc96b6d77d25d5cc42ad8fe1bc4223b14989947df",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/768bca5d-287f-405a-b677-605317607178\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/ddbd38d0-1914-4bac-9381-75a72f5023ca",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/ddbd38d0-1914-4bac-9381-75a72f5023ca",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior People Business Partner",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "bca51f450e0bae888aa88027cf31cdf731bf2d6cd3fa271d09ee651dc0422304",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/ddbd38d0-1914-4bac-9381-75a72f5023ca\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/58d7d8e6-86ee-43a1-baec-3dddcb661d51",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/58d7d8e6-86ee-43a1-baec-3dddcb661d51",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Base Labs Fellowship",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3c452bce488a1bd83e2f977bf2ed3e38a4e4ee47f39f163ce986daf96f973e7c",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/58d7d8e6-86ee-43a1-baec-3dddcb661d51\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/3027e0bc-731f-4fef-b081-2031590766fd",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/3027e0bc-731f-4fef-b081-2031590766fd",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Manager, Inference Platform",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ba930df299d82b7a94bc92c480a9c3982b62998631ca0567b71811bdada6782e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/3027e0bc-731f-4fef-b081-2031590766fd\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/342a4c0e-7da3-490e-927f-dffb51f847b2",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/342a4c0e-7da3-490e-927f-dffb51f847b2",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Manager, Enterprise",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "8019144aa5c74949d01d186ff422bced643bf56c8bb5d6fa1a1cc63c66aa602e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/342a4c0e-7da3-490e-927f-dffb51f847b2\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/b6a7e52e-be85-4f49-953d-d00e2a2f6143",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/b6a7e52e-be85-4f49-953d-d00e2a2f6143",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Procurement Lead",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "3ca38484e0572c64c61207cef9501a93da436c90edc3f1bd88b87091022df3c6",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/b6a7e52e-be85-4f49-953d-d00e2a2f6143\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/3677992a-2a97-4a55-98ce-e2719922f263",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/3677992a-2a97-4a55-98ce-e2719922f263",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Strategic Finance, GTM",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "bad080e908f2127ee27aa6cb62c3a3b77403ad0eacd1ea8ff2fb7e94e77df812",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/3677992a-2a97-4a55-98ce-e2719922f263\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/4d91f30b-8c06-48c2-a56e-f48fc34968d4",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/4d91f30b-8c06-48c2-a56e-f48fc34968d4",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Emerging Clouds & International Coverage Lead",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "e4140baf138c8a38547a1f018dffb7d5f65eb4b93f496c00d4ef7af45c73218f",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/4d91f30b-8c06-48c2-a56e-f48fc34968d4\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c2ba6c50-d282-4478-98e9-668f94facde8",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c2ba6c50-d282-4478-98e9-668f94facde8",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Data Engineer",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "28e3504b52b53696f56071e0d952d5acd4148c246b2a519822b87bb2b46028b1",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c2ba6c50-d282-4478-98e9-668f94facde8\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/81d573b6-741c-4140-a36b-6892456eca73",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/81d573b6-741c-4140-a36b-6892456eca73",
+      "location": "San Francisco, CA | New York, NY | Remote",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Design Engineer (Brand Team)",
+        "## Location\n\nSan Francisco; New York; Remote",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "72a417aae274ac8f79dfabad96ded87ffda89cb55e9cb93dabe213c4e76b89b8",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/81d573b6-741c-4140-a36b-6892456eca73\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/9245dd3e-b0b2-4620-a944-1b09e92b2e78",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/9245dd3e-b0b2-4620-a944-1b09e92b2e78",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Marketing Manager, Model API",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4ac66f9feeddd7464704111b6453f76be256b15bf4f42756d57136be8fdaf930",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/9245dd3e-b0b2-4620-a944-1b09e92b2e78\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/5cd2f489-b9ee-428b-b252-94e83d55f107",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/5cd2f489-b9ee-428b-b252-94e83d55f107",
+      "location": "New York, NY | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# GTM Engineer",
+        "## Location\n\nNew York; San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "415709d863c981909b04fd9439ce83c5a7a89155c11d9616752328db54d7234e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/5cd2f489-b9ee-428b-b252-94e83d55f107\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/b85e4b1d-6531-46b5-bc8a-238f3761a50e",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/b85e4b1d-6531-46b5-bc8a-238f3761a50e",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Security Engineer",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "70d8a3f35056d39851de7c1cf0ad7989318ae681939225000af431e8bfcbac87",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/b85e4b1d-6531-46b5-bc8a-238f3761a50e\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/126d54b4-a7bc-4456-bf4d-5d224e4f5d63",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/126d54b4-a7bc-4456-bf4d-5d224e4f5d63",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Training Product",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "cc9d5b773ecdbafffdb991f20f131967e3c5e5099826759d25508727c6eb0114",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/126d54b4-a7bc-4456-bf4d-5d224e4f5d63\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c64515f9-a8f7-4633-9340-17cda56b1ef0",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c64515f9-a8f7-4633-9340-17cda56b1ef0",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Solutions Architect",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "619f0c62778638c0b15b96ef177794b63360102e2e8de0d138c6fb3dc2198a81",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c64515f9-a8f7-4633-9340-17cda56b1ef0\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/382978bd-7eef-4657-a229-3381a1057b4e",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/382978bd-7eef-4657-a229-3381a1057b4e",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Designer",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "eea44d59173858bed2d9df2abd3d71d769c0147d699848b7a23ffb78613f8301",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/382978bd-7eef-4657-a229-3381a1057b4e\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/11ab2593-6648-4943-ab4a-284fe7e89720",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/11ab2593-6648-4943-ab4a-284fe7e89720",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Forward Deployed Engineer (Training)",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "be009129a19bc565fca5790bd850c54d5589ef1bbd544f2bb2a1a50533d12b6a",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/11ab2593-6648-4943-ab4a-284fe7e89720\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/f160637f-b6bf-4f69-a8bd-862a3a3a8b0d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/f160637f-b6bf-4f69-a8bd-862a3a3a8b0d",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Data Scientist (Analytics)",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f32736c233ff4f1dc580b6f7043bab821302e7203a6b30aa11a94a6cd6b5f435",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/f160637f-b6bf-4f69-a8bd-862a3a3a8b0d\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/916e9d62-492a-4562-971f-3e97e3868392",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/916e9d62-492a-4562-971f-3e97e3868392",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Cloud Platform Engineer",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "75e42e467c59890d5f047a4d1e6be5f29c675714a4807a70b07d4d149cbd13d8",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/916e9d62-492a-4562-971f-3e97e3868392\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/7a999a4e-5e04-4432-a7fe-86ad1151e061",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/7a999a4e-5e04-4432-a7fe-86ad1151e061",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# GTM Systems Manager",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ea31121ad31f611a7fd6266857120ff9e2ee15b07be7ab88110a4eadd205757d",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/7a999a4e-5e04-4432-a7fe-86ad1151e061\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/75d81d67-465a-4d65-9745-d1c06b0c7aec",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/75d81d67-465a-4d65-9745-d1c06b0c7aec",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive - Enterprise",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4f9fefef5aaf87ae2afcd94b52fbb5b855283b98503ef35d7ad9afbc765506f2",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/75d81d67-465a-4d65-9745-d1c06b0c7aec\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/c2f8fe4f-07c1-4d43-ae5c-05f057842e57",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/c2f8fe4f-07c1-4d43-ae5c-05f057842e57",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Brand Designer",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "eaabe362a0b105da0bc07ec851b3a5fc95a2c5a599065cb60aaf4a34442cc4a3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/c2f8fe4f-07c1-4d43-ae5c-05f057842e57\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/4e507a15-c9bb-4877-b422-f3eb462a3732",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/4e507a15-c9bb-4877-b422-f3eb462a3732",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Manager, Strategic Sales",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "121f2f9e836789f430b6d522969f8fc3767931e5eb7dd7177104e27fcd5c5c16",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/4e507a15-c9bb-4877-b422-f3eb462a3732\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/bb48bf03-ca61-4d18-b2e3-d3997a9b0a0a",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/bb48bf03-ca61-4d18-b2e3-d3997a9b0a0a",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Marketing Manager, Solutions",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "00007460cdb22e4d5d778b38c84d1268344814812f681cfea5281a6e5cf519ea",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/bb48bf03-ca61-4d18-b2e3-d3997a9b0a0a\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/7c9d2bb0-ac03-4a3c-86c3-cf720cd314e8",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/7c9d2bb0-ac03-4a3c-86c3-cf720cd314e8",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Post-Training Research Scientist",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "03cea07e1488d33be038c7aef5b957ed2612fd8c9f1129de6ace11ec1a6bcc24",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/7c9d2bb0-ac03-4a3c-86c3-cf720cd314e8\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/902a7ddb-c21f-4272-aaab-879680697986",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/902a7ddb-c21f-4272-aaab-879680697986",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Capacity",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "f3882c8618716d361536f05c097eb8acdb883cefc241000b4d1c49e2f37fc141",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/902a7ddb-c21f-4272-aaab-879680697986\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/8c7c5b4c-6475-4a83-b0d5-174861446c18",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/8c7c5b4c-6475-4a83-b0d5-174861446c18",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Workday Senior Analyst",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "7a576fc2429c7026b8413205ffb08c096f7d3ab9aa2df8b470023ccd2169f4a8",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/8c7c5b4c-6475-4a83-b0d5-174861446c18\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/1261fe76-f577-4b3d-aac8-df65846ae445",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/1261fe76-f577-4b3d-aac8-df65846ae445",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Account Executive - AI Native",
+        "## Location\n\nNew York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "4c6c0537e2710642037b180a7f3947ea412765c2e5b2862b520cf1d4306b24fc",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/1261fe76-f577-4b3d-aac8-df65846ae445\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/1c5adf20-fe51-4fb6-9e45-569523e3e8bf",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/1c5adf20-fe51-4fb6-9e45-569523e3e8bf",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Product Marketing Manager, Dedicated",
+        "## Location\n\nSan Francisco; New York",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "392e980be9600330a43dac2d22347abf421ade7f96c8a6f6aa3b80f30bc091d1",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/1c5adf20-fe51-4fb6-9e45-569523e3e8bf\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/43b6c299-d5df-4cf4-a816-142ba3014a9d",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/43b6c299-d5df-4cf4-a816-142ba3014a9d",
+      "location": "New York, NY | New York, NY | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Marketing Technology & Operations Lead",
+        "## Location\n\nNew York; New York; San Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "27a550dc1a1a009735292f489a738dc8e84fd841def574ba98f704fc4a95d84e",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/43b6c299-d5df-4cf4-a816-142ba3014a9d\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/f9ccf52d-b45a-4890-828e-be8e6945deb3",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/f9ccf52d-b45a-4890-828e-be8e6945deb3",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Executive Assistant to CRO & Head of Strategic Sales",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "7366d0ab087f86e01130c2e08dd453163df821fa764523f5cf7e5ea586dc99b9",
+      "note": "Explicit On-site location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/f9ccf52d-b45a-4890-828e-be8e6945deb3\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/84c1801c-1a65-49fb-aaaa-beeafd530e7e",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/84c1801c-1a65-49fb-aaaa-beeafd530e7e",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Remote | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Forward Deployed Engineer",
+        "## Location\n\nSan Francisco; Montreal; New York; Remote; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "dcd9b03b9c24f284d4e1c0bd6fd9e6579280b4ea360c0ee8d8f293c95fff23b3",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/84c1801c-1a65-49fb-aaaa-beeafd530e7e\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/2c7a4042-6c6b-4059-bfdb-7fa987326edb",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/2c7a4042-6c6b-4059-bfdb-7fa987326edb",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Field Marketing Manager (SF)",
+        "## Location\n\nSan Francisco",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "7163a0a96fe73ee965d719ad51fc1de5ea919e1745feb574701519a12f3727ae",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/2c7a4042-6c6b-4059-bfdb-7fa987326edb\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda",
+      "location": "San Francisco, CA | Montreal, QC | New York, NY | Seattle, WA | Toronto, ON",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Software Engineer - Observability",
+        "## Location\n\nSan Francisco; Montreal; New York; Seattle; Toronto",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "27c0f63922f235eaa00624e052e3c604696b5fe0c6f7a748843dcd495ba3e923",
+      "note": "Explicit Hybrid location type on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/baseten?includeCompensation=true",
+          "sourceSha256": "4fe9938c9a2054281cb42bc44470e5b44b9a7e96453e63a0b91a7e971e3e8ee4",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/baseten/3e925ab1-2089-4a79-989e-50479b546eda\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "f62d1f11-cafc-8044-a5fb-74284cbec489",
+          "label": "Montréal, QC",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Montréal, QC"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/132295d6-eeb4-4655-9847-a7e9a586d273",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/132295d6-eeb4-4655-9847-a7e9a586d273",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (105 IDs) and current ATS API (105 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:03:57.320346+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/baseten"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/baseten/a34233b9-d4ed-4a8a-b942-e16df27f8935",
+      "sourceUrl": "https://jobs.ashbyhq.com/baseten/a34233b9-d4ed-4a8a-b942-e16df27f8935",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (105 IDs) and current ATS API (105 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:03:57.320346+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/baseten"
+    }
+  ]
+}

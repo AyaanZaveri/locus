@@ -1,0 +1,1986 @@
+{
+  "companySlug": "lovable",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/3496c512-9612-446a-bbed-152457fa2389",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/3496c512-9612-446a-bbed-152457fa2389",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "- You're based in Stockholm or ready to relocate - this is an on-site, 5-days-a-week role."
+      ],
+      "sourceSha256": "a6a0fee695424a1e3a301b5d1ef2c4fbb8ac18df015ad25f0d70a6468d9e8625",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/49a57a49-8a9d-43bf-a102-762e2e3a99ee",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/49a57a49-8a9d-43bf-a102-762e2e3a99ee",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "This is an in-office role in Stockholm or London."
+      ],
+      "sourceSha256": "a61653b42d970c35dc815e89da8176bb5241dff7e3c546e6ea3de4ad0d7b2182",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/cf78be5e-41ca-478a-b480-0d0839c24543",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "4. Join us for trial work lasting 1-2 days remote or on-site. We'll see how you tick and you get to meet the team and explore whether joining Lovable feels right for you."
+      ],
+      "sourceSha256": "27190917db11c0bd0dac22aed72c58b2c9245b309276bbd2d70b56117194bb40",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. API/body conflict; see evidence and review note.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/e1da289c-569e-4881-9ce7-a1d832071f2e",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/e1da289c-569e-4881-9ce7-a1d832071f2e",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "34e9ee794a77e69b2e9bc3554f47a525a9ffae3c1fb3c8fa23afdcebd0037a43",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/920b4099-00bc-4d5e-9469-2c955ef3a662",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/920b4099-00bc-4d5e-9469-2c955ef3a662",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "- You’re based in Stockholm or ready to relocate - this is an on-site, 5-days-a-week role."
+      ],
+      "sourceSha256": "25542930c12fe5ad262b5a98460cc7e3fe074f533ee6579ac45e102ae14d573c",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/77326507-b4dd-4239-89b6-85b077baeeb5",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/77326507-b4dd-4239-89b6-85b077baeeb5",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "0bf5ae743a06a2d21dee69eafea9271d1f61514613fc687cb9ab93108501c906",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/51885ae5-4f4c-46c4-abd3-d7aad1c8d9c0",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/51885ae5-4f4c-46c4-abd3-d7aad1c8d9c0",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "0ff3cc4e60d492325a51732dd67785778968c02d197f8de3bb17eb6bf5f6e2b6",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/a0ff5040-7acb-4c3e-b32a-191dee540617",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/a0ff5040-7acb-4c3e-b32a-191dee540617",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "b7b6907b3636f9a5c1c9f3955bc29303e288a537629766770b456471e74b3ca1",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/73b2c110-29d0-402e-a6d6-ac7984946052",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/73b2c110-29d0-402e-a6d6-ac7984946052",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "2f8f483cde5d15d91a374c772e1772188006a1f14ec9806c43b0aba8d0f340dd",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/79e04665-0e50-45f8-92e3-9237bcb4e0bc",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/79e04665-0e50-45f8-92e3-9237bcb4e0bc",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "4. Join us for trial work lasting 2 days preferably on-site. We'll see how you tick and you get to meet the team and explore whether joining Lovable feels right for you."
+      ],
+      "sourceSha256": "7c793d49c4854997f02b485f76db7351bd685a94b7cfcb403fb8966ae80c69ac",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/00ad65ae-2d29-41cf-898e-248ddf8ca7ae",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/00ad65ae-2d29-41cf-898e-248ddf8ca7ae",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location",
+        "## Location Type"
+      ],
+      "sourceSha256": "ae48e5b0869f577b4027652ee24816942599b59e841a5892463235cd725f8e30",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/82b7f137-3648-4996-b6ff-2b1e5d1a27d2",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/82b7f137-3648-4996-b6ff-2b1e5d1a27d2",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "This is an in-office role is based in London."
+      ],
+      "sourceSha256": "7d1e3cd5bb441b694a272a964a55532ebac3f78d9de9ab0ce2d1bca978b8dc84",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/3b6525b4-8229-4b7e-a307-a550646d0483",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/3b6525b4-8229-4b7e-a307-a550646d0483",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "e8fb8c51e8d51e6e2e8c48ba7099b442c7a023ef52fb189d364f44c50a80f166",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/1140665c-a426-49d5-bcdd-f78560efe50d",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/1140665c-a426-49d5-bcdd-f78560efe50d",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "c5aca6b52023e80475acfc3bf8303e66a50ab6029c1a973b9a1e9fae94662085",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/f7ffd722-a5bc-4229-9a9f-1d2c952dd7ba",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/f7ffd722-a5bc-4229-9a9f-1d2c952dd7ba",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "f99f58e5561d0814e3f46cea8f9bee0b407c63135ad6e733d18e5d232f974ab1",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/c5bc3891-8482-4276-816e-fe38302b1a3c",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/c5bc3891-8482-4276-816e-fe38302b1a3c",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "26b32640b98a95fdf2cd07676ba8cfbe489d3406855453b1369d3992b70c12e8",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/03e04a4e-75d6-425f-843d-684ae505fa61",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/03e04a4e-75d6-425f-843d-684ae505fa61",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "143539948d8136d7ed4dcd752831762ace3b7b14de7d2f1ab586e6e994ae3110",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/bb9758fd-f042-4c73-81c6-f684079ef9d8",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/bb9758fd-f042-4c73-81c6-f684079ef9d8",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "**TL;DR:**"
+      ],
+      "sourceSha256": "aa7f56bde5fb2355231f4ba4398caf8f37f087afbb478db938f0f30af65d85fd",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. API/body conflict; see evidence and review note.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/514c4592-13ff-4900-9e89-ef262e2268b0",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/514c4592-13ff-4900-9e89-ef262e2268b0",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "1248c261ce846f0e100b925225c8794a1d73f1f7fe2675f76802b1f108f078bd",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/3944f55e-910f-4248-ba28-2c1e6143eb28",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/3944f55e-910f-4248-ba28-2c1e6143eb28",
+      "location": "Boston | San Francisco  | New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "This is a senior hybrid role, half building the scaled programs engine, half account ownership. You'll own a cohort of scaled customers directly, running their onboarding, driving adoption, and retaining them, while designing the scaled enablement programs, curricula, webinars, onboarding journeys, and lifecycle communications, that teach an entire customer base how to build with Lovable."
+      ],
+      "sourceSha256": "990455f64b87b92c71cee8d98575eeba3cd42cca156a4ba96aa586a588447a32",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/13c2f37b-a60c-4601-993b-88baac9cbdfc",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/13c2f37b-a60c-4601-993b-88baac9cbdfc",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "3ac18eb4e60c97edea7cfa577b3223489b7c339076ea90d3a7f21f6efb9c4a2a",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/e8897c7e-53bd-43f8-94bb-02237f4459bb",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/e8897c7e-53bd-43f8-94bb-02237f4459bb",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "0b46289a7886ebdcd9afb517709295dda53268a64dd7aaa05300e7517a58257e",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/8a196add-25ef-4dfa-a196-c54c986bda60",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/8a196add-25ef-4dfa-a196-c54c986bda60",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "292b28d470e604fa6b6eff2d1b32ff70adb3452454b2d35e0a128b465086d7b2",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/99f2854e-4937-4227-b96a-81269b5f871d",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/99f2854e-4937-4227-b96a-81269b5f871d",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "- You’re based in Stockholm or ready to relocate - this is an on-site, 5-days-a-week role."
+      ],
+      "sourceSha256": "5c52948b9dd9de23cee7cd17b7d434dea6d3d86a32b499f13d4bcdb48a9c879d",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/725b8529-5c3e-4b23-867e-8e2766bc9629",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/725b8529-5c3e-4b23-867e-8e2766bc9629",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "fa6de57cac749294e42adde45e2c267116e4c358f0876912e8ca39b7c409ee07",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/70a219dc-435d-435e-bc82-d38531b0513c",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/70a219dc-435d-435e-bc82-d38531b0513c",
+      "location": "Stockholm | Lund, Sweden",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "9b29e9115095293aabbca8f7d8af99498814e8afb84ef6bcf90ff60d27a38bcc",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. Lund normalized to Lund, Sweden (Swedish office city, confirmed in body).",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "490c99ec-8df0-8de4-9718-cd34f037f6bb",
+          "label": "Lund, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Lund, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/933f4857-6a41-4b78-bbcb-c9895b18055a",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/933f4857-6a41-4b78-bbcb-c9895b18055a",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "This role is based out of either our Stockholm or London office, both of which have in-office requirements. This role is not eligible for remote work. We are unable to support work authorization in the UK at this time."
+      ],
+      "sourceSha256": "bcab0715ce246f9e07234125ef7fb9cc796ce870130901ddb0549006c68de621",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/bd7b3e44-1bda-42dd-9610-b89d070d7277",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/bd7b3e44-1bda-42dd-9610-b89d070d7277",
+      "location": "New York City | San Francisco ",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "3d3f3ff61f38420a7368561dceb6d5eaf0525205f18ed0d16d458f5f7570acf8",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/76f4a64e-b343-4c0e-b5f1-ea7686001346",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/76f4a64e-b343-4c0e-b5f1-ea7686001346",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "9f7e1da0a1f72ac22884e84d572a381bafceabafc5dc75c43d2ea039dcdd5815",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/e5fa14ab-eec2-4303-a57e-38c1c79bdf69",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/e5fa14ab-eec2-4303-a57e-38c1c79bdf69",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Based in Stockholm or London or ready to relocate",
+        "Based in Stockholm or London or ready to relocate",
+        "this is an on-site, 5-days-a-week role"
+      ],
+      "sourceSha256": "460a8f69ccff2f0167429bdc56d47bb5e37bc0fbe010f51d72cac551f6445fe7",
+      "note": "Body explicitly states on-site 5-days-a-week in Stockholm or London.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/87f4e6eb-c8ca-496c-a3d3-ff0dda4d8d8c",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/87f4e6eb-c8ca-496c-a3d3-ff0dda4d8d8c",
+      "location": "New York City",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "aa44c30627c2e24f4554608cf4c8382e068744ef925dccc249aadcd8f53cce83",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/e8085310-ce77-4412-931c-2cf7297c37ed",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/e8085310-ce77-4412-931c-2cf7297c37ed",
+      "location": "San Francisco ",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "212cc99359b91f6c28586df5db9cf652b6dce4148c6780bf7c9a3be9dc396a39",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/4f26af7a-43ad-48f4-9902-1e779c05af66",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/4f26af7a-43ad-48f4-9902-1e779c05af66",
+      "location": "New York City | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "fe9c4693a655b846fc227afec8a5514342d8a657a040c9255cbffad117b82beb",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/1c1571b0-effe-4be9-8d2f-e5af61aa7144",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/1c1571b0-effe-4be9-8d2f-e5af61aa7144",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# IT Specialist",
+        "This is an *office-first position* not suitable for remote work"
+      ],
+      "sourceSha256": "8544b2b10c9e50178665b9443092c73a343c3c9cfef31f03ccc015e41e03c93b",
+      "note": "Body explicitly states office-first, not suitable for remote work.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/8dd92c40-b45d-41b2-ae6b-1680b0a05d92",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/8dd92c40-b45d-41b2-ae6b-1680b0a05d92",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "53cd545e53abb289c1965daa9cca19b55eb6b8961f17f902e23ca2d221115ac0",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/58a2e1f6-0448-4310-931e-f3c5496149f5",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/58a2e1f6-0448-4310-931e-f3c5496149f5",
+      "location": "New York City | San Francisco ",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "94b380329cef0cc0ec4efdc6d8414c9d999e8be9adf73cb6225ebbc201f7e3c1",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/a4e39bdc-b143-43ea-8077-a113445edbd2",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/a4e39bdc-b143-43ea-8077-a113445edbd2",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "bbc2ced12e6d0935b212e9e44f339933e9f93893f388df8c5c2c7e94eb3eee9f",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/8e09291b-304a-4b73-b786-95e498a301e6",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/8e09291b-304a-4b73-b786-95e498a301e6",
+      "location": "Stockholm | Lund, Sweden",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "2aba334de6b1f0a8fb804293d835ca6ed1526f10ae6700d3aa22ea65b8112a5c",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. Lund normalized to Lund, Sweden (Swedish office city, confirmed in body).",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "490c99ec-8df0-8de4-9718-cd34f037f6bb",
+          "label": "Lund, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Lund, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/0b59a6c1-c9e9-4f5e-9fdd-42a319c6ac40",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/0b59a6c1-c9e9-4f5e-9fdd-42a319c6ac40",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "37a91e7b79bf725e2beef317f0146bee5fd26b04ddd38f7928b448fe2e15fa97",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/41d9ea2b-72c5-48e3-b8a9-90504f73edbc",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/41d9ea2b-72c5-48e3-b8a9-90504f73edbc",
+      "location": "New York City | London | Stockholm | Boston",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "e1860ae2e8d9b6f748127265503061c2fd1a0c40f428c03db86007543fa3f303",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/4e100b5b-35be-462d-a3c1-bd0ca7fad267",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/4e100b5b-35be-462d-a3c1-bd0ca7fad267",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "**TL;DR**: Lovable is growing fast and needs a Commercial Counsel (EMEA) who thinks like a Revenue Architect — leveraging AI solutions to move deals at ~10× the standard speed."
+      ],
+      "sourceSha256": "418be727c06ff2e9a50cb2dc8092f6a3e78f6e7fd234b9cb6ef3b68069835358",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. API/body conflict; see evidence and review note.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/716e58b3-af3d-482a-a357-a34628742b4f",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/716e58b3-af3d-482a-a357-a34628742b4f",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "faa6c49fbca963b9caa5e483b3f2a36605c9085228c36b94b4b2f5a710dc8fdf",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/e53bdf9e-39ee-46d4-aa95-6b3ba5d3de73",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/e53bdf9e-39ee-46d4-aa95-6b3ba5d3de73",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "744d1f56a33bc4e683d365cc545f733ca5fff154ca12a90a0de45ffae4fedd80",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/59d85cf1-104b-48cb-956c-bed73ef934c9",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/59d85cf1-104b-48cb-956c-bed73ef934c9",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "c5e935b1249a55ea62dffdf7e8cec7bfd23066706e00a9945ed70625c20b647e",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/cfef6fe1-e0c9-4139-8618-b51bfb1dc683",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/cfef6fe1-e0c9-4139-8618-b51bfb1dc683",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "180fcce7e3c1283b874d122cf5a64f47cb3e3ac427f89b09da3f6727c458039a",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/64964fb3-848a-4bd0-8e66-6e54e99a8eca",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/64964fb3-848a-4bd0-8e66-6e54e99a8eca",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "2ebd25f9461d1f86935ad16b899a9eac14433b33e98b5e127626c73d314e9068",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/03b5e020-88ac-45b8-9105-5553cc7b4788",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/03b5e020-88ac-45b8-9105-5553cc7b4788",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location:** Stockholm, in office (we support relocation)"
+      ],
+      "sourceSha256": "1895d0a207426f02b0bd0e5141706d6d9274cc217f562c31858f13d081d493da",
+      "note": "Body explicitly states Stockholm in-office.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/d5ae0701-9fad-4971-bc90-a57dada936d2",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/d5ae0701-9fad-4971-bc90-a57dada936d2",
+      "location": "São Paulo",
+      "workplaceType": null,
+      "evidence": [
+        "## Location"
+      ],
+      "sourceSha256": "91eab8fcafcd9d5153b7f8958af6d6b762e9c5999f6feb277179a1e2c93e55dd",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "95eb83f9-2b29-8cd9-b4ef-4b001b8ed646",
+          "label": "São Paulo, Brazil",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "São Paulo, Brazil"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/df79d83b-e366-4998-afdd-694d06183d75",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/df79d83b-e366-4998-afdd-694d06183d75",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "4. Join us for trial work lasting 1-2 days remote or on-site. We'll see how you tick and you get to meet the team and explore whether joining Lovable feels right for you."
+      ],
+      "sourceSha256": "465c9555e24b0e226309b343461181f80fed6e951edc5d446e5eaac8ab9ff21c",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/513393c6-1887-41b5-96fb-38982130bd36",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/513393c6-1887-41b5-96fb-38982130bd36",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "bbfd688732622d647629a73d318e0eec17f0b36f90090ef47db202d73ee3c669",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/4a2535cc-9b62-42d4-9401-941c465ee56b",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/4a2535cc-9b62-42d4-9401-941c465ee56b",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "dec2cba9ee66a6809093d5b980505e9d03fe74b1b369291f582c805bf5523078",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/129316bb-b02c-4177-8d8a-5184e3de6070",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/129316bb-b02c-4177-8d8a-5184e3de6070",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "64404403000930bb0719e7559e6d3214b50d0f74276ec5379fc5138c90b4afeb",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/963fb756-a35b-452e-8aeb-41602dde011f",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/963fb756-a35b-452e-8aeb-41602dde011f",
+      "location": "New York City | Boston",
+      "workplaceType": null,
+      "evidence": [
+        "## Location"
+      ],
+      "sourceSha256": "aac9f8c98ecd7bd3a0aca67ae800c9034d6a7010fa1a769a1c409e3d1b7035d2",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/45db5790-4305-4fad-b96b-1fbdf42b88f2",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/45db5790-4305-4fad-b96b-1fbdf42b88f2",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "c9d905788218bdcf4bd3414a3ba9da5950eae121e1abefab110d92002ec58d74",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/379953a7-bd23-44cc-a64e-5901cf9b4eaa",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/379953a7-bd23-44cc-a64e-5901cf9b4eaa",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "23f30d64dc2b742b0514a4e4d83532abce837b63f164393b8199a7a96d3613e0",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/84f8b1ba-1b6c-4ee8-a822-f2f2ba095bef",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/84f8b1ba-1b6c-4ee8-a822-f2f2ba095bef",
+      "location": "Boston",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "749f48e57767e69e3c30f7accd33600b868b994617b821cfff7e5f10ab51161b",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/db107c99-103c-4ca8-979e-fbe6d714f971",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/db107c99-103c-4ca8-979e-fbe6d714f971",
+      "location": "Boston | New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "3c28f3c91ab182a10ea8127df2c9bb26462ab74106afd30c83cfd462b7789e15",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/dc19c01d-a6d5-4fbd-bba6-47efa01a8dce",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/dc19c01d-a6d5-4fbd-bba6-47efa01a8dce",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "- You're based in Stockholm or ready to relocate — this is an on-site, 5-days-a-week role."
+      ],
+      "sourceSha256": "8906409782bc080a5dd9bfb73a64c0138d7f2de97f8b48257c05dbdff47da2ef",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/d15f1a6a-dbba-41d6-b8b4-90fc00de183c",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/d15f1a6a-dbba-41d6-b8b4-90fc00de183c",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "8ee09ac235658f97308f838eaad61b8c08b22b3197bc6ceef8ec4b8964b9be68",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/ef383f78-4d6b-4226-8902-8d4dab2f6a47",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/ef383f78-4d6b-4226-8902-8d4dab2f6a47",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "97a0260ca417e726c8d960da6cc9e6a750331f56e1f54ce4a17322824da5d045",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/5635b88f-a361-4f5f-8209-ca343a003947",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/5635b88f-a361-4f5f-8209-ca343a003947",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site",
+        "4. Join us for trial work lasting 1-2 days remote or on-site. We'll see how you tick and you get to meet the team and explore whether joining Lovable feels right for you."
+      ],
+      "sourceSha256": "5a6d0b83b72aa1acd0b22045f6e49e18f2b97dcd927151c13ac544f926d3d4e1",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/22169279-acc3-4133-96ab-6f525b16fc8e",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/22169279-acc3-4133-96ab-6f525b16fc8e",
+      "location": "Stockholm | London",
+      "workplaceType": null,
+      "evidence": [
+        "3. Join us for a workshop lasting 1-2 days remote or onsite. We'll see how you tick and you get to meet the team and explore whether joining Lovable feels right for you."
+      ],
+      "sourceSha256": "851eb112cf783af53cac0d07dfb8308c3b654966e2cbc6ad4929b86be8fd8505",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. API/body conflict; see evidence and review note.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/d92292d5-a9f5-4637-9d86-77e95bf66970",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/d92292d5-a9f5-4637-9d86-77e95bf66970",
+      "location": "Boston | Stockholm | New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "510427178c64192359085c3995252d0a472a49a0b8f68c40cd3c0a954a60b16c",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/ac86ab57-ff2e-4a49-83f8-51dd6bbc2cbf",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/ac86ab57-ff2e-4a49-83f8-51dd6bbc2cbf",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "9cb28391783800ddf8a74bfe70166862b943d9b000a1da372847d662950d5a73",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/7ee5ea78-9858-43c3-92b1-1d9a263414e1",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/7ee5ea78-9858-43c3-92b1-1d9a263414e1",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "00561c17a968a6270167d5915fec78857c58eb3a916d0696d26d03bc905ae704",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/522e925e-ede2-4659-8b8b-1122d4ad7ab0",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/522e925e-ede2-4659-8b8b-1122d4ad7ab0",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "d0ac9cec6b2665d5966fafb9471b1dc940e374ac81ae81e868ef69eb205f15ee",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/b346e4d6-f082-4428-bb60-ce4961108dfd",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/b346e4d6-f082-4428-bb60-ce4961108dfd",
+      "location": "London | Stockholm | New York City",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "c60434ddc17a630de114fefe668649ba275036741b5141e788903bdd18ef42ac",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/8fa6170d-847d-4059-b49a-a27a941ee9bc",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/8fa6170d-847d-4059-b49a-a27a941ee9bc",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "**TL;DR:**"
+      ],
+      "sourceSha256": "5040a0c8707c22ee646296c142a5b12ad7309c9e2f4d827b77f7381ab3108075",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. API/body conflict; see evidence and review note.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/a1e49a18-7533-450f-b760-cef337f2f9e3",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/a1e49a18-7533-450f-b760-cef337f2f9e3",
+      "location": "Stockholm | London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "c9dc42be692d7d67a83b792f4e6223669557c3d74ea35cf22f1f9da11bf4f943",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/282cea94-a525-43a6-a18e-8b92900d03f8",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/282cea94-a525-43a6-a18e-8b92900d03f8",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "9b66a083959cfc6da43fa9e65003e2d54989685420efc0ebbcf94f41d287e5b8",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/dbdb349a-195e-4de6-834d-f0e587678ee9",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/dbdb349a-195e-4de6-834d-f0e587678ee9",
+      "location": "Stockholm | Boston",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "9fc4f02e5bc7ab3ba542108a675adfefc94087e01b5c822b6c6163b47842aa9d",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/69c3e92a-1bff-498b-9cda-a78e267030ad",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/69c3e92a-1bff-498b-9cda-a78e267030ad",
+      "location": "Stockholm",
+      "workplaceType": null,
+      "evidence": [
+        "**TL;DR** - We are looking for analytics engineers to own the semantic and modeling layer of our warehouse by transforming raw data into well-defined, trustworthy datasets and metrics. You are obsessed with analytical consistency, designing impactful metrics, and building strong foundations for self-service analytics."
+      ],
+      "sourceSha256": "dc0b590c11af73623c8893238b575599d5ef5756454a146896b446beb2899f51",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields. API/body conflict; see evidence and review note.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/e826f9a8-e380-4c6b-a869-4b92e42d3f5a",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/e826f9a8-e380-4c6b-a869-4b92e42d3f5a",
+      "location": "Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "89bfabaad67d56f573dc3164ba8ac27c1af72cc924337aa538632026c44dfd6d",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/30887380-e180-4e2d-a239-00995ca84fcf",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/30887380-e180-4e2d-a239-00995ca84fcf",
+      "location": "San Francisco ",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "12afb59ca0af55ab94661e4873a586581160a2ffd6d63a41368b487f06d15f14",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/32413614-22d9-4752-830d-6614e49ab28f",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/32413614-22d9-4752-830d-6614e49ab28f",
+      "location": "London | Stockholm",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "cd2befdd09e1863fb1a0846d410f68cfeedf3feaae3d30bc97d33db0938e9008",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "ad7dbcc6-dc6a-895a-823f-e51adb5af3bf",
+          "label": "Stockholm, Sweden",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Stockholm, Sweden"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/581951b9-537e-49d5-89fb-dd74cdf3256c",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/581951b9-537e-49d5-89fb-dd74cdf3256c",
+      "location": "London",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location",
+        "## Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "2a6d1d15ca189816c6e647f6a0bed41f6cdd994d9b310e8cd111a0531bda7ae0",
+      "note": "Reviewed complete uncached Ketch Markdown and compared Ashby location/workplace fields.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/lovable/ac61dda2-bff0-4f22-adca-a48b0b2f560c",
+      "sourceUrl": "https://jobs.ashbyhq.com/lovable/ac61dda2-bff0-4f22-adca-a48b0b2f560c",
+      "reason": "Fresh uncached individual URL explicitly reports Job not found; fresh canonical board (78 IDs) and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T14:29:43.421080+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/lovable"
+    }
+  ]
+}

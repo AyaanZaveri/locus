@@ -1,0 +1,176 @@
+{
+  "companySlug": "framer",
+  "verifiedAt": "2026-10-05T05:47:08.236282+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://www.framer.com/careers/staff-product-engineer",
+      "sourceUrl": "https://www.framer.com/careers/staff-product-engineer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Staff Product Engineer",
+        "\nLocation\n\nRemote\n",
+        "Spot opportunities to improve how we build, not just what we bu"
+      ],
+      "sourceSha256": "26f066933b0a33de915b4dcb26b6eac209a5a04a486c7307e3aa934a5781b1ce",
+      "note": "Location Remote verified (page footer + board listing). One responsibility bullet is truncated in the live extraction itself; location decision unaffected.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/senior-product-engineer",
+      "sourceUrl": "https://www.framer.com/careers/senior-product-engineer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Senior Product Engineer",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "e53be0d6ed7474d919f61179f99c8fa70b16e236f3af76ca9b08a1b3102218a2",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/product-designer",
+      "sourceUrl": "https://www.framer.com/careers/product-designer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Product Designer",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "efd16804583e7d994a4dfed8e63a5814f11e41d81bac250dee882fdd96d7f0ca",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/analytics-engineer",
+      "sourceUrl": "https://www.framer.com/careers/analytics-engineer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Analytics Engineer",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "08dde085ba814c2b300e3173b08448ca6018535766dc9d8d71f2cc939e8f8719",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/principal-backend-engineer",
+      "sourceUrl": "https://www.framer.com/careers/principal-backend-engineer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Staff/Principal Backend Engineer",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "5a5153f05fac5a0cee3ed87b13ba8b657268cbb8b91ecaa76849c5a3c1c735ac",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/senior-backend-engineer",
+      "sourceUrl": "https://www.framer.com/careers/senior-backend-engineer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Senior Backend Engineer",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "5a8693f45fd4f3480057126614ca228d4ce18fc58feff6a82ffbd1dc51d26ac0",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/tech-lead",
+      "sourceUrl": "https://www.framer.com/careers/tech-lead",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Tech Lead",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "8d8c5d5f5356a7e71c5571a5031e6a3c5994e8de3edf7c03f1a97b33b1469c17",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://www.framer.com/careers/senior-site-reliability-engineer",
+      "sourceUrl": "https://www.framer.com/careers/senior-site-reliability-engineer",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Senior Site Reliability Engineer",
+        "\nLocation\n\nRemote\n"
+      ],
+      "sourceSha256": "6ef3bfa6b7d86f9e1f87305d71cac7b3521bfd6dd72b8571800dab8d395b177c",
+      "note": "Individual posting shows Location Remote with remote-first body; no office restriction found.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    }
+  ]
+}

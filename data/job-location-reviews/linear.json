@@ -1,0 +1,754 @@
+{
+  "companySlug": "linear",
+  "verifiedAt": "2026-10-05T04:55:54.360618+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/b3346acf-44be-4565-b1c0-10d482d3ad4e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/b3346acf-44be-4565-b1c0-10d482d3ad4e",
+      "location": "Remote - North America | Remote - United Kingdom",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America and the United Kingdom. You can work from anywhere within these regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "8973c8b112cebabc3b3773188bd9307d0f8c8ed9aee85a3910f415a2ecd7ddaa",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/12f8f208-0b9c-4569-bb3d-41c8a197029e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/12f8f208-0b9c-4569-bb3d-41c8a197029e",
+      "location": "Remote - United States | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in the US and Europe. You can work from anywhere within these regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "096ccfea396c1033c649e81e1d567453e84f6c62320569ee2ca9a763bc0b63d1",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/f04f398b-6320-499d-8a60-290239d62da8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/f04f398b-6320-499d-8a60-290239d62da8",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Design Engineer (Web & Brand)",
+        "## Location\n\nNorth America; Europe",
+        "Work remotely, no commuting to the office"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "835e154265cda4e09cda3792013a5fea4a1da75c25894df972af93ed5556ab54",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/5b9997fd-7507-4437-8fd7-14178c99ab5d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/5b9997fd-7507-4437-8fd7-14178c99ab5d",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company. This role is open to candidates based in North American or European time zones. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "dbd2d479678a4b623c8d7fc242f853cbb0e1c4208d8714b247b061ba13cf7402",
+      "qualifier": "North American or European time zones",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "North American or European time zones",
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": "North American or European time zones",
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/069c4628-88d7-4e4d-b393-c996fc7f3076/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/069c4628-88d7-4e4d-b393-c996fc7f3076",
+      "location": "Remote - United States | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in the US and Europe. You can work from anywhere within these regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "6ac6a8ce2dbcb06b6ecf4edba859af091a18d4e6b00e2a67c5cbec797f6f8cb3",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/d062065e-05bb-42ce-a430-ec205695cc2e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/d062065e-05bb-42ce-a430-ec205695cc2e",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based within U.S. and Canada Pacific or Mountain Time. You can work from anywhere within those time zones. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "4dce233bb3d8563e1930291fce39382e9eef0769739f1a94622c4c508aefe6b3",
+      "qualifier": "Pacific or Mountain Time only",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": "Pacific or Mountain Time only",
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": "Pacific or Mountain Time only",
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/370d9605-f02f-44f9-97fa-ebf769bed93d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/370d9605-f02f-44f9-97fa-ebf769bed93d",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "ae6836cd80578a23b8bebeee696adb38d26d0d3f751cd93e8881012678b2e2a2",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/ba8a41d2-4198-481a-a7f4-e09c5364ff7f",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America and Europe. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "e3924b4c438df13e72133ad4dbff7deb31e805b51d6722275a82380d07743155",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/26c77e48-b4ef-455d-a02c-3ef68fc6f9f9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/26c77e48-b4ef-455d-a02c-3ef68fc6f9f9",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "3430527629ef84269d400da0fbe8f817336f727a9983a496b5d53498cfd22cfb",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/ea0b5868-6d7a-46fa-99d8-207cd19357a6/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/ea0b5868-6d7a-46fa-99d8-207cd19357a6",
+      "location": "Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Design Engineer (Web & Brand)",
+        "## Location\n\nEurope",
+        "Work remotely, no commuting to the office"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "5fabd6fd656fe77795483aefe58a8f419558ecabfd89140d72fc4f6ae1d70d7f",
+      "locations": [
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/b7669c4b-eeca-421d-ba9a-d90203f6fcb2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/b7669c4b-eeca-421d-ba9a-d90203f6fcb2",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America or Europe time zones. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "514e61a190c973fd3ff2eee9d1f46a950736f52f94ddb85d867ee50b947b36ed",
+      "qualifier": "North America or Europe time zones",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "North America or Europe time zones",
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": "North America or Europe time zones",
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/c0abc97e-b4d7-4ad7-bd13-bc40f4023227/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/c0abc97e-b4d7-4ad7-bd13-bc40f4023227",
+      "location": "Remote - North America | Remote - United Kingdom",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America and the United Kingdom. You can work from anywhere within these regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "dae72ee909ada44f4c8170330ba8eb4bd6809a9997f83cc9047f06aebbaabce8",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/eac7f181-d658-4943-9430-51bae2bcd110/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/eac7f181-d658-4943-9430-51bae2bcd110",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "0f3108eb713db991c69306a880adaf40e7a8a0d582bd421f69e023fe3bb463b8",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/1aa6f672-5917-49aa-b015-70ebff901923/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/1aa6f672-5917-49aa-b015-70ebff901923",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America (west coast). We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "948766a8fa3e06a9bbb7abe52799720862b6f7d5b977ef1f5b6c374a1f4e0f9a",
+      "qualifier": "west coast",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "west coast",
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/0c7c2e26-0a98-42cf-a47c-9a3999fb513b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/0c7c2e26-0a98-42cf-a47c-9a3999fb513b",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "9bd3e1d2f40f6c1901239450933bfe060831c8d7da794bb18a09b92b4586b361",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/c21af93e-210f-4969-8eaa-90fb16a5b720/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/c21af93e-210f-4969-8eaa-90fb16a5b720",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "a48aa64a8967df0de8222ae5fa60dbfb437948c3a079b40731de4d30a1594b20",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/d37b3d76-3080-47f9-8a19-60505573112c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/d37b3d76-3080-47f9-8a19-60505573112c",
+      "location": "Hybrid - London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "**Location & work mode**",
+        "*This role is anchored to our London hub. We’re looking for someone who can work from our London office in Shoreditch 3 days per week (Mondays, Tuesdays, Thursdays), with flexibility around scheduling, as this role will be closely connected to in-person collaboration with our growing sales presence in the region.*",
+        "work from our London office in Shoreditch 3 days per week"
+      ],
+      "note": "Explicit London office attendance three days weekly overrides the previously stored remote classification.",
+      "sourceSha256": "96615b87fa01b2f191ec87f3cfbc86353e787d5fa8e3f6a725a6823564144e4c",
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": "(Hybrid)",
+          "sourceLabel": "Hybrid - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/fb4b6076-b943-4d95-bb9b-a66aef8275f2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/fb4b6076-b943-4d95-bb9b-a66aef8275f2",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North American (Eastern time zone), with a strong preference for the New York City area. Being in New York enables closer partnership with our growing local team, candidate events, and optional in-person support during work trials. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel."
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "f8ea9ae9c838bce9db9332632e3e7dbe36f90b4f1a6c51b17d2a68d7394cce2e",
+      "qualifier": "Eastern time zone; New York City area preferred",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "Eastern time zone; New York City area preferred",
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/f272fc4a-91a7-4dcf-9cb5-3600ebaf14e1",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel."
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "4ee62ddfcf34b7be74685100b1268db95d2117dcec15212960154cc6da79c058",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/b32de590-06ce-47d4-8994-66b936df908d/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/b32de590-06ce-47d4-8994-66b936df908d",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company. This role is open to candidates based in North American or European time zones. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "dbd2d479678a4b623c8d7fc242f853cbb0e1c4208d8714b247b061ba13cf7402",
+      "qualifier": "North American or European time zones",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "North American or European time zones",
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": "North American or European time zones",
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/d3bc1ced-3ce4-4086-a050-555055dbb1ff/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/d3bc1ced-3ce4-4086-a050-555055dbb1ff",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America and Europe. You can work from most timezones within these regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "9aba2e0f81d7e6b6389afe46d0baa7b6929ad6adef142bea6156040e3ff13bac",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/cec84487-60f2-4216-a514-dcf190c86c1e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/cec84487-60f2-4216-a514-dcf190c86c1e",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. EST time zone is preferred for this position. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "7861796c4d590cc1d7cf43f865c92706e92f79af7974731aa7d4da935133cfa8",
+      "qualifier": "EST time zone preferred",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "EST time zone preferred",
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/a264869e-f058-487c-ab7f-9b77dffa427c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/a264869e-f058-487c-ab7f-9b77dffa427c",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "2aeb42c26d8ad2e1138ac5672e2cff04661d9685b4de5114ffbf6ff7ff5b3f94",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/cd5ae036-0223-427a-b038-ba16ef9dcb32/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/cd5ae036-0223-427a-b038-ba16ef9dcb32",
+      "location": "Remote - United States | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in the US and Europe. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "556bfe3265c66a954902d2ae6684823b966302bb14df8fc1825dbd284b9dbe04",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/820d0d5a-0930-475c-b494-23e18ad2aa68/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/820d0d5a-0930-475c-b494-23e18ad2aa68",
+      "location": "Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in **Europe**. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "2bee173da9b75be226c7025701093805d88872598ff0cf8e61ae402ab1d1df50",
+      "locations": [
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/b4a7764e-c680-4bdf-9956-dc78f2ca94d5/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/b4a7764e-c680-4bdf-9956-dc78f2ca94d5",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in the North America. You can work from anywhere within this region. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "fd1c6aec8a007d21b908bc7d4d2bd5cbe655f6cd40fb05e6de6fa87c0a0eca3a",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/86abcce0-04b2-405c-9a8e-e0ca84813914/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/86abcce0-04b2-405c-9a8e-e0ca84813914",
+      "location": "Remote - North America | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America or Europe time zones. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "2394f04f4f01bdfa8f14669f938c0cf5fe3aaee12fa060a5efb79e2da013d73e",
+      "qualifier": "North America or Europe time zones",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "North America or Europe time zones",
+          "sourceLabel": "Remote - North America"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": "North America or Europe time zones",
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/1d652292-04d9-405c-8101-578efd020e94/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/1d652292-04d9-405c-8101-578efd020e94",
+      "location": "Remote - United States | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in the US and Europe. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "64ec7fde9f061b7bc9769f1ab983f3e412de9bd1597816f53dd725da7abe92c6",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/2ef60eea-7cff-45c2-abf2-eaedc4ea89bd/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/2ef60eea-7cff-45c2-abf2-eaedc4ea89bd",
+      "location": "Remote - North America",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in North America — EST or CST preferred for timezone alignment with our Europe-based team. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "df117edf5073f9928dcaa5833456b8808b3e3bb8d5545270bdced52bf8f674e4",
+      "qualifier": "EST or CST preferred",
+      "locations": [
+        {
+          "locationId": "d149e1e8-4539-86ec-88b1-7fbe3cb4b8d1",
+          "label": "North America",
+          "relation": "eligibility",
+          "qualifier": "EST or CST preferred",
+          "sourceLabel": "Remote - North America"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Linear/62a4524c-75da-499e-b150-7f68ce9f2da3/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/Linear/62a4524c-75da-499e-b150-7f68ce9f2da3",
+      "location": "Remote - United States | Remote - Europe",
+      "workplaceType": "remote",
+      "evidence": [
+        "**Location & work mode**",
+        "*Linear is a remote-first company, with optional co-working offices in San Francisco, New York, and London. This role is open to candidates based in the US and Europe. You can work from anywhere within those regions. We value deep focus and async collaboration, with intentional moments to connect in person through team off-sites, optional co-working, and occasional travel.*"
+      ],
+      "note": "Remote arrangement verified on the individual posting. Explicit body eligibility and time-zone/preference constraints are preserved; optional co-working offices are not job bases. Any wider body scope than the listing header is recorded in the evidence.",
+      "sourceSha256": "cfef5e7e9556f144ac51d1544bd69441a95d3fa527d95095f188c9cf2d7419cc",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "19dd5383-d2ce-836f-8e2a-b7611350a0ad",
+          "label": "Europe",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Europe"
+        }
+      ]
+    }
+  ]
+}

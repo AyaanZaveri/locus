@@ -1,0 +1,310 @@
+{
+  "companySlug": "tavily",
+  "verifiedAt": "2026-10-05",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4936043101?gh_jid=4936043101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4936043101",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "New York City, New York, United States; New York, United States",
+        "#### About Tavily",
+        "We're building the search engine for AI agents. Our API powers agentic applications and real-time reasoning by connecting LLMs to high-quality, trustworthy web content. We work with some of the most innovative teams in AI — from startups shaping the ecosystem to enterprises deploying AI at scale.",
+        "This is a full-time, on-site role based in our New York office."
+      ],
+      "sourceSha256": "0cf768c08489e9b910b8f2b344894f2623d73c6327e24766c34b89dd8fc655db",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4936043101?gh_jid=4936043101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4477703101,\"location\":{\"name\":\"New York City, New York, United States; New York, United States\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Technology\",\"value_type\":\"single_select\"}],\"id\":4936043101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"1750\",\"title\":\"Forward Deployed Engineer, Enterprise \",\"company_name\":\"Tavily\",\"first_published\":\"2026-07-23T04:41:31-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4968066101?gh_jid=4968066101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4968066101",
+      "location": "Austin, TX",
+      "workplaceType": null,
+      "evidence": [
+        "Austin, Texas, United States",
+        "### **The role**",
+        "Tavily by Nebius is looking for a Commercial Legal Counsel with experience in technology transactions and privacy to join our Legal team."
+      ],
+      "sourceSha256": "adf315138ed601b9472cff8ba8c40def6894bba04b963a70641aaea3dc91faa1",
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4968066101?gh_jid=4968066101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4513664101,\"location\":{\"name\":\"Austin, Texas, United States\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Legal\",\"value_type\":\"single_select\"}],\"id\":4968066101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"2114\",\"title\":\" Technology Commercial Legal Counsel\",\"company_name\":\"Tavily\",\"first_published\":\"2026-09-03T10:35:26-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4970713101?gh_jid=4970713101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4970713101",
+      "location": "Amsterdam, Netherlands | London, UK | Tel Aviv, Israel",
+      "workplaceType": null,
+      "evidence": [
+        "Amsterdam, Netherlands; London, United Kingdom; Tel Aviv, Israel",
+        "### **The role**",
+        "Tavily, part of Nebius, is the web access layer for AI agents. Over two million developers use us, and our customers include Fortune 500 companies running agents in production."
+      ],
+      "sourceSha256": "b41ccf98ad9717442ac105081647ef4e1b61382b9eaadedf8ac14f5f6d4272c3",
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4970713101?gh_jid=4970713101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4520001101,\"location\":{\"name\":\"Amsterdam, Netherlands; London, United Kingdom; Tel Aviv, Israel\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Product\",\"value_type\":\"single_select\"}],\"id\":4970713101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"2207\",\"title\":\"Senior Product Manager, Vertical Search\",\"company_name\":\"Tavily\",\"first_published\":\"2026-09-08T07:41:33-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "94d5e917-e7dd-8afd-8d1b-e6e2d369d6d5",
+          "label": "Tel Aviv, Israel",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Tel Aviv, Israel"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4913412101?gh_jid=4913412101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4913412101",
+      "location": "New York, NY",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "New York City, New York, United States",
+        "### **About Tavily**",
+        "We're building the infrastructure layer for agentic web interaction at scale. Our API is designed from the ground up to power Retrieval-Augmented Generation (RAG) and real-time reasoning in AI systems. By connecting LLMs to high-quality, trustworthy web content, we help developers build agents that are not only intelligent — but also informed.",
+        "This role is based in our New York office, hybrid with the NYC team."
+      ],
+      "sourceSha256": "cd15efcaddf77eee7baa09dc42c001f7f6576cc1312f35144cf2702de3c65ec0",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4913412101?gh_jid=4913412101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4494320101,\"location\":{\"name\":\"New York City, New York, United States\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Technology\",\"value_type\":\"single_select\"}],\"id\":4913412101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"1891\",\"title\":\"Senior Software Engineer (Agentic Search) - Billing\",\"company_name\":\"Tavily\",\"first_published\":\"2026-07-06T04:44:19-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4936041101?gh_jid=4936041101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4936041101",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "New York, United States",
+        "**About Tavily**",
+        "We're building the search engine for AI agents. Our API powers agentic applications and real-time reasoning by connecting LLMs to high-quality, trustworthy web content. We work with some of the most innovative teams in AI — from startups shaping the ecosystem to enterprises deploying AI at scale.",
+        "This is a full-time, on-site role based in our New York office."
+      ],
+      "sourceSha256": "351e74d01e57cbe13c60c139ead2153ded97c23b8107f0e2fe58811ce501f519",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4936041101?gh_jid=4936041101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4449719101,\"location\":{\"name\":\"New York, United States\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Technology\",\"value_type\":\"single_select\"}],\"id\":4936041101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"1438\",\"title\":\"Forward Deployed Engineer, Ecosystem\",\"company_name\":\"Tavily\",\"first_published\":\"2026-07-23T04:39:58-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4845644101?gh_jid=4845644101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4845644101",
+      "location": "Tel Aviv, Israel",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Tel Aviv, Israel",
+        "### **The role**",
+        "We are looking for a Senior Product Manager to join our Agentic Search team, building the search and retrieval infrastructure that powers AI agents and LLM-based applications at scale.",
+        "**work hybrid from Tel Aviv, Israel.**"
+      ],
+      "sourceSha256": "cadbc4d4a912887c8253266917e1f6c7767abd095322ed57ef1dcd8a38804710",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4845644101?gh_jid=4845644101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4459736101,\"location\":{\"name\":\"Tel Aviv, Israel\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Product\",\"value_type\":\"single_select\"}],\"id\":4845644101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"1560\",\"title\":\"Senior Product Manager, Agentic Search\",\"company_name\":\"Tavily\",\"first_published\":\"2026-04-21T06:30:10-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "locations": [
+        {
+          "locationId": "94d5e917-e7dd-8afd-8d1b-e6e2d369d6d5",
+          "label": "Tel Aviv, Israel",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Tel Aviv, Israel"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4971192101?gh_jid=4971192101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4971192101",
+      "location": "Amsterdam, Netherlands | London, UK | Tel Aviv, Israel",
+      "workplaceType": null,
+      "evidence": [
+        "Amsterdam, Netherlands; London, United Kingdom; Tel Aviv, Israel",
+        "### **The role**",
+        "Tavily, part of Nebius, is the web access layer for AI agents. Over two million developers use us, and our customers include Fortune 500 companies running agents in production."
+      ],
+      "sourceSha256": "91dc56c6767b7b51234cd92761a857397076147f8a407cef4c8225947106ada9",
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4971192101?gh_jid=4971192101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4520014101,\"location\":{\"name\":\"Amsterdam, Netherlands; London, United Kingdom; Tel Aviv, Israel\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Product\",\"value_type\":\"single_select\"}],\"id\":4971192101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"2208\",\"title\":\"Senior Product Manager, Search Infrastructure\",\"company_name\":\"Tavily\",\"first_published\":\"2026-09-08T13:11:20-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "a205a675-8791-8d92-a09e-e729779a6746",
+          "label": "Amsterdam, Netherlands",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Amsterdam, Netherlands"
+        },
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": "94d5e917-e7dd-8afd-8d1b-e6e2d369d6d5",
+          "label": "Tel Aviv, Israel",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Tel Aviv, Israel"
+        }
+      ]
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4893457101?gh_jid=4893457101",
+      "sourceUrl": "https://job-boards.eu.greenhouse.io/tavily/jobs/4893457101",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Senior Site Reliability Engineer (In-Office Required)",
+        "New York City, New York, United States",
+        "### **About Tavily**"
+      ],
+      "sourceSha256": "ed1fb02fce51880ffe66cb1e04274c2e737eaf1111f63382b72a8855b08ef079",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs",
+          "sourceSha256": "e8e062b6e5d1930d3b0bb6d417eb27c3fae2d8a1181e5410336f741214d93a69",
+          "evidence": [
+            "{\"absolute_url\":\"https://job-boards.eu.greenhouse.io/tavily/jobs/4893457101?gh_jid=4893457101\",\"data_compliance\":[{\"type\":\"gdpr\",\"requires_consent\":true,\"requires_processing_consent\":false,\"requires_retention_consent\":true,\"retention_period\":720,\"demographic_data_consent_applies\":false}],\"internal_job_id\":4485346101,\"location\":{\"name\":\"New York City, New York, United States\"},\"metadata\":[{\"id\":11194679101,\"name\":\"Job Category\",\"value\":\"Technology\",\"value_type\":\"single_select\"}],\"id\":4893457101,\"updated_at\":\"2026-10-02T17:02:04-04:00\",\"requisition_id\":\"1801\",\"title\":\"Senior Site Reliability Engineer (In-Office Required)\",\"company_name\":\"Tavily\",\"first_published\":\"2026-06-11T13:59:35-04:00\",\"language\":\"en\",\"application_deadline\":null}"
+          ]
+        }
+      ],
+      "note": "Canonical geography follows the current exact posting, not the old location string. New York City uses its city identity; Austin-only legal listing does not retain an unsupported New York alternative. Work mode comes from explicit role prose.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4955505101?gh_jid=4955505101",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs/4955505101",
+      "reason": "Fresh canonical Greenhouse listing omits the exact ID and its first-party detail API explicitly returns HTTP404 Job not found. Cookie-only Ketch extraction was not treated as removal proof.",
+      "checkedAt": "2026-10-05T05:25:45.301577+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs"
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4952166101?gh_jid=4952166101",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs/4952166101",
+      "reason": "Fresh canonical Greenhouse listing omits the exact ID and its first-party detail API explicitly returns HTTP404 Job not found. Cookie-only Ketch extraction was not treated as removal proof.",
+      "checkedAt": "2026-10-05T05:25:45.301577+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs"
+    },
+    {
+      "url": "https://job-boards.eu.greenhouse.io/tavily/jobs/4952170101?gh_jid=4952170101",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs/4952170101",
+      "reason": "Fresh canonical Greenhouse listing omits the exact ID and its first-party detail API explicitly returns HTTP404 Job not found. Cookie-only Ketch extraction was not treated as removal proof.",
+      "checkedAt": "2026-10-05T05:25:45.301577+00:00",
+      "boardUrl": "https://boards-api.greenhouse.io/v1/boards/tavily/jobs"
+    }
+  ]
+}

@@ -147,10 +147,17 @@ export function resolvePlace(
   let code = countryHint?.toUpperCase();
   // Reviewed region-only labels already present in our source inventory.
   const subdivisionCountries: Record<string, string> = {
+    Alaska: "US",
     Arizona: "US",
     California: "US",
+    Hawaii: "US",
+    Idaho: "US",
+    Montana: "US",
     "New Jersey": "US",
     Ontario: "CA",
+    Oregon: "US",
+    Washington: "US",
+    Wyoming: "US",
   };
   code ??= subdivisionCountries[label];
   let stateCode: string | undefined;
@@ -335,16 +342,22 @@ export class LocationCatalog {
         qualifier = suffix[1];
         label = label.slice(0, -suffix[0].length);
       }
-      let place = this.place(label);
-      // Cursor's source-reviewed city lists must not reuse an old catalog alias
-      // incorrectly pointing at a same-named state. Do not relabel other rows.
-      if (options.inferRemoteEligibility === false) {
-        const candidate = resolvePlace(label);
-        if (candidate?.kind === "city" && place?.kind === "subdivision") {
-          place = candidate;
-          this.places.set(candidate.id, candidate);
-        }
-      }
+      const candidate =
+        options.inferRemoteEligibility === false ? resolvePlace(label) : null;
+      // Staged source-reviewed repairs must bypass the old city->state alias
+      // before place() registers aliases; otherwise a correct city throws on
+      // its display label's mistaken shared alias. Do not change other rows or
+      // mutate shared aliases during a company-only repair.
+      const hasMistakenStateAlias =
+        candidate?.kind === "city" &&
+        [label, sanitizeLocation(label), candidate.displayLabel].some(
+          (alias) => {
+            const id = this.aliases.get(aliasKey(alias));
+            return id && this.places.get(id)?.kind === "subdivision";
+          },
+        );
+      const place = hasMistakenStateAlias ? candidate : this.place(label);
+      if (hasMistakenStateAlias && place) this.places.set(place.id, place);
       if (place && place.kind !== "city" && relation === "office")
         relation = "unspecified";
       if (

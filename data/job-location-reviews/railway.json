@@ -1,0 +1,167 @@
+{
+  "companySlug": "railway",
+  "verifiedAt": "2026-10-05T05:50:08.593287+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/railway/4856389c-44d8-4635-ba51-5fc1b8a49ca8",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/4856389c-44d8-4635-ba51-5fc1b8a49ca8",
+      "location": "Remote - Worldwide",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "1a6bd9157174c77e5652c0bdfb4bfdd14ebc17fbfd8d54d3d18dfe62d6bd1329",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/d93c8794-6058-4295-83a0-092b05664f34",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/d93c8794-6058-4295-83a0-092b05664f34",
+      "location": "Remote - Worldwide",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "fae1553d686949afee7159c64f61424a07357c98cb17ba5b516345389cb8bdd5",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/5f51771e-339f-49f9-8da2-e3c7179c7bad",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/5f51771e-339f-49f9-8da2-e3c7179c7bad",
+      "location": "Remote - Worldwide",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "a5ab51f5a49e693dbb06d22e3e732159a092a234b6ce06d17364b3a96cff8b44",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/541836a1-6d3f-47bf-845f-5f48fe547568",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/541836a1-6d3f-47bf-845f-5f48fe547568",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "7858d33c120efdb217a21603dc56fb93d60b2a62f28a240e28cc99b3a35625ff",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/b8072f95-043f-404d-a313-f0bdf8dd3c81",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/b8072f95-043f-404d-a313-f0bdf8dd3c81",
+      "location": "Remote - Worldwide",
+      "workplaceType": "remote",
+      "evidence": [
+        "*This is a remote position available anywhere in the world! Linkedin makes us show a country, but we hire the best people wherever they are.*"
+      ],
+      "sourceSha256": "faf5c3becfd4bd35124128c38e412d503ff45240539d6334edbb3c6223457950",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/6ddcfe47-6cce-469b-ba6d-4f0e83440c9d",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/6ddcfe47-6cce-469b-ba6d-4f0e83440c9d",
+      "location": "Remote - Worldwide",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "ed3074f6f0ed76f59506a41a33406ca165703d98c8173b5428ac9b7da2e1bae2",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/25d8444a-47dc-4084-ae56-29a0f0b19b74",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/25d8444a-47dc-4084-ae56-29a0f0b19b74",
+      "location": "Remote - Worldwide",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "815994b8e09cbf77bd5b566f342c404df2e2a6fb62ede4c615de7bde6bcededa",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/railway/7d42f0e8-15a5-453d-8992-9e8638846077",
+      "sourceUrl": "https://jobs.ashbyhq.com/railway/7d42f0e8-15a5-453d-8992-9e8638846077",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "## Location Type\n"
+      ],
+      "sourceSha256": "223201f1aace23d1539b0782c96bd510cd8d1188d6df6048d9c66e390a9319f4",
+      "note": "ATS Remote flag corroborated by posting Location Type/body",
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    }
+  ]
+}

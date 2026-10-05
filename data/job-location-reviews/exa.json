@@ -1,0 +1,1297 @@
+{
+  "companySlug": "exa",
+  "verifiedAt": "2026-10-05T14:23:04.492258+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/exa/8e4a696c-c37e-4102-b7fd-000d3ff45d7d",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/8e4a696c-c37e-4102-b7fd-000d3ff45d7d",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Growth Marketing Manger",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "ba0ee507baa3f0895bb4c404e28b54c2b97e4d42b4028ba9e107399697e8df8e",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/0e3957bf-3dd1-4a5a-828c-5c06a8499c93",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/0e3957bf-3dd1-4a5a-828c-5c06a8499c93",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Business Operations"
+      ],
+      "sourceSha256": "f5d948c739a927d8018a805dc06a20ff4867ed7a2ad5b3ed5136a0e03f700221",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Operations • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/41eb773d-9909-422c-b6b8-5bbdc407d318",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/41eb773d-9909-422c-b6b8-5bbdc407d318",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Backend",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "b84dae7e3a17f24a544ba2a55622a3e149bad6b002b76241b27e39fbd102ab68",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/533447e7-4cd4-44e9-92ec-22629d568316",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/533447e7-4cd4-44e9-92ec-22629d568316",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Technical Sourcer"
+      ],
+      "sourceSha256": "d5191cce8047e9e10a51270530244d51eab748a5518e468f20c4750931c62df0",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "People • San Francisco, California; New York City • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/7a852555-9ae4-4f27-890f-849cd066693e",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/7a852555-9ae4-4f27-890f-849cd066693e",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Research Engineer, Generalist",
+        "## Location\n\nSingapore",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "adad301a2c09608fc5d1905cb903f65c763deeb519c099f09a8dc5b9ea48b720",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/8dc40d41-c1f3-4796-aed7-b614bcef1d72",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/8dc40d41-c1f3-4796-aed7-b614bcef1d72",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer, APJ",
+        "in-person opportunity in Singapore"
+      ],
+      "sourceSha256": "31b2af233fa78329cb6bb5d4bdf9d9d7741fa4acaaeb9f660b5c5d9007624412",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Arrangement stated in the posting body.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "GTM • Singapore • Full time"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/1b8cc57c-dd49-4ae3-891d-6cff2702dd7c",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/1b8cc57c-dd49-4ae3-891d-6cff2702dd7c",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Field Event Manager",
+        "## Location\n\nNew York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "d7f914c713b150a2377202c5edfe74073f5c596f9026532d5cdb2a1ae3441279",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/01184dbd-652f-45bc-bd3f-bb709da69402",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/01184dbd-652f-45bc-bd3f-bb709da69402",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Deal Desk Manager",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "8e272c6cd8bca1740d620e685de992683507e0735bae92b90c91c42dbedc920c",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/94dd327d-5105-4b6f-8a72-e8d4d330a4e1",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/94dd327d-5105-4b6f-8a72-e8d4d330a4e1",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Creative Video Producer",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "783c0b01ff32dee75acdb53da7ec2727c516e86314f41c2cb6db8ddd59c6dc64",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/8932d319-b456-4ee0-9efd-16d82be8de80",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/8932d319-b456-4ee0-9efd-16d82be8de80",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "fb3189ab5b07758588569f625abb4bc9b2d25d4b706a7583f31314cc30eb682d",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/faf3340f-a551-49cd-97ca-498023e59f6b",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/faf3340f-a551-49cd-97ca-498023e59f6b",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Data Partnerships",
+        "in-person opportunity in San Francisco"
+      ],
+      "sourceSha256": "429ea1a17ab583861e538dbf347d3a654e6474a15d4be4ae71f9e2a396a650b6",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "GTM • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/d26419da-d1a3-4ece-8b10-22e8d5526744",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/d26419da-d1a3-4ece-8b10-22e8d5526744",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Product Marketing Manager",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "2522a501304fb3bcca02ad6c3ac256d0fd4941a9c3fb1932d22d62895c70ffae",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/b5665525-c2a3-4c6a-a3dd-d0d1f1df01f8",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/b5665525-c2a3-4c6a-a3dd-d0d1f1df01f8",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Executive Assistant to Founders",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "7f18e1d8b3f3820d560dbf7ce967aa8eefee0d91e01809ad9380069fc8f166dc",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/c935b18d-a35a-46cd-b0fc-a64d65486518",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/c935b18d-a35a-46cd-b0fc-a64d65486518",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Customer and Partner Marketing",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "1f155f8a2654c2225ed24fc074c82574882e01b2f70de8aeca8037c421f5c9e2",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/c14f297b-b2b2-4e20-90fd-bdfe49880f08",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/c14f297b-b2b2-4e20-90fd-bdfe49880f08",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# VP, Customer Experience",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "2703c8c1b0e72eda2bde20b334f9f4ae09df109f441ef58807a5d25dd9490bca",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/54f689ac-ab9a-4e41-8e84-556526582b54",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/54f689ac-ab9a-4e41-8e84-556526582b54",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Digital Marketing Manager",
+        "## Location\n\nSan Francisco, California; New York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "28a29bcd0d7169b692b6194b59bec8068d2c0759db306603bd65db1cfeffb9af",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/8ba94280-c4f0-4a15-b3eb-8acf4e2d6dba",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/8ba94280-c4f0-4a15-b3eb-8acf4e2d6dba",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Backend",
+        "## Location\n\nSingapore",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "d3f0f10bf619f6da1639bd7f510f3ef04def39d9dcdab77fbc8bd6518825be08",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/913d2b71-39d5-4d3a-ab8d-ffffa34cd069",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/913d2b71-39d5-4d3a-ab8d-ffffa34cd069",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Research Engineer, Generalist",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "f67ebc09bcdcbfc57f2355836c8b198ba448870b570e76e3c7fd9602fbe01eb4",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/7975f948-6c90-4c49-9cf4-54645a3f343f",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/7975f948-6c90-4c49-9cf4-54645a3f343f",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Sales Development Representative",
+        "## Location\n\nNew York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "47092e03c61950f31937d0c880692df140d275565f6f2d6cc61bb8cb44a7e98d",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/1f90ebb9-0f74-4a52-822a-d0ea6acdef4f",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/1f90ebb9-0f74-4a52-822a-d0ea6acdef4f",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Knowledge Systems",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "e3ede4d6a43abd6fa1f89dddbf5658ea9ca10f41ba3a39056af3beaa5d196876",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/dc8a6537-12b4-40af-b8da-55639a01dca3",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/dc8a6537-12b4-40af-b8da-55639a01dca3",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Sales Development Representative, SF",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "9e738d9a5b73b110eb5c0eb5fffecfe7dcff4bcbf2cb3e8ebf2401284c26e9fa",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/e6932b63-4df5-4cd9-85f1-db5079219d34",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/e6932b63-4df5-4cd9-85f1-db5079219d34",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Revenue Insights Manager",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "a064dc09ca0347659c51ac553f1a3c4ae249af17da19ff992c89bf8a5104c3e4",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/a9e01521-66f1-481b-89da-ec01d4620f16",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/a9e01521-66f1-481b-89da-ec01d4620f16",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Intern",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "639b4b01727d06505478afbaf1f739f919e11bfa618c3dded4b67539191a3232",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/93317180-34e0-45ff-84a3-d5bca4d7f7ae",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/93317180-34e0-45ff-84a3-d5bca4d7f7ae",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Account Executive",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "20e88a67f5f871a1fb4a106e582e339dd493aa27966d637a2aea975d800cb201",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/fd015edb-c29b-40ff-aa6f-b477c730b4c1",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/fd015edb-c29b-40ff-aa6f-b477c730b4c1",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "### **About Exa**",
+        "either our San Francisco HQ or in New York office"
+      ],
+      "sourceSha256": "822a88ff6a6b97bea07cba18ee892626e2c81f099e9b44311ebe687168f248ef",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Marketing • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/0298c908-e2ff-4dbb-a8cc-4899a9f6737a",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/0298c908-e2ff-4dbb-a8cc-4899a9f6737a",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Web Crawling",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "2fe19c0a21e09eee74a95784c6048776f868260caf3e1ed17731552df4cb9fc5",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/e3e0cd05-d71a-491d-a553-2a991741915c",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/e3e0cd05-d71a-491d-a553-2a991741915c",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Account Executive",
+        "## Location\n\nNew York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "bb0e2eac03a26592c22ece094997c169f34a929c6676ba0f1981f6746004366b",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/62864919-a97a-457c-baf1-8facb31f98f8",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/62864919-a97a-457c-baf1-8facb31f98f8",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Head of Marketing Operations",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "5e5ad900fef45f799babbe3ddce8325779deda7d9db2227a7ccd4523e0c688ac",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/c542d672-691c-46c1-9741-856d66f2c2ea",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/c542d672-691c-46c1-9741-856d66f2c2ea",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer",
+        "## Location\n\nNew York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "af1b02f5d51a62caff4e0ef8c7d9f3861a7b37dfd07619524d6f8d94947b6326",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/35bd4464-745b-4e33-a407-c1870e86abb0",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/35bd4464-745b-4e33-a407-c1870e86abb0",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Head of Developer Relations",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "67ab8676bf79378d32421455f34447e0d88c12a54e19ccb60269e96c34cd1671",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/237cc096-2234-48ee-9c98-8c7221845484",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/237cc096-2234-48ee-9c98-8c7221845484",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Design Engineer",
+        "in-person opportunity in San Francisco"
+      ],
+      "sourceSha256": "9210ead797cfd207f136efd5750bee76c8eac749b1276e17b1315746e894c3af",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Product • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/5ec7c92d-f02a-4a0c-afcc-4081f22f3d9f",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/5ec7c92d-f02a-4a0c-afcc-4081f22f3d9f",
+      "location": "London, UK",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Field Event Manager, EMEA",
+        "based in person in London"
+      ],
+      "sourceSha256": "51f8354ae0796909cd283d3d90cf909bc92b48b5f3a03b6b4db00068707d8b31",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Arrangement stated in the posting body.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Marketing • London • Full time"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/5f10cc28-bcad-4ce4-8fa1-996a59c59e65",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/5f10cc28-bcad-4ce4-8fa1-996a59c59e65",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Distributed Data Systems",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "d605e2ebeb40a5ab6577cea7ee703cdb84579ff75bb8025abe83934a18a72d12",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/3804115b-24c5-4854-8bc6-6b6f0de85a1f",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/3804115b-24c5-4854-8bc6-6b6f0de85a1f",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Head of Talent",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "62c7dfa296cb580acd5457fc8c13926a19883202222132ad7f0cd4afc2fe69c0",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/c4081592-fa8c-4fed-9041-70c62feee157",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/c4081592-fa8c-4fed-9041-70c62feee157",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Security",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "2f2385a37ea939935fa2624d554f4e1f0fb92c044cd42278b52efe2546deb61f",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/234bf118-672a-45d1-a4a2-02065d1c02f0",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/234bf118-672a-45d1-a4a2-02065d1c02f0",
+      "location": "London, UK",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Forward Deployed Engineer, EMEA",
+        "in-person opportunity in London"
+      ],
+      "sourceSha256": "bf25233ee2a04c91fc9b781fece6258ce32ab3cfe39f65779e33ca41fc3b080f",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Arrangement stated in the posting body.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "GTM • London • Full time"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/6f9d11a6-e1e8-448d-9051-32cf6caeccba",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/6f9d11a6-e1e8-448d-9051-32cf6caeccba",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Manager, Sales Development - NYC",
+        "## Location\n\nNew York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "58e01d2f8747304ffc03fe0aa9e7d24541f02380d0fa6b0bdfb4ded604ed2cc7",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/d24ba483-3d39-4552-a9cf-61a4f57c494c",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/d24ba483-3d39-4552-a9cf-61a4f57c494c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Head of People",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "a5b7f088c12fd47dcc9cecd2f28e98620bd66c987bac06ee2d3a635bc2bae4fa",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/fcebd301-b473-40dc-b733-362883ac1f37",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/fcebd301-b473-40dc-b733-362883ac1f37",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Research, ML",
+        "in-person opportunity in San Francisco"
+      ],
+      "sourceSha256": "7f117abbad1ffac2bb5d9ea41a3496a99904a5ea466067d1bde8314c932f35fd",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Research • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/37599c13-47f8-40d7-b37f-9fc9e5329134",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/37599c13-47f8-40d7-b37f-9fc9e5329134",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Head of Security",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "f442cadfd94f81a41753fe10f98da125288892be832660ba31c6c52ebc6cf154",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/80a73a37-da30-4630-9a47-9dfbd3e26b69",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/80a73a37-da30-4630-9a47-9dfbd3e26b69",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# IT Engineer"
+      ],
+      "sourceSha256": "096eef352eb2d0bf177d5df261765ae866a084fbb51f481568e946183a1c3b4a",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Engineering • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/ef734269-ca0c-4944-86f5-9ae8666b3993",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/ef734269-ca0c-4944-86f5-9ae8666b3993",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# GTM Recruiter",
+        "in-person opportunity in San Francisco"
+      ],
+      "sourceSha256": "d9cf63f7c5d18c32da10d09073a5338b9359e693a709db3f91d409c28afb10d3",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "People • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/11cd06ca-db50-4821-a920-07071f8ce0b4",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/11cd06ca-db50-4821-a920-07071f8ce0b4",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# People Operations Generalist",
+        "in-person opportunity in Singapore"
+      ],
+      "sourceSha256": "fbadbd473622fce1a56d3cde017ccdd8320bf04d647714db76ab16145115247e",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Arrangement stated in the posting body.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "People • Singapore • Full time"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/dbcd90ce-f311-4188-a388-89357ad80e4c",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/dbcd90ce-f311-4188-a388-89357ad80e4c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Head of Cloud Partnerships",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "5ee791fca907829655f60736036ba7222c4bff55cb16e868e1d136905eaf4573",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/9c45a74e-d507-482a-bc0e-da2f464c9767",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/9c45a74e-d507-482a-bc0e-da2f464c9767",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Research, Evals",
+        "in-person opportunity in San Francisco"
+      ],
+      "sourceSha256": "ab09ed6deb37fed9c91d1b05321024ee56478c6b428c284d2090450e159b6c1b",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Research • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/e4a7e653-7b59-49b2-a4ce-e173860549ca",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/e4a7e653-7b59-49b2-a4ce-e173860549ca",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# VP, Finance",
+        "Targeting San Francisco Bay Area as preferred location"
+      ],
+      "sourceSha256": "341e5f8dfaef365cde6371a007605acfe0e8bd4c959677c6a365fcc36d43826c",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Operations • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/a3a77458-67b6-4654-8727-1c1fddebad51",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/a3a77458-67b6-4654-8727-1c1fddebad51",
+      "location": "San Francisco, CA | New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Technical Recruiter",
+        "## Location\n\nSan Francisco, California; New York City",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "e162ee38a30064f62b593bb0594fb123d0594e84211fa19af1fa9869c1f14174",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/f6bd612e-a4ee-4c75-a205-5cd70901661f",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/f6bd612e-a4ee-4c75-a205-5cd70901661f",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Research, ML",
+        "in-person opportunity in Singapore"
+      ],
+      "sourceSha256": "6b02dd2a796600593d5052111b1267ad2f3f6172ab3e737969b0535be382ad01",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Research • Singapore • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/b193ad1c-7700-4e32-98cb-efc791993963",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/b193ad1c-7700-4e32-98cb-efc791993963",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Technical Enablement Manager",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "8fdfdf2b3be393cb02a700686057d0de8c975bfe82532b2ba0969526479a6464",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/7e52b8c9-255a-4848-a54a-efdc1fb25a69",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/7e52b8c9-255a-4848-a54a-efdc1fb25a69",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Brand Designer",
+        "in-person opportunity in San Francisco"
+      ],
+      "sourceSha256": "e0883602ea5ff440d0308a315708985c90b03864ed5ea960303d71f42c8812f6",
+      "note": "Individual extraction omits the header block; geography comes from the canonical board listing for this exact posting. Board states On-site.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://jobs.ashbyhq.com/exa",
+          "sourceSha256": "d710552a48cff7d06439d9cf769410f51c8e9b326a24ae874aa4c7f171a44441",
+          "evidence": [
+            "Product • San Francisco, California • Full time • On-site"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/98a8bab6-4cbf-4d39-a5a7-0867addc4086",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/98a8bab6-4cbf-4d39-a5a7-0867addc4086",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Full Stack",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "70a44abeac6e3a21cffa77f8c323c91b4e9898b4cdaed626cba028cb7dbe62cf",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/exa/9679c963-9d4b-4cfe-8bd9-45ab5d5e7b90",
+      "sourceUrl": "https://jobs.ashbyhq.com/exa/9679c963-9d4b-4cfe-8bd9-45ab5d5e7b90",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Web Crawling",
+        "## Location\n\nSingapore",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "329df27a6982aba21ca1f699bfba4a95c0a0e913e007ac3d2e82485a9a29c65a",
+      "note": "Explicit On-site location header on the individual posting.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    }
+  ]
+}

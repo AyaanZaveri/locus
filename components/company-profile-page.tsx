@@ -152,7 +152,7 @@ export function CompanyProfilePage({ profile }: { profile: CompanyProfile }) {
                   alt=""
                   aria-hidden="true"
                   className="mr-0.5 size-3 rounded-full"
-                  src={`https://hatscripts.github.io/circle-flags/flags/${profile.location.countryCode}.svg`}
+                  src={`https://hatscripts.github.io/circle-flags/flags/${profile.location.countryCode.toLowerCase()}.svg`}
                 />
                 {profile.location.label}
               </Badge>

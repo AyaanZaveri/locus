@@ -1,0 +1,1343 @@
+{
+  "companySlug": "kalshi",
+  "verifiedAt": "2026-10-05T06:05:37.230634+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/03d04c94-cdc5-4edf-89f7-c6c946a81911",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/03d04c94-cdc5-4edf-89f7-c6c946a81911",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Corporate Development"
+      ],
+      "sourceSha256": "ec748dfd5b0b51b7b6c563b45f8937c7d7fd828e161f3250b50e0049da5923c1",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/03d04c94-cdc5-4edf-89f7-c6c946a81911\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/e6c74059-d0fa-4501-88c2-35ac74e8601e",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/e6c74059-d0fa-4501-88c2-35ac74e8601e",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## What is Kalshi?"
+      ],
+      "sourceSha256": "11800455cde2a42f086241a6bf3578b8a6380c3b79b4a0d9a1fab96591b2f56c",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/e6c74059-d0fa-4501-88c2-35ac74e8601e\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/9a802eca-14bc-4577-b5f4-8e49e61bd7f5",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/9a802eca-14bc-4577-b5f4-8e49e61bd7f5",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# UX Researcher"
+      ],
+      "sourceSha256": "3577fc762c9bda3b881cbe9253027f7986a4b28fab8e6ff23ea92cde77d3fe7e",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/9a802eca-14bc-4577-b5f4-8e49e61bd7f5\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/952b8bc4-f20a-4f86-86c1-19cb3301c610",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/952b8bc4-f20a-4f86-86c1-19cb3301c610",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Institutional Sales & Operations, Kalshi Prime",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "f568b7bd881d0087545684de395b9d942b8236c5d07622c684cfbe6cb1de7666",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/952b8bc4-f20a-4f86-86c1-19cb3301c610\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/a0a953d6-3769-4254-8381-d98c647c078f",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/a0a953d6-3769-4254-8381-d98c647c078f",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## What is Kalshi?"
+      ],
+      "sourceSha256": "41f9552e77c9f0d26886150456e5b01413f0b507be582738f07ece72ae9d5ddc",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/a0a953d6-3769-4254-8381-d98c647c078f\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/b1ada97f-73f7-492e-89b7-150ebd49ad55",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/b1ada97f-73f7-492e-89b7-150ebd49ad55",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Data Scientist (Product)",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "e30b15731c1676ea7194b00ce3e51a32f1b27efbde498830b5e2edfcf7120e99",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/b1ada97f-73f7-492e-89b7-150ebd49ad55\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/72111d46-0815-47bf-bad2-152cf530b010",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/72111d46-0815-47bf-bad2-152cf530b010",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Surveillance Analyst"
+      ],
+      "sourceSha256": "fc448b14892e145222e877507d853eb7606bf3c293f27063fb5e4c7b04944820",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/72111d46-0815-47bf-bad2-152cf530b010\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/f092f743-89fb-49f3-b496-51a807bc84b5",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/f092f743-89fb-49f3-b496-51a807bc84b5",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Short Form Comms",
+        "## Location\n\nRemote",
+        "## Location Type\n\nRemote",
+        "You are (ideally) willing to work in our NY office - but willing to make an exception here if necessary to find the right person"
+      ],
+      "sourceSha256": "b9810e228554d5c95bb44748a670f3892241e27f91b16a3912067ba966139eda",
+      "note": "Standalone remote; NY office preference explicitly waived for the right person.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/f092f743-89fb-49f3-b496-51a807bc84b5\"",
+            "\"location\": \"Remote\"",
+            "\"workplaceType\": \"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/5f00f02c-002e-4e93-891f-650a0c296e15",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/5f00f02c-002e-4e93-891f-650a0c296e15",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Growth Politics Intern",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "742d026f77786f4e2633e5f8cb8061119dce2e980d936c6429b6e9c009afb524",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/5f00f02c-002e-4e93-891f-650a0c296e15\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/c3b90847-4936-4f09-8960-0c960be3aad6",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/c3b90847-4936-4f09-8960-0c960be3aad6",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Accounting Manager"
+      ],
+      "sourceSha256": "f0e8e4dcbf049faead27a4dbd57048868aa060f8e846fcc1f3b3d227a086f165",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/c3b90847-4936-4f09-8960-0c960be3aad6\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/3d255a5d-7b0c-4a92-bae1-1ddb040f733e",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/3d255a5d-7b0c-4a92-bae1-1ddb040f733e",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Infrastructure Engineer"
+      ],
+      "sourceSha256": "3ade5388cb21f312fb8848551ffa9e58563f8b9a038f078594ed56b76ac4230a",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/3d255a5d-7b0c-4a92-bae1-1ddb040f733e\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/ab6fdd99-df25-44ae-b15d-3a9ca7807387",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/ab6fdd99-df25-44ae-b15d-3a9ca7807387",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Site Reliability Engineer",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "e7dc987fc7954d0ee51b9a505809c23844ae8d5fd819fe003cab31bd20223c56",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/ab6fdd99-df25-44ae-b15d-3a9ca7807387\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/24656bd5-5d7e-4c34-beed-caab7d0e3114",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/24656bd5-5d7e-4c34-beed-caab7d0e3114",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## What is Kalshi?"
+      ],
+      "sourceSha256": "c7bc461c86feeb111e0157737daf27c173432da196ba653d8fc45cfeb490e6cc",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/24656bd5-5d7e-4c34-beed-caab7d0e3114\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/13c4b111-5dab-4560-9843-70c06c1acf6e",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/13c4b111-5dab-4560-9843-70c06c1acf6e",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Trading Platform",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "4344ef1a07176df3d81602f959eb0a2537a83a115539b00953e80e78c798787d",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/13c4b111-5dab-4560-9843-70c06c1acf6e\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/35ff02ff-c0b0-4560-96c8-4a6a9e4db9f2",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/35ff02ff-c0b0-4560-96c8-4a6a9e4db9f2",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Mobile",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "57b9146eee998a96529ea93aff70f50841b68ed0a91bca43fbeb0e9882ff9f4a",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/35ff02ff-c0b0-4560-96c8-4a6a9e4db9f2\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/f725fabf-05e9-4ca6-bed6-258fd7012104",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/f725fabf-05e9-4ca6-bed6-258fd7012104",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Compliance, Licensing & Strategic Initiatives",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "3abf3a7de8ee68a32b041708a0c9170d3f9fe3710b9545c02a2494e4367122b7",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/f725fabf-05e9-4ca6-bed6-258fd7012104\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/f6da85be-8e0c-4143-92dc-ee16629bceba",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/f6da85be-8e0c-4143-92dc-ee16629bceba",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Perps Sales Lead",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "85f097a5df4c97eb2b6a37b3c10b7007e33503db5b29fb90a831ffe5f57fad6a",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/f6da85be-8e0c-4143-92dc-ee16629bceba\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/bd412c3c-b8a4-4d2e-a11a-489a9608729c",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/bd412c3c-b8a4-4d2e-a11a-489a9608729c",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## What is Kalshi?",
+        "in person in our downtown Manhattan office"
+      ],
+      "sourceSha256": "9d00d2fe220fab95686784e2ed7f6aa6db1c137e6f773bd1a27c39eead855219",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/bd412c3c-b8a4-4d2e-a11a-489a9608729c\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/a9a62aa1-2825-4dd1-abb1-b3fb27bf1326",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/a9a62aa1-2825-4dd1-abb1-b3fb27bf1326",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Perps Content Marketer",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "56709876697b0971c5e2be36f1575010f58197301ad93eb5ba4df20b13f8f7dc",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/a9a62aa1-2825-4dd1-abb1-b3fb27bf1326\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/185ac0bd-d319-48d6-984d-b435de05b885",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/185ac0bd-d319-48d6-984d-b435de05b885",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Support Operations",
+        "based in our NYC office"
+      ],
+      "sourceSha256": "116e7ec462b38022c17e1129e07df292e9a967c3b8cdfaf600b7a412c61051df",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/185ac0bd-d319-48d6-984d-b435de05b885\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/2f849e14-a1b8-4fae-b983-67a29407dde0",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/2f849e14-a1b8-4fae-b983-67a29407dde0",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Trading Systems Engineer (Affiliated Trading)",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "02d7451089fabbcbb42432f070c2bace6ef65a50d598dca5a12694c7848425ab",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/2f849e14-a1b8-4fae-b983-67a29407dde0\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/25718664-54b7-454b-9a2c-bde0b1deb76c",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/25718664-54b7-454b-9a2c-bde0b1deb76c",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Product Designer"
+      ],
+      "sourceSha256": "052d573f532d13fc7c57af1aa0732679f6c04997f5b470a1d4a96cda50a356a8",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/25718664-54b7-454b-9a2c-bde0b1deb76c\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/d8782758-050d-411f-85ab-ef60537c139f",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/d8782758-050d-411f-85ab-ef60537c139f",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Linear/Streaming Lead",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "101888552d6e008fb86b903e5d08d40520678b399d3c5534b8d3ee98cf8561ef",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/d8782758-050d-411f-85ab-ef60537c139f\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/dc97326c-e0fa-473a-b405-b7033fbc2859",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/dc97326c-e0fa-473a-b405-b7033fbc2859",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Tax, Strategy & Operations",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "4ea3e76fcab01feb22350807580b804de6fc2f3b2bd585c8e1bcedad41857642",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/dc97326c-e0fa-473a-b405-b7033fbc2859\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/20f6c227-687f-47ea-a7fd-95e93aebacc3",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/20f6c227-687f-47ea-a7fd-95e93aebacc3",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Executive Assistant, Legal",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "853552251f4f13cb3c1693e78596b7ef011ad054adcddaa8a86586573b5f3252",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/20f6c227-687f-47ea-a7fd-95e93aebacc3\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/4b6c6d6b-b214-4879-aeed-a0d1e7c7e21b",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/4b6c6d6b-b214-4879-aeed-a0d1e7c7e21b",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## What is Kalshi?"
+      ],
+      "sourceSha256": "3c09858f22f17af30d8753e87bf3fd06c3dbf4456b378b5f297f26c6f892788d",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/4b6c6d6b-b214-4879-aeed-a0d1e7c7e21b\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/68eafa1f-8d29-492a-ab38-4b0384f038cf",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/68eafa1f-8d29-492a-ab38-4b0384f038cf",
+      "location": "Remote - California | Remote - Oregon | Remote - Washington | Remote - Idaho | Remote - Montana | Remote - Wyoming | Remote - Alaska | Remote - Hawaii",
+      "workplaceType": "remote",
+      "evidence": [
+        "# State (Regional, West)",
+        "## Location\n\nRemote",
+        "## Location Type\n\nRemote",
+        "develop the playbook for how Kalshi operates across CA, OR, WA, ID, MT, WY, AK, and HI"
+      ],
+      "sourceSha256": "707a7d05b8c030bdf819039c8770c5d080174b8d7c1cfc7451c9f4912d2d3735",
+      "note": "Remote role explicitly restricted to eight Western states; enumerated rather than claimed as nationwide remote.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/68eafa1f-8d29-492a-ab38-4b0384f038cf\"",
+            "\"location\": \"Remote\"",
+            "\"workplaceType\": \"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "c7fb8c79-5a6d-8654-9595-bf5655c64d69",
+          "label": "California, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - California"
+        },
+        {
+          "locationId": "d2060b2f-75e6-812b-a7ac-2d9a140ccd23",
+          "label": "Oregon, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Oregon"
+        },
+        {
+          "locationId": "92f4afce-d348-80bd-8719-6f73d6d492f6",
+          "label": "Washington, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Washington"
+        },
+        {
+          "locationId": "4373104b-628c-8afb-94e4-ca89306c450f",
+          "label": "Idaho, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Idaho"
+        },
+        {
+          "locationId": "e7748204-0691-81a0-b30e-ef288a1b651d",
+          "label": "Montana, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Montana"
+        },
+        {
+          "locationId": "2b596674-e42a-81f4-8ca5-53e26e4d6656",
+          "label": "Wyoming, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Wyoming"
+        },
+        {
+          "locationId": "e8d1286b-31b1-8470-aa2c-74524bfbcb96",
+          "label": "Alaska, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Alaska"
+        },
+        {
+          "locationId": "29e2c343-b54c-8da8-9885-67d33ccbd812",
+          "label": "Hawaii, United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Hawaii"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/09a99865-5f92-41bf-9def-dcbd27734c9e",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/09a99865-5f92-41bf-9def-dcbd27734c9e",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "# GTM - Healthcare",
+        "You have one goal: grow healthcare and medicine on Kalshi."
+      ],
+      "sourceSha256": "d0d8283f1f1f15cf663da2588a00515ad83eb38acb19aec2354ccf7cd39217c2",
+      "note": "No location header on the individual posting; standalone remote corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/09a99865-5f92-41bf-9def-dcbd27734c9e\"",
+            "\"location\": \"Remote\"",
+            "\"workplaceType\": \"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/d1c3d4eb-dfa2-4973-a975-2b91430576f9",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/d1c3d4eb-dfa2-4973-a975-2b91430576f9",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": [
+        "# GTM - AI",
+        "You have one goal: grow AI on Kalshi."
+      ],
+      "sourceSha256": "fc37e28a075a32361ff6772738c4de743f38d58228777e768e00b146ae7604e8",
+      "note": "No location header on the individual posting; standalone remote corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/d1c3d4eb-dfa2-4973-a975-2b91430576f9\"",
+            "\"location\": \"Remote\"",
+            "\"workplaceType\": \"Remote\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Remote",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/b468d103-8d78-4149-93c9-d111b5b930c5",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/b468d103-8d78-4149-93c9-d111b5b930c5",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Frontend",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "86befcc598cfa0bd769507fe45596ac93951617ec25c138891372d42dcd5787d",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/b468d103-8d78-4149-93c9-d111b5b930c5\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/f16da5f6-7371-4f94-a36f-e8315638ebbf",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/f16da5f6-7371-4f94-a36f-e8315638ebbf",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Compliance, Regulatory Operations",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "748004dfce600a3628a496ccf56bf61668d2a11641188e1cb259c796ded860e0",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/f16da5f6-7371-4f94-a36f-e8315638ebbf\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/346145cd-5542-45fe-93f6-066f64619963",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/346145cd-5542-45fe-93f6-066f64619963",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Senior Accountant"
+      ],
+      "sourceSha256": "ce1067f361a2bc7a928553f16a5c5e0aad90363e2d9e97afd2261dc3e8669c30",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/346145cd-5542-45fe-93f6-066f64619963\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/043e65ba-22cf-447c-92fa-80c6b9750297",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/043e65ba-22cf-447c-92fa-80c6b9750297",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Growth - Perps"
+      ],
+      "sourceSha256": "2f6313c12607c651d6a34e4c702aeb8ffa60ce0a4a01ad282314f5d27eefd061",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/043e65ba-22cf-447c-92fa-80c6b9750297\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/32bbed2f-888b-406f-873f-d299062fc854",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/32bbed2f-888b-406f-873f-d299062fc854",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Support Ops (Intern)",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "3418ecc16717b7dd309493ec3ee2883b78532b2bc0badcb80a9fc54178cc653a",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/32bbed2f-888b-406f-873f-d299062fc854\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Software Engineer, Product",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "5760ad6113fb81425441614045346e4c9e6000412a9bd1b68917e8518f5024ab",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/3dd97725-4a12-4963-b47a-cb5c562cfd1d\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/c32760bb-dc13-4315-a78c-ac553f37fd7d",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/c32760bb-dc13-4315-a78c-ac553f37fd7d",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Esports GTM"
+      ],
+      "sourceSha256": "a9218efda8bb19ca39595b076659dad015c6c155b4da1bd78340d5cf8d4b1b29",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/c32760bb-dc13-4315-a78c-ac553f37fd7d\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/3cdb607b-275f-479e-987b-1aac7b370298",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/3cdb607b-275f-479e-987b-1aac7b370298",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Recruiter"
+      ],
+      "sourceSha256": "b68f878623e73cad2132519694f58270d4f328037926a2b9cc9d89873a0beeb5",
+      "note": "Individual extraction omits the header block; geography and On-site corroborated by the current exact-posting first-party ATS fields, with no contradictory role requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/3cdb607b-275f-479e-987b-1aac7b370298\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/75e8eee4-584e-468f-990d-42c679575b22",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/75e8eee4-584e-468f-990d-42c679575b22",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Product Manager, Growth",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "d65b4da2cff5b67e4f8d6d23f951647ad218909f89ccbd8c2796ac877c47186d",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/75e8eee4-584e-468f-990d-42c679575b22\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/75445524-fc11-4025-b455-dc843fdbc542",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/75445524-fc11-4025-b455-dc843fdbc542",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Margin Operations (Overnight)",
+        "## Location\n\nNew York Office",
+        "## Location Type\n\nOn-site"
+      ],
+      "sourceSha256": "dd8a1121ee3483412606a5554c6bda93dbe983bae1af40464ea8255890ae863b",
+      "note": "Explicit On-site New York Office header on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/kalshi?includeCompensation=true",
+          "sourceSha256": "6977ddd0dc95b0f3d93fd91faf79e213cb8ec7b377e7bca72ccc08e5bbf4a7dd",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/kalshi/75445524-fc11-4025-b455-dc843fdbc542\"",
+            "\"location\": \"New York Office\"",
+            "\"workplaceType\": \"OnSite\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/2f326e58-b739-477f-b959-206db1ea7fa9/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/2f326e58-b739-477f-b959-206db1ea7fa9",
+      "reason": "Fresh uncached individual URL explicitly says Job not found; fresh canonical board and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:07:05.198742+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/kalshi"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/f26f6414-fa24-42be-96ed-d648d059b331/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/f26f6414-fa24-42be-96ed-d648d059b331",
+      "reason": "Fresh uncached individual URL explicitly says Page not found; fresh canonical board and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:07:05.198742+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/kalshi"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/2f326e58-b739-477f-b959-206db1ea7fa9",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/2f326e58-b739-477f-b959-206db1ea7fa9",
+      "reason": "Fresh uncached individual URL explicitly says Job not found; fresh canonical board and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:07:05.198742+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/kalshi"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/kalshi/f26f6414-fa24-42be-96ed-d648d059b331",
+      "sourceUrl": "https://jobs.ashbyhq.com/kalshi/f26f6414-fa24-42be-96ed-d648d059b331",
+      "reason": "Fresh uncached individual URL explicitly says Page not found; fresh canonical board and current ATS API both omit this posting ID.",
+      "checkedAt": "2026-10-05T06:07:05.198742+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/kalshi"
+    }
+  ]
+}

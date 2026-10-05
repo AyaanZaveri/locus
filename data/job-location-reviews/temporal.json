@@ -1,0 +1,2280 @@
+{
+  "companySlug": "temporal",
+  "verifiedAt": "2026-10-05T06:17:10.666213+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/29fbbb7e-f8d3-4424-a301-cb32b704ae16",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/29fbbb7e-f8d3-4424-a301-cb32b704ae16",
+      "location": "Remote - United States | Los Angeles, California | San Francisco, California | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Professional Services Engineer - West",
+        "## Location\n\nUnited States (Remote); Los Angeles, California; San Francisco, California; Seattle, Washington",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "9a3c25a4cf0bd7b170bdd79fa70ba1590cd880808ef89e4fc5035a6e8dff2dd2",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/29fbbb7e-f8d3-4424-a301-cb32b704ae16\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/cfc85072-6669-4671-afd4-e860f7072668",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/cfc85072-6669-4671-afd4-e860f7072668",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer, Compute (Temporal Cloud)",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "f9bced0f2a62634828e51214a3ef831543ee598901c814dc9241c0421d64bad1",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/cfc85072-6669-4671-afd4-e860f7072668\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/9f55b2c9-9066-44b2-bb1d-4dc66d5e2c01",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/9f55b2c9-9066-44b2-bb1d-4dc66d5e2c01",
+      "location": "San Francisco, California",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Manager, GSI Partnerships",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "8f46d8cf12940156a391006bb14b1cdaa82d93fda9ccb11c96d77a7aabfbdae8",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/9f55b2c9-9066-44b2-bb1d-4dc66d5e2c01\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/d9b9d44f-0a87-4237-b101-360052373643",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/d9b9d44f-0a87-4237-b101-360052373643",
+      "location": "Singapore, Singapore",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Solutions Architect - Singapore",
+        "## Location\n\nSingapore, Singapore",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "94d6b5960f75a2d3f5831692dc277a755c791c45fc94287a8db175e2c9376b51",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/d9b9d44f-0a87-4237-b101-360052373643\"",
+            "\"location\": \"Singapore, Singapore\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/956e8190-8493-485d-93a8-0b84a9daec9b",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/956e8190-8493-485d-93a8-0b84a9daec9b",
+      "location": "Bengaluru, Karnataka",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Manager, India Partnerships",
+        "## Location\n\nBengaluru, Karnataka",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "695bf5f503b1795024d24f986a808b9c143862dccdfcbd7ab41361e2e335174c",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/956e8190-8493-485d-93a8-0b84a9daec9b\"",
+            "\"location\": \"Bengaluru, Karnataka\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/a6db83c0-46c3-415c-8161-621a77781d38",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/a6db83c0-46c3-415c-8161-621a77781d38",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Open Source Server",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "47c34f8bf52969192fb4cd0f835e9da72c9ff4b1acaff94245fd8b3c43907f44",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/a6db83c0-46c3-415c-8161-621a77781d38\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/87dd32bc-a4e1-49db-9d44-f4f9702519ee",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/87dd32bc-a4e1-49db-9d44-f4f9702519ee",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Developer Advocate, Developer Education",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "a6526a120702ee59a06776ab1089a9564f828e188349603a340a001e09a45d97",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/87dd32bc-a4e1-49db-9d44-f4f9702519ee\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/5858d6cf-1445-4a03-b057-a9c8526f6d48",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/5858d6cf-1445-4a03-b057-a9c8526f6d48",
+      "location": "San Francisco, California | Los Angeles, California | San Diego, California",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, Majors - West",
+        "## Location\n\nSan Francisco, California; Los Angeles, California; San Diego, California",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "b98e3ed2b609d9b9ff87e20c255ce02f52444144e0417e4e061be60feca6c596",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/5858d6cf-1445-4a03-b057-a9c8526f6d48\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        },
+        {
+          "locationId": "9d7284de-f8ce-8053-b89a-cc1f9a987112",
+          "label": "San Diego, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Diego, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/7a1e439c-c349-4cd4-8490-6e22a62005bf",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/7a1e439c-c349-4cd4-8490-6e22a62005bf",
+      "location": "Remote - United States | Boston, Massachusetts | New York, New York | Philadelphia, Pennsylvania | Raleigh, North Carolina",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Professional Services Engineer - East",
+        "## Location\n\nUnited States (Remote); Boston, Massachusetts; New York, New York; Philadelphia, Pennsylvania; Raleigh, North Carolina",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "d6ad0d2c99df8912ffe8e8e23d84c0d556a45542c51389a4c9cb558ddf4f8315",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/7a1e439c-c349-4cd4-8490-6e22a62005bf\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "02c21c92-f2a7-8ab2-a130-f2190524d45c",
+          "label": "Philadelphia, PA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Philadelphia, PA"
+        },
+        {
+          "locationId": "9d4ba35e-9631-8ad9-92b5-a00e7e51be77",
+          "label": "Raleigh, NC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Raleigh, NC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/9a2e32f5-2f85-49ea-b1af-855178bb0af8",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/9a2e32f5-2f85-49ea-b1af-855178bb0af8",
+      "location": "London, England",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Field Marketing Manager, Sponsorship & Experiential",
+        "## Location\n\nLondon, England",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "9a47e4f7c911c13c15f1296b2a5c4152a5b74d599ce283a18357685aa0633658",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/9a2e32f5-2f85-49ea-b1af-855178bb0af8\"",
+            "\"location\": \"London, England\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/66b66d5b-0aaa-4e4a-979f-96e43d846d4a",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/66b66d5b-0aaa-4e4a-979f-96e43d846d4a",
+      "location": "San Francisco, California",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Product Marketing Engineer, Core and SDKs",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "5156202e74254cced4bced8dcf2524d9b987d4243fc0c601e3d5c6423abcef74",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/66b66d5b-0aaa-4e4a-979f-96e43d846d4a\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/7592248c-719a-485c-a1a9-9285f99ed56b",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/7592248c-719a-485c-a1a9-9285f99ed56b",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Product Manager, Core Primitives",
+        "## Location\n\nUnited States (Remote); Canada (Remote); United States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "e8352dff2587558749d8504e58c75eb7ed5a5c69dfe9ee07dfc47e5467309dcb",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/7592248c-719a-485c-a1a9-9285f99ed56b\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/01e59346-2cf2-4123-8df1-c8a486eced72",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/01e59346-2cf2-4123-8df1-c8a486eced72",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Product Manager, Self-Hosting and Hybrid",
+        "## Location\n\nUnited States (Remote); Canada (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "56f8eafb6a08e28f5007d7e065884e69929406bc631679159d3a05b7b060d9ea",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/01e59346-2cf2-4123-8df1-c8a486eced72\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/109d72d0-e739-406c-87ae-b0f1f5ae7ade",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/109d72d0-e739-406c-87ae-b0f1f5ae7ade",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Observability",
+        "## Location\n\nUnited States (Remote); Canada (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "ad92d696059203c0bcd7d9c77bdaecbbc2096d58d5b6bff63388d63de62037a4",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/109d72d0-e739-406c-87ae-b0f1f5ae7ade\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/053cfe55-570a-425f-b44e-e64b2c9b28f9",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/053cfe55-570a-425f-b44e-e64b2c9b28f9",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Platform Architect - West",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "6e76d14462abc96f73772477a1f6ee0377328b08f0aed07d843a411523bfefe0",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/053cfe55-570a-425f-b44e-e64b2c9b28f9\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/f40a7b70-71c0-49f6-ba9f-1df2de9b46d9",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/f40a7b70-71c0-49f6-ba9f-1df2de9b46d9",
+      "location": "Seattle, Washington | San Francisco, California | Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer, Open Source Server",
+        "## Location\n\nSeattle, Washington; San Francisco, California; United States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "58f654cfd1e933982562f13a67610d16d5dd0c7b435c48885da09f18cfa2e732",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/f40a7b70-71c0-49f6-ba9f-1df2de9b46d9\"",
+            "\"location\": \"Seattle, Washington\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/db6c81bf-1af3-4792-9473-1a8ee4518a06",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/db6c81bf-1af3-4792-9473-1a8ee4518a06",
+      "location": "Bengaluru, Karnataka",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Solutions Architect, Banking (India)",
+        "## Location\n\nBengaluru, Karnataka",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "c900171f9d2eb4cb3dd9cc0575f76c4e20a6419e0ca0c467548eeaa5c3391eb3",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/db6c81bf-1af3-4792-9473-1a8ee4518a06\"",
+            "\"location\": \"Bengaluru, Karnataka\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/7a8a7ed9-b569-450a-a649-a80db834a8f3",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/7a8a7ed9-b569-450a-a649-a80db834a8f3",
+      "location": "Chicago, Illinois",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, New Logo - Chicago",
+        "## Location\n\nChicago, Illinois",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "ff3609c2e613ba24fba0ea9e9089d92a6f55565bc889fa4e95e7650f6637179d",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/7a8a7ed9-b569-450a-a649-a80db834a8f3\"",
+            "\"location\": \"Chicago, Illinois\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/0b03268c-92ba-4092-9eec-05eb16e41b95",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/0b03268c-92ba-4092-9eec-05eb16e41b95",
+      "location": "San Francisco, California | Denver, Colorado | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Solutions Architect, Majors (West)",
+        "## Location\n\nSan Francisco, California; Denver, Colorado; Seattle, Washington",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "c70720731a335f2ca9ed2fe6d72e1ef7dad15c0370a51b7b343f17ba39083ac8",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/0b03268c-92ba-4092-9eec-05eb16e41b95\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "e036ad58-c393-8dc2-b032-e3737f60395f",
+          "label": "Denver, CO",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Denver, CO"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/b4817f72-9afc-431b-919d-aea70f6cbf4c",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/b4817f72-9afc-431b-919d-aea70f6cbf4c",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Manager, Solutions Architecture - New Logo",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "340ae6d9725fb61b83803384b0622432754763a46369fb51c29f5e2c3e507d2a",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/b4817f72-9afc-431b-919d-aea70f6cbf4c\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/99b2768c-0ce0-425b-84a4-de0fa400c18b",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/99b2768c-0ce0-425b-84a4-de0fa400c18b",
+      "location": "London, England",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Business Development Representative, EMEA",
+        "## Location\n\nLondon, England",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "656ec0ddefca66598ab0487943680613f24face6b84ec31f973aa618d04ae7a6",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/99b2768c-0ce0-425b-84a4-de0fa400c18b\"",
+            "\"location\": \"London, England\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/5fb4393c-d16e-47ac-b4ae-52bb0e63cd8b",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/5fb4393c-d16e-47ac-b4ae-52bb0e63cd8b",
+      "location": "San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Finance Director, GTM",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "7f2f9f762c4439defab77b30df8ec7f1a24f82393cc23e65e8ceb63641726e78",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/5fb4393c-d16e-47ac-b4ae-52bb0e63cd8b\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/70cee4cb-ce31-43b7-89a1-c7067822317a",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/70cee4cb-ce31-43b7-89a1-c7067822317a",
+      "location": "Atlanta, Georgia",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Intern (Fall 2026)",
+        "## Location\n\nAtlanta, Georgia",
+        "## Location Type\n\nHybrid",
+        "Must be based in the Atlanta metro area or willing to work on-site from our Atlanta office (2018 Powers Ferry Road, Suite 200, Atlanta, GA 30339)."
+      ],
+      "sourceSha256": "c808fa4acfeddddea0c3be55e03190ab21a913fd545678579d4a1b81ebd4f793",
+      "note": "Hybrid Atlanta role with explicit on-site Atlanta office requirement.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/70cee4cb-ce31-43b7-89a1-c7067822317a\"",
+            "\"location\": \"Atlanta, Georgia\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/ce519860-6e31-49c2-a4b4-f6e9a92c3f4b",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/ce519860-6e31-49c2-a4b4-f6e9a92c3f4b",
+      "location": "San Francisco, California",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Account Executive, Growth - Scale (West)",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "50bb3eebb604141b2032819e6de5d58786944835474fd7d559dbb29bddeb89a7",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/ce519860-6e31-49c2-a4b4-f6e9a92c3f4b\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/915faccb-5bf1-4a1c-9a2d-ccad28fd48f7",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/915faccb-5bf1-4a1c-9a2d-ccad28fd48f7",
+      "location": "Remote - United States | Los Angeles, California | Portland, Oregon | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Developer Success Engineer - West",
+        "## Location\n\nUnited States (Remote); Los Angeles, California; Portland, Oregon; Seattle, Washington",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "9d36c160eb508929cabb2eebb5fec7d69b05fe65b675e03ed4510e0cf62371b1",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/915faccb-5bf1-4a1c-9a2d-ccad28fd48f7\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "1df3dc65-ff82-84d4-9b9e-9085d9b35894",
+          "label": "Los Angeles, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Los Angeles, CA"
+        },
+        {
+          "locationId": "4ab287e7-978f-897f-bc38-2675c23eed41",
+          "label": "Portland, OR",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Portland, OR"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/ddbc1916-39a0-47ff-b868-c9e8b90569f1",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/ddbc1916-39a0-47ff-b868-c9e8b90569f1",
+      "location": "Seattle, Washington | Austin, Texas | San Francisco, California",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Cloud Platform Foundations",
+        "## Location\n\nSeattle, Washington; Austin, Texas; San Francisco, California",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "37a4bbbe4be281f737a4ecda5db51015e1c85fb49379479c59134b37247455f5",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/ddbc1916-39a0-47ff-b868-c9e8b90569f1\"",
+            "\"location\": \"Seattle, Washington\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/c22959f0-eadf-4860-808b-a7c2c4e25712",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/c22959f0-eadf-4860-808b-a7c2c4e25712",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Application Security Engineer",
+        "## Location\n\nUnited States (Remote); Canada (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "35c1d733857e1dfe990a018ed90585ade7564b967a96d7025ed1427749e8632c",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/c22959f0-eadf-4860-808b-a7c2c4e25712\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/c07bba44-5506-4b5b-a0e0-5367a18afe29",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/c07bba44-5506-4b5b-a0e0-5367a18afe29",
+      "location": "Dallas, Texas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Solutions Architect, Banking (Central)",
+        "## Location\n\nDallas, Texas",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "c63adafff5d8d737f2204d5a5e078f188fa0312fd1b5d285efcdcc369675a6b5",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/c07bba44-5506-4b5b-a0e0-5367a18afe29\"",
+            "\"location\": \"Dallas, Texas\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/e015924f-bbf4-4401-97c3-56a179cf498e",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/e015924f-bbf4-4401-97c3-56a179cf498e",
+      "location": "San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Vice President, Global Corporate Controller",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "40fb3d4476f5a9300ecc79b20ace89e59af6b0453a4ecdf97b5eab9f745f126d",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/e015924f-bbf4-4401-97c3-56a179cf498e\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/7365a59d-554e-41f4-9163-2fdd528a42ca",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/7365a59d-554e-41f4-9163-2fdd528a42ca",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer, Test Systems & Tooling",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "4a6fe4f72dfc1bbd215df2d65f608539d745f46538a509a7e67d1b4c1265706e",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/7365a59d-554e-41f4-9163-2fdd528a42ca\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/a58b6b5f-204f-454d-9cd5-e8b2acc44b65",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/a58b6b5f-204f-454d-9cd5-e8b2acc44b65",
+      "location": "Remote - United States | Austin, Texas | Boston, Massachusetts | Dallas, Texas | New York, New York",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Developer Success Engineer - East",
+        "## Location\n\nUnited States (Remote); Austin, Texas; Boston, Massachusetts; Dallas, Texas; New York, New York",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "6e07148c7f44f6d2612cbb0c47bb750e5a076f2541f5fbaf546cba367ff2c804",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/a58b6b5f-204f-454d-9cd5-e8b2acc44b65\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "467c3454-a432-8f5c-b62a-5baafd54050c",
+          "label": "Austin, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Austin, TX"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/4ee99986-77ad-4113-8058-891d5cc7284a",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/4ee99986-77ad-4113-8058-891d5cc7284a",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer, AI Foundations (AI Agent Optimization)",
+        "## Location\n\nUnited States (Remote); Canada (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "edf011cf766d678deaa83c439c4aa167e8b5e156eedc84bfb1e330550845435e",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/4ee99986-77ad-4113-8058-891d5cc7284a\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/ba01bd3a-2b66-4fbb-b33c-8e0ac684df9a",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/ba01bd3a-2b66-4fbb-b33c-8e0ac684df9a",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Compute (Temporal Cloud)",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "42088b529cd83ec8801c6e526a5b107ac04af8e9ca4be761b2005ac740f22dee",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/ba01bd3a-2b66-4fbb-b33c-8e0ac684df9a\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/25568018-4545-448c-acef-1ac481e67d5d",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/25568018-4545-448c-acef-1ac481e67d5d",
+      "location": "Remote - United States | Boston, Massachusetts | Denver, Colorado | New York, New York | San Francisco, California | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Director, Global Developer Success",
+        "## Location\n\nUnited States (Remote); Boston, Massachusetts; Denver, Colorado; New York, New York; San Francisco, California; Seattle, Washington",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "bb77a274442222b622572c7a56aeb61cffafb82ff2f541321dcd95debbd1c7aa",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/25568018-4545-448c-acef-1ac481e67d5d\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "e036ad58-c393-8dc2-b032-e3737f60395f",
+          "label": "Denver, CO",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Denver, CO"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/73279908-77f8-4488-8151-4c40f49a230d",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/73279908-77f8-4488-8151-4c40f49a230d",
+      "location": "Seattle, Washington | New York, New York | San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Staff Product Manager, Nexus",
+        "## Location\n\nSeattle, Washington; New York, New York; San Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "532289a43b1979ca3f8054cf586264d5464b00238c1526c47a61af07e94f1596",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/73279908-77f8-4488-8151-4c40f49a230d\"",
+            "\"location\": \"Seattle, Washington\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/1aa528e5-5076-4d98-8b07-92444c692ade",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/1aa528e5-5076-4d98-8b07-92444c692ade",
+      "location": "Atlanta, Georgia",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Business Development Representative",
+        "## Location\n\nAtlanta, Georgia",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "39cdd9a1a2f9d95b8f5fea2304aa1efee7da06302d99566cfd1426320997bd79",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/1aa528e5-5076-4d98-8b07-92444c692ade\"",
+            "\"location\": \"Atlanta, Georgia\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "f312c0f3-be27-8641-8115-d4be9d781f44",
+          "label": "Atlanta, GA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Atlanta, GA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/e8dc6efc-67da-4a5d-859c-85865d6ed21d",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/e8dc6efc-67da-4a5d-859c-85865d6ed21d",
+      "location": "Dallas, Texas | Chicago, Illinois | Saint Paul, Minnesota",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Solutions Architect, Majors (Central)",
+        "## Location\n\nDallas, Texas; Chicago, Illinois; Saint Paul, Minnesota",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "87be7b8b2587361fe2872ba94455e6d28ce39cc2b327ea3f3535971acc271f25",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/e8dc6efc-67da-4a5d-859c-85865d6ed21d\"",
+            "\"location\": \"Dallas, Texas\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "e3626315-8505-89d6-9531-3a650e4ae4fd",
+          "label": "Dallas, TX",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Dallas, TX"
+        },
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        },
+        {
+          "locationId": "8e22b5fd-f165-8483-921f-d14bcf496549",
+          "label": "Saint Paul, MN",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Saint Paul, MN"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/fea5e385-1ad8-47f1-8042-3c0760bb060e",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/fea5e385-1ad8-47f1-8042-3c0760bb060e",
+      "location": "Chicago, Illinois",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, Majors (Central)",
+        "## Location\n\nChicago, Illinois",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "82a46d0e9965990f2dc88d9970e4c83d7e4fb55ec1b28735627086d88a7f65dd",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/fea5e385-1ad8-47f1-8042-3c0760bb060e\"",
+            "\"location\": \"Chicago, Illinois\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/1929137d-1aef-4eae-9490-b934a90bc2ab",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/1929137d-1aef-4eae-9490-b934a90bc2ab",
+      "location": "San Francisco, California",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Infrastructure Foundations",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "ae87d84fbc32a4d403b18b1fcbccbab430354d59881e1bf436958972cf68b862",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/1929137d-1aef-4eae-9490-b934a90bc2ab\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/8d36eacb-61cf-466d-ba9a-d5849d3312eb",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/8d36eacb-61cf-466d-ba9a-d5849d3312eb",
+      "location": "Paris, France",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Account Executive, EMEA",
+        "## Location\n\nParis, France",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "901fd0b6287a901a0797e56c42da4808ca2182ba9eb51b209dda44eba877d92f",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/8d36eacb-61cf-466d-ba9a-d5849d3312eb\"",
+            "\"location\": \"Paris, France\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "4cdef33e-7798-8b23-a881-7d5364c8b82b",
+          "label": "Paris, France",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Paris, France"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/5d4ee2f8-8ff0-4271-9292-c78df24735aa",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/5d4ee2f8-8ff0-4271-9292-c78df24735aa",
+      "location": "Remote - United States | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Product Manager, Cloud Namespace & Capacity",
+        "## Location\n\nUnited States (Remote); Canada (Remote); United States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "80d6db557b038ed6b979409196c1695784738d88e76dedf19f82331cc9f2a7cf",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/5d4ee2f8-8ff0-4271-9292-c78df24735aa\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/ceb3ae3d-3a72-4067-b13d-44350a143195",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/ceb3ae3d-3a72-4067-b13d-44350a143195",
+      "location": "Remote - United States | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer, Cloud Data Storage",
+        "## Location\n\nUnited States (Remote); Seattle, Washington; United States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "ca8222fff27fbe0ba5d84605ce49905b3a016e0c7b861a7889bc506079932378",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/ceb3ae3d-3a72-4067-b13d-44350a143195\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/84e898c9-621a-445f-80a2-43819d4d3a0e",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/84e898c9-621a-445f-80a2-43819d4d3a0e",
+      "location": "Berlin, Germany",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Developer Advocate, Enterprise - EMEA",
+        "## Location\n\nBerlin, Germany",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "cb1151b8f928ca3247831dcdb026db61d415e637ddc618a4ca7c667c93fbc20f",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/84e898c9-621a-445f-80a2-43819d4d3a0e\"",
+            "\"location\": \"Berlin, Germany\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/2a2a29fa-3701-4f0d-a262-aeb8bc68e0c3",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/2a2a29fa-3701-4f0d-a262-aeb8bc68e0c3",
+      "location": "Remote - United States | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Cloud Data Storage",
+        "## Location\n\nUnited States (Remote); Seattle, Washington; United States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "2deaad765b203eda65a0c462f5ba00ddff0bd9a7ce14dfa675d8a412b2ba3144",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/2a2a29fa-3701-4f0d-a262-aeb8bc68e0c3\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/cdabd368-1989-4ea8-801d-2be138c16523",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/cdabd368-1989-4ea8-801d-2be138c16523",
+      "location": "Boston, Massachusetts | New York, New York | Raleigh, North Carolina | Washington, District of Columbia",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Solutions Architect, Majors - East",
+        "## Location\n\nBoston, Massachusetts; New York, New York; Raleigh, North Carolina; Washington, District of Columbia",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "1714f537312de49bc27f5c109e572e0f053bf028ff52f644b475b51e6bdef2a8",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/cdabd368-1989-4ea8-801d-2be138c16523\"",
+            "\"location\": \"Boston, Massachusetts\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b999e311-5bed-86db-bed3-8d4b7300a0e8",
+          "label": "Boston, MA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Boston, MA"
+        },
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "9d4ba35e-9631-8ad9-92b5-a00e7e51be77",
+          "label": "Raleigh, NC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Raleigh, NC"
+        },
+        {
+          "locationId": "9977db66-ec42-89a0-8bf6-e2781b312d3e",
+          "label": "Washington, DC",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Washington, DC"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/d9a78583-cca6-4d76-96f9-846693a37815",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/d9a78583-cca6-4d76-96f9-846693a37815",
+      "location": "San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Head of Corporate Development",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "6dd377ab4875c0903be61798482cdbd43852737da43ad6abd597074f54e446e1",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/d9a78583-cca6-4d76-96f9-846693a37815\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/7b63cf37-2bdb-462c-858c-473167563623",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/7b63cf37-2bdb-462c-858c-473167563623",
+      "location": "Remote - United States | San Francisco, California | Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Software Engineer II, Cloud Enablement",
+        "## Location\n\nUnited States (Remote); San Francisco, California; Seattle, Washington",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "3097869842775af076d2538fec9fdd9796719535d0968bca5734107010fb17f4",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/7b63cf37-2bdb-462c-858c-473167563623\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        },
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/59a58e6a-d082-4b85-98f6-8dd069e26ae4",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/59a58e6a-d082-4b85-98f6-8dd069e26ae4",
+      "location": "Bengaluru, Karnataka",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Sales Manager (India)",
+        "## Location\n\nBengaluru, Karnataka",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "bef8a63023b3ffd4fa1bdb316ce8b74c744a511e24ff325ea7540f0a654e7366",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/59a58e6a-d082-4b85-98f6-8dd069e26ae4\"",
+            "\"location\": \"Bengaluru, Karnataka\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "cbd344ed-6b3f-8835-84b5-fc683c081e60",
+          "label": "Bengaluru, India",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Bengaluru, India"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/b3ba030c-dcbb-4131-9edb-90a8e03849e8",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/b3ba030c-dcbb-4131-9edb-90a8e03849e8",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Engineer, Open Source Server",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "1b6854efdadf3f09da70d642f70a3cf64f15f164bbce14cc9991897c8622ae07",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/b3ba030c-dcbb-4131-9edb-90a8e03849e8\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/b656400a-bc30-4fc3-a117-b803ef42634f",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/b656400a-bc30-4fc3-a117-b803ef42634f",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Engineering Manager, Test Systems & Tooling",
+        "## Location\n\nUnited States (Remote); United States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "4f1603c998d683e871a732677499c290eea0b3f35365056c4b6f2c657fc68976",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/b656400a-bc30-4fc3-a117-b803ef42634f\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/e75ff82a-19e2-470e-ac4b-49f0a87acd76",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/e75ff82a-19e2-470e-ac4b-49f0a87acd76",
+      "location": "London, England | Manchester, England",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Platform Architect",
+        "## Location\n\nLondon, England; Manchester, England",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "b8b1b5aba3bf8125ecd6868be21a2f2c04c7bb18154ca8170b4f1f71339b29a3",
+      "note": "Manchester, England intentionally left without a shared ID: the reference dataset only offers Greater Manchester county for that label, and attaching a county ID to a city office listing would falsify granularity. London resolves to its city via verified alias.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/e75ff82a-19e2-470e-ac4b-49f0a87acd76\"",
+            "\"location\": \"London, England\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        },
+        {
+          "locationId": null,
+          "label": "Manchester, England",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Manchester, England"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/cc464a18-0431-42ff-acc3-25ddc644d798",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/cc464a18-0431-42ff-acc3-25ddc644d798",
+      "location": "San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Senior Finance Analyst, Corporate",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "56a20346f9ffbfb008686e8b57a818184b913ead6c8d09b2132bce89420a63f5",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/cc464a18-0431-42ff-acc3-25ddc644d798\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/a04c4545-b34e-40d4-b1ac-17f17976e93e",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/a04c4545-b34e-40d4-b1ac-17f17976e93e",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Software Engineer, Cloud Growth",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "54c4d2d1a517ac989c769937809be69abbcec6c93d6d89c91311462464e5aeb2",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/a04c4545-b34e-40d4-b1ac-17f17976e93e\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/de4ea341-0921-4ab0-878e-bf936021118d",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/de4ea341-0921-4ab0-878e-bf936021118d",
+      "location": "Chicago, Illinois",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Solutions Architect, New Logo - Central",
+        "## Location\n\nChicago, Illinois",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "9893cc248628497484d6161c2945e6f8bb9926fbcdf1db899538774b02d79888",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/de4ea341-0921-4ab0-878e-bf936021118d\"",
+            "\"location\": \"Chicago, Illinois\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ce83ca22-4397-8b11-8b2f-9b0a85507f76",
+          "label": "Chicago, IL",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Chicago, IL"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/ea7a9e97-de00-4603-bf85-4da5b3749270",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/ea7a9e97-de00-4603-bf85-4da5b3749270",
+      "location": "San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Staff Product Manager, AI Ecosystem",
+        "## Location\n\nSan Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "ba7b60c090d94d35a1c49fbcb9e81f604511cf31c1a960131cfc5b58942b5714",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/ea7a9e97-de00-4603-bf85-4da5b3749270\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/2ebca428-89c2-4cd9-9b30-92bb6d20ad45",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/2ebca428-89c2-4cd9-9b30-92bb6d20ad45",
+      "location": "Berlin, Germany",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, New Logo",
+        "## Location\n\nBerlin, Germany",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "25f68b161afc0ed452005cc5dd7945d6a76462e9586f58b477ca98dd9e7ee41a",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/2ebca428-89c2-4cd9-9b30-92bb6d20ad45\"",
+            "\"location\": \"Berlin, Germany\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "cc672a63-9c95-838e-b6e0-7cbed4a8a069",
+          "label": "Berlin, Germany",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Berlin, Germany"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/30600762-62fe-4ffb-9b6e-98f145329ea3",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/30600762-62fe-4ffb-9b6e-98f145329ea3",
+      "location": "San Francisco, California",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# Technical Executive Communications, Senior Manager",
+        "## Location\n\nSan Francisco, California; San Francisco, California",
+        "## Location Type\n\nHybrid"
+      ],
+      "sourceSha256": "147cfd70f0184dbc1b6d9fb750cf9ac026f0cdd827f6b39b8c02e93b52fc9ecf",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/30600762-62fe-4ffb-9b6e-98f145329ea3\"",
+            "\"location\": \"San Francisco, California\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/05507d71-51c9-455c-80b4-2da9699a0e77",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/05507d71-51c9-455c-80b4-2da9699a0e77",
+      "location": "Seattle, Washington",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer, Traffic",
+        "## Location\n\nSeattle, Washington",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "ccd352a3c41bad8c959d8926f1a5211c642425bf200d4e8ebcac33dffdc6ad20",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/05507d71-51c9-455c-80b4-2da9699a0e77\"",
+            "\"location\": \"Seattle, Washington\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "ceec6aaa-2607-8bc7-b44f-40e81ff4736a",
+          "label": "Seattle, WA",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "Seattle, WA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/756726af-0461-4c08-98cc-6f83909e0fe1",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/756726af-0461-4c08-98cc-6f83909e0fe1",
+      "location": "New York, New York",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, Majors (East)",
+        "## Location\n\nNew York, New York",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "fd17fb5f360701584f9725c5e8cbafa7d557966af96dc13e860bcb4bf9e2c71d",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/756726af-0461-4c08-98cc-6f83909e0fe1\"",
+            "\"location\": \"New York, New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "unspecified",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/8a65908d-4f38-4b19-a0ed-453904180469",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/8a65908d-4f38-4b19-a0ed-453904180469",
+      "location": "Remote - United States",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Head of Engineering, Compute",
+        "## Location\n\nUnited States (Remote)",
+        "## Location Type\n\nRemote"
+      ],
+      "sourceSha256": "47206e798885447608c5d5b3d3df3d6cf048baf94fd40a9137217c8bff335b09",
+      "note": "Explicit location and arrangement headers on the individual posting.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/temporal?includeCompensation=true",
+          "sourceSha256": "dd3f04254ab73c43ef2c0c93a856c2e1904f244c3e92465b076b38f0204ee30d",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/temporal/8a65908d-4f38-4b19-a0ed-453904180469\"",
+            "\"location\": \"United States (Remote)\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "7bf11985-9fb6-8a21-82a5-c24325bd7a15",
+          "label": "United States",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United States"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/1647a4bf-f7fd-4c7f-9135-953d022c03ad",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/1647a4bf-f7fd-4c7f-9135-953d022c03ad",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (64 IDs) and current ATS API (64 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T13:57:54.316662+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/temporal"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/3314f805-4651-47af-a8c8-e67aac2c23c7",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/3314f805-4651-47af-a8c8-e67aac2c23c7",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (64 IDs) and current ATS API (64 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T13:57:54.316662+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/temporal"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/4782f8ba-7b56-4fba-934b-4d691174130e",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/4782f8ba-7b56-4fba-934b-4d691174130e",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (64 IDs) and current ATS API (64 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T13:57:54.316662+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/temporal"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/ab6f8a80-5800-4f29-9c7a-ac2df3e1fe66",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/ab6f8a80-5800-4f29-9c7a-ac2df3e1fe66",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (64 IDs) and current ATS API (64 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T13:57:54.316662+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/temporal"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/temporal/f8b1d059-32d7-4d78-aea6-2e64dd3e9f6a",
+      "sourceUrl": "https://jobs.ashbyhq.com/temporal/f8b1d059-32d7-4d78-aea6-2e64dd3e9f6a",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (64 IDs) and current ATS API (64 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T13:57:54.316662+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/temporal"
+    }
+  ]
+}

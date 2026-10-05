@@ -59,7 +59,9 @@ writing data:
    contract.
 3. `lib/company-profile.ts` for the executable Zod schema, normalization, and
    TypeScript types.
-4. One or two recent `data/companies/*/company.json` records for local
+4. `lib/location-reference.ts`, `scripts/lib/location-catalog.ts`, and
+   `lib/db/schema.ts` for shared place identities and location references.
+5. One or two recent `data/companies/*/company.json` records for local
    conventions.
 
 The Zod schema is authoritative. The generated JSON Schema is its
@@ -187,7 +189,7 @@ Treat this as structured data collection, not a narrative task. Work in passes:
      duplicated one, or a rounded total. Reconcile against independent reported
      totals too, but do not force the sum to match a contaminated or
      differently scoped third-party figure.
-5. Enumerate all currently open jobs from the canonical board. Every job needs its exact application URL, not the generic careers URL. **Retrieve the full individual posting before writing `jobs[].description`; an ATS listing card, search result, or API excerpt is never sufficient.** The description must contain the complete substantive job-page copy in sanitized CommonMark. It is a transcription field, not a summary: preserve the source wording, order, and level of detail while converting its presentation to Markdown. Keep structured role facts in parallel. If a board API exposes only a short description, follow the individual job URL or its detail endpoint for the full body. Close emphasis before a following link and leave whitespace between them (for example, `***Announcement.*** [***Read more***](https://example.com)`); never concatenate Markdown marker runs. **Do not assume the ATS from the company name** — a slug that resolves for one company returns empty for another, and a name-based guess can silently yield zero jobs. Derive the real board from the careers page, then prefer its public JSON API over scraping:
+5. Enumerate all currently open jobs from the canonical board. Every job needs its exact application URL, not the generic careers URL. **Ketch-read the full individual posting before writing its description, locations, or workplaceType; a listing card, search result, or API excerpt is never sufficient.** Preserve the complete substantive copy in sanitized CommonMark, including workplace requirements. It is a transcription field, not a summary. Keep structured facts in parallel, following the location gate below. Close emphasis before a following link and leave whitespace between them (for example, `***Announcement.*** [***Read more***](https://example.com)`). **Do not assume the ATS from the company name.** Derive the actual board from the careers page. Cross-check its public JSON API for complete listing coverage and structured facts; the API complements individual source reads rather than overriding contradictory role requirements:
    - Ashby: `https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true`
    - Greenhouse: `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs`
    - Lever: `https://api.lever.co/v0/postings/{slug}?mode=json`
@@ -222,75 +224,39 @@ search, cards, and filters remain consistent.
 
 ### Job-location normalization gate
 
-`jobs[].location` is one string with **distinct places separated by ` | `**.
-The UI renders these as ` · ` on a role and treats each place as its own
-location-filter option. A comma separates parts *within* a place, never a list
-of places. Normalize verified cities in the US, Canada, and Australia as
-`City, official State/Province abbreviation` (Denver, CO; Toronto, ON;
-Melbourne, VIC; Sydney, NSW; Brisbane, QLD). For other countries use
-`City, Country` consistently (London, UK; Berlin, Germany; Tokyo, Japan),
-without requiring or inventing an administrative subdivision. Country-only
-labels such as `Japan` stay country-only; region/province-only labels retain
-their granularity. Preserve eligibility and workplace qualifiers: a province is
-not a city, a remote-eligible region is not an office, and hybrid is not
-necessarily fully remote.
+Read [references/locations.md](references/locations.md) before researching,
+authoring, importing, or repairing company/job locations. It defines the
+structured contract, evidence workflow, examples, and import/readback checks.
 
-- Take every location from the individual posting or ATS detail data, including
-  secondary locations. Split explicit semicolons/pipes and verified multi-city
-  lists into distinct values before writing. Example:
-  `San Francisco, CA, New York City, NY, Seattle, WA` ->
-  `San Francisco, CA | New York, NY | Seattle, WA`.
-  The first comma in `San Francisco, CA` is **not** a location boundary.
-- Run the shared `sanitizeLocation` deterministic normalizer on every job at
-  parse/import boundaries, even for a single ATS location. Use curated aliases
-  and regression tests for verified variants only. Do not fuzzy-geocode,
-  destructively infer places, infer from headquarters, split arbitrary comma
-  lists, or turn country-only/region labels into cities.
-- Remote-eligible geographies are never offices/cities. Use
-  `Remote - {original verified eligibility}`; preserve qualifiers such as
-  `Remote-Friendly` and travel restrictions, and never guess eligibility.
-  Keep workplaceType aligned with source designation and preserve hybrid,
-  onsite, and HQ qualifiers.
-- For ambiguous unseparated alternatives (`Pune or Bangalore, India`) or broad
-  regions (`APAC`, `Europe`), verify each place on the canonical posting before
-  splitting; if still ambiguous, retain the source label and flag it for review
-  rather than guessing country, city, or eligibility. Geocoding may verify a
-  *single* place but cannot decide where an ATS intended list boundaries.
-- Before import, audit all jobs for multiple cities/countries inside one
-  location segment, e.g. repeated `, CA, ... , NY`, `Hybrid - London, Berlin`,
-  or `San Francisco or Palo Alto`. Review each distinct pattern, then run
-  `npx tsx --test lib/job-location.test.ts`. `parseCompanyProfile` normalizes
-  location strings too, but that safety net does not replace checking the
-  authored payload and source evidence.
-- Before import, list each **distinct** incoming location segment alongside
-  the same city's existing labels across companies. Verify that equivalent
-  places resolve to the same display name (for example, `San Francisco, CA`),
-  including names without a state/country and names with full state/country
-   spellings. If a new, verified variant is missing, extend the exact alias
-   registry in `lib/job-location-aliases.ts` (or the verified splitting rules
-   in `lib/job-location.ts`) and add a regression case to
-  `lib/job-location.test.ts` **before** importing. Never treat an unchanged
-  output from `sanitizeLocation` as evidence that the input is canonical: an
-  unrecognized alias also comes back unchanged. Do not normalize an ambiguous
-   city, a region, or remote eligibility by guessing.
-- Run `getJobLocationReviewIssues` on every normalized location before import.
-  The importer enforces this gate before writes. If it flags a label, verify
-  its place and source scope; qualify an ambiguous city explicitly rather than
-  making an unsafe global alias. Country-only labels such as `Japan` are valid.
-- After import, compare the company's stored `profile.jobs[].location` with
-  its normalized `jobs.location` rows and check that running
-  `sanitizeLocation` again changes neither. Run
-   `npm run db:normalize-job-locations` as a broader
-  whole-database audit of profile locations, normalized rows, and search text.
-  Require dry-run review, backup, atomic optimistic-safe updates, preserved IDs
-  and all non-location data, idempotence, and all-record readback. Never mutate
-  the database without explicit authorization. Resolve ambiguity using canonical
-   ATS sources; do not infer a headquarters or geocode destructively.
-   Apply an authorized, reviewed repair with
-   `npm run db:normalize-job-locations -- --apply --backup /absolute/new-backup.json`;
-   the command refuses unresolved labels and existing backup filenames. Use
-   `--overrides /absolute/source-reviewed-overrides.json` only for exact
-   posting-URL/old-location corrections backed by `sourceUrl` evidence.
+- Author `jobs[].locations` as structured references with `locationId`, `label`,
+  `relation`, `qualifier`, and `sourceLabel`. `jobs[].location` is only the
+  compatibility display derived by `locationReferencesDisplay`, with ` | `
+  separating places. Preserve company `location.locationId` and `sourceLabel`.
+- Use shared catalog IDs, not labels, dataset indices, guessed UUIDs, or a
+  company-specific place registry. Preserve unknown geography with null IDs.
+- Ketch-read every individual posting, including its complete body. Reconcile
+  headers, secondary locations, explicit workplace requirements, and ATS flags.
+  A successful board crawl or schema validation is not a complete role audit.
+- Keep geography independent from workplace arrangement. `Remote; New York;
+  San Francisco` means remote **or** those cities, not remote restricted to
+  those cities. Only explicit remote restrictions use `relation: "eligibility"`
+  for a named geography. A standalone Remote reference uses that relation too.
+- A city header alone does not establish onsite/hybrid/remote; use
+  `workplaceType: null` when unspecified. Remote teams, customer territories,
+  onsite interviews, and job-title place names are not workplace evidence.
+- Quote-check explicit body requirements that contradict a header/ATS flag;
+  record the conflict and decision in a separate source-linked ledger. Do not
+  invent a reconciliation or a hybrid attendance schedule.
+- Before writes, verify that the actual parser/importer preserves reviewed
+  references and workplaceType. After writes, verify every profile, job row,
+  junction reference, and affected search field. Location-only repairs preserve
+  job IDs and unrelated fields/companies; require a backup, atomic concurrency
+  protection, and a zero-difference rerun.
+
+For jobs/location-only requests, stay in that scope: do not republish images or
+replace unrelated profile collections. Batch at roughly 100–150 jobs (ceiling
+200), or about five small boards; freeze URL manifests when splitting a large
+company. Cursor's audit/repair is an example, not a generic all-company command.
 
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page and, if available, the company's YC profile and each linked active founder profile. YC pages can be especially useful for resolving founders, current founder roles, bios, LinkedIn/X links, and identified founder portraits; verify current-role claims against the company's current site or another current source. Verify LinkedIn/X URLs rather than constructing handles from names. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.

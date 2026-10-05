@@ -37,7 +37,7 @@ test(
   { skip: !process.env.DATABASE_URL },
   async () => {
     const db = drizzle(neon(process.env.DATABASE_URL!));
-    const source = sql`(SELECT *, '{}'::jsonb AS profile FROM (VALUES
+    const source = sql`(SELECT *, '{}'::jsonb AS profile, NULL::uuid AS headquarters_location_id FROM (VALUES
     ('elevenlabs', 'ElevenLabs', 'Voice AI', 'London', 'gb'),
     ('anthropic', 'Anthropic', 'AI', 'San Francisco', 'us'),
     ('anthropic-tools', 'Anthropic Tools', 'Software', 'London', 'gb'),
@@ -66,7 +66,7 @@ test(
     );
     assert.deepEqual(
       (await run("exa")).map((row) => row.slug),
-      ["exa"],
+      ["exa", "texas"], // Location substring matching also finds T-exa-s.
     );
     for (const q of [
       "%",
@@ -79,7 +79,7 @@ test(
     assert.equal((await run("evelenlabs", 1)).length, 1);
     assert.deepEqual(
       (await run("ex")).map((row) => row.slug),
-      ["exa"],
+      ["exa", "texas"],
     );
     const nameOnly = sql`(SELECT * FROM ${source} fixture WHERE slug = 'anthropic')`;
     const recovered = (

@@ -1,0 +1,201 @@
+{
+  "companySlug": "halluminate",
+  "verifiedAt": "2026-10-05T05:46:01.324076+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/3982fe92-ac64-4ba4-a6da-a7c54ab7dac7/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/3982fe92-ac64-4ba4-a6da-a7c54ab7dac7",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco",
+        "San Francisco, 5 days in office"
+      ],
+      "sourceSha256": "de0f9466992b716f957590677eee52b3f46a900d36aadd786b579399e94c12fa",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/f83da050-4fa8-42f4-9649-0a277d85985f/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/f83da050-4fa8-42f4-9649-0a277d85985f",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco",
+        "San Francisco, in-person"
+      ],
+      "sourceSha256": "b761375c00d5ea1a5fbb7cd62708f380269517de390c8481af91d717d00d7265",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/d391dc02-442d-42e7-8289-d497e499587e/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/d391dc02-442d-42e7-8289-d497e499587e",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "4a23d940b64fdaaf5478f51e0342c09228d1e8273cf4ffb01eb01d537248b905",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/337117ea-9b63-40c1-8d01-bf98d7f361c8/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/337117ea-9b63-40c1-8d01-bf98d7f361c8",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco",
+        "San Francisco, 5 days in office"
+      ],
+      "sourceSha256": "89eb2ae1dcf918bb46b46d6a95aa58d0317364d13875f091d517919c5817dfc3",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/f001f07a-46a8-4abd-809c-8373bae26520/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/f001f07a-46a8-4abd-809c-8373bae26520",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# Senior Recruiter",
+        "Full-Time In Person in San Francisco"
+      ],
+      "sourceSha256": "87a0820350d9cb0127a055dead4ce8c7f8a53370ba28d58540d9263e6f28113b",
+      "note": "Body explicitly states full-time in-person in San Francisco; corrected from null.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/541d28fe-7ab6-45e6-8fa0-6c9917d18a77/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/541d28fe-7ab6-45e6-8fa0-6c9917d18a77",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "2d8a1c34908ddeda7fb81e724a3640f23fa7237c5c8b59896a8ff6359c1252d5",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/014ffff9-c2b7-47b1-a5f3-4b9f5b223e6c/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/014ffff9-c2b7-47b1-a5f3-4b9f5b223e6c",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco",
+        "San Francisco, in-person"
+      ],
+      "sourceSha256": "8f50864a5930a731a00c82f71f8cc151f0e18dfcc0f71427cf76c63db7c68cb5",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/e84fa450-13b8-4a09-809c-551c26fed8f2/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/e84fa450-13b8-4a09-809c-551c26fed8f2",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco",
+        "San Francisco, 5 days in office"
+      ],
+      "sourceSha256": "d9aa136abf48f19bba78fa1232435ee8edffa25b62e05a375d2fb632c2d77d9d",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/halluminate/059fafe8-4cef-4230-bb11-144d53ea029b/application",
+      "sourceUrl": "https://jobs.ashbyhq.com/halluminate/059fafe8-4cef-4230-bb11-144d53ea029b",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "## Location Type\n\nOn-site",
+        "## Location\n\nSan Francisco"
+      ],
+      "sourceSha256": "2673e3f1f9aa6aa265dbd4040af6dd8b6abb8e4e4c9e89643a68164ca69a99c8",
+      "note": "First-party Ashby posting; onsite corroborated by explicit Location Type.",
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    }
+  ]
+}

@@ -70,7 +70,8 @@ export function buildCompanySearchQuery(
         AND NOT EXISTS (SELECT 1 FROM literal)
         AND similarity(name, ${query}) >= 0.4
     )
-    SELECT slug, name, industry, location, country_code AS "countryCode", profile,
+    SELECT slug, name, industry, location, country_code AS "countryCode",
+      jsonb_build_object('logo', profile->>'logo') AS profile,
       match_type AS "matchType", score AS "matchScore", matched_alias AS "matchedAlias"
     FROM candidates ORDER BY rank, score DESC, name, slug LIMIT ${limit}
   `;

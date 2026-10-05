@@ -1,0 +1,2172 @@
+{
+  "companySlug": "shopify",
+  "verifiedAt": "2026-10-05T15:30:59.215304+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://www.shopify.com/careers/senior-staff-engineer-privacy-engineering_cad17f83-4d2f-45a9-8728-f149b3a50ddf",
+      "sourceUrl": "https://www.shopify.com/careers/senior-staff-engineer-privacy-engineering_cad17f83-4d2f-45a9-8728-f149b3a50ddf",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Engineer - Privacy Engineering",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "f78068db5952f8d9736e3d6e4715a4eb5e95bf4041927b2bf17bd42a280aeb2e",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-credit-risk-analyst_8c9a75bc-2919-45da-a980-ff38453e6472",
+      "sourceUrl": "https://www.shopify.com/careers/senior-credit-risk-analyst_8c9a75bc-2919-45da-a980-ff38453e6472",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Credit Risk Analyst",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "37b62e1fd1ace8a54089bdfedbb989ee5a3a1130dce2bffd8af6311fe463042b",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/sales-manager-new-business_5ee5ea46-4897-45b9-9da1-e5a3f1b171fd",
+      "sourceUrl": "https://www.shopify.com/careers/sales-manager-new-business_5ee5ea46-4897-45b9-9da1-e5a3f1b171fd",
+      "location": "Remote - UK",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Sales Manager, New Business",
+        "Remote - United Kingdom"
+      ],
+      "sourceSha256": "015991aa58814fc28863c104923e48f0d14d82446b29b61d2357737afc183946",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-applied-machine-learning-engineer-fraud_00dfb14e-9d30-467a-815b-0727a0353749",
+      "sourceUrl": "https://www.shopify.com/careers/staff-applied-machine-learning-engineer-fraud_00dfb14e-9d30-467a-815b-0727a0353749",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Applied Machine Learning Engineer, Fraud",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "bb6fa27e1b9dc81b949ffab4a258d5addcc124e697f6759cba09b9eb496b3484",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/associate-general-counsel-privacy_9582ff03-4538-4efe-8406-437956ab2c73",
+      "sourceUrl": "https://www.shopify.com/careers/associate-general-counsel-privacy_9582ff03-4538-4efe-8406-437956ab2c73",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Associate General Counsel, Privacy",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "c637ed0bcc57c5b79240cf53b0eb0b72c5f29cac341f4a59664a5266f3edf131",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-applied-machine-learning-engineer-simgym_16f3bd11-ff27-441f-87a5-ac28315cfe5b",
+      "sourceUrl": "https://www.shopify.com/careers/staff-applied-machine-learning-engineer-simgym_16f3bd11-ff27-441f-87a5-ac28315cfe5b",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Applied Machine Learning Engineer, SimGym",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "515c1db716854bee848b8f7e51fd8d1d518e451e675fc24d7fb25e4e05b6b783",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-staff-applied-ml-engineer-consumer-agents_cc33c981-5ac7-4c32-9924-fda511771c5a",
+      "sourceUrl": "https://www.shopify.com/careers/senior-staff-applied-ml-engineer-consumer-agents_cc33c981-5ac7-4c32-9924-fda511771c5a",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Applied ML Engineer - Consumer Agents",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "bbb7fb8c627a23ca86b558f4248ba7286800fb2fcbe7f3f6557d40c89e9671de",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-infrastructure-engineer-streaming-compute_f2f49fe2-546d-422d-94cf-15aab7c6a3bd",
+      "sourceUrl": "https://www.shopify.com/careers/staff-infrastructure-engineer-streaming-compute_f2f49fe2-546d-422d-94cf-15aab7c6a3bd",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Infrastructure Engineer - Streaming Compute",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "2022a6f5f432d0e5825b37d8d5c487da41f182ab3a5ad54d234be9569852bf6b",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-security-compliance-engineer_386f306c-05fb-4232-85c1-a4bbf5a20997",
+      "sourceUrl": "https://www.shopify.com/careers/senior-security-compliance-engineer_386f306c-05fb-4232-85c1-a4bbf5a20997",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Security Compliance Engineer",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "42c4e4bf88f779bedc0ef8d9c1e3a609e71975836a728ebe4be2daea5ba02752",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/machine-learning-engineer-recommendations_b464a8e4-bed0-47e9-bbd6-ee528610a0a5",
+      "sourceUrl": "https://www.shopify.com/careers/machine-learning-engineer-recommendations_b464a8e4-bed0-47e9-bbd6-ee528610a0a5",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Machine Learning Engineer - Recommendations",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "0a50a0fdd1e244d80a32a48e4fbcfbe66dee40afd035c2903d12c9dae8793bb6",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/machine-learning-applied-scientists_731ad829-1800-4964-be1b-e4f44e1f109c",
+      "sourceUrl": "https://www.shopify.com/careers/machine-learning-applied-scientists_731ad829-1800-4964-be1b-e4f44e1f109c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Machine Learning Applied Scientists",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "89d1a769a5525d1bf6406a6a0ea21d377db4be829a99dce6f06a23bd8d577803",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/site-reliability-engineer_40fb9e05-f1da-472b-8847-b3689ca88ae9",
+      "sourceUrl": "https://www.shopify.com/careers/site-reliability-engineer_40fb9e05-f1da-472b-8847-b3689ca88ae9",
+      "location": "Remote - Global | Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Site Reliability Engineer",
+        "Remote - Global, Americas"
+      ],
+      "sourceSha256": "ef16084ddef224a4033f66839e074d4800641d96c48d7020441b20c6eaa664b3",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": null,
+          "label": "Worldwide",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Worldwide"
+        },
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-account-executive-mid-market-new-business_e58d6028-39ee-42b4-974d-5a2c8752e477",
+      "sourceUrl": "https://www.shopify.com/careers/senior-account-executive-mid-market-new-business_e58d6028-39ee-42b4-974d-5a2c8752e477",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive - Mid-Market, New Business",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "9eae2ce2743afa021587ef74d430ccee615e0bd4a0152c68e12ef5d76ccbd710",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/live-site-operations-specialist_1af1c305-5882-4bfb-8a83-8969d372115d",
+      "sourceUrl": "https://www.shopify.com/careers/live-site-operations-specialist_1af1c305-5882-4bfb-8a83-8969d372115d",
+      "location": "Remote - Singapore",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Live Site Operations Specialist",
+        "Remote - Singapore"
+      ],
+      "sourceSha256": "412c089b8eba7e614af42fa582f6992712afd4c7f8ba6533a3f98715f38fd068",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/partner-solution-architect-global-payments_9fa931fa-5591-4bde-a55b-a2683520ce5c",
+      "sourceUrl": "https://www.shopify.com/careers/partner-solution-architect-global-payments_9fa931fa-5591-4bde-a55b-a2683520ce5c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Partner Solution Architect, Global Payments",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "71dcf0231e29dba72ad485ce62d34446aa469337ffbdd82b5782b7d3ed06db35",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/compliance-lead_d6bd5347-c156-4fa4-bb99-3bf5b43e93d7",
+      "sourceUrl": "https://www.shopify.com/careers/compliance-lead_d6bd5347-c156-4fa4-bb99-3bf5b43e93d7",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Compliance Lead",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "1aae6d45e4dbd55a6aca53147fb5b919058b688f51307fd76d88a9782139b51d",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/applied-ml-engineering-genai-ai-agent_ea6c6b0b-a935-40b8-96ea-f61e882901d9",
+      "sourceUrl": "https://www.shopify.com/careers/applied-ml-engineering-genai-ai-agent_ea6c6b0b-a935-40b8-96ea-f61e882901d9",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Applied ML Engineering - GenAI, AI Agent",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "1985785f212ee2356eb90329e5bfac5d760323cd6e453eb8780000c7fd5985b3",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/software-engineers_ea5811c0-0353-4468-a1a5-0ef776748b31",
+      "sourceUrl": "https://www.shopify.com/careers/software-engineers_ea5811c0-0353-4468-a1a5-0ef776748b31",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Software Engineers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "71ed345691dec111f14b55ab87fae2e659a41f4dba922a3ce3e6000daa148e18",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-infrastructure-engineer-database-platform_1a55ffbe-70ae-4c65-a43b-0c78df56f9e3",
+      "sourceUrl": "https://www.shopify.com/careers/senior-infrastructure-engineer-database-platform_1a55ffbe-70ae-4c65-a43b-0c78df56f9e3",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Infrastructure Engineer - Database Platform",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "2fd9bdb45ee5921a5c7c05ef13f075cbc956ec201d370567b4e9221e0213ef41",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-compliance-analyst_8639c248-b9f3-45ca-9ea8-5b66a4c7d208",
+      "sourceUrl": "https://www.shopify.com/careers/senior-compliance-analyst_8639c248-b9f3-45ca-9ea8-5b66a4c7d208",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Compliance Analyst",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "9feff7aee2a2b15a075912ccda8490dd66e3c4b7849ac5036426aa95b3bf9e7c",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/lead-marketer-commercial-enterprise_4f7966ee-b30f-4256-a80b-11165c2d2a5a",
+      "sourceUrl": "https://www.shopify.com/careers/lead-marketer-commercial-enterprise_4f7966ee-b30f-4256-a80b-11165c2d2a5a",
+      "location": "Remote - UK | Remote - Ireland",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Lead Marketer, Commercial - Enterprise",
+        "Remote - United Kingdom, Ireland"
+      ],
+      "sourceSha256": "07514c382be6e386d2d20f6222c60207c6114ce49a5cb4bd333a5095c604172a",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-lead-enterprise-demand-abm_13402618-643e-41b0-b866-d8748a1c130e",
+      "sourceUrl": "https://www.shopify.com/careers/senior-lead-enterprise-demand-abm_13402618-643e-41b0-b866-d8748a1c130e",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Lead, Enterprise Demand & ABM",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "15e32819112fd33237df9c7e6e9de4849381d86a3ea195d4550899c52e474678",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/machine-learning-engineer-hstu_51086d95-bce7-45b2-af30-69beb6d56392",
+      "sourceUrl": "https://www.shopify.com/careers/machine-learning-engineer-hstu_51086d95-bce7-45b2-af30-69beb6d56392",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Machine Learning Engineer - HSTU",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "937e9c8fddd838a27fbff5696bf0750d98a29fae49c3bb5f24f10de80890f3e0",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/designers_2e7f4ee3-5570-4d21-a0c0-a0baddd66bb5",
+      "sourceUrl": "https://www.shopify.com/careers/designers_2e7f4ee3-5570-4d21-a0c0-a0baddd66bb5",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Designers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "c4174763e40db2ae7ec56384bd35e07019f7c8ef9d17abc6e3df267a9cfd8ef3",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-engineer-privacy-engineering_6387b485-f57b-42b7-859a-702e56bfb12c",
+      "sourceUrl": "https://www.shopify.com/careers/senior-engineer-privacy-engineering_6387b485-f57b-42b7-859a-702e56bfb12c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Engineer - Privacy Engineering",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "02027925f8d492bc59f8cc9f302d7843e53d2c67ae5a546c478f260ab84be869",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/social-lead-product_103b3bdf-35f7-4199-8a61-195d1eeed88d",
+      "sourceUrl": "https://www.shopify.com/careers/social-lead-product_103b3bdf-35f7-4199-8a61-195d1eeed88d",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Social Lead, Product",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "4bdf16dcc4124ad50c746baae34ef76e0edf029243634b39b3bfeb3a6829b52a",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-enterprise-account-executive-spanish-speaking_cbefc12f-bbf0-4824-9438-fa69af41b36b",
+      "sourceUrl": "https://www.shopify.com/careers/senior-enterprise-account-executive-spanish-speaking_cbefc12f-bbf0-4824-9438-fa69af41b36b",
+      "location": "Remote - Spain",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Enterprise Account Executive - Spanish Speaking",
+        "Remote - Spain"
+      ],
+      "sourceSha256": "feb1b6b85351283951b0b4176673db686264e498d48335f65484e2f08a173002",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "a1612eb9-cdf8-8c39-b9f8-160ec3b70220",
+          "label": "Spain",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Spain"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-engineer-core-mysql-database-platform_227da304-b6f5-4a9d-990d-69eb58b1369c",
+      "sourceUrl": "https://www.shopify.com/careers/senior-engineer-core-mysql-database-platform_227da304-b6f5-4a9d-990d-69eb58b1369c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Engineer - Core MySQL, Database Platform",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "bd1d164cf3014cc1413cd21aa3c321e2ab48442e592354b0bf0592475d9fd068",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/machine-learning-engineer-search_6cc98ef4-1dfc-49e7-b6a8-2efc876ee335",
+      "sourceUrl": "https://www.shopify.com/careers/machine-learning-engineer-search_6cc98ef4-1dfc-49e7-b6a8-2efc876ee335",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Machine Learning Engineer - Search",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "dacce44b0c540b9fab357aaf156e5cf0bbebf6e1841b323c00fd8c8750eea37b",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/director-lifecycle-crm-shop_f413fbc5-b346-4690-b5d9-4468cbbd0cc1",
+      "sourceUrl": "https://www.shopify.com/careers/director-lifecycle-crm-shop_f413fbc5-b346-4690-b5d9-4468cbbd0cc1",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Director, Lifecycle & CRM, Shop",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "6988614a1c94d3bd0864e3b32c8d2715ee1c02b4d8f9befe3894d6638d8e4b93",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/machine-learning-engineer-ads_4d2e09db-2f4b-4217-974d-7dcfffd26af6",
+      "sourceUrl": "https://www.shopify.com/careers/machine-learning-engineer-ads_4d2e09db-2f4b-4217-974d-7dcfffd26af6",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Machine Learning Engineer - Ads",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "ce2f62cb6fd2ce66a207b15221a8f87539e7e4ec5ea3b75d504974cbba8e217f",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/director-of-content_8982e974-6cb3-4fbe-9d4f-4a1dfd5e5a1f",
+      "sourceUrl": "https://www.shopify.com/careers/director-of-content_8982e974-6cb3-4fbe-9d4f-4a1dfd5e5a1f",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Director of Content",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "cec40f2b29648ed591560120eb98407404efb494f7ec395760af87bd02f88dac",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/associate-general-counsel-employment_5597b77e-5f47-4e6f-8a9d-62caf675291e",
+      "sourceUrl": "https://www.shopify.com/careers/associate-general-counsel-employment_5597b77e-5f47-4e6f-8a9d-62caf675291e",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Associate General Counsel, Employment",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "d83b45f75e135775326260f794bba8b346eacc245bd2da6e52709db73039358e",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-software-engineer-internal-tools_12490bc5-00b1-4baf-9caa-8f01b4be4dbf",
+      "sourceUrl": "https://www.shopify.com/careers/staff-software-engineer-internal-tools_12490bc5-00b1-4baf-9caa-8f01b4be4dbf",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer - Internal Tools",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "94bff5165251eeb06ce8ed0197335b6b1f9d937fc0ebbd016ef725ffb25f6f37",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-lead-product-operations-growth_5d736d32-f16c-4a40-8adf-e6379943017a",
+      "sourceUrl": "https://www.shopify.com/careers/senior-lead-product-operations-growth_5d736d32-f16c-4a40-8adf-e6379943017a",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Lead, Product Operations, Growth",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "3f1c03de5bac1ea90c5426836674a11884409f0aee40e8b3135df0a68f8969ec",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/partner-co-marketing-lead-commercial_1090583e-8a0e-48e0-bc18-f1d638b321e1",
+      "sourceUrl": "https://www.shopify.com/careers/partner-co-marketing-lead-commercial_1090583e-8a0e-48e0-bc18-f1d638b321e1",
+      "location": "Remote - Hong Kong",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Partner Co-Marketing Lead, Commercial",
+        "Remote - Hong Kong"
+      ],
+      "sourceSha256": "14fd132bff1185d638d45f3d608b1ac2bc6ddd1445484886999cd6593c240dd9",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "b179b55e-4306-881d-9dc1-692d858b5e68",
+          "label": "Hong Kong",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Hong Kong"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-infrastructure-engineer-streaming-services-materialization-platform_a55ae693-1a86-4bc3-a2b8-ae5d841a4769",
+      "sourceUrl": "https://www.shopify.com/careers/senior-infrastructure-engineer-streaming-services-materialization-platform_a55ae693-1a86-4bc3-a2b8-ae5d841a4769",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Infrastructure Engineer - Streaming Services/Materialization Platform",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "eee742be850d19b2b0c06f8595e278abec5dab594ab06d7e53e61c5f7af40464",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/machine-learning-engineer-fraud_251eebe9-97e4-4fda-b7e7-236e2d04fc66",
+      "sourceUrl": "https://www.shopify.com/careers/machine-learning-engineer-fraud_251eebe9-97e4-4fda-b7e7-236e2d04fc66",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Machine Learning Engineer - Fraud",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "8b20384ac87877d18568d44466f9d366c39f41ea9296a534c9734458b7280937",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-financial-analyst-multiple-roles_40ef1cb0-5c56-4963-84fe-946708e5d74a",
+      "sourceUrl": "https://www.shopify.com/careers/senior-financial-analyst-multiple-roles_40ef1cb0-5c56-4963-84fe-946708e5d74a",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Financial Analyst - Multiple Roles",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "cd4e42a53bc847d77f6700f082dd25d93eb89571e37e580de607c8006b622d22",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/java-search-infrastructure-engineer_766cb969-1073-4f53-963d-92d0beccde9e",
+      "sourceUrl": "https://www.shopify.com/careers/java-search-infrastructure-engineer_766cb969-1073-4f53-963d-92d0beccde9e",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Java Search Infrastructure Engineer",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "cdba7a45370270212a3453268c9b03cce22f40e7e6297ca84526e9624cc1e25a",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-infrastructure-engineer-streaming-compute_eab3b5a7-3e5b-4716-b0de-95dd472753f4",
+      "sourceUrl": "https://www.shopify.com/careers/senior-infrastructure-engineer-streaming-compute_eab3b5a7-3e5b-4716-b0de-95dd472753f4",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Infrastructure Engineer - Streaming Compute",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "8c5d168e2d8b4dfd448d3ed3d7c5e5c9c3a76f8ecd70250b9c6f54fd13a2d198",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-staff-engineer-ml-inference_b5bd9306-a689-4428-9b9d-a1f88c3b85d7",
+      "sourceUrl": "https://www.shopify.com/careers/senior-staff-engineer-ml-inference_b5bd9306-a689-4428-9b9d-a1f88c3b85d7",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Engineer - ML Inference",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "69c493fe8e5c798aafd1539632d6aac19501e2071f45b8b3ecc578d7c2953f5d",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/security-incident-response-senior-analyst_62efacf8-e3b3-4265-be67-92f1e6f379ed",
+      "sourceUrl": "https://www.shopify.com/careers/security-incident-response-senior-analyst_62efacf8-e3b3-4265-be67-92f1e6f379ed",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Security Incident Response, Senior Analyst",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "81f725a24e122e3881bf58c0b9d7fab2c45c1d4797da59734175de116931ca04",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/large-account-executive_52ff1d80-69e7-4d93-a0ba-db84b20ce27a",
+      "sourceUrl": "https://www.shopify.com/careers/large-account-executive_52ff1d80-69e7-4d93-a0ba-db84b20ce27a",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Large Account Executive",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "47094da50d022e4787289a88dc9c55071e1197774316cc96ccd7ef54d9c73736",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/infrastructure-engineers_202c9f29-47fa-4b55-8cbb-337eed7d92e2",
+      "sourceUrl": "https://www.shopify.com/careers/infrastructure-engineers_202c9f29-47fa-4b55-8cbb-337eed7d92e2",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Infrastructure Engineers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "1a83802e8914c6608e1f7780f9050e02dad7516afa0576ceea1c3288fe5aaed2",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-staff-engineer-measurement_be6a45e8-5c08-43b0-8d23-8549cc1d7197",
+      "sourceUrl": "https://www.shopify.com/careers/senior-staff-engineer-measurement_be6a45e8-5c08-43b0-8d23-8549cc1d7197",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Engineer - Measurement",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "950e39d949b707ee1cd2212047f8dc720e2dce7dd627fda8eedf1e08f1d32c77",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/av-technician-technical-services_a58f82d8-9d35-49a4-88cd-5c7c6fbc861c",
+      "sourceUrl": "https://www.shopify.com/careers/av-technician-technical-services_a58f82d8-9d35-49a4-88cd-5c7c6fbc861c",
+      "location": "Toronto, ON",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# AV Technician, Technical Services",
+        "Toronto"
+      ],
+      "sourceSha256": "c9722e335630df94aa6f299e5c7c1485ca682019196477bcbfbcd1bdc8d403c6",
+      "note": "Toronto-based facilities role with on-site event duties.",
+      "locations": [
+        {
+          "locationId": "22327b62-8230-898f-8648-3fee9dac2d65",
+          "label": "Toronto, ON",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "Toronto, ON"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/partner-solutions-architect-cross-border-tax_fb2e2e18-ca4b-4323-8974-a479fd5618b7",
+      "sourceUrl": "https://www.shopify.com/careers/partner-solutions-architect-cross-border-tax_fb2e2e18-ca4b-4323-8974-a479fd5618b7",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Partner Solutions Architect, Cross-Border & Tax",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "0b3e97889a8236bae5032b0c8a88850c0a1eb7f83a382418f0a3cdefaa3dc433",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-learning-development-specialist-support_eab1ca64-ebfb-4f8a-94c3-5eb760eeac6f",
+      "sourceUrl": "https://www.shopify.com/careers/senior-learning-development-specialist-support_eab1ca64-ebfb-4f8a-94c3-5eb760eeac6f",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Learning & Development Specialist, Support",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "79935cdc5bc0c55cb1ba2c4418464332a7b70657b28e541fa2049c44dde346b2",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/search-relevance-engineers_9c80592d-6104-4e4a-b577-7856427062e3",
+      "sourceUrl": "https://www.shopify.com/careers/search-relevance-engineers_9c80592d-6104-4e4a-b577-7856427062e3",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Search Relevance Engineers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "0337b24d3c6c78bb6c176daf21f3d003cea9f98a0fd701bb9b098ce5866ca383",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-product-data-scientist-developer-productivity_95eb987e-13ca-447b-9d19-0e42aa5ce40c",
+      "sourceUrl": "https://www.shopify.com/careers/staff-product-data-scientist-developer-productivity_95eb987e-13ca-447b-9d19-0e42aa5ce40c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Product Data Scientist - Developer Productivity",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "a2c696e7ac8dcab61191de522fe5bfda9a0a30ceb720df3aaf595ad86b6b629f",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/applied-machine-learning-engineering-managers_62d779d3-51c8-4b0a-ab2e-1a440276bb37",
+      "sourceUrl": "https://www.shopify.com/careers/applied-machine-learning-engineering-managers_62d779d3-51c8-4b0a-ab2e-1a440276bb37",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Applied Machine Learning Engineering Managers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "aa0372db00bc537fd88bbaf4e8e92d39e9428dc64a6fe626f6e6c7bc1474e4ec",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/partner-solutions-engineer-commercial_33c0656f-c0af-413b-a54c-45034be3350a",
+      "sourceUrl": "https://www.shopify.com/careers/partner-solutions-engineer-commercial_33c0656f-c0af-413b-a54c-45034be3350a",
+      "location": "Remote - Hong Kong",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Partner Solutions Engineer, Commercial",
+        "Remote - Hong Kong"
+      ],
+      "sourceSha256": "4ad3b11b61f097d163eaca44c3a65452e3054c0c37f929113872faec7bbc98f8",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "b179b55e-4306-881d-9dc1-692d858b5e68",
+          "label": "Hong Kong",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Hong Kong"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-infra-engineer-data-platform_c895d682-aaf8-4313-94b4-bab51c3b2e5d",
+      "sourceUrl": "https://www.shopify.com/careers/staff-infra-engineer-data-platform_c895d682-aaf8-4313-94b4-bab51c3b2e5d",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Infra Engineer - Data Platform",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "273c070f3a337d41c617f9b780b333c5a94efb9ebdc578d8ecdd92186cad9f9f",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/associate-general-counsel-partnerships_5de9add2-829e-4307-8d9e-20ee3353d237",
+      "sourceUrl": "https://www.shopify.com/careers/associate-general-counsel-partnerships_5de9add2-829e-4307-8d9e-20ee3353d237",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Associate General Counsel, Partnerships",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "6c12d8531d0eec8cf89f173001e14d65201e88c217b8fa11bd3d5299fa023135",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/enterprise-account-executive_b9cc007a-750f-4093-8191-e61f85c7c787",
+      "sourceUrl": "https://www.shopify.com/careers/enterprise-account-executive_b9cc007a-750f-4093-8191-e61f85c7c787",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Enterprise Account Executive",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "92f7d820358d8d2028630e04ad3308ac16c38feee1d6ced2fcbb2456b00e01a3",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-deal-strategy-manager-payments-platform-pricing_9f1a97d8-5862-4ee4-b2b1-0dc02e20c11c",
+      "sourceUrl": "https://www.shopify.com/careers/senior-deal-strategy-manager-payments-platform-pricing_9f1a97d8-5862-4ee4-b2b1-0dc02e20c11c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Deal Strategy Manager, Payments & Platform Pricing",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "47ea38604236ecd6c18583122e7204844d55eb5d8c19bee8aa55e012a654bbaf",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/head-of-partner-management-affiliate-channel_1fc767ce-3657-4756-8e42-ba30d7d65e6c",
+      "sourceUrl": "https://www.shopify.com/careers/head-of-partner-management-affiliate-channel_1fc767ce-3657-4756-8e42-ba30d7d65e6c",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Head of Partner Management, Affiliate Channel",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "4503418633ac6d0e13ecc3adf60744c48a1643c5900160d01edb5add65482074",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/engineering-manager_227e8512-a274-4253-a0a1-825df6bbc0b9",
+      "sourceUrl": "https://www.shopify.com/careers/engineering-manager_227e8512-a274-4253-a0a1-825df6bbc0b9",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Engineering Manager",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "ec9155f736121b7bc7538a7844fcdf7d9f58873876cd5d16a5f258a0cf8ae1f2",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/engineering-manager-streaming-foundations_92ce61bc-6788-4157-804a-58810cb3c4d0",
+      "sourceUrl": "https://www.shopify.com/careers/engineering-manager-streaming-foundations_92ce61bc-6788-4157-804a-58810cb3c4d0",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Engineering Manager - Streaming Foundations",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "fddf4681cddcf5bca0e6130bf0fd05248b278895b93ffe11d25f7e590ad7b600",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/product-management_a69fc195-de20-42f5-868d-2cf7d7182836",
+      "sourceUrl": "https://www.shopify.com/careers/product-management_a69fc195-de20-42f5-868d-2cf7d7182836",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Product Management",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "2dc57c8022913e5fa3aaf05e95d8db6a495e36ac7f96669d27507e1d0ef16f9c",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-partner-success-manager-lifecycle-programs-apac_10a56956-2acc-448b-91c6-3503fff0f4cc",
+      "sourceUrl": "https://www.shopify.com/careers/senior-partner-success-manager-lifecycle-programs-apac_10a56956-2acc-448b-91c6-3503fff0f4cc",
+      "location": "Remote - India | Remote - Singapore",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Partner Success Manager, Lifecycle Programs - APAC",
+        "Remote - India, Singapore"
+      ],
+      "sourceSha256": "03d66728c1b1c158b99779a7215ffe2e824d43e66c69896376897cc1cf36a13e",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "a5fcbd2a-f031-8126-9a08-8b688a479310",
+          "label": "India",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - India"
+        },
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/recovery-analyst-merchant-lending-credit_787da03c-eedf-4bcf-a8d0-0fc96054dd27",
+      "sourceUrl": "https://www.shopify.com/careers/recovery-analyst-merchant-lending-credit_787da03c-eedf-4bcf-a8d0-0fc96054dd27",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Recovery Analyst, Merchant Lending Credit",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "bb9615e5fee0ca84f197dd6ac4207a038d62b475ccd2c7832fa88125f98d69e1",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/account-executive-smb-german-speaking_69bdefc2-b2f5-4277-996b-7b677bcf1c0a",
+      "sourceUrl": "https://www.shopify.com/careers/account-executive-smb-german-speaking_69bdefc2-b2f5-4277-996b-7b677bcf1c0a",
+      "location": "Remote - Ireland | Remote - UK",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Account Executive, SMB, German-speaking",
+        "Remote - Ireland, United Kingdom"
+      ],
+      "sourceSha256": "2456ebd3b870df2136104b5b052c8cd0ad7edd0a4bc582eb9cc7f699be22a415",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        },
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-lead-demand-digital-field-marketing_affebff3-f5c5-4283-b4d6-75befa11e7a1",
+      "sourceUrl": "https://www.shopify.com/careers/senior-lead-demand-digital-field-marketing_affebff3-f5c5-4283-b4d6-75befa11e7a1",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Lead, Demand & Digital Field Marketing",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "bcf83b2c5cc20a82c8e7b5015df7bff6748baed9c32b60b22107b34bcdd278f5",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-software-engineer-ads_132bdb94-a153-47b8-a53e-185b92646e55",
+      "sourceUrl": "https://www.shopify.com/careers/staff-software-engineer-ads_132bdb94-a153-47b8-a53e-185b92646e55",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Software Engineer - Ads",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "6f94a3ab1ffca89432bf1abca69d6b3fbdf8ede3a346dd5734ae2a710f0f5cf2",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-product-data-scientists-multiple-roles_362ecbdc-924e-4b3b-92b1-d57c8eed4263",
+      "sourceUrl": "https://www.shopify.com/careers/staff-product-data-scientists-multiple-roles_362ecbdc-924e-4b3b-92b1-d57c8eed4263",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Product Data Scientists - Multiple Roles",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "470a56b75210ff00749a27e1dcf4ca070d8c6993e7c4b46b31043480af94b567",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-applied-machine-learning-engineer-simgym_e948ca39-e4ce-4643-a187-c0964f3a8def",
+      "sourceUrl": "https://www.shopify.com/careers/senior-applied-machine-learning-engineer-simgym_e948ca39-e4ce-4643-a187-c0964f3a8def",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Applied Machine Learning Engineer, SimGym",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "0e6a22b11c80a4bad7a7686175d677e92f41035a76fded27d0b13d75b34b61fc",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-data-engineers_3adac50d-f0c5-4115-88cd-f637b2be02ae",
+      "sourceUrl": "https://www.shopify.com/careers/staff-data-engineers_3adac50d-f0c5-4115-88cd-f637b2be02ae",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Data Engineers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "9d011f860bfd2df0d6e4a3349751c7ad31fad9d4f3aeba3c5692af34f8d6c224",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/revenue-event-marketing-lead_23139158-81cb-4924-a080-5d38e490d687",
+      "sourceUrl": "https://www.shopify.com/careers/revenue-event-marketing-lead_23139158-81cb-4924-a080-5d38e490d687",
+      "location": "Remote - APAC | Remote - Singapore | Remote - Hong Kong",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Revenue Event Marketing Lead",
+        "Remote - APAC, Singapore, Hong Kong"
+      ],
+      "sourceSha256": "ed5ed012cf25450f19db94b1c0936b08049280bf5a112e8df25ab993bf9a6d90",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "a9bbe375-6458-854c-a988-d9842aeae235",
+          "label": "APAC",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - APAC"
+        },
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Singapore"
+        },
+        {
+          "locationId": "b179b55e-4306-881d-9dc1-692d858b5e68",
+          "label": "Hong Kong",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Hong Kong"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-lead-external-partnerships-social-shop_44bd4c1c-6887-470f-90e0-b470f234fe49",
+      "sourceUrl": "https://www.shopify.com/careers/senior-lead-external-partnerships-social-shop_44bd4c1c-6887-470f-90e0-b470f234fe49",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Lead, External Partnerships & Social, Shop",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "f5976a655ca91ca44b42f52cf525620b07bef5a8ece600872d673f6896afaf94",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/product-partnerships-lead_d9993b7d-d973-409c-9da3-0c8d48cff776",
+      "sourceUrl": "https://www.shopify.com/careers/product-partnerships-lead_d9993b7d-d973-409c-9da3-0c8d48cff776",
+      "location": "Remote - Japan",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Product Partnerships Lead",
+        "Remote - Japan"
+      ],
+      "sourceSha256": "af15e01726d3ff6d6865362806c641dd8374fcfbcbc18c5c4eee460ff2a73484",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "89de02cb-9b99-89d1-b907-edfe2cfb6153",
+          "label": "Japan",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Japan"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-security-engineer-infrastructure-security_9c4c8701-666c-4015-9b40-7e1bd4e25348",
+      "sourceUrl": "https://www.shopify.com/careers/staff-security-engineer-infrastructure-security_9c4c8701-666c-4015-9b40-7e1bd4e25348",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Security Engineer, Infrastructure Security",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "3bf97670fb2e0d5c6c7eecfeb04fd37f23924a642bdd88bb2b5e95478ebd276b",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-solution-engineer-mid-market_66782489-583f-4df1-bda6-b20aa34351d2",
+      "sourceUrl": "https://www.shopify.com/careers/senior-solution-engineer-mid-market_66782489-583f-4df1-bda6-b20aa34351d2",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Solution Engineer, Mid Market",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "5f43853be4b9293af4ea5a236a249c1ab476509e3d6a5ef76bfd8195795115f4",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-indirect-tax-analyst_c49bee91-d6d8-405c-8367-2fa7c42ecf3d",
+      "sourceUrl": "https://www.shopify.com/careers/senior-indirect-tax-analyst_c49bee91-d6d8-405c-8367-2fa7c42ecf3d",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Indirect Tax Analyst",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "3e53c3a833e962e5ec76b94b232ae7cac83b6d8cbba785fe80ddfe23be8f43fe",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-account-executive-mid-market-gcr_2ea61328-1e73-4143-8f4f-b0176daa0958",
+      "sourceUrl": "https://www.shopify.com/careers/senior-account-executive-mid-market-gcr_2ea61328-1e73-4143-8f4f-b0176daa0958",
+      "location": "Remote - Singapore",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, Mid Market, GCR",
+        "Remote - Singapore"
+      ],
+      "sourceSha256": "1ade04847ea02ab005434087463493be2ab221b368f340beacf53c9b24254147",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "61693408-a5aa-88c8-aa13-59fff7fe2aa2",
+          "label": "Singapore",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Singapore"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-account-executive-large-accounts-italian-speaking_fa99c40e-f923-48ad-93b7-039dec125c34",
+      "sourceUrl": "https://www.shopify.com/careers/senior-account-executive-large-accounts-italian-speaking_fa99c40e-f923-48ad-93b7-039dec125c34",
+      "location": "Remote - Italy",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, Large Accounts - Italian-speaking",
+        "Remote - Italy"
+      ],
+      "sourceSha256": "c47dbe4ff39c3b9e713e5766f3db6dab4339d45a3b8ccf94e26e9cb2065e6cd0",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "97beca70-891d-8b2e-823e-3bd5c6028998",
+          "label": "Italy",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Italy"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-lead-federal-government-affairs-us_7d3f4fe7-7a8c-4919-b181-74f2f6f3c6d8",
+      "sourceUrl": "https://www.shopify.com/careers/senior-lead-federal-government-affairs-us_7d3f4fe7-7a8c-4919-b181-74f2f6f3c6d8",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Lead, Federal Government Affairs (US)",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "444fa06a4a592a1279f6bf4769ef02008ff7498f8b98f82ea1a0635357daba2e",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/product-data-science-manager_cc0aa9e6-5559-4071-8043-1df701aba595",
+      "sourceUrl": "https://www.shopify.com/careers/product-data-science-manager_cc0aa9e6-5559-4071-8043-1df701aba595",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Product Data Science Manager",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "b9967e7f33a45a1a45a3484d57a06cf36fe98658b6d3544682be727217bc5344",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/technical-security-analyst-iam_ed446689-e031-4f41-aa1d-e0de6a5940c8",
+      "sourceUrl": "https://www.shopify.com/careers/technical-security-analyst-iam_ed446689-e031-4f41-aa1d-e0de6a5940c8",
+      "location": "Remote - Americas | Remote - Canada",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Technical Security Analyst, IAM",
+        "Remote - Americas, Canada"
+      ],
+      "sourceSha256": "4ad47ae3e74e2cd0785a917368dc38be481de3129968b6e8cb5e62a33180929d",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        },
+        {
+          "locationId": "ca7d1117-6a59-8bb2-bbec-c4ac3d23d6d5",
+          "label": "Canada",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Canada"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-infra-engineer-events-platform_1b5c82cb-343b-4383-8235-c2de280b00c8",
+      "sourceUrl": "https://www.shopify.com/careers/senior-infra-engineer-events-platform_1b5c82cb-343b-4383-8235-c2de280b00c8",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Infra Engineer - Events Platform",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "db940168fb64a043021061880ea3915c3db623e61caee104988e5fbf47a25baf",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-infra-engineer-ingestion_d2be5c63-e702-4b83-a66c-370d0e08cb4e",
+      "sourceUrl": "https://www.shopify.com/careers/staff-infra-engineer-ingestion_d2be5c63-e702-4b83-a66c-370d0e08cb4e",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Infra Engineer - Ingestion",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "238cadaadd6e062e0392fbe0d316582092cbdc6e0a5d220db6b26ad9dfc653c6",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-engineer-real-time-merchant-analytics_abefc785-0612-4b87-a356-57f1438f7cec",
+      "sourceUrl": "https://www.shopify.com/careers/staff-engineer-real-time-merchant-analytics_abefc785-0612-4b87-a356-57f1438f7cec",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Engineer - Real-Time Merchant Analytics",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "fcd71cf6b365bef7290c177f0b3ab1bb8ac8e1ec1ff374ef3726f055625f3e93",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/applied-machine-learning-engineers_9f16f862-28ec-42d7-a9fa-948bf2eeeb4a",
+      "sourceUrl": "https://www.shopify.com/careers/applied-machine-learning-engineers_9f16f862-28ec-42d7-a9fa-948bf2eeeb4a",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Applied Machine Learning Engineers",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "d47d1239f6b2aa1e830d54e0e713d9c7ebb19be943f279a8077f8ef47490e624",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/lead-electronic-money-accounting_e1c60e78-e451-4242-8473-5b8217394c36",
+      "sourceUrl": "https://www.shopify.com/careers/lead-electronic-money-accounting_e1c60e78-e451-4242-8473-5b8217394c36",
+      "location": "Remote - UK",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Lead, Electronic Money Accounting",
+        "Remote - United Kingdom"
+      ],
+      "sourceSha256": "b636fc6286d92f0f4565b3755b6b5ddcecb5fa3d0a7e3404f61546547f3fed3b",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/software-engineers-frontend_819eb2d1-1bf6-4f0d-91dd-419aea8bd9d5",
+      "sourceUrl": "https://www.shopify.com/careers/software-engineers-frontend_819eb2d1-1bf6-4f0d-91dd-419aea8bd9d5",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Software Engineers, Frontend",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "51de0fd6025a2194647a4ac55360dc853231f461f4fbef09b6882ba0a525e95c",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/engineering-manager-ruby-and-rails-infrastructure_0536bba4-c326-4416-935e-9401c9ea4482",
+      "sourceUrl": "https://www.shopify.com/careers/engineering-manager-ruby-and-rails-infrastructure_0536bba4-c326-4416-935e-9401c9ea4482",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Engineering Manager- Ruby and Rails Infrastructure",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "8e430ea6e9cd2d94776e4e543525097b4dbb807c9cc06d6f065810401ba1b223",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-enterprise-account-executive_9e809ae0-7377-409f-8632-b0e3ab250ca2",
+      "sourceUrl": "https://www.shopify.com/careers/senior-enterprise-account-executive_9e809ae0-7377-409f-8632-b0e3ab250ca2",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Enterprise Account Executive",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "8399769a9ee33cf381611705d4457212dadff36a9eebe20645f865e58ceaae9c",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/sales-development-representative_c124c903-ba6e-4045-9d54-e048a2a9e8b5",
+      "sourceUrl": "https://www.shopify.com/careers/sales-development-representative_c124c903-ba6e-4045-9d54-e048a2a9e8b5",
+      "location": "Remote - Japan",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Sales Development Representative",
+        "Remote - Japan"
+      ],
+      "sourceSha256": "8d5f03bb494213b40fda9b830024cbe7fce8c34395a21ddd59aaf776eef6bce6",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "89de02cb-9b99-89d1-b907-edfe2cfb6153",
+          "label": "Japan",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Japan"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/engineering-manager-edge-infrastructure_2f6e63f3-d3e2-4537-b994-ac46fc3fafa0",
+      "sourceUrl": "https://www.shopify.com/careers/engineering-manager-edge-infrastructure_2f6e63f3-d3e2-4537-b994-ac46fc3fafa0",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Engineering Manager - Edge Infrastructure",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "c16095cbc2e3bc9c5c64f4bf320133af64769eac9bd5fa7b10d33865d8502d16",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-staff-engineer-shipping_fa9a38ee-32f6-4a77-ba58-eed27cc77044",
+      "sourceUrl": "https://www.shopify.com/careers/senior-staff-engineer-shipping_fa9a38ee-32f6-4a77-ba58-eed27cc77044",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Staff Engineer - Shipping",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "5b888f5ab78b4745145bfd29d71cebfb0d1f4bca345fd2c043d5ebfc77b79d32",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-account-executive-b2b-wholesale-german-speaking_e097982e-842a-46c0-8593-db41c80f2224",
+      "sourceUrl": "https://www.shopify.com/careers/senior-account-executive-b2b-wholesale-german-speaking_e097982e-842a-46c0-8593-db41c80f2224",
+      "location": "Remote - Spain | Remote - UK | Remote - Ireland | Remote - Poland",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, B2B Wholesale - German-speaking",
+        "Remote - Spain, United Kingdom, Ireland, Poland"
+      ],
+      "sourceSha256": "b11b26adc336784450bb649404179573e955c1c3c2526f30982cbbb3e95088d2",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "a1612eb9-cdf8-8c39-b9f8-160ec3b70220",
+          "label": "Spain",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Spain"
+        },
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        },
+        {
+          "locationId": "36a15e58-bd54-8d6f-a6b2-1884f1b2b36b",
+          "label": "Poland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Poland"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/lead-account-executive-large-accounts-german-speaking_5f95adcc-b190-4729-8e41-e3486fcbfa1f",
+      "sourceUrl": "https://www.shopify.com/careers/lead-account-executive-large-accounts-german-speaking_5f95adcc-b190-4729-8e41-e3486fcbfa1f",
+      "location": "Remote - Germany | Remote - UK | Remote - Ireland",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Lead Account Executive, Large Accounts - German-speaking",
+        "Remote - Germany, United Kingdom, Ireland"
+      ],
+      "sourceSha256": "8f6f0c05332dec1a4b6e37c9561e8c131d0111e1a3252a70788f0f37e78296a8",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "860ab4c3-f05e-8681-bddf-c693e6752993",
+          "label": "Germany",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Germany"
+        },
+        {
+          "locationId": "c19ab31c-e2bb-87d2-9168-1d4f613371b5",
+          "label": "United Kingdom",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - United Kingdom"
+        },
+        {
+          "locationId": "100c728c-6e2e-827b-acdd-588456b263d3",
+          "label": "Ireland",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Ireland"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-account-executive-mid-market-gcr_6707c6b7-53c7-4f76-bc21-bc6e4ba32da0",
+      "sourceUrl": "https://www.shopify.com/careers/senior-account-executive-mid-market-gcr_6707c6b7-53c7-4f76-bc21-bc6e4ba32da0",
+      "location": "Remote - Hong Kong",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Senior Account Executive, Mid Market, GCR",
+        "Remote - Hong Kong"
+      ],
+      "sourceSha256": "61db6f27da29f445df877dcdd9359532dfe991c5dd95363e27b7f4320a4d6c2f",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "b179b55e-4306-881d-9dc1-692d858b5e68",
+          "label": "Hong Kong",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Hong Kong"
+        }
+      ]
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-data-engineer-people-analytics_86f7a932-ce76-44ac-bc4d-a72180373a88",
+      "sourceUrl": "https://www.shopify.com/careers/staff-data-engineer-people-analytics_86f7a932-ce76-44ac-bc4d-a72180373a88",
+      "location": "Remote - Americas",
+      "workplaceType": "remote",
+      "evidence": [
+        "# Staff Data Engineer - People Analytics",
+        "Remote - Americas"
+      ],
+      "sourceSha256": "75a3ba2add762365aa3e6d19eddff3d417a3346cd17056cb5ac08fba04bb67f3",
+      "note": "Explicit remote scope header on the individual posting; remote-first employer.",
+      "locations": [
+        {
+          "locationId": "026e8899-00e5-8c31-a8fe-c6dc05bfc8fc",
+          "label": "Americas",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - Americas"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://www.shopify.com/careers/treasury-manager-payments_b83d465d-45d0-444c-99a6-419de5a8b944",
+      "sourceUrl": "https://www.shopify.com/careers/treasury-manager-payments_b83d465d-45d0-444c-99a6-419de5a8b944",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/staff-data-engineer-search-index-generation_06913799-8916-4504-afc4-4a5659ef11c2",
+      "sourceUrl": "https://www.shopify.com/careers/staff-data-engineer-search-index-generation_06913799-8916-4504-afc4-4a5659ef11c2",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-staff-software-engineer-optimization_2e2f43f4-f4a5-4163-acbc-6448cf1557f3",
+      "sourceUrl": "https://www.shopify.com/careers/senior-staff-software-engineer-optimization_2e2f43f4-f4a5-4163-acbc-6448cf1557f3",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-solutions-engineer_8500a774-8905-4fc6-98bd-b7f812660496",
+      "sourceUrl": "https://www.shopify.com/careers/senior-solutions-engineer_8500a774-8905-4fc6-98bd-b7f812660496",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-project-manager-real-estate_6738f2e2-3da3-4dd5-a6b2-ccbe2ecd3863",
+      "sourceUrl": "https://www.shopify.com/careers/senior-project-manager-real-estate_6738f2e2-3da3-4dd5-a6b2-ccbe2ecd3863",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-learning-development-specialist-support_5a849924-adba-42db-958a-c0ece1c7e104",
+      "sourceUrl": "https://www.shopify.com/careers/senior-learning-development-specialist-support_5a849924-adba-42db-958a-c0ece1c7e104",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/senior-lead-strategy-operations-revenue-marketing_340d5b64-db15-47eb-955b-47aeec97ece7",
+      "sourceUrl": "https://www.shopify.com/careers/senior-lead-strategy-operations-revenue-marketing_340d5b64-db15-47eb-955b-47aeec97ece7",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/manager-enterprise-solution-engineering_40884709-19b6-49dc-a42f-cee70306b07b",
+      "sourceUrl": "https://www.shopify.com/careers/manager-enterprise-solution-engineering_40884709-19b6-49dc-a42f-cee70306b07b",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/executive-protection-specialist-sp-cialiste-de-la-protection-rapproch-e_c781fed2-4408-4720-8734-45458585e762",
+      "sourceUrl": "https://www.shopify.com/careers/executive-protection-specialist-sp-cialiste-de-la-protection-rapproch-e_c781fed2-4408-4720-8734-45458585e762",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/credit-risk-analyst_36f8a594-ba0e-45c2-b2e2-8aaa05db9ca2",
+      "sourceUrl": "https://www.shopify.com/careers/credit-risk-analyst_36f8a594-ba0e-45c2-b2e2-8aaa05db9ca2",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/compliance-lead-payments-compliance-licensing-program_55cd396d-fd8e-45dc-ba71-1eca5fe48763",
+      "sourceUrl": "https://www.shopify.com/careers/compliance-lead-payments-compliance-licensing-program_55cd396d-fd8e-45dc-ba71-1eca5fe48763",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    },
+    {
+      "url": "https://www.shopify.com/careers/associate-general-counsel-product-fintech_8441801f-1a0e-42c6-8838-cc15af655923",
+      "sourceUrl": "https://www.shopify.com/careers/associate-general-counsel-product-fintech_8441801f-1a0e-42c6-8838-cc15af655923",
+      "reason": "Fresh fetch explicitly returns HTTP 410 Gone; absent from careers crawl enumeration.",
+      "checkedAt": "2026-10-05T15:32:31.507145+00:00",
+      "boardUrl": "https://www.shopify.com/careers"
+    }
+  ]
+}

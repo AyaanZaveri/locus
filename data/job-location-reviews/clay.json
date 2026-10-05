@@ -1,0 +1,1377 @@
+{
+  "companySlug": "clay",
+  "verifiedAt": "2026-10-05T15:10:42.387424+00:00",
+  "unavailable": [],
+  "roles": [
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/41246b56-fd7c-4b2c-af73-ce64cbfb3b21",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/41246b56-fd7c-4b2c-af73-ce64cbfb3b21",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "f915fddf0f98a468d10ed8868a3a01a7bfc9023792e5c04b3d600eb535b64236",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/7bd9060f-12cf-4e5b-af99-681008be6967",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/7bd9060f-12cf-4e5b-af99-681008be6967",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "e1a4d4e793cd3b0e5fdf9670573e55a604cb5bd9f755a8568876c3d1ed5586da",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/1b0b7eeb-2b79-420f-b0e1-6c5134e2c185",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/1b0b7eeb-2b79-420f-b0e1-6c5134e2c185",
+      "location": "New York",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "008fe5416681c25bd62b54a19654c778ba8a91375273b5d33272703352c00ec2",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/1b0b7eeb-2b79-420f-b0e1-6c5134e2c185\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/b17bd432-72e4-4f03-b8db-2fd677c2cfe8",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/b17bd432-72e4-4f03-b8db-2fd677c2cfe8",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "1c4e2247007161b7c13771db154b08ab3041910de9f69403034770577a5cb53d",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/4b20eb92-c27c-46fb-8d5b-ead32765a7d8",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/4b20eb92-c27c-46fb-8d5b-ead32765a7d8",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "d0c94a6e735acf04abd4a7401f44cf8bbfb92d1731746d53071682ccef61f03d",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/29f84bd5-71d5-411f-a3dc-3592949a5240",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/29f84bd5-71d5-411f-a3dc-3592949a5240",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "6db6268294f7f1ecaf843904f67cf07f97924fa506159e137a9b04435471910b",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/4be52dd6-244b-4e27-bf4a-757a1094a82a",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/4be52dd6-244b-4e27-bf4a-757a1094a82a",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "c15bb898fff24cb1971125d204fb5e868e8b5973d55136f979ff6e3a77979ab2",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/4be52dd6-244b-4e27-bf4a-757a1094a82a\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/d3bd708c-4b20-45c9-9522-f38abc30ca06",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/d3bd708c-4b20-45c9-9522-f38abc30ca06",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "c64bd0e08347f51c682b05f00865272b9785c490718b793a4e512e72958298a0",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/a6abd176-8afe-4905-a341-15d89f9acd03",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/a6abd176-8afe-4905-a341-15d89f9acd03",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "725099e727250842c3824ef3b1ca7046f5744b15257b7a4488dcf28684f39d5a",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/b4d7e281-39ff-4d7b-bf16-940eb8b85a90",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/b4d7e281-39ff-4d7b-bf16-940eb8b85a90",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "bb6c9a841c0dafa5af0d95cafa4e4ed22f9ec4c41d1b889b844a45b899a78856",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/b78d32ca-01c1-432d-8af9-4c21ec3c005a",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/b78d32ca-01c1-432d-8af9-4c21ec3c005a",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "67c416fc82ec9efa04ee466332fc6e1b40c6ff8f1a8c565ff4a79c7cbc370c6b",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/b78d32ca-01c1-432d-8af9-4c21ec3c005a\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/1a19cbf3-916e-4723-8edf-f3e2c12b3494",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/1a19cbf3-916e-4723-8edf-f3e2c12b3494",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "c39e2d298a673758b6e2b66716f6d49e5e25255712c3808ca6a64a9a79ffc4a4",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/ea299008-9502-4ede-96f3-d5cb94627f51",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/ea299008-9502-4ede-96f3-d5cb94627f51",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "c5384ac03f4ae11a6884ebe8fe499fce24db75e6ee38d3b671d65cdc943c2c5b",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/8f734c15-94fe-4925-aeea-0cafa0769514",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/8f734c15-94fe-4925-aeea-0cafa0769514",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "74fe74107cd01a8ac9e297b738640356ec0f14f6664b689d1833def0a30c6ea8",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/5c842630-800d-4288-977c-d3e6088ebda9",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/5c842630-800d-4288-977c-d3e6088ebda9",
+      "location": "New York, United States",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site",
+        "Clay is an in-person first company with three global offices in San Francisco, New York, and London. We believe creative magic happens when we collaborate face-to-face. Our offices are central hubs for communication, connection, and collaboration—destinations where customers, Claymates, and community come together. We're passionate about creating an awesome environment for our Claymates to thrive—our Workplace Experience team plays a massive role here through real estate, office and facilities management, and of course, events!"
+      ],
+      "sourceSha256": "bf6efe481de3606c45c25a872628f16ab8c18fc6b403fac3120d460234a0ec82",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/9aeacdb4-2364-40b8-935e-c561af931b5a",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/9aeacdb4-2364-40b8-935e-c561af931b5a",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "e3936eefa1571a6a422e5af06017ac26bf54cfbb5c74b1d2b34387f57cfde971",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/f257525f-dfe1-4a88-9bb5-f14891dc37e5",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/f257525f-dfe1-4a88-9bb5-f14891dc37e5",
+      "location": "San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "8e9d98bba0308ea29429475d6eb8da25d4c554459124fa9bd8961035d176f78b",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/f257525f-dfe1-4a88-9bb5-f14891dc37e5\"",
+            "\"location\": \"San Francisco\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/84eb158a-b39d-4048-9c9f-66fc55a24224",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/84eb158a-b39d-4048-9c9f-66fc55a24224",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "067dba593426fe331a62060078e4f3b7c574be58617b7979fb9e62713814e67c",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/c9768233-3f8a-431c-b3ad-a3e388fdb85e",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/c9768233-3f8a-431c-b3ad-a3e388fdb85e",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "005cf9add80ae04ab754cac7baf8232d6346eb60cd2e784423af0530349d8fbd",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/73f9d129-1ea8-43cd-b69a-e08015aa057f",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/73f9d129-1ea8-43cd-b69a-e08015aa057f",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "87c7a1383ef72ecbc0cd81a18cd8710cb23988083669861c208506fcabac3fdd",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/046cb127-d5fc-444f-a2a9-fb4029d6a503",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/046cb127-d5fc-444f-a2a9-fb4029d6a503",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "6625f20bf749fae697ce89d650477010a4732dae0e04568e3d98098a2107c7b3",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/1ad2a991-cc6a-4645-a6b8-18ae61737d6d",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/1ad2a991-cc6a-4645-a6b8-18ae61737d6d",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "f9415c40895b8ecc171148b78c7f5098722bf67fa645253e31ec21d1f18deecd",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/1ad2a991-cc6a-4645-a6b8-18ae61737d6d\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/fe6c6fa6-67e0-40e7-bf2c-496134f983d3",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/fe6c6fa6-67e0-40e7-bf2c-496134f983d3",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "625ace68682f40bc1a3b987a2ee33f3432dbe85cb985e278cc335e096a83c9a0",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/ada9ebd0-bbae-40a3-9c6e-b9701369daaa",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/ada9ebd0-bbae-40a3-9c6e-b9701369daaa",
+      "location": "Remote - London, UK",
+      "workplaceType": "remote",
+      "evidence": [
+        "Location Type",
+        "Remote"
+      ],
+      "sourceSha256": "8308dc980900141bdcaf7549da92fde57112b3b794319f1dfe2ef9c4666532af",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "eligibility",
+          "qualifier": null,
+          "sourceLabel": "Remote - London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/67a53448-184d-48e4-a040-d17fc7f59b37",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/67a53448-184d-48e4-a040-d17fc7f59b37",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid",
+        "- How can we design a flexible architecture that scales across the features we need to develop to grow our business?"
+      ],
+      "sourceSha256": "299ec120db4de4c4430560f068448d75508f03ff08455f3a93cbb6d7494e57ce",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/c4fbbd86-b329-4a5e-9f08-f09f2d7c868d",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/c4fbbd86-b329-4a5e-9f08-f09f2d7c868d",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "782846f22a3611f55bedcff65f24383a5a4c5e4cc7721ce9fdfd1f4d0699613d",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/17e101f5-5d06-46d1-861c-a7edb71f650d",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/17e101f5-5d06-46d1-861c-a7edb71f650d",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "f61713e899291c027fdc882fff55e01fb5a7ca3a869cec69e51fed39d55da6fe",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/0df88e24-28da-4376-956d-926111832a32",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/0df88e24-28da-4376-956d-926111832a32",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "149027d03c12b73da243e3149f2e95dfe870c539330a7e12a491b85f3c66a4ec",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/08c6786d-0ba5-4799-9259-cfff2d9d0580",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/08c6786d-0ba5-4799-9259-cfff2d9d0580",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "4b5ba199c3ffa59ca19766d9f33538820fba3fec73b409e03c0aeb67e19e5201",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/546b27c1-8808-4808-bd98-5c6cad88d88c",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/546b27c1-8808-4808-bd98-5c6cad88d88c",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "cb612a694770865b34729bd514234ca57c83d9306f7411e8eb740e209ce14334",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/234bb7bc-5cb8-4df9-9fdf-6320d01519d4",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/234bb7bc-5cb8-4df9-9fdf-6320d01519d4",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid",
+        "- NYC-based or willing to relocate (this role is in-person)."
+      ],
+      "sourceSha256": "d4548c03fca11d3c598167c8732bf82999a37b27b0fa8c0aa1a803fd619aa66d",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/c605042d-1bd4-4e0d-aa82-d92a2abecb59",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/c605042d-1bd4-4e0d-aa82-d92a2abecb59",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "ebdfe8892bab973359e2e17f4a8413546edbfaaf17c2f049ec6e95ab4b5d7af2",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/9d4828b2-8c23-406d-8225-b916ff9174c0",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/9d4828b2-8c23-406d-8225-b916ff9174c0",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "25466c4740af7f1a617aa7930e2ad12a10bc434dd1129b8189a913becb54b80e",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/1b1c004f-0e6a-41b6-bac3-971448b63a07",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/1b1c004f-0e6a-41b6-bac3-971448b63a07",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "896eeef084800100122158db8f2a995fc93adb62aad122c402f4435c2c606994",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/9b008b26-189b-45cf-83d8-fee117d32874",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/9b008b26-189b-45cf-83d8-fee117d32874",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "806983d942c94702f1f4aebbdd31849bbac1105ae3d77cb33d6102790dabb982",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/a284a622-0736-4558-be7a-76434f0dd147",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/a284a622-0736-4558-be7a-76434f0dd147",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid",
+        "- **Build systems that scale experimentation.** Design flexible, reusable patterns (onboarding carousels, contextual tooltips, empty states, upgrade prompts) that enable the team — and the broader org — to run experiments without requiring bespoke design each time."
+      ],
+      "sourceSha256": "d181345cabd02c061f2f655bc16931ab3440e5be8321fd587327577483675d45",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/f8e696cf-55b8-4c0e-80d3-2c03abaa09a4",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/f8e696cf-55b8-4c0e-80d3-2c03abaa09a4",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "7e1b3d98b8ef40d9bea8b406aa52dbf9d18464c024365bea5a98edd0ab57b9d3",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/d04f47c4-aed6-481d-a093-74c2ae4f3432",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/d04f47c4-aed6-481d-a093-74c2ae4f3432",
+      "location": "San Francisco, CA",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "a3a956cf389d3d5014c411a8ef6c39702c0898a64fa770956d7f394068964cb1",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/dca9faf7-a118-4237-bcf8-d7562aab3c49",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/dca9faf7-a118-4237-bcf8-d7562aab3c49",
+      "location": "London",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "79134e1f0c1994d858f5e27eff07a4efd0b1108e3e816b5f78cd25e0834e1e44",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/dca9faf7-a118-4237-bcf8-d7562aab3c49\"",
+            "\"location\": \"London\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/8d842974-0bee-4b13-bad5-dcc34848f69c",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/8d842974-0bee-4b13-bad5-dcc34848f69c",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "5ae1c7f956b40a2a671858870c1ef1c9bda93b2b311c18784aa8907dc06bb66a",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/80a86e2b-e875-43fb-8b36-8a2c70a0e5b0",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/80a86e2b-e875-43fb-8b36-8a2c70a0e5b0",
+      "location": "London, UK",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "c3b5b3c6c51372745d064f4628ea07f9ad27bbd5afaba57c7108eb711c950a5a",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/11523b92-635e-4865-8ed0-59ef4c91bd53",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/11523b92-635e-4865-8ed0-59ef4c91bd53",
+      "location": "New York, United States",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "3b46fae88b1674ec56b457ce9b07f95def74f6042b56025e199c771ce5299cac",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/235c38ee-4c08-462d-b9b3-eadc156b1810",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/235c38ee-4c08-462d-b9b3-eadc156b1810",
+      "location": "New York | San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "2c932a54197aa0cd5086352854f1b834b403827a3936116421b748d4d7ce1f67",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/235c38ee-4c08-462d-b9b3-eadc156b1810\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/a8a6642c-19a9-4d43-ba01-22608fb70e01",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/a8a6642c-19a9-4d43-ba01-22608fb70e01",
+      "location": "London, UK",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "22384c2933fe4cfd8ef5955dda1aad2fae315a680ebee3af50ebd4d5ae4c5be4",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/6c65bbb9-8205-400c-b971-cd91897b6d8f",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/6c65bbb9-8205-400c-b971-cd91897b6d8f",
+      "location": "New York",
+      "workplaceType": "onsite",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "bad5fb8e650894aefeda0526af10cb1c97fddd7068c301341fbc6b66d32244ec",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/6c65bbb9-8205-400c-b971-cd91897b6d8f\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/f90028b7-6c35-4392-824c-105967ccd406",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/f90028b7-6c35-4392-824c-105967ccd406",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "758dade3600759df2aa2545b2d1d49d4eda1e0b62a486ba6e18370c99eed11a8",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/e9c90955-db04-4fc3-b70d-ebc115557e83",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/e9c90955-db04-4fc3-b70d-ebc115557e83",
+      "location": "San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "e90cc2cedd222607edb51e470f3e06f459bd57eb862599ed28f6d09ab26a89b9",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/5e07db20-d96a-4dff-b7d3-3bf1cdde6fc1",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/5e07db20-d96a-4dff-b7d3-3bf1cdde6fc1",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid",
+        "- Experience with agent frameworks, tool-calling systems, or retrieval architectures (vector search, hybrid search, RAG)"
+      ],
+      "sourceSha256": "1fa262a40ca47c1ce3ae590e192704d163ac55f1b24a07fdf7fd8c4f354b8f24",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/0bfc4016-f5b2-4957-a305-ec5dd96d4fa4",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/0bfc4016-f5b2-4957-a305-ec5dd96d4fa4",
+      "location": "New York, United States | San Francisco, CA",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "e141b098d1061cf67e3616ed6f6dafa757bcf2119376bf2050da49c4439a38a4",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/8ad9e4f3-d9f7-4f9d-bebb-b3f0efd22ac7",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/8ad9e4f3-d9f7-4f9d-bebb-b3f0efd22ac7",
+      "location": "New York, NY",
+      "workplaceType": "onsite",
+      "evidence": [
+        "This is not a hybrid role as an afterthought; it is an intentional choice about how Clay"
+      ],
+      "sourceSha256": "9fc89ce35f51b2ae51f90e2547a9e80bfdad337baeb00f7d365a8c9b44701c51",
+      "note": "Body explicitly states the role is not hybrid; ATS confirms OnSite New York.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/2eba1b88-d3d2-4c80-a506-b367d85110bd",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/2eba1b88-d3d2-4c80-a506-b367d85110bd",
+      "location": "New York | San Francisco",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "# **About Clay**"
+      ],
+      "sourceSha256": "b1a8285121780ebf54081b794e9d4136f17fb2965687e66f644476e037a06bb6",
+      "note": "Individual extraction omits the header block; geography and arrangement corroborated by exact-posting ATS fields with no contradictory body wording.",
+      "additionalEvidence": [
+        {
+          "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/claylabs?includeCompensation=true",
+          "sourceSha256": "3e96cb1bd68d83cf65ee8791bffaa8a1f20e7389149985b794e68f240cf155f5",
+          "evidence": [
+            "\"jobUrl\": \"https://jobs.ashbyhq.com/claylabs/2eba1b88-d3d2-4c80-a506-b367d85110bd\"",
+            "\"location\": \"New York\""
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        },
+        {
+          "locationId": "99a53ffa-053f-8fc2-b6ca-242188939fd3",
+          "label": "San Francisco, CA",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "San Francisco, CA"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/6579de6f-b5df-46df-bb73-e8d82955f293",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/6579de6f-b5df-46df-bb73-e8d82955f293",
+      "location": "New York, United States",
+      "workplaceType": "hybrid",
+      "evidence": [
+        "Location Type",
+        "Hybrid"
+      ],
+      "sourceSha256": "01adc481189694146ff9ad2fe81ef5202aa2eacfa186506e95fe832559832155",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "b738878d-8cf3-8749-b03d-a8d5c99a0642",
+          "label": "New York, NY",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "New York, NY"
+        }
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/f64feda8-7231-4c39-be5f-71a192efc6b9",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/f64feda8-7231-4c39-be5f-71a192efc6b9",
+      "location": "London, UK",
+      "workplaceType": "onsite",
+      "evidence": [
+        "Location Type",
+        "On-site"
+      ],
+      "sourceSha256": "d9493611ca94567f3643086962266438a7f91661a6663ac835f865210f9c3762",
+      "note": "Reviewed full Ketch markdown; location display preserved from stored snapshot.",
+      "unavailable": false,
+      "locations": [
+        {
+          "locationId": "5d1da100-127f-8a19-9e40-7bceee118a74",
+          "label": "London, UK",
+          "relation": "office",
+          "qualifier": null,
+          "sourceLabel": "London, UK"
+        }
+      ]
+    }
+  ],
+  "removedPostings": [
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/0a88196b-f7ab-4340-84fa-ecf80b45705b",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/0a88196b-f7ab-4340-84fa-ecf80b45705b",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (58 IDs) and current ATS API (58 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:13:34.284847+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/claylabs"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/4f064364-a433-4eb2-bb42-4c902d2199d3",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/4f064364-a433-4eb2-bb42-4c902d2199d3",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (58 IDs) and current ATS API (58 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:13:34.284847+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/claylabs"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/771aabc8-f18e-4890-8813-95132972c2ac",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/771aabc8-f18e-4890-8813-95132972c2ac",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (58 IDs) and current ATS API (58 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:13:34.284847+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/claylabs"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/80dcacfb-0a59-42b0-a38d-49abaf51716c",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/80dcacfb-0a59-42b0-a38d-49abaf51716c",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (58 IDs) and current ATS API (58 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:13:34.284847+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/claylabs"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/823e6f58-36d8-480d-b126-65777cee4f21",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/823e6f58-36d8-480d-b126-65777cee4f21",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (58 IDs) and current ATS API (58 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:13:34.284847+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/claylabs"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/claylabs/82ca7670-1083-46e6-9ab4-a722fe535ef3",
+      "sourceUrl": "https://jobs.ashbyhq.com/claylabs/82ca7670-1083-46e6-9ab4-a722fe535ef3",
+      "reason": "Fresh uncached individual URL explicitly reports not found; fresh canonical board (58 IDs) and current ATS API (58 roles) both omit this posting ID.",
+      "checkedAt": "2026-10-05T15:13:34.284847+00:00",
+      "boardUrl": "https://jobs.ashbyhq.com/claylabs"
+    }
+  ]
+}
