@@ -43,12 +43,13 @@ export function CompanySearch({
   useEffect(() => {
     const query = search.trim();
     if (!open || !query) return;
+    const semanticEligible = query.split(/\s+/).length >= 3;
     const controller = new AbortController();
     const timeout = window.setTimeout(async () => {
       setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/search?q=${encodeURIComponent(query)}`,
+          `/api/search?q=${encodeURIComponent(query)}${semanticEligible ? "&semantic=1" : ""}`,
           { signal: controller.signal },
         );
         if (!response.ok) throw new Error("Search request failed.");
@@ -59,7 +60,7 @@ export function CompanySearch({
       } finally {
         if (!controller.signal.aborted) setIsLoading(false);
       }
-    }, 120);
+    }, 500);
     return () => {
       controller.abort();
       window.clearTimeout(timeout);
