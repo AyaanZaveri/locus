@@ -224,6 +224,13 @@ search, cards, and filters remain consistent.
 
 ### Job-location normalization gate
 
+For every researched job city, check `lib/job-location-country.ts` as well as
+the shared catalog. Add missing verified city aliases to the correct country's
+regex and add regression coverage in `lib/job-location-country.test.ts` before
+finishing the profile or repair. Follow the fallback-format and ambiguity rules
+in [references/locations.md](references/locations.md); catalog mapping alone
+does not guarantee a flag in consumers that use the text fallback.
+
 Read [references/locations.md](references/locations.md) before researching,
 authoring, importing, or repairing company/job locations. It defines the
 structured contract, evidence workflow, examples, and import/readback checks.

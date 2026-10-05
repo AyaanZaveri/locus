@@ -7,6 +7,32 @@ executable contract remains authoritative: `lib/company-profile.ts`,
 
 ## Contract and identity
 
+### Required city-to-country fallback coverage
+
+For every city encountered while researching, importing, or repairing jobs,
+verify its country from source evidence or the shared catalog, then check
+`getJobLocationCountryCode` in `lib/job-location-country.ts` against the actual
+display label. If the city is not covered, add it to that country's existing
+`countryPatterns` entry (lowercase ISO alpha-2 code, pipe-separated regex
+alternatives, case-insensitive matching, and word boundaries). Escape regex
+metacharacters; preserve existing alternatives and avoid duplicate entries.
+For example, add `cupertino` inside the `"us"` regex so both `Cupertino` and
+`Cupertino, CA` resolve to `us`. Add an entry in the same tuple format if the
+verified country has no pattern yet.
+
+Do not add an ambiguous bare city name to multiple countries or infer a country
+from headquarters, territory, or an abbreviation alone. Use a qualified
+city/state/country pattern when needed; if the country cannot be established,
+leave it unresolved and explicitly report the exception. Regions such as EMEA
+and APAC and worldwide/remote-only labels are not cities and must not gain an
+invented country flag. Shared catalog metadata remains the primary authority;
+these additions maintain compatibility for text-only consumers.
+
+Add regression tests in `lib/job-location-country.test.ts` for the source and
+canonical labels, casing, and any ambiguity/substring risk. Run
+`npx tsx --test lib/job-location-country.test.ts` and `npm run typecheck` before
+marking the fallback check complete.
+
 PostgreSQL `locations` stores shared places, `location_aliases` stores verified
 exact aliases, `job_locations` stores ordered job/place associations, and
 `companies.headquarters_location_id` references the same catalog. Do not use

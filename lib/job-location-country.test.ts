@@ -13,6 +13,13 @@ test("uses the role's city country", () => {
   assert.deepEqual(getJobLocationCountryCodes("New York, NY | Remote"), ["us"]);
 });
 
+test("recognizes HiringCafe's Cupertino location without catalog hydration", () => {
+  assert.equal(getJobLocationCountryCode("Cupertino, CA"), "us");
+  assert.equal(getJobLocationCountryCode("Cupertino"), "us");
+  assert.equal(getJobLocationCountryCode("CUPERTINO, CA"), "us");
+  assert.equal(getJobLocationCountryCode("NotCupertino"), null);
+});
+
 test("recognizes Heidi's Australian and South African city locations", () => {
   assert.equal(getJobLocationCountryCode("Brisbane"), "au");
   assert.equal(getJobLocationCountryCode("Cape Town"), "za");

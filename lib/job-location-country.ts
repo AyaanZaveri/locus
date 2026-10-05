@@ -4,7 +4,7 @@ const countryPatterns: [code: string, pattern: RegExp][] = [
   ["id", /\bindonesia\b/i],
   [
     "us",
-    /\b(united states|usa|u\.s\.|us|DC-metro area|san francisco|san mateo|palo alto|mountain view|new york|nyc|seattle|washington|austin|boston|chicago|los angeles|san diego|san antonio|atlanta|charlotte|cincinnati|dallas|denver|detroit|houston|idaho falls|las vegas|miami|nashville|new jersey|philadelphia|phoenix|portland|raleigh|richmond|saint paul|salt lake city|tampa|california|colorado|georgia|illinois|massachusetts|minnesota|oregon|pennsylvania|texas|virginia)\b/i,
+    /\b(united states|usa|u\.s\.|us|DC-metro area|san francisco|san mateo|cupertino|palo alto|mountain view|new york|nyc|seattle|washington|austin|boston|chicago|los angeles|san diego|san antonio|atlanta|charlotte|cincinnati|dallas|denver|detroit|houston|idaho falls|las vegas|miami|nashville|new jersey|philadelphia|phoenix|portland|raleigh|richmond|saint paul|salt lake city|tampa|california|colorado|georgia|illinois|massachusetts|minnesota|oregon|pennsylvania|texas|virginia)\b/i,
   ],
   [
     "ca",
