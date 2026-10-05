@@ -61,7 +61,7 @@ async function main() {
             location: string;
             workplaceType?: string;
             locations?: LocationReference[];
-          }) => catalog.job(j),
+          }) => catalog.job(j, { inferRemoteEligibility: c.slug !== "cursor" }),
         )
         .map((j: { location: string; locations: LocationReference[] }) => ({
           location: j.location,
@@ -81,11 +81,14 @@ async function main() {
         qualifier: l.qualifier,
         sourceLabel: l.source_label,
       })) as LocationReference[];
-    const next = catalog.job({
-      location: j.location,
-      workplaceType: j.workplace_type,
-      locations: refs,
-    });
+    const next = catalog.job(
+      {
+        location: j.location,
+        workplaceType: j.workplace_type,
+        locations: refs,
+      },
+      { inferRemoteEligibility: c.slug !== "cursor" },
+    );
     const oldPrefix = `${c.name} ${j.title} ${j.location}`;
     assert.ok(
       j.prefix_ok,

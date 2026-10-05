@@ -22,10 +22,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { type CompanyProfile } from "@/lib/company-profile";
-import { splitJobLocations } from "@/lib/job-location";
+import { getLocationGroups } from "@/lib/job-location-groups";
 import { getJobLocationCountryCode } from "@/lib/job-location-country";
 import {
-  displayJobFilterLocation as displayLocation,
   matchesJobLocationFilter,
   normalizeJobLocationSelection,
 } from "@/lib/job-location-filter";
@@ -36,67 +35,13 @@ type Props = {
   jobs: CompanyProfile["jobs"];
 };
 
-const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
-
-function getLocationGroups(jobs: Props["jobs"]) {
-  const counts = new Map<string, number>();
-  const labels = new Map<string, string>();
-  const countryJobs = new Map<string, Set<number>>();
-
-  for (const [index, job] of jobs.entries()) {
-    const options = job.locations?.length
-      ? job.locations.map((place) => ({
-          value: place.locationId ?? displayLocation(place.label),
-          label: displayLocation(place.label),
-        }))
-      : splitJobLocations(job.location).map((place) => ({
-          value: displayLocation(place),
-          label: displayLocation(place),
-        }));
-    for (const { value, label } of new Map(
-      options.map((option) => [option.value, option]),
-    ).values()) {
-      if (!label || /\bremote\b/i.test(label)) continue;
-      labels.set(value, label);
-      counts.set(value, (counts.get(value) ?? 0) + 1);
-      const code = getJobLocationCountryCode(label) ?? "other";
-      if (!countryJobs.has(code)) countryJobs.set(code, new Set());
-      countryJobs.get(code)!.add(index);
-    }
-  }
-
-  const placesByCountry = new Map<string, string[]>();
-  for (const [value, label] of labels) {
-    const code = getJobLocationCountryCode(label) ?? "other";
-    if (!placesByCountry.has(code)) placesByCountry.set(code, []);
-    placesByCountry.get(code)!.push(value);
-  }
-
-  return [...placesByCountry]
-    .map(([code, places]) => ({
-      code,
-      label:
-        code === "other"
-          ? "Other locations"
-          : (countryNames.of(code.toUpperCase()) ?? code),
-      jobCount: countryJobs.get(code)?.size ?? 0,
-      places: places
-        .map((value) => ({ value, label: labels.get(value)! }))
-        .sort(
-          (a, b) =>
-            (counts.get(b.value) ?? 0) - (counts.get(a.value) ?? 0) ||
-            a.label.localeCompare(b.label),
-        ),
-    }))
-    .sort(
-      (a, b) =>
-        (a.code === "other" ? 1 : 0) - (b.code === "other" ? 1 : 0) ||
-        b.jobCount - a.jobCount ||
-        a.label.localeCompare(b.label),
-    );
-}
-
-function LocationIcon({ location }: { location: string }) {
+function LocationIcon({
+  location,
+  countryCode,
+}: {
+  location: string;
+  countryCode?: string | null;
+}) {
   if (location === "all") {
     return (
       <Globe2
@@ -114,7 +59,10 @@ function LocationIcon({ location }: { location: string }) {
     );
   }
 
-  const code = getJobLocationCountryCode(location);
+  const code =
+    countryCode === undefined
+      ? getJobLocationCountryCode(location)
+      : countryCode;
   return code ? (
     <img
       alt=""
@@ -179,6 +127,9 @@ export function CompanyJobs({ company, jobs }: Props) {
   const allLocations = selectedLocations.includes("all");
   const locationIcon =
     selectedLocations.length === 1 ? selectedLocations[0] : "all";
+  const selectedCountryCode = locations.find(
+    (place) => place.value === locationIcon,
+  )?.countryCode;
   const locationLabel = allLocations
     ? "Location"
     : selectedLocations.length === 1
@@ -288,12 +239,20 @@ export function CompanyJobs({ company, jobs }: Props) {
                     options: group.places.map((place) => ({
                       value: place.value,
                       label: place.label,
-                      icon: <LocationIcon location={place.label} />,
+                      icon: (
+                        <LocationIcon
+                          location={place.label}
+                          countryCode={place.countryCode}
+                        />
+                      ),
                     })),
                   })),
                 ]}
               >
-                <LocationIcon location={locationIcon} />
+                <LocationIcon
+                  location={locationIcon}
+                  countryCode={selectedCountryCode}
+                />
                 <span
                   className={`min-w-0 flex-1 truncate ${allLocations ? "text-muted-foreground" : ""}`}
                 >
@@ -320,7 +279,10 @@ export function CompanyJobs({ company, jobs }: Props) {
                           .join(", ")
                   }
                 >
-                  <LocationIcon location={locationIcon} />
+                  <LocationIcon
+                    location={locationIcon}
+                    countryCode={selectedCountryCode}
+                  />
                   <SelectValue className="min-w-0 overflow-hidden">
                     <span
                       className={
@@ -370,7 +332,10 @@ export function CompanyJobs({ company, jobs }: Props) {
                               value={place.value}
                             >
                               <span className="flex items-center gap-2">
-                                <LocationIcon location={place.label} />
+                                <LocationIcon
+                                  location={place.label}
+                                  countryCode={place.countryCode}
+                                />
                                 {place.label}
                               </span>
                             </SelectItem>

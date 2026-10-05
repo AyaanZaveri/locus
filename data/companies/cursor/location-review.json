@@ -1,0 +1,1326 @@
+{
+  "verifiedAt": "2026-10-05T01:25:50.806Z",
+  "source": "https://cursor.com/careers",
+  "roles": [
+    {
+      "url": "https://cursor.com/careers/account-executive-commercial-anz",
+      "title": "Account Executive, Commercial - ANZ",
+      "header": "Australia",
+      "location": "Australia",
+      "workplaceType": null,
+      "evidence": "Australia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "0a7e9efd44bb2a1e08a015c94a97d9797a70afd283daad022c884437f456769e"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-commercial-expansion-new-york",
+      "title": "Account Executive, Commercial Expansion - New York",
+      "header": "New York",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": "New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "afca80a2825cd1ca96f8d931bb6b31727ab573d36eda6bca2dd313842ac84b14"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-commercial-expansion-san-francisco",
+      "title": "Account Executive, Commercial Expansion - San Francisco",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "9681fabc07b7e76905475e728932f70329772a227c0a6b920a3573acaf9a56f6"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-commercial-london",
+      "title": "Account Executive, Commercial",
+      "header": "London",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": "London",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "9bd9050ecb01a1eaeb03d1aa3d898cf51603e76bcf1e8ac9939b88016bd4db7a"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-commercial-san-francisco",
+      "title": "Account Executive, Commercial - San Francisco",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "6a398956686d17e3041ad8a992801319d1b7667d4841e2306289cc2003510d6f"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-commercial-singapore",
+      "title": "Account Executive - Commercial",
+      "header": "Singapore",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "Singapore",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "570197d10805230c20efa3aaaaae8a764ff297c671023c08c661978b69183a47"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-geo-enterprise",
+      "title": "Account Executive, Geo Enterprise",
+      "header": "Austin",
+      "location": "Austin",
+      "workplaceType": null,
+      "evidence": "Austin",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "69093ccc73ff2f97ce58f36fa9335d8ba571577d0cfeffd4392b6279813d3eaf"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-geo-enterprise-new-york",
+      "title": "Account Executive, Geo Enterprise - New York",
+      "header": "New York",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": "New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "02b77946458e91977fa3ea628fb1bbf9c0eef86b7ff6cca9a4d75fc4e4da4376"
+    },
+    {
+      "url": "https://cursor.com/careers/account-executive-geo-enterprise-san-francisco",
+      "title": "Account Executive, Geo Enterprise - San Francisco",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "8f5d31308cadabf60b7565f3e9806106ec92de210ad4734c0fb1c4226687c60b"
+    },
+    {
+      "url": "https://cursor.com/careers/ai-deployment-manager",
+      "title": "AI Deployment Manager",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "82a8988bb3058ecdb7e1cc1faf6cf05503092d2083018d93c791d0363c2ec4d3"
+    },
+    {
+      "url": "https://cursor.com/careers/ai-deployment-manager-india",
+      "title": "Ai Deployment Manager - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "a2287bc4b46ce3b3c7c2c970230865c0f5e6679a700e09bba579ac54f662ee79"
+    },
+    {
+      "url": "https://cursor.com/careers/ai-deployment-manager-japan",
+      "title": "AI Deployment Manager - Japan",
+      "header": "Japan",
+      "location": "Japan",
+      "workplaceType": null,
+      "evidence": "Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "5f6345a1fc54bca4e3fbd11784890e2c00d3f25461320b9ccbaa4426a35bb3fd"
+    },
+    {
+      "url": "https://cursor.com/careers/ai-deployment-manager-scale",
+      "title": "AI Deployment Manager, Scale",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "005deec53f9c9e071e91f54ab4e04828f5825d06ba8e576ec219287ce1eff378"
+    },
+    {
+      "url": "https://cursor.com/careers/ai-deployment-manager-singapore",
+      "title": "AI Deployment Manager - Singapore",
+      "header": "Singapore",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "Singapore",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "dcd86603fc88ab89d10124fc103dbf53fb1ad11d78f3145b9588d07bddceaa47"
+    },
+    {
+      "url": "https://cursor.com/careers/brand-paid-media-manager",
+      "title": "Brand Paid Media Manager",
+      "header": "San Francisco; New York; Remote",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "This role is based in our San Francisco or New York City office and requires an in-office presence.",
+      "note": "Office attendance required despite Remote header; no onsite/hybrid schedule specified.",
+      "bodySha256": "f0a4c5fa936b68413bf9cdc1d8260511202dc505800d714ecf76917af1f6f0d0"
+    },
+    {
+      "url": "https://cursor.com/careers/data-analyst-user-operations",
+      "title": "Data Analyst, User Operations",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "a9d6b6d062c99b686d4fe42eadf2686aecde120179cf4071fe01333cbacbba5b"
+    },
+    {
+      "url": "https://cursor.com/careers/deal-desk-analyst-americas",
+      "title": "Deal Desk Analyst - Americas",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": "onsite",
+      "evidence": "This role requires five days a week in office.",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "c2299c3a64b0277830d74d48aa496a74ab52454d65687dc6452e775c80f841c9"
+    },
+    {
+      "url": "https://cursor.com/careers/deal-desk-manager-apj",
+      "title": "Deal Desk Manager, APJ",
+      "header": "Singapore",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "Singapore",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "7e269d0a4bcd03bbe38278762860cd232ebc334eeb61948be308711809fa4ec8"
+    },
+    {
+      "url": "https://cursor.com/careers/director-partnerships-si",
+      "title": "Director, Partnerships SI",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "5a78dea6d68018e6913a24169e98dea665f64a25df024838453ae726a1393a9d"
+    },
+    {
+      "url": "https://cursor.com/careers/engineering-manager-agent-product-security",
+      "title": "Engineering Manager, Agent & Product Security",
+      "header": "New York; San Francisco",
+      "location": "New York | San Francisco",
+      "workplaceType": null,
+      "evidence": "New York; San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "055692e2c872ca3b33744b9373fd4820ce5c72ac81ae1384a9afde9acfa06b26"
+    },
+    {
+      "url": "https://cursor.com/careers/engineering-manager-core-services",
+      "title": "Engineering Manager, Core Services",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "0d50feeb1b7eebc7566094dce9c6099bc72bf1cd8da8d151a929283afc942041"
+    },
+    {
+      "url": "https://cursor.com/careers/engineering-manager-evals",
+      "title": "Engineering Manager, Evals",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "4ed6feeed04f5f5aa368c00cbeba831f03b07f92d835dd8ab6b9d63d893988b1"
+    },
+    {
+      "url": "https://cursor.com/careers/engineering-manager-infrastructure",
+      "title": "Engineering Manager, Infrastructure",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "7db066bc98f31e740ad0bc091f2c1708ec03034042f62d3ad88e1ad661f057d3"
+    },
+    {
+      "url": "https://cursor.com/careers/engineering-manager-ml",
+      "title": "Engineering Manager, ML",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "1562e9dacfb92b9dfd611e896cc55ed478faffa5ee26466b34219191ca808e0f"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer",
+      "title": "Field Engineer",
+      "header": "Remote; New York; San Francisco",
+      "location": "Remote | New York | San Francisco",
+      "workplaceType": "remote",
+      "evidence": "Remote; New York; San Francisco",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "4bfc67fe8baeb196bdf9f8cfe440f33c793145088b0769201b5ae6a366a6eb1b"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-anz",
+      "title": "Field Engineer - ANZ",
+      "header": "Australia",
+      "location": "Australia",
+      "workplaceType": null,
+      "evidence": "Australia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ae324abd205e056f03148590b431cc1a600ab34808050e652d02e3134f3db828"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-asean",
+      "title": "Field Engineer - ASEAN",
+      "header": "Singapore",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "Singapore",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "e53025f520dd9fc1642431b9906ec985da9a779b12551ac93457e6697c07399d"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-healthcare",
+      "title": "Field Engineer, Healthcare",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "3f21c64b9eaed7817ad4c5ff574d878a4cf7b690ac821c7df09eb2bb87d321a8"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-india",
+      "title": "Field Engineer - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "8df975c4a2134dd7ea5383384587acb028455922365023687161e68b3c29adea"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-life-sciences",
+      "title": "Field Engineer, Life Sciences",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "f30229bb106b5037e99564473c76a2b81b9230df897c2b13ff367681add56e67"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-public-sector",
+      "title": "Field Engineer, Public Sector",
+      "header": "Remote; Washington, D.C.",
+      "location": "Remote | Washington, D.C.",
+      "workplaceType": "remote",
+      "evidence": "Remote; Washington, D.C.",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "50ddf68694f3dc5a26a233f13f70ed55bcc15d165260db8dcecb44ca90f64218"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineer-south-korea",
+      "title": "Field Engineer - South Korea",
+      "header": "South Korea",
+      "location": "South Korea",
+      "workplaceType": null,
+      "evidence": "South Korea",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "fab1eca3ff5ae3711472de41772dba69fecca4802ecaecf3b599d44f3a67efd4"
+    },
+    {
+      "url": "https://cursor.com/careers/field-engineering-japan",
+      "title": "Field Engineering - Japan",
+      "header": "Japan",
+      "location": "Japan",
+      "workplaceType": null,
+      "evidence": "Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "5c21d167e4395139185a602819699ac838ba3ab4b2d4a4225d31d93be40e9cf5"
+    },
+    {
+      "url": "https://cursor.com/careers/field-marketing-manager-healthcare-sled",
+      "title": "Field Marketing Manager, Healthcare / SLED",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "6dc60c4708a2e0a11fe9276675b60f71b655012de0f6bb57a628422b667bdb85"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-engineer-australia-japan-singapore",
+      "title": "Forward Deployed Engineer",
+      "header": "Australia; Singapore; Japan",
+      "location": "Australia | Singapore | Japan",
+      "workplaceType": null,
+      "evidence": "Australia; Singapore; Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "d382f9551929e1252d660d5274b46dde660610b89549b78563812a301ce5eb94"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-engineer-emea",
+      "title": "Forward Deployed Engineer - EMEA",
+      "header": "London",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": "London",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "441252d532147c04c35520dac04a6e6136d21b8355bbfff282bbce3f1625d25e"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-engineer-india",
+      "title": "Forward Deployed Engineer - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "db484b1b2c325284156de323c150c1fe876feb060ddb190ca9489d787a05afd1"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-engineer-new-york-remote-san-francisco",
+      "title": "Forward Deployed Engineer",
+      "header": "San Francisco; New York; Remote",
+      "location": "San Francisco | New York | Remote",
+      "workplaceType": "remote",
+      "evidence": "San Francisco; New York; Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "d8ccf2b0fa4e9831938c7aaefcbcb5d53eb7967c202a0a447295152a5f5b96fe"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-strategist-australia-singapore",
+      "title": "Forward Deployed Strategist",
+      "header": "Singapore; Australia",
+      "location": "Singapore | Australia",
+      "workplaceType": null,
+      "evidence": "Singapore; Australia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "75caa15cdf10b44cf5a5dbc22372c17ac29af5abaeba9e6d489c298292db5fcc"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-strategist-london-new-york-remote",
+      "title": "Forward Deployed Strategist",
+      "header": "London; New York; Remote",
+      "location": "London | New York | Remote",
+      "workplaceType": "remote",
+      "evidence": "London; New York; Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "6f5be4bb566dca8698b667b1fc35503e8bc8b2c4052e7b8d7536e96f1db3cc2d"
+    },
+    {
+      "url": "https://cursor.com/careers/forward-deployed-strategist-new-york-remote-san-francisco",
+      "title": "Forward Deployed Strategist",
+      "header": "Remote; New York; San Francisco",
+      "location": "Remote | New York | San Francisco",
+      "workplaceType": "remote",
+      "evidence": "Remote; New York; San Francisco",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "9af102c3b004b29e4e4fc2e770f83e2504e4e906f4f9024b34a7c72f87517b67"
+    },
+    {
+      "url": "https://cursor.com/careers/full-stack-analyst-gtm",
+      "title": "Full Stack Analyst, GTM",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "c622217a249f79a11d4bea919ecaff34b975f6461f0ef0d7f99370cc5c924b7a"
+    },
+    {
+      "url": "https://cursor.com/careers/full-stack-engineer-ml-research-tools",
+      "title": "Full Stack Engineer, ML Research Tools",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "cbc5fca1271473dc52482a944949155ea7045d7f971faebe68a9ac9c388c838c"
+    },
+    {
+      "url": "https://cursor.com/careers/gtm-applications-engineer",
+      "title": "GTM Applications Engineer",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "805a4e04409963ae6e5518c3f5a9c80961812892f2b82004f31b1dda77657f06"
+    },
+    {
+      "url": "https://cursor.com/careers/gtm-strategy-ops-lead-apj",
+      "title": "GTM Strategy & Ops Lead - APJ",
+      "header": "Singapore; Japan",
+      "location": "Singapore | Japan",
+      "workplaceType": null,
+      "evidence": "Singapore; Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "576b4025a5d5119bab612c1e6d111f8404a2227ff76baf347c10ca4617252be8"
+    },
+    {
+      "url": "https://cursor.com/careers/head-of-americas-field-marketing",
+      "title": "Head of Americas Field Marketing",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "0ecf0720ae56a9a3f80ae5b6aa8c930559a595ed2a3e6a1c858e975374c9ac7b"
+    },
+    {
+      "url": "https://cursor.com/careers/head-of-apj-field-marketing",
+      "title": "Head of APJ Field Marketing",
+      "header": "Singapore",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "Singapore",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "3705bac8945a1fc2cbf4e1616b3b34dc26b304521bf89b4f2c7b11a907e2d3a6"
+    },
+    {
+      "url": "https://cursor.com/careers/hrbp-gtm",
+      "title": "HRBP, GTM",
+      "header": "New York",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": "New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "4b2ba37630a80509404683239dbb76e83cd2173254c318af9833b72be742a1a6"
+    },
+    {
+      "url": "https://cursor.com/careers/integrated-campaigns-amer",
+      "title": "Integrated Campaigns, AMER",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": "This is a full-time, in-office role based at our San Francisco headquarters.",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "d4653376582a36b6b3e1916e776f4b291eb8d26c8effae95d430cb144a65ebca"
+    },
+    {
+      "url": "https://cursor.com/careers/manager-channel-partners",
+      "title": "Manager, Channel & Partners",
+      "header": "Japan",
+      "location": "Japan",
+      "workplaceType": null,
+      "evidence": "Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "81361cb56069514607cf9e393bd968ec51d8840f137f21b61cb6a5eecf954b02"
+    },
+    {
+      "url": "https://cursor.com/careers/managerchannels-partnerships-india",
+      "title": "Manager,Channels & Partnerships - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "372388b7e570ad01cbfacade48356e88d5c9f563e319a4fa22164bc9fd2f54dd"
+    },
+    {
+      "url": "https://cursor.com/careers/paid-media-manager",
+      "title": "Paid Media Manager",
+      "header": "San Francisco; New York; Remote",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "This role is based in our San Francisco or New York City office and requires an in-office presence.",
+      "note": "Office attendance required despite Remote header; no onsite/hybrid schedule specified.",
+      "bodySha256": "5ad3a4f40a358bad3499ce439b4b1433712ebe23c7154e62f355d8af68cc4b0f"
+    },
+    {
+      "url": "https://cursor.com/careers/product-education-engineer",
+      "title": "Product Education Engineer",
+      "header": "New York; San Francisco; EMEA",
+      "location": "New York | San Francisco | EMEA",
+      "workplaceType": null,
+      "evidence": "New York; San Francisco; EMEA",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "d24b8bfe127a832eb95e77e0fc1cefcfb41f3fde25afcbfc751868478e38b8a8"
+    },
+    {
+      "url": "https://cursor.com/careers/product-marketing-manager",
+      "title": "Product Marketing Manager",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ed344f6c76fce211fc5e56f34b1cddfe307bd11552765189797db97fece94f57"
+    },
+    {
+      "url": "https://cursor.com/careers/recruiting-coordinator",
+      "title": "Recruiting Coordinator",
+      "header": "Palo Alto, CA",
+      "location": "Palo Alto, CA",
+      "workplaceType": null,
+      "evidence": "Palo Alto, CA",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "bbc39dbd4341945f5cc713ac3593f7a477d8a385a4d6e7d42f09d92b87b65479"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-ai-deployment",
+      "title": "Regional Director, AI Deployment",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "c54cc9f91b3d261884fdcfbcfa66692f516d03dd5ba35682d944dbd4537526b3"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-commercial",
+      "title": "Regional Director, Commercial",
+      "header": "Austin",
+      "location": "Austin",
+      "workplaceType": null,
+      "evidence": "Austin",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "12eb87fb52fe07ee6d02481ea901d4f5748b2e913f5a1d9b5ffbea4745c6c0c5"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-commercial-expansion-emea",
+      "title": "Regional Director, Commercial Expansion - EMEA",
+      "header": "London",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": "London",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ad0e642002a0c993d00d71c4f5dd2e922ea1850120640787589cb559a976097b"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-field-engineering",
+      "title": "Regional Director, Field Engineering",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "3975a1b9dfaf3cc6126852682a38d25044cd1c03707621b0c58d0cc77f54ca82"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-field-engineering-healthcare",
+      "title": "Regional Director, Field Engineering, Healthcare",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "fbca06243ce8a082f7362bb9c8f09dddfa0362743e99276c766645558dcceda4"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-field-engineering-verticals",
+      "title": "Regional Director, Field Engineering - Verticals",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "9a4b13aa813223cbfda7fc6546ca01ee3f2659a3e336c5189cbaa065226150dc"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-forward-deployed-engineering",
+      "title": "Regional Director, Forward Deployed Engineering",
+      "header": "San Francisco; New York; Austin",
+      "location": "San Francisco | New York | Austin",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York; Austin",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "877e59a6df3468c42fd8376450a52eb10ccd03c21c20486e89aef666e613c12d"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-forward-deployed-engineering-india",
+      "title": "Regional Director, Forward Deployed Engineering - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "e00e7531ddecd95e94d57209aa881ebf4b52f3aab50404fb9b61ad6c272679b7"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-director-geo-enterprise",
+      "title": "Regional Director, Geo Enterprise",
+      "header": "Austin",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "based out of our San Francisco office",
+      "note": "Body requires SF Bay Area, conflicting with Austin header; attendance schedule is unspecified.",
+      "bodySha256": "95e88137993b0961d2e6a17d60ed746d335a4a85170285fc4ad2a6dd260e7bf8"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-vice-president-business-development",
+      "title": "Regional Vice President, Business Development",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "a13b145053e662f0d74418a515e358adee5cf23022fc01579e364afcdfd90304"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-vice-president-business-development-apj",
+      "title": "Regional Vice President, Business Development APJ",
+      "header": "APJ",
+      "location": "APJ",
+      "workplaceType": null,
+      "evidence": "APJ",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "77875597c77f30ff623b5c7432f07d03e96926305ef59df1a5c8f243f0e0afd5"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-vice-president-business-development-emea",
+      "title": "Regional Vice President, Business Development EMEA",
+      "header": "EMEA",
+      "location": "EMEA",
+      "workplaceType": null,
+      "evidence": "EMEA",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "bebc7835fd38267d95acb1aa540007bc572cbb504f01249984f1972b1af71d47"
+    },
+    {
+      "url": "https://cursor.com/careers/regional-vice-president-commercial-sales-apj",
+      "title": "Regional Vice President, Commercial Sales, APJ",
+      "header": "APJ",
+      "location": "Singapore | Sydney, NSW",
+      "workplaceType": null,
+      "evidence": "Singapore (Regional Hub) or Sydney, Australia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "80c909daa615921c1cfe7f8d3abab937ac07e011c2c045b7120d581dd8413bb9"
+    },
+    {
+      "url": "https://cursor.com/careers/research-scientist",
+      "title": "Research Scientist",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "47ac17d491ed8666c8b335e1cb0e1b64e98109095bb7760101cacbe007485f37"
+    },
+    {
+      "url": "https://cursor.com/careers/rvp-forward-deployed-engineering-emea",
+      "title": "RVP, Forward Deployed Engineering - EMEA",
+      "header": "London",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": "London",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "a9a85452332654d0a9d23eaa4bddc3116cb59e3d8f835568a229c9700cb38c81"
+    },
+    {
+      "url": "https://cursor.com/careers/rvp-geo-enterprise-east",
+      "title": "RVP, Geo Enterprise East",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "1fb7063e6b9fc6feef6be4b9b287f9090b92193c85c9d988e0e02647e585da1c"
+    },
+    {
+      "url": "https://cursor.com/careers/rvp-strategic-sales-hitech",
+      "title": "RVP, Strategic Sales, HiTech",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "755670e8b4ba9afc9ee87309e2db2106cf060c01ef441f1beb9721710276067e"
+    },
+    {
+      "url": "https://cursor.com/careers/sales-development-leader-apj-australia",
+      "title": "Sales Development Leader, APJ",
+      "header": "Australia",
+      "location": "Sydney, NSW",
+      "workplaceType": "onsite",
+      "evidence": "This is a full-time, in-office leadership role based in our Sydney office.",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "42e2c922a2ac7fcaaeaefeccee945087840df36f60241ae1334633c57ea6fd95"
+    },
+    {
+      "url": "https://cursor.com/careers/sales-development-leader-apj-singapore",
+      "title": "Sales Development Leader - APJ",
+      "header": "Singapore",
+      "location": "Singapore",
+      "workplaceType": "onsite",
+      "evidence": "This is a full-time, in-office leadership role based in our Singapore office.",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "f72ec87a3ca60079218df34cd299239f541e3ee09c2b82ab1e8d407ab17158a2"
+    },
+    {
+      "url": "https://cursor.com/careers/sales-development-representative",
+      "title": "Sales Development Representative",
+      "header": "London",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": "London",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "4ff5be5159e2bc12a0622aa70270241cf6b2d7d7686832b39485400dff79569a"
+    },
+    {
+      "url": "https://cursor.com/careers/sales-development-representative-anz",
+      "title": "Sales Development Representative - ANZ",
+      "header": "Australia",
+      "location": "Sydney, NSW",
+      "workplaceType": null,
+      "evidence": "This role will be based in Sydney.",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ae5ad5db3de59a5d57e803f2754a7ae3f98ab2b5f6252fcd58e7649955439c65"
+    },
+    {
+      "url": "https://cursor.com/careers/sales-development-representative-new-york",
+      "title": "Sales Development Representative - New York",
+      "header": "New York",
+      "location": "New York",
+      "workplaceType": null,
+      "evidence": "New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "a6ecc4e76fb812b175f98b6cb4e8976f8811f09a73df6c1b4eac6785911ada98"
+    },
+    {
+      "url": "https://cursor.com/careers/sales-development-representative-san-francisco",
+      "title": "Sales Development Representative - San Francisco",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "2100cbec6c640d37e198326e84f494316dce60d8ac393f51e81813c00a25095b"
+    },
+    {
+      "url": "https://cursor.com/careers/security-grc-engineer",
+      "title": "Security GRC Engineer",
+      "header": "San Francisco; Palo Alto, CA",
+      "location": "San Francisco | Palo Alto, CA",
+      "workplaceType": null,
+      "evidence": "San Francisco; Palo Alto, CA",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "74e96fc81bfb6f97a5a3142097ba293bbae55be7b7d4fcf25e487d5a15be59b9"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-agent-evaluation-and-quality",
+      "title": "Software Engineer, Agent Evaluation and Quality",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "16f4ec2ede4d01f16911106154f471148054828540e9a78bc017141df35c60df"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-agent-harness",
+      "title": "Software Engineer, Agent Harness",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "e8e8b12735e55858be998941235674ad44e14082a07cedf005cf281cbfae7b34"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-billing",
+      "title": "Software Engineer, Billing",
+      "header": "Remote; Australia",
+      "location": "Remote | Australia",
+      "workplaceType": "remote",
+      "evidence": "Remote; Australia",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "2001d98b6d6a6adfe069d0f5fecd6fca4454e0da57c8e84b79de8092d119c2ab"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-bugbot",
+      "title": "Software Engineer, Bugbot",
+      "header": "San Francisco; New York; Remote",
+      "location": "San Francisco | New York | Remote",
+      "workplaceType": "remote",
+      "evidence": "San Francisco; New York; Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "a7054f0ed31fde32049505eace61cb1f6ca593a0cf583c6e40801e3308b14d29"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-client-infrastructure",
+      "title": "Software Engineer, Client Infrastructure",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "742308c3e2c4d432051310e2be9d24ce84b1abb6909ac3ba24a43adb081c6bd9"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-core-services",
+      "title": "Software Engineer, Core Services",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "84a9967ae6f6afb14b875028aa4d641422a7dae34c5e9616dfd5932bb7f0f3a5"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-developer-productivity",
+      "title": "Software Engineer, Developer Productivity",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "e22b95fa40ad349565fd40f9407a5e4a2ff0d3fa1752b33c1657f999f2542693"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-enterprise",
+      "title": "Software Engineer, Enterprise",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "1479dc48ec501263f0763c3ec00b0ac74f107829e4121356c016023c9eb67cff"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-enterprise-platform",
+      "title": "Software Engineer, Enterprise Platform",
+      "header": "San Francisco; Remote",
+      "location": "San Francisco | Remote",
+      "workplaceType": "remote",
+      "evidence": "San Francisco; Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "6cabb259e38084884a713c42767925cd463f65b74b09bf1015c71f784e3c981a"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-generalist",
+      "title": "Software Engineer, Generalist",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "17e85ef87421ca9447580a63a4b14a320bc29ada3aa612be9d06496f922b0558"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-growth",
+      "title": "Software Engineer, Growth",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "04e10cba1bd00bd94c340afaebc27c65844d2099e556bc7a9834f6c9267e10ab"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-infrastructure",
+      "title": "Software Engineer, Infrastructure",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ad06a575588a4b088b6239653a77484521ab8c8c6dcee92ea78a78f43c711868"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-ml-infrastructure",
+      "title": "Software Engineer, ML Infrastructure",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "9542b987f2ca5b5826f680e5fb8572b406f3d629761c267afbaa6893f6f4b0c5"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-ml-platform",
+      "title": "Software Engineer, ML Platform",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "b180cd1528cd94ee77cc472ad7930bb65179825fac275a211115a0abb14303d9"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-ml-research",
+      "title": "Software Engineer, ML Research",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "69d28fc60b9ebfaa5936526b895c3c314003fedcd1326a9c9591d9aa1d8a3743"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-model-routing-inference",
+      "title": "Software Engineer, Model Routing & Inference",
+      "header": "New York; San Francisco",
+      "location": "New York | San Francisco",
+      "workplaceType": null,
+      "evidence": "New York; San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "3cb83b9893a3c3fdc7a0ab55c51270156b8f509e131132dd886da4c5648e18d3"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-new-grad-2027",
+      "title": "Software Engineer, New Grad 2027",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "47b0958e9247cff8d66390d9d26a67703add2846efeeeee93f322c881d219ba4"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-pretraining",
+      "title": "Software Engineer, Pretraining",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "bbce16bde6cc153f4bbd953c256245228eed9f3eed516342e3d7c246dc8f2ed2"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-product",
+      "title": "Software Engineer, Product",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "2626edc4e6c7cbac1c52b665d7eb3d829b9d75eda71fbebbddd374ef69197988"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-rl-data",
+      "title": "Software Engineer, RL Data",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "79ec911a1d7ff6a3d37695523d008f3f03ea58b3d1cb4c643e042d11b50434ee"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-rl-environments",
+      "title": "Software Engineer, RL Environments",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "43e78e4a1f827834d467ab6f3090acddf5bd9f63689a9ba8200d2b83d77de882"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-security",
+      "title": "Software Engineer, Security",
+      "header": "San Francisco; New York; Remote",
+      "location": "San Francisco | New York | Remote",
+      "workplaceType": "remote",
+      "evidence": "San Francisco; New York; Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "42698ee3dacd89bbaa8da2b23bcdeb806ce1a7b72bc74e655c88f233803c4629"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-services-platform",
+      "title": "Software Engineer, Services Platform",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "b4c32b2f7404c7c13920c3ca5dc543f035b3a21a6b589846b31597878af80e96"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-storage",
+      "title": "Software Engineer, Storage",
+      "header": "San Francisco; New York",
+      "location": "San Francisco | New York",
+      "workplaceType": null,
+      "evidence": "San Francisco; New York",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "094d1427b3726d090c85b1f1df89928c998010e3210a6a66eb5e950e01327aae"
+    },
+    {
+      "url": "https://cursor.com/careers/software-engineer-user-operations",
+      "title": "Software Engineer, User Operations",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "8cc8243d65b93a9d2e5520aa39be4ed31a30cfb709b22601e336713c38c235e7"
+    },
+    {
+      "url": "https://cursor.com/careers/solutions-architect",
+      "title": "Solutions Architect",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "3f3e567abba7418a31ec1cc02aeb4239c5b4c60a2afe40983e65b18f05bc8eee"
+    },
+    {
+      "url": "https://cursor.com/careers/solutions-architect-central-europe",
+      "title": "Solutions Architect, Central Europe",
+      "header": "Germany",
+      "location": "Germany",
+      "workplaceType": null,
+      "evidence": "Germany",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ae5bfe698d8d0d91aa2075cc4bb7843c1d2902321ed0e67ae9b157d53bca3939"
+    },
+    {
+      "url": "https://cursor.com/careers/solutions-architect-india",
+      "title": "Solutions Architect - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "dc5409af88f762922ee59b66aa6c348d9e02bd5828360b0adcb84dea085187b5"
+    },
+    {
+      "url": "https://cursor.com/careers/solutions-architect-japan",
+      "title": "Solutions Architect - Japan",
+      "header": "Japan",
+      "location": "Japan",
+      "workplaceType": null,
+      "evidence": "Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "fee461e633dc55518d7ec698c4d934c1e9ab0e41ef2933c765047e33b8d489da"
+    },
+    {
+      "url": "https://cursor.com/careers/solutions-architect-western-europe",
+      "title": "Solutions Architect - Western Europe",
+      "header": "London",
+      "location": "London",
+      "workplaceType": null,
+      "evidence": "London",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "2d7f5e81665db59bc7b76a8c709fd0f9f8fb3ce96a715cb20a67c4c97e9be8ed"
+    },
+    {
+      "url": "https://cursor.com/careers/startup-events-community",
+      "title": "Startup Events & Community",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": "onsite",
+      "evidence": "This role is based in our San Francisco office and requires working in-office",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "1637f4ba4893c71ab64ba905ebd501993508fa1d5734144842bd2a22a9e87a6f"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-enterprise-indonesia",
+      "title": "Strategic Account Executive, Enterprise - Indonesia",
+      "header": "Indonesia",
+      "location": "Indonesia",
+      "workplaceType": null,
+      "evidence": "Indonesia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "48b77dcc63fa04a4ab5d94747e7066f85036a912a82e3ee17209c8f869e5234b"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-enterprise-phillippines",
+      "title": "Strategic Account Executive, Enterprise - Phillippines",
+      "header": "Philippines; Singapore",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "You will be performing this role based in Singapore.",
+      "note": "Philippines is the sales territory, not a second job base.",
+      "bodySha256": "e54a69fc68e94c2d9915b74f2a96458174447c32d9458ae528be8686d75dff7b"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-enterprise-south-korea",
+      "title": "Strategic Account Executive, Enterprise - South Korea",
+      "header": "South Korea",
+      "location": "South Korea",
+      "workplaceType": null,
+      "evidence": "South Korea",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "7f014dc6b718cd5182d351fade03973b2b16a20640e1b83e751f9c3d7a93857d"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-enterprise-thailand",
+      "title": "Strategic Account Executive, Enterprise - Thailand",
+      "header": "APJ",
+      "location": "Singapore",
+      "workplaceType": null,
+      "evidence": "This role will be based in Singapore.",
+      "note": "Body specifies Singapore; Thailand is the sales territory and APJ is the header region.",
+      "bodySha256": "44242c4f54ab35420e9a2d6ef6f8d270befe8ffa31d37768ac930658096ce00b"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-enterprise-victoria",
+      "title": "Strategic Account Executive, Enterprise - Victoria",
+      "header": "Australia",
+      "location": "Australia",
+      "workplaceType": null,
+      "evidence": "Australia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "77a6096638e2321d8fb798f690b2125625d9f819a65223cca51bd6460611499d"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-federal-sales-australia",
+      "title": "Strategic Account Executive, Federal Sales - Australia",
+      "header": "Australia",
+      "location": "Sydney, NSW | Canberra, ACT",
+      "workplaceType": null,
+      "evidence": "based in either Sydney or Canberra",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "fc5b2bb8a4afffc7e35f04b63e13db67e2507d30da3aa2da7dec8ee1159b9c48"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-federal-sales-civilian",
+      "title": "Strategic Account Executive, Federal Sales — Civilian",
+      "header": "Remote",
+      "location": "DC-metro area",
+      "workplaceType": null,
+      "evidence": "based in the DC-metro area",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "b9c1fd85e6e234af09420acc6b0087762c61aa5df87eca1511957f131f731cd1"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-federal-sales-dow",
+      "title": "Strategic Account Executive, Federal Sales — DoW",
+      "header": "Remote",
+      "location": "DC-metro area",
+      "workplaceType": null,
+      "evidence": "based in the DC-metro area",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "8f0f79702fd25617fd84ebccf5994a92ac0c751e085242dd53c363382e0956cb"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-federal-systems-integrators",
+      "title": "Strategic Account Executive, Federal Systems Integrators",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "5065c0795cdecc27245f5db97c10bec55bb08f4ff749245dd1e7b57b7434213a"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-healthcare",
+      "title": "Strategic Account Executive, Healthcare",
+      "header": "Remote; New York",
+      "location": "Remote | New York",
+      "workplaceType": "remote",
+      "evidence": "Remote; New York",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "3988e80048a0578cccedb73fc2f385421a6d2a7c4081800c8bae1c129bcde033"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-high-tech",
+      "title": "Strategic Account Executive, High Tech",
+      "header": "Remote; New York",
+      "location": "Remote | New York",
+      "workplaceType": "remote",
+      "evidence": "Remote; New York",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "956ce70fced8af6332b9fd7eebcd53b946fe3ad1303df3a2ffb8c29d1887e449"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-life-sciences",
+      "title": "Strategic Account Executive, Life Sciences",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "962c0c474f0e15d48227d871acdc425cfdbe67ed591a1494823ec4bdc6ed2081"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-retail",
+      "title": "Strategic Account Executive, Retail",
+      "header": "Remote; New York; San Francisco",
+      "location": "Remote | New York | San Francisco",
+      "workplaceType": "remote",
+      "evidence": "Remote; New York; San Francisco",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "3aa6cb6e3a8718cfd07f7ef2b7cd9613eba90cc0fb9527319a8d96b2919a67dd"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-account-executive-sled",
+      "title": "Strategic Account Executive, SLED",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "4a348a9904cba2375495b03dbbde15b2f9e9325f1767bda77d767608351eca1f"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-alliances-gtm-lead",
+      "title": "Strategic Alliances GTM Lead",
+      "header": "San Francisco; New York; Remote",
+      "location": "San Francisco | New York | Remote",
+      "workplaceType": "remote",
+      "evidence": "San Francisco; New York; Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "e825a71a352925d46e537e3baa41212f49aae6a085d98bab7bfecd0a50fdbb2e"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-enterprise-account-executive-india",
+      "title": "Strategic Enterprise Account Executive - India",
+      "header": "Bengaluru; New Delhi; Mumbai",
+      "location": "Bengaluru | New Delhi | Mumbai",
+      "workplaceType": null,
+      "evidence": "Bengaluru; New Delhi; Mumbai",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "e38d094a50d4127df11a90d6199c9e246873b82188cff8009e8d647e58f1014a"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-enterprise-account-executive-japan",
+      "title": "Strategic Enterprise Account Executive - Japan",
+      "header": "Japan",
+      "location": "Japan",
+      "workplaceType": null,
+      "evidence": "Japan",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "f2b58716fed03179248d6dc11050439c84a1088ecb38355925533cce91615d51"
+    },
+    {
+      "url": "https://cursor.com/careers/strategic-partnerships-growth-lead-civilian-government",
+      "title": "Strategic Partnerships & Growth Lead — Civilian Government",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "41ec74b444893e0495aa762c751c2960f15a1c76686d627116cf0636198ed930"
+    },
+    {
+      "url": "https://cursor.com/careers/support-operations-systems-lead",
+      "title": "Support Operations Systems Lead",
+      "header": "Remote",
+      "location": "Remote",
+      "workplaceType": "remote",
+      "evidence": "Remote",
+      "note": "Remote is an explicit source-header option, not a restriction on the listed cities.",
+      "bodySha256": "4b933c204139c6fb91f6985437ed9a0ff09fbb5461a861924f7eb52631b0f1b3"
+    },
+    {
+      "url": "https://cursor.com/careers/technical-program-manager-field",
+      "title": "Technical Program Manager, Field",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "cf75aa0d88c6feaf140164cc8ef7bce9c8c95553c4fe4627647342d049c32bf3"
+    },
+    {
+      "url": "https://cursor.com/careers/technical-program-manager-tpm-infrastructure",
+      "title": "Technical Program Manager (TPM), Infrastructure",
+      "header": "San Francisco",
+      "location": "San Francisco",
+      "workplaceType": null,
+      "evidence": "San Francisco",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "023eb74dcde351085bf139b74ddfef36ef55609e42cb199a1096aad6ca356da5"
+    },
+    {
+      "url": "https://cursor.com/careers/technical-support-engineering-leader-singapore-australia-new-zealand-indonesia",
+      "title": "Technical Support Engineering Leader, Singapore, Australia, New Zealand, Indonesia",
+      "header": "Singapore; Australia",
+      "location": "Singapore | Australia",
+      "workplaceType": null,
+      "evidence": "Singapore; Australia",
+      "note": "Source lists geography, not an explicit workplace arrangement.",
+      "bodySha256": "ac950a343391ac091ab8ff14d4e19c3c66ca203235604695a4d7a8d17c4ef3ba"
+    }
+  ]
+}

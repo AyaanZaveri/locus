@@ -214,6 +214,13 @@ export function resolvePlace(
   );
 }
 
+/** Qualifiers describe an association, not a different geographic identity. */
+export function resolveSourcePlace(
+  sourceLabel: string,
+): CanonicalLocation | null {
+  return resolvePlace(sourceLabel.replace(/^(?:Remote|Hybrid)\s*-\s*/i, ""));
+}
+
 export class LocationCatalog {
   places = new Map<string, CanonicalLocation>();
   aliases = new Map<string, string>();

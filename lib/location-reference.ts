@@ -7,6 +7,9 @@ export const locationReferenceSchema = z.object({
   relation: z.enum(["office", "eligibility", "unspecified"]),
   qualifier: z.string().nullable(),
   sourceLabel: z.string().min(1),
+  // Hydrated from the shared catalog for rendering, not inferred from labels.
+  countryCode: z.string().length(2).nullable().optional(),
+  kind: z.enum(["city", "country", "subdivision", "region"]).optional(),
 });
 
 export type LocationReference = z.infer<typeof locationReferenceSchema>;

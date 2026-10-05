@@ -161,6 +161,10 @@ function structuredFields(job: AshbyJob) {
 }
 
 async function main() {
+  if (profileSlug === "cursor")
+    throw new Error(
+      "Cursor careers headers and bodies disagree with Ashby workplace flags. Use a fresh full Ketch careers audit and repair-cursor-remote-locations.ts; ATS-only Cursor sync is intentionally blocked.",
+    );
   const response = await fetch(apiUrl);
   if (!response.ok)
     throw new Error(`Ashby returned ${response.status} for ${apiUrl}`);

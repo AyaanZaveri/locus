@@ -15,6 +15,7 @@ import {
   jobLocations,
 } from "../lib/db/schema";
 import { getJobLocationReviewIssues } from "../lib/job-location";
+import { reviewedCursorLocation } from "./lib/cursor-location-review";
 import {
   LocationCatalog,
   type CanonicalLocation,
@@ -69,12 +70,22 @@ async function main() {
       locationId: place?.id ?? null,
       sourceLabel,
     };
-    profile.jobs = profile.jobs.map((job) => ({
-      ...job,
-      ...catalog.job(job, {
-        inferRemoteEligibility: profile.slug !== "cursor",
-      }),
-    }));
+    profile.jobs = profile.jobs.map((job) => {
+      const source =
+        profile.slug === "cursor"
+          ? {
+              ...job,
+              ...reviewedCursorLocation(job.url!),
+              locations: undefined,
+            }
+          : job;
+      return {
+        ...job,
+        ...catalog.job(source, {
+          inferRemoteEligibility: profile.slug !== "cursor",
+        }),
+      };
+    });
   }
 
   // Check the entire import before any writes. An unchanged normalization
