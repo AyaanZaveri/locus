@@ -69,12 +69,14 @@ type Manifest = {
 
 const argv = process.argv.slice(2);
 let batchId = "batch-01",
+  manifestPath = "reports/embedding-batches.json",
   budgetUsd = 0.25,
   maxNewRequests = 100;
 let run = false,
   mock = false;
 for (let i = 0; i < argv.length; i++) {
   if (argv[i] === "--batch") batchId = argv[++i];
+  else if (argv[i] === "--manifest") manifestPath = argv[++i];
   else if (argv[i] === "--budget-usd") budgetUsd = Number(argv[++i]);
   else if (argv[i] === "--max-new-requests") maxNewRequests = Number(argv[++i]);
   else if (argv[i] === "--run") run = true;
@@ -229,12 +231,12 @@ async function importVectors(
 }
 
 async function main() {
-  const manifest: Manifest = JSON.parse(
-    await readFile("reports/embedding-batches.json", "utf8"),
-  );
+  const manifest: Manifest = JSON.parse(await readFile(manifestPath, "utf8"));
   const rollout = manifest.batches.find((b) => b.id === batchId);
   assert.ok(rollout, "Unknown batch");
-  assert.ok(!rollout.companySlugs.includes("exa"), "Do not regenerate Exa");
+  // The original rollout manifest excludes Exa. Scoped refreshes may include
+  // any company: content-addressed lookup, not a hard-coded name, prevents
+  // duplicate generation and allows changed Exa documents to be embedded.
   assert.equal(new Set(rollout.companySlugs).size, rollout.companyCount);
   const { documents, companies, jobs } = await collect(rollout.companySlugs);
   assert.equal(

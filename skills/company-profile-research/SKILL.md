@@ -1,6 +1,6 @@
 ---
 name: company-profile-research
-description: Research companies into validated Autumn company profiles, automatically source and publish images to the locus-images GitLab repository, and import the profile with verified hosted image URLs into Neon. Use for company-profile data work, not prose reports or UI implementation.
+description: Research or refresh companies into validated Autumn profiles, publish verified images to locus-images, import into Neon, and create/cache and verify company About and job-description embeddings for Locus Focus after import. Use for company-profile data work, not prose reports or UI implementation.
 ---
 
 # Company Profile Research
@@ -8,13 +8,15 @@ description: Research companies into validated Autumn company profiles, automati
 Return a single valid JSON object for the requested company. The result is data
 for a company profile, not a prose report or UI implementation.
 
-## Default invocation: complete research, images, publication, and import
+## Default invocation: research, images, import, and embeddings
 
 Running this skill for Autumn (for example, “run /company-profile-research on
-Heidi Health”) requests the entire workflow, including images and publication.
+Heidi Health”) requests the entire workflow, including images, publication, import,
+and current-text embeddings for Locus Focus.
 Do not treat it as research-only unless the user explicitly requests a dry run,
 JSON-only output, or no publishing/database changes. No separate “do the images”
-prompt or routine confirmation is needed.
+or “create embeddings” prompt or routine confirmation is needed. The default
+embedding cap is $0.25 for the scoped company rollout; ask before increasing it.
 
 1. Research the company and source its logo, banner, current employee portraits,
    and investor logos. Reuse verified existing assets when suitable. Images are
@@ -37,11 +39,18 @@ prompt or routine confirmation is needed.
    `logo` fields throughout the validated profile. Import the complete payload
    with `npm run db:import -- /absolute/path/to/company.json` from Autumn, then
    verify the stored company profile in Neon contains the intended image URLs.
-   Preserve existing jobs/people when doing an images-only refresh, since the
-   importer replaces those collections.
+    Preserve existing jobs/people when doing an images-only refresh, since the
+    importer replaces those collections.
+7. Read [references/embeddings.md](references/embeddings.md), then plan, generate
+   only missing vectors, import/relink cached vectors, and verify the imported
+   company's About profile and job descriptions against their current text.
+   Use the existing Voyage/Neon pipeline; do not invent a second embedding format.
+   Run this gate after every profile import, including refreshes. Unchanged text
+   should cost nothing; regenerated job IDs may still need their links restored.
 
-Finish only after publication, URL checks, validation, and database import have
-succeeded. If authentication, push, deployment, or import actually fails, report
+Finish only after publication, URL checks, validation, database import, and scoped
+current-text embedding verification have succeeded. If authentication, push,
+deployment, import, token accounting, embedding generation, or verification fails, report
 the precise failing step and retain the payload/assets for retry. Do not assume
 publishing is unavailable without trying the configured checkout and credentials,
 or silently use `null` to conceal a deployment failure. `null` is appropriate
@@ -119,8 +128,13 @@ current `data/companies/*/company.json` before writing.
   import command. A record that cannot validate must not be presented as
   complete.
 - After changing profile data, run `npm run db:import -- /absolute/path/to/company.json`.
-  It upserts `companies` and replaces the company’s normalized `jobs` and
-  `people` rows.
+   It upserts `companies` and replaces the company’s normalized `jobs` and
+   `people` rows.
+- After each import, complete the [embedding gate](references/embeddings.md)
+  against persisted company/job rows. Do not generate from the pre-import JSON
+  or assume the old entity links survived replacement. A completed import alone
+  does not mean semantic search is ready. Keep vectors and billing receipts out
+  of the profile JSON and Git.
 - **Before importing a profile with new/updated images**, commit and push only
   its assets in `/Users/ayaanzaveri/Code/locus-images/` to `origin/main`.
   Wait for the GitLab Pages pipeline to succeed and verify an anonymous HTTPS
@@ -268,6 +282,28 @@ company. Cursor's audit/repair is an example, not a generic all-company command.
 6. Enumerate current employees. Start by fetching `/humans.txt`, which some companies maintain as a complete roster, then the official team page and, if available, the company's YC profile and each linked active founder profile. YC pages can be especially useful for resolving founders, current founder roles, bios, LinkedIn/X links, and identified founder portraits; verify current-role claims against the company's current site or another current source. Verify LinkedIn/X URLs rather than constructing handles from names. Do not add people only found in old articles. A roster can be very large: if it is, select founders and named leadership for the `people` array rather than dumping hundreds of names, and say so.
 7. Add recent activity from distinct dates and sources, including acquisitions, funding, launches, partnerships, research, and hiring.
 8. Complete the default image-publication workflow above: source and download images, validate them, commit/push to the GitLab image repository, verify hosted URLs, validate the profile, import it into Neon, and verify the stored image URLs.
+9. Complete [references/embeddings.md](references/embeddings.md) after import.
+   Verify target coverage and evidence-based retrieval; report records covered,
+   new/reused vectors, actual document cost, and any blocker separately from the
+   single profile JSON. A company with zero jobs still needs its About vector.
+
+### Scope and embedding completion gate
+
+- A full research/import request includes embeddings within the stated cap.
+  For JSON-only, research-only, dry-run, or no-write requests, make no paid
+  embedding call or database write; explain that embeddings were not applied.
+- For a jobs-only refresh, preserve the profile and other collections, then
+  reconcile the affected company's vectors. For images-only or location-only
+  changes, reuse unchanged texts rather than regenerate documents. If no import
+  or embedding-text change occurred and current-text coverage is already verified,
+  no new vectors or relinking is needed.
+- Missing About text or job descriptions are evidence gaps, not permission to
+  embed a title, listing preview, fabricated summary, or empty string. Report
+  the blocked embedding phase and real coverage without concealing a successful
+  profile import or claiming the entire workflow is complete.
+- Do not expand the rollout to other companies just because global coverage is
+  incomplete. Do not add vectors to `company.json` or embed people, images,
+  funding, activity, or pilot queries as part of document backfill.
 
 ### Job-description fidelity gate
 

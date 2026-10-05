@@ -5,6 +5,7 @@ const subdividedCities: [city: string, code: string, region: string, country: st
   ["San Mateo", "CA", "California", "United States"],
   ["Foster City", "CA", "California", "United States"],
   ["Palo Alto", "CA", "California", "United States"],
+  ["Cupertino", "CA", "California", "United States"],
   ["Mountain View", "CA", "California", "United States"],
   ["New York", "NY", "New York", "United States"],
   ["Seattle", "WA", "Washington", "United States"],

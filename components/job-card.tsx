@@ -194,7 +194,7 @@ export function JobCard({ company, job }: JobCardProps) {
         ref={triggerRef}
         type="button"
       >
-        <article className="flex items-center gap-3 rounded-lg border border-border bg-background p-3 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:bg-muted motion-reduce:transition-none">
+        <article className="flex items-center gap-3 rounded-lg border border-border bg-background p-3 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-hover:bg-muted dark:group-hover:bg-muted/40 motion-reduce:transition-none">
           {company.logo ? (
             <img
               alt={`${company.name} logo`}

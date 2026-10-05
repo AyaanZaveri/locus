@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "snapshotDate": "2026-10-05",
+  "status": "complete",
+  "scope": ["company-about", "job-descriptions"],
+  "modelId": "voyage/voyage-4-large",
+  "dimensions": 1024,
+  "batches": [
+    {
+      "id": "hiringcafe-2026-10-05",
+      "status": "complete",
+      "companySlugs": ["hiringcafe"],
+      "companyCount": 1,
+      "jobCount": 8,
+      "execution": {
+        "uniqueVectorsGenerated": 9,
+        "companyRecordsCovered": 1,
+        "jobRecordsCovered": 8,
+        "recordedOpenJobs": 8,
+        "documentApiRequests": 2,
+        "reportedDocumentTokens": 5178,
+        "reportedDocumentCostUsd": 0.00062136,
+        "productionSmokeQueryCostUsd": 0,
+        "warnings": 0,
+        "providerRetries": 0,
+        "unresolvedRequests": 0,
+        "resumeCheckNewApiRequests": 0,
+        "productionFocusVerified": true,
+        "productionQueryCacheReuseVerified": true,
+        "reportPath": "reports/embedding-hiringcafe-results.md"
+      }
+    }
+  ]
+}

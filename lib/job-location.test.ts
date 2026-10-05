@@ -10,6 +10,11 @@ test("accepts verified Replit, Lovable, and Perplexity office locations", () => 
   assert.deepEqual(getJobLocationReviewIssues("Belgrade | Lund"), ["Belgrade", "Lund"]);
 });
 
+test("accepts HiringCafe's verified Cupertino office location", () => {
+  assert.equal(sanitizeLocation("Cupertino, CA"), "Cupertino, CA");
+  assert.deepEqual(getJobLocationReviewIssues("Cupertino, CA"), []);
+});
+
 test("includes states for Heidi's US and Australian city labels", () => {
   assert.equal(sanitizeLocation("Denver"), "Denver, CO");
   assert.equal(sanitizeLocation("Sydney, Australia"), "Sydney, NSW");

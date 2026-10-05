@@ -49,7 +49,7 @@ export function CompanyJobFilterDrawer({
         render={
           <Button
             variant="outline"
-            className="w-full min-w-0 justify-between gap-1.5 text-left"
+            className="w-full min-w-0 justify-between gap-1.5 text-left dark:bg-input/30 dark:hover:bg-input/50"
           />
         }
       >

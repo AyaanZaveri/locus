@@ -16,15 +16,27 @@ import {
   semanticCoverageQuery,
   retrieveSemantic,
 } from "../lib/ai/semantic-search";
+import {
+  JOB_EMBEDDING_RECIPE,
+  EMBEDDING_MODEL,
+  EMBEDDING_DIMENSIONS,
+  embeddingKey,
+  jobEmbeddingText,
+} from "../lib/ai/embedding-config";
 
 async function main() {
   // A missing cached query must fail verification, never create a paid vector.
   // This only clears the key inside this standalone verifier process.
   delete process.env.AI_GATEWAY_API_KEY;
   const batchId = process.argv[2] ?? "batch-01";
-  const manifest = JSON.parse(
-    await readFile("reports/embedding-batches.json", "utf8"),
+  const extraArgs = process.argv.slice(3);
+  assert.ok(
+    extraArgs.length === 0 ||
+      (extraArgs.length === 2 && extraArgs[0] === "--manifest" && extraArgs[1]),
+    "Use batch ID followed optionally by --manifest path",
   );
+  const manifestPath = extraArgs[1] ?? "reports/embedding-batches.json";
+  const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
   const batch = manifest.batches.find((b: { id: string }) => b.id === batchId);
   assert.ok(batch, "Unknown batch");
   const asOf = new Date().toISOString().slice(0, 10);
@@ -46,8 +58,52 @@ async function main() {
   const companyCoverage = (
     await db.execute(semanticCoverageQuery(companiesBase, "companies"))
   ).rows[0];
-  assert.equal(Number(jobsCoverage.eligible), batch.jobCount);
-  assert.equal(Number(jobsCoverage.embedded), batch.jobCount);
+  // Search excludes closed/future jobs, while a document backfill includes
+  // all saved job texts. Audit both denominators without changing their facts.
+  const allJobs = (
+    await db.execute(sql`SELECT j.title,j.department,j.focus,j.skills,j.description,c.name AS "companyName"
+    FROM jobs j JOIN companies c ON c.id=j.company_id
+    WHERE c.slug IN (${sql.join(
+      batch.companySlugs.map((slug: string) => sql`${slug}`),
+      sql`, `,
+    )})`)
+  ).rows as Array<Parameters<typeof jobEmbeddingText>[0]>;
+  assert.equal(
+    allJobs.length,
+    batch.jobCount,
+    "Saved job inventory differs from manifest",
+  );
+  const documents = allJobs.map((job) => {
+    assert.ok(
+      job.description?.trim(),
+      "Cannot verify a job without its full description",
+    );
+    const text = jobEmbeddingText(job);
+    return { key: embeddingKey(text, "document", JOB_EMBEDDING_RECIPE), text };
+  });
+  const cached = documents.length
+    ? (
+        await db.execute(sql`SELECT key,content_text FROM embedding_cache
+    WHERE key IN (${sql.join(
+      [...new Set(documents.map((d) => d.key))].map((key) => sql`${key}`),
+      sql`, `,
+    )})
+    AND model_id=${EMBEDDING_MODEL} AND dimensions=${EMBEDDING_DIMENSIONS} AND input_type='document' AND recipe=${JOB_EMBEDDING_RECIPE}`)
+      ).rows
+    : [];
+  const current = new Map(
+    cached.map((row) => [String(row.key), String(row.content_text)]),
+  );
+  const allJobDocumentCoverage = {
+    eligible: documents.length,
+    embedded: documents.filter((d) => current.get(d.key) === d.text).length,
+  };
+  assert.equal(
+    allJobDocumentCoverage.embedded,
+    batch.jobCount,
+    "All-status current job text coverage is incomplete",
+  );
+  assert.equal(Number(jobsCoverage.embedded), Number(jobsCoverage.eligible));
   assert.equal(Number(companyCoverage.eligible), batch.companyCount);
   assert.equal(Number(companyCoverage.embedded), batch.companyCount);
   const globalJobs = (
@@ -92,8 +148,13 @@ async function main() {
   const queryRequestsBefore = (
     await db.execute(sql`SELECT count(*) AS n FROM embedding_requests`)
   ).rows[0].n;
-  const cases =
-    batchId === "batch-02"
+  const cases = extraArgs.length
+    ? batch.companySlugs.map((slug: string) => ({
+        slug,
+        query:
+          "Engineering roles building distributed data infrastructure and large-scale storage systems",
+      }))
+    : batchId === "batch-02"
       ? [
           {
             slug: "anthropic",
@@ -160,6 +221,16 @@ async function main() {
       3,
       "relevance",
     );
+    if (Number(r.metadata.eligibleRecords) === 0) {
+      assert.equal(r.rows.length, 0);
+      samples.push({
+        slug: sample.slug,
+        query: sample.query,
+        retrieval: r.metadata,
+        topMatches: [],
+      });
+      continue;
+    }
     assert.ok(!r.unavailable);
     assert.equal(r.metadata.completeCoverage, true);
     assert.equal(r.metadata.queryCacheHit, true);
@@ -227,6 +298,7 @@ async function main() {
     batchId,
     verifiedAt: new Date().toISOString(),
     jobsCoverage,
+    allJobDocumentCoverage,
     companyCoverage,
     globalJobsCoverage: globalJobs,
     globalCompanyCoverage: globalCompanies,

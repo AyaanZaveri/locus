@@ -2,6 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { LoaderCircleIcon } from "lucide-react";
 import { CommandSearchCache } from "@/lib/command-search-cache";
 import { immediateCompanyMatches } from "@/lib/command-company-matches";
 import {
@@ -145,7 +146,7 @@ export function CompanySearch({
         <div className="relative">
           <CommandInput
             autoFocus
-            className={isLoading && hasResults ? "pr-24" : undefined}
+            className={isLoading ? "pr-10" : undefined}
             onValueChange={(value) => {
               setSearch(value);
               setSelectedValue(noSelectionValue);
@@ -160,15 +161,12 @@ export function CompanySearch({
             placeholder="Search companies, people, and jobs..."
             value={search}
           />
-          {isLoading && hasResults ? (
-            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs">
-              <span
-                role="status"
-                className="shimmer shimmer-color-foreground text-foreground/60"
-              >
-                Searching…
-              </span>
-            </span>
+          {isLoading ? (
+            <LoaderCircleIcon
+              aria-label="Searching"
+              role="status"
+              className="pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 animate-spin text-muted-foreground motion-reduce:animate-none"
+            />
           ) : null}
         </div>
         <CommandList
@@ -178,18 +176,11 @@ export function CompanySearch({
         >
           {!hasResults ? (
             <p className="py-6 text-center text-sm text-muted-foreground">
-              {isLoading ? (
-                <span
-                  role="status"
-                  className="shimmer shimmer-color-foreground text-foreground/60"
-                >
-                  Searching…
-                </span>
-              ) : snapshot.query === query && snapshot.error ? (
-                "Search unavailable. Try again."
-              ) : (
-                "No matching companies, people, or jobs."
-              )}
+              {isLoading
+                ? "Searching…"
+                : snapshot.query === query && snapshot.error
+                  ? "Search unavailable. Try again."
+                  : "No matching companies, people, or jobs."}
               {!isLoading && !snapshot.error ? (
                 <span className="mt-2 block text-xs">
                   For deeper searches, use Locus Focus (⌘J).
