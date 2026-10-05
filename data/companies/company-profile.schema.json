@@ -94,6 +94,22 @@
           "type": "string",
           "minLength": 2,
           "maxLength": 2
+        },
+        "locationId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uuid",
+              "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceLabel": {
+          "type": "string",
+          "minLength": 1
         }
       },
       "required": [
@@ -464,6 +480,57 @@
           "location": {
             "type": "string",
             "minLength": 1
+          },
+          "locations": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "locationId": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uuid",
+                      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relation": {
+                  "type": "string",
+                  "enum": [
+                    "office",
+                    "eligibility",
+                    "unspecified"
+                  ]
+                },
+                "qualifier": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sourceLabel": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "locationId",
+                "label",
+                "relation",
+                "qualifier",
+                "sourceLabel"
+              ],
+              "additionalProperties": false
+            }
           },
           "focus": {
             "type": "string",

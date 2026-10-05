@@ -219,7 +219,10 @@ export function JobCard({ company, job }: JobCardProps) {
             </h3>
             <div className="mt-1 text-xs font-medium text-muted-foreground">
               <div className="flex min-w-0 items-center gap-1.5">
-                <JobLocations location={job.location} />
+                <JobLocations
+                  location={job.location}
+                  locations={job.locations}
+                />
                 {job.department || job.focus ? (
                   <>
                     <span aria-hidden="true" className="shrink-0">
@@ -265,7 +268,11 @@ export function JobCard({ company, job }: JobCardProps) {
               {job.title}
             </DrawerTitle>
             <DrawerDescription className="mt-2 flex items-center gap-1.5 text-sm font-medium text-muted-foreground">
-              <JobLocations location={job.location} size="details" />
+              <JobLocations
+                location={job.location}
+                locations={job.locations}
+                size="details"
+              />
             </DrawerDescription>
           </div>
           <Button

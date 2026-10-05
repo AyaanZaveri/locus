@@ -6,6 +6,10 @@ import { cn } from "cn";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { splitJobLocations } from "@/lib/job-location";
 import { getJobLocationCountryCode } from "@/lib/job-location-country";
+import {
+  locationReferenceLabels,
+  type LocationReference,
+} from "@/lib/location-reference";
 
 const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
 
@@ -63,12 +67,16 @@ export function JobLocationFlags({
 
 export function JobLocations({
   location,
+  locations,
   size = "card",
 }: {
   location: string;
+  locations?: LocationReference[];
   size?: "card" | "details";
 }) {
-  const places = splitJobLocations(location);
+  const places = locations?.length
+    ? locationReferenceLabels(locations)
+    : splitJobLocations(location);
   const visiblePlaces = size === "card" ? places.slice(0, 2) : places;
   const remainingCount = places.length - visiblePlaces.length;
 

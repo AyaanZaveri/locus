@@ -6,7 +6,10 @@ import { sanitizeLocation } from "./lib/job-location";
 const slug = process.argv[2] ?? "parallel";
 // Board slug and profile slug can differ.
 const profileSlug = process.argv[3] ?? slug;
-const profilePath = new URL(`../data/companies/${profileSlug}/company.json`, import.meta.url);
+const profilePath = new URL(
+  `../data/companies/${profileSlug}/company.json`,
+  import.meta.url,
+);
 const apiUrl = `https://api.ashbyhq.com/posting-api/job-board/${slug}?includeCompensation=true`;
 
 type AshbyJob = {
@@ -36,7 +39,9 @@ type AshbyJob = {
 function decodeEntities(value: string) {
   return value
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
-    .replace(/&#x([\da-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&#x([\da-f]+);/gi, (_, code) =>
+      String.fromCodePoint(parseInt(code, 16)),
+    )
     .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")
     .replace(/&lt;/gi, "<")
@@ -49,7 +54,10 @@ function htmlToMarkdown(html: string) {
   let markdown = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<style[\s\S]*?<\/style>/gi, "")
-    .replace(/<h[1-6][^>]*>\s*(?:<a[^>]*>\s*)?(?:<strong>)?\s*​?\s*(?:<\/strong>)?\s*(?:<\/a>)?\s*<\/h[1-6]>/gi, "")
+    .replace(
+      /<h[1-6][^>]*>\s*(?:<a[^>]*>\s*)?(?:<strong>)?\s*​?\s*(?:<\/strong>)?\s*(?:<\/a>)?\s*<\/h[1-6]>/gi,
+      "",
+    )
     .replace(/<h[1-6][^>]*>/gi, "\n\n## ")
     .replace(/<\/h[1-6]>/gi, "\n\n")
     .replace(/<li[^>]*>/gi, "\n- ")
@@ -59,10 +67,13 @@ function htmlToMarkdown(html: string) {
     .replace(/<\/(?:strong|b)>/gi, "**")
     .replace(/<(?:em|i)[^>]*>/gi, "*")
     .replace(/<\/(?:em|i)>/gi, "*")
-    .replace(/<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
-      const cleanText = text.replace(/<[^>]+>/g, "").trim();
-      return cleanText && cleanText !== "​" ? `[${cleanText}](${href})` : "";
-    })
+    .replace(
+      /<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi,
+      (_, href, text) => {
+        const cleanText = text.replace(/<[^>]+>/g, "").trim();
+        return cleanText && cleanText !== "​" ? `[${cleanText}](${href})` : "";
+      },
+    )
     .replace(/<[^>]+>/g, "");
 
   // Shared rules keep synced output identical to a normalized profile.
@@ -87,7 +98,8 @@ function focusFor(...labels: Array<string | undefined>) {
     [/people|human resources|recruiting|talent/, "People"],
     [/operations|program|enablement/, "Operations"],
   ];
-  for (const [pattern, value] of rules) if (pattern.test(haystack)) return value;
+  for (const [pattern, value] of rules)
+    if (pattern.test(haystack)) return value;
   const first = labels.find((label) => label && label.trim());
   return first?.trim() ?? "Other";
 }
@@ -132,7 +144,9 @@ function structuredFields(job: AshbyJob) {
               currency: salary.currencyCode ?? "USD",
               period: salary.interval === "1 YEAR" ? "year" : "year",
             },
-            ...(equity ? { equity: { minimumPercent: null, maximumPercent: null } } : {}),
+            ...(equity
+              ? { equity: { minimumPercent: null, maximumPercent: null } }
+              : {}),
           },
         }
       : {}),
@@ -148,10 +162,14 @@ function structuredFields(job: AshbyJob) {
 
 async function main() {
   const response = await fetch(apiUrl);
-  if (!response.ok) throw new Error(`Ashby returned ${response.status} for ${apiUrl}`);
+  if (!response.ok)
+    throw new Error(`Ashby returned ${response.status} for ${apiUrl}`);
   const payload = (await response.json()) as { jobs?: AshbyJob[] };
-  const ashbyJobs = (payload.jobs ?? []).filter((job) => job.isListed !== false);
-  if (!ashbyJobs.length) throw new Error(`Ashby returned no listed jobs for ${slug}`);
+  const ashbyJobs = (payload.jobs ?? []).filter(
+    (job) => job.isListed !== false,
+  );
+  if (!ashbyJobs.length)
+    throw new Error(`Ashby returned no listed jobs for ${slug}`);
 
   const profile = JSON.parse(await readFile(profilePath, "utf8")) as {
     jobs?: Array<Record<string, unknown>>;
@@ -163,7 +181,10 @@ async function main() {
     const key = job.jobUrl;
     const old = previous.get(key) ?? previous.get(job.title) ?? {};
     const locations = sanitizeLocation(
-      [job.location, ...(job.secondaryLocations ?? []).map((item) => item.location ?? "")]
+      [
+        job.location,
+        ...(job.secondaryLocations ?? []).map((item) => item.location ?? ""),
+      ]
         .filter(Boolean)
         .join(" | "),
     );
@@ -171,6 +192,9 @@ async function main() {
       ...old,
       title: job.title,
       location: locations,
+      // Rebuild Cursor references at import from the newly fetched ATS labels;
+      // old structured snapshots must not override a changed source location.
+      ...(profileSlug === "cursor" ? { locations: undefined } : {}),
       focus: focusFor(job.department, job.team, job.title),
       url: job.jobUrl,
       ...structuredFields(job),
@@ -179,7 +203,9 @@ async function main() {
 
   profile.jobs = jobs;
   await writeFile(profilePath, `${JSON.stringify(profile, null, 2)}\n`);
-  console.log(`Synced ${jobs.length} listed Ashby jobs for ${slug} from ${apiUrl}`);
+  console.log(
+    `Synced ${jobs.length} listed Ashby jobs for ${slug} from ${apiUrl}`,
+  );
 }
 
 main().catch((error: unknown) => {

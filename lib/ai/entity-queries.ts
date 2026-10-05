@@ -2,6 +2,7 @@ import { sql, type SQL } from "drizzle-orm";
 import { z } from "zod";
 
 import { companies, people } from "../db/schema";
+import { companyLocationPredicate } from "../location-query";
 
 const shortText = z.string().trim().min(1).max(120);
 const companySlugs = z
@@ -101,7 +102,14 @@ function commonFilters(input: CompanyFilters) {
       )})`,
     );
   if (input.industry) filters.push(contains(sql`industry`, input.industry));
-  if (input.location) filters.push(contains(sql`location`, input.location));
+  if (input.location)
+    filters.push(
+      companyLocationPredicate(
+        sql`headquarters_location_id`,
+        sql`location`,
+        input.location,
+      ),
+    );
   if (input.countryCode)
     filters.push(sql`lower(country_code) = lower(${input.countryCode})`);
   return filters;
@@ -151,7 +159,7 @@ export function buildCompaniesQuery(
   }[input.sortBy];
   return sql`
     WITH base AS (
-      SELECT c.slug, c.name, c.industry, c.stage, c.location, c.country_code,
+      SELECT c.slug, c.name, c.industry, c.stage, c.location, c.country_code, c.headquarters_location_id,
         c.employee_count, c.profile->>'logo' AS logo, c.profile->>'tagline' AS tagline,
         c.profile->>'description' AS description, c.profile->>'website' AS source_url,
         regexp_replace(replace(c.employee_count, ',', ''), ' employees.*$', '') AS employee_spec,
@@ -210,7 +218,7 @@ export function buildPeopleQuery(
               AND jsonb_typeof(person->'isFounder') = 'boolean'
             LIMIT 1)
         END AS is_founder,
-        c.slug, c.name AS company_name, c.industry, c.location, c.country_code,
+        c.slug, c.name AS company_name, c.industry, c.location, c.country_code, c.headquarters_location_id,
         c.profile->>'logo' AS company_logo
       FROM ${source}
     )
@@ -239,7 +247,7 @@ export function buildActivityQuery(
       : sql`date DESC`;
   return sql`
     WITH events AS (
-      SELECT c.slug, c.name, c.industry, c.location, c.country_code,
+      SELECT c.slug, c.name, c.industry, c.location, c.country_code, c.headquarters_location_id,
         c.profile->>'logo' AS logo, item->>'type' AS type,
         item->>'title' AS title, item->>'description' AS description,
         CASE WHEN item->>'dateTime' ~ ${datePattern} THEN item->>'dateTime' END AS date,

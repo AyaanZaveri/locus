@@ -3,6 +3,10 @@ import { join } from "node:path";
 import { connection } from "next/server";
 import { z } from "zod";
 import { sanitizeLocation } from "./job-location";
+import {
+  locationReferenceSchema,
+  locationReferencesDisplay,
+} from "./location-reference";
 
 const activityTypeSchema = z.enum([
   "documentation",
@@ -131,6 +135,8 @@ export const companyProfileSchema = z.object({
   location: z.object({
     label: z.string().min(1),
     countryCode: z.string().length(2),
+    locationId: z.string().uuid().nullable().optional(),
+    sourceLabel: z.string().min(1).optional(),
   }),
   stage: z.string().min(1),
   employees: z.string().min(1),
@@ -148,6 +154,7 @@ export const companyProfileSchema = z.object({
     z.object({
       title: z.string().min(1),
       location: z.string().min(1),
+      locations: z.array(locationReferenceSchema).min(1).optional(),
       focus: z.string().min(1),
       url: z.string().url().nullable().optional(),
       description: z.string().min(1).nullable().optional(),
@@ -221,9 +228,13 @@ function normalizeCompany(source: Record<string, unknown>) {
           return {
             ...record,
             location:
-              typeof record.location === "string"
-                ? sanitizeLocation(record.location)
-                : record.location,
+              Array.isArray(record.locations) && record.locations.length
+                ? locationReferencesDisplay(
+                    z.array(locationReferenceSchema).parse(record.locations),
+                  )
+                : typeof record.location === "string"
+                  ? sanitizeLocation(record.location)
+                  : record.location,
           };
         })
       : source.jobs,
@@ -305,8 +316,11 @@ export async function getCompanies() {
       columns: { profile: true },
     });
 
-    return records.map((record) =>
-      parseCompanyProfile(record.profile as Record<string, unknown>),
+    const { hydrateLocationLabels } = await import("./db/location-labels");
+    return hydrateLocationLabels(
+      records.map((record) =>
+        parseCompanyProfile(record.profile as Record<string, unknown>),
+      ),
     );
   } catch (error) {
     throw new Error("Unable to load company profiles from Neon.", {
@@ -331,7 +345,7 @@ export async function getCompanyDirectory(): Promise<CompanyDirectoryItem[]> {
   await connection();
 
   try {
-    const [{ db }, { companies }, { sql }] = await Promise.all([
+    const [{ db }, { companies, locations }, { sql, eq }] = await Promise.all([
       import("./db"),
       import("./db/schema"),
       import("drizzle-orm"),
@@ -341,7 +355,7 @@ export async function getCompanyDirectory(): Promise<CompanyDirectoryItem[]> {
         slug: companies.slug,
         name: companies.name,
         industry: companies.industry,
-        locationLabel: companies.location,
+        locationLabel: sql<string>`coalesce(${locations.displayLabel},${companies.location})`,
         countryCode: companies.countryCode,
         stage: companies.stage,
         tagline: sql<string>`${companies.profile} ->> 'tagline'`,
@@ -352,6 +366,7 @@ export async function getCompanyDirectory(): Promise<CompanyDirectoryItem[]> {
         logo: sql<string | null>`${companies.profile} ->> 'logo'`,
       })
       .from(companies)
+      .leftJoin(locations, eq(companies.headquartersLocationId, locations.id))
       .orderBy(companies.name);
 
     return records.map(({ locationLabel, countryCode, ...record }) => ({
@@ -370,7 +385,7 @@ export async function getCompanyNavigation(): Promise<CompanyNavigationItem[]> {
   await connection();
 
   try {
-    const [{ db }, { companies }, { sql }] = await Promise.all([
+    const [{ db }, { companies, locations }, { sql, eq }] = await Promise.all([
       import("./db"),
       import("./db/schema"),
       import("drizzle-orm"),
@@ -380,7 +395,7 @@ export async function getCompanyNavigation(): Promise<CompanyNavigationItem[]> {
         slug: companies.slug,
         name: companies.name,
         industry: companies.industry,
-        location: companies.location,
+        location: sql<string>`coalesce(${locations.displayLabel},${companies.location})`,
         countryCode: companies.countryCode,
         logo: sql<string | null>`${companies.profile} ->> 'logo'`,
         latestFundingAt: sql<string | null>`(
@@ -391,6 +406,7 @@ export async function getCompanyNavigation(): Promise<CompanyNavigationItem[]> {
         )`,
       })
       .from(companies)
+      .leftJoin(locations, eq(companies.headquartersLocationId, locations.id))
       .orderBy(companies.name);
   } catch (error) {
     throw new Error("Unable to load company navigation from Neon.", {
@@ -413,9 +429,13 @@ export async function getCompanyProfile(slug: string) {
       columns: { profile: true },
     });
 
-    return record
-      ? parseCompanyProfile(record.profile as Record<string, unknown>)
-      : undefined;
+    if (!record) return undefined;
+    const { hydrateLocationLabels } = await import("./db/location-labels");
+    return (
+      await hydrateLocationLabels([
+        parseCompanyProfile(record.profile as Record<string, unknown>),
+      ])
+    )[0];
   } catch (error) {
     throw new Error(`Unable to load company profile "${slug}" from Neon.`, {
       cause: error,

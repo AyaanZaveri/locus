@@ -40,14 +40,25 @@ const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
 
 function getLocationGroups(jobs: Props["jobs"]) {
   const counts = new Map<string, number>();
+  const labels = new Map<string, string>();
   const countryJobs = new Map<string, Set<number>>();
 
   for (const [index, job] of jobs.entries()) {
-    for (const label of new Set(
-      splitJobLocations(job.location).map(displayLocation),
-    )) {
+    const options = job.locations?.length
+      ? job.locations.map((place) => ({
+          value: place.locationId ?? displayLocation(place.label),
+          label: displayLocation(place.label),
+        }))
+      : splitJobLocations(job.location).map((place) => ({
+          value: displayLocation(place),
+          label: displayLocation(place),
+        }));
+    for (const { value, label } of new Map(
+      options.map((option) => [option.value, option]),
+    ).values()) {
       if (!label || /\bremote\b/i.test(label)) continue;
-      counts.set(label, (counts.get(label) ?? 0) + 1);
+      labels.set(value, label);
+      counts.set(value, (counts.get(value) ?? 0) + 1);
       const code = getJobLocationCountryCode(label) ?? "other";
       if (!countryJobs.has(code)) countryJobs.set(code, new Set());
       countryJobs.get(code)!.add(index);
@@ -55,10 +66,10 @@ function getLocationGroups(jobs: Props["jobs"]) {
   }
 
   const placesByCountry = new Map<string, string[]>();
-  for (const place of counts.keys()) {
-    const code = getJobLocationCountryCode(place) ?? "other";
+  for (const [value, label] of labels) {
+    const code = getJobLocationCountryCode(label) ?? "other";
     if (!placesByCountry.has(code)) placesByCountry.set(code, []);
-    placesByCountry.get(code)!.push(place);
+    placesByCountry.get(code)!.push(value);
   }
 
   return [...placesByCountry]
@@ -69,10 +80,13 @@ function getLocationGroups(jobs: Props["jobs"]) {
           ? "Other locations"
           : (countryNames.of(code.toUpperCase()) ?? code),
       jobCount: countryJobs.get(code)?.size ?? 0,
-      places: places.sort(
-        (a, b) =>
-          (counts.get(b) ?? 0) - (counts.get(a) ?? 0) || a.localeCompare(b),
-      ),
+      places: places
+        .map((value) => ({ value, label: labels.get(value)! }))
+        .sort(
+          (a, b) =>
+            (counts.get(b.value) ?? 0) - (counts.get(a.value) ?? 0) ||
+            a.label.localeCompare(b.label),
+        ),
     }))
     .sort(
       (a, b) =>
@@ -153,7 +167,12 @@ export function CompanyJobs({ company, jobs }: Props) {
     () => [
       { label: "All locations", value: "all" },
       ...(hasRemoteJobs ? [{ label: "Remote", value: "remote" }] : []),
-      ...locations.map((place) => ({ label: place, value: place })),
+      ...locationGroups.flatMap((group) =>
+        group.places.map((place) => ({
+          label: place.label,
+          value: place.value,
+        })),
+      ),
     ],
     [hasRemoteJobs, locations],
   );
@@ -165,7 +184,8 @@ export function CompanyJobs({ company, jobs }: Props) {
     : selectedLocations.length === 1
       ? selectedLocations[0] === "remote"
         ? "Remote"
-        : selectedLocations[0]
+        : (locations.find((place) => place.value === selectedLocations[0])
+            ?.label ?? selectedLocations[0])
       : `${selectedLocations.length} locations`;
   function changeLocations(next: string[]) {
     setSelectedLocations((previous) =>
@@ -266,9 +286,9 @@ export function CompanyJobs({ company, jobs }: Props) {
                   ...locationGroups.map((group) => ({
                     label: group.label,
                     options: group.places.map((place) => ({
-                      value: place,
-                      label: place,
-                      icon: <LocationIcon location={place} />,
+                      value: place.value,
+                      label: place.label,
+                      icon: <LocationIcon location={place.label} />,
                     })),
                   })),
                 ]}
@@ -346,12 +366,12 @@ export function CompanyJobs({ company, jobs }: Props) {
                           {group.places.map((place) => (
                             <SelectItem
                               className="pr-12"
-                              key={place}
-                              value={place}
+                              key={place.value}
+                              value={place.value}
                             >
                               <span className="flex items-center gap-2">
-                                <LocationIcon location={place} />
-                                {place}
+                                <LocationIcon location={place.label} />
+                                {place.label}
                               </span>
                             </SelectItem>
                           ))}

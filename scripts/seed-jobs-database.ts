@@ -6,8 +6,19 @@ import {
 } from "../lib/company-profile";
 import { readFile } from "node:fs/promises";
 import { db } from "../lib/db/client";
-import { companies, jobs, people } from "../lib/db/schema";
+import {
+  companies,
+  jobs,
+  people,
+  locations,
+  locationAliases,
+  jobLocations,
+} from "../lib/db/schema";
 import { getJobLocationReviewIssues } from "../lib/job-location";
+import {
+  LocationCatalog,
+  type CanonicalLocation,
+} from "./lib/location-catalog";
 
 function searchText(
   companyName: string,
@@ -45,6 +56,26 @@ async function main() {
     : await getCompaniesFromFiles();
   let jobCount = 0;
   let peopleCount = 0;
+  const catalog = new LocationCatalog(
+    (await db.select().from(locations)) as CanonicalLocation[],
+    await db.select().from(locationAliases),
+  );
+  for (const profile of profiles) {
+    const sourceLabel = profile.location.sourceLabel ?? profile.location.label;
+    const place = catalog.place(sourceLabel, profile.location.countryCode);
+    profile.location = {
+      ...profile.location,
+      label: place?.displayLabel ?? profile.location.label,
+      locationId: place?.id ?? null,
+      sourceLabel,
+    };
+    profile.jobs = profile.jobs.map((job) => ({
+      ...job,
+      ...catalog.job(job, {
+        inferRemoteEligibility: profile.slug !== "cursor",
+      }),
+    }));
+  }
 
   // Check the entire import before any writes. An unchanged normalization
   // result can mean an unknown alias, not a correctly formatted place.
@@ -61,6 +92,23 @@ async function main() {
     );
   }
 
+  catalog.seedVerifiedAliases();
+  if (catalog.places.size)
+    await db
+      .insert(locations)
+      .values([...catalog.places.values()])
+      .onConflictDoNothing();
+  if (catalog.aliases.size)
+    await db
+      .insert(locationAliases)
+      .values(
+        [...catalog.aliases].map(([alias, locationId]) => ({
+          alias,
+          locationId,
+        })),
+      )
+      .onConflictDoNothing();
+
   for (const profile of profiles) {
     const [company] = await db
       .insert(companies)
@@ -71,6 +119,7 @@ async function main() {
         stage: profile.stage,
         location: profile.location.label,
         countryCode: profile.location.countryCode,
+        headquartersLocationId: profile.location.locationId ?? null,
         employeeCount: profile.employees,
         profile,
         updatedAt: new Date(),
@@ -83,6 +132,7 @@ async function main() {
           stage: profile.stage,
           location: profile.location.label,
           countryCode: profile.location.countryCode,
+          headquartersLocationId: profile.location.locationId ?? null,
           employeeCount: profile.employees,
           profile,
           updatedAt: new Date(),
@@ -94,46 +144,78 @@ async function main() {
     await db.delete(people).where(eq(people.companyId, company.id));
 
     if (profile.jobs.length) {
-      await db.insert(jobs).values(
-        profile.jobs.map((job) => ({
-          companyId: company.id,
-          title: job.title,
-          location: job.location,
-          focus: job.focus,
-          url: job.url ?? null,
-          description: job.description ?? null,
-          status: job.status ?? "unknown",
-          workplaceType: job.workplaceType ?? null,
-          employmentType: job.employmentType ?? null,
-          department: job.department ?? null,
-          skills: job.skills ?? [],
-          minimumExperienceYears:
-            job.experience?.minimumYears?.toString() ?? null,
-          maximumExperienceYears:
-            job.experience?.maximumYears?.toString() ?? null,
-          experienceLevel: job.experience?.level ?? null,
-          acceptsNewGrads: job.experience?.acceptsNewGrads ?? null,
-          salaryMinimum: job.compensation?.salary?.minimum?.toString() ?? null,
-          salaryMaximum: job.compensation?.salary?.maximum?.toString() ?? null,
-          salaryCurrency: job.compensation?.salary?.currency ?? null,
-          salaryPeriod: job.compensation?.salary?.period ?? null,
-          equityMinimumPercent:
-            job.compensation?.equity?.minimumPercent?.toString() ?? null,
-          equityMaximumPercent:
-            job.compensation?.equity?.maximumPercent?.toString() ?? null,
-          requiresUsWorkAuthorization:
-            job.visa?.requiresUSWorkAuthorization ?? null,
-          visaSponsorship: job.visa?.sponsorship ?? null,
-          citizenshipRequired: job.visa?.citizenshipRequired ?? null,
-          interviewProcessAvailable: job.interviewProcess?.available ?? null,
-          interviewProcessSummary: job.interviewProcess?.summary ?? null,
-          interviewProcessUrl: job.interviewProcess?.url ?? null,
-          postedAt: job.postedAt ?? null,
-          lastSeenAt: job.lastSeenAt ?? null,
-          searchText: searchText(profile.name, job),
-          updatedAt: new Date(),
-        })),
-      );
+      const importedJobs = await db
+        .insert(jobs)
+        .values(
+          profile.jobs.map((job) => ({
+            companyId: company.id,
+            title: job.title,
+            location: job.location,
+            focus: job.focus,
+            url: job.url ?? null,
+            description: job.description ?? null,
+            status: job.status ?? "unknown",
+            workplaceType: job.workplaceType ?? null,
+            employmentType: job.employmentType ?? null,
+            department: job.department ?? null,
+            skills: job.skills ?? [],
+            minimumExperienceYears:
+              job.experience?.minimumYears?.toString() ?? null,
+            maximumExperienceYears:
+              job.experience?.maximumYears?.toString() ?? null,
+            experienceLevel: job.experience?.level ?? null,
+            acceptsNewGrads: job.experience?.acceptsNewGrads ?? null,
+            salaryMinimum:
+              job.compensation?.salary?.minimum?.toString() ?? null,
+            salaryMaximum:
+              job.compensation?.salary?.maximum?.toString() ?? null,
+            salaryCurrency: job.compensation?.salary?.currency ?? null,
+            salaryPeriod: job.compensation?.salary?.period ?? null,
+            equityMinimumPercent:
+              job.compensation?.equity?.minimumPercent?.toString() ?? null,
+            equityMaximumPercent:
+              job.compensation?.equity?.maximumPercent?.toString() ?? null,
+            requiresUsWorkAuthorization:
+              job.visa?.requiresUSWorkAuthorization ?? null,
+            visaSponsorship: job.visa?.sponsorship ?? null,
+            citizenshipRequired: job.visa?.citizenshipRequired ?? null,
+            interviewProcessAvailable: job.interviewProcess?.available ?? null,
+            interviewProcessSummary: job.interviewProcess?.summary ?? null,
+            interviewProcessUrl: job.interviewProcess?.url ?? null,
+            postedAt: job.postedAt ?? null,
+            lastSeenAt: job.lastSeenAt ?? null,
+            searchText: searchText(profile.name, job),
+            updatedAt: new Date(),
+          })),
+        )
+        .returning({
+          id: jobs.id,
+          title: jobs.title,
+          url: jobs.url,
+          location: jobs.location,
+        });
+      // Match explicit identities, not an assumed INSERT RETURNING order.
+      const available = [...importedJobs];
+      const links = profile.jobs.flatMap((job) => {
+        const index = available.findIndex(
+          (row) =>
+            row.title === job.title &&
+            row.url === (job.url ?? null) &&
+            row.location === job.location,
+        );
+        if (index < 0) throw new Error(`Missing imported job: ${job.title}`);
+        const [row] = available.splice(index, 1);
+        return (job.locations ?? []).map((ref, position) => ({
+          jobId: row.id,
+          position,
+          locationId: ref.locationId,
+          relation: ref.relation,
+          qualifier: ref.qualifier,
+          sourceLabel: ref.sourceLabel,
+          label: ref.label,
+        }));
+      });
+      if (links.length) await db.insert(jobLocations).values(links);
       jobCount += profile.jobs.length;
     }
 

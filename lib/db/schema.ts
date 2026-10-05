@@ -10,8 +10,40 @@ import {
   timestamp,
   uuid,
   vector,
+  check,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
+
+export const locations = pgTable(
+  "locations",
+  {
+    id: uuid("id").primaryKey(),
+    identityKey: text("identity_key").notNull().unique(),
+    name: text("name").notNull(),
+    displayLabel: text("display_label").notNull(),
+    kind: text("kind").notNull(),
+    countryCode: text("country_code"),
+    subdivisionCode: text("subdivision_code"),
+  },
+  (table) => [
+    index("locations_country_idx").on(table.countryCode),
+    check(
+      "locations_kind_check",
+      sql`${table.kind} IN ('city', 'country', 'subdivision', 'region')`,
+    ),
+  ],
+);
+
+export const locationAliases = pgTable(
+  "location_aliases",
+  {
+    alias: text("alias").primaryKey(),
+    locationId: uuid("location_id")
+      .notNull()
+      .references(() => locations.id),
+  },
+  (table) => [index("location_aliases_location_idx").on(table.locationId)],
+);
 
 /**
  * A company stays as a complete profile document for the rich company page.
@@ -27,6 +59,9 @@ export const companies = pgTable(
     stage: text("stage").notNull(),
     location: text("location").notNull(),
     countryCode: text("country_code").notNull(),
+    headquartersLocationId: uuid("headquarters_location_id").references(
+      () => locations.id,
+    ),
     employeeCount: text("employee_count").notNull(),
     profile: jsonb("profile").notNull(),
     updatedAt: timestamp("updated_at", { withTimezone: true })
@@ -94,6 +129,31 @@ export const jobs = pgTable(
       table.employmentType,
     ),
     index("jobs_department_idx").on(table.department),
+  ],
+);
+
+/** Multiple locations are rows, not an array of foreign keys. */
+export const jobLocations = pgTable(
+  "job_locations",
+  {
+    jobId: uuid("job_id")
+      .notNull()
+      .references(() => jobs.id, { onDelete: "cascade" }),
+    position: integer("position").notNull(),
+    locationId: uuid("location_id").references(() => locations.id),
+    relation: text("relation").notNull(),
+    qualifier: text("qualifier"),
+    sourceLabel: text("source_label").notNull(),
+    label: text("label").notNull(),
+  },
+  (table) => [
+    primaryKey({ columns: [table.jobId, table.position] }),
+    index("job_locations_location_idx").on(table.locationId, table.jobId),
+    check(
+      "job_locations_relation_check",
+      sql`${table.relation} IN ('office', 'eligibility', 'unspecified')`,
+    ),
+    check("job_locations_position_check", sql`${table.position} >= 0`),
   ],
 );
 

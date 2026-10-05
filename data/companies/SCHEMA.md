@@ -91,7 +91,7 @@ verified, and keep valid existing images on a failed refresh.
     | "Market Intelligence"
     | "Web Search"
     | "Workflow Orchestration",
-  location: { label: string, countryCode: string }, // ISO 3166-1 alpha-2, lowercase
+  location: { label: string, countryCode: string, locationId?: string | null, sourceLabel?: string },
   stage: string,
   employees: string,
   financials: {
@@ -158,6 +158,14 @@ type FundingRound = {
 type Job = {
   title: string;
   location: string; // normalized verified places separated by " | "; commas stay within one place
+  // Canonical references; location is a compatibility display derived from these.
+  locations?: {
+    locationId: string | null;
+    label: string;
+    relation: "office" | "eligibility" | "unspecified";
+    qualifier: string | null;
+    sourceLabel: string;
+  }[];
   focus: string;
   url?: string | null;
   // Almost-lossless, sanitized CommonMark transcription of the full posting.
@@ -231,6 +239,29 @@ type Activity = {
 ```
 
 ### Job location policy
+
+PostgreSQL now stores shared places in `locations`, exact verified aliases in
+`location_aliases`, and one job/place reference per row in `job_locations`.
+Companies reference the same catalog via `headquarters_location_id`. Do not use
+arrays of foreign keys, dataset indices, or display labels as place identity.
+Place IDs survive label changes. The `country-state-city` package is an import-time
+reference dataset, not a fuzzy geocoder or a browser dependency.
+
+In JSON, use a `locations` array of reference objects. `label` is a canonical
+display snapshot, `sourceLabel` preserves provenance, `qualifier` retains HQ,
+hybrid or travel restrictions, and `relation: "eligibility"` distinguishes remote
+scope from an office. A null ID explicitly preserves an unresolved place or a
+non-geographic scope such as a time-zone requirement. Never guess a city for a
+country, region, or ambiguous label. Keep `location` for compatibility; parsing
+derives it from the references when present. Import accepts legacy strings and
+resolves them against the shared catalog. Company location also retains its
+original `sourceLabel` alongside `locationId`.
+
+Use `npm run db:migrate-locations -- --report /absolute/report.json` to review a
+backfill. Applying requires `--apply --backup /absolute/new-backup.json`. This
+command preserves existing job IDs, embeddings, people, and non-location data,
+uses an atomic optimistic-concurrency guard, and verifies every stored record.
+Do not bulk-seed ignored company caches to perform this migration.
 
 Normalize every job location with the shared deterministic `sanitizeLocation`
 normalizer at parse/import boundaries. Use curated verified aliases only; do

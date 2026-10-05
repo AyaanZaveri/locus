@@ -1,6 +1,7 @@
 import { sql, type SQL } from "drizzle-orm";
 import { companyAliases, type companyAliasSchema } from "./company-aliases";
 import type { z } from "zod";
+import { companyLocationPredicate } from "./location-query";
 
 export function wordStartPattern(query: string) {
   return `(^|[^[:alnum:]])${query.replace(/[\\^$.*+?()[\]{}|]/g, "\\$&")}`;
@@ -54,7 +55,7 @@ export function buildCompanySearchQuery(
         ORDER BY (lower(a.name) = lower(${query})) DESC, a.name LIMIT 1
       ) alias_match ON true
       WHERE name ~* ${pattern} OR slug ~* ${pattern}
-        OR industry ~* ${pattern} OR location ~* ${pattern}
+        OR industry ~* ${pattern} OR ${companyLocationPredicate(sql`c.headquarters_location_id`, sql`c.location`, query)}
         OR alias_match.record IS NOT NULL
     ), candidates AS (
       SELECT *, CASE rank WHEN 0 THEN 'exact' WHEN 1 THEN 'alias-exact'

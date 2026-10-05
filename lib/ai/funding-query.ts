@@ -2,6 +2,7 @@ import { sql, type SQL } from "drizzle-orm";
 import { z } from "zod";
 
 import { companies } from "../db/schema";
+import { companyLocationPredicate } from "../location-query";
 
 const companySlug = z
   .string()
@@ -96,7 +97,13 @@ export function buildFundingQuery(
   if (input.industry)
     filters.push(sql`strpos(lower(industry), lower(${input.industry})) > 0`);
   if (input.location)
-    filters.push(sql`strpos(lower(location), lower(${input.location})) > 0`);
+    filters.push(
+      companyLocationPredicate(
+        sql`headquarters_location_id`,
+        sql`location`,
+        input.location,
+      ),
+    );
   if (input.countryCode)
     filters.push(sql`lower(country_code) = ${input.countryCode}`);
   if (input.stage) filters.push(sql`lower(stage) = lower(${input.stage})`);
@@ -119,6 +126,7 @@ export function buildFundingQuery(
   return sql`
     WITH rounds AS (
       SELECT c.slug, c.name, c.profile->>'industry' AS industry,
+        c.headquarters_location_id,
         c.profile->'location'->>'label' AS location,
         c.profile->'location'->>'countryCode' AS country_code,
         c.profile->>'logo' AS logo,

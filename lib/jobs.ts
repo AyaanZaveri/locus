@@ -9,11 +9,13 @@ import {
   ilike,
   isNotNull,
   or,
+  sql,
 } from "drizzle-orm";
 
 import { db } from "./db";
 import { companies, jobs } from "./db/schema";
 import { sanitizeLocation } from "./job-location";
+import { jobLocationPredicate } from "./location-query";
 
 export type JobFilters = {
   query?: string;
@@ -50,7 +52,13 @@ export async function getJobs(filters: JobFilters = {}) {
         ilike(jobs.searchText, query),
         ilike(companies.name, query),
         ...(canonicalLocation !== filters.query.trim()
-          ? [ilike(jobs.location, `%${canonicalLocation}%`)]
+          ? [
+              jobLocationPredicate(
+                sql`${jobs.id}`,
+                sql`${jobs.location}`,
+                canonicalLocation,
+              ),
+            ]
           : []),
       )!,
     );
@@ -66,7 +74,13 @@ export async function getJobs(filters: JobFilters = {}) {
   if (filters.companyStage)
     clauses.push(eq(companies.stage, filters.companyStage));
   if (filters.location)
-    clauses.push(ilike(jobs.location, `%${sanitizeLocation(filters.location)}%`));
+    clauses.push(
+      jobLocationPredicate(
+        sql`${jobs.id}`,
+        sql`${jobs.location}`,
+        sanitizeLocation(filters.location),
+      ),
+    );
   if (filters.remote) clauses.push(eq(jobs.workplaceType, "remote"));
   if (filters.minimumExperienceYears !== undefined) {
     clauses.push(

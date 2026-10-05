@@ -67,3 +67,44 @@ test("location matching preserves hybrid normalization and ignores casing", () =
     true,
   );
 });
+
+test("structured locations match by canonical ID and label aliases share an option", () => {
+  const structured = {
+    location: "Toronto HQ",
+    locations: [
+      {
+        locationId: "canonical-toronto",
+        label: "Toronto",
+        relation: "office" as const,
+        qualifier: null,
+        sourceLabel: "Toronto HQ",
+      },
+    ],
+  };
+  assert.equal(
+    matchesJobLocationFilter(structured, ["canonical-toronto"]),
+    true,
+  );
+  assert.equal(matchesJobLocationFilter(structured, ["Toronto"]), true);
+});
+
+test("legacy URL label selections continue matching structured locations by label", () => {
+  assert.equal(
+    matchesJobLocationFilter(
+      {
+        location: "Toronto HQ",
+        locations: [
+          {
+            locationId: "canonical-toronto",
+            label: "Toronto",
+            relation: "office",
+            qualifier: null,
+            sourceLabel: "Toronto HQ",
+          },
+        ],
+      },
+      ["Toronto"],
+    ),
+    true,
+  );
+});

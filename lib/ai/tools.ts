@@ -13,6 +13,7 @@ import {
 
 import { db } from "@/lib/db";
 import { companies, jobs, people } from "@/lib/db/schema";
+import { jobLocationPredicate } from "@/lib/location-query";
 import { parseCompanyProfile } from "@/lib/company-profile";
 import { search, type SearchResponse } from "@/lib/search";
 import {
@@ -776,7 +777,11 @@ export const locusTools = {
         .where(
           and(
             or(eq(jobs.status, "open"), eq(jobs.status, "unknown")),
-            ilike(jobs.searchText, `%${location}%`),
+            jobLocationPredicate(
+              sql`${jobs.id}`,
+              sql`${jobs.location}`,
+              location,
+            ),
           ),
         )
         .orderBy(

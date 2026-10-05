@@ -7,6 +7,7 @@ import { companies, jobs } from "./db/schema";
 import { sanitizeLocation } from "./job-location";
 import { buildCompanySearchQuery } from "./company-search";
 import { buildPersonSearchQuery } from "./person-search";
+import { jobLocationPredicate } from "./location-query";
 
 const defaultCompanyLimit = 6;
 const defaultPersonLimit = 8;
@@ -120,21 +121,16 @@ export async function search(
         )
       : Promise.resolve([]),
     types.includes("people")
-      ? db
-          .execute(buildPersonSearchQuery(normalizedQuery, personLimit))
-          .then(
-            (result) =>
-              result.rows as Array<
-                Omit<
-                  SearchResponse["people"][number],
-                  "url" | "companyLogo"
-                > & {
-                  profile: unknown;
-                  linkedin: string | null;
-                  sourceUrl: string | null;
-                }
-              >,
-          )
+      ? db.execute(buildPersonSearchQuery(normalizedQuery, personLimit)).then(
+          (result) =>
+            result.rows as Array<
+              Omit<SearchResponse["people"][number], "url" | "companyLogo"> & {
+                profile: unknown;
+                linkedin: string | null;
+                sourceUrl: string | null;
+              }
+            >,
+        )
       : Promise.resolve([]),
     types.includes("jobs")
       ? db
@@ -156,7 +152,13 @@ export async function search(
               or(
                 ilike(jobs.searchText, pattern),
                 ...(canonicalLocation !== normalizedQuery
-                  ? [ilike(jobs.location, `%${canonicalLocation}%`)]
+                  ? [
+                      jobLocationPredicate(
+                        sql`${jobs.id}`,
+                        sql`${jobs.location}`,
+                        canonicalLocation,
+                      ),
+                    ]
                   : []),
               ),
             ),

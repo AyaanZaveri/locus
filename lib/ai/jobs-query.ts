@@ -2,6 +2,7 @@ import { sql, type SQL } from "drizzle-orm";
 import { z } from "zod";
 
 import { companies, jobs } from "../db/schema";
+import { jobLocationPredicate } from "../location-query";
 
 export const jobsQuerySchema = z
   .object({
@@ -92,7 +93,9 @@ export function buildJobsQuery(
       sql`EXISTS (SELECT 1 FROM unnest(j.skills) s WHERE strpos(lower(s), lower(${skill})) > 0)`,
     );
   if (input.location)
-    filters.push(sql`strpos(lower(j.location), lower(${input.location})) > 0`);
+    filters.push(
+      jobLocationPredicate(sql`j.id`, sql`j.location`, input.location),
+    );
   if (input.industry)
     filters.push(
       sql`strpos(lower(c.profile->>'industry'), lower(${input.industry})) > 0`,

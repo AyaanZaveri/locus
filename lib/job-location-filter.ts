@@ -1,5 +1,13 @@
 import { splitJobLocations } from "./job-location";
 
+export type FilterLocationReference = {
+  locationId: string | null;
+  label: string;
+  relation: "office" | "eligibility" | "unspecified";
+  qualifier: string | null;
+  sourceLabel: string;
+};
+
 export function displayJobFilterLocation(place: string) {
   return place
     .trim()
@@ -18,16 +26,30 @@ export function normalizeJobLocationSelection(
 }
 
 export function matchesJobLocationFilter(
-  job: { location: string; workplaceType?: string | null },
+  job: {
+    location: string;
+    locations?: FilterLocationReference[];
+    workplaceType?: string | null;
+  },
   selected: string[],
 ) {
   if (!selected.length || selected.includes("all")) return true;
-  const places = splitJobLocations(job.location).map((place) =>
-    displayJobFilterLocation(place).toLowerCase(),
-  );
+  const places = job.locations?.length
+    ? job.locations.map((place) => ({
+        id: place.locationId,
+        label: displayJobFilterLocation(place.label).toLowerCase(),
+      }))
+    : splitJobLocations(job.location).map((place) => ({
+        id: null,
+        label: displayJobFilterLocation(place).toLowerCase(),
+      }));
   return selected.some((location) =>
     location === "remote"
       ? job.workplaceType === "remote" || /\bremote\b/i.test(job.location)
-      : places.includes(location.toLowerCase()),
+      : places.some((place) =>
+          place.id
+            ? place.id === location || place.label === location.toLowerCase()
+            : place.label === location.toLowerCase(),
+        ),
   );
 }
