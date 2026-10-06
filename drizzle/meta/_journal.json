@@ -36,6 +36,20 @@
       "when": 1791135761512,
       "tag": "0004_absurd_bloodaxe",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791238125893,
+      "tag": "0005_keen_junta",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791239000557,
+      "tag": "0006_marvelous_malcolm_colcord",
+      "breakpoints": true
     }
   ]
 }

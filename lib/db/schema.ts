@@ -14,6 +14,9 @@ import {
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 
+export { user, session, account, verification } from "./auth-schema";
+export { userProfiles } from "./user-profile-schema";
+
 export const locations = pgTable(
   "locations",
   {

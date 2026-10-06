@@ -14,6 +14,9 @@ import { usesCurrentCompanyPage } from "@/lib/locus-page-intent";
 import { presentationPrompt } from "@/lib/ai/presentation-prompt";
 import { toolFirstStream } from "@/lib/ai/tool-first-stream";
 import { DEFAULT_LOCUS_MODEL, isLocusModelId } from "@/lib/locus-models";
+import { auth } from "@/lib/auth";
+import { getUserProfile } from "@/lib/user-profile-store";
+import { profilePromptContext } from "@/lib/user-profile";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -225,6 +228,8 @@ export async function POST(request: Request) {
     : DEFAULT_LOCUS_MODEL;
 
   try {
+    const session = await auth.api.getSession({ headers: request.headers });
+    const userProfile = session ? await getUserProfile(session.user.id) : null;
     const latestUserMessage = [...body.messages]
       .reverse()
       .find((message) => message.role === "user");
@@ -256,12 +261,16 @@ export async function POST(request: Request) {
 
         const result = streamText({
           model: getLocusModel(body.sessionId as string, modelId),
-          system: `${system}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
+          system: `${system}${profilePromptContext(userProfile)}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
           messages: modelMessages,
           tools: locusTools,
           stopWhen: stepCountIs(7),
           abortSignal: request.signal,
-          onError: ({ error }) => console.error("[api/chat]", error),
+          onError: ({ error }) =>
+            console.error(
+              "[api/chat] stream failed",
+              error instanceof Error ? error.name : "UnknownError",
+            ),
         });
 
         writer.merge(
@@ -276,7 +285,10 @@ export async function POST(request: Request) {
 
     return createUIMessageStreamResponse({ stream });
   } catch (error) {
-    console.error("[api/chat] failed", error);
+    console.error(
+      "[api/chat] failed",
+      error instanceof Error ? error.name : "UnknownError",
+    );
     return Response.json(
       { error: "Unable to start the Locus Focus chat." },
       { status: 500 },

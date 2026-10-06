@@ -26,13 +26,15 @@ import {
 } from "@/components/ui/sidebar";
 import { ModeToggle } from "@/components/mode-toggle";
 import { CompanySearch } from "@/components/company-search";
+import { SidebarAccount } from "@/components/sidebar-account";
 import { Kbd, KbdGroup } from "@/components/ui/kbd";
 import type { CompanyNavigationItem } from "@/lib/company-profile";
 
 const navigation = [
   // { label: "New chat", icon: SquarePenIcon },
   // { label: "People", icon: UserRoundIcon },
-  { label: "Companies", icon: BuildingIcon },
+  { label: "Companies", icon: BuildingIcon, href: "/companies" },
+  { label: "About me", icon: UserRoundIcon, href: "/me" },
 ];
 
 export function AppSidebar({
@@ -109,11 +111,18 @@ export function AppSidebar({
                     </KbdGroup>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
-                {navigation.slice(0, 1).map((item) => (
+                {navigation.map((item) => (
                   <SidebarMenuItem key={item.label}>
                     <SidebarMenuButton
-                      isActive={pathname === "/companies"}
-                      render={<Link href="/companies" />}
+                      isActive={pathname === item.href}
+                      render={
+                        <Link
+                          href={item.href}
+                          onClick={() => {
+                            if (isMobile) setOpenMobile(false);
+                          }}
+                        />
+                      }
                       tooltip={item.label}
                     >
                       <item.icon className="size-3.5!" />
@@ -173,6 +182,7 @@ export function AppSidebar({
             </SidebarGroupContent>
           </SidebarGroup>
         </SidebarContent>
+        <SidebarAccount />
       </Sidebar>
       <CompanySearch
         companies={companies}
