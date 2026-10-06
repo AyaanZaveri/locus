@@ -7,6 +7,7 @@ import {
   profilePromptContext,
   splitProfileTags,
   userProfileSchema,
+  MAX_PROFILE_BACKGROUND_CHARACTERS,
 } from "../lib/user-profile";
 import { isSameOriginRequest } from "../lib/profile-request";
 import { readResumeText, MAX_RESUME_BYTES } from "../lib/resume-text";
@@ -59,7 +60,7 @@ test("profile validation rejects identity overrides, oversized lists, and invali
   assert.equal(
     userProfileSchema.safeParse({
       ...EMPTY_USER_PROFILE,
-      about: "x".repeat(3001),
+      about: "x".repeat(MAX_PROFILE_BACKGROUND_CHARACTERS + 1),
     }).success,
     false,
   );

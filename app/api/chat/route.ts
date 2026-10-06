@@ -230,6 +230,12 @@ export async function POST(request: Request) {
   try {
     const session = await auth.api.getSession({ headers: request.headers });
     const userProfile = session ? await getUserProfile(session.user.id) : null;
+    const soulContext = profilePromptContext(
+      userProfile,
+      session
+        ? { name: session.user.name, email: session.user.email }
+        : undefined,
+    );
     const latestUserMessage = [...body.messages]
       .reverse()
       .find((message) => message.role === "user");
@@ -261,7 +267,7 @@ export async function POST(request: Request) {
 
         const result = streamText({
           model: getLocusModel(body.sessionId as string, modelId),
-          system: `${system}${profilePromptContext(userProfile)}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
+          system: `${system}${soulContext}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
           messages: modelMessages,
           tools: locusTools,
           stopWhen: stepCountIs(7),

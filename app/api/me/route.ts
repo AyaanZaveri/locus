@@ -26,7 +26,7 @@ export async function PUT(request: Request) {
       { status: 401 },
     );
   const raw = await request.text();
-  if (raw.length > 30000)
+  if (raw.length > 512000)
     return Response.json({ error: "Profile is too large." }, { status: 413 });
   let body: unknown;
   try {

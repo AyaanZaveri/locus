@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import {
   BuildingIcon,
-  DraftingCompassIcon,
+  LensConcaveIcon,
   SearchIcon,
   SquarePenIcon,
   UserRoundIcon,
@@ -79,8 +79,8 @@ export function AppSidebar({
                   render={<a href="#top" />}
                   size="lg"
                 >
-                  <span className="flex size-6.5 items-center justify-center rounded-md bg-linear-150 from-emerald-500 to-emerald-600 text-white">
-                    <DraftingCompassIcon
+                  <span className="flex size-6.5 items-center justify-center rounded-md bg-linear-150 from-teal-500 to-emerald-600 text-white">
+                    <LensConcaveIcon
                       aria-hidden="true"
                       className="size-4 stroke-2"
                     />

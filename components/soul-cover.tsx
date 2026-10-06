@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "motion/react";
 import { getSoulCoverComposition } from "@/lib/soul-cover";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const MeshGradient = dynamic(
   () =>
@@ -14,21 +15,21 @@ const MeshGradient = dynamic(
 export function SoulCover({ seed }: { seed: number }) {
   const reduceMotion = useReducedMotion();
   const surface = useRef<HTMLDivElement>(null);
-  const [webGLAvailable, setWebGLAvailable] = useState(false);
+  const [webGLAvailable, setWebGLAvailable] = useState<boolean | null>(null);
   const composition = getSoulCoverComposition(seed);
 
   useEffect(() => {
-    // The server-rendered gradient stays underneath the shader. Devices without
-    // WebGL (or with a lost context) keep that artwork instead of a blank cover.
+    // Keep a neutral loading surface until the shader mounts. Unavailable or
+    // lost WebGL gets a static gray fallback, not an endless loading animation.
     const probe = document.createElement("canvas");
     try {
       const context = probe.getContext("webgl2");
       if (context) {
         context.getExtension("WEBGL_lose_context")?.loseContext();
         setWebGLAvailable(true);
-      }
+      } else setWebGLAvailable(false);
     } catch {
-      /* Static artwork is the fallback. */
+      setWebGLAvailable(false);
     }
     const element = surface.current;
     const onContextLost = () => setWebGLAvailable(false);
@@ -40,10 +41,19 @@ export function SoulCover({ seed }: { seed: number }) {
   return (
     <div
       ref={surface}
-      className="soul-cover pointer-events-none absolute inset-0 overflow-clip rounded-[inherit]"
+      className="soul-cover group/soul-cover pointer-events-none absolute inset-0 overflow-clip rounded-[inherit] bg-muted"
       aria-hidden="true"
+      data-shader-status={
+        webGLAvailable === null
+          ? "loading"
+          : webGLAvailable
+            ? "available"
+            : "unavailable"
+      }
     >
-      <div className="soul-cover-fallback absolute inset-0" />
+      <Skeleton
+        className={`absolute inset-0 rounded-[inherit] motion-reduce:animate-none group-has-[canvas]/soul-cover:hidden ${webGLAvailable === false ? "animate-none" : ""}`}
+      />
       {webGLAvailable ? (
         <MeshGradient
           className="absolute inset-0"
@@ -63,6 +73,8 @@ export function SoulCover({ seed }: { seed: number }) {
           offsetY={composition.offsetY}
           minPixelRatio={1}
           maxPixelCount={750000}
+          // Retain the frame for low-rate readback, including reduced motion.
+          webGlContextAttributes={{ preserveDrawingBuffer: true }}
         />
       ) : null}
     </div>

@@ -34,6 +34,12 @@ export default async function MePage() {
               initialLocationCountryCode={resolveProfileLocationCountryCode(
                 profile.location,
               )}
+              initialDesiredLocationCountryCodes={Object.fromEntries(
+                profile.desiredLocations.map((location) => [
+                  location,
+                  resolveProfileLocationCountryCode(location),
+                ]),
+              )}
               user={{
                 name: session.user.name,
                 email: session.user.email,

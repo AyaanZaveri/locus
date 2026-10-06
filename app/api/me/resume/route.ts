@@ -9,7 +9,7 @@ import { reserveResumeImport } from "@/lib/user-profile-store";
 import { extractResumeDetails } from "@/lib/ai/resume-extraction";
 
 export const runtime = "nodejs";
-export const maxDuration = 60;
+export const maxDuration = 120;
 
 export async function POST(request: Request) {
   if (!isSameOriginRequest(request))
@@ -47,7 +47,7 @@ export async function POST(request: Request) {
       );
     const details = await extractResumeDetails(
       text,
-      AbortSignal.any([request.signal, AbortSignal.timeout(45000)]),
+      AbortSignal.any([request.signal, AbortSignal.timeout(90000)]),
     );
     return Response.json(
       { details },

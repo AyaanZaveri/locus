@@ -1,11 +1,13 @@
 "use client";
 
-import type { ReactNode } from "react";
-import { SparkleIcon } from "lucide-react";
+import { useState, type ReactNode } from "react";
+import { LensConcaveIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { SoulCover } from "@/components/soul-cover";
 import { getSoulCoverStyle } from "@/lib/soul-cover";
+import { Skeleton } from "@/components/ui/skeleton";
+import { SoulWordmark } from "@/components/soul-wordmark";
 
 export function SoulProfileHeader({
   seed,
@@ -16,10 +18,12 @@ export function SoulProfileHeader({
   user?: { name: string; email: string; image?: string | null };
   children?: ReactNode;
 }) {
+  const [avatarFailed, setAvatarFailed] = useState(false);
   return (
     <header className="soul-identity" style={getSoulCoverStyle(seed)}>
-      <div className="relative isolate h-56 overflow-clip rounded-lg ring-1 ring-black/10 shadow-xs sm:h-64 lg:h-72 dark:ring-white/10">
+      <div className="group/soul-banner relative isolate h-56 overflow-clip rounded-lg ring-1 ring-black/10 shadow-xs sm:h-64 lg:h-72 dark:ring-white/10">
         <SoulCover seed={seed} />
+        <SoulWordmark />
         <div className="absolute top-3 left-3 flex items-center gap-2 sm:top-4 sm:left-5">
           <SidebarTrigger
             aria-label="Open sidebar"
@@ -30,15 +34,32 @@ export function SoulProfileHeader({
       </div>
       <div className="relative px-2 sm:px-5">
         <div className="absolute -top-10 left-2 rounded-xl ring-1 ring-border/50 bg-background/30 p-1 shadow-xs backdrop-blur-sm sm:-top-16 sm:left-5 dark:ring-border/75">
-          <div className="rounded-lg bg-background/60">
+          <div
+            className={
+              user
+                ? "rounded-lg bg-background/60"
+                : "rounded-lg bg-teal-50/20 backdrop-blur-md dark:bg-background/20"
+            }
+          >
             <Avatar className="size-16 rounded-lg ring-1 ring-border/25 after:rounded-lg sm:size-20">
               <AvatarImage
                 className="rounded-lg"
                 src={user?.image ?? undefined}
                 alt={user?.name ?? ""}
+                onLoadingStatusChange={(status) =>
+                  setAvatarFailed(status === "error")
+                }
               />
-              <AvatarFallback className="soul-avatar-fallback rounded-lg text-xl font-medium text-foreground">
-                {user ? (
+              <AvatarFallback
+                className={
+                  user
+                    ? "relative rounded-lg text-xl font-medium text-foreground"
+                    : "relative rounded-lg bg-transparent text-teal-950 dark:text-teal-100"
+                }
+              >
+                {user?.image && !avatarFailed ? (
+                  <Skeleton className="absolute inset-0 rounded-lg motion-reduce:animate-none" />
+                ) : user ? (
                   user.name
                     .trim()
                     .split(/\s+/)
@@ -46,7 +67,10 @@ export function SoulProfileHeader({
                     .map((part) => part[0])
                     .join("")
                 ) : (
-                  <SparkleIcon aria-hidden="true" className="size-7" />
+                  <LensConcaveIcon
+                    aria-hidden="true"
+                    className="size-8 stroke-[1.5]"
+                  />
                 )}
               </AvatarFallback>
             </Avatar>

@@ -1,13 +1,22 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { CheckIcon, LoaderCircleIcon, UploadIcon } from "lucide-react";
+import {
+  CheckIcon,
+  LoaderCircleIcon,
+  UploadIcon,
+  GlobeIcon,
+  LaptopIcon,
+  Building2Icon,
+  BlendIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { CompanySizeOptions } from "@/components/company-size-options";
 import { ProfileLocationInput } from "@/components/profile-location-input";
+import { ProfileRoleInput } from "@/components/profile-role-input";
 import { SoulProfileHeader } from "@/components/soul-profile-header";
 import {
   Field,
@@ -31,15 +40,16 @@ import {
   userProfileSchema,
   type ResumeDetails,
   type UserProfile,
+  MAX_PROFILE_BACKGROUND_CHARACTERS,
 } from "@/lib/user-profile";
 
-const tagFields = ["skills", "desiredRoles", "desiredLocations"] as const;
+const tagFields = ["skills", "desiredLocations"] as const;
 const longFields = [
   {
     key: "about",
     label: "Your background",
     placeholder: "I build backend systems in Go and Python. I’ve worked on…",
-    max: 3000,
+    max: MAX_PROFILE_BACKGROUND_CHARACTERS,
   },
   {
     key: "lookingFor",
@@ -61,23 +71,32 @@ const resumeFields: Array<keyof ResumeDetails> = [
   "skills",
   "currentRole",
   "location",
+  "desiredRoles",
+  "lookingFor",
+  "dealBreakers",
+  "desiredLocations",
+  "workPreference",
+  "openToRelocation",
+  "companySizes",
 ];
 const workArrangements = [
-  { value: "any", label: "Open to anything" },
-  { value: "remote", label: "Remote" },
-  { value: "hybrid", label: "Hybrid" },
-  { value: "on-site", label: "On-site" },
+  { value: "any", label: "Open to anything", icon: GlobeIcon },
+  { value: "remote", label: "Remote", icon: LaptopIcon },
+  { value: "hybrid", label: "Hybrid", icon: BlendIcon },
+  { value: "on-site", label: "On-site", icon: Building2Icon },
 ] as const;
 
 export function ProfileForm({
   initialProfile,
   user,
   initialLocationCountryCode,
+  initialDesiredLocationCountryCodes,
   coverSeed = 0,
 }: {
   initialProfile: UserProfile;
   user: { name: string; email: string; image?: string | null };
   initialLocationCountryCode?: string | null;
+  initialDesiredLocationCountryCodes?: Record<string, string | null>;
   coverSeed?: number;
 }) {
   const [profile, setProfile] = useState(initialProfile);
@@ -109,6 +128,9 @@ export function ProfileForm({
     ),
   } as UserProfile;
   const dirty = JSON.stringify(current) !== JSON.stringify(saved);
+  const WorkArrangementIcon = workArrangements.find(
+    (item) => item.value === profile.workPreference,
+  )!.icon;
 
   useEffect(() => {
     if (!dirty) return;
@@ -190,11 +212,7 @@ export function ProfileForm({
             "Couldn’t import. Try again or fill in your details below.",
         );
       const details = resumeDetailsSchema.parse(result.details);
-      const merged = mergeResumeDetails(
-        current,
-        details,
-        resumeFields.filter((key) => details[key].length > 0),
-      );
+      const merged = mergeResumeDetails(current, details, resumeFields);
       setProfile(merged);
       setTagInputs(
         Object.fromEntries(
@@ -205,7 +223,7 @@ export function ProfileForm({
         ) as typeof tagInputs,
       );
       setMessage(
-        "Resume details filled in. Review the fields and save when you’re ready.",
+        "Background and next-role suggestions filled in. Review the drafts and save when you’re ready.",
       );
     } catch (failure) {
       setResumeError(
@@ -225,7 +243,7 @@ export function ProfileForm({
         <Button
           type="button"
           variant="outline"
-          className="h-9"
+          className="h-9 dark:border-border dark:bg-background dark:hover:bg-input/50"
           disabled={extracting || saving}
           onClick={() => fileInput.current?.click()}
         >
@@ -234,7 +252,7 @@ export function ProfileForm({
           ) : (
             <UploadIcon />
           )}{" "}
-          {extracting ? "Reading resume…" : "Fill thru resume"}
+          {extracting ? "Reading resume…" : "Autofill from resume"}
         </Button>
         <input
           ref={fileInput}
@@ -267,7 +285,10 @@ export function ProfileForm({
             className="flex flex-col gap-4"
           >
             <div>
-              <h2 id="background-heading" className="text-xl font-semibold tracking-tight">
+              <h2
+                id="background-heading"
+                className="text-xl font-semibold tracking-tight"
+              >
                 Your background
               </h2>
             </div>
@@ -286,15 +307,11 @@ export function ProfileForm({
                 <FieldLabel htmlFor="currentRole">
                   Current or most recent role
                 </FieldLabel>
-                <Input
+                <ProfileRoleInput
                   id="currentRole"
-                  className="h-9"
-                  maxLength={120}
                   value={profile.currentRole}
-                  onChange={(event) =>
-                    update("currentRole", event.target.value)
-                  }
-                  placeholder="Software engineer"
+                  onChange={(role) => update("currentRole", role)}
+                  disabled={saving || extracting}
                 />
               </Field>
             </FieldGroup>
@@ -316,7 +333,7 @@ export function ProfileForm({
               <FieldLabel htmlFor="about">{longFields[0].label}</FieldLabel>
               <Textarea
                 id="about"
-                className="min-h-28"
+                className="min-h-28 max-h-96 overflow-y-auto"
                 maxLength={3000}
                 value={profile.about}
                 onChange={(event) => update("about", event.target.value)}
@@ -330,7 +347,10 @@ export function ProfileForm({
             className="flex flex-col gap-4"
           >
             <div>
-              <h2 id="preferences-heading" className="text-xl font-semibold tracking-tight">
+              <h2
+                id="preferences-heading"
+                className="text-xl font-semibold tracking-tight"
+              >
                 Your next role
               </h2>
             </div>
@@ -338,19 +358,15 @@ export function ProfileForm({
               <FieldLabel htmlFor="desiredRoles">
                 Roles you’re interested in
               </FieldLabel>
-              <Input
+              <ProfileRoleInput
                 id="desiredRoles"
-                className="h-9"
-                placeholder="Backend engineer, founding engineer"
-                value={tagInputs.desiredRoles}
-                onChange={(event) => {
-                  setTagInputs({
-                    ...tagInputs,
-                    desiredRoles: event.target.value,
-                  });
-                  setMessage("");
-                }}
-                maxLength={6000}
+                value=""
+                onChange={() => {}}
+                selectedValues={profile.desiredRoles}
+                onSelectedValuesChange={(roles) =>
+                  update("desiredRoles", roles)
+                }
+                disabled={saving || extracting}
               />
             </Field>
             {longFields.slice(1).map(({ key, label, placeholder, max }) => (
@@ -383,12 +399,20 @@ export function ProfileForm({
                     id="workPreference"
                     className="w-full data-[size=default]:h-9"
                   >
+                    <WorkArrangementIcon
+                      aria-hidden="true"
+                      className="text-muted-foreground"
+                    />
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent align="start" alignItemWithTrigger={false}>
                     <SelectGroup>
-                      {workArrangements.map(({ value, label }) => (
+                      {workArrangements.map(({ value, label, icon: Icon }) => (
                         <SelectItem key={value} value={value}>
+                          <Icon
+                            aria-hidden="true"
+                            className="text-muted-foreground"
+                          />
                           {label}
                         </SelectItem>
                       ))}
@@ -400,19 +424,20 @@ export function ProfileForm({
                 <FieldLabel htmlFor="desiredLocations">
                   Preferred work locations
                 </FieldLabel>
-                <Input
+                <ProfileLocationInput
                   id="desiredLocations"
-                  className="h-9"
-                  placeholder="Toronto, Canada; London, UK"
-                  value={tagInputs.desiredLocations}
-                  onChange={(event) => {
-                    setTagInputs({
-                      ...tagInputs,
-                      desiredLocations: event.target.value,
-                    });
+                  value=""
+                  onChange={() => {}}
+                  selectedValues={current.desiredLocations}
+                  initialCountryCodes={initialDesiredLocationCountryCodes}
+                  disabled={saving || extracting}
+                  onSelectedValuesChange={(locations) => {
+                    setTagInputs((previous) => ({
+                      ...previous,
+                      desiredLocations: locations.join("; "),
+                    }));
                     setMessage("");
                   }}
-                  maxLength={6000}
                 />
               </Field>
             </FieldGroup>
@@ -422,13 +447,17 @@ export function ProfileForm({
             >
               <Checkbox
                 id="openToRelocation"
+                className="cursor-pointer disabled:cursor-default"
                 disabled={saving || extracting}
                 checked={profile.openToRelocation}
                 onCheckedChange={(checked) =>
                   update("openToRelocation", checked)
                 }
               />
-              <FieldLabel htmlFor="openToRelocation">
+              <FieldLabel
+                htmlFor="openToRelocation"
+                className="cursor-pointer group-data-[disabled=true]/field:cursor-default"
+              >
                 I’m open to relocating
               </FieldLabel>
             </Field>
@@ -456,7 +485,13 @@ export function ProfileForm({
               ) : (
                 <CheckIcon />
               )}
-              {saving ? "Saving…" : "Save profile"}
+              <span role="status">
+                {saving
+                  ? "Saving…"
+                  : message === "Saved." && !dirty
+                    ? "Saved"
+                    : "Save profile"}
+              </span>
             </Button>
           </div>
           {error ? (
@@ -464,7 +499,7 @@ export function ProfileForm({
               {error}
             </p>
           ) : null}
-          {message ? (
+          {message && message !== "Saved." ? (
             <p role="status" className="mt-2 text-sm">
               {message}
             </p>
