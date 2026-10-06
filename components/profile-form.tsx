@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { CompanySizeOptions } from "@/components/company-size-options";
 import { ProfileLocationInput } from "@/components/profile-location-input";
+import { SoulProfileHeader } from "@/components/soul-profile-header";
 import {
   Field,
   FieldGroup,
@@ -23,7 +24,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   mergeResumeDetails,
   resumeDetailsSchema,
@@ -73,10 +73,12 @@ export function ProfileForm({
   initialProfile,
   user,
   initialLocationCountryCode,
+  coverSeed = 0,
 }: {
   initialProfile: UserProfile;
   user: { name: string; email: string; image?: string | null };
   initialLocationCountryCode?: string | null;
+  coverSeed?: number;
 }) {
   const [profile, setProfile] = useState(initialProfile);
   const [saved, setSaved] = useState(initialProfile);
@@ -218,61 +220,44 @@ export function ProfileForm({
   }
 
   return (
-    <div className="flex max-w-4xl flex-col gap-6">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <Avatar size="lg">
-            <AvatarImage src={user.image ?? undefined} alt={user.name} />
-            <AvatarFallback>
-              {user.name
-                .split(/\s+/)
-                .slice(0, 2)
-                .map((part) => part[0])
-                .join("")}
-            </AvatarFallback>
-          </Avatar>
-          <div>
-            <p className="font-medium">{user.name}</p>
-            <p className="break-all font-mono text-xs tracking-tight text-muted-foreground">
-              {user.email}
-            </p>
-          </div>
-        </div>
-        <div>
-          <Button
-            type="button"
-            variant="outline"
-            className="h-9"
-            disabled={extracting || saving}
-            onClick={() => fileInput.current?.click()}
-          >
-            {extracting ? (
-              <LoaderCircleIcon className="animate-spin motion-reduce:animate-none" />
-            ) : (
-              <UploadIcon />
-            )}{" "}
-            {extracting ? "Reading resume…" : "Fill thru resume"}
-          </Button>
-          <input
-            ref={fileInput}
-            type="file"
-            accept=".pdf,.docx,.txt"
-            aria-label="Upload resume"
-            hidden
-            tabIndex={-1}
-            onChange={(event) => {
-              const file = event.target.files?.[0];
-              if (file) void importResume(file);
-            }}
-          />
-        </div>
-      </div>
+    <div className="flex w-full flex-col gap-4">
+      <SoulProfileHeader seed={coverSeed} user={user}>
+        <Button
+          type="button"
+          variant="outline"
+          className="h-9"
+          disabled={extracting || saving}
+          onClick={() => fileInput.current?.click()}
+        >
+          {extracting ? (
+            <LoaderCircleIcon className="animate-spin motion-reduce:animate-none" />
+          ) : (
+            <UploadIcon />
+          )}{" "}
+          {extracting ? "Reading resume…" : "Fill thru resume"}
+        </Button>
+        <input
+          ref={fileInput}
+          type="file"
+          accept=".pdf,.docx,.txt"
+          aria-label="Upload resume"
+          hidden
+          tabIndex={-1}
+          onChange={(event) => {
+            const file = event.target.files?.[0];
+            if (file) void importResume(file);
+          }}
+        />
+      </SoulProfileHeader>
       {resumeError ? (
         <p role="alert" className="mt-3 text-sm text-destructive">
           {resumeError}
         </p>
       ) : null}
-      <form onSubmit={save} className="flex flex-col gap-6">
+      <form
+        onSubmit={save}
+        className="soul-form flex flex-col gap-6 px-2 sm:px-5"
+      >
         <fieldset
           disabled={saving || extracting}
           className="flex min-w-0 flex-col gap-6"
@@ -282,7 +267,7 @@ export function ProfileForm({
             className="flex flex-col gap-4"
           >
             <div>
-              <h2 id="background-heading" className="text-base font-semibold">
+              <h2 id="background-heading" className="text-xl font-semibold tracking-tight">
                 Your background
               </h2>
             </div>
@@ -345,7 +330,7 @@ export function ProfileForm({
             className="flex flex-col gap-4"
           >
             <div>
-              <h2 id="preferences-heading" className="text-base font-semibold">
+              <h2 id="preferences-heading" className="text-xl font-semibold tracking-tight">
                 Your next role
               </h2>
             </div>

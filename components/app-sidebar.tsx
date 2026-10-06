@@ -34,7 +34,7 @@ const navigation = [
   // { label: "New chat", icon: SquarePenIcon },
   // { label: "People", icon: UserRoundIcon },
   { label: "Companies", icon: BuildingIcon, href: "/companies" },
-  { label: "About me", icon: UserRoundIcon, href: "/me" },
+  { label: "Soul", icon: UserRoundIcon, href: "/me" },
 ];
 
 export function AppSidebar({
