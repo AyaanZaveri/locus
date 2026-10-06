@@ -18,20 +18,8 @@ const activityTypeSchema = z.enum([
   "product",
 ]);
 
-const industrySchema = z.enum([
-  "AI Compute",
-  "AI Gateway",
-  "AI Inference",
-  "Database",
-  "Developer Tools",
-  "Energy",
-  "Fintech",
-  "Foundation Models",
-  "Job Search",
-  "Market Intelligence",
-  "Web Search",
-  "Workflow Orchestration",
-]);
+// Categories are data, not an app release: new industries must remain loadable.
+const industrySchema = z.string().trim().min(1);
 
 const moneySchema = z.object({
   amount: z.number().nonnegative(),

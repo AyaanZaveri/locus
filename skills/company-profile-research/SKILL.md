@@ -83,6 +83,25 @@ wrapper, `recentActivity`, `logoUrl`, or `imageUrl` aliases. Use `null` for an
 unknown nullable scalar and `[]` for an unverified collection. Do not add
 placeholder strings, guessed URLs, dates, or zero values.
 
+## Industry categories: open-ended labels
+
+`industry` is a trimmed, non-empty string, not a controlled enum. New categories
+do not require editing the app schema or deploying code. The directory and its
+industry filter derive their categories from company records in Neon.
+
+- Choose one concise primary category supported by the company's main product
+  or market. Check existing Neon category labels and reuse an exact label when
+  it genuinely fits; this keeps equivalent companies grouped together.
+- If none fits, create an accurate new category instead of choosing the nearest
+  misleading option. For example, use `Job Search` for HiringCafe, not `Web Search`.
+  Existing labels are conventions, not an exhaustive list of allowed values.
+- Use title case and preserve acronyms such as AI. Keep research notes, caveats,
+  and product-specific nuance in the evidence, tagline, or description rather
+  than the label. Avoid sentences, category lists, and placeholder labels.
+- Validate the complete payload against `companyProfileSchema` before import.
+  Use the standard importer so `companies.industry` and `profile.industry` stay
+  consistent, then verify both stored values. Do not update only one copy.
+
 ## Repository output conventions
 
 When saving to Autumn, inspect an existing record first and match its current
@@ -423,7 +442,8 @@ for that request.
 Use these independent assignments:
 
 - **Company basics:** official website, canonical domain, tagline, location,
-  stage, employee range, and controlled `industry` value. Check the YC company
+   stage, employee range, and evidence-backed primary `industry` label using
+   the open-ended category guidance above. Check the YC company
   profile when one exists; report its facts as a dated snapshot and note any
   conflicts with the current company site.
 - **Funding:** distinct rounds, arithmetic, investors, and primary-source URLs.

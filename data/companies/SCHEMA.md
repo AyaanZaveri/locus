@@ -79,18 +79,7 @@ verified, and keep valid existing images on a failed refresh.
   bannerPosition?: string,
   bannerOffsetY?: number,
   logo: string | null,
-  industry:
-    | "AI Compute"
-    | "AI Gateway"
-    | "AI Inference"
-    | "Database"
-    | "Developer Tools"
-    | "Energy"
-    | "Fintech"
-    | "Foundation Models"
-    | "Market Intelligence"
-    | "Web Search"
-    | "Workflow Orchestration",
+  industry: string,            // trimmed, non-empty primary category; no fixed list
   location: { label: string, countryCode: string, locationId?: string | null, sourceLabel?: string },
   stage: string,
   employees: string,
@@ -112,24 +101,21 @@ verified, and keep valid existing images on a failed refresh.
 
 ## Reusable values
 
-`industry` is a single, broad primary category. Put product-specific nuance
-(for example, GPU cloud or serverless compute) in `tagline` and `description`.
-Only these values are valid:
+`industry` is a trimmed, non-empty string naming one primary category. There is
+no fixed list: new categories do not require an app release or schema change.
+Directory filters derive their choices from the stored company records.
 
-```ts
-type Industry =
-  | "AI Compute"
-  | "AI Gateway"
-  | "AI Inference"
-  | "Database"
-  | "Developer Tools"
-  | "Energy"
-  | "Fintech"
-  | "Foundation Models"
-  | "Market Intelligence"
-  | "Web Search"
-  | "Workflow Orchestration";
-```
+Choose a concise, evidence-backed label for the company's main product or
+market. Reuse an existing database label when it accurately fits, including its
+capitalization, to avoid splitting equivalent categories. Otherwise create a
+clear new label rather than forcing an inaccurate match. For example, HiringCafe
+belongs in `Job Search`, not general `Web Search`.
+
+Use title case while preserving acronyms such as AI. Put product-specific nuance
+and supporting evidence in `tagline` and `description`, not in the category label.
+Do not use a sentence, a comma-separated category list, or placeholders such as
+`Unknown` or `Other`. If the category cannot be verified, resolve that uncertainty
+before importing the required field.
 
 ```ts
 type Money = {

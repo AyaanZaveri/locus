@@ -8,3 +8,25 @@ test("company profiles accept the Job Search industry used by HiringCafe", () =>
     "Job Search",
   );
 });
+
+test("company profiles accept new industry labels without a schema update", () => {
+  for (const industry of ["Healthcare", "Climate Technology", "Robotics"]) {
+    assert.equal(companyProfileSchema.shape.industry.parse(industry), industry);
+  }
+});
+
+test("industry labels are trimmed without changing capitalization", () => {
+  assert.equal(
+    companyProfileSchema.shape.industry.parse("  AI Inference  "),
+    "AI Inference",
+  );
+});
+
+test("industry labels must be non-empty strings", () => {
+  for (const industry of ["", " \t\n ", null, undefined, 123]) {
+    assert.equal(
+      companyProfileSchema.shape.industry.safeParse(industry).success,
+      false,
+    );
+  }
+});
