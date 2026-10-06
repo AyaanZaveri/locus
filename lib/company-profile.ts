@@ -27,6 +27,7 @@ const industrySchema = z.enum([
   "Energy",
   "Fintech",
   "Foundation Models",
+  "Job Search",
   "Market Intelligence",
   "Web Search",
   "Workflow Orchestration",

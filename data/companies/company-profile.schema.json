@@ -78,6 +78,7 @@
         "Energy",
         "Fintech",
         "Foundation Models",
+        "Job Search",
         "Market Intelligence",
         "Web Search",
         "Workflow Orchestration"
@@ -520,6 +521,27 @@
                 "sourceLabel": {
                   "type": "string",
                   "minLength": 1
+                },
+                "countryCode": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 2
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "city",
+                    "country",
+                    "subdivision",
+                    "region"
+                  ]
                 }
               },
               "required": [
