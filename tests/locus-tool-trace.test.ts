@@ -3,6 +3,47 @@ import { test } from "node:test";
 
 import { describeLocusTool } from "../lib/locus-tool-trace";
 
+test("single-company semantic role traces use its verified logo, not an arbitrary cross-company logo", () => {
+  const part = {
+    type: "tool-queryJobs",
+    state: "output-available",
+    input: { semanticQuery: "product engineering" },
+  };
+  const jobs = Array.from({ length: 8 }, () => ({
+    companySlug: "hiringcafe",
+    companyLogo: "https://example.com/hiringcafe.png",
+  }));
+  const trace = describeLocusTool({
+    ...part,
+    output: { jobs, retrieval: { mode: "semantic" } },
+  });
+  assert.equal(trace?.label, "Semantic search · 8 roles ranked");
+  assert.equal(trace?.logo, "https://example.com/hiringcafe.png");
+  for (const rows of [
+    [],
+    [{}],
+    [
+      ...jobs,
+      { companySlug: "other", companyLogo: "https://example.com/other.png" },
+    ],
+  ]) {
+    assert.equal(
+      describeLocusTool({
+        ...part,
+        output: { jobs: rows, retrieval: { mode: "semantic" } },
+      })?.logo,
+      undefined,
+    );
+  }
+  assert.equal(
+    describeLocusTool({
+      ...part,
+      output: { jobs, retrieval: { mode: "lexical-fallback" } },
+    })?.logo,
+    undefined,
+  );
+});
+
 test("semantic traces use a distinct icon and candidate language, with cache/coverage details", () => {
   for (const [tool, key, entity] of [
     ["queryJobs", "jobs", "role"],
@@ -78,7 +119,8 @@ test("completed traces use actual retrieval mode, not the model's semantic inten
     input: { semanticQuery: "partial" },
     output: undefined,
   });
-  assert.notEqual(streaming?.icon, "semantic");
+  assert.equal(streaming?.icon, "semantic");
+  assert.equal(streaming?.label, "Semantic search · Ranking roles");
   const error = describeLocusTool({
     ...part,
     state: "output-error",
@@ -86,6 +128,27 @@ test("completed traces use actual retrieval mode, not the model's semantic inten
   });
   assert.equal(error?.phase, "error");
   assert.doesNotMatch(error!.label, /ranked|found/);
+});
+
+test("streaming query arguments stay neutral until the retrieval mode is known", () => {
+  for (const [tool, label] of [
+    ["queryJobs", "Querying jobs"],
+    ["queryCompanies", "Querying companies"],
+  ]) {
+    const trace = describeLocusTool({
+      type: `tool-${tool}`,
+      state: "input-streaming",
+      input: {},
+    });
+    assert.equal(trace?.label, label);
+    assert.doesNotMatch(trace!.label, /Database|Semantic/);
+    const lexical = describeLocusTool({
+      type: `tool-${tool}`,
+      state: "input-available",
+      input: {},
+    });
+    assert.equal(lexical?.label, `Database search · ${label}`);
+  }
 });
 
 test("every tool invocation has a useful live and completed status", () => {

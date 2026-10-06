@@ -13,7 +13,7 @@ export function LocusTraceRow({ trace }: { trace: LocusTrace }) {
       role="status"
       title={trace.detail}
     >
-      {trace.logo && trace.icon === "company" ? (
+      {trace.logo ? (
         <img
           alt=""
           aria-hidden="true"

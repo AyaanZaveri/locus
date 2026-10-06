@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { z } from "zod";
 import { PgDialect } from "drizzle-orm/pg-core";
 import {
   buildJobsQuery,
@@ -25,6 +26,34 @@ test("schema bounds and defaults", () => {
     { status: "maybe" },
   ])
     assert.equal(jobsQuerySchema.safeParse(v).success, false);
+});
+
+test("model-facing job filters explain fit intent versus hard constraints", () => {
+  const schema = z.toJSONSchema(jobsQuerySchema, { io: "input" });
+  for (const [key, field] of Object.entries(schema.properties ?? {})) {
+    assert.ok(
+      typeof field === "object" && field.description,
+      `Missing description: ${key}`,
+    );
+  }
+  assert.match(
+    jobsQuerySchema.shape.semanticQuery.description!,
+    /best role for me/,
+  );
+  assert.match(jobsQuerySchema.shape.skills.description!, /HARD AND/);
+  assert.match(
+    jobsQuerySchema.shape.companySlugs.description!,
+    /Verified company slugs/,
+  );
+  assert.ok(!(schema.required ?? []).includes("semanticQuery"));
+  assert.equal(
+    jobsQuerySchema.safeParse({ semanticQuery: "x".repeat(501) }).success,
+    false,
+  );
+  assert.equal(
+    jobsQuerySchema.safeParse({ semanticQuery: null }).success,
+    false,
+  );
 });
 
 test("filters are parameterized and substring matching is literal", () => {

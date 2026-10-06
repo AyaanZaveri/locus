@@ -69,7 +69,7 @@ const toolIcons: Record<string, LocusTrace["icon"]> = {
   getCompanyProfile: "company",
   findCompanyPeople: "people",
   listCompanyPeople: "people",
-  listCompanyJobs: "jobs",
+  listCompanyJobs: "jobs", // Legacy saved turns only; no longer a callable tool.
   recommendOutreachTargets: "search",
   presentLocusResults: "selection",
   navigateLocus: "navigation",
@@ -112,7 +112,7 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
     const semantic =
       phase === "complete"
         ? retrieval.mode === "semantic"
-        : hasInput && Boolean(semanticQuery);
+        : Boolean(semanticQuery);
     const keywordFallback =
       phase === "complete" && retrieval.mode === "lexical-fallback";
     if (semantic || keywordFallback) {
@@ -127,6 +127,7 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
           : "";
       return {
         icon: semantic ? "semantic" : "search",
+        ...(semantic && jobs ? { logo: singleCompanyJobLogo(output) } : {}),
         phase,
         label: keywordFallback
           ? `Keyword fallback · ${amount ? `${noun(amount, singular, plural)} found` : "no matches"}`
@@ -184,7 +185,9 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
       const amount = count(record(output)[config.key]);
       const modeLabel =
         toolName === "queryJobs" || toolName === "queryCompanies"
-          ? "Database search · "
+          ? phase === "running" && !hasInput
+            ? ""
+            : "Database search · "
           : "";
       return {
         icon,
@@ -371,4 +374,14 @@ export function describeLocusTool(part: unknown): LocusTrace | null {
           phase === "complete" ? `Finished ${fallback}` : `Running ${fallback}`,
       };
   }
+}
+
+function singleCompanyJobLogo(output: unknown): string | undefined {
+  const jobs = record(output).jobs;
+  if (!Array.isArray(jobs) || !jobs.length) return undefined;
+  const rows = jobs.map(record);
+  const slug = text(rows[0].companySlug);
+  if (!slug || rows.some((row) => text(row.companySlug) !== slug))
+    return undefined;
+  return rows.map((row) => text(row.companyLogo)).find(Boolean);
 }

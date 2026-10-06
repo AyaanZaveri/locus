@@ -9,9 +9,11 @@ import {
 } from "ai";
 
 import { getLocusModel } from "@/lib/ai/opencode";
+import { focusGenerationSettings } from "@/lib/ai/focus-generation-settings";
 import { getPageCompanyContext, locusTools } from "@/lib/ai/tools";
 import { usesCurrentCompanyPage } from "@/lib/locus-page-intent";
 import { presentationPrompt } from "@/lib/ai/presentation-prompt";
+import { toolRoutingPrompt } from "@/lib/ai/tool-routing-prompt";
 import { toolFirstStream } from "@/lib/ai/tool-first-stream";
 import { DEFAULT_LOCUS_MODEL, isLocusModelId } from "@/lib/locus-models";
 import { auth } from "@/lib/auth";
@@ -71,14 +73,17 @@ funded companies hiring remotely, combine funding date bounds and
 jobs.workplaceType "remote" in that call. Never intersect separate limited
 previews: queryCompanies intersects the full matching set before counting/limiting.
 All filters inside a relation must match the same round, job, person or activity
-item. Return the final matching companies, not intermediate candidate cards.
+item. For company-list questions return the final matching companies, not
+intermediate candidate cards. For role recommendations keep company pools hidden.
 Its countUnit is companies; nested evidence counts are records, not companies.
 Model-facing company evidence inherits company identity from its enclosing
 company. Shared evidenceContext contains each relation's filters/date policies;
 per-company evidence retains counts, completeness and supporting records.
-Once that combined query returns valid matches, answer from its evidence rather
+For company-list answers, answer from the combined query's evidence rather
 than querying again merely to curate the requested limit or narrowing the user's
-criteria based on its bounded evidence preview. Preserve the user's role scope;
+criteria based on its bounded evidence preview. For a personalized ROLE at those
+companies, use the hidden company pool followed by queryJobs candidates as specified
+in the routing policy below. Preserve the user's role scope;
 do not silently replace a broad engineer request with software-only roles.
 For nested hiring filters, role names belong in jobs.query or jobs.title.
 jobs.skills is only for explicitly requested technologies/skills such as Python,
@@ -93,8 +98,10 @@ Product activity includes customer stories and research posts: do not describe
 every product event as a launch. Preserve what the excerpt actually says.
 For query tools, request up to 50 for an exhaustive small set; use small limits
 for recommendations.
-Honor explicit result limits across the whole answer, not per company, and set
-the tool's limit accordingly. Job keywords default to role scope (titles/skills).
+Honor explicit DISPLAY limits across the whole answer, not per company. For job
+fit, retrieve a pool of 15 with resultMode candidates, then set presentLocusResults
+limit to the requested shortlist size. For ordinary inline queries set the
+retrieval limit to the requested count. Job keywords default to role scope (titles/skills).
 Use queryScope allContent only for responsibilities or description evidence.
 A department label alone does not establish a specific role: for engineering
 roles use role keywords such as "engineer OR technical staff", not descriptions
@@ -127,8 +134,10 @@ getCompanyProfile for structured financial figures rather than inferring them
 from text matches.
 For a person at a known company, use findCompanyPeople with a role filter (e.g.
 CTO) BEFORE limiting results. Do not infer a person's current title from an
-unrelated activity item. For a specific-company role, use listCompanyJobs with
-criteria; the present page slug can be used directly.
+unrelated activity item. Use queryJobs for all job retrieval. For a simple
+company inventory supply verified companySlugs, status openOrUnknown and limit;
+omit query and semanticQuery. For fit add semanticQuery grounded in the user's
+background/goals. Never treat an alphabetical inventory as a personal-fit ranking.
 When asked who holds a specific role on the current company page, first find
 the exact person, then use navigateLocus(person) to highlight their card. The
 chat remains open on the same page; answer after the navigation tool completes.
@@ -148,32 +157,51 @@ short search terms; use structured query tools for multi-filter requests. Search
 does not silently drop words or relax structured constraints.
 For searchLocus, request only the entity types the user asks for: jobs-only
 questions return jobs, people-only questions return people, and mixed questions
-return each requested type. Use a limit of three for a focused lookup. For an
+return each requested type. Exception: resolve a named employer's unknown slug
+with types ["companies"] and its short name before querying that employer's jobs.
+This lookup establishes identity, not job fit. Use a limit of three for a focused lookup. For an
 exhaustive category, industry, or location question, or a follow-up such as
 "what else" or "anything else", request up to twelve results so the answer
 does not mistake a preview for the full set. Do not say results are the only
 ones unless the tool was asked for the exhaustive set.
 
 ${presentationPrompt}
-For cross-company job recommendations, begin with queryJobs and
-use their returned records to choose the final cards. Avoid a separate
-listCompanyJobs call for every company unless a targeted search lacks enough
-evidence.
-For company recommendations that also require funding, people or activity,
-begin with queryCompanies using the combined nested filters. Its matching job
-evidence can support the recommendation without another retrieval. Preserve
-location/eligibility restrictions and source details from the returned evidence.
-When advising which job a user should pursue at one company, use its page slug
-if available, otherwise resolve it, then call listCompanyJobs with criteria that preserves
-the user's stated strengths or target role. This ranks the most relevant roles;
-do not call it without criteria and then infer a fit from its alphabetical list.
+${toolRoutingPrompt}
+Combine verified companySlugs in one job query rather than issuing a separate
+lookup for each company. Preserve location/eligibility restrictions and source
+details from the returned evidence.
+When advising which job a user should pursue at one company, use its verified
+page slug if it is the subject of this question, otherwise resolve the employer
+with searchLocus(types ["companies"]). Then use queryJobs with companySlugs and
+semanticQuery containing a concise summary of evidenced strengths/desired
+responsibilities (aim for 200–350 characters; hard maximum 500, not a profile
+dump), resultMode candidates, and limit 15.
+Evaluate responsibilities AND stated requirements: years of experience, leadership,
+seniority, location, sponsorship/eligibility and the user's documented background.
+A senior/staff role can resemble the user's project without being a realistic fit.
+Read requirementsExcerpt; do not infer missing requirements or dismiss a candidate
+solely for a title. Distinguish a strong product match from a stretch application.
+Distinguish confirmed eligibility conflicts from unknowns. Do not claim an onsite
+city violates a timezone preference when work hours/timezone are unstated and
+the user allows relocation or lists that area as a preferred destination; flag
+the relocation/timezone question for confirmation instead. Preferred cities are
+not hard exclusions unless stated as such.
+Then call presentLocusResults with exact candidate identities, sort input and the
+requested shortlist count (default 3). Prefer company diversity among similarly
+suitable roles, but never force an unrelated company or invent qualifications.
+Do not display the 15-candidate pool. Use status openOrUnknown unless confirmed
+openings are explicitly requested.
+Do not turn a whole profile skill list into hard skills/title/query filters.
+If no relevant profile or conversation background exists, explain that a
+personalized best fit is unknown and ask for the target role/strengths; never
+invent qualifications or call alphabetical results a personalized recommendation.
 When the user explicitly asks to open or visit a known result's page, use
 navigateLocus after resolving the exact company slug (or the verified person
 on the current page as described above). A person destination requires
 the exact person's name and should include their URL returned by findCompanyPeople,
 searchLocus or listCompanyPeople; it scrolls to and highlights that person.
 A job destination requires
-the exact job title and location returned by searchLocus or listCompanyJobs; it
+the exact job title and location returned by queryJobs or a verified searchLocus job lookup; it
 opens that job's details drawer and scrolls to it. For job navigation, do not use navigateLocus until
 you have resolved the specific job. After navigation succeeds, do not navigate
 again in the same turn.
@@ -267,11 +295,54 @@ export async function POST(request: Request) {
 
         const result = streamText({
           model: getLocusModel(body.sessionId as string, modelId),
+          ...focusGenerationSettings(modelId),
           system: `${system}${soulContext}\n\nCurrent UTC date: ${new Date().toISOString().slice(0, 10)}\n\nCurrent page (database verified): ${JSON.stringify(pageContext ?? { type: "other" })}`,
           messages: modelMessages,
           tools: locusTools,
           stopWhen: stepCountIs(7),
           abortSignal: request.signal,
+          onStepFinish: ({ stepNumber, toolCalls, content }) => {
+            // Tool failures can be recovered by the model without triggering
+            // onError. Record only safe diagnostics, never inputs/resumes/SQL.
+            for (const part of content) {
+              if (part.type !== "tool-error") continue;
+              const failure = part.error;
+              const cause =
+                failure instanceof Error ? failure.cause : undefined;
+              const code =
+                cause && typeof cause === "object" && "code" in cause
+                  ? cause.code
+                  : undefined;
+              console.error(
+                "[api/chat] tool failed",
+                JSON.stringify({
+                  step: stepNumber,
+                  tool: part.toolName,
+                  error:
+                    failure instanceof Error ? failure.name : "UnknownError",
+                  databaseCode:
+                    typeof code === "string" && /^[A-Z0-9]{5}$/.test(code)
+                      ? code
+                      : undefined,
+                }),
+              );
+            }
+            if (process.env.NODE_ENV !== "production" && toolCalls.length) {
+              console.info(
+                "[api/chat] tool step",
+                JSON.stringify({
+                  step: stepNumber,
+                  tools: toolCalls.map((call) => ({
+                    name: call.toolName,
+                    inputFields:
+                      call.input && typeof call.input === "object"
+                        ? Object.keys(call.input)
+                        : [],
+                  })),
+                }),
+              );
+            }
+          },
           onError: ({ error }) =>
             console.error(
               "[api/chat] stream failed",

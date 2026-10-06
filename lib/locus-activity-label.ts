@@ -1,4 +1,3 @@
-import { describeLocusTool } from "./locus-tool-trace";
 import { usesCurrentCompanyPage } from "./locus-page-intent";
 
 type ActivityMessage = {
@@ -89,13 +88,29 @@ function activeToolLabel(part: Record<string, unknown>) {
       case "activity":
         return "Reading recent activity";
       default:
-        return "Reading the company profile";
+        return "Exploring the company";
     }
   }
 
   if (part.type === "tool-searchKnowledge") return "Searching the evidence";
   if (part.type === "tool-searchLocus") return "Searching the directory";
-  return describeLocusTool(part)?.label ?? "Getting oriented";
+  // The pill describes the purpose of the work; inline traces report the
+  // specific operation, retrieval mode, entity, counts and coverage.
+  const taskLabels: Record<string, string> = {
+    "tool-queryCompanies": "Finding relevant companies",
+    "tool-queryJobs": "Exploring role options",
+    "tool-listCompanyJobs": "Exploring role options",
+    "tool-queryPeople": "Finding relevant people",
+    "tool-findCompanyPeople": "Finding relevant people",
+    "tool-listCompanyPeople": "Finding relevant people",
+    "tool-queryFunding": "Looking into funding",
+    "tool-queryActivity": "Following company updates",
+    "tool-getCompany": "Getting to know the company",
+    "tool-recommendOutreachTargets": "Exploring connections",
+    "tool-presentLocusResults": "Preparing your results",
+    "tool-navigateLocus": "Opening your selection",
+  };
+  return taskLabels[String(part.type)] ?? "Working on your request";
 }
 
 /** Status copy follows streamed, observable events rather than invented thoughts. */

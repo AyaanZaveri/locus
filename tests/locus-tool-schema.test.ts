@@ -6,6 +6,13 @@ import { locusTools } from "../lib/ai/tools";
 import { compactToolOutput } from "../lib/ai/compact-tool-output";
 import { search } from "../lib/search";
 
+test("queryJobs is the only company job retrieval tool offered to the model", () => {
+  assert.ok("queryJobs" in locusTools);
+  assert.equal("listCompanyJobs" in locusTools, false);
+  assert.equal(typeof locusTools.queryJobs.description, "string");
+  assert.match(String(locusTools.queryJobs.description), /single job retrieval tool/);
+});
+
 test(
   "semantic tools preserve evidence/count meaning; disabled service falls back without relaxing filters",
   { skip: !process.env.DATABASE_URL },

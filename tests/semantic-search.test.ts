@@ -9,6 +9,8 @@ import {
   validateEmbedding,
   embeddingKey,
   QUERY_EMBEDDING_RECIPE,
+  COMPANY_EMBEDDING_RECIPE,
+  companyEmbeddingText,
 } from "../lib/ai/embedding-config";
 import {
   buildJobsQuery,
@@ -37,6 +39,16 @@ const vector = Array.from({ length: EMBEDDING_DIMENSIONS }, (_, i) =>
 );
 const cachedQuery =
   "Engineering roles building distributed data infrastructure and large-scale storage systems";
+
+test("company industry edits change the embedding key even when the About text is unchanged", () => {
+  const company = {name:"HiringCafe",industry:"Web Search",tagline:"Not just another job board",description:"AI-powered job discovery and matching."};
+  const before = companyEmbeddingText(company);
+  const after = companyEmbeddingText({...company,industry:"Job Search"});
+  assert.notEqual(before, after);
+  assert.notEqual(embeddingKey(before,"document",COMPANY_EMBEDDING_RECIPE), embeddingKey(after,"document",COMPANY_EMBEDDING_RECIPE));
+  assert.match(after, /Industry: Job Search/);
+  assert.equal(before.split("About: ")[1], after.split("About: ")[1]);
+});
 
 test("semantic schemas are bounded, optional and strictly validated", () => {
   for (const value of [

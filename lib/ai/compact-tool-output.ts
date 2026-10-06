@@ -68,8 +68,10 @@ function removeRepeatedCompanyFields(
   }
 }
 
-/** Model-only projection. Never truncates rows/text or removes financial facts,
- * investors, evidence sources, counts, unknowns, eligibility or error details.
+/** Model-only projection. Preserves financial facts, investors, sources, counts,
+ * unknowns, eligibility and error details without truncating retained records.
+ * Hidden company pools defer redundant job previews to the scoped role retrieval;
+ * ordinary inline evidence and standalone job candidate records remain complete.
  * The JSON round-trip mirrors SDK serialization and keeps the UI result intact.
  */
 export function compactToolResult(output: unknown): Json {
@@ -78,10 +80,26 @@ export function compactToolResult(output: unknown): Json {
     serialized === undefined ? null : JSON.parse(serialized),
   );
   if (!isObject(value) || !Array.isArray(value.companies)) return value;
+  const candidatePool =
+    isObject(value.presentation) && value.presentation.mode === "candidatePool";
   const companies = value.companies.filter(isObject);
+  const unrankedCompanies = Array.isArray(value.unrankedCompanies)
+    ? value.unrankedCompanies.filter(isObject)
+    : [];
+  if (candidatePool) {
+    for (const company of [...companies, ...unrankedCompanies]) {
+      const evidence = company.evidence;
+      const jobs = isObject(evidence) ? evidence.jobs : undefined;
+      if (isObject(jobs)) {
+        jobs.jobDetailsDeferred = true;
+        delete jobs.jobs;
+      }
+    }
+  }
+  const allCompanies = [...companies, ...unrankedCompanies];
   const sharedContext: ObjectValue = {};
   for (const [relation, recordsKey] of Object.entries(relationRecords)) {
-    const entries = companies.flatMap((company) => {
+    const entries = allCompanies.flatMap((company) => {
       const evidence = company.evidence;
       const result = isObject(evidence) ? evidence[relation] : undefined;
       return isObject(result) ? [{ company, result }] : [];

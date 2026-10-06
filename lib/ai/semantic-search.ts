@@ -46,15 +46,24 @@ export function semanticSource(
       AND ec.dimensions = ${EMBEDDING_DIMENSIONS} AND ec.recipe = ${recipe} AND ec.input_type = 'document'`;
 }
 
-export function semanticCoverageQuery(base: SQL, entity: "jobs" | "companies") {
-  return sql`WITH coverage AS (${semanticSource(base, entity)})
+export function semanticCoverageQuery(
+  base: SQL,
+  entity: "jobs" | "companies",
+  includeUnembeddedCompanies = false,
+) {
+  if (includeUnembeddedCompanies && entity !== "companies")
+    throw new Error("Unembedded supplement is company-only");
+  return sql`WITH coverage AS ${includeUnembeddedCompanies ? sql`MATERIALIZED` : sql``} (${semanticSource(base, entity)})
     SELECT count(*) AS eligible, count(*) FILTER (WHERE vector_covered) AS embedded
     ${
       entity === "jobs"
         ? sql`, (SELECT count(DISTINCT company_slug) FROM coverage WHERE vector_covered) AS company_matches,
       (SELECT jsonb_agg(summary) FROM (SELECT jsonb_build_object('companySlug',company_slug,'companyName',company_name,'jobCount',count(*)) AS summary
         FROM coverage WHERE vector_covered GROUP BY company_slug,company_name ORDER BY company_name LIMIT 50) company_counts) AS company_summaries`
-        : sql``
+        : includeUnembeddedCompanies
+          ? sql`, (SELECT coalesce(jsonb_agg(to_jsonb(uncovered)), '[]'::jsonb)
+              FROM (SELECT * FROM coverage WHERE NOT vector_covered ORDER BY slug LIMIT 5) uncovered) AS unembedded_candidates`
+          : sql``
     }
     FROM coverage`;
 }
@@ -87,6 +96,14 @@ export function semanticRankingQuery(
   const tie = entity === "jobs" ? sql`title, company_slug, id` : sql`slug`;
   return sql`WITH covered AS (SELECT * FROM (${semanticSource(base, entity, vector)}) candidates WHERE vector_covered)
     SELECT *, count(*) OVER() AS semantic_candidates FROM covered ORDER BY ${order}, ${tie} LIMIT ${limit}`;
+}
+
+/** A bounded evidence supplement, not vector ranking or relaxed exact filters. */
+export function unembeddedCompanyCandidatesQuery(base: SQL, limit = 5) {
+  if (!Number.isInteger(limit) || limit < 1 || limit > 5)
+    throw new Error("Invalid unembedded candidate limit");
+  return sql`SELECT * FROM (${semanticSource(base, "companies")}) candidates
+    WHERE NOT vector_covered ORDER BY slug LIMIT ${limit}`;
 }
 
 function decodeVector(value: unknown): number[] {
@@ -192,16 +209,33 @@ export async function queryEmbedding(
   }
 }
 
+export type SemanticRetrievalDependencies = {
+  execute: (query: SQL) => Promise<{ rows: Record<string, unknown>[] }>;
+  queryEmbedding: (
+    text: string,
+  ) => Promise<{ vector: number[]; cacheHit: boolean }>;
+};
+
 export async function retrieveSemantic(
   base: SQL,
   entity: "jobs" | "companies",
   text: string,
   limit: number,
   sortBy: string,
+  options: { includeUnembeddedCompanies?: boolean } = {},
+  dependencies?: SemanticRetrievalDependencies,
 ) {
   if (process.env.LOCUS_SEMANTIC_SEARCH === "off")
     throw new Error("Semantic search disabled");
-  const coverage = await db.execute(semanticCoverageQuery(base, entity));
+  const execute = dependencies?.execute ?? ((query: SQL) => db.execute(query));
+  const coverage = await execute(
+    semanticCoverageQuery(base, entity, options.includeUnembeddedCompanies),
+  );
+  const unembeddedRows: Record<string, unknown>[] = Array.isArray(
+    coverage.rows[0]?.unembedded_candidates,
+  )
+    ? (coverage.rows[0].unembedded_candidates as Record<string, unknown>[])
+    : [];
   const eligible = Number(coverage.rows[0]?.eligible ?? 0);
   const embedded = Number(coverage.rows[0]?.embedded ?? 0);
   const metadata = {
@@ -220,6 +254,7 @@ export async function retrieveSemantic(
   if (!embedded)
     return {
       rows: [],
+      unembeddedRows,
       metadata: {
         ...metadata,
         queryCacheHit: null,
@@ -227,8 +262,8 @@ export async function retrieveSemantic(
       },
       unavailable: "No current vectors within the exact filters",
     };
-  const query = await queryEmbedding(text);
-  const result = await db.execute(
+  const query = await (dependencies?.queryEmbedding ?? queryEmbedding)(text);
+  const result = await execute(
     semanticRankingQuery(base, entity, query.vector, limit, sortBy),
   );
   const rows: Record<string, unknown>[] = result.rows.map((row) => ({
@@ -243,6 +278,7 @@ export async function retrieveSemantic(
   }));
   return {
     rows,
+    unembeddedRows,
     metadata: {
       ...metadata,
       queryCacheHit: query.cacheHit,

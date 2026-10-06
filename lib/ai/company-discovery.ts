@@ -48,6 +48,7 @@ const hiring = jobsQuerySchema
     limit: true,
     sortBy: true,
     semanticQuery: true,
+    resultMode: true,
   })
   .safeExtend({
     query: jobsQuerySchema.shape.query.describe(
@@ -78,6 +79,18 @@ const activity = z
 
 export const companyDiscoverySchema = companiesQuerySchema
   .safeExtend({
+    resultMode: z
+      .enum(["inline", "candidates"])
+      .optional()
+      .describe(
+        "inline (default) displays company answers. candidates returns a hidden company discovery pool for a downstream role recommendation. Use candidates, limit 15 when the user wants a role at a company with a particular product/mission or funding condition; review descriptions and unrankedCompanies, then queryJobs scoped to verified relevant companies.",
+      ),
+    semanticQuery: companiesQuerySchema.shape.semanticQuery.describe(
+      "Company PRODUCT/market/use-case similarity, not candidate skills or job responsibilities. Aim for 200–350 characters, maximum 500. Use for companies like a described project. Combine with structured funding/date filters. Omit query/industry unless an exact keyword/category was explicitly requested; generic AI or shared tech stacks do not establish similar products.",
+    ),
+    query: companiesQuerySchema.shape.query.describe(
+      "HARD lexical company constraint, only for explicitly requested words. Not a conceptual product description; use semanticQuery for meaning. Every supplied constraint restricts candidates before ranking.",
+    ),
     countryCode: fundingQuerySchema.shape.countryCode,
     funding: funding
       .optional()
@@ -87,7 +100,7 @@ export const companyDiscoverySchema = companiesQuerySchema
     jobs: hiring
       .optional()
       .describe(
-        "Require a matching job. All hiring filters must match the same job; confirmed open by default. Location here is JOB location, not company location.",
+        "Require a matching job. All hiring filters must match the same job; confirmed open by default. For a role recommendation normally use only status openOrUnknown here, then rank roles with queryJobs. Do not infer hard title/query/skills filters from the user's background. Location here is JOB location, not company location.",
       ),
     people: person
       .optional()
@@ -104,6 +117,7 @@ export const companyDiscoverySchema = companiesQuerySchema
 
 export type CompanyDiscovery = z.infer<typeof companyDiscoverySchema>;
 type DiscoverySources = { companies: SQL; jobs: SQL; people: SQL };
+export const COMPANY_CANDIDATE_POOL_SIZE = 15;
 const evidenceLimit = 3;
 
 function relationInputs(input: CompanyDiscovery) {
@@ -223,6 +237,14 @@ export function companyDiscoveryResult(
     policy: `${base.policy} All supplied relations are intersected before counting and limiting companies. Filters within each relation must match the same record. Evidence is capped at ${evidenceLimit} records per relation per company; evidence counts are not company counts. Job eligibility and date policies are returned with the evidence.`,
     companies: base.companies.map((company, index) => ({
       ...company,
+      ...(input.resultMode === "candidates"
+        ? {
+            descriptionExcerpt: String(rows[index].description ?? "").slice(
+              0,
+              1800,
+            ),
+          }
+        : {}),
       ...(Object.values(queries).some(Boolean)
         ? {
             evidence: {

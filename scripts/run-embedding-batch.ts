@@ -73,7 +73,8 @@ let batchId = "batch-01",
   budgetUsd = 0.25,
   maxNewRequests = 100;
 let run = false,
-  mock = false;
+  mock = false,
+  companiesOnly = false;
 for (let i = 0; i < argv.length; i++) {
   if (argv[i] === "--batch") batchId = argv[++i];
   else if (argv[i] === "--manifest") manifestPath = argv[++i];
@@ -81,6 +82,7 @@ for (let i = 0; i < argv.length; i++) {
   else if (argv[i] === "--max-new-requests") maxNewRequests = Number(argv[++i]);
   else if (argv[i] === "--run") run = true;
   else if (argv[i] === "--mock") mock = true;
+  else if (argv[i] === "--companies-only") companiesOnly = true;
   else if (argv[i] !== "--dry-run")
     throw new Error(`Unknown argument ${argv[i]}`);
 }
@@ -140,9 +142,13 @@ async function collect(slugs: string[]) {
   }>;
   assert.equal(companies.length, slugs.length, "Missing companies");
   const jobs = (
-    await db.execute(sql`SELECT j.id,j.title,j.department,j.focus,j.skills,j.description,j.status,c.id AS company_id,c.slug AS company_slug,c.name AS company_name
+    companiesOnly
+      ? []
+      : (
+          await db.execute(sql`SELECT j.id,j.title,j.department,j.focus,j.skills,j.description,j.status,c.id AS company_id,c.slug AS company_slug,c.name AS company_name
     FROM jobs j JOIN companies c ON c.id=j.company_id WHERE c.slug IN (${parameters}) ORDER BY c.slug,j.title,j.location,j.id`)
-  ).rows as Array<{
+        ).rows
+  ) as Array<{
     id: string;
     title: string;
     department: string | null;
@@ -241,7 +247,7 @@ async function main() {
   const { documents, companies, jobs } = await collect(rollout.companySlugs);
   assert.equal(
     jobs.length,
-    rollout.jobCount,
+    companiesOnly ? 0 : rollout.jobCount,
     "Job inventory changed since planning; inspect manifest before spending",
   );
   const unique = [...new Map(documents.map((d) => [d.key, d])).values()];
@@ -364,6 +370,7 @@ async function main() {
     const plan = {
       batchId,
       mode: mock ? "mock" : run ? "live" : "dry-run",
+      scope: companiesOnly ? "companies-only" : "companies-and-jobs",
       companies: companies.length,
       jobs: jobs.length,
       statusCounts: jobs.reduce<Record<string, number>>((a, j) => {

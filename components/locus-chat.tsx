@@ -10,6 +10,8 @@ import {
   useTransition,
 } from "react";
 import { useChat } from "@ai-sdk/react";
+import { BorderBeam } from "border-beam";
+import { useTheme } from "next-themes";
 import {
   DefaultChatTransport,
   lastAssistantMessageIsCompleteWithToolCalls,
@@ -36,6 +38,7 @@ import { Button } from "@/components/ui/button";
 import { LocusModelPicker } from "@/components/locus-model-picker";
 import { useLocusModel } from "@/lib/use-locus-model";
 import { isLocusFocusClickZone } from "@/lib/locus-focus-click-zone";
+import { shouldDisplayLocusResult } from "@/lib/locus-result-visibility";
 import { LocusResponseTimer } from "@/lib/locus-response-timer";
 import { LocusActivityStatus } from "@/components/locus-activity-status";
 import { LocusTraceRow } from "@/components/locus-trace-row";
@@ -213,6 +216,7 @@ function toolResultRows(
   type: string,
   output: unknown,
 ): LocusSearchResults | null {
+  if (!shouldDisplayLocusResult(output)) return null;
   if (
     [
       "tool-searchLocus",
@@ -251,6 +255,8 @@ function toolResultRows(
     return companies.length ? { companies, people: [], jobs: [] } : null;
   }
 
+  // Historical chats may contain this retired tool's array output. It is no
+  // longer available to the model, but existing cards must remain readable.
   if (type === "tool-listCompanyJobs" && Array.isArray(output)) {
     const jobs = output.map(asJobResult).filter(Boolean) as LocusJobResult[];
     return jobs.length ? { companies: [], people: [], jobs } : null;
@@ -384,6 +390,7 @@ function lastAssistantMessageContainsNavigation(messages: UIMessage[]) {
  * state and submit behavior without changing this shell.
  */
 export function LocusChat() {
+  const { resolvedTheme } = useTheme();
   const router = useRouter();
   const [isNavigating, startNavigation] = useTransition();
   const [focusState, setFocusState] = useState<
@@ -810,206 +817,221 @@ export function LocusChat() {
                     </AnimatePresence>
                   </div>
                 )}
-                <motion.section
-                  aria-label="Ask Locus"
-                  className="w-full rounded-xl! bg-popover/95 p-2 text-popover-foreground shadow-2xl shadow-emerald-500/10 ring-1 ring-border backdrop-blur-sm dark:bg-popover/75 dark:shadow-emerald-500/15"
-                  style={{ transformOrigin: "bottom center" }}
+                <BorderBeam
+                  active={isBusy && !reduceMotion}
+                  size="md"
+                  colorVariant="forest"
+                  theme={resolvedTheme === "dark" ? "dark" : "light"}
+                  staticColors
+                  duration={4}
+                  strength={1}
+                  glowSize={1}
+                  className="w-full shadow-2xl shadow-emerald-500/10 ring-1 ring-border dark:shadow-emerald-500/15"
                 >
-                  {(messages.length > 0 || error) && (
-                    <motion.div
-                      animate={
-                        isClearingChat
-                          ? clearedMessages
-                          : { opacity: 1, transform: "translateY(0)" }
-                      }
-                      className="mb-3 h-fit max-h-72 space-y-5 px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
-                      initial={false}
-                      onScroll={handleMessageScroll}
-                      onAnimationComplete={finishNewChat}
-                      ref={messageListRef}
-                      style={{
-                        overflowY: hasTranscriptOverflow ? "auto" : "hidden",
-                      }}
-                      transition={{
-                        duration: 0.18,
-                        ease: [0.23, 1, 0.32, 1],
-                      }}
-                    >
-                      {messages.map((message) => {
-                        const text = message.parts
-                          .filter((part) => part.type === "text")
-                          .map((part) => part.text)
-                          .join("");
-                        const isShortUserMessage =
-                          message.role === "user" &&
-                          text.length <= 48 &&
-                          !text.includes("\n");
-                        const segments =
-                          message.role === "assistant"
-                            ? toLocusSegments(message.parts)
-                            : [];
-
-                        if (message.role === "user") {
-                          if (!text) return null;
-                          return (
-                            <motion.div
-                              animate={{ opacity: 1 }}
-                              className={`ml-auto w-fit max-w-[80%] bg-emerald-500/10 px-4 py-2 text-emerald-950 backdrop-blur-sm dark:bg-emerald-400/10 dark:text-emerald-100 ${isShortUserMessage ? "rounded-full" : "rounded-2xl"}`}
-                              initial={{ opacity: 0 }}
-                              key={message.id}
-                            >
-                              <p className="break-words whitespace-pre-wrap text-[15px] leading-6">
-                                {text}
-                              </p>
-                            </motion.div>
-                          );
+                  <motion.section
+                    aria-label="Ask Locus"
+                    className="w-full rounded-xl! bg-popover/95 p-2 text-popover-foreground backdrop-blur-sm dark:bg-popover/75"
+                    style={{ transformOrigin: "bottom center" }}
+                  >
+                    {(messages.length > 0 || error) && (
+                      <motion.div
+                        animate={
+                          isClearingChat
+                            ? clearedMessages
+                            : { opacity: 1, transform: "translateY(0)" }
                         }
+                        className="mb-3 h-fit max-h-72 space-y-5 px-1 py-2 sm:max-h-[min(26rem,calc(100dvh-12rem))]"
+                        initial={false}
+                        onScroll={handleMessageScroll}
+                        onAnimationComplete={finishNewChat}
+                        ref={messageListRef}
+                        style={{
+                          overflowY: hasTranscriptOverflow ? "auto" : "hidden",
+                        }}
+                        transition={{
+                          duration: 0.18,
+                          ease: [0.23, 1, 0.32, 1],
+                        }}
+                      >
+                        {messages.map((message) => {
+                          const text = message.parts
+                            .filter((part) => part.type === "text")
+                            .map((part) => part.text)
+                            .join("");
+                          const isShortUserMessage =
+                            message.role === "user" &&
+                            text.length <= 48 &&
+                            !text.includes("\n");
+                          const segments =
+                            message.role === "assistant"
+                              ? toLocusSegments(message.parts)
+                              : [];
 
-                        if (!segments.length) return null;
-
-                        return (
-                          <div className="w-full" key={message.id}>
-                            {segments.map((segment, index) => {
-                              const previous = segments[index - 1];
-                              const spacing = !previous
-                                ? ""
-                                : previous.kind === "text" ||
-                                    segment.kind === "text"
-                                  ? "mt-3"
-                                  : "mt-1";
-                              if (segment.kind === "text") {
-                                return (
-                                  <div
-                                    className={`w-full px-2 ${spacing}`}
-                                    key={segment.key}
-                                  >
-                                    <Streamdown
-                                      animated={false}
-                                      className="break-words text-[15px] leading-6 [&>*]:first:mt-0 [&>*]:last:mb-0 [&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:my-0.5 [&_p]:my-2 [&_pre]:text-sm [&_table]:text-sm"
-                                      mode={
-                                        segment.streaming
-                                          ? "streaming"
-                                          : "static"
-                                      }
-                                    >
-                                      {segment.text}
-                                    </Streamdown>
-                                  </div>
-                                );
-                              }
-
-                              if (segment.kind === "trace") {
-                                return (
-                                  <div className={spacing} key={segment.key}>
-                                    <LocusTraceRow trace={segment.trace} />
-                                  </div>
-                                );
-                              }
-
-                              if (segment.kind === "results") {
-                                return (
-                                  <div className={spacing} key={segment.key}>
-                                    <LocusResultRows
-                                      {...segment.results}
-                                      onNavigate={() =>
-                                        setFocusState("panel-exiting")
-                                      }
-                                    />
-                                  </div>
-                                );
-                              }
-
-                              return null;
-                            })}
-                            {responseDurations[message.id] !== undefined ? (
-                              <p
-                                className="mt-2 flex items-center gap-1.5 px-2 font-mono text-[11px] leading-4 text-muted-foreground tabular-nums"
-                                aria-label={`Response completed in ${responseDurations[message.id].toFixed(1)} seconds`}
+                          if (message.role === "user") {
+                            if (!text) return null;
+                            return (
+                              <motion.div
+                                animate={{ opacity: 1 }}
+                                className={`ml-auto w-fit max-w-[80%] bg-emerald-500/10 px-4 py-2 text-emerald-950 backdrop-blur-sm dark:bg-emerald-400/10 dark:text-emerald-100 ${isShortUserMessage ? "rounded-full" : "rounded-2xl"}`}
+                                initial={{ opacity: 0 }}
+                                key={message.id}
                               >
-                                <TimerIcon
-                                  aria-hidden="true"
-                                  className="size-3"
-                                />
-                                {responseDurations[message.id].toFixed(1)}s
-                              </p>
-                            ) : null}
+                                <p className="break-words whitespace-pre-wrap text-[15px] leading-6">
+                                  {text}
+                                </p>
+                              </motion.div>
+                            );
+                          }
+
+                          if (!segments.length) return null;
+
+                          return (
+                            <div className="w-full" key={message.id}>
+                              {segments.map((segment, index) => {
+                                const previous = segments[index - 1];
+                                const spacing = !previous
+                                  ? ""
+                                  : previous.kind === "text" ||
+                                      segment.kind === "text"
+                                    ? "mt-3"
+                                    : "mt-1";
+                                if (segment.kind === "text") {
+                                  return (
+                                    <div
+                                      className={`w-full px-2 ${spacing}`}
+                                      key={segment.key}
+                                    >
+                                      <Streamdown
+                                        animated={false}
+                                        className="break-words text-[15px] leading-6 [&>*]:first:mt-0 [&>*]:last:mb-0 [&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:my-0.5 [&_p]:my-2 [&_pre]:text-sm [&_table]:text-sm"
+                                        mode={
+                                          segment.streaming
+                                            ? "streaming"
+                                            : "static"
+                                        }
+                                      >
+                                        {segment.text}
+                                      </Streamdown>
+                                    </div>
+                                  );
+                                }
+
+                                if (segment.kind === "trace") {
+                                  return (
+                                    <div className={spacing} key={segment.key}>
+                                      <LocusTraceRow trace={segment.trace} />
+                                    </div>
+                                  );
+                                }
+
+                                if (segment.kind === "results") {
+                                  return (
+                                    <div className={spacing} key={segment.key}>
+                                      <LocusResultRows
+                                        {...segment.results}
+                                        onNavigate={() =>
+                                          setFocusState("panel-exiting")
+                                        }
+                                      />
+                                    </div>
+                                  );
+                                }
+
+                                return null;
+                              })}
+                              {responseDurations[message.id] !== undefined ? (
+                                <p
+                                  className="mt-2 flex items-center gap-1.5 px-2 font-mono text-[11px] leading-4 text-muted-foreground tabular-nums"
+                                  aria-label={`Response completed in ${responseDurations[message.id].toFixed(1)} seconds`}
+                                >
+                                  <TimerIcon
+                                    aria-hidden="true"
+                                    className="size-3"
+                                  />
+                                  {responseDurations[message.id].toFixed(1)}s
+                                </p>
+                              ) : null}
+                            </div>
+                          );
+                        })}
+                        {showInlineActivity && activityStartedAt ? (
+                          <div className="px-2" key="pending-activity">
+                            <ActivityPill
+                              label={activityLabel}
+                              reduceMotion={reduceMotion}
+                              inline
+                            />
                           </div>
-                        );
-                      })}
-                      {showInlineActivity && activityStartedAt ? (
-                        <div className="px-2" key="pending-activity">
-                          <ActivityPill
-                            label={activityLabel}
-                            reduceMotion={reduceMotion}
-                            inline
-                          />
+                        ) : null}
+                        {error ? (
+                          <p
+                            className="px-2 text-sm text-destructive"
+                            role="alert"
+                          >
+                            {error.message}
+                          </p>
+                        ) : null}
+                      </motion.div>
+                    )}
+                    <motion.form className="relative" onSubmit={submit}>
+                      {messages.length > 0 ? (
+                        <div className="pointer-events-none absolute inset-x-0 bottom-full flex justify-center pb-2">
+                          <button
+                            aria-label="Jump to latest"
+                            className={`cursor-pointer rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
+                              isScrolledAwayFromBottom
+                                ? "pointer-events-auto translate-y-0 opacity-100"
+                                : "pointer-events-none translate-y-0.5 opacity-0"
+                            }`}
+                            onClick={() => scrollToLatest()}
+                            title="Jump to latest"
+                            type="button"
+                          >
+                            <span className="flex h-9 w-12 items-center justify-center text-foreground">
+                              <ArrowDown
+                                aria-hidden="true"
+                                className="size-5"
+                              />
+                            </span>
+                          </button>
                         </div>
                       ) : null}
-                      {error ? (
-                        <p
-                          className="px-2 text-sm text-destructive"
-                          role="alert"
-                        >
-                          {error.message}
-                        </p>
-                      ) : null}
-                    </motion.div>
-                  )}
-                  <motion.form className="relative" onSubmit={submit}>
-                    {messages.length > 0 ? (
-                      <div className="pointer-events-none absolute inset-x-0 bottom-full flex justify-center pb-2">
-                        <button
-                          aria-label="Jump to latest"
-                          className={`cursor-pointer rounded-full border border-border/70 bg-card/90 shadow-xs backdrop-blur-md transition-[opacity,translate,scale] duration-150 ease-out will-change-[translate,opacity] hover:bg-muted active:scale-[0.98] motion-reduce:translate-y-0 motion-reduce:transition-opacity motion-reduce:active:scale-100 ${
-                            isScrolledAwayFromBottom
-                              ? "pointer-events-auto translate-y-0 opacity-100"
-                              : "pointer-events-none translate-y-0.5 opacity-0"
-                          }`}
-                          onClick={() => scrollToLatest()}
-                          title="Jump to latest"
-                          type="button"
-                        >
-                          <span className="flex h-9 w-12 items-center justify-center text-foreground">
-                            <ArrowDown aria-hidden="true" className="size-5" />
-                          </span>
-                        </button>
-                      </div>
-                    ) : null}
-                    <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
-                      <InputGroupAddon className="cursor-default">
-                        <LocusModelPicker
-                          modelId={modelId}
-                          onChange={setModelId}
+                      <InputGroup className="h-10! rounded-lg! border-transparent bg-transparent shadow-none! ring-0 focus-within:border-transparent focus-within:ring-0 has-disabled:bg-transparent has-disabled:opacity-100 has-[[data-slot=input-group-control]:focus-visible]:border-transparent! has-[[data-slot=input-group-control]:focus-visible]:ring-0! dark:bg-transparent dark:has-disabled:bg-transparent">
+                        <InputGroupAddon className="cursor-default">
+                          <LocusModelPicker
+                            modelId={modelId}
+                            onChange={setModelId}
+                            disabled={isBusy}
+                          />
+                        </InputGroupAddon>
+                        <InputGroupInput
+                          aria-label="Message Locus"
+                          autoComplete="off"
+                          autoFocus
+                          className="text-base!"
                           disabled={isBusy}
+                          onChange={(event) => setInput(event.target.value)}
+                          placeholder="Ask about a company, person, or role…"
+                          value={input}
                         />
-                      </InputGroupAddon>
-                      <InputGroupInput
-                        aria-label="Message Locus"
-                        autoComplete="off"
-                        autoFocus
-                        className="text-base!"
-                        disabled={isBusy}
-                        onChange={(event) => setInput(event.target.value)}
-                        placeholder="Ask about a company, person, or role…"
-                        value={input}
-                      />
-                      <InputGroupButton
-                        aria-label={isBusy ? "Stop response" : "Send message"}
-                        className="mr-1 text-muted-foreground"
-                        disabled={!isBusy && !input.trim()}
-                        size="icon-sm"
-                        type={isBusy ? "button" : "submit"}
-                        onClick={isBusy ? stop : undefined}
-                      >
-                        {isBusy ? (
-                          <SquareIcon className="size-4 stroke-2 opacity-70" />
-                        ) : (
-                          <ArrowUpIcon className="size-5" />
-                        )}
-                      </InputGroupButton>
-                    </InputGroup>
-                  </motion.form>
-                </motion.section>
+                        <InputGroupButton
+                          aria-label={isBusy ? "Stop response" : "Send message"}
+                          className="mr-1 text-muted-foreground"
+                          disabled={!isBusy && !input.trim()}
+                          size="icon-sm"
+                          type={isBusy ? "button" : "submit"}
+                          onClick={isBusy ? stop : undefined}
+                        >
+                          {isBusy ? (
+                            <SquareIcon className="size-4 stroke-2 opacity-70" />
+                          ) : (
+                            <ArrowUpIcon className="size-5" />
+                          )}
+                        </InputGroupButton>
+                      </InputGroup>
+                    </motion.form>
+                  </motion.section>
+                </BorderBeam>
               </motion.div>
             </LayoutGroup>
           </div>

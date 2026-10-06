@@ -4,7 +4,11 @@ import { tool } from "ai";
 import { and, asc, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { z } from "zod";
 import { compactToolOutput } from "./compact-tool-output";
-import { retrieveSemantic, semanticResult } from "./semantic-search";
+import {
+  retrieveSemantic,
+  semanticResult,
+  unembeddedCompanyCandidatesQuery,
+} from "./semantic-search";
 import {
   presentationOptionsSchema,
   selectPresentation,
@@ -21,11 +25,19 @@ import {
   fundingQueryResult,
   fundingQuerySchema,
 } from "./funding-query";
-import { buildJobsQuery, jobsQueryResult, jobsQuerySchema } from "./jobs-query";
+import {
+  buildJobsQuery,
+  jobsQueryResult,
+  jobsQuerySchema,
+  JOB_FIT_CANDIDATE_POOL_SIZE,
+} from "./jobs-query";
+import { withJobPresentation } from "./job-candidate-presentation";
+import { withCompanyPresentation } from "./company-candidate-presentation";
 import {
   buildCompanyDiscoveryQuery,
   companyDiscoveryResult,
   companyDiscoverySchema,
+  COMPANY_CANDIDATE_POOL_SIZE,
 } from "./company-discovery";
 import {
   buildPeopleQuery,
@@ -40,62 +52,22 @@ const companySlugSchema = z
   .string()
   .trim()
   .regex(/^[a-z0-9-]+$/)
-  .max(100);
+  .max(100)
+  .describe(
+    "Exact lowercase company slug returned by a verified page context or company lookup (for example hiringcafe), not its display name or URL. Do not guess a slug from a name.",
+  );
 
-const resultLimitSchema = z.number().int().min(1).max(3).default(3);
+const resultLimitSchema = z
+  .number()
+  .int()
+  .min(1)
+  .max(3)
+  .default(3)
+  .describe(
+    "Preview record count, an integer from 1 to 3. Omit for 3; never send null.",
+  );
 const searchResultLimitSchema = z.number().int().min(1).max(12).default(3);
 const searchResultTypeSchema = z.enum(["companies", "people", "jobs"]);
-
-const jobRelevanceStopWords = new Set([
-  "a",
-  "an",
-  "and",
-  "at",
-  "best",
-  "do",
-  "for",
-  "good",
-  "i",
-  "if",
-  "in",
-  "job",
-  "jobs",
-  "me",
-  "my",
-  "role",
-  "should",
-  "that",
-  "the",
-  "what",
-  "with",
-]);
-
-function jobSearchStem(word: string) {
-  if (word === "eng" || word === "engineering" || word === "engineers") {
-    return "engineer";
-  }
-  return word;
-}
-
-function jobWords(value: string) {
-  return (
-    value
-      .toLowerCase()
-      .replace(/fullstack/g, "full stack")
-      .match(/[a-z0-9]{2,}/g)
-      ?.map(jobSearchStem) ?? []
-  );
-}
-
-function jobSearchTerms(criteria?: string) {
-  if (!criteria) return [];
-
-  return [
-    ...new Set(
-      jobWords(criteria).filter((word) => !jobRelevanceStopWords.has(word)),
-    ),
-  ];
-}
 
 function companyLogo(profile: unknown) {
   if (profile && typeof profile === "object" && "logo" in profile) {
@@ -198,11 +170,16 @@ export const locusTools = {
     toModelOutput: compactToolOutput,
     strict: false,
     description:
-      "For conceptual responsibility/fit requests use semanticQuery (natural-language intent), not keyword query. Omit semanticQuery for names, exact skills, or salary/location/status-only filters. Semantic ranks only current vector-covered candidates and reports coverage, scores and description evidence; not exhaustive relevance counts. query remains an additional strict lexical constraint if supplied. Defaults confirmed open; explicitly use openOrUnknown for recorded roles with unconfirmed status, never call them open. " +
-      "Filter/rank jobs by role keywords, title, department, ALL skills, job location, company industry, workplace type, seniority, employment type, minimum annual USD salary, sponsorship and new-grad eligibility. queryScope defaults role (title/skills only); allContent also searches descriptions/departments and can match unrelated roles. Department filters are recorded team labels, not proof of an engineering role. companySlugs composes with other queries. Defaults confirmed open; openOrUnknown includes unconfirmed. Unknown fields never satisfy positive filters. Salary uses the lower bound, not maximum. Returns limited job examples plus totalMatches, hasMore, totalCompanies and companySummaries (up to 50 companies counted BEFORE limit). Set limit to the number of roles requested. Remote does not mean worldwide: preserve location/travel restrictions.",
+      "The single job retrieval tool for company inventories, cross-company discovery, exact filtering and personal-fit ranking. For best-fit recommendations use resultMode candidates, limit 15 and semanticQuery. This returns an undisplayed pool; compare description/requirements evidence with the user's experience and goals, then call presentLocusResults with a verified shortlist (default 3). Semantic similarity is not suitability. For simple lists omit resultMode or use inline and set limit to the requested displayed count. Supply companySlugs for a known employer. Omit semanticQuery for names, exact skills, or salary/location/status-only filters. Semantic ranks only current vector-covered candidates and reports coverage, scores and description evidence; not exhaustive relevance counts. query remains an additional strict lexical constraint if supplied. Defaults confirmed open; explicitly use openOrUnknown for recorded roles with unconfirmed status, never call them open. " +
+      "Filter/rank jobs by role keywords, title, department, ALL skills, job location, company industry, workplace type, seniority, employment type, minimum annual USD salary, sponsorship and new-grad eligibility. queryScope defaults role (title/skills only); allContent also searches descriptions/departments and can match unrelated roles. Department filters are recorded team labels, not proof of an engineering role. companySlugs composes with other queries. Unknown fields never satisfy positive filters. Salary uses the lower bound, not maximum. Returns limited job records plus counts and coverage. Candidate pool limit and final shortlist display count are separate. Remote does not mean worldwide: preserve location/travel restrictions.",
     inputSchema: jobsQuerySchema,
     execute: async (input) => {
       input = jobsQuerySchema.parse(input);
+      if (input.resultMode === "candidates")
+        input = {
+          ...input,
+          limit: Math.max(input.limit, JOB_FIT_CANDIDATE_POOL_SIZE),
+        };
       const asOf = new Date().toISOString().slice(0, 10);
       if (input.semanticQuery) {
         let unavailable =
@@ -216,10 +193,13 @@ export const locusTools = {
             input.sortBy,
           );
           if (!semantic.unavailable)
-            return withResultPresentation({
-              ...semanticResult(jobsQueryResult(semantic.rows, input, asOf)),
-              retrieval: semantic.metadata,
-            });
+            return withJobPresentation(
+              {
+                ...semanticResult(jobsQueryResult(semantic.rows, input, asOf)),
+                retrieval: semantic.metadata,
+              },
+              input.resultMode,
+            );
           unavailable = semantic.unavailable;
         } catch {
           /* Controlled lexical fallback; never relax exact filters. */
@@ -229,31 +209,51 @@ export const locusTools = {
           query: input.query ?? input.semanticQuery,
         };
         const result = await db.execute(buildJobsQuery(fallback, asOf));
-        return withResultPresentation({
-          ...jobsQueryResult(result.rows, input, asOf),
-          retrieval: {
-            mode: "lexical-fallback",
-            queryUsed: fallback.query,
-            reason: unavailable,
-            policy:
-              "Semantic retrieval was unavailable. These are keyword matches under unchanged structured filters, not vector results. No synonyms or filter relaxation were applied.",
+        return withJobPresentation(
+          {
+            ...jobsQueryResult(result.rows, input, asOf),
+            retrieval: {
+              mode: "lexical-fallback",
+              queryUsed: fallback.query,
+              reason: unavailable,
+              policy:
+                "Semantic retrieval was unavailable. These are keyword matches under unchanged structured filters, not vector results. No synonyms or filter relaxation were applied.",
+            },
           },
-        });
+          input.resultMode,
+        );
       }
       const result = await db.execute(buildJobsQuery(input, asOf));
-      return withResultPresentation(jobsQueryResult(result.rows, input, asOf));
+      return withJobPresentation(
+        jobsQueryResult(result.rows, input, asOf),
+        input.resultMode,
+      );
     },
   }),
   queryCompanies: tool({
     toModelOutput: compactToolOutput,
     strict: false,
     description:
-      "Use top-level semanticQuery for conceptual company About/product discovery (natural-language intent), with sortBy relevance unless a different order is requested. It ranks vector-covered companies AFTER all exact and relation filters, with coverage disclosure. Omit it for names, aliases, or structured-only requests. query adds a strict keyword constraint; nested jobs currently uses lexical/structured filters only. Semantic counts are covered candidates, not proof of relevance. " +
+      "FIRST tool for a ROLE at companies matching a product/mission, recent funding, people or activity condition. Use resultMode candidates and limit 15; describe COMPANY PRODUCT/USERS/USE CASE in semanticQuery, combine exact funding/relation filters, and normally require jobs.status only (no inferred title/skills filters). Review descriptions plus unrankedCompanies, select product-relevant verified slugs, THEN queryJobs candidates for role fit and presentLocusResults for the final role cards. For ordinary company answers use inline (default). " +
+      "Use top-level semanticQuery for conceptual company About/product discovery with sortBy relevance. It ranks vector-covered companies AFTER all exact and relation filters, with coverage disclosure. Hidden candidate mode also supplies up to 5 unembedded companies separately as unrankedCompanies under unchanged exact filters, with descriptions/evidence, never invented scores. Omit semanticQuery for names, aliases, or structured-only requests. query adds a strict keyword constraint; nested jobs uses lexical/structured filters only. Semantic counts are covered candidates, not proof of relevance. " +
       "Discover companies by description keywords, industry/location literal substring, country, exact company stage, founded-year/employee bounds and minimum total USD funding. Combine nested funding, jobs, people and activity filters in ONE call for cross-entity questions such as recently funded companies hiring remotely. All relations must match; all filters within a relation must match ONE record. Intersect the full candidate set BEFORE counting or limiting companies, not separate limited funding/job previews. jobs.location is job location; top-level location is company location. jobs defaults confirmed open; recorded remote does not imply worldwide eligibility. Returns final company cards with bounded matching evidence (3 records per relation per company), exact company totalMatches/countUnit and hasMore. Omit unrequested relations; {} explicitly requires a qualifying record. Nested funding filters apply to rounds; minimumTotalFunding applies to company TOTAL. Employee filters require the entire known range to fit; unknown bounds are not positive matches. Sort name ascending or totalFunding/employees/foundedYear descending (employees sorts lower bounds).",
     inputSchema: companyDiscoverySchema,
     execute: async (input) => {
       input = companyDiscoverySchema.parse(input);
+      if (input.resultMode === "candidates")
+        input = {
+          ...input,
+          limit: Math.max(input.limit, COMPANY_CANDIDATE_POOL_SIZE),
+        };
       const asOf = new Date().toISOString().slice(0, 10);
+      // An edited company About can lack a current vector while its jobs have
+      // full coverage. Keep a small separately labelled evidence supplement.
+      const includeUnembeddedCompanies = input.resultMode === "candidates";
+      let unranked: {
+        unrankedCompanies?: ReturnType<
+          typeof companyDiscoveryResult
+        >["companies"];
+      } = {};
       if (input.semanticQuery) {
         let unavailable =
           "Embedding service unavailable, rate-limited, or request budget exhausted";
@@ -264,17 +264,45 @@ export const locusTools = {
             input.semanticQuery,
             input.limit,
             input.sortBy,
+            { includeUnembeddedCompanies },
           );
+          if (includeUnembeddedCompanies)
+            unranked = {
+              unrankedCompanies: companyDiscoveryResult(
+                semantic.unembeddedRows,
+                input,
+                asOf,
+              ).companies,
+            };
           if (!semantic.unavailable)
-            return withResultPresentation({
-              ...semanticResult(
-                companyDiscoveryResult(semantic.rows, input, asOf),
-              ),
-              retrieval: semantic.metadata,
-            });
+            return withCompanyPresentation(
+              {
+                ...semanticResult(
+                  companyDiscoveryResult(semantic.rows, input, asOf),
+                ),
+                retrieval: semantic.metadata,
+                ...unranked,
+              },
+              input.resultMode,
+            );
           unavailable = semantic.unavailable;
         } catch {
-          /* Preserve all original structured/relation constraints. */
+          // Exceptional path only: semantic retrieval may fail before returning
+          // coverage. Preserve the unranked evidence under unchanged constraints.
+          if (includeUnembeddedCompanies)
+            unranked = {
+              unrankedCompanies: companyDiscoveryResult(
+                (
+                  await db.execute(
+                    unembeddedCompanyCandidatesQuery(
+                      buildCompanyDiscoveryQuery(input, asOf, undefined, true),
+                    ),
+                  )
+                ).rows,
+                input,
+                asOf,
+              ).companies,
+            };
         }
         const fallback = {
           ...input,
@@ -283,20 +311,25 @@ export const locusTools = {
         const result = await db.execute(
           buildCompanyDiscoveryQuery(fallback, asOf),
         );
-        return withResultPresentation({
-          ...companyDiscoveryResult(result.rows, input, asOf),
-          retrieval: {
-            mode: "lexical-fallback",
-            queryUsed: fallback.query,
-            reason: unavailable,
-            policy:
-              "Semantic unavailable. Keyword-only results, with all original structured and relation filters preserved.",
+        return withCompanyPresentation(
+          {
+            ...companyDiscoveryResult(result.rows, input, asOf),
+            ...unranked,
+            retrieval: {
+              mode: "lexical-fallback",
+              queryUsed: fallback.query,
+              reason: unavailable,
+              policy:
+                "Semantic unavailable. Keyword-only results, with all original structured and relation filters preserved.",
+            },
           },
-        });
+          input.resultMode,
+        );
       }
       const result = await db.execute(buildCompanyDiscoveryQuery(input, asOf));
-      return withResultPresentation(
+      return withCompanyPresentation(
         companyDiscoveryResult(result.rows, input, asOf),
+        input.resultMode,
       );
     },
   }),
@@ -345,7 +378,7 @@ export const locusTools = {
     toModelOutput: compactToolOutput,
     strict: false,
     description:
-      "Navigate only when the user asks to open or visit a result's page/details, not to show, sort or select chat widgets. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by searchLocus or listCompanyJobs. Do not navigate for general research questions.",
+      "Navigate only when the user asks to open or visit a result's page/details, not to show, sort or select chat widgets. Also use for a verified person on the CURRENT company page when asked who holds a specific role: this highlights their card without closing Focus. For other destinations resolve the exact company slug first. A person requires the exact personName and should include personUrl from findCompanyPeople. A job requires the exact jobTitle and jobLocation returned by queryJobs or a verified searchLocus job lookup. Do not navigate for general research questions.",
     // DeepSeek requires a top-level JSON Schema object for every function.
     // Keep the job requirement at runtime instead of using a top-level union,
     // which serializes to a schema without a `type: "object"`.
@@ -388,7 +421,7 @@ export const locusTools = {
     toModelOutput: compactToolOutput,
     strict: false,
     description:
-      "Display previously verified entities as fresh widgets. Call directly without announcing it; the UI shows progress. Use for explicit redisplay, reordering or selection from prior turns, or a curated selection not already displayed this turn. sort handles alphabetical order in code; input preserves ranking order. limit caps total cards. Supply verified identities, not invented matches. If ranking evidence or the complete candidate set is missing, rerun the filtered query instead. Do not redundantly display the same current-turn results. Returns presentation metadata; prose adds only new facts. For cards-only requests emit no text before or after this call.",
+      "Display previously verified entities as fresh widgets. REQUIRED after queryJobs resultMode candidates to publish only your defensible shortlist: select exact job identities from that pool, compare required experience/seniority and practical constraints with the user's evidence, normally show 3, and prefer distinct companies when equally suitable. The candidate pool itself has not been displayed. Also use for explicit redisplay, reordering or selection from prior turns. Call directly without announcing it. input preserves your chosen ranking order; limit caps total cards. Supply verified identities, not invented matches: the server re-fetches actual records. If evidence is missing, retrieve it rather than inventing fit. Do not redundantly display already-visible current-turn results. Prose adds evidence/caveats not visible in cards.",
     inputSchema: z.object({
       ...presentationOptionsSchema.shape,
       companySlugs: z.array(companySlugSchema).max(50).default([]),
@@ -519,15 +552,27 @@ export const locusTools = {
     toModelOutput: compactToolOutput,
     strict: false,
     description:
-      "Search Locus for companies, people, and currently open jobs. Set types to exactly the entity categories the user requested. Use limit 3 for a focused lookup or recommendation. Use a larger limit (up to 12) when the user asks for all results in an industry, category, or location, or asks a follow-up such as 'what else' or 'anything else'. Results are ordered by relevance. Use this before answering a broad or ambiguous lookup question.",
+      "Resolve names/aliases of companies or people, or find recorded jobs by short keywords. For a role at a named employer whose slug is unknown, FIRST resolve only that employer with types ['companies'], then use queryJobs with the returned companySlugs. This identity lookup is not the job recommendation. For other requests set types to the requested entities. Job results include open and unknown-status records, not guaranteed confirmed openings. Use limit 3 for focused lookup, up to 12 for broader discovery. Do not put a resume or a fit description in query; use queryJobs.semanticQuery for fit.",
     inputSchema: z.object({
-      query: z.string().trim().min(1).max(80),
+      query: z
+        .string()
+        .trim()
+        .min(1)
+        .max(80)
+        .describe(
+          "Short name, alias or distinctive lexical phrase, at most 80 characters. For employer resolution use only its name, e.g. HiringCafe, not the user's entire question.",
+        ),
       types: z
         .array(searchResultTypeSchema)
         .min(1)
         .max(3)
-        .default(["companies", "people", "jobs"]),
-      limit: searchResultLimitSchema,
+        .default(["companies", "people", "jobs"])
+        .describe(
+          "Entity categories to resolve. Use ['companies'] to resolve a named employer before a job-fit search, even when the user ultimately wants jobs.",
+        ),
+      limit: searchResultLimitSchema.describe(
+        "Preview count per entity type, 1–12; use 3 for a focused company lookup. This does not change queryJobs' eventual role limit.",
+      ),
     }),
     execute: async ({ query, types, limit }) =>
       withResultPresentation(await searchLocus(query, types, limit)),
@@ -840,67 +885,6 @@ export const locusTools = {
               ? `Same industry as ${fromCompanySlug}: ${sourceCompany.industry}.`
               : `Active hiring signal in ${location}.`,
         }));
-    },
-  }),
-  listCompanyJobs: tool({
-    toModelOutput: compactToolOutput,
-    strict: false,
-    description:
-      "List open or unknown-status jobs at a company. Use the current page slug directly when applicable; otherwise resolve it with searchLocus. When recommending a role based on a user's background, include concise skills or role criteria. All matching jobs are ranked by title, focus, department, skills, and description before applying the result limit.",
-    inputSchema: z.object({
-      slug: companySlugSchema,
-      limit: resultLimitSchema,
-      criteria: z.string().trim().min(1).max(120).optional(),
-    }),
-    execute: async ({ slug, limit, criteria }) => {
-      const terms = jobSearchTerms(criteria);
-      const relevance = terms.length
-        ? sql<number>`(${sql.join(
-            terms.map((term) => {
-              const pattern = `%${term}%`;
-              return sql`(
-              CASE WHEN ${jobs.title} ILIKE ${pattern} THEN 12 ELSE 0 END +
-              CASE WHEN ${jobs.focus} ILIKE ${pattern} THEN 7 ELSE 0 END +
-              CASE WHEN ${jobs.department} ILIKE ${pattern} THEN 5 ELSE 0 END +
-              CASE WHEN array_to_string(${jobs.skills}, ' ') ILIKE ${pattern} THEN 3 ELSE 0 END +
-              CASE WHEN ${jobs.searchText} ILIKE ${pattern} THEN 1 ELSE 0 END
-            )`;
-            }),
-            sql` + `,
-          )})`
-        : sql<number>`0`;
-      const results = await db
-        .select({
-          title: jobs.title,
-          location: jobs.location,
-          focus: jobs.focus,
-          url: jobs.url,
-          status: jobs.status,
-          workplaceType: jobs.workplaceType,
-          employmentType: jobs.employmentType,
-          department: jobs.department,
-          skills: jobs.skills,
-          experienceLevel: jobs.experienceLevel,
-          companySlug: companies.slug,
-          companyName: companies.name,
-          countryCode: companies.countryCode,
-          companyProfile: companies.profile,
-        })
-        .from(jobs)
-        .innerJoin(companies, eq(jobs.companyId, companies.id))
-        .where(
-          and(
-            eq(companies.slug, slug),
-            or(eq(jobs.status, "open"), eq(jobs.status, "unknown")),
-          ),
-        )
-        .orderBy(desc(relevance), asc(jobs.title))
-        .limit(limit);
-
-      return results.map(({ companyProfile, ...job }) => ({
-        ...job,
-        companyLogo: companyLogo(companyProfile),
-      }));
     },
   }),
   listCompanyPeople: tool({

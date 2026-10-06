@@ -231,6 +231,51 @@ test("projection leaves the rich UI result untouched and is idempotent", () => {
   assert.ok(!JSON.stringify(value).includes(asset));
 });
 
+test("candidate pools defer nested jobs while retaining company facts and unranked deduplication", () => {
+  const output = structuredClone(rich) as any;
+  output.presentation.mode = "candidatePool";
+  output.companies[0].description = "Full company description";
+  output.companies[0].rankingScore = 0.91;
+  output.unrankedCompanies = [structuredClone(output.companies[1])];
+  const original = structuredClone(output);
+  const projected = plain(compactToolResult(output));
+  assert.deepEqual(output, original);
+  assert.equal(projected.companies[0].description, "Full company description");
+  assert.equal(projected.companies[0].rankingScore, 0.91);
+  assert.equal(projected.companies[0].evidence.jobs.jobDetailsDeferred, true);
+  assert.equal("jobs" in projected.companies[0].evidence.jobs, false);
+  assert.equal(
+    projected.unrankedCompanies[0].evidence.jobs.jobDetailsDeferred,
+    true,
+  );
+  assert.equal("jobs" in projected.unrankedCompanies[0].evidence.jobs, false);
+  assert.equal(
+    "companySlug" in projected.unrankedCompanies[0].evidence.people.people[0],
+    false,
+  );
+  assert.deepEqual(
+    projected.evidenceContext.jobs.filters,
+    output.companies[0].evidence.jobs.filters,
+  );
+  assert.ok(JSON.stringify(projected).length < JSON.stringify(output).length);
+});
+
+test("normal company previews and queryJobs candidate records are retained", () => {
+  const ordinary = plain(compactToolResult(rich));
+  assert.equal(ordinary.companies[0].evidence.jobs.jobs.length, 1);
+  const jobs = {
+    presentation: { mode: "candidatePool" },
+    jobs: [
+      {
+        description: "Full role",
+        requirements: ["Python"],
+        eligibility: "unknown",
+      },
+    ],
+  };
+  assert.deepEqual(compactToolResult(jobs), jobs);
+});
+
 test("different per-company policies/context and conflicting company fields are preserved", () => {
   const original = structuredClone(rich);
   original.companies[1].evidence.funding.datePolicy = "Different date policy";

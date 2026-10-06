@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import { getLocusActivityLabel } from "../lib/locus-activity-label";
+import { describeLocusTool } from "../lib/locus-tool-trace";
 
 const user = (text: string) => ({
   role: "user",
@@ -41,7 +42,7 @@ test("the label follows streamed page context, tools, results, and answer text",
   );
   assert.equal(
     getLocusActivityLabel([question, assistant(context, tool)]),
-    "Reading the company profile",
+    "Exploring the company",
   );
   assert.equal(
     getLocusActivityLabel([
@@ -107,7 +108,60 @@ test("tool labels identify the work without reporting unobserved reasoning", () 
         input: { slug: "mintlify" },
       }),
     ]),
-    "Matching open roles",
+    "Exploring role options",
+  );
+});
+
+test("the pill stays task-level rather than duplicating running tool traces", () => {
+  for (const type of [
+    "queryCompanies",
+    "queryJobs",
+    "queryPeople",
+    "queryFunding",
+    "queryActivity",
+    "getCompany",
+    "getCompanyProfile",
+    "searchLocus",
+    "searchKnowledge",
+    "findCompanyPeople",
+    "listCompanyPeople",
+    "listCompanyJobs",
+    "recommendOutreachTargets",
+    "presentLocusResults",
+    "navigateLocus",
+  ]) {
+    for (const state of ["input-streaming", "input-available"]) {
+      const part = {
+        type: `tool-${type}`,
+        state,
+        input: {
+          semanticQuery: "company discovery",
+          slug: "hiringcafe",
+          companySlug: "hiringcafe",
+        },
+      };
+      const label = getLocusActivityLabel([
+        user("Find companies and roles"),
+        assistant(part),
+      ]);
+      assert.notEqual(
+        label,
+        describeLocusTool(part)?.label,
+        `${type}/${state}`,
+      );
+      assert.doesNotMatch(label, /Semantic search|Database search|ranked/);
+    }
+  }
+  assert.equal(
+    getLocusActivityLabel([
+      user("Find companies"),
+      assistant({
+        type: "tool-queryCompanies",
+        state: "input-available",
+        input: { semanticQuery: "startup discovery" },
+      }),
+    ]),
+    "Finding relevant companies",
   );
 });
 

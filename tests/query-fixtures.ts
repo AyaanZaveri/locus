@@ -3,7 +3,7 @@ import { sql } from "drizzle-orm";
 export function companySource(rows: Record<string, unknown>[]) {
   return sql`jsonb_to_recordset(${JSON.stringify(rows)}::jsonb) AS c(
     id text, slug text, name text, industry text, stage text, location text,
-    country_code text, employee_count text, profile jsonb
+    country_code text, employee_count text, profile jsonb, headquarters_location_id text
   )`;
 }
 
