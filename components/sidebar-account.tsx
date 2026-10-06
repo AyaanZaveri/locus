@@ -6,6 +6,7 @@ import { LoaderCircleIcon, LogInIcon, LogOutIcon } from "lucide-react";
 import { authClient } from "@/lib/auth-client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
   SidebarFooter,
   SidebarMenu,
@@ -105,34 +106,49 @@ export function SidebarAccount() {
               )}
             </Button>
           </div>
+        ) : isPending ? (
+          <div role="status" className="flex h-10 min-w-0 items-center gap-1">
+            <span className="sr-only">Loading account…</span>
+            <div
+              aria-hidden="true"
+              className="flex min-w-0 flex-1 items-center gap-2.5 px-2"
+            >
+              <Skeleton className="size-5 shrink-0 rounded-full motion-reduce:animate-none" />
+              <Skeleton className="h-4 w-32 max-w-full motion-reduce:animate-none" />
+            </div>
+            <div
+              aria-hidden="true"
+              className="flex size-7 shrink-0 items-center justify-center"
+            >
+              <Skeleton className="size-4 motion-reduce:animate-none" />
+            </div>
+          </div>
         ) : (
           <SidebarMenu>
             <SidebarMenuItem>
               <SidebarMenuButton
-                disabled={isPending || busy}
+                disabled={busy}
                 onClick={sessionError ? () => void refetch() : signIn}
               >
-                {isPending || busy ? (
+                {busy ? (
                   <LoaderCircleIcon className="animate-spin motion-reduce:animate-none" />
                 ) : (
                   <LogInIcon />
                 )}
                 <span>
-                  {isPending
-                    ? "Loading account…"
-                    : busy
-                      ? "Signing in…"
-                      : sessionError
-                        ? "Retry account"
-                        : "Sign in"}
+                  {busy
+                    ? "Signing in…"
+                    : sessionError
+                      ? "Retry account"
+                      : "Sign in"}
                 </span>
               </SidebarMenuButton>
             </SidebarMenuItem>
           </SidebarMenu>
         )}
-        {error || sessionError ? (
+        {error ? (
           <p role="alert" className="px-2 text-xs text-destructive">
-            {error ?? "Couldn’t load your account. Please retry."}
+            {error}
           </p>
         ) : null}
       </div>
