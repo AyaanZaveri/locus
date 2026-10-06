@@ -12,6 +12,10 @@ test("Focus context includes identity and every saved Soul field without truncat
     currentRole: "Backend engineer",
     skills: ["Go", "PostgreSQL"],
     about: "I build reliable APIs and search tools.",
+    backgroundDocument: { type: "doc", content: [] },
+    linkedin: "",
+    github: "",
+    portfolio: "",
     desiredRoles: ["Platform engineer", "Founding engineer"],
     lookingFor: "Developer tools with end-to-end ownership.",
     dealBreakers: "Frequent travel",
@@ -27,8 +31,22 @@ test("Focus context includes identity and every saved Soul field without truncat
   assert.match(context, /## Private Soul context/);
   assert.match(context, /- Name: "Alex Morgan"/);
   assert.match(context, /- Email: "alex@example.com"/);
-  for (const value of Object.values(profile))
+  for (const key of [
+    "location",
+    "currentRole",
+    "skills",
+    "about",
+    "desiredRoles",
+    "lookingFor",
+    "dealBreakers",
+    "workPreference",
+    "desiredLocations",
+    "openToRelocation",
+    "companySizes",
+  ] as const) {
+    const value = profile[key];
     assert.ok(context.includes(JSON.stringify(value)));
+  }
   assert.equal(
     context.split("\n").filter((line) => line.startsWith("- ")).length,
     13,

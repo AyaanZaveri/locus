@@ -3,6 +3,7 @@ import { test } from "node:test";
 import { readFile } from "node:fs/promises";
 import {
   EMPTY_USER_PROFILE,
+  backgroundDocumentSchema,
   mergeResumeDetails,
   profilePromptContext,
   splitProfileTags,
@@ -35,6 +36,7 @@ test("resume review preserves preferences and unchecked facts while merging skil
   assert.deepEqual(result.companySizes, ["11–50"]);
   assert.deepEqual(result.skills, ["Go", "Python"]);
   assert.equal(profile.about, "");
+  assert.equal(result.backgroundDocument, null);
 });
 
 test("profile validation rejects identity overrides, oversized lists, and invalid arrangements", () => {
@@ -53,7 +55,7 @@ test("profile validation rejects identity overrides, oversized lists, and invali
   assert.equal(
     userProfileSchema.safeParse({
       ...EMPTY_USER_PROFILE,
-      skills: Array(51).fill("Go"),
+      skills: Array.from({ length: 201 }, (_, index) => `Skill ${index}`),
     }).success,
     false,
   );
@@ -69,6 +71,133 @@ test("profile validation rejects identity overrides, oversized lists, and invali
     "Python",
     "Rust",
   ]);
+});
+
+test("legacy profiles default links and document; validates bounded safe Tiptap background", () => {
+  const legacy = { ...EMPTY_USER_PROFILE } as Record<string, unknown>;
+  delete legacy.linkedin;
+  delete legacy.github;
+  delete legacy.portfolio;
+  delete legacy.backgroundDocument;
+  const parsed = userProfileSchema.parse(legacy);
+  assert.equal(parsed.linkedin, "");
+  assert.equal(parsed.backgroundDocument, null);
+  const document = {
+    type: "doc",
+    content: [
+      {
+        type: "paragraph",
+        content: [
+          {
+            type: "text",
+            text: "Hello",
+            marks: [
+              { type: "bold" },
+              { type: "link", attrs: { href: "https://example.com" } },
+            ],
+          },
+        ],
+      },
+    ],
+  };
+  assert.deepEqual(
+    userProfileSchema.parse({
+      ...EMPTY_USER_PROFILE,
+      backgroundDocument: document,
+    }).backgroundDocument,
+    document,
+  );
+  for (const invalid of [
+    { type: "doc", content: [{ type: "script" }] },
+    {
+      type: "doc",
+      content: [
+        {
+          type: "paragraph",
+          content: [
+            {
+              type: "text",
+              text: "x",
+              marks: [{ type: "link", attrs: { href: "javascript:alert(1)" } }],
+            },
+          ],
+        },
+      ],
+    },
+    { type: "doc", attrs: { arbitrary: true } },
+  ])
+    assert.equal(
+      userProfileSchema.safeParse({
+        ...EMPTY_USER_PROFILE,
+        backgroundDocument: invalid,
+      }).success,
+      false,
+    );
+  assert.equal(
+    userProfileSchema.safeParse({
+      ...EMPTY_USER_PROFILE,
+      github: "javascript:alert(1)",
+    }).success,
+    false,
+  );
+});
+
+test("resume merge preserves authored professional links and rich document is omitted from context", () => {
+  const profile = {
+    ...EMPTY_USER_PROFILE,
+    linkedin: "https://linkedin.com/in/me",
+    backgroundDocument: { type: "doc", content: [] },
+  };
+  const merged = mergeResumeDetails(
+    profile,
+    { about: "Updated background", linkedin: "https://linkedin.com/in/other" },
+    ["about", "linkedin"],
+  );
+  assert.equal(merged.linkedin, profile.linkedin);
+  assert.equal(merged.backgroundDocument, null);
+  const context = profilePromptContext(profile);
+  assert.doesNotMatch(context, /Background document/);
+  assert.match(context, /LinkedIn: "https:\/\/linkedin\.com\/in\/me"/);
+});
+
+test("background Tiptap validation enforces grammar and rejects cycles and nested attrs", () => {
+  const badTrees = [
+    { type: "doc", content: [{ type: "text", text: "bad" }] },
+    {
+      type: "doc",
+      content: [{ type: "paragraph", content: [{ type: "paragraph" }] }],
+    },
+    {
+      type: "doc",
+      content: [
+        {
+          type: "paragraph",
+          content: [
+            { type: "hardBreak", content: [{ type: "text", text: "x" }] },
+          ],
+        },
+      ],
+    },
+    {
+      type: "doc",
+      content: [{ type: "bulletList", content: [{ type: "paragraph" }] }],
+    },
+    {
+      type: "doc",
+      content: [{ type: "listItem", content: [{ type: "paragraph" }] }],
+    },
+    {
+      type: "doc",
+      content: [
+        { type: "paragraph", attrs: { nested: { a: { b: { c: "x" } } } } },
+      ],
+    },
+  ];
+  for (const tree of badTrees)
+    assert.equal(backgroundDocumentSchema.safeParse(tree).success, false);
+  const cyc: any = { type: "doc", content: [] };
+  cyc.content.push(cyc);
+  assert.equal(backgroundDocumentSchema.safeParse(cyc).success, false);
 });
 
 test("preferred locations retain city/country pairs", () => {

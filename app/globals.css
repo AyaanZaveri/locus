@@ -3,6 +3,34 @@
 @import "shadcn/tailwind.css";
 @import "streamdown/styles.css";
 
+/* Soul's background remains a small writing field, not a page builder. */
+.soul-background-editor {
+  border-color: var(--input);
+  border-radius: var(--radius-lg);
+  overflow: clip;
+  font-size: 0.875rem;
+}
+.soul-background-editor:focus-within {
+  border-color: var(--ring);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 50%, transparent);
+}
+.soul-background-editor .rte-content .ProseMirror {
+  min-height: 11rem;
+  max-height: 32rem;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  padding: 1rem;
+}
+.soul-background-editor .rte-toolbar {
+  flex-wrap: wrap;
+}
+.soul-background-editor .rte-content h1,
+.soul-background-editor .rte-content h2,
+.soul-background-editor .rte-content h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 @source "../node_modules/streamdown/dist/*.js";
 
 @custom-variant dark (&:is(.dark *));
@@ -106,6 +134,27 @@
   }
   62% {
     opacity: 0.15;
+  }
+}
+
+.tw-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    var(--muted-foreground) 35%,
+    var(--foreground) 50%,
+    var(--muted-foreground) 65%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer-text 1.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tw-shimmer {
+    animation: none;
+    background-image: none;
+    color: var(--muted-foreground);
   }
 }
 
@@ -272,9 +321,21 @@
 .soul-cover-fallback {
   background-color: var(--soul-ink);
   background-image:
-    radial-gradient(ellipse at var(--soul-amber-x) 18%, var(--soul-amber), transparent 65%),
-    radial-gradient(ellipse at var(--soul-jade-x) 45%, var(--soul-jade), transparent 65%),
-    radial-gradient(ellipse at var(--soul-violet-x) 90%, var(--soul-violet), transparent 65%),
+    radial-gradient(
+      ellipse at var(--soul-amber-x) 18%,
+      var(--soul-amber),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse at var(--soul-jade-x) 45%,
+      var(--soul-jade),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse at var(--soul-violet-x) 90%,
+      var(--soul-violet),
+      transparent 65%
+    ),
     radial-gradient(ellipse at 92% 12%, var(--soul-rose), transparent 65%);
 }
 
@@ -295,16 +356,28 @@
 
 .soul-avatar-shell {
   background: var(--background);
-  box-shadow: 0 0 0 1px var(--border), 0 4px 16px color-mix(in oklab, var(--foreground) 6%, transparent);
+  box-shadow:
+    0 0 0 1px var(--border),
+    0 4px 16px color-mix(in oklab, var(--foreground) 6%, transparent);
 }
 
 .soul-avatar-fallback {
-  background: linear-gradient(135deg, var(--soul-jade), var(--soul-violet) 55%, var(--soul-rose));
+  background: linear-gradient(
+    135deg,
+    var(--soul-jade),
+    var(--soul-violet) 55%,
+    var(--soul-rose)
+  );
 }
 
 @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
-  .soul-wordmark { background: var(--background); backdrop-filter: none; }
-  .soul-cover-blur { display: none; }
+  .soul-wordmark {
+    background: var(--background);
+    backdrop-filter: none;
+  }
+  .soul-cover-blur {
+    display: none;
+  }
 }
 
 @layer base {

@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { ThinkingOrb } from "thinking-orbs";
+import { cn } from "@/lib/utils";
+import { resumeImportErrorMessage } from "@/lib/resume-import-error";
 import {
   CheckIcon,
   LoaderCircleIcon,
@@ -11,12 +14,15 @@ import {
   BlendIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "@/components/ui/toast";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { CompanySizeOptions } from "@/components/company-size-options";
 import { ProfileLocationInput } from "@/components/profile-location-input";
 import { ProfileRoleInput } from "@/components/profile-role-input";
+import { ProfileBackgroundEditor } from "@/components/profile-background-editor";
+import { backgroundDocumentFromMarkdown } from "@/lib/profile-background-editor";
 import { SoulProfileHeader } from "@/components/soul-profile-header";
 import {
   Field,
@@ -78,6 +84,9 @@ const resumeFields: Array<keyof ResumeDetails> = [
   "workPreference",
   "openToRelocation",
   "companySizes",
+  "linkedin",
+  "github",
+  "portfolio",
 ];
 const workArrangements = [
   { value: "any", label: "Open to anything", icon: GlobeIcon },
@@ -113,7 +122,6 @@ export function ProfileForm({
   const [extracting, setExtracting] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [resumeError, setResumeError] = useState("");
   const fileInput = useRef<HTMLInputElement>(null);
   const current = {
     ...profile,
@@ -154,7 +162,7 @@ export function ProfileForm({
     const parsed = userProfileSchema.safeParse(current);
     if (!parsed.success) {
       setError(
-        "Keep each list to 50 items, with up to 120 characters per item. Check your descriptions and try again.",
+        "Check your descriptions and links. Links must start with https:// or http://. Keep skills to 200 items and other lists to 50, with up to 120 characters per item.",
       );
       return;
     }
@@ -193,7 +201,6 @@ export function ProfileForm({
 
   async function importResume(file: File) {
     setExtracting(true);
-    setResumeError("");
     setMessage("");
     setError("");
     try {
@@ -213,6 +220,10 @@ export function ProfileForm({
         );
       const details = resumeDetailsSchema.parse(result.details);
       const merged = mergeResumeDetails(current, details, resumeFields);
+      if (details.about)
+        merged.backgroundDocument = backgroundDocumentFromMarkdown(
+          merged.about,
+        );
       setProfile(merged);
       setTagInputs(
         Object.fromEntries(
@@ -226,11 +237,11 @@ export function ProfileForm({
         "Background and next-role suggestions filled in. Review the drafts and save when you’re ready.",
       );
     } catch (failure) {
-      setResumeError(
-        failure instanceof Error
-          ? failure.message
-          : "Couldn’t import. Try again or fill in your details below.",
-      );
+      toast.add({
+        type: "error",
+        title: "Couldn’t import your resume",
+        description: resumeImportErrorMessage(failure),
+      });
     } finally {
       setExtracting(false);
       if (fileInput.current) fileInput.current.value = "";
@@ -243,16 +254,33 @@ export function ProfileForm({
         <Button
           type="button"
           variant="outline"
-          className="h-9 dark:border-border dark:bg-background dark:hover:bg-input/50"
+          className={cn(
+            "h-9 dark:border-border dark:bg-background dark:hover:bg-input/50",
+            extracting && "disabled:opacity-100",
+          )}
           disabled={extracting || saving}
           onClick={() => fileInput.current?.click()}
         >
           {extracting ? (
-            <LoaderCircleIcon className="animate-spin motion-reduce:animate-none" />
+            <ThinkingOrb
+              state="solving"
+              size={20}
+              dots={1.8}
+              dotSize={0.85}
+              speed={1.2}
+              className="shrink-0"
+              aria-hidden="true"
+            />
           ) : (
             <UploadIcon />
           )}{" "}
-          {extracting ? "Reading resume…" : "Autofill from resume"}
+          {extracting ? (
+            <span role="status" className="tw-shimmer">
+              Reading resume…
+            </span>
+          ) : (
+            "Autofill from resume"
+          )}
         </Button>
         <input
           ref={fileInput}
@@ -267,11 +295,6 @@ export function ProfileForm({
           }}
         />
       </SoulProfileHeader>
-      {resumeError ? (
-        <p role="alert" className="mt-3 text-sm text-destructive">
-          {resumeError}
-        </p>
-      ) : null}
       <form
         onSubmit={save}
         className="soul-form flex flex-col gap-6 px-2 sm:px-5"
@@ -326,20 +349,66 @@ export function ProfileForm({
                   setTagInputs({ ...tagInputs, skills: event.target.value });
                   setMessage("");
                 }}
-                maxLength={6000}
+                maxLength={24200}
               />
             </Field>
             <Field>
-              <FieldLabel htmlFor="about">{longFields[0].label}</FieldLabel>
-              <Textarea
-                id="about"
-                className="min-h-28 max-h-96 overflow-y-auto"
-                maxLength={3000}
+              <FieldLabel htmlFor="about">Your blueprint</FieldLabel>
+              <ProfileBackgroundEditor
                 value={profile.about}
-                onChange={(event) => update("about", event.target.value)}
-                placeholder={longFields[0].placeholder}
+                document={profile.backgroundDocument}
+                disabled={saving || extracting}
+                onChange={(about, backgroundDocument) => {
+                  setProfile((previous) => ({
+                    ...previous,
+                    about,
+                    backgroundDocument,
+                  }));
+                  setMessage("");
+                  setError("");
+                }}
               />
             </Field>
+            <FieldGroup className="grid gap-4 sm:grid-cols-3">
+              {(["linkedin", "github", "portfolio"] as const).map((key) => (
+                <Field key={key}>
+                  <FieldLabel htmlFor={key}>
+                    {key === "portfolio" ? (
+                      <GlobeIcon aria-hidden="true" className="size-3.5" />
+                    ) : (
+                      <span
+                        aria-hidden="true"
+                        className="size-3.5 shrink-0 bg-current"
+                        style={{
+                          mask: `url('/icons/${key}.svg') center / contain no-repeat`,
+                          WebkitMask: `url('/icons/${key}.svg') center / contain no-repeat`,
+                        }}
+                      />
+                    )}
+                    {key === "linkedin"
+                      ? "LinkedIn"
+                      : key === "github"
+                        ? "GitHub"
+                        : "Portfolio"}
+                  </FieldLabel>
+                  <Input
+                    id={key}
+                    type="url"
+                    className="h-9"
+                    value={profile[key]}
+                    placeholder={
+                      key === "linkedin"
+                        ? "https://linkedin.com/in/…"
+                        : key === "github"
+                          ? "https://github.com/…"
+                          : "https://your-site.com"
+                    }
+                    maxLength={2048}
+                    onChange={(event) => update(key, event.target.value)}
+                  />
+                </Field>
+              ))}
+            </FieldGroup>
           </section>
 
           <section

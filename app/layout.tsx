@@ -6,6 +6,7 @@ import { LocusChat } from "@/components/locus-chat";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
 import { getCompanyNavigation } from "@/lib/company-profile";
 
@@ -36,6 +37,7 @@ export default async function RootLayout({
     >
       <body className="bg-sidebar">
         <ThemeProvider>
+          <Toaster />
           <TooltipProvider>
             <SidebarProvider className="h-svh min-h-0 overflow-hidden bg-sidebar">
               <AppSidebar companies={companies} />

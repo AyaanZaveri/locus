@@ -13,28 +13,23 @@ test(
   async () => {
     const { db } = await import("../lib/db/client");
     const { user, session } = await import("../lib/db/auth-schema");
-    const { reserveResumeImport } = await import("../lib/user-profile-store");
     const base = process.env.LOCUS_PROFILE_TEST_URL!;
     const ids = [randomUUID(), randomUUID()];
     const cookies: string[] = [];
     try {
       for (const id of ids) {
         const token = randomUUID();
-        await db
-          .insert(user)
-          .values({
-            id,
-            name: "Profile API Test",
-            email: `${id}@example.invalid`,
-          });
-        await db
-          .insert(session)
-          .values({
-            id: randomUUID(),
-            token,
-            userId: id,
-            expiresAt: new Date(Date.now() + 900000),
-          });
+        await db.insert(user).values({
+          id,
+          name: "Profile API Test",
+          email: `${id}@example.invalid`,
+        });
+        await db.insert(session).values({
+          id: randomUUID(),
+          token,
+          userId: id,
+          expiresAt: new Date(Date.now() + 900000),
+        });
         cookies.push(
           (
             await serializeSignedCookie(
@@ -102,15 +97,6 @@ test(
         (await (await request("/api/me", 1)).json()).profile,
         EMPTY_USER_PROFILE,
       );
-      const claimed = await Promise.all([
-        reserveResumeImport(ids[0]),
-        reserveResumeImport(ids[0]),
-      ]);
-      assert.equal(claimed.filter(Boolean).length, 1);
-      assert.deepEqual(
-        (await (await request("/api/me", 0)).json()).profile,
-        profile,
-      );
 
       if (process.env.LOCUS_TEST_RESUME_INFERENCE === "1") {
         const form = new FormData();
@@ -135,7 +121,7 @@ test(
             /go|python/i.test(skill),
           ),
         );
-        assert.equal("lookingFor" in result.details, false);
+        assert.equal(typeof result.details.lookingFor, "string");
         assert.deepEqual(
           (await (await request("/api/me", 1)).json()).profile,
           EMPTY_USER_PROFILE,
@@ -143,7 +129,7 @@ test(
         assert.equal(
           (await request("/api/me/resume", 1, { method: "POST", body: form }))
             .status,
-          429,
+          200,
         );
       }
     } finally {

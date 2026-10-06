@@ -9,6 +9,27 @@ import {
   profilePromptContext,
 } from "../lib/user-profile";
 
+test("re-uploading a skill-rich resume deduplicates before enforcing list limits", () => {
+  const skills = Array.from({ length: 40 }, (_, i) => `Skill ${i}`);
+  const merged = mergeResumeDetails(
+    { ...EMPTY_USER_PROFILE, skills },
+    { skills: skills.map((skill) => skill.toUpperCase()) },
+    ["skills"],
+  );
+  assert.deepEqual(merged.skills, skills);
+});
+
+test("resume autofill preserves more than 50 distinct skills across profile and import", () => {
+  const existing = Array.from({ length: 40 }, (_, i) => `Existing ${i}`);
+  const imported = Array.from({ length: 40 }, (_, i) => `Imported ${i}`);
+  const merged = mergeResumeDetails(
+    { ...EMPTY_USER_PROFILE, skills: existing },
+    { skills: imported },
+    ["skills"],
+  );
+  assert.deepEqual(merged.skills, [...existing, ...imported]);
+});
+
 test("resume autofill updates existing facts without changing preferences or saving", () => {
   const profile = {
     ...EMPTY_USER_PROFILE,
@@ -53,6 +74,9 @@ test("missing resume facts do not clear existing fields", () => {
 
 const nextRoleDraft = resumeDetailsSchema.parse({
   about: "I build APIs.",
+  linkedin: "https://linkedin.com/in/example",
+  github: "",
+  portfolio: "",
   skills: ["TypeScript"],
   location: "Toronto, Ontario, Canada",
   currentRole: "Backend engineer",

@@ -5,7 +5,6 @@ import {
   readResumeText,
   ResumeInputError,
 } from "@/lib/resume-text";
-import { reserveResumeImport } from "@/lib/user-profile-store";
 import { extractResumeDetails } from "@/lib/ai/resume-extraction";
 
 export const runtime = "nodejs";
@@ -40,11 +39,6 @@ export async function POST(request: Request) {
     if (!(file instanceof File))
       return Response.json({ error: "Choose a resume file." }, { status: 400 });
     const text = await readResumeText(file);
-    if (!(await reserveResumeImport(session.user.id)))
-      return Response.json(
-        { error: "Please wait a minute before importing another resume." },
-        { status: 429, headers: { "Retry-After": "60" } },
-      );
     const details = await extractResumeDetails(
       text,
       AbortSignal.any([request.signal, AbortSignal.timeout(90000)]),
@@ -60,7 +54,7 @@ export async function POST(request: Request) {
     return Response.json(
       {
         error:
-          "Couldn’t read your resume right now. Try again in a minute, or fill in your details manually.",
+          "Couldn’t read your resume right now. Try again, or fill in your details manually.",
       },
       { status: 502 },
     );
