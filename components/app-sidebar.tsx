@@ -191,7 +191,7 @@ export function AppSidebar({
             <ProgressiveBlur
               direction="bottom"
               blurLayers={12}
-              blurIntensity={1}
+              blurIntensity={0.6}
               className="absolute inset-0"
             />
           </div>

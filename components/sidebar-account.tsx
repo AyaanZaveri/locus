@@ -53,7 +53,7 @@ export function SidebarAccount() {
   }
 
   return (
-    <SidebarFooter className="absolute inset-x-0 bottom-0 z-20 py-1">
+    <SidebarFooter className="absolute inset-x-0 bottom-0 z-20 py-1.5">
       <div className="relative flex flex-col gap-2">
         {session ? (
           <div className="flex min-w-0 items-center gap-1">
@@ -67,7 +67,7 @@ export function SidebarAccount() {
                   "h-10 min-w-0 flex-1 justify-start gap-2.5 px-2 transition-[color,background-color,border-color,box-shadow,transform] motion-reduce:transition-none motion-reduce:active:scale-100",
               })}
             >
-              <Avatar size="sm">
+              <Avatar size="sm" className="size-5!">
                 <AvatarImage
                   draggable={false}
                   src={session.user.image ?? undefined}
