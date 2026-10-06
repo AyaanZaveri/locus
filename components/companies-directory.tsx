@@ -97,7 +97,11 @@ export function CompaniesDirectory({
             aria-label="Search companies"
             inputMode="search"
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search companies..."
+            placeholder={
+              companies.length === 1
+                ? "Search 1 company…"
+                : `Search ${companies.length.toLocaleString()} companies…`
+            }
             type="text"
             value={query}
           />
@@ -202,7 +206,7 @@ export function CompaniesDirectory({
         </Select>
       </div>
 
-      <p aria-live="polite" className="mb-5 text-sm text-muted-foreground">
+      <p aria-live="polite" className="sr-only">
         {visibleCompanies.length}{" "}
         {visibleCompanies.length === 1 ? "company" : "companies"}
         {visibleCompanies.length !== companies.length

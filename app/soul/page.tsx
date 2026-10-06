@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default async function MePage() {
+export default async function SoulPage() {
   const session = await auth.api.getSession({ headers: await headers() });
   const profile = session
     ? ((await getUserProfile(session.user.id)) ?? EMPTY_USER_PROFILE)

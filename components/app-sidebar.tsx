@@ -27,6 +27,7 @@ import {
 import { ModeToggle } from "@/components/mode-toggle";
 import { CompanySearch } from "@/components/company-search";
 import { SidebarAccount } from "@/components/sidebar-account";
+import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import { Kbd, KbdGroup } from "@/components/ui/kbd";
 import type { CompanyNavigationItem } from "@/lib/company-profile";
 
@@ -34,7 +35,7 @@ const navigation = [
   // { label: "New chat", icon: SquarePenIcon },
   // { label: "People", icon: UserRoundIcon },
   { label: "Companies", icon: BuildingIcon, href: "/companies" },
-  { label: "Soul", icon: UserRoundIcon, href: "/me" },
+  { label: "Soul", icon: UserRoundIcon, href: "/soul" },
 ];
 
 export function AppSidebar({
@@ -70,70 +71,71 @@ export function AppSidebar({
   return (
     <>
       <Sidebar variant="inset">
-        <SidebarHeader className="p-0">
-          <SidebarMenu>
-            <SidebarMenuItem>
-              <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-3 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-4">
-                <SidebarMenuButton
-                  className="h-auto flex-1 gap-2.5 -m-2"
-                  render={<a href="#top" />}
-                  size="lg"
-                >
-                  <span className="flex size-6.5 items-center justify-center rounded-md bg-linear-150 from-teal-500 to-emerald-600 text-white">
-                    <LensConcaveIcon
-                      aria-hidden="true"
-                      className="size-4 stroke-2"
-                    />
-                  </span>
-                  <span className="text-xl leading-6.75 font-semibold tracking-tight">
-                    Locus
-                  </span>
-                </SidebarMenuButton>
-                <ModeToggle />
-              </div>
-            </SidebarMenuItem>
-          </SidebarMenu>
-        </SidebarHeader>
-        <SidebarContent>
-          <SidebarGroup>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                <SidebarMenuItem>
+        <div className="relative flex size-full min-h-0 flex-col">
+          <SidebarHeader className="p-0">
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <div className="flex items-center gap-2.5 pl-3 pr-1 pb-2 pt-3 [[data-mobile=true]_&]:px-4 [[data-mobile=true]_&]:pb-3 [[data-mobile=true]_&]:pt-4">
                   <SidebarMenuButton
-                    onClick={openSearch}
-                    tooltip="Search companies, people, and jobs"
+                    className="h-auto flex-1 gap-2.5 -m-2"
+                    render={<a href="#top" />}
+                    size="lg"
                   >
-                    <SearchIcon className="size-3.5!" />
-                    <span>Explore</span>
-                    <KbdGroup className="ml-auto hidden sm:inline-flex group-data-[collapsible=icon]:hidden">
-                      <Kbd>⌘</Kbd>
-                      <Kbd>K</Kbd>
-                    </KbdGroup>
+                    <span className="flex size-6.5 items-center justify-center rounded-md bg-linear-150 from-teal-500 to-emerald-600 text-white">
+                      <LensConcaveIcon
+                        aria-hidden="true"
+                        className="size-4 stroke-2"
+                      />
+                    </span>
+                    <span className="text-xl leading-6.75 font-semibold tracking-tight">
+                      Locus
+                    </span>
                   </SidebarMenuButton>
-                </SidebarMenuItem>
-                {navigation.map((item) => (
-                  <SidebarMenuItem key={item.label}>
+                  <ModeToggle />
+                </div>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarHeader>
+          <SidebarContent className="pb-12">
+            <SidebarGroup>
+              <SidebarGroupContent>
+                <SidebarMenu>
+                  <SidebarMenuItem>
                     <SidebarMenuButton
-                      isActive={pathname === item.href}
-                      render={
-                        <Link
-                          href={item.href}
-                          onClick={() => {
-                            if (isMobile) setOpenMobile(false);
-                          }}
-                        />
-                      }
-                      tooltip={item.label}
+                      onClick={openSearch}
+                      tooltip="Search companies, people, and jobs"
                     >
-                      <item.icon className="size-3.5!" />
-                      <span>{item.label}</span>
+                      <SearchIcon className="size-3.5!" />
+                      <span>Explore</span>
+                      <KbdGroup className="ml-auto hidden sm:inline-flex group-data-[collapsible=icon]:hidden">
+                        <Kbd>⌘</Kbd>
+                        <Kbd>K</Kbd>
+                      </KbdGroup>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
-                ))}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-          {/*<SidebarGroup>
+                  {navigation.map((item) => (
+                    <SidebarMenuItem key={item.label}>
+                      <SidebarMenuButton
+                        isActive={pathname === item.href}
+                        render={
+                          <Link
+                            href={item.href}
+                            onClick={() => {
+                              if (isMobile) setOpenMobile(false);
+                            }}
+                          />
+                        }
+                        tooltip={item.label}
+                      >
+                        <item.icon className="size-3.5!" />
+                        <span>{item.label}</span>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                  ))}
+                </SidebarMenu>
+              </SidebarGroupContent>
+            </SidebarGroup>
+            {/*<SidebarGroup>
           <SidebarGroupLabel className="text-muted-foreground -ml-1 tracking-wide">ENRICH</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -148,41 +150,53 @@ export function AppSidebar({
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>*/}
-          <SidebarGroup>
-            <SidebarGroupLabel className="text-muted-foreground -ml-1 tracking-wide">
-              COMPANIES
-            </SidebarGroupLabel>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                {companyNavigation.map((company) => (
-                  <SidebarMenuItem key={company.name}>
-                    <SidebarMenuButton
-                      isActive={pathname === company.href}
-                      render={<Link href={company.href} />}
-                      tooltip={company.name}
-                    >
-                      {company.logo ? (
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          className="size-4 rounded object-cover"
-                          src={company.logo}
-                        />
-                      ) : (
-                        <BuildingIcon
-                          aria-hidden="true"
-                          className="size-4 text-muted-foreground"
-                        />
-                      )}
-                      <span>{company.name}</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        </SidebarContent>
-        <SidebarAccount />
+            <SidebarGroup>
+              <SidebarGroupLabel className="text-muted-foreground -ml-1 tracking-wide">
+                COMPANIES
+              </SidebarGroupLabel>
+              <SidebarGroupContent>
+                <SidebarMenu>
+                  {companyNavigation.map((company) => (
+                    <SidebarMenuItem key={company.name}>
+                      <SidebarMenuButton
+                        isActive={pathname === company.href}
+                        render={<Link href={company.href} />}
+                        tooltip={company.name}
+                      >
+                        {company.logo ? (
+                          <img
+                            alt=""
+                            aria-hidden="true"
+                            className="size-4 rounded object-cover"
+                            src={company.logo}
+                          />
+                        ) : (
+                          <BuildingIcon
+                            aria-hidden="true"
+                            className="size-4 text-muted-foreground"
+                          />
+                        )}
+                        <span>{company.name}</span>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                  ))}
+                </SidebarMenu>
+              </SidebarGroupContent>
+            </SidebarGroup>
+          </SidebarContent>
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-20 md:-inset-x-2 md:-bottom-2"
+          >
+            <ProgressiveBlur
+              direction="bottom"
+              blurLayers={12}
+              blurIntensity={1}
+              className="absolute inset-0"
+            />
+          </div>
+          <SidebarAccount />
+        </div>
       </Sidebar>
       <CompanySearch
         companies={companies}

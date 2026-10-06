@@ -19,7 +19,7 @@ export function ProfileSignIn() {
           try {
             const result = await authClient.signIn.social({
               provider: "google",
-              callbackURL: "/me",
+              callbackURL: "/soul",
             });
             if (result.error) throw new Error();
           } catch {
