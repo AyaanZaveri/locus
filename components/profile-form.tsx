@@ -233,9 +233,6 @@ export function ProfileForm({
           ]),
         ) as typeof tagInputs,
       );
-      setMessage(
-        "Background and next-role suggestions filled in. Review the drafts and save when you’re ready.",
-      );
     } catch (failure) {
       toast.add({
         type: "error",
