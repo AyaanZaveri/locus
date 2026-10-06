@@ -70,7 +70,7 @@
 }
 
 .company-directory-card:active {
-  transform: scale(0.99);
+  transform: scale(0.995);
 }
 
 @media (hover: hover) and (pointer: fine) {

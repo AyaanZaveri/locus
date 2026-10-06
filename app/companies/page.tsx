@@ -11,7 +11,7 @@ export default async function CompaniesPage() {
     <div className="relative isolate flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 h-64 opacity-55 [mask-image:linear-gradient(to_bottom,black,transparent)] sm:h-80 dark:h-96 dark:opacity-30 dark:sm:h-112"
+        className="pointer-events-none absolute inset-x-0 top-0 h-64 opacity-35 [mask-image:linear-gradient(to_bottom,black,transparent)] sm:h-80 dark:h-96 dark:opacity-30 dark:sm:h-112"
       >
         <SoulCover
           seed={getSoulCoverSeed("locus-companies")}
@@ -30,7 +30,9 @@ export default async function CompaniesPage() {
               aria-label="Open sidebar"
               className="mt-1 md:hidden"
             />
-            <h1 className="text-2xl font-semibold tracking-tight">Companies</h1>
+            <h1 className="text-3xl font-semibold leading-tight tracking-tighter">
+              Companies
+            </h1>
           </div>
           <CompaniesDirectory companies={companies} />
         </div>
