@@ -41,7 +41,7 @@ export default async function RootLayout({
           <TooltipProvider>
             <SidebarProvider className="h-svh min-h-0 overflow-hidden bg-sidebar">
               <AppSidebar companies={companies} />
-              <SidebarInset className="min-h-0 min-w-0 overflow-hidden shadow-none! ring-border/25 ring-1">
+              <SidebarInset className="min-h-0 min-w-0 overflow-hidden shadow-none! ring-border/25 ring-1 [&>main]:overscroll-y-contain">
                 {children}
               </SidebarInset>
               <LocusChat />

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Asterisk, Globe2, Search } from "lucide-react";
+import { motion, useReducedMotion } from "motion/react";
 
 import { Badge } from "@/components/ui/badge";
 import {
@@ -24,6 +25,7 @@ import type { CompanyDirectoryItem } from "@/lib/company-profile";
 import { cn } from "@/lib/utils";
 
 const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
+const MotionLink = motion.create(Link);
 
 export function CompaniesDirectory({
   companies,
@@ -33,6 +35,7 @@ export function CompaniesDirectory({
   const [query, setQuery] = useState("");
   const [industry, setIndustry] = useState("all");
   const [location, setLocation] = useState("all");
+  const reduceMotion = useReducedMotion();
 
   const industries = [
     ...new Set(companies.map((company) => company.industry)),
@@ -89,7 +92,7 @@ export function CompaniesDirectory({
   return (
     <>
       <div className="mb-6 flex flex-wrap gap-2">
-        <InputGroup className="w-full min-w-0 bg-transparent sm:max-w-sm dark:bg-input/30">
+        <InputGroup className="w-full min-w-0 bg-background! sm:max-w-sm">
           <InputGroupAddon>
             <Search aria-hidden="true" />
           </InputGroupAddon>
@@ -113,7 +116,7 @@ export function CompaniesDirectory({
         >
           <SelectTrigger
             aria-label="Filter by industry"
-            className="min-w-0 flex-1 sm:w-44 sm:flex-none"
+            className="min-w-0 flex-1 bg-background! sm:w-44 sm:flex-none"
             title={industry === "all" ? "All industries" : industry}
           >
             <SelectValue className="min-w-0 truncate" />
@@ -146,7 +149,7 @@ export function CompaniesDirectory({
         >
           <SelectTrigger
             aria-label="Filter by location"
-            className="min-w-0 flex-1 sm:w-52 sm:flex-none"
+            className="min-w-0 flex-1 bg-background! sm:w-52 sm:flex-none"
             title={location === "all" ? "All locations" : location}
           >
             {selectedCountryCode ? (
@@ -215,17 +218,20 @@ export function CompaniesDirectory({
       </p>
 
       {visibleCompanies.length ? (
-        <div className="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid w-full grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
           {visibleCompanies.map((company) => (
-            <Link
+            <MotionLink
               key={company.slug}
               href={`/company/${company.slug}`}
               draggable={false}
+              initial="rest"
+              animate="rest"
+              whileHover="hover"
               className="company-directory-card group block min-w-0 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background"
             >
               <article>
                 <div className="relative">
-                  <div className="aspect-[2/1] overflow-hidden rounded-xl bg-muted ring-1 ring-border/60">
+                  <div className="aspect-[2/1] overflow-hidden rounded-lg bg-muted ring-1 ring-border/60">
                     {company.banner ? (
                       <img
                         src={company.banner}
@@ -241,9 +247,18 @@ export function CompaniesDirectory({
                         {company.name.slice(0, 1)}
                       </div>
                     )}
-                    <div className="company-directory-banner-overlay pointer-events-none absolute inset-0 rounded-xl bg-black/10 opacity-0" />
+                    <div className="company-directory-banner-overlay pointer-events-none absolute inset-0 rounded-lg bg-black/5 opacity-0" />
                   </div>
-                  <div className="absolute -bottom-5 left-4 rounded-xl bg-background/30 p-1 shadow-xs ring-1 ring-border/75 backdrop-blur-sm">
+                  <motion.div
+                    className="absolute -bottom-5 left-4 rounded-xl bg-background/30 p-1 shadow-xs ring-1 ring-border/75 backdrop-blur-sm"
+                    variants={{
+                      rest: { transform: "scale(1)" },
+                      hover: {
+                        transform: reduceMotion ? "scale(1)" : "scale(1.04)",
+                      },
+                    }}
+                    transition={{ type: "spring", duration: 0.6, bounce: 0.2 }}
+                  >
                     <div className="rounded-lg bg-background/60">
                       {company.logo ? (
                         <img
@@ -261,7 +276,7 @@ export function CompaniesDirectory({
                         </span>
                       )}
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
                 <div className="px-1 pt-8">
                   <h2 className="text-lg font-semibold tracking-tight">
@@ -300,7 +315,7 @@ export function CompaniesDirectory({
                   </div>
                 </div>
               </article>
-            </Link>
+            </MotionLink>
           ))}
         </div>
       ) : (

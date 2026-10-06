@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "motion/react";
+import { useTheme } from "next-themes";
 import { getSoulCoverComposition } from "@/lib/soul-cover";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -12,8 +13,18 @@ const MeshGradient = dynamic(
   { ssr: false },
 );
 
-export function SoulCover({ seed }: { seed: number }) {
+export function SoulCover({
+  seed,
+  grainOverlay = 0.07,
+  variant = "banner",
+}: {
+  seed: number;
+  grainOverlay?: number;
+  variant?: "banner" | "backdrop";
+}) {
   const reduceMotion = useReducedMotion();
+  const { resolvedTheme } = useTheme();
+  const lightBackdrop = variant === "backdrop" && resolvedTheme !== "dark";
   const surface = useRef<HTMLDivElement>(null);
   const [webGLAvailable, setWebGLAvailable] = useState<boolean | null>(null);
   const composition = getSoulCoverComposition(seed);
@@ -61,11 +72,15 @@ export function SoulCover({ seed }: { seed: number }) {
           height="100%"
           fit="cover"
           scale={0.65}
-          colors={["#073b4c", "#00bdaa", "#b7f7a8", "#009966"]}
+          colors={
+            lightBackdrop
+              ? ["#a7f3d0", "#99f6e4", "#d9f99d", "#cffafe"]
+              : ["#073b4c", "#00bdaa", "#b7f7a8", "#009966"]
+          }
           distortion={1}
           swirl={0.35}
-          grainMixer={0.16}
-          grainOverlay={0.07}
+          grainMixer={lightBackdrop ? 0.04 : 0.16}
+          grainOverlay={lightBackdrop ? grainOverlay * 0.35 : grainOverlay}
           speed={reduceMotion ? 0 : 0.3}
           frame={composition.frame}
           rotation={composition.rotation}
