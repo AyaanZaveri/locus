@@ -39,7 +39,7 @@ test("every selectable model sends the correct ID, protocol and session header",
       assert.equal(
         captured.url,
         option.protocol === "anthropic"
-          ? "https://opencode.ai/zen/v1/messages"
+          ? "https://opencode.ai/zen/go/v1/messages"
           : `https://opencode.ai/zen/go/v1/${option.protocol === "responses" ? "responses" : "chat/completions"}`,
       );
       assert.equal(captured.body.model, option.id);

@@ -30,7 +30,7 @@ export function getLocusModel(
   const model = LOCUS_MODELS.find((option) => option.id === modelId)!;
   if (model.protocol === "anthropic") {
     return createAnthropic({
-      baseURL: "https://opencode.ai/zen/v1",
+      baseURL,
       apiKey,
       headers,
     })(modelId);
