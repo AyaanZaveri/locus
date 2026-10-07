@@ -10,6 +10,13 @@ export const LOCUS_MODELS = [
     protocol: "responses",
   },
   {
+    id: "claude-haiku-5.5",
+    label: "Claude Haiku 5.5",
+    lab: "Anthropic",
+    logo: logo("anthropic"),
+    protocol: "chat",
+  },
+  {
     id: "muse-spark-1.3-contributor",
     label: "Muse Spark 1.3",
     lab: "Meta",
