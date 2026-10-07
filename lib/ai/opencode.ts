@@ -2,6 +2,7 @@ import "server-only";
 
 import { createOpenAI } from "@ai-sdk/openai";
 import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
+import { createAnthropic } from "@ai-sdk/anthropic";
 import {
   DEFAULT_LOCUS_MODEL,
   LOCUS_MODELS,
@@ -27,6 +28,13 @@ export function getLocusModel(
 
   const headers = { "x-opencode-session": sessionId, "user-agent": userAgent };
   const model = LOCUS_MODELS.find((option) => option.id === modelId)!;
+  if (model.protocol === "anthropic") {
+    return createAnthropic({
+      baseURL: "https://opencode.ai/zen/v1",
+      apiKey,
+      headers,
+    })(modelId);
+  }
   if (model.protocol === "chat") {
     return createOpenAICompatible({
       name: "opencode",

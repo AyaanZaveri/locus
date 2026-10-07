@@ -33,6 +33,6 @@ test("Luna and Muse use Responses; the remaining models use Chat Completions", (
   );
   assert.equal(
     LOCUS_MODELS.filter((model) => model.protocol === "chat").length,
-    6,
+    5,
   );
 });

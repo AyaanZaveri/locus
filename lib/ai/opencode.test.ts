@@ -38,13 +38,19 @@ test("every selectable model sends the correct ID, protocol and session header",
       assert.ok(captured, option.id);
       assert.equal(
         captured.url,
-        `https://opencode.ai/zen/go/v1/${option.protocol === "responses" ? "responses" : "chat/completions"}`,
+        option.protocol === "anthropic"
+          ? "https://opencode.ai/zen/v1/messages"
+          : `https://opencode.ai/zen/go/v1/${option.protocol === "responses" ? "responses" : "chat/completions"}`,
       );
       assert.equal(captured.body.model, option.id);
       assert.equal(captured.headers.get("x-opencode-session"), "test-session");
       assert.equal(
-        captured.headers.get("authorization"),
-        "Bearer test-key-not-a-credential",
+        captured.headers.get(
+          option.protocol === "anthropic" ? "x-api-key" : "authorization",
+        ),
+        option.protocol === "anthropic"
+          ? "test-key-not-a-credential"
+          : "Bearer test-key-not-a-credential",
       );
     }
     assert.equal(getLocusModel("test-session").modelId, "gpt-6-luna");

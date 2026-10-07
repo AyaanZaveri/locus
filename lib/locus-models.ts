@@ -10,11 +10,11 @@ export const LOCUS_MODELS = [
     protocol: "responses",
   },
   {
-    id: "claude-haiku-5.5",
+    id: "claude-haiku-5-5",
     label: "Claude Haiku 5.5",
     lab: "Anthropic",
     logo: logo("anthropic"),
-    protocol: "chat",
+    protocol: "anthropic",
   },
   {
     id: "muse-spark-1.3-contributor",
