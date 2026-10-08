@@ -17,6 +17,13 @@ export const LOCUS_MODELS = [
     protocol: "anthropic",
   },
   {
+    id: "step-5-preview-free",
+    label: "Step 5 Preview Free",
+    lab: "StepFun",
+    logo: logo("stepfun"),
+    protocol: "chat",
+  },
+  {
     id: "muse-spark-1.3-contributor",
     label: "Muse Spark 1.3",
     lab: "Meta",
