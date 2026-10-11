@@ -13,7 +13,7 @@ export const jobsQuerySchema = z
       .enum(["inline", "candidates"])
       .optional()
       .describe(
-        "inline (default) displays retrieved jobs immediately for ordinary lists. candidates is REQUIRED for best-fit recommendations: retrieve at least 15 candidates, do not display this pool, compare evidence, then call presentLocusResults with your verified shortlist (normally 3).",
+        "inline (default) displays retrieved jobs immediately for ordinary lists. candidates is REQUIRED for personal-fit or subjective work-preference ranking (fun, creative, interesting, challenging): retrieve 15 candidates without displaying the pool, compare evidence, then presentLocusResults for a requested shortlist or navigateLocus for an explicit open/go-to request.",
       ),
     companySlugs: z
       .array(
@@ -45,7 +45,7 @@ export const jobsQuerySchema = z
       .max(500)
       .optional()
       .describe(
-        "Compact role responsibilities or personal-fit intent: aim for 200–350 characters, hard maximum 500. Summarize core skills and work; do not paste the profile or include every preference. Use for 'best role for me', including at one known company. Example: full-stack product engineering with React, TypeScript, backend APIs and end-to-end ownership. This ranks description evidence, not a hard skills filter. Omit if no usable intent/background exists.",
+        "Compact desired responsibilities, subjective work preferences or personal-fit intent; hard maximum 500 characters. Use for fun, creative, interesting, challenging or 'best role for me', including at one verified employer. A stated work preference is usable intent even without a profile. Describe evidenced work characteristics, not just the adjective; never invent interests or qualifications. For unspecified fun, tentatively seek varied work, experimentation and creative ownership. For personal fit summarize evidenced skills/work, not a profile dump. Ranks description evidence, not literal keywords or proof of enjoyment. Omit for inventories, names and structured-only ordering such as highest salary.",
       ),
     queryScope: z
       .enum(["role", "allContent"])
@@ -155,7 +155,7 @@ export const jobsQuerySchema = z
       .enum(["relevance", "salary", "postedAt"])
       .default("relevance")
       .describe(
-        "relevance for semantic personal-fit ranking. salary sorts annual USD lower bounds; postedAt sorts known posting dates. Preserve an explicit user ordering.",
+        "relevance for semantic personal-fit or subjective work-preference ranking. salary sorts annual USD lower bounds; postedAt sorts known posting dates. Preserve an explicit user ordering.",
       ),
     limit: z
       .number()

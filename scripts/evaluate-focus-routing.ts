@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { performance } from "node:perf_hooks";
+import { preferenceRoutingErrors } from "./lib/focus-preference-routing";
 
 const endpoint = new URL(
   "/api/chat",
@@ -19,7 +20,12 @@ const caseIndex = args.indexOf("--case");
 const selected = caseIndex < 0 ? undefined : option("--case", "").split(",");
 assert(Number.isInteger(runs) && runs > 0, "--runs must be a positive integer");
 
-const scenarios = [
+const scenarios: {
+  name: string;
+  prompt: string;
+  useBackground?: boolean;
+  preferenceAction?: "navigate" | "present";
+}[] = [
   {
     name: "funded-project",
     prompt:
@@ -35,6 +41,33 @@ const scenarios = [
     name: "conceptual-company",
     prompt:
       "Which companies build tools for discovering startups and connecting founder, funding and hiring information?",
+  },
+  ...["fun", "creative", "interesting", "challenging"].flatMap((preference) =>
+    [false, true].flatMap((useBackground) => [
+      {
+        name: `${preference}-${useBackground ? "profile" : "no-profile"}`,
+        prompt: `Go to the most ${preference} job at Cursor.`,
+        useBackground,
+        preferenceAction: "navigate" as const,
+      },
+      {
+        name: `${preference}-show-${useBackground ? "profile" : "no-profile"}`,
+        prompt: `Show the most ${preference} job at Cursor.`,
+        useBackground,
+        preferenceAction: "present" as const,
+      },
+    ]),
+  ),
+  {
+    name: "creative-shortlist",
+    prompt: "Show the most creative job at Cursor.",
+    useBackground: false,
+    preferenceAction: "present",
+  },
+  {
+    name: "named-salary-navigation",
+    prompt: "Go to the highest-paid recorded job at Cursor.",
+    useBackground: false,
   },
 ];
 const background =
@@ -59,11 +92,15 @@ async function main() {
           sessionId: `focus-routing-${crypto.randomUUID()}`,
           pagePath: "/companies",
           messages: [
-            {
-              id: crypto.randomUUID(),
-              role: "user",
-              parts: [{ type: "text", text: background }],
-            },
+            ...(scenario.useBackground === false
+              ? []
+              : [
+                  {
+                    id: crypto.randomUUID(),
+                    role: "user",
+                    parts: [{ type: "text", text: background }],
+                  },
+                ]),
             {
               id: crypto.randomUUID(),
               role: "user",
@@ -101,6 +138,12 @@ async function main() {
       const jobCalls = calls.filter((c) => c.toolName === "queryJobs");
       const companyInputs = companyCalls.map((c) => asObject(c.input));
       const jobInputs = jobCalls.map((c) => asObject(c.input));
+      const resolvedEmployer = (name: string) =>
+        outputsFor("searchLocus")
+          .flatMap((o) => o.companies ?? [])
+          .find(
+            (c: any) => String(c.name).toLowerCase() === name.toLowerCase(),
+          );
       const errors: string[] = [];
       const check = (condition: boolean, message: string) => {
         if (!condition) errors.push(message);
@@ -117,7 +160,78 @@ async function main() {
       );
       let semanticQualityScore: number | null = null;
       let selectedSlugs: string[] = [];
-      if (scenario.name === "funded-project") {
+      if (scenario.preferenceAction) {
+        errors.push(
+          ...preferenceRoutingErrors(
+            calls.map((call) => ({
+              toolName: call.toolName,
+              input: asObject(call.input),
+              output: asObject(
+                chunks.find(
+                  (chunk) =>
+                    chunk.type === "tool-output-available" &&
+                    chunk.toolCallId === call.toolCallId,
+                )?.output,
+              ),
+            })),
+            scenario.preferenceAction,
+          ),
+        );
+      } else if (scenario.name === "named-salary-navigation") {
+        const employer = resolvedEmployer("Cursor");
+        check(
+          jobCalls.length >= 1 && companyCalls.length === 0,
+          "Expected employer-scoped job query",
+        );
+        check(
+          jobInputs.every(
+            (i) =>
+              !i.semanticQuery &&
+              i.sortBy === "salary" &&
+              Number(i.limit) === 1 &&
+              i.companySlugs?.length === 1 &&
+              i.companySlugs[0] === employer?.slug,
+          ),
+          "Expected nonsemantic salary ordering with limit 1",
+        );
+        const candidates = outputsFor("queryJobs").flatMap((o) => o.jobs ?? []);
+        const navs = calls.filter((c) => c.toolName === "navigateLocus");
+        const comparableSalary = candidates.some(
+          (j: any) =>
+            j.salary?.minimum != null &&
+            j.salary.currency === "USD" &&
+            j.salary.period === "year",
+        );
+        if (comparableSalary)
+          check(
+            navs.length === 1 &&
+              navs[0].input.destination === "job" &&
+              candidates.some(
+                (j: any) =>
+                  j.companySlug === navs[0].input.companySlug &&
+                  j.title === navs[0].input.jobTitle &&
+                  j.location === navs[0].input.jobLocation,
+              ),
+            "Expected navigation to a verified salary-ranked job",
+          );
+        else {
+          check(
+            navs.length === 0,
+            "Do not navigate without comparable salary evidence",
+          );
+          const text = chunks
+            .filter((c) => c.type === "text-delta")
+            .map((c) => c.delta ?? "")
+            .join("");
+          check(
+            /salary|salaries|compensation|pay/i.test(text) &&
+              /unknown|missing|not|can't|cannot|no |isn't|aren't|doesn't|unavailable|unrecorded|lack/i.test(
+                text,
+              ),
+            "Explain missing salary evidence",
+          );
+        }
+      } else if (scenario.name === "funded-project") {
         check(
           companyCalls.length >= 1 && jobCalls.length >= 1,
           "Expected company discovery then jobs lookup",
@@ -232,6 +346,7 @@ async function main() {
         // Dataset-specific regression hit, not a universal measure of semantic quality.
         semanticQualityScore = selectedSlugs.includes("hiringcafe") ? 1 : 0;
       } else if (scenario.name === "named-inventory") {
+        const employer = resolvedEmployer("HiringCafe");
         check(
           calls.some(
             (c) =>
@@ -243,14 +358,17 @@ async function main() {
           "Expected named employer resolution then jobs query, not conceptual company discovery",
         );
         check(
-          jobInputs.some(
+          jobInputs.every(
             (i) =>
               i.resultMode !== "candidates" &&
               Number(i.limit) === 3 &&
               !i.semanticQuery &&
               !i.query &&
               !i.title &&
-              !i.skills,
+              !i.skills &&
+              i.status === "openOrUnknown" &&
+              i.companySlugs?.length === 1 &&
+              i.companySlugs[0] === employer?.slug,
           ),
           "Expected inline nonsemantic jobs query with limit 3",
         );

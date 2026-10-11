@@ -40,6 +40,14 @@ test("model-facing job filters explain fit intent versus hard constraints", () =
     jobsQuerySchema.shape.semanticQuery.description!,
     /best role for me/,
   );
+  assert.match(
+    jobsQuerySchema.shape.semanticQuery.description!,
+    /fun, creative, interesting, challenging/,
+  );
+  assert.match(
+    jobsQuerySchema.shape.semanticQuery.description!,
+    /usable intent even without a profile/,
+  );
   assert.match(jobsQuerySchema.shape.skills.description!, /HARD AND/);
   assert.match(
     jobsQuerySchema.shape.companySlugs.description!,
