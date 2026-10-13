@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/drawer";
 import {
   LOCUS_MODELS,
+  LOCUS_MODEL_PROVIDERS,
   isLocusModelId,
   type LocusModelId,
 } from "@/lib/locus-models";
@@ -221,11 +222,11 @@ export function LocusModelPicker({
         >
           <Menu.Popup className={surface} aria-label="Models by provider">
             <Menu.Group>
-              {LOCUS_MODELS.map((model) => (
-                <Menu.SubmenuRoot key={model.lab}>
+              {LOCUS_MODEL_PROVIDERS.map((provider) => (
+                <Menu.SubmenuRoot key={provider.lab}>
                   <Menu.SubmenuTrigger className={row}>
-                    <Logo src={model.logo} />
-                    {model.lab}
+                    <Logo src={provider.models[0].logo} />
+                    {provider.lab}
                     <ChevronRightIcon
                       aria-hidden="true"
                       className="ml-auto size-4"
@@ -244,30 +245,36 @@ export function LocusModelPicker({
                         <Menu.RadioGroup
                           value={modelId}
                           onValueChange={(value) => {
-                            if (!disabled && isLocusModelId(value)) onChange(value);
+                            if (!disabled && isLocusModelId(value))
+                              onChange(value);
                           }}
                         >
-                          <Menu.RadioItem
-                            value={model.id}
-                            className={`${row} pr-8`}
-                          >
-                            <Logo src={model.logo} />
-                            {model.label}
-                            {model.id === "muse-spark-1.3-contributor" ? (
-                              <BadgeInfoIcon
-                                className="size-3.5"
-                                aria-label="Contributor model: Meta trains on your prompts and responses"
-                              />
-                            ) : null}
-                            <Menu.RadioItemIndicator className="absolute right-2">
-                              <CheckIcon
-                                aria-hidden="true"
-                                className="size-4"
-                              />
-                            </Menu.RadioItemIndicator>
-                          </Menu.RadioItem>
+                          {provider.models.map((model) => (
+                            <Menu.RadioItem
+                              key={model.id}
+                              value={model.id}
+                              className={`${row} pr-8`}
+                            >
+                              <Logo src={model.logo} />
+                              {model.label}
+                              {model.id === "muse-spark-1.3-contributor" ? (
+                                <BadgeInfoIcon
+                                  className="size-3.5"
+                                  aria-label="Contributor model: Meta trains on your prompts and responses"
+                                />
+                              ) : null}
+                              <Menu.RadioItemIndicator className="absolute right-2">
+                                <CheckIcon
+                                  aria-hidden="true"
+                                  className="size-4"
+                                />
+                              </Menu.RadioItemIndicator>
+                            </Menu.RadioItem>
+                          ))}
                         </Menu.RadioGroup>
-                        {model.id === "muse-spark-1.3-contributor" ? (
+                        {provider.models.some(
+                          (model) => model.id === "muse-spark-1.3-contributor",
+                        ) ? (
                           <p className="flex max-w-56 items-start gap-1.5 px-2 py-1 text-xs text-muted-foreground">
                             <AsteriskIcon
                               aria-hidden="true"

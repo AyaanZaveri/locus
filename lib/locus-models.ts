@@ -59,6 +59,13 @@ export const LOCUS_MODELS = [
     protocol: "chat",
   },
   {
+    id: "cat-jam-free",
+    label: "Cat Jam Free",
+    lab: "OpenCode",
+    logo: logo("opencode"),
+    protocol: "chat",
+  },
+  {
     id: "longcat-2.5-preview-free",
     label: "LongCat 2.5 Preview Free",
     lab: "LongCat",
@@ -66,6 +73,13 @@ export const LOCUS_MODELS = [
     protocol: "chat",
   },
 ] as const;
+
+export const LOCUS_MODEL_PROVIDERS = Array.from(
+  new Set(LOCUS_MODELS.map((model) => model.lab)),
+).map((lab) => ({
+  lab,
+  models: LOCUS_MODELS.filter((model) => model.lab === lab),
+}));
 
 export type LocusModelId = (typeof LOCUS_MODELS)[number]["id"];
 export const DEFAULT_LOCUS_MODEL: LocusModelId = "gpt-6-luna";
