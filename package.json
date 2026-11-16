@@ -28,10 +28,10 @@
     "eval:focus-presentation": "tsx scripts/evaluate-focus-presentation.ts"
   },
   "dependencies": {
-    "@ai-sdk/anthropic": "^4.0.75",
-    "@ai-sdk/openai": "^4.0.71",
-    "@ai-sdk/openai-compatible": "^3.0.53",
-    "@ai-sdk/react": "^4.0.110",
+    "@ai-sdk/anthropic": "^4.0.105",
+    "@ai-sdk/openai": "^4.0.118",
+    "@ai-sdk/openai-compatible": "^3.0.92",
+    "@ai-sdk/react": "^4.0.177",
     "@base-ui/react": "^1.8.0",
     "@lucide/lab": "^0.7.0",
     "@neondatabase/serverless": "^1.1.0",
@@ -43,7 +43,7 @@
     "@tiptap/react": ">=2.11.5 <4",
     "@tiptap/starter-kit": ">=2.11.5 <4",
     "@vercel/analytics": "^2.0.1",
-    "ai": "^7.0.107",
+    "ai": "^7.0.173",
     "better-auth": "^1.7.7",
     "border-beam": "^1.4.1",
     "class-variance-authority": "^0.7.1",
